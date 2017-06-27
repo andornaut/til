@@ -24,6 +24,7 @@
   * [GTK Fonts](t/desktop.md#gtk-fonts)
   * [OSD](t/desktop.md#osd)
   * [xrandr](t/desktop.md#xrandr)
+  * [xset](t/desktop.md#xset)
 
 ### [docker](t/docker.md)
 
