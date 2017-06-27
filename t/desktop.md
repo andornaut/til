@@ -47,3 +47,21 @@ Rotate monitor and set as primary
 xrandr --output DP1-1 --auto --rotate left --left-of DP1-3 --primary
 ```
 
+## xset
+
+- [ArchWiki](https://wiki.archlinux.org/index.php/Display_Power_Management_Signaling)
+
+Disable display power management
+```
+xset -dpms
+```
+
+Query
+```
+xset q
+```
+Set DPMS times: Standby: 600, Suspend: 1200, Off: 1800
+```
+xset dpms 600 1200 1800
+```
+  
