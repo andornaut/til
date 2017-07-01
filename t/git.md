@@ -78,3 +78,12 @@ git init
 hg-fast-export.sh -r <repo> -B <branches_map> -A <users_map>
 ```
 
+## Ignore/unignore changes to a file
+
+```
+# Ignore
+git update-index --assume-unchanged ${filepath}
+
+# Unignore
+git update-index --no-assume-unchanged ${filepath}
+```
