@@ -18,14 +18,6 @@
   * [Encrypt storage device](t/cryptography.md#encrypt-storage-device)
   * [Generate CSR](t/cryptography.md#generate-csr)
 
-### [desktop](t/desktop.md)
-
-  * [gnome-screensaver settings](t/desktop.md#gnome-screensaver-settings)
-  * [GTK Fonts](t/desktop.md#gtk-fonts)
-  * [OSD](t/desktop.md#osd)
-  * [xrandr](t/desktop.md#xrandr)
-  * [xset](t/desktop.md#xset)
-
 ### [docker](t/docker.md)
 
   * [List containers by image name](t/docker.md#list-containers-by-image-name)
@@ -124,3 +116,11 @@
 ### [wget](t/wget.md)
 
   * [Download recursively](t/wget.md#download-recursively)
+
+### [x](t/x.md)
+
+  * [gnome-screensaver settings](t/x.md#gnome-screensaver-settings)
+  * [GTK Fonts](t/x.md#gtk-fonts)
+  * [OSD](t/x.md#osd)
+  * [xrandr](t/x.md#xrandr)
+  * [xset](t/x.md#xset)
