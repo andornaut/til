@@ -1,8 +1,6 @@
 # Linux
 
-## Ubuntu applications
-
-Upgrade to LTS from non-LTS:
+## Upgrade Ubuntu from non-LTS to LTS
 
   - `$ gksudo update-manager -d`
   - Open "Settings"
@@ -25,6 +23,7 @@ $ umount /mnt/proc/ /mnt/dev /mnt/sys /mnt
 ```
 
 ## Magic SysRq Keys
+
 Force reboot an unresponsive system.
 
 ```
@@ -126,4 +125,14 @@ nmcli dev show em1
 Grap mouse and keyboard input
 ```
 CTRL + SHIFT + C
+```
+
+## debconf
+
+```
+sudo debconf-show ${packageName}
+
+# or
+
+sudo debconf-get-selections|grep -i ${packageName}
 ```
