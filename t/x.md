@@ -1,4 +1,4 @@
-# Desktop
+# X
 
 ## gnome-screensaver settings
 - [StackOverflow](http://superuser.com/questions/727120/make-gnome-screen-lock-after-1-hour-not-15-minutes)
