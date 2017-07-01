@@ -36,6 +36,7 @@
   * [Change origin](t/git.md#change-origin)
   * [Configuration](t/git.md#configuration)
   * [Convert a mercurial repo to git](t/git.md#convert-a-mercurial-repo-to-git)
+  * [Ignore/unignore changes to a file](t/git.md#ignoreunignore-changes-to-a-file)
 
 ### [go](t/go.md)
 
@@ -56,7 +57,7 @@
 
 ### [linux](t/linux.md)
 
-  * [Ubuntu applications](t/linux.md#ubuntu-applications)
+  * [Upgrade Ubuntu from non-LTS to LTS](t/linux.md#upgrade-ubuntu-from-non-lts-to-lts)
   * [Fix broken grub install](t/linux.md#fix-broken-grub-install)
   * [Magic SysRq Keys](t/linux.md#magic-sysrq-keys)
   * [Monitoring and statistics](t/linux.md#monitoring-and-statistics)
@@ -68,6 +69,7 @@
   * [Wipe storage device using hdparm](t/linux.md#wipe-storage-device-using-hdparm)
   * [nmcli](t/linux.md#nmcli)
   * [Xephyr](t/linux.md#xephyr)
+  * [debconf](t/linux.md#debconf)
 
 ### [make](t/make.md)
 
