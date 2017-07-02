@@ -8,6 +8,14 @@
   - Set the "Notify me of a new Ubuntu version" dropdown menu to "For any new version".
   - `$ sudo do-release-upgrade -d`
 
+## Search for Ubuntu package
+
+```
+sudo apt-get install apt-file
+apt-file update
+apt-file search ${pattern}
+```
+
 ## Fix broken grub install
 
 ```
