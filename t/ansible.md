@@ -11,3 +11,10 @@ ansible -m debug -a "var=hostvars[inventory_hostname]" $host
 # Display facts from all hosts
 ansible all -m setup
 ```
+
+## Ansible Galaxy
+
+```
+# Create role
+ansible-galaxy init role_name
+```
