@@ -1,5 +1,12 @@
 # Networking
 
+## nmcli
+
+```
+# Show network info
+nmcli dev show em1
+```
+
 ## Test performance
 ```
 $ iperf -c $HOST -u -b 1G
