@@ -121,13 +121,6 @@ hdparm --user-master u --security-erase PasSWorD /dev/sdX
 hdparm -I /dev/sdX (result: Security:not enabled)
 ```
 
-## nmcli
-
-```
-# Show network info
-nmcli dev show em1
-```
-
 ## Xephyr
 
 Grap mouse and keyboard input
