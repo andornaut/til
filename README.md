@@ -1,6 +1,7 @@
 ### [ansible](t/ansible.md)
 
   * [Debugging](t/ansible.md#debugging)
+  * [Ansible Galaxy](t/ansible.md#ansible-galaxy)
 
 ### [apache](t/apache.md)
 
@@ -58,6 +59,7 @@
 ### [linux](t/linux.md)
 
   * [Upgrade Ubuntu from non-LTS to LTS](t/linux.md#upgrade-ubuntu-from-non-lts-to-lts)
+  * [Search for Ubuntu package](t/linux.md#search-for-ubuntu-package)
   * [Fix broken grub install](t/linux.md#fix-broken-grub-install)
   * [Magic SysRq Keys](t/linux.md#magic-sysrq-keys)
   * [Monitoring and statistics](t/linux.md#monitoring-and-statistics)
@@ -67,7 +69,6 @@
   * [sysctl settings](t/linux.md#sysctl-settings)
   * [Temporarily change the date/time using timedatectl](t/linux.md#temporarily-change-the-datetime-using-timedatectl)
   * [Wipe storage device using hdparm](t/linux.md#wipe-storage-device-using-hdparm)
-  * [nmcli](t/linux.md#nmcli)
   * [Xephyr](t/linux.md#xephyr)
   * [debconf](t/linux.md#debconf)
 
@@ -82,6 +83,8 @@
 
 ### [networking](t/networking.md)
 
+  * [HTTPS SSH tunnel (port forward through jump box)](t/networking.md#https-ssh-tunnel-port-forward-through-jump-box)
+  * [nmcli](t/networking.md#nmcli)
   * [Test performance](t/networking.md#test-performance)
   * [Wifi](t/networking.md#wifi)
 
