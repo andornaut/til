@@ -56,6 +56,10 @@
 
   * [Formatting](t/json.md#formatting)
 
+### [kubernetes](t/kubernetes.md)
+
+  * [Minikube](t/kubernetes.md#minikube)
+
 ### [linux](t/linux.md)
 
   * [Upgrade Ubuntu from non-LTS to LTS](t/linux.md#upgrade-ubuntu-from-non-lts-to-lts)
