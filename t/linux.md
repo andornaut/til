@@ -137,3 +137,10 @@ sudo debconf-show ${packageName}
 
 sudo debconf-get-selections|grep -i ${packageName}
 ```
+
+## Hardware info
+
+```
+# RAM
+sudo dmidecode --type memory
+```
