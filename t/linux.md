@@ -144,3 +144,9 @@ sudo debconf-get-selections|grep -i ${packageName}
 # RAM
 sudo dmidecode --type memory
 ```
+
+## System stability
+
+[Guide](https://blog.codinghorror.com/is-your-computer-stable/)
+
+Run [mprime](ftp://mersenne.org/gimps/p95v289.linux64.tar.gz) and monitor system temperatures.
