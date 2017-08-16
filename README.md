@@ -75,6 +75,8 @@
   * [Wipe storage device using hdparm](t/linux.md#wipe-storage-device-using-hdparm)
   * [Xephyr](t/linux.md#xephyr)
   * [debconf](t/linux.md#debconf)
+  * [Hardware info](t/linux.md#hardware-info)
+  * [System stability](t/linux.md#system-stability)
 
 ### [make](t/make.md)
 
