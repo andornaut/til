@@ -10,6 +10,12 @@ $ gsettings set org.gnome.desktop.session idle-delay 3600
 $ gsettings set org.gnome.desktop.screensaver lock-delay 4000
 ```
 
+## Mouse cursor
+
+```
+sudo update-alternatives --config x-cursor-theme
+```
+
 ## GTK Fonts
 ```
 $ sudo apt-get install -qy adwaita-icon-theme-full gnome-themes-standard

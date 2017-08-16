@@ -131,6 +131,7 @@
 ### [x](t/x.md)
 
   * [gnome-screensaver settings](t/x.md#gnome-screensaver-settings)
+  * [Mouse cursor](t/x.md#mouse-cursor)
   * [GTK Fonts](t/x.md#gtk-fonts)
   * [OSD](t/x.md#osd)
   * [xrandr](t/x.md#xrandr)
