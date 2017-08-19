@@ -77,6 +77,7 @@
   * [debconf](t/linux.md#debconf)
   * [Hardware info](t/linux.md#hardware-info)
   * [System stability](t/linux.md#system-stability)
+  * [Set default soundcard to USB sound device](t/linux.md#set-default-soundcard-to-usb-sound-device)
 
 ### [make](t/make.md)
 

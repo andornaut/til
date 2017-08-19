@@ -150,3 +150,12 @@ sudo dmidecode --type memory
 [Guide](https://blog.codinghorror.com/is-your-computer-stable/)
 
 Run [mprime](ftp://mersenne.org/gimps/p95v289.linux64.tar.gz) and monitor system temperatures.
+
+## Set default soundcard to USB sound device 
+
+* [Arch wiki](https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture#Set_the_default_sound_card)
+
+```
+sudo sed -i 's/\(options snd-usb-audio index.*\)/#\1/g' \
+	/etc/modprobe.d/alsa-base.conf
+```
