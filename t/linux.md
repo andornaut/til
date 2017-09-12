@@ -159,3 +159,16 @@ Run [mprime](ftp://mersenne.org/gimps/p95v289.linux64.tar.gz) and monitor system
 sudo sed -i 's/\(options snd-usb-audio index.*\)/#\1/g' \
 	/etc/modprobe.d/alsa-base.conf
 ```
+
+## Application basenames
+
+```
+grep -li ${SEARCH_TEXT} /usr/share/applications/*.desktop
+# or
+dpkg -l | grep ${SEARCH_TEXT}
+```
+
+Basename | Name (or Generic Name)
+--- | ---
+gnome-control-center | System Settings
+gnome-disks | Disk Utility
