@@ -1,5 +1,25 @@
 # X
 
+## Disable language switcher
+
+Use `dconf watch /` to monitor changes.
+
+### Using dconf-editor
+```
+apt-get install dconf-tools
+dconf-editor
+# Navigate to: /org/gnome/desktop/wm/keybindings/switch-input-source
+# Set to []
+```
+
+### Using dconf
+
+[@au [] specifies the type of the empty array](https://developer.gnome.org/glib/stable/gvariant-text.html#gvariant-text-type-annotations) (which would not parse otherwise)
+
+```
+dconf write /org/gnome/desktop/wm/keybindings/switch-input-source '@au []'
+```
+
 ## gnome-screensaver settings
 - [StackOverflow](http://superuser.com/questions/727120/make-gnome-screen-lock-after-1-hour-not-15-minutes)
 ```
