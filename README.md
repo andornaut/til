@@ -78,6 +78,7 @@
   * [Hardware info](t/linux.md#hardware-info)
   * [System stability](t/linux.md#system-stability)
   * [Set default soundcard to USB sound device](t/linux.md#set-default-soundcard-to-usb-sound-device)
+  * [Application basenames](t/linux.md#application-basenames)
 
 ### [make](t/make.md)
 
@@ -131,6 +132,9 @@
 
 ### [x](t/x.md)
 
+  * [Disable language switcher](t/x.md#disable-language-switcher)
+    + [Using dconf-editor](t/x.md#using-dconf-editor)
+    + [Using dconf](t/x.md#using-dconf)
   * [gnome-screensaver settings](t/x.md#gnome-screensaver-settings)
   * [Mouse cursor](t/x.md#mouse-cursor)
   * [GTK Fonts](t/x.md#gtk-fonts)
