@@ -1,4 +1,4 @@
-# X
+# Desktop
 
 ## Disable language switcher
 
