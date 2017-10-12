@@ -45,6 +45,9 @@ dconf write /org/gnome/desktop/wm/keybindings/switch-input-source '@au []'
 
 # Disable "Intelligent Input Bus Daemon"
 dconf write /org/gnome/settings-daemon/plugins/keyboard/active false
+
+# Restart (replace) ibus-daemon
+ibus-daemon -rd
 ```
 
 ## gnome-screensaver settings
