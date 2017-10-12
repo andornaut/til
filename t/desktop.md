@@ -1,5 +1,28 @@
 # Desktop
 
+## Find the program which grabbed a key combination
+
+[StackOverflow](https://unix.stackexchange.com/a/261383)
+
+```
+tail -f /var/log/Xorg.0.log|grep -i -A 7 active
+
+# In another terminal:
+KEY="SUPER+space"; xdotool keydown ${KEY}; xdotool key XF86LogGrabInfo; xdotool keyup ${KEY}
+```
+
+### Sample output
+
+```
+[   603.755] Active grab 0x40a00021 (xi2) on device 'Virtual core keyboard' (3):
+[   603.755]       client pid 5049 /usr/lib/ibus/ibus-ui-gtk3 
+[   603.755]       at 603733 (from passive grab) (device thawed, state 1)
+[   603.755]       xi2 event mask for device 3: 0xc000
+[   603.755]       passive grab type 2, detail 0x41, activating key 65
+[   603.755]       owner-events true, kb 1 ptr 1, confine 0, cursor 0x0
+[   603.755] (II) End list of active device grabs
+```
+
 ## Disable language switcher
 
 Use `dconf watch /` to monitor changes.
