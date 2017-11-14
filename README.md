@@ -21,6 +21,8 @@
 
 ### [desktop](t/desktop.md)
 
+  * [Find the program which grabbed a key combination](t/desktop.md#find-the-program-which-grabbed-a-key-combination)
+    + [Sample output](t/desktop.md#sample-output)
   * [Disable language switcher](t/desktop.md#disable-language-switcher)
     + [Using dconf-editor](t/desktop.md#using-dconf-editor)
     + [Using dconf](t/desktop.md#using-dconf)
@@ -113,6 +115,8 @@
   * [Diff schemas](t/postgresql.md#diff-schemas)
   * [Query user password hash](t/postgresql.md#query-user-password-hash)
   * [Terminate all connections to a database](t/postgresql.md#terminate-all-connections-to-a-database)
+  * [Show connections information](t/postgresql.md#show-connections-information)
+  * [Log all queries](t/postgresql.md#log-all-queries)
 
 ### [python](t/python.md)
 
