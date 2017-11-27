@@ -1,5 +1,19 @@
 # Networking
 
+## Disable dnsmasq / systemd-resolved
+
+[StackOverflow](https://askubuntu.com/a/907249)
+
+```
+$ grep dns -B 2 /etc/NetworkManager/NetworkManager.conf 
+[main]
+plugins=ifupdown,keyfile
+dns=default
+
+sudo rm /etc/resolv.conf
+sudo service network-manager restart
+```
+
 ## HTTPS SSH tunnel (port forward through jump box)
 
 ```
