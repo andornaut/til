@@ -10,8 +10,8 @@ $ grep dns -B 2 /etc/NetworkManager/NetworkManager.conf
 plugins=ifupdown,keyfile
 dns=default
 
-sudo rm /etc/resolv.conf
-sudo service network-manager restart
+$ sudo rm /etc/resolv.conf
+$ sudo service network-manager restart
 ```
 
 ## HTTPS SSH tunnel (port forward through jump box)
