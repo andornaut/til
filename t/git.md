@@ -87,3 +87,10 @@ git update-index --assume-unchanged ${filepath}
 # Unignore
 git update-index --no-assume-unchanged ${filepath}
 ```
+
+## Delete tag
+
+```
+git tag -d v0.0.1
+git push origin :refs/tags/v0.0.1
+```
