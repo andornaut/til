@@ -105,10 +105,16 @@
 
 ### [networking](t/networking.md)
 
+  * [Disable dnsmasq / systemd-resolved](t/networking.md#disable-dnsmasq--systemd-resolved)
   * [HTTPS SSH tunnel (port forward through jump box)](t/networking.md#https-ssh-tunnel-port-forward-through-jump-box)
   * [nmcli](t/networking.md#nmcli)
   * [Test performance](t/networking.md#test-performance)
   * [Wifi](t/networking.md#wifi)
+
+### [npm](t/npm.md)
+
+  * [Publishing](t/npm.md#publishing)
+  * [Linking](t/npm.md#linking)
 
 ### [postgresql](t/postgresql.md)
 
