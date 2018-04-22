@@ -13,7 +13,7 @@ cd ~/workspace/foo
 npm link
 
 cd ~/workspace/bar
-npm link bar
+npm link foo
 > /home/user/workspace/bar/node_modules/foo ->
     /home/user/.local/lib/npm/lib/node_modules/foo ->
       /home/user/workspace/foo
