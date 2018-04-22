@@ -113,8 +113,8 @@
 
 ### [npm](t/npm.md)
 
-  * [Publishing](t/npm.md#publishing)
   * [Linking](t/npm.md#linking)
+  * [Publishing](t/npm.md#publishing)
 
 ### [postgresql](t/postgresql.md)
 
