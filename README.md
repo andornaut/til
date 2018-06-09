@@ -52,6 +52,7 @@
   * [Configuration](t/git.md#configuration)
   * [Convert a mercurial repo to git](t/git.md#convert-a-mercurial-repo-to-git)
   * [Ignore/unignore changes to a file](t/git.md#ignoreunignore-changes-to-a-file)
+  * [Delete tag](t/git.md#delete-tag)
 
 ### [go](t/go.md)
 
