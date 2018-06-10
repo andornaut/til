@@ -8,7 +8,7 @@ Disable [Find in path popup](https://www.jetbrains.com/help/idea/2017.1/find-and
 1. Type in "Registry" and then hit <Enter>
 1. Disable `ide.find.as.popup`
 
-Switch to default JDK to avoid menu dialogs being displayed as floating windows in BSPWM.
+Switch to default JDK to prevent menu dialogs from being displayed as floating windows in BSPWM.
 
 1. CTRL+SHIFT+A
 1. Type "Switch Boot JDK"and thenhit <Enter>
