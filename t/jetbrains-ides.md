@@ -20,13 +20,7 @@ prettier-eslint
 
 1. CTRL+SHIFT+A
 1. Search for "External Tools" (Settings)
-
-<dl>
-  <dt>Program</dt>
-  <dd>./node_modules/.bin/prettier-eslint</dd>
-  <dt>Arguments</dt>
-  <dd>--write "$FilePathRelativeToProjectRoot$"</dd>
-</dl>
+1. Program: `./node_modules/.bin/prettier-eslint` Arguments: `--write "$FilePathRelativeToProjectRoot$"`
 
 ## Shortcuts
 
