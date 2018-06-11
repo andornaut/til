@@ -5,14 +5,28 @@
 Disable [Find in path popup](https://www.jetbrains.com/help/idea/2017.1/find-and-replace-in-path.html) (use old dialog instead):
 
 1. CTRL+SHIFT+A
-1. Type in "Registry" and then hit <Enter>
+1. Search for "Registry"
 1. Disable `ide.find.as.popup`
 
 Switch to default JDK to prevent menu dialogs from being displayed as floating windows in BSPWM.
 
 1. CTRL+SHIFT+A
-1. Type "Switch Boot JDK"and thenhit <Enter>
+1. Search for "Switch Boot JDK"
 1. Select the system default JDK
+
+## External Tools
+
+prettier-eslint
+
+1. CTRL+SHIFT+A
+1. Search for "External Tools" (Settings)
+
+<dl>
+  <dt>Program</dt>
+  <dd>./node_modules/.bin/prettier-eslint</dd>
+  <dt>Arguments</dt>
+  <dd>--write "$FilePathRelativeToProjectRoot$"</dd>
+</dl>
 
 ## Shortcuts
 

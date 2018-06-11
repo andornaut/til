@@ -61,6 +61,7 @@
 ### [jetbrains-ides](t/jetbrains-ides.md)
 
   * [Customisations](t/jetbrains-ides.md#customisations)
+  * [External Tools](t/jetbrains-ides.md#external-tools)
   * [Shortcuts](t/jetbrains-ides.md#shortcuts)
 
 ### [jetty](t/jetty.md)
