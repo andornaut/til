@@ -12,7 +12,9 @@ $ systemctl daemon-reload
 # Start service on boot
 $ systemctl enable $service
 
-# Show running services
+# Show units
+$ systemctl list-units
+$ systemctl list-units --state=failed
 $ systemctl list-units --type=mount
 
 # List dependencies
