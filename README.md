@@ -128,6 +128,7 @@
 
 ### [python](t/python.md)
 
+  * [Set default versions (Ubuntu 18.04)](t/python.md#set-default-versions-ubuntu-1804)
   * [Devpi](t/python.md#devpi)
   * [Import gotchas](t/python.md#import-gotchas)
   * [Pip](t/python.md#pip)

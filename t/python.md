@@ -1,5 +1,15 @@
 # Python
 
+## Set default versions (Ubuntu 18.04)
+
+```
+sudo update-alternatives --remove-all python
+sudo update-alternatives --remove-all python3
+sudo update-alternatives --install /usr/bin/python python /usr/bin/python2.7 0
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.7 0
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.6 1
+```
+
 ## Devpi
 ```
 # Login
