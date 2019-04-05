@@ -1,6 +1,11 @@
 # JetBrains IDEs
 
-## Customisations
+## Fixes and Customisations
+
+Fix [focus stealing bug](https://github.com/baskerville/bspwm/issues/841):
+
+1. Help > Edit Custom Properties
+1. Add: `suppress.focus.stealing=false`
 
 Disable [Find in path popup](https://www.jetbrains.com/help/idea/2017.1/find-and-replace-in-path.html) (use old dialog instead):
 
