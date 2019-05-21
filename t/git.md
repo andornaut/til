@@ -51,7 +51,13 @@ git log -p -2
 ```
 $ git rebase -i $(git rev-list --max-parents=0 HEAD)
 # Change all but the first "pick" to "squash"
-$ git push -f
+$ git push --force
+```
+
+## Pull a --force pushed branch
+```
+git fetch
+git reset origin/master --hard
 ```
 
 ## Change origin
