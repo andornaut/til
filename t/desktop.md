@@ -1,5 +1,16 @@
 # Desktop
 
+## Fan control
+
+[StackOverflow](https://askubuntu.com/questions/22108/how-to-control-fan-speed)
+
+```
+sudo pwmconfig
+sudo vim /etc/fancontrol
+sudo systemctl start fancontrol
+sudo systemctl enable fancontrol
+```
+
 ## Find the program which grabbed a key combination
 
 [StackOverflow](https://unix.stackexchange.com/a/261383)
