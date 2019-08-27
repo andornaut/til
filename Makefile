@@ -13,7 +13,7 @@ index: node_modules
 	./node_modules/markdown-index/index.js t > README.md
 
 node_modules:
-	npm install markdown-index
+	npm install
 
 pull:
 	@git pull

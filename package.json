@@ -1,0 +1,23 @@
+{
+  "name": "til",
+  "version": "1.0.0",
+  "description": "* [Debugging](t/ansible.md#debugging)   * [Ansible Galaxy](t/ansible.md#ansible-galaxy)",
+  "main": "index.js",
+  "dependencies": {
+    "markdown-index": "^2.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andornaut/til.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andornaut/til/issues"
+  },
+  "homepage": "https://github.com/andornaut/til#readme"
+}
