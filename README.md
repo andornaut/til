@@ -21,6 +21,7 @@
 
 ### [desktop](t/desktop.md)
 
+  * [Fan control](t/desktop.md#fan-control)
   * [Find the program which grabbed a key combination](t/desktop.md#find-the-program-which-grabbed-a-key-combination)
     + [Sample output](t/desktop.md#sample-output)
   * [Disable language switcher](t/desktop.md#disable-language-switcher)
@@ -48,6 +49,7 @@
   * [List merged branches on origin](t/git.md#list-merged-branches-on-origin)
   * [See commit history for the last two commits, including the diff](t/git.md#see-commit-history-for-the-last-two-commits-including-the-diff)
   * [Squash all but first commit](t/git.md#squash-all-but-first-commit)
+  * [Pull a --force pushed branch](t/git.md#pull-a---force-pushed-branch)
   * [Change origin](t/git.md#change-origin)
   * [Configuration](t/git.md#configuration)
   * [Convert a mercurial repo to git](t/git.md#convert-a-mercurial-repo-to-git)
@@ -60,7 +62,7 @@
 
 ### [jetbrains-ides](t/jetbrains-ides.md)
 
-  * [Customisations](t/jetbrains-ides.md#customisations)
+  * [Fixes and Customisations](t/jetbrains-ides.md#fixes-and-customisations)
   * [External Tools](t/jetbrains-ides.md#external-tools)
   * [Shortcuts](t/jetbrains-ides.md#shortcuts)
 
