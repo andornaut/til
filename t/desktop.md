@@ -5,6 +5,7 @@
 [StackOverflow](https://askubuntu.com/questions/22108/how-to-control-fan-speed)
 
 ```
+sudo apt-get install lm-sensors fancontrol
 sudo pwmconfig
 sudo vim /etc/fancontrol
 sudo systemctl start fancontrol
