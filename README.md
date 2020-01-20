@@ -40,6 +40,11 @@
   * [Print volumes](t/docker.md#print-volumes)
   * [Remove all volumes](t/docker.md#remove-all-volumes)
 
+### [firefox](t/firefox.md)
+
+  * [Right-click bug with BSPWM](t/firefox.md#right-click-bug-with-bspwm)
+    + [Workaround](t/firefox.md#workaround)
+
 ### [git](t/git.md)
 
   * [Initialize a repo](t/git.md#initialize-a-repo)
