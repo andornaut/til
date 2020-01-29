@@ -13,6 +13,12 @@ Switch to default JDK to prevent menu dialogs from being displayed as floating w
 1. Search for "Switch Boot JDK"
 1. Select the system default JDK
 
+ENTER in the Find-Popup performs a full search in the docked bottom window, which is the equivalent of clicking on Open in Find Window.
+
+1. CTRL+SHIFT+A
+1. Enter "Registry"
+1. Set `ide.find.enter.as.ok=true`
+
 ## External Tools
 
 prettier-eslint
