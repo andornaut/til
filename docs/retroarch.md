@@ -268,32 +268,44 @@ configFile=~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 ```
 
-### Fix Nintendo GameCube/Dolphin crash when running a game
+### Fix crashes when running a game
+
+Instead of allowing cores to change the Video Driver, create a [Core Override](https://docs.libretro.com/guides/overrides/) file as necessary:
+
+1. Navigate to Settings -> Core
+1. Set "Allow Cores to Switch the Video Driver" to "Off"
+1. Save the configuration, and restart RetroArch
+
+Example [Core Override](https://docs.libretro.com/guides/overrides/) file for Sega Dreamcast/Flycast:
+
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
+# For Xbox Series:
+video_driver = "d3d11"
+```
+
+Console | Core | Video driver on Linux | Video driver on Xbox Series
+--- | --- | --- | ---
+Nintendo 64 | Mupen64Plus-Next | glcore | gl
+Nintendo GameCube | Dolphin | gl | d3d11
+Sega Dreamcast | Flycast | vulcan | d3d11
+
+### Fix crashes when running a game on Nintendo GameCube/Dolphin 
 
 Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
 
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
 rewind_enable = "false"
-# Set video_driver to "gl" on Linux or "d3d11" on Xbox Series
-video_driver = "d3d11"
 ```
 
 ### Fix Nintendo GameCube/Dolphin copy/load error when running a game
 
 1. Navigate to Settings -> Directories
-1. Set a "Cache" directory
+1. Configure a "Cache" directory
 1. Save the configuration, and restart RetroArch
 
-Confirmed to work with unzipped `.iso` files.
+### Fix "Failed to load content" error
 
-### Fix Sega Dreamcast/Flycast crash when running a game on Xbox Series
-
-Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
-```
-# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
-# Other video drivers, such as d3d12 or gl, will not work on Xbox Series
-video_driver = "d3d11"
-```
-
-Confirmed to work with unzipped `.chd` files.
+* Try deleting and recreating the Playlist.
+* Try using unzipped (uncompressed) ROM files.
