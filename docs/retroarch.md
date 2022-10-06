@@ -21,10 +21,11 @@ Nintendo Entertainment System (NES) | [Mesen](https://docs.libretro.com/library/
 Nintendo Game Boy/Color (GB) | [SameBoy](https://docs.libretro.com/library/sameboy/)
 Nintendo Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/)
 Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/)
+Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/)
 Sega Genesis | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega Saturn | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) ([Mednafen](https://mednafen.github.io/))
 Sony PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Mednafen](https://mednafen.github.io/))
-Super Nintendo (SNES) | [higan Accuracy](https://docs.libretro.com/library/higan_accuracy/) or [Snex9x](https://docs.libretro.com/library/snes9x/)
+Super Nintendo Entertainment System (SNES) | [higan Accuracy](https://docs.libretro.com/library/higan_accuracy/) or [Snex9x](https://docs.libretro.com/library/snes9x/)
 
 ## RetoArch on Xbox Series
 
@@ -49,52 +50,7 @@ This will produce an error about not being able to change permissions on the "Sy
 
 ## Recommended Games
 
-Nintendo - Game Boy Advance
-```
-Advance Wars
-Castlevania - Aria of Sorrow
-Final Fantasy Tactics Advance
-Final Fantasy VI Advance
-Fire Emblem - The Sacred Stones
-F-Zero - Maximum Velocity
-Golden Sun
-Gunstar Super Heroes
-Kirby & the Amazing Mirror
-Legend of Zelda, The - A Link to the Past & Four Swords
-Legend of Zelda, The - The Minish Cap
-Mario Golf - Advance Tour
-Mario Kart - Super Circuit
-Mario & Luigi - Superstar Saga
-Mario Tennis - Power Tour
-Mega Man Zero
-Metroid - Zero Mission
-Pokemon Emerald Version
-Pokemon FireRed Version
-Pokemon LeafGreen Version
-Sonic Advance 3
-Super Mario Advance 4 - Super Mario Bros. 3
-Tetris Worlds
-WarioWare, Inc. - Mega Microgames!
-```
-Nintendo - GameCube
-```
-Animal Crossing
-Beyond Good & Evil
-F-Zero GX
-Legend of Zelda, The - The Wind Waker
-Legend of Zelda, The - Twilight Princess
-Luigi's Mansion
-Mario Kart - Double Dash!!
-Need for Speed - Underground 2
-Paper Mario - The Thousand-Year Door
-Pikmin 2
-Sonic Adventure 2 - Battle
-SSX Tricky
-Super Mario Sunshine
-Super Monkey Ball
-Super Smash Bros. Melee
-```
-Nintendo - Nintendo 64
+Nintendo 64
 ```
 1080 Snowboarding
 Banjo-Kazooie
@@ -124,7 +80,144 @@ Turok - Dinosaur Hunter
 Wave Race 64
 WWF No Mercy
 ```
-Nintendo - Super Nintendo Entertainment System
+Nintendo Game Boy Advance
+```
+Advance Wars
+Castlevania - Aria of Sorrow
+Final Fantasy Tactics Advance
+Final Fantasy VI Advance
+Fire Emblem - The Sacred Stones
+F-Zero - Maximum Velocity
+Golden Sun
+Gunstar Super Heroes
+Kirby & the Amazing Mirror
+Legend of Zelda, The - A Link to the Past & Four Swords
+Legend of Zelda, The - The Minish Cap
+Mario Golf - Advance Tour
+Mario Kart - Super Circuit
+Mario & Luigi - Superstar Saga
+Mario Tennis - Power Tour
+Mega Man Zero
+Metroid - Zero Mission
+Pokemon Emerald Version
+Pokemon FireRed Version
+Pokemon LeafGreen Version
+Sonic Advance 3
+Super Mario Advance 4 - Super Mario Bros. 3
+Tetris Worlds
+WarioWare, Inc. - Mega Microgames!
+```
+Nintendo GameCube
+```
+Animal Crossing
+Beyond Good & Evil
+F-Zero GX
+Legend of Zelda - The Wind Waker
+Legend of Zelda - The Twilight Princess
+Luigi's Mansion
+Mario Kart - Double Dash!!
+Need for Speed - Underground 2
+Paper Mario - The Thousand-Year Door
+Pikmin 2
+Skies of Arcadia Legends
+Sonic Adventure 2 - Battle
+SSX Tricky
+Super Mario Sunshine
+Super Monkey Ball
+Super Smash Bros. Melee
+```
+Sega Dreamcast
+```
+Border Down
+Crazy Taxi
+Grandia II
+Jet Grind Radio
+Marvel vs. Capcom 2
+Power Stone
+Rayman 2 - The Great Escape
+Rez
+Sonic Adventure 2
+Soulcalibur
+Spider-Man
+```
+Sega Genesis
+```
+Castlevania - Bloodlines
+Desert Strike
+Disney's Aladdin
+Ecco the Dolphin
+Evander Holyfield's "Real Deal" Boxing
+Golden Axe
+Gunstar Heroes
+Herzog Zwei
+Madden NFL 95
+Michael Jackson's Moonwalker
+Mortal Kombat II
+MUSHA - Metallic Uniframe Super Hybrid Armor
+NFL Sports Talk Football '93 Starring Joe Montana
+NHL 94
+Phantasy Star IV - The End of the Millennium
+Revenge of Shinobi, The
+Road Rash 3  - Tour de Force
+Rocket Knight Adventures
+Shining Force II
+Shinobi III - Return of the Ninja Master
+Sonic the Hedgehog 2
+Sonic the Hedgehog 3
+Sonic the Hedgehog
+Streets of Rage 2
+Teenage Mutant Ninja Turtles - The Hyperstone Heist
+Thunder Force IV
+ToeJam & Earl
+Virtua Racing
+World Series Baseball 98
+X-Men 2 - Clone Wars
+X-Men
+```
+Sega Saturn
+```
+Astal
+Burning Rangers
+Daytona USA Championship Circuit Edition
+Dragon Force
+Guardian Heroes
+Manx TT SuperBike
+Marvel Super Heroes
+Nights Into Dreams
+Panzer Dragoon Saga
+Radiant Silvergun
+Rayman
+Road Rash
+Saturn Bomberman
+Sega Rally Championship
+Shining Force III
+Shining The Holy Ark
+Sonic Jam
+Virtua Cop
+Virtua Fighter 2
+X-Men Children of the Atom
+X-Men Vs Street Fighter
+```
+Sony PlayStation (PSX)
+```
+Ace Combat 3 - Electrosphere
+Bust-A-Move 2 - Arcade Edition
+Castlevania - Symphony of the Night
+Chrono Cross
+Crash Bandicoot 2 - Cortex Strikes Back
+Final Fantasy Tactics
+Final Fantasy VII
+Grandia
+Gran Turismo 2 (Arcade Mode)
+Gran Turismo 2 (Simulation Mode)
+Mega Man X4
+Metal Gear Solid
+Spyro the Dragon
+Street Fighter Alpha 2
+Tekken 3
+Tony Hawk's Pro Skater 2
+```
+Super Nintendo Entertainment System
 ```
 Chrono Trigger
 Contra III - The Alien Wars
@@ -164,83 +257,6 @@ Teenage Mutant Ninja Turtles IV - Turtles in Time
 Teenage Mutant Ninja Turtles - Tournament Fighters
 Terranigma
 Tetris & Dr. Mario
-```
-Sega - Mega Drive - Genesis
-```
-Castlevania - Bloodlines
-Desert Strike
-Disney's Aladdin
-Ecco the Dolphin
-Evander Holyfield's "Real Deal" Boxing
-Golden Axe
-Gunstar Heroes
-Herzog Zwei
-Madden NFL 95
-Michael Jackson's Moonwalker
-Mortal Kombat II
-MUSHA - Metallic Uniframe Super Hybrid Armor
-NFL Sports Talk Football '93 Starring Joe Montana
-NHL 94
-Phantasy Star IV - The End of the Millennium
-Revenge of Shinobi, The
-Road Rash 3  - Tour de Force
-Rocket Knight Adventures
-Shining Force II
-Shinobi III - Return of the Ninja Master
-Sonic the Hedgehog 2
-Sonic the Hedgehog 3
-Sonic the Hedgehog
-Streets of Rage 2
-Teenage Mutant Ninja Turtles - The Hyperstone Heist
-Thunder Force IV
-ToeJam & Earl
-Virtua Racing
-World Series Baseball 98
-X-Men 2 - Clone Wars
-X-Men
-```
-Sega - Saturn
-```
-Astal
-Burning Rangers
-Daytona USA Championship Circuit Edition
-Dragon Force
-Guardian Heroes
-Manx TT SuperBike
-Marvel Super Heroes
-Nights Into Dreams
-Panzer Dragoon Saga
-Radiant Silvergun
-Rayman
-Road Rash
-Saturn Bomberman
-Sega Rally Championship
-Shining Force III
-Shining The Holy Ark
-Sonic Jam
-Virtua Cop
-Virtua Fighter 2
-X-Men Children of the Atom
-X-Men Vs Street Fighter
-```
-Sony - PlayStation (PSX)
-```
-Ace Combat 3 - Electrosphere
-Bust-A-Move 2 - Arcade Edition
-Castlevania - Symphony of the Night
-Chrono Cross
-Crash Bandicoot 2 - Cortex Strikes Back
-Final Fantasy Tactics
-Final Fantasy VII
-Grandia
-Gran Turismo 2 (Arcade Mode)
-Gran Turismo 2 (Simulation Mode)
-Mega Man X4
-Metal Gear Solid
-Spyro the Dragon
-Street Fighter Alpha 2
-Tekken 3
-Tony Hawk's Pro Skater 2
 ```
 
 ## Troubleshooting
