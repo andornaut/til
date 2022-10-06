@@ -268,23 +268,30 @@ configFile=~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 ```
 
-**Fix GameCube/Dolphin crash when running a game**
+### Fix Nintendo GameCube/Dolphin crash when running a game
 
-Disable "Rewind" for the dolphin-emu core by creating a [Core Override](https://docs.libretro.com/guides/overrides/) file:
+Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
 
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
 rewind_enable = "false"
+video_driver = "d3d11"
 ```
-
-1. Navigate to Settings -> Drivers
-1. Set "Video" to "d3d11" (Xbox Series) or "gl" (Linux), but not "vulkan"
-1. Save the configuration, and restart RetroArch
-
-**Fix GameCube/Dolphin copy/load error when running a game**
+### Fix Nintendo GameCube/Dolphin copy/load error when running a game
 
 1. Navigate to Settings -> Directories
 1. Set a "Cache" directory
 1. Save the configuration, and restart RetroArch
 
-The rom file must be *unzipped*, as well.
+Confirmed to work with unzipped `.iso` files.
+
+### Fix Sega Dreamcast/Flycast crash when running a game on Xbox Series
+
+Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
+rewind_enable = "false"
+# Other video drivers, such as d3d12 or gl, will not work on Xbox Series
+video_driver = "d3d11"
+```
+Confirmed to work with unzipped `.chd` files.
