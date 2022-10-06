@@ -275,7 +275,7 @@ Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
 rewind_enable = "false"
-# Set video_drive to "gl" on Linux or "d3d11" on Xbox Series
+# Set video_driver to "gl" on Linux or "d3d11" on Xbox Series
 video_driver = "d3d11"
 ```
 
