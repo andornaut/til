@@ -275,8 +275,10 @@ Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
 rewind_enable = "false"
+# Set video_drive to "gl" on Linux or "d3d11" on Xbox Series
 video_driver = "d3d11"
 ```
+
 ### Fix Nintendo GameCube/Dolphin copy/load error when running a game
 
 1. Navigate to Settings -> Directories
@@ -290,8 +292,8 @@ Confirmed to work with unzipped `.iso` files.
 Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
-rewind_enable = "false"
 # Other video drivers, such as d3d12 or gl, will not work on Xbox Series
 video_driver = "d3d11"
 ```
+
 Confirmed to work with unzipped `.chd` files.
