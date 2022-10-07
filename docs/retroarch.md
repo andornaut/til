@@ -64,6 +64,11 @@ Unset the right-analog stick mappings for consoles that have native controls for
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
 input_hold_fast_forward_axis = "nul"
 input_rewind_axis = "nul"
+
+# Dolphin doesn't support rewind
+rewind_enable = "false"
+# Must be set to d3d11 on Xbox Series 
+video_driver = "d3d11"
 ```
 
 ## Recommended Games
@@ -303,7 +308,7 @@ Example [Core Override](https://docs.libretro.com/guides/overrides/) file for Se
 
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
-# For Xbox Series:
+# Must be set to d3d11 on Xbox Series 
 video_driver = "d3d11"
 ```
 
@@ -319,6 +324,7 @@ Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
 
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
+# Dolphin doesn't support rewind
 rewind_enable = "false"
 ```
 
