@@ -41,7 +41,7 @@ which may occur if RetroArch crashes before it is able to clean up.
 
 ### Video drivers
 
-* [Changing behavior of “gl” and “glcore” video drivers](Changing behavior of “gl” and “glcore” video drivers)
+* [Changing behavior of “gl” and “glcore” video drivers](https://www.libretro.com/index.php/changing-behavior-of-gl-and-glcore-video-drivers/)
 
 1. Navigate to Settings -> Core
 1. Set "Allow Cores to Switch the Video Driver" to "On"
