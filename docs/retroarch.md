@@ -24,31 +24,46 @@ Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/)
 Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/)
 Sega Genesis | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega Saturn | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) ([Mednafen](https://mednafen.github.io/))
-Sony PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Mednafen](https://mednafen.github.io/))
+Sony PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Mednafen](https://mednafen.github.io/)) on Linux or [Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series
 Super Nintendo Entertainment System (SNES) | [higan Accuracy](https://docs.libretro.com/library/higan_accuracy/) or [Snex9x](https://docs.libretro.com/library/snes9x/)
 
-## RetoArch on Xbox Series
+## Configuration
 
-* [gamr13.github.io](https://gamr13.github.io/)
-* [Discord - Xbox Emulation Hub](https://discord.com/channels/1007582798598647889/1007590400220991549)
-* [Install guide video (YouTube)](https://www.youtube.com/watch?v=dV9GyKicrAg)
+### Video drivers
 
-### Configure permissions on USB disk drive
+* [Changing behavior of “gl” and “glcore” video drivers](Changing behavior of “gl” and “glcore” video drivers)
 
-From a Windows 10 computer or VM:
+1. Navigate to Settings -> Core
+1. Set "Allow Cores to Switch the Video Driver" to "On"
+1. Navigate to Settings -> Drivers
+1. Set "Video Driver" to "vulkan" on Linux or "d3d12" on Xbox Series
+1. Save the configuration, and restart RetroArch
+1. Create a [Core Override](https://docs.libretro.com/guides/overrides/) file for each of the following cores:
 
-1. Format the USB disk drive as GPT and NTFS
-1. From "File Explorer": right-click on the drive, then click "Properties"
-1. Select the "Security" tab, click "Advanced", then click "Change permissions"
-1. Click the "Select a principal" link next to the "Principal" label
-1. Click "Advanced", then click "Find Now"
-1. Double-click on "ALL APPLICATION PACKAGES"
-1. Tick the "Full control" checkbox, then click "OK"
-1. Tick the "Replace all child object permission ..." checkbox, then click "OK"
+Console | Core | Video driver on Linux | Video driver on Xbox Series
+--- | --- | --- | ---
+Nintendo 64 | Mupen64Plus-Next | glcore | gl
+Nintendo GameCube | Dolphin | glcore | d3d11
+Sega Dreamcast | Flycast | | d3d11
+Sony PlayStation (PSX) | Beetle PSX HW (not the non-HW version) | glcore |
 
-This will produce an error about not being able to change permissions on the "System Volume Information" folder, click "Continue" to move forward.
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
+# Must be set to d3d11 on Xbox Series
+video_driver = "d3d11"
+```
 
-### Configure the right-analog stick 
+### Disable the "Rewind" feature for Dolphin
+
+Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
+
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
+# Dolphin doesn't support rewind
+rewind_enable = "false"
+```
+
+### Controller right-analog stick
 
 Set the following base configuration:
 
@@ -64,12 +79,28 @@ Unset the right-analog stick mappings for consoles that have native controls for
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
 input_hold_fast_forward_axis = "nul"
 input_rewind_axis = "nul"
-
-# Dolphin doesn't support rewind
-rewind_enable = "false"
-# Must be set to d3d11 on Xbox Series 
-video_driver = "d3d11"
 ```
+
+## RetoArch on Xbox Series
+
+* [gamr13.github.io](https://gamr13.github.io/)
+* [Discord - Xbox Emulation Hub](https://discord.com/channels/1007582798598647889/1007590400220991549)
+* [Install guide video (YouTube)](https://www.youtube.com/watch?v=dV9GyKicrAg)
+
+### USB disk drive permissions
+
+From a Windows 10 computer or VM:
+
+1. Format the USB disk drive as GPT and NTFS
+1. From "File Explorer": right-click on the drive, then click "Properties"
+1. Select the "Security" tab, click "Advanced", then click "Change permissions"
+1. Click the "Select a principal" link next to the "Principal" label
+1. Click "Advanced", then click "Find Now"
+1. Double-click on "ALL APPLICATION PACKAGES"
+1. Tick the "Full control" checkbox, then click "OK"
+1. Tick the "Replace all child object permission ..." checkbox, then click "OK"
+
+This will produce an error about not being able to change permissions on the "System Volume Information" folder, click "Continue" to move forward.
 
 ## Recommended Games
 
@@ -289,43 +320,11 @@ Tetris & Dr. Mario
 
 ## Troubleshooting
 
-**Disable Kiosk Mode**
+### Disable Kiosk Mode
 
 ```
 configFile=~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
-```
-
-### Fix crashes when running a game
-
-Instead of allowing cores to change the Video Driver, create a [Core Override](https://docs.libretro.com/guides/overrides/) file as necessary:
-
-1. Navigate to Settings -> Core
-1. Set "Allow Cores to Switch the Video Driver" to "Off"
-1. Save the configuration, and restart RetroArch
-
-Example [Core Override](https://docs.libretro.com/guides/overrides/) file for Sega Dreamcast/Flycast:
-
-```
-# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
-# Must be set to d3d11 on Xbox Series 
-video_driver = "d3d11"
-```
-
-Console | Core | Video driver on Linux | Video driver on Xbox Series
---- | --- | --- | ---
-Nintendo 64 | Mupen64Plus-Next | glcore | gl
-Nintendo GameCube | Dolphin | gl | d3d11
-Sega Dreamcast | Flycast | vulcan | d3d11
-
-### Fix crashes when running a game on Nintendo GameCube/Dolphin 
-
-Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
-
-```
-# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
-# Dolphin doesn't support rewind
-rewind_enable = "false"
 ```
 
 ### Fix Nintendo GameCube/Dolphin copy/load error when running a game
