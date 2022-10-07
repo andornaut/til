@@ -176,6 +176,7 @@ rake
     * [Cores](docs/retroarch.md#cores)
     * [RetoArch on Xbox Series](docs/retroarch.md#retoarch-on-xbox-series)
       * [Configure permissions on USB disk drive](docs/retroarch.md#configure-permissions-on-usb-disk-drive)
+      * [Configure the right-analog stick](docs/retroarch.md#configure-the-right-analog-stick)
     * [Recommended Games](docs/retroarch.md#recommended-games)
       * [Nintendo 64 - June 23, 1996](docs/retroarch.md#nintendo-64---june-23-1996)
       * [Nintendo Game Boy Advance - March 21, 2001](docs/retroarch.md#nintendo-game-boy-advance---march-21-2001)

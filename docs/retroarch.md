@@ -48,6 +48,24 @@ From a Windows 10 computer or VM:
 
 This will produce an error about not being able to change permissions on the "System Volume Information" folder, click "Continue" to move forward.
 
+### Configure the right-analog stick 
+
+Set the following in base configuration:
+
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
+input_hold_fast_forward_axis = "+2"
+input_rewind_axis = "-2"
+```
+
+Unset the right-analog stick mappings for consoles that have native controls for the same, such as the Nintendo GameCube:
+
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
+input_hold_fast_forward_axis = "nul"
+input_rewind_axis = "nul"
+```
+
 ## Recommended Games
 
 ### Nintendo 64 - June 23, 1996
