@@ -29,7 +29,7 @@ Super Nintendo Entertainment System (SNES) | [higan Accuracy](https://docs.libre
 
 ## Configuration
 
-### Set a cache directory
+### Cache directory
 
 1. Navigate to Settings -> Directories
 1. Configure a "Cache" directory
@@ -112,7 +112,7 @@ From a Windows 10 computer or VM:
 
 This will produce an error about not being able to change permissions on the "System Volume Information" folder, click "Continue" to move forward.
 
-## Recommended Games
+## Recommended games
 
 ### Nintendo 64 - June 23, 1996
 ```
