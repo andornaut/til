@@ -13,7 +13,7 @@
 
 * [Emulation General Wiki](https://emulation.gametechwiki.com/index.php/Main_Page)
 
-Platform | Recommended core
+Platform | Core
 --- | ---
 Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
 Nintendo DS (DSi) | [DeSmuME](https://docs.libretro.com/library/desmume/)
@@ -50,7 +50,7 @@ This will produce an error about not being able to change permissions on the "Sy
 
 ## Recommended Games
 
-Nintendo 64
+### Nintendo 64 - June 23, 1996
 ```
 1080 Snowboarding
 Banjo-Kazooie
@@ -80,7 +80,7 @@ Turok - Dinosaur Hunter
 Wave Race 64
 WWF No Mercy
 ```
-Nintendo Game Boy Advance
+### Nintendo Game Boy Advance - March 21, 2001
 ```
 Advance Wars
 Castlevania - Aria of Sorrow
@@ -107,26 +107,29 @@ Super Mario Advance 4 - Super Mario Bros. 3
 Tetris Worlds
 WarioWare, Inc. - Mega Microgames!
 ```
-Nintendo GameCube
+### Nintendo GameCube - November 14, 2001
 ```
 Animal Crossing
 Beyond Good & Evil
 F-Zero GX
+Gotcha Force
 Legend of Zelda - The Wind Waker
 Legend of Zelda - The Twilight Princess
 Luigi's Mansion
 Mario Kart - Double Dash!!
+Metroid Prime 2 - Echoes
 Need for Speed - Underground 2
 Paper Mario - The Thousand-Year Door
 Pikmin 2
 Skies of Arcadia Legends
 Sonic Adventure 2 - Battle
 SSX Tricky
+Star Wars - Rogue Squadron II - Rogue Leader
 Super Mario Sunshine
 Super Monkey Ball
 Super Smash Bros. Melee
 ```
-Sega Dreamcast
+### Sega Dreamcast - November 27, 1998
 ```
 Border Down
 Crazy Taxi
@@ -140,7 +143,7 @@ Sonic Adventure 2
 Soulcalibur
 Spider-Man
 ```
-Sega Genesis
+### Sega Genesis - October 29, 1988
 ```
 Castlevania - Bloodlines
 Desert Strike
@@ -174,7 +177,7 @@ World Series Baseball 98
 X-Men 2 - Clone Wars
 X-Men
 ```
-Sega Saturn
+### Sega Saturn - November 22, 1994
 ```
 Astal
 Burning Rangers
@@ -198,7 +201,7 @@ Virtua Fighter 2
 X-Men Children of the Atom
 X-Men Vs Street Fighter
 ```
-Sony PlayStation (PSX)
+### Sony PlayStation (PSX) - December 3, 1994
 ```
 Ace Combat 3 - Electrosphere
 Bust-A-Move 2 - Arcade Edition
@@ -216,8 +219,10 @@ Spyro the Dragon
 Street Fighter Alpha 2
 Tekken 3
 Tony Hawk's Pro Skater 2
+Xenogears
+Wipeout XL
 ```
-Super Nintendo Entertainment System
+### Super Nintendo Entertainment System (SNES) - November 21, 1990
 ```
 Chrono Trigger
 Contra III - The Alien Wars
