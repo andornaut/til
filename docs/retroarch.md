@@ -29,6 +29,16 @@ Super Nintendo Entertainment System (SNES) | [higan Accuracy](https://docs.libre
 
 ## Configuration
 
+### Set a cache directory
+
+1. Navigate to Settings -> Directories
+1. Configure a "Cache" directory
+1. Save the configuration, and restart RetroArch
+
+This may fix a copy/load error when running games with Nintendo GameCube/Dolphin.
+This may also prevent temporary files from littering the content directories,
+which may occur if RetroArch crashes before it is able to clean up.
+
 ### Video drivers
 
 * [Changing behavior of “gl” and “glcore” video drivers](Changing behavior of “gl” and “glcore” video drivers)
@@ -326,12 +336,6 @@ Tetris & Dr. Mario
 configFile=~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 ```
-
-### Fix Nintendo GameCube/Dolphin copy/load error when running a game
-
-1. Navigate to Settings -> Directories
-1. Configure a "Cache" directory
-1. Save the configuration, and restart RetroArch
 
 ### Fix "Failed to load content" error
 
