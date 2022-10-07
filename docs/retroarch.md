@@ -50,7 +50,7 @@ This will produce an error about not being able to change permissions on the "Sy
 
 ### Configure the right-analog stick 
 
-Set the following in base configuration:
+Set the following base configuration:
 
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
