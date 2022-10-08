@@ -15,7 +15,7 @@
 
 Platform | Core
 --- | ---
-Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
+Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) or [paraLLEl N64](https://www.libretro.com/index.php/category/parallel-n64/)
 Nintendo DS (DSi) | [DeSmuME](https://docs.libretro.com/library/desmume/)
 Nintendo Entertainment System (NES) | [Mesen](https://docs.libretro.com/library/mesen/)
 Nintendo Game Boy/Color (GB) | [SameBoy](https://docs.libretro.com/library/sameboy/)
