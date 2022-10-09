@@ -177,8 +177,8 @@ Animal Crossing
 Beyond Good & Evil
 F-Zero GX
 Gotcha Force
-Legend of Zelda - The Wind Waker
-Legend of Zelda - The Twilight Princess
+Legend of Zelda, The - The Wind Waker
+Legend of Zelda, The - Twilight Princess
 Luigi's Mansion
 Mario Kart - Double Dash!!
 Metroid Prime 2 - Echoes
@@ -192,6 +192,7 @@ Star Wars - Rogue Squadron II - Rogue Leader
 Super Mario Sunshine
 Super Monkey Ball
 Super Smash Bros. Melee
+Tony Hawk's Pro Skater 3
 ```
 ### Sega Dreamcast - November 27, 1998
 ```
@@ -203,9 +204,10 @@ Marvel vs. Capcom 2
 Power Stone
 Rayman 2 - The Great Escape
 Rez
-Sonic Adventure 2
+Sonic Adventure
 Soulcalibur
 Spider-Man
+Street Fighter Alpha 3
 ```
 ### Sega Genesis - October 29, 1988
 ```
@@ -245,12 +247,12 @@ X-Men
 ```
 Astal
 Burning Rangers
-Daytona USA Championship Circuit Edition
+Daytona USA - Championship Circuit Edition
 Dragon Force
 Guardian Heroes
 Manx TT SuperBike
 Marvel Super Heroes
-Nights Into Dreams
+NiGHTS into Dreams...
 Panzer Dragoon Saga
 Radiant Silvergun
 Rayman
@@ -258,12 +260,13 @@ Road Rash
 Saturn Bomberman
 Sega Rally Championship
 Shining Force III
-Shining The Holy Ark
+Shining the Holy Ark
 Sonic Jam
-Virtua Cop
+Street Fighter Alpha 2
+Virtua Cop 2
 Virtua Fighter 2
-X-Men Children of the Atom
-X-Men Vs Street Fighter
+X-Men - Children of the Atom
+X-Men vs. Street Fighter
 ```
 ### Sony PlayStation (PSX) - December 3, 1994
 ```
@@ -275,16 +278,14 @@ Crash Bandicoot 2 - Cortex Strikes Back
 Final Fantasy Tactics
 Final Fantasy VII
 Grandia
-Gran Turismo 2 (Arcade Mode)
-Gran Turismo 2 (Simulation Mode)
+Gran Turismo 2 - Arcade
+Gran Turismo 2 - Simulation
 Mega Man X4
 Metal Gear Solid
 Spyro the Dragon
-Street Fighter Alpha 2
 Tekken 3
-Tony Hawk's Pro Skater 2
-Xenogears
 Wipeout XL
+Xenogears
 ```
 ### Super Nintendo Entertainment System (SNES) - November 21, 1990
 ```
@@ -297,9 +298,9 @@ Earthworm Jim
 Final Fantasy III
 Final Fantasy II
 F-Zero
-Gundam Wing - Endless Duel
+Gundam Wing - Endless Duel (Japanese)
 Illusion of Gaia
-Ken Griffey Jr. Presents Major League Baseball
+Ken Griffey Jr. Presents Major League Baseball (USA) (Rev-A)
 Killer Instinct
 Kirby's Dream Land 3
 Legend of Zelda, The - A Link to the Past
