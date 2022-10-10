@@ -54,8 +54,8 @@ Console | Core | Video driver on Linux | Video driver on Xbox Series
 --- | --- | --- | ---
 Nintendo 64 | Mupen64Plus-Next | glcore | gl
 Nintendo GameCube | Dolphin | glcore | d3d11
-Sega Dreamcast | Flycast | | d3d11
-Sony PlayStation (PSX) | Beetle PSX HW (not the non-HW version) | glcore |
+Sega Dreamcast | Flycast | vulcan | d3d11
+Sony PlayStation (PSX) | Beetle PSX HW (not the non-HW version) | glcore | d3d12
 
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
