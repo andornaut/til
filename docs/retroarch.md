@@ -155,7 +155,6 @@ Star Fox 64
 Star Wars - Rogue Squadron
 Super Mario 64
 Super Smash Bros.
-Tony Hawk's Pro Skater 2
 Turok - Dinosaur Hunter
 Wave Race 64
 WWF No Mercy
@@ -224,6 +223,7 @@ Sonic Adventure
 Soulcalibur
 Spider-Man
 Street Fighter Alpha 3
+Tony Hawk's Pro Skater 2
 ```
 ### Sega Genesis - October 29, 1988
 ```
