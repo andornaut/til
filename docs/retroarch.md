@@ -74,7 +74,7 @@ Console | Core | Rewind is supported
 --- | --- | ---
 Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | ✔
 Nintendo Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | ✔
-Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/) | ✕`*`
+Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/) | ✕*
 Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/) | ✕
 Sega Genesis | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | ✔
 Sega Saturn | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | ✔
