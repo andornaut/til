@@ -86,6 +86,7 @@ Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
 
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
+input_rewind_axis = "nul"
 rewind_enable = "false"
 ```
 
