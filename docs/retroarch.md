@@ -100,7 +100,7 @@ input_hold_fast_forward_axis = "+2"
 input_rewind_axis = "-2"
 ```
 
-Unset the right-analog stick mappings for consoles that have native controls for the same, such as the Nintendo GameCube:
+Unset the right-analog stick mappings for cores that do not support "rewind" or "fast-forward" or for consoles that make use of the right-analog stick, such as the Nintendo GameCube:
 
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
