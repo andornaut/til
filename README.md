@@ -179,7 +179,7 @@ rake
       * [Video drivers](docs/retroarch.md#video-drivers)
       * [Rewind](docs/retroarch.md#rewind)
       * [Controller right-analog stick](docs/retroarch.md#controller-right-analog-stick)
-    * [RetoArch on Xbox Series](docs/retroarch.md#retoarch-on-xbox-series)
+    * [RetroArch on Xbox Series](docs/retroarch.md#retroarch-on-xbox-series)
       * [USB disk drive permissions](docs/retroarch.md#usb-disk-drive-permissions)
     * [Recommended games](docs/retroarch.md#recommended-games)
       * [Nintendo 64 - June 23, 1996](docs/retroarch.md#nintendo-64---june-23-1996)

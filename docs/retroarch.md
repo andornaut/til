@@ -107,7 +107,7 @@ input_hold_fast_forward_axis = "nul"
 input_rewind_axis = "nul"
 ```
 
-## RetoArch on Xbox Series
+## RetroArch on Xbox Series
 
 * [gamr13.github.io](https://gamr13.github.io/)
 * [Discord - Xbox Emulation Hub](https://discord.com/channels/1007582798598647889/1007590400220991549)
