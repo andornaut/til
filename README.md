@@ -177,7 +177,7 @@ rake
     * [Configuration](docs/retroarch.md#configuration)
       * [Cache directory](docs/retroarch.md#cache-directory)
       * [Video drivers](docs/retroarch.md#video-drivers)
-      * [Disable the "Rewind" feature for Dolphin](docs/retroarch.md#disable-the-rewind-feature-for-dolphin)
+      * [Rewind](docs/retroarch.md#rewind)
       * [Controller right-analog stick](docs/retroarch.md#controller-right-analog-stick)
     * [RetoArch on Xbox Series](docs/retroarch.md#retoarch-on-xbox-series)
       * [USB disk drive permissions](docs/retroarch.md#usb-disk-drive-permissions)
