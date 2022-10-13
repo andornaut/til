@@ -74,7 +74,7 @@ Console | Core | Rewind is supported
 --- | --- | ---
 Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | ✔
 Nintendo Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | ✔
-Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/) | ✕*
+Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/) | ✕\*
 Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/) | ✕
 Sega Genesis | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | ✔
 Sega Saturn | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | ✔
@@ -139,7 +139,6 @@ Diddy Kong Racing
 Donkey Kong 64
 Excitebike 64
 F-Zero X
-GoldenEye 007
 Kirby 64 - The Crystal Shards
 Legend of Zelda, The - Majora's Mask
 Legend of Zelda, The - Ocarina of Time
