@@ -231,6 +231,7 @@ Tony Hawk's Pro Skater 2
 Castlevania - Bloodlines
 Desert Strike
 Disney's Aladdin
+Earthworm Jim
 Ecco the Dolphin
 Evander Holyfield's "Real Deal" Boxing
 Golden Axe
@@ -311,7 +312,6 @@ Contra III - The Alien Wars
 Donkey Kong Country 2 - Diddy's Kong Quest
 Donkey Kong Country
 EarthBound
-Earthworm Jim
 Final Fantasy III
 Final Fantasy II
 F-Zero
