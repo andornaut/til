@@ -147,6 +147,7 @@ Mario Kart 64
 Mario Party 2
 Mario Party 3
 Mario Tennis
+NBA Street Vol. 2
 Paper Mario
 Perfect Dark
 Pilotwings 64
