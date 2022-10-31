@@ -170,6 +170,7 @@ Fire Emblem - The Sacred Stones
 F-Zero - Maximum Velocity
 Golden Sun
 Gunstar Super Heroes
+Harvest Moon - Friends of Mineral Town
 Kirby & the Amazing Mirror
 Legend of Zelda, The - A Link to the Past & Four Swords
 Legend of Zelda, The - The Minish Cap
@@ -185,6 +186,8 @@ Pokemon LeafGreen Version
 Sonic Advance 3
 Super Mario Advance 4 - Super Mario Bros. 3
 Tetris Worlds
+Tony Hawk's Pro Skater 2
+Ultimate Card Games
 WarioWare, Inc. - Mega Microgames!
 ```
 ### Nintendo GameCube - November 14, 2001
