@@ -186,6 +186,7 @@ rake
       * [Nintendo Game Boy Advance - March 21, 2001](docs/retroarch.md#nintendo-game-boy-advance---march-21-2001)
       * [Nintendo GameCube - November 14, 2001](docs/retroarch.md#nintendo-gamecube---november-14-2001)
       * [Sega Dreamcast - November 27, 1998](docs/retroarch.md#sega-dreamcast---november-27-1998)
+      * [Sega Game Gear - October 6, 1990](docs/retroarch.md#sega-game-gear---october-6-1990)
       * [Sega Genesis - October 29, 1988](docs/retroarch.md#sega-genesis---october-29-1988)
       * [Sega Saturn - November 22, 1994](docs/retroarch.md#sega-saturn---november-22-1994)
       * [Sony PlayStation (PSX) - December 3, 1994](docs/retroarch.md#sony-playstation-psx---december-3-1994)

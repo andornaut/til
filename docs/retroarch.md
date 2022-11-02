@@ -22,6 +22,7 @@ Nintendo Game Boy/Color (GB) | [SameBoy](https://docs.libretro.com/library/sameb
 Nintendo Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/)
 Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/)
 Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/)
+Sega Game Gear | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega Genesis | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega Saturn | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) ([Mednafen](https://mednafen.github.io/))
 Sony PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Mednafen](https://mednafen.github.io/)) on Linux or [Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series
@@ -76,6 +77,7 @@ Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64
 Nintendo Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | ✔
 Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/) | ✕\*
 Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/) | ✕
+Sega Game Gear | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | ✔
 Sega Genesis | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | ✔
 Sega Saturn | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | ✔
 Sony PlayStation (PSX) | [Beetle PSX](https://docs.libretro.com/library/beetle_psx/) | ✔
@@ -229,6 +231,19 @@ Soulcalibur
 Spider-Man
 Street Fighter Alpha 3
 Tony Hawk's Pro Skater 2
+```
+### Sega Game Gear - October 6, 1990
+```
+Castle of Illusion Starring Mickey Mouse
+Columns
+Fantasy Zone
+Legend of Illusion Starring Mickey Mouse
+Power Strike II
+Ristar
+Shining Force - The Sword of Hajya
+Shinobi
+The Lucky Dime Caper Starring Donald Duck
+World Series Baseball
 ```
 ### Sega Genesis - October 29, 1988
 ```
