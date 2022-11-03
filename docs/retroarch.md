@@ -148,12 +148,9 @@ Legend of Zelda, The - Majora's Mask
 Legend of Zelda, The - Ocarina of Time
 Mario Golf
 Mario Kart 64
-Mario Party 2
-Mario Party 3
 Mario Tennis
 NBA Street Vol. 2
 Paper Mario
-Perfect Dark
 Pilotwings 64
 Pokemon Puzzle League
 Star Fox 64
@@ -176,7 +173,6 @@ Golden Sun
 Gunstar Super Heroes
 Harvest Moon - Friends of Mineral Town
 Kirby & the Amazing Mirror
-Legend of Zelda, The - A Link to the Past & Four Swords
 Legend of Zelda, The - The Minish Cap
 Mario Golf - Advance Tour
 Mario Kart - Super Circuit
@@ -237,21 +233,24 @@ Tony Hawk's Pro Skater 2
 ### Sega Game Gear - October 6, 1990
 ```
 Castle of Illusion Starring Mickey Mouse
+Coca-Cola Kid
 Columns
 Fantasy Zone
 Legend of Illusion Starring Mickey Mouse
+Ninja Gaiden
 Power Strike II
 Ristar
 Shining Force - The Sword of Hajya
 Shinobi
 The Lucky Dime Caper Starring Donald Duck
 World Series Baseball
+X-Men
 ```
 ### Sega Genesis - October 29, 1988
 ```
+Aladdin
 Castlevania - Bloodlines
 Desert Strike
-Disney's Aladdin
 Earthworm Jim
 Ecco the Dolphin
 Evander Holyfield's "Real Deal" Boxing
@@ -274,6 +273,7 @@ Sonic the Hedgehog 2
 Sonic the Hedgehog 3
 Sonic the Hedgehog
 Streets of Rage 2
+Super Monaco GP
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
 Thunder Force IV
 ToeJam & Earl
