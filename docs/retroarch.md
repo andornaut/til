@@ -1,6 +1,7 @@
 # RetroArch
 
 * [Official site](https://www.libretro.com/)
+* [CHD files](https://retropie.org.uk/docs/CHD-files/) - How to create
 * [Docs](https://docs.libretro.com/)
 * [Flathub](https://flathub.org/apps/details/org.libretro.RetroArch)
 * [ansible-workstation/games](https://github.com/andornaut/ansible-workstation/tree/master/roles/games)
@@ -114,7 +115,8 @@ input_rewind_axis = "nul"
 
 * [gamr13.github.io](https://gamr13.github.io/)
 * [Discord - Xbox Emulation Hub](https://discord.com/channels/1007582798598647889/1007590400220991549)
-* [Install guide video (YouTube)](https://www.youtube.com/watch?v=dV9GyKicrAg)
+* [Install guide video (YouTube)](https://www.youtube.com/watch?v=boHTJj8rDe0)
+* [Install guide video (YouTube)](https://www.youtube.com/watch?v=dV9GyKicrAg) (older)
 
 ### USB disk drive permissions
 
