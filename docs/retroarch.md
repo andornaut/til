@@ -143,13 +143,13 @@ Diddy Kong Racing
 Donkey Kong 64
 Excitebike 64
 F-Zero X
+International Superstar Soccer 2000
 Kirby 64 - The Crystal Shards
 Legend of Zelda, The - Majora's Mask
 Legend of Zelda, The - Ocarina of Time
 Mario Golf
 Mario Kart 64
 Mario Tennis
-NBA Street Vol. 2
 Paper Mario
 Pilotwings 64
 Pokemon Puzzle League
@@ -158,7 +158,7 @@ Star Wars - Rogue Squadron
 Super Mario 64
 Super Smash Bros.
 Turok - Dinosaur Hunter
-Wave Race 64
+Wave Race 64 - Kawasaki Jet Ski
 WWF No Mercy
 ```
 ### Nintendo Game Boy Advance - March 21, 2001
@@ -172,7 +172,7 @@ F-Zero - Maximum Velocity
 Golden Sun
 Gunstar Super Heroes
 Harvest Moon - Friends of Mineral Town
-Kirby & the Amazing Mirror
+Kirby & The Amazing Mirror
 Legend of Zelda, The - The Minish Cap
 Mario Golf - Advance Tour
 Mario Kart - Super Circuit
@@ -180,15 +180,14 @@ Mario & Luigi - Superstar Saga
 Mario Tennis - Power Tour
 Mega Man Zero
 Metroid - Zero Mission
-Pokemon Emerald Version
-Pokemon FireRed Version
-Pokemon LeafGreen Version
+Pokemon - Emerald Version
+Pokemon - FireRed Version
+Pokemon - LeafGreen Version
 Sonic Advance 3
-Super Mario Advance 4 - Super Mario Bros. 3
 Tetris Worlds
 Tony Hawk's Pro Skater 2
 Ultimate Card Games
-WarioWare, Inc. - Mega Microgames!
+WarioWare, Inc. - Mega Microgame$!
 ```
 ### Nintendo GameCube - November 14, 2001
 ```
@@ -201,6 +200,7 @@ Legend of Zelda, The - Twilight Princess
 Luigi's Mansion
 Mario Kart - Double Dash!!
 Metroid Prime 2 - Echoes
+NBA Street Vol. 2
 Need for Speed - Underground 2
 Paper Mario - The Thousand-Year Door
 Pikmin 2
@@ -221,7 +221,6 @@ Grandia II
 Jet Grind Radio
 Marvel vs. Capcom 2
 NFL Blitz 2000
-Power Stone
 Rayman 2 - The Great Escape
 Rez
 Sonic Adventure
@@ -237,23 +236,24 @@ Coca-Cola Kid
 Columns
 Fantasy Zone
 Legend of Illusion Starring Mickey Mouse
+Lucky Dime Caper Starring Donald Duck, The
 Ninja Gaiden
 Power Strike II
 Ristar
 Shining Force - The Sword of Hajya
 Shinobi
-The Lucky Dime Caper Starring Donald Duck
 World Series Baseball
 X-Men
+
 ```
 ### Sega Genesis - October 29, 1988
 ```
 Aladdin
 Castlevania - Bloodlines
-Desert Strike
+Desert Strike - Return to the Gulf
 Earthworm Jim
 Ecco the Dolphin
-Evander Holyfield's "Real Deal" Boxing
+Evander Holyfield's 'Real Deal' Boxing
 Golden Axe
 Gunstar Heroes
 Herzog Zwei
@@ -262,16 +262,16 @@ Michael Jackson's Moonwalker
 Mortal Kombat II
 MUSHA - Metallic Uniframe Super Hybrid Armor
 NFL Sports Talk Football '93 Starring Joe Montana
-NHL 94
-Phantasy Star IV - The End of the Millennium
+NHL '94
+Phantasy Star IV
 Revenge of Shinobi, The
-Road Rash 3  - Tour de Force
+Road Rash 3
 Rocket Knight Adventures
 Shining Force II
 Shinobi III - Return of the Ninja Master
-Sonic the Hedgehog 2
-Sonic the Hedgehog 3
-Sonic the Hedgehog
+Sonic The Hedgehog 2
+Sonic The Hedgehog 3
+Sonic The Hedgehog
 Streets of Rage 2
 Super Monaco GP
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
@@ -317,8 +317,8 @@ Crash Bandicoot 2 - Cortex Strikes Back
 Final Fantasy Tactics
 Final Fantasy VII
 Grandia
-Gran Turismo 2 - Arcade
-Gran Turismo 2 - Simulation
+Gran Turismo 2
+Gran Turismo 2
 Mega Man X4
 Metal Gear Solid
 Spyro the Dragon
@@ -336,9 +336,9 @@ EarthBound
 Final Fantasy III
 Final Fantasy II
 F-Zero
-Gundam Wing - Endless Duel (Japanese)
+Gundam Wing - Endless Duel
 Illusion of Gaia
-Ken Griffey Jr. Presents Major League Baseball (USA) (Rev-A)
+Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
 Kirby's Dream Land 3
 Legend of Zelda, The - A Link to the Past
@@ -349,7 +349,7 @@ NBA Jam - Tournament Edition
 Secret of Mana
 Sparkster
 Star Fox
-Street Fighter II Turbo - Hyper Fighting
+Street Fighter II Turbo
 Super Bomberman
 Super Castlevania IV
 Super Double Dragon
@@ -360,6 +360,7 @@ Super Mario World 2 - Yoshi's Island
 Super Mario World
 Super Metroid
 Super Punch-Out!!
+Super Tennis
 Tecmo Super Bowl
 Teenage Mutant Ninja Turtles IV - Turtles in Time
 Teenage Mutant Ninja Turtles - Tournament Fighters
