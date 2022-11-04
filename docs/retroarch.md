@@ -317,7 +317,6 @@ Final Fantasy Tactics
 Final Fantasy VII
 Grandia
 Gran Turismo 2
-Gran Turismo 2
 Mega Man X4
 Metal Gear Solid
 Spyro the Dragon
