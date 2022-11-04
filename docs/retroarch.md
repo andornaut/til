@@ -177,7 +177,6 @@ Legend of Zelda, The - The Minish Cap
 Mario Golf - Advance Tour
 Mario Kart - Super Circuit
 Mario & Luigi - Superstar Saga
-Mario Tennis - Power Tour
 Mega Man Zero
 Metroid - Zero Mission
 Pokemon - Emerald Version
