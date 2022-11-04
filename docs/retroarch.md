@@ -183,7 +183,6 @@ Pokemon - Emerald Version
 Pokemon - FireRed Version
 Pokemon - LeafGreen Version
 Sonic Advance 3
-Tetris Worlds
 Tony Hawk's Pro Skater 2
 Ultimate Card Games
 WarioWare, Inc. - Mega Microgame$!
@@ -340,6 +339,7 @@ Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
 Kirby's Dream Land 3
 Legend of Zelda, The - A Link to the Past
+Mario Paint
 Mega Man X2
 Mega Man X
 Ms. Pac-Man
