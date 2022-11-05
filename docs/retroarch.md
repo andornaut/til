@@ -261,6 +261,7 @@ Mortal Kombat II
 MUSHA - Metallic Uniframe Super Hybrid Armor
 NFL Sports Talk Football '93 Starring Joe Montana
 NHL '94
+OutRun
 Phantasy Star IV
 Revenge of Shinobi, The
 Road Rash 3
@@ -272,6 +273,7 @@ Sonic The Hedgehog 3
 Sonic The Hedgehog
 Streets of Rage 2
 Super Monaco GP
+Super Thunder Blade
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
 Thunder Force IV
 ToeJam & Earl
