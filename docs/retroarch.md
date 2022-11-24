@@ -174,7 +174,6 @@ Gunstar Super Heroes
 Harvest Moon - Friends of Mineral Town
 Kirby & The Amazing Mirror
 Legend of Zelda, The - The Minish Cap
-Mario Golf - Advance Tour
 Mario Kart - Super Circuit
 Mario & Luigi - Superstar Saga
 Mega Man Zero
