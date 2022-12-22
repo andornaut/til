@@ -209,7 +209,7 @@ rake
     * [Debugging](docs/ruby.md#debugging)
   * [Rust](docs/rust.md#rust)
     * [Books](docs/rust.md#books)
-    * [Articles and blogs](docs/rust.md#articles-and-blogs)
+    * [Articles, blogs, and courses](docs/rust.md#articles-blogs-and-courses)
     * [Getting started](docs/rust.md#getting-started)
     * [Macros](docs/rust.md#macros)
     * [Cargo](docs/rust.md#cargo)
