@@ -28,8 +28,9 @@
   * [Shared-State Concurrency](https://doc.rust-lang.org/book/ch16-03-shared-state.html)
 Read a local copy of "The Rust Programming Language" book in a web browser with: `rustup doc --book`
 
-## Articles and blogs
+## Articles, blogs, and courses
 
+* [Comprehensive Rust](https://google.github.io/comprehensive-rust/) - 4 day course by Google's Android team 
 * [Finding Closure in Rust](https://huonw.github.io/blog/2015/05/finding-closure-in-rust/)
 * [How to Idiomatically Use Global Variables in Rust](https://www.sitepoint.com/rust-global-variables/)
 * [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/)
