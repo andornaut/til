@@ -309,18 +309,23 @@ X-Men vs. Street Fighter
 ### Sony PlayStation (PSX) - December 3, 1994
 ```
 Ace Combat 3 - Electrosphere
+Ape Escape
 Bust-A-Move 2 - Arcade Edition
 Castlevania - Symphony of the Night
 Chrono Cross
 Crash Bandicoot 2 - Cortex Strikes Back
 Final Fantasy Tactics
 Final Fantasy VII
+Gex - Enter the Gecko
 Grandia
 Gran Turismo 2
+MediEvil
+Mega Man Legends
 Mega Man X4
 Metal Gear Solid
 Spyro the Dragon
 Tekken 3
+Twisted Metal 2
 Wipeout XL
 Xenogears
 ```
