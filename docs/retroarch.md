@@ -241,7 +241,6 @@ Shining Force - The Sword of Hajya
 Shinobi
 World Series Baseball
 X-Men
-
 ```
 ### Sega Genesis - October 29, 1988
 ```
