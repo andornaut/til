@@ -47,7 +47,7 @@ On the client Linux device:
 * [Automatic filesystem check](https://docs.netgate.com/pfsense/en/latest/troubleshooting/filesystem-check.html)
 
 1. Connect via [serial console](./networking.md#serial-console)
-  * Serial settings: 115200/8/N/1 with Flow Control=Off
+   * Serial settings: 115200/8/N/1 with Flow Control=Off
 1. Press SPACE key during kernel boot to drop to `loader>` prompt
 1. Run `boot -s` to boot into single user mode
 1. Run `/sbin/fsck_ufs -fy /` multiple times until the root partition reports as "clean"
