@@ -45,6 +45,15 @@ alias scratch="code --new-window ${HOME}/scratch.md"
 alias til="code --new-window ${HOME}/src/github.com/andornaut/til"
 ```
 
+## Enable key repeating on macOS
+
+* [Howto](https://github.com/VSCodeVim/Vim#mac)
+
+```
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+defaults delete -g ApplePressAndHoldEnabled # If necessary, reset global default
+```
+
 ## Extensions
 
 * [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)

@@ -276,6 +276,7 @@ rake
   * [Visual Studio Code](docs/vscode.md#visual-studio-code)
     * [Keyboard shortcuts](docs/vscode.md#keyboard-shortcuts)
     * [Add CLI executable on macOS](docs/vscode.md#add-cli-executable-on-macos)
+    * [Enable key repeating on macOS](docs/vscode.md#enable-key-repeating-on-macos)
     * [Extensions](docs/vscode.md#extensions)
   * [wget](docs/wget.md#wget)
     * [Download recursively](docs/wget.md#download-recursively)
