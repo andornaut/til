@@ -11,6 +11,13 @@ rake
 ## Table of contents
 
 <!-- mdtoc -->
+  * [3D Printing](docs/3d-printing.md#3d-printing)
+    * [Communities](docs/3d-printing.md#communities)
+    * [Documentation and guides](docs/3d-printing.md#documentation-and-guides)
+    * [Hardware](docs/3d-printing.md#hardware)
+    * [Software](docs/3d-printing.md#software)
+      * [Models](docs/3d-printing.md#models)
+      * [Shopping](docs/3d-printing.md#shopping)
   * [Ansible](docs/ansible.md#ansible)
     * [Debugging](docs/ansible.md#debugging)
     * [Ansible Galaxy](docs/ansible.md#ansible-galaxy)
