@@ -1,6 +1,8 @@
 # 3D Printing
 
-* [@andornaut /keyboards](https://github.com/andornaut/keyboards)
+* [./Keyboards](./keyboards.md)
+* [andornaut@github /computers-cases](https://github.com/andornaut/computer-cases)
+* [andornaut@github /keyboards](https://github.com/andornaut/keyboards)
 
 ## Communities
 
@@ -28,11 +30,12 @@
   * [Linux](https://github.com/bambulab/BambuStudio) (build from source, then run the generated AppImage)
 * [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/)
 
-### Models
+## Models and projects
 
+* [/r/gridfinity/](https://old.reddit.com/r/gridfinity/)
 * [Printables](https://www.printables.com/model)
 * [Thingverse](https://www.thingiverse.com/)
 
-### Shopping
+## Stores
 
 * [Overture 3D (fillament)](https://www.overture3d.ca/)
