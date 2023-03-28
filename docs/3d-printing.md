@@ -21,6 +21,8 @@
 ## Hardware
 
 * [Bambu Lab P1P 3D printer](https://bambulab.com/en/p1)
+  * [Manual](https://wiki.bambulab.com/en/p1/manual)
+  * [Printable upgrades](https://wiki.bambulab.com/en/p1/manual/p1p-upgrades)
 
 ## Software
 
