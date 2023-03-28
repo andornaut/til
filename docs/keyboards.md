@@ -6,6 +6,7 @@
 ## Communities
 
 * [/r/CustomKeyboards](https://old.reddit.com/r/CustomKeyboards/)
+* [/r/ErgoMechKeyboards/](https://old.reddit.com/r/ErgoMechKeyboards/)
 * [/r/MechanicalKeyboards](https://old.reddit.com/r/MechanicalKeyboards/)
 * [/r/olkb](https://old.reddit.com/r/olkb/)
 * [Absolem/Ergogen on Discord](https://discord.com/invite/DbCfZfZ)
@@ -38,7 +39,7 @@
 ## Software
 
 * [Autodesk Fusion 360 (Linux)](https://github.com/cryinkfly/Autodesk-Fusion-360-for-Linux)
-* [Ergogen](https://github.com/ergogen/ergogen) | Online: [Official](https://ergogen.xyz/) and [Unofficial, but better](https://ergogen.cache.works/)
+* [Ergogen](https://github.com/ergogen/ergogen) | Online: [Official](https://ergogen.xyz/) and [Unofficial, but better](https://ergogen.cache.works/)([GitHub](https://github.com/MvEerd/ergogen-gui))
   * [absolem.yaml](https://github.com/mrzealot/absolem/blob/master/absolem.yaml), [claw.yaml](https://gitlab.com/Audijo/keyboard/-/blob/master/claw/claw.yaml), [mrkeyboard.yaml](https://github.com/MrCarney/mrkeyboard/blob/main/mrkeyboard.yaml), [rufous_mx.yml](https://github.com/jcmkk3/trochilidae/blob/main/rufous/rufous_mx.yml)
   * [Ergogen V4 Migration Guide](https://github.com/tsteffek/Ergogen-V4-Migration-Guide)
   * [Schema](https://github.com/ergogen/ergogen/blob/develop/meta/schema.json) (v3, outdated)
