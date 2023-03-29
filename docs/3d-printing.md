@@ -30,6 +30,7 @@
 * [Bambu Studio (Windows and macOS)](https://bambulab.com/en/download/studio) 
   * [Linux](https://github.com/bambulab/BambuStudio) (build from source, then run the generated AppImage)
 * [FreeCAD](https://www.freecad.org/)
+* [OnShape](https://cad.onshape.com/)
 * [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/)
 
 ## Models and projects
