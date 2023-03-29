@@ -26,10 +26,10 @@
 
 ## Software
 
-* [Autodesk Fusion 360 (Linux via Wine)](https://github.com/cryinkfly/Autodesk-Fusion-360-for-Linux)
 * [Autodesk Tinkercad](https://www.tinkercad.com/) (for kids)
 * [Bambu Studio (Windows and macOS)](https://bambulab.com/en/download/studio) 
   * [Linux](https://github.com/bambulab/BambuStudio) (build from source, then run the generated AppImage)
+* [FreeCAD](https://www.freecad.org/)
 * [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/)
 
 ## Models and projects
