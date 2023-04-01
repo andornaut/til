@@ -23,7 +23,6 @@
 * [Keebfolio: Awesome mechanical keyboards](https://github.com/BenRoe/awesome-mechanical-keyboard/)
 * [Keyboard.university](https://www.keyboard.university/)
 * [Let's Split Guide](https://github.com/nicinabox/lets-split-guide)
-* [Miniware ES15 Motion Control Electric Screwdriver](https://www.miniware.com.cn/product/es15-motion-control-electric-screwdriver/)
 * [PCB designer guide](https://wiki.ai03.com/books/pcb-design/chapter/pcb-designer-guide)
 * [QMK hand-wiring guide](https://github.com/qmk/qmk_firmware/blob/master/docs/hand_wire.md)
   * [Split Keyboard](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_split_keyboard.md)
@@ -34,6 +33,7 @@
 
 * [KBDFans Lube Tools](https://shockport.ca/collections/tools/products/kbdfans-lube-tools-collection)
 * [IRWIN VISE-GRIP Wire Stripper](https://www.amazon.ca/dp/B000OQ21CA/)
+* [Miniware ES15 Motion Control Electric Screwdriver](https://www.miniware.com.cn/product/es15-motion-control-electric-screwdriver/)
 * [MX Keyswitch Opener](https://kiiboss.studio/products/mx-keyswitch-opener)
 * [TS101 Soldering Iron](https://www.amazon.ca/gp/product/B01MDTO6X7/)
 
