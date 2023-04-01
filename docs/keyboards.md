@@ -50,6 +50,7 @@
   * [kicad-round-tracks](https://github.com/mitxela/kicad-round-tracks)
 * [KiCad Project Generator and KLE converter](https://github.com/adamws/keyboard-tools) | [Online](http://keyboard-tools.xyz/)
 * [KMK firmware](https://github.com/KMKfw/kmk_firmware)
+* [OnShape](https://cad.onshape.com)
 * [Plate & Case Builder](http://builder.swillkb.com/) (Online only)
 * [QMK firmware](https://github.com/qmk/qmk_firmware)
 * [ZMK firmware](https://zmk.dev/)
