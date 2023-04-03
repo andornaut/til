@@ -22,6 +22,7 @@
 * [Ergogen - A declarative language for generating ergonomic keyboards (Video)](https://www.youtube.com/watch?v=5tERUZ_BSPM)
 * [Keebfolio: Awesome mechanical keyboards](https://github.com/BenRoe/awesome-mechanical-keyboard/)
 * [Keyboard.university](https://www.keyboard.university/)
+* [Let's Design A Keyboard With Ergogen v4](https://flatfootfox.com/ergogen-introduction/)
 * [Let's Split Guide](https://github.com/nicinabox/lets-split-guide)
 * [PCB designer guide](https://wiki.ai03.com/books/pcb-design/chapter/pcb-designer-guide)
 * [QMK hand-wiring guide](https://github.com/qmk/qmk_firmware/blob/master/docs/hand_wire.md)

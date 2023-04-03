@@ -21,6 +21,7 @@
 ## Hardware
 
 * [Bambu Lab P1P 3D printer](https://bambulab.com/en/p1)
+  * [Anti-Vibration Feet](https://ca.store.bambulab.com/products/anti-vibration-feet-for-p1p)
   * [Manual](https://wiki.bambulab.com/en/p1/manual)
   * [Printable upgrades](https://wiki.bambulab.com/en/p1/manual/p1p-upgrades)
 
