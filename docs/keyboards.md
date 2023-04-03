@@ -34,6 +34,7 @@
 
 * [KBDFans Lube Tools](https://shockport.ca/collections/tools/products/kbdfans-lube-tools-collection)
 * [IRWIN VISE-GRIP Wire Stripper](https://www.amazon.ca/dp/B000OQ21CA/)
+* [Miniware ES15 Motion Control Electric Screwdriver](https://www.miniware.com.cn/product/es15-motion-control-electric-screwdriver/)
 * [MX Keyswitch Opener](https://kiiboss.studio/products/mx-keyswitch-opener)
 * [TS101 Soldering Iron](https://www.amazon.ca/gp/product/B01MDTO6X7/)
 
