@@ -42,10 +42,10 @@
 
 * [Ergogen](https://github.com/ergogen/ergogen) | Online: [Official](https://ergogen.xyz/) and [Unofficial, but better](https://ergogen.cache.works/) ([GitHub](https://github.com/MvEerd/ergogen-gui))
   * [absolem.yaml](https://github.com/mrzealot/absolem/blob/master/absolem.yaml), [claw.yaml](https://gitlab.com/Audijo/keyboard/-/blob/master/claw/claw.yaml), [mrkeyboard.yaml](https://github.com/MrCarney/mrkeyboard/blob/main/mrkeyboard.yaml), [rufous_mx.yml](https://github.com/jcmkk3/trochilidae/blob/main/rufous/rufous_mx.yml)
-  * [v4 Docs (WIP)](https://deploy-preview-12--ergogen.netlify.app/]
-  * [v4 Migration Guide](https://github.com/tsteffek/Ergogen-V4-Migration-Guide)
+  * [v4 docs (WIP)](https://deploy-preview-12--ergogen.netlify.app/)
+  * [v4 migration guide](https://github.com/tsteffek/Ergogen-V4-Migration-Guide)
   * [Schema](https://github.com/ergogen/ergogen/blob/develop/meta/schema.json) (v3, outdated)
-  * [Useful ergogen components](https://github.com/Woovie/useful-ergogen-components)
+  * [Useful components](https://github.com/Woovie/useful-ergogen-components)
 * [FreeCAD](https://www.freecad.org/)
 * [Keyboard Firmware Builder](https://kbfirmware.com/)
 * [Keyboard Layout Editor](https://github.com/ijprest/keyboard-layout-editor) | [Online](http://www.keyboard-layout-editor.com/)
