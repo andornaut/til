@@ -36,7 +36,7 @@
 
 ## Models and projects
 
-* [Gridfinity](https://gridfinity.xyz/) | [/r/gridfinity/](https://old.reddit.com/r/gridfinity/)
+* [Gridfinity](https://gridfinity.xyz/), [/r/gridfinity/](https://old.reddit.com/r/gridfinity/)
 * [Printables](https://www.printables.com/model)
 * [Thangs](https://thangs.com)
 * [Thingverse](https://www.thingiverse.com/)
