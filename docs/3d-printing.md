@@ -2,6 +2,7 @@
 
 * [./Keyboards](./keyboards.md)
 * [andornaut@github /computers-cases](https://github.com/andornaut/computer-cases)
+* [andornaut@github /gridfinity-models](https://github.com/andornaut/computer-cases)
 * [andornaut@github /keyboards](https://github.com/andornaut/keyboards)
 
 ## Communities
