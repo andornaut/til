@@ -28,12 +28,12 @@
 
 ## Software
 
-* [Autodesk Tinkercad](https://www.tinkercad.com/) (for kids)
+* [Autodesk Tinkercad](https://www.tinkercad.com/)
 * [Bambu Studio (Windows and macOS)](https://bambulab.com/en/download/studio) 
   * [Linux](https://github.com/bambulab/BambuStudio) (build from source, then run the generated AppImage)
+  * [OrcaSlicer](https://github.com/SoftFever/OrcaSlicer) - an improved fork of Bambu Studio
 * [FreeCAD](https://www.freecad.org/)
 * [OnShape](https://cad.onshape.com/)
-* [PrusaSlicer](https://www.prusa3d.com/page/prusaslicer_424/)
 
 ## Models and projects
 
