@@ -45,4 +45,7 @@
 
 ## Stores
 
+### Fillament
+
 * [Filaments.ca](https://filaments.ca/)
+* [Polymaker](https://ca.polymaker.com/) 
