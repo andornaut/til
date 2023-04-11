@@ -23,8 +23,13 @@
 
 * [Bambu Lab P1P 3D printer](https://bambulab.com/en/p1)
   * [Anti-Vibration Feet](https://ca.store.bambulab.com/products/anti-vibration-feet-for-p1p)
+  * [High Temperature Plate (PEI)](https://ca.store.bambulab.com/products/bambu-high-temperature-plate)
   * [Manual](https://wiki.bambulab.com/en/p1/manual)
   * [Printable upgrades](https://wiki.bambulab.com/en/p1/manual/p1p-upgrades)
+
+## Supplies
+
+ * [Bambu Labs Liquid Glue for Build Plate (PLA/ABS/PETG)](https://ca.store.bambulab.com/products/liquid-glue-for-build-plate)
 
 ## Software
 

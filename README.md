@@ -15,6 +15,7 @@ rake
     * [Communities](docs/3d-printing.md#communities)
     * [Documentation and guides](docs/3d-printing.md#documentation-and-guides)
     * [Hardware](docs/3d-printing.md#hardware)
+    * [Supplies](docs/3d-printing.md#supplies)
     * [Software](docs/3d-printing.md#software)
     * [Models and projects](docs/3d-printing.md#models-and-projects)
     * [Stores](docs/3d-printing.md#stores)
