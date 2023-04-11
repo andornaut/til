@@ -1,8 +1,8 @@
 # 3D Printing
 
 * [./Keyboards](./keyboards.md)
+* [andornaut@github /3d-models](https://github.com/andornaut/3d-models)
 * [andornaut@github /computers-cases](https://github.com/andornaut/computer-cases)
-* [andornaut@github /gridfinity-models](https://github.com/andornaut/computer-cases)
 * [andornaut@github /keyboards](https://github.com/andornaut/keyboards)
 
 ## Communities
