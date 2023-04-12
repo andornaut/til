@@ -37,6 +37,10 @@
 * [Bambu Studio (Windows and macOS)](https://bambulab.com/en/download/studio) 
   * [Linux](https://github.com/bambulab/BambuStudio) (build from source, then run the generated AppImage)
   * [OrcaSlicer](https://github.com/SoftFever/OrcaSlicer) - an improved fork of Bambu Studio
+    ```
+    # Install video playback dependencies:
+    sudo apt install gstreamer1.0-libav gstreamer1.0-plugins-bad
+    ```
 * [FreeCAD](https://www.freecad.org/)
 * [OnShape](https://cad.onshape.com/)
 
