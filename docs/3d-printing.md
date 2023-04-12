@@ -25,6 +25,7 @@
   * [Anti-Vibration Feet](https://ca.store.bambulab.com/products/anti-vibration-feet-for-p1p)
   * [High Temperature Plate (PEI)](https://ca.store.bambulab.com/products/bambu-high-temperature-plate)
   * [Manual](https://wiki.bambulab.com/en/p1/manual)
+  * [OrcaSlicer calibration](https://github.com/SoftFever/OrcaSlicer/wiki/Calibration)
   * [Printable upgrades](https://wiki.bambulab.com/en/p1/manual/p1p-upgrades)
 
 ## Supplies
