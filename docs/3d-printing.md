@@ -14,10 +14,10 @@
 ## Documentation and guides
 
 * [Beginner’s Guide To 3D Printing](https://3dinsider.com/3d-printing-guide/)
+* [Common 3D printing problems troubleshooting guide](https://all3dp.com/1/common-3d-printing-problems-troubleshooting-3d-printer-issues/)
 * [Let's Print 3D](https://letsprint3d.net/)
   * [How to Finish 3D Prints with Chrome Paint](https://letsprint3d.net/guide-how-to-finish-3d-prints/)
   * [How to Print PETG Filament with Perfect Results](https://letsprint3d.net/how-to-print-petg/)
-* [Is this good? by MechKeys](https://mechkeys.me/)
 
 ## Hardware
 
@@ -53,4 +53,5 @@
 ### Fillament
 
 * [Filaments.ca](https://filaments.ca/)
+* [Overture](https://www.overture3d.ca/)
 * [Polymaker](https://ca.polymaker.com/) 
