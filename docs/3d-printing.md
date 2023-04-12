@@ -40,14 +40,6 @@
 * [FreeCAD](https://www.freecad.org/)
 * [OnShape](https://cad.onshape.com/)
 
-## Models and projects
-
-* [Bambu Lab STL models](https://wiki.bambulab.com/en/knowledge-sharing/Links-to-STL-models)
-* [Gridfinity](https://gridfinity.xyz/), [/r/gridfinity/](https://old.reddit.com/r/gridfinity/)
-* [Printables](https://www.printables.com/model)
-* [Thangs](https://thangs.com)
-* [Thingverse](https://www.thingiverse.com/)
-
 ## Stores
 
 ### Fillament
