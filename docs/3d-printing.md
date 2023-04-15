@@ -44,6 +44,7 @@
     ```
 * [FreeCAD](https://www.freecad.org/)
 * [OnShape](https://cad.onshape.com/)
+* [OpenSCAD](https://openscad.org/)
 
 ## Stores
 
