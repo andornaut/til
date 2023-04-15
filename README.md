@@ -18,7 +18,7 @@ rake
     * [Supplies](docs/3d-printing.md#supplies)
     * [Software](docs/3d-printing.md#software)
     * [Stores](docs/3d-printing.md#stores)
-      * [Fillament](docs/3d-printing.md#fillament)
+      * [Filament](docs/3d-printing.md#filament)
   * [Ansible](docs/ansible.md#ansible)
     * [Debugging](docs/ansible.md#debugging)
     * [Ansible Galaxy](docs/ansible.md#ansible-galaxy)
