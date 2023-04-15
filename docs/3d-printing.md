@@ -30,7 +30,7 @@
 
 ## Supplies
 
- * [Bambu Labs Liquid Glue for Build Plate (PLA/ABS/PETG)](https://ca.store.bambulab.com/products/liquid-glue-for-build-plate)
+* [Bambu Lab Liquid Glue for Build Plate (PLA/ABS/PETG)](https://ca.store.bambulab.com/products/liquid-glue-for-build-plate)
 
 ## Software
 
