@@ -37,8 +37,11 @@
 * [KBDFans Lube Tools](https://shockport.ca/collections/tools/products/kbdfans-lube-tools-collection)
 * [IRWIN VISE-GRIP Wire Stripper](https://www.amazon.ca/dp/B000OQ21CA/)
 * [Miniware ES15 Motion Control Electric Screwdriver](https://www.miniware.com.cn/product/es15-motion-control-electric-screwdriver/)
+  * Flashing the firmware fails in Linux, but work in macOS
+  * The firmware flashing intructions in the manual omit one step: While holding down the "SET" button, connect a USB-C cable, then press the "Run" button, then mount the "\*\_DFU" filesystem and copy over the \*.hex file to the 
+* [Miniware TS101 Soldering Iron](https://www.miniware.com.cn/product/ts101-smart-soldering-iron/)
+  * Flashing the firmware fails in Linux, but work in macOS
 * [MX Keyswitch Opener](https://kiiboss.studio/products/mx-keyswitch-opener)
-* [TS101 Soldering Iron](https://www.amazon.ca/gp/product/B01MDTO6X7/)
 
 ## Software
 

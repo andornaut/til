@@ -26,6 +26,7 @@
   * [Manual](https://wiki.bambulab.com/en/p1/manual)
   * [Printable upgrades](https://wiki.bambulab.com/en/p1/manual/p1p-upgrades)
 * [SUNLU FilaDryer S2 dry box](https://www.amazon.ca/gp/product/B0B1ZKTS44)
+  * [Sunlu FilaDryer S2 Improvement Wedge](https://www.printables.com/model/219366-sunlu-filadryer-s2-improvement-wedge)
 
 ## Supplies
 
