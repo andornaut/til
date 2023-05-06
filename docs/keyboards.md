@@ -1,7 +1,7 @@
 # Keyboards
 
 * [./3D Printing](./3d-printing.md)
-* [andornaut@github /keyboards](https://github.com/andornaut/keyboards)
+* [andornaut@github /splinter-keyboard](https://github.com/andornaut/splinter-keyboard)
 
 ## Communities
 
