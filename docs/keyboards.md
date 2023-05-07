@@ -57,6 +57,7 @@
       * [ergogen-contrib](https://github.com/Albert-IV/ergogen-contrib)
       * [kb_ergogen_fp](https://github.com/infused-kim/kb_ergogen_fp)
       * [MvEerd](https://github.com/MvEerd/ergogen/tree/mveerd/src/footprints)
+  * [Ergogen Helper Scripts](https://github.com/infused-kim/kb_ergogen_helper)
   * [Schema](https://github.com/ergogen/ergogen/blob/develop/meta/schema.json) (v3, outdated)
   * [Useful components](https://github.com/Woovie/useful-ergogen-components)
   * [v4 docs (WIP)](https://deploy-preview-12--ergogen.netlify.app/)
