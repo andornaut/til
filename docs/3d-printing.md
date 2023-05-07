@@ -1,8 +1,8 @@
 # 3D Printing
 
+* [./Electronics](./electronics.md)
 * [./Keyboards](./keyboards.md)
 * [andornaut@github /3d-models-and-filaments](https://github.com/andornaut/3d-models-and-filaments)
-* [andornaut@github /computers-cases](https://github.com/andornaut/computer-cases)
 * [andornaut@github /splinter-keyboard](https://github.com/andornaut/splinter-keyboard)
 
 ## Communities
