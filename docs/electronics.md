@@ -26,5 +26,5 @@
 ## Stores
 
 * [JLCPCB](https://jlcpcb.com/)
-* [Oshpark](https://oshpark.com/)
+* [OSH Park](https://oshpark.com/)
 * [PCBWay](https://www.pcbway.com/)
