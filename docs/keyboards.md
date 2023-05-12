@@ -86,5 +86,6 @@
 * [KBDfans](https://kbdfans.com/)
 * [Keebio](https://keeb.io/)
 * [Kono](https://kono.store/)
+* [splitkb.com](https://splitkb.com/)
 * [Tai-Hao](https://shop.tai-hao.com/)
 * [TheKey.Company](https://thekey.company)
