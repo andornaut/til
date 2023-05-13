@@ -83,10 +83,12 @@
 ## Stores
 
 * [Clickety Split](https://clicketysplit.ca/)
+* [Desk Hero](https://www.deskhero.ca/)
 * [Drop /mechanical-keyboards/drops](https://drop.com/mechanical-keyboards/drops)
 * [KBDfans](https://kbdfans.com/)
 * [Keebio](https://keeb.io/)
 * [Kono](https://kono.store/)
+* [Omega Keys](https://omegakeys.ca/)
 * [Shockport](https://shockport.ca/)
 * [splitkb.com](https://splitkb.com/)
 * [Tai-Hao](https://shop.tai-hao.com/)
