@@ -82,10 +82,12 @@
 
 ## Stores
 
+* [Clickety Split](https://clicketysplit.ca/)
 * [Drop /mechanical-keyboards/drops](https://drop.com/mechanical-keyboards/drops)
 * [KBDfans](https://kbdfans.com/)
 * [Keebio](https://keeb.io/)
 * [Kono](https://kono.store/)
+* [Shockport](https://shockport.ca/)
 * [splitkb.com](https://splitkb.com/)
 * [Tai-Hao](https://shop.tai-hao.com/)
 * [TheKey.Company](https://thekey.company)
