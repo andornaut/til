@@ -29,6 +29,7 @@
 * [Mouser Electronics](https://www.mouser.ca/)
 * [SparkFun](https://www.sparkfun.com/)
 * [Newark](https://canada.newark.com/)
+* [Zap Cables](https://www.zapcables.com/)
 
 ### PCB fabrication
 
