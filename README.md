@@ -45,6 +45,7 @@ rake
     * [Supplies](docs/electronics.md#supplies)
     * [Tools](docs/electronics.md#tools)
     * [Stores](docs/electronics.md#stores)
+      * [PCB fabrication](docs/electronics.md#pcb-fabrication)
   * [Firefox](docs/firefox.md#firefox)
     * [Credit card autofill / autocomplete](docs/firefox.md#credit-card-autofill--autocomplete)
     * [Right-click bug with BSPWM](docs/firefox.md#right-click-bug-with-bspwm)

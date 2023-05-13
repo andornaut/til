@@ -25,6 +25,13 @@
 
 ## Stores
 
+* [Digi-Key Electronics](https://www.digikey.ca/)
+* [Mouser Electronics](https://www.mouser.ca/)
+* [SparkFun](https://www.sparkfun.com/)
+* [Newark](https://canada.newark.com/)
+
+### PCB fabrication
+
 * [JLCPCB](https://jlcpcb.com/)
 * [OSH Park](https://oshpark.com/)
 * [PCBWay](https://www.pcbway.com/)
