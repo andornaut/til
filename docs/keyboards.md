@@ -82,6 +82,7 @@
 
 ## Stores
 
+* [42 Keebs](https://42keebs.eu/)
 * [Clickety Split](https://clicketysplit.ca/)
 * [Desk Hero](https://www.deskhero.ca/)
 * [Drop /mechanical-keyboards/drops](https://drop.com/mechanical-keyboards/drops)
