@@ -16,6 +16,7 @@
 
 ## Tools
 
+* [Hakko 20G suction desoldering tool](https://www.amazon.ca/Simple-solder-suction-device-Hakko/dp/B001D7IGX2)
 * [IRWIN VISE-GRIP Wire Stripper](https://www.amazon.ca/dp/B000OQ21CA/)
 * [Miniware ES15 Motion Control Electric Screwdriver](https://www.miniware.com.cn/product/es15-motion-control-electric-screwdriver/)
   * Flashing the firmware fails in Linux, but work in macOS
