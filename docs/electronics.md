@@ -7,6 +7,7 @@
 ## Documentation and guides
 
 * [Keyboard PCB designer guide](https://wiki.ai03.com/books/pcb-design/chapter/pcb-designer-guide)
+* [Panelizing Boards The Easy Way](https://hackaday.com/2017/06/21/panelizing-boards-the-easy-way/)
 * [Recommended soldering tools](https://docs.keeb.io/soldering-tools)
 
 ## Supplies
