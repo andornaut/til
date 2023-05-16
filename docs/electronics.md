@@ -7,6 +7,7 @@
 ## Documentation and guides
 
 * [Keyboard PCB designer guide](https://wiki.ai03.com/books/pcb-design/chapter/pcb-designer-guide)
+* [Recommended soldering tools](https://docs.keeb.io/soldering-tools)
 
 ## Supplies
 
