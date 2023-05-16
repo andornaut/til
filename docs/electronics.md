@@ -28,6 +28,7 @@
 
 ## Stores
 
+* [Adafruit](https://www.adafruit.com/)
 * [Digi-Key Electronics](https://www.digikey.ca/)
 * [Mouser Electronics](https://www.mouser.ca/)
 * [SparkFun](https://www.sparkfun.com/)
