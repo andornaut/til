@@ -14,7 +14,7 @@
 
 * [63/37 lead rosin core solder](https://www.pishop.ca/product/solder-wire-63-37-tin-lead-sn63-pb37-no-clean-water-washable-031-2oz/)
 * [Liquid flux pen](https://www.pishop.ca/product/liquid-flux-no-clean-in-10ml-pen-w-tip/)
-* [Tribosys 3203](https://shockport.ca/collections/lubes-and-films/products/tribosys-3203)
+
 
 ## Tools
 
