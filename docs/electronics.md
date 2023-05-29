@@ -7,15 +7,18 @@
 ## Documentation and guides
 
 * [Keyboard PCB designer guide](https://wiki.ai03.com/books/pcb-design/chapter/pcb-designer-guide)
+* [Panelizing Boards The Easy Way](https://hackaday.com/2017/06/21/panelizing-boards-the-easy-way/)
+* [Recommended soldering tools](https://docs.keeb.io/soldering-tools)
 
 ## Supplies
 
 * [63/37 lead rosin core solder](https://www.pishop.ca/product/solder-wire-63-37-tin-lead-sn63-pb37-no-clean-water-washable-031-2oz/)
 * [Liquid flux pen](https://www.pishop.ca/product/liquid-flux-no-clean-in-10ml-pen-w-tip/)
-* [Tribosys 3203](https://shockport.ca/collections/lubes-and-films/products/tribosys-3203)
+
 
 ## Tools
 
+* [Hakko 20G suction desoldering tool](https://www.amazon.ca/Simple-solder-suction-device-Hakko/dp/B001D7IGX2)
 * [IRWIN VISE-GRIP Wire Stripper](https://www.amazon.ca/dp/B000OQ21CA/)
 * [Miniware ES15 Motion Control Electric Screwdriver](https://www.miniware.com.cn/product/es15-motion-control-electric-screwdriver/)
   * Flashing the firmware fails in Linux, but work in macOS
@@ -25,6 +28,7 @@
 
 ## Stores
 
+* [Adafruit](https://www.adafruit.com/)
 * [Digi-Key Electronics](https://www.digikey.ca/)
 * [Mouser Electronics](https://www.mouser.ca/)
 * [SparkFun](https://www.sparkfun.com/)
