@@ -38,7 +38,10 @@
 
 * [Apprenticeship Patterns - Guidance for the Aspiring Software Craftsman](https://www.goodreads.com/book/show/5608045-apprenticeship-patterns)
 * [Cracking the Coding Interview](https://www.crackingthecodinginterview.com/)
+* [HackerRank](https://www.hackerrank.com/)
+* [LeetCode](https://leetcode.com/)
 * [Software Engineer interviews: Everything you need to prepare](https://www.techinterviewhandbook.org/software-engineering-interview-guide/)
+* [Tech Interview Handbook](https://www.techinterviewhandbook.org/)
 
 ### Computer science
 
