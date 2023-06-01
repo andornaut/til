@@ -3,8 +3,28 @@
 ## Hardware info
 
 ```
+# Everything
+sudo lshw -short
+
+# Motherboard
+sudo dmidecode --type baseboard
+
 # RAM
 sudo dmidecode --type memory
+
+# PCI devices, including motherboard bridges and controllers
+lspci
+```
+
+## Firmware
+
+* [Linux Vendor Firmware Service (fwupd)](https://fwupd.org/lvfs/docs/users) | [ArchWiki](https://wiki.archlinux.org/title/fwupd)
+
+```
+fwupdmgr get-devices
+fwupdmgr refresh
+fwupdmgr get-updates
+fwupdmgr update
 ```
 
 ## System stability
