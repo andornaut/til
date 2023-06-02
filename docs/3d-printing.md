@@ -13,6 +13,7 @@
 
 ## Documentation and guides
 
+* [Bambu Studio Fine Tuning: Tips and Tricks for X1 and P1P](https://3dprintbeginner.com/bambu-studio-fine-tuning-tips-and-tricks/)
 * [Beginner’s Guide To 3D Printing](https://3dinsider.com/3d-printing-guide/)
 * [Common 3D printing problems troubleshooting guide](https://all3dp.com/1/common-3d-printing-problems-troubleshooting-3d-printer-issues/)
 * [Let's Print 3D](https://letsprint3d.net/)
