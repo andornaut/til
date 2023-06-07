@@ -27,20 +27,30 @@ Set "Outgoing Network Interfaces" to "LAN"
 
 * [OpenVPN Site-to-Site Configuration Example with SSL/TLS](https://docs.netgate.com/pfsense/en/latest/recipes/openvpn-s2s-tls.html)
 
-### How to configure remote access on a client Linux device
+### Remote access
 
 * [OpenVPN Client Export](https://docs.netgate.com/pfsense/en/latest/packages/openvpn-client-export.html)
+* [Installing the OpenVPN Client on Linux](https://docs.netgate.com/pfsense/en/latest/recipes/openvpn-ra-client-linux.html)
+* [OpenVPN Connect for Android](https://play.google.com/store/apps/details?id=net.openvpn.openvpn)
 
 On the pfSense server:
 1. Navigate to VPN -> OpenVPN -> Client Export
 1. Scroll down to the "OpenVPN Clients" section
 1. Click on the following button to download an *.ovpn file: Inline Configurations -> Most Clients
 
-On the client Linux device:
+On a client Linux device:
 1. Click on the nm-applet icon in the application tray
 1. Navigate to VPN Connections -> Configure VPN
 1. In the "Choose a Connection Type" prompt, select "Import a saved VPN configuration..."
 1. Select the previously exported *.ovpn file
+
+On a client Android or iOS device:
+1. Export the "OpenVPN Connect (iOS/Android)" client configuration from the OpenVPN server
+1. Install the [OpenVPN Connect app](https://play.google.com/store/apps/details?id=net.openvpn.openvpn)
+1. From the OpenVPN Connect app's main menu, select Import Profile -> Upload File
+1. Upload the "OpenVPN Connect (iOS/Android)" client configuration from above
+1. From the OpenVPN Connect app's main menu, select Settings -> <scroll to the bottom> Advanced Settings -> IPv6
+1. Select "IPV4-ONLY TUNNEL"
 
 ## Fix boot loop
 
