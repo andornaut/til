@@ -1,8 +1,12 @@
 # Ansible
 
+* [Jinja](https://jinja.palletsprojects.com/en/latest/)
+  * [Filters](https://jinja.palletsprojects.com/en/latest/templates/#list-of-builtin-filters)
+  * [Tests](https://jinja.palletsprojects.com/en/latest/templates/#list-of-builtin-tests)
+
 ## Debugging
 
-[setup module docs](http://docs.ansible.com/ansible/setup_module.html)
+* [Setup module docs](http://docs.ansible.com/ansible/setup_module.html)
 
 ```
 # Display local facts

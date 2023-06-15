@@ -28,6 +28,15 @@ systemctl list-dependencies $service
 # List targets
 systemctl list-units --type target
 
+# Create a new unit file
+systemctl edit --force --full $service
+
+# Edit a unit file
+systemctl edit --full $service
+
+# Edit *overrides* for a unit file
+systemctl edit $service
+
 # Show tree of critical path targets
 systemd-analyze critical-chain
 ```
@@ -36,7 +45,7 @@ systemd-analyze critical-chain
 
 ```
 # Tail logs for a service
-journalctl -f -u $sevice
+journalctl -f -u $service
 
 # View last 50 logs
 journalctl -n 50
@@ -49,6 +58,22 @@ journalctl --boot=-1
 
 # Delete all but 1GB of logs
 journalctl --vacuum-size=1G
+```
+
+### Remove service
+
+* [Stackoverflow](https://superuser.com/a/936976)
+
+```
+service=example.service
+systemctl stop ${service}
+systemctl disable ${service}
+rm /etc/systemd/system/${service}
+rm /etc/systemd/system/${service} # and symlinks that might be related
+rm /usr/lib/systemd/system/${service}
+rm /usr/lib/systemd/system/${service}#  and symlinks that might be related
+systemctl daemon-reload
+systemctl reset-failed
 ```
 
 ## User units
