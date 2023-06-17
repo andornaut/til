@@ -110,6 +110,19 @@ rm -rf ~/snap
 sudo apt autoremove && sudo apt clean
 ```
 
+### Flatpak
+
+* [Flatpak.org](https://flatpak.org/)
+
+```
+# Exec into the container
+flatpak enter org.mozilla.firefox bash
+
+# Debug and possibly fix Firefox downloads not saving to the ~/Downloads folder outside of the sandbox
+flatpak permission-show org.mozilla.firefox
+flatpak permission-reset org.mozilla.firefox
+```
+
 ## Upgrade Ubuntu from LTS to non-LTS
 
 ```
