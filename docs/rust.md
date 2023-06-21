@@ -39,6 +39,7 @@ Read a local copy of "The Rust Programming Language" book in a web browser with:
 * [Playing with tui-rs](https://monkeypatch.io/blog/2021/2021-05-31-rust-tui/) - Covers async + TUI
 * [Rust and TUI: Building a command-line interface in Rust](https://blog.logrocket.com/rust-and-tui-building-a-command-line-interface-in-rust/)
 * [Rust's Rules Are Made to Be Broken](https://blog.warp.dev/rules-are-made-to-be-broken/)
+* [Xilem: an architecture for UI in Rust](https://raphlinus.github.io/rust/gui/2022/05/07/ui-architecture.html)
 
 ## Getting started
 
@@ -165,16 +166,18 @@ Name | Description
 [chrono-tz](https://github.com/chronotope/chrono-tz)|Timezone library
 [crossterm](https://github.com/crossterm-rs/crossterm)|Library for controlling terminals
 [cursive](https://github.com/gyscos/Cursive)|Text User Interface (TUI) library. ([Comparison to tui](https://github.com/gyscos/cursive/wiki/Cursive-vs-tui%E2%80%90rs)).
+[egui](https://github.com/emilk/egui) | An easy-to-use immediate mode GUI in Rust that runs on both web and native 
 [enum-iterator](https://crates.io/crates/enum-iterator)|`#[derive(IntoEnumIterato)` for enums
 [gtk-rs](https://gtk-rs.org/)|GTK4, Cairo, glib, etc bindings
 [OnceCell](https://crates.io/crates/once_cell)|Single assignment cells and lazy values
 [rand](https://github.com/rust-random/rand)|Generate random numbers
+[ratatui](https://github.com/tui-rs-revival/ratatui)|Text User Interface (TUI) library. Successor to [tui](https://github.com/fdehau/tui-rs)
 [Serde JSON](https://github.com/serde-rs/json)|Serialize and deserialize JSON
 [strum](https://github.com/Peternator7/strum)|Various `#[derive(...)]` for enums
 [tempfile](https://github.com/Stebalien/tempfile)|Create temporary files or directories
 [tera](https://tera.netlify.app/)|Template engine inspired by Jinja2
 [tokio](https://github.com/tokio-rs/tokio)|Async runtime, including IO, networking, scheduling, and timers
-[tui](https://crates.io/crates/tui)|Text User Interface (TUI) library. ([Comparison to cursive](https://github.com/gyscos/cursive/wiki/Cursive-vs-tui%E2%80%90rs)).
+[tui](https://github.com/fdehau/tui-rs)|Text User Interface (TUI) library. ([Comparison to cursive](https://github.com/gyscos/cursive/wiki/Cursive-vs-tui%E2%80%90rs)). Superceded by [ratatui](https://github.com/tui-rs-revival/ratatui).
 [uuid](https://github.com/uuid-rs/uuid)|Generate and parse UUIDs
 
 ## Software
