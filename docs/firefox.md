@@ -1,7 +1,9 @@
 # Firefox
 
 ## Misc. about:config settings
+
 ```
+browser.bookmarks.showMobileBookmarks: false
 browser.toolbars.bookmarks.showOtherBookmarks: false
 ```
 

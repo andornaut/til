@@ -169,6 +169,7 @@ Name | Description
 [egui](https://github.com/emilk/egui) | An easy-to-use immediate mode GUI in Rust that runs on both web and native 
 [enum-iterator](https://crates.io/crates/enum-iterator)|`#[derive(IntoEnumIterato)` for enums
 [gtk-rs](https://gtk-rs.org/)|GTK4, Cairo, glib, etc bindings
+[itertools](https://docs.rs/itertools/latest/itertools/)|Extra iterator adaptors, functions and macros
 [OnceCell](https://crates.io/crates/once_cell)|Single assignment cells and lazy values
 [rand](https://github.com/rust-random/rand)|Generate random numbers
 [ratatui](https://github.com/tui-rs-revival/ratatui)|Text User Interface (TUI) library. Successor to [tui](https://github.com/fdehau/tui-rs)
@@ -177,7 +178,6 @@ Name | Description
 [tempfile](https://github.com/Stebalien/tempfile)|Create temporary files or directories
 [tera](https://tera.netlify.app/)|Template engine inspired by Jinja2
 [tokio](https://github.com/tokio-rs/tokio)|Async runtime, including IO, networking, scheduling, and timers
-[tui](https://github.com/fdehau/tui-rs)|Text User Interface (TUI) library. ([Comparison to cursive](https://github.com/gyscos/cursive/wiki/Cursive-vs-tui%E2%80%90rs)). Superceded by [ratatui](https://github.com/tui-rs-revival/ratatui).
 [uuid](https://github.com/uuid-rs/uuid)|Generate and parse UUIDs
 
 ## Software
