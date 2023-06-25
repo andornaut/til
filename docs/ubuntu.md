@@ -184,8 +184,14 @@ reBoot.
 ## Mount a network share in fstab
 
 ```
-$ echo '
-//$HOSTNAME/stuff /media/stuff cifs defaults,guest,ro 0 0' | sudo tee -a /etc/fstab
+# /etc/fstab
+//$HOSTNAME/stuff /media/stuff cifs defaults,guest,ro 0 0
+```
+
+Mount a subdirectory of a share as a non-root user
+```
+# /etc/fstab
+//$HOSTNAME/homes/src /home/andornaut/src cifs user,credentials=/home/andornaut/.smb_credentials_on_$HOSTNAME,uid=andornaut,gid=andornaut,nofail 0 0
 ```
 
 ## Preserve $PATH when using sudo
