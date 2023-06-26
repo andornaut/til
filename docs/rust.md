@@ -112,8 +112,15 @@ Features and crate-level configuration:
 ```
 # List features enabled for each dependency
 cargo tree -f "{p} {f}"
+
 # More verbose version of the above
 cargo tree -e features
+
+# Fix issues
+cargo fix
+
+# Fix issues even if the current directory has uncommitted changes
+cargo fix --allow-dirty
 ```
 
 ## Visual Studio Code
