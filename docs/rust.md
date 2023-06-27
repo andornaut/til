@@ -38,6 +38,7 @@ Read a local copy of "The Rust Programming Language" book in a web browser with:
 * [min-sized-rust](https://github.com/johnthagen/min-sized-rust) - Minimize the size of a Rust binary
 * [Playing with tui-rs](https://monkeypatch.io/blog/2021/2021-05-31-rust-tui/) - Covers async + TUI
 * [Rust and TUI: Building a command-line interface in Rust](https://blog.logrocket.com/rust-and-tui-building-a-command-line-interface-in-rust/)
+* [Rust Date & Time](https://dev.to/ssivakumar/rust-date-time-e2k)
 * [Rust's Rules Are Made to Be Broken](https://blog.warp.dev/rules-are-made-to-be-broken/)
 * [Xilem: an architecture for UI in Rust](https://raphlinus.github.io/rust/gui/2022/05/07/ui-architecture.html)
 
@@ -119,7 +120,7 @@ cargo tree -e features
 # Fix issues
 cargo fix
 
-# Fix issues even if the current directory has uncommitted changes
+# Fix issues even if the current package has uncommitted changes
 cargo fix --allow-dirty
 ```
 
@@ -131,7 +132,8 @@ cargo fix --allow-dirty
 * [Tasks](https://code.visualstudio.com/docs/editor/tasks#vscode)
 
 `./.vscode/tasks.json`:
-```
+
+```json
 {
   "version": "2.0.0",
   "tasks": [
@@ -169,8 +171,8 @@ Name | Description
 --- | ---
 [anyhow](https://github.com/dtolnay/anyhow)|Concrete `Error` type built on `std::error::Error`
 [clap](https://github.com/clap-rs/clap)|Parse command line arguments
-[chrono](https://github.com/chronotope/chrono)|Date and time library
-[chrono-tz](https://github.com/chronotope/chrono-tz)|Timezone library
+[chrono](https://github.com/chronotope/chrono)|Timezone-aware date and time handling
+[chrono-tz](https://github.com/chronotope/chrono-tz)|Companion of [chrono](https://github.com/chronotope/chrono) that adds timezone data
 [crossterm](https://github.com/crossterm-rs/crossterm)|Library for controlling terminals
 [cursive](https://github.com/gyscos/Cursive)|Text User Interface (TUI) library. ([Comparison to tui](https://github.com/gyscos/cursive/wiki/Cursive-vs-tui%E2%80%90rs)).
 [egui](https://github.com/emilk/egui) | An easy-to-use immediate mode GUI in Rust that runs on both web and native 
@@ -197,10 +199,14 @@ Name | Description
 
 ## Troubleshooting
 
-```
-$ cargo build
+```bash
+cargo build
    Compiling space_time_rewind v0.1.0 (/home/andornaut/src/github.com/andornaut/space-time-rewind)
 thread 'rustc' panicked at 'failed to lookup `SourceFile` in new context', compiler/rustc_query_impl/src/on_disk_cache.rs:514:22
 ```
 
-[Fix](https://github.com/rust-lang/rust/issues/70924): `cargo clean && cargo build`
+[Fix](https://github.com/rust-lang/rust/issues/70924):
+
+```bash
+cargo clean && cargo build
+```
