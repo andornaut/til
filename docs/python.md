@@ -1,7 +1,7 @@
 # Python
 
 * [./Software Engineering](./software-engineering.md)
-* [andornaut@github /python-cli-app-template](https://github.com/andornaut/python-cli-app-template)
+* [andornaut@github /python-cli-app](https://github.com/andornaut/python-cli-app)
 
 ## Books
 
