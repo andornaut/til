@@ -190,7 +190,7 @@ reBoot.
 
 ```
 # /etc/fstab
-//$HOSTNAME/stuff /media/stuff cifs defaults,guest,ro 0 0
+//$HOSTNAME/stuff /media/nas cifs defaults,guest,ro 0 0
 ```
 
 Mount a subdirectory of a share as a non-root user
@@ -198,7 +198,7 @@ Mount a subdirectory of a share as a non-root user
 # /etc/fstab
 # vers=1.0 is necessary for Samba to support Unix extnsions:
 # https://askubuntu.com/a/995142
-//$HOSTNAME/homes/src /home/andornaut/src cifs user,vers=1.0,credentials=/home/andornaut/.smb_credentials_on_$HOSTNAME,nofail 0 0
+//$HOSTNAME/homes/src /home/andornaut/src cifs vers=1.0,user,uid=andornaut,gid=andornaut,credentials=/home/andornaut/.smb_credentials_on_$HOSTNAME,nofail 0 0
 
 ```
 
