@@ -2,6 +2,8 @@
 
 * [./Software Engineering](./software-engineering.md)
 * [andornaut@github /python-cli-app](https://github.com/andornaut/python-cli-app)
+* [Documentation](https://docs.python.org/)
+* [PyPI](https://pypi.org/) - The Python Package Index
 
 ## Books
 
