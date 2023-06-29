@@ -57,6 +57,11 @@ powertop | Power consumption and power management diagnosis tool
 sensors | Print temperature sensors information
 vmstat | Report virtual memory statistics
 
+```
+# Monitor a process' utilization
+pid=$(ps -e|grep filectrl|cut -f1 -d' ');pidstat -h -r -u -v -p $pid 10
+```
+
 ### Search for installed applications
 
 ```
@@ -191,7 +196,10 @@ reBoot.
 Mount a subdirectory of a share as a non-root user
 ```
 # /etc/fstab
-//$HOSTNAME/homes/src /home/andornaut/src cifs user,credentials=/home/andornaut/.smb_credentials_on_$HOSTNAME,uid=andornaut,gid=andornaut,nofail 0 0
+# vers=1.0 is necessary for Samba to support Unix extnsions:
+# https://askubuntu.com/a/995142
+//$HOSTNAME/homes/src /home/andornaut/src cifs user,vers=1.0,credentials=/home/andornaut/.smb_credentials_on_$HOSTNAME,nofail 0 0
+
 ```
 
 ## Preserve $PATH when using sudo
