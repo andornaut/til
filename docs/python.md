@@ -27,4 +27,7 @@
 
 Name | Description
 --- | ---
+[Click](https://github.com/pallets/click/) | A composable command line interface toolkit
 [DeviPi](https://github.com/devpi/devpi)| Python PyPi staging server and packaging, testing, release tool
+[pytest](https://docs.pytest.org/en/) | A framework that makes it easy to write small, readable tests
+[Typer](https://github.com/tiangolo/typer) | Build great CLIs. Easy to code. Based on Python type hints.
