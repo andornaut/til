@@ -2,9 +2,15 @@
 
 ## Misc. about:config settings
 
+* [Say “goodbye” to cookies and cookie banners with vanilla Firefox](https://beehaw.org/post/908043)
+
 ```
 browser.bookmarks.showMobileBookmarks: false
 browser.toolbars.bookmarks.showOtherBookmarks: false
+
+# Auto-reject cookie banner prompts
+cookiebanners.service.mode: 1
+cookiebanners.service.mode.privateBrowsing: 1
 ```
 
 ## Credit card autofill / autocomplete
