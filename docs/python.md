@@ -29,6 +29,7 @@
 
 Name | Description
 --- | ---
+[black](https://github.com/psf/black) | The uncompromising Python code formatter
 [Click](https://github.com/pallets/click/) | A composable command line interface toolkit
 [DeviPi](https://github.com/devpi/devpi)| Python PyPi staging server and packaging, testing, release tool
 [pytest](https://docs.pytest.org/en/) | A framework that makes it easy to write small, readable tests
