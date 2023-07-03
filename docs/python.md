@@ -37,9 +37,10 @@ Name | Description
 ## Tools
 
 Name | Description
-[Black Formatter for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) | A Visual Studio Code extension with support for the black formatter
-[Python for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)| Support intelliSense, linting, debugging, code navigation, code formatting, refactoring, variable explorer, test explorer, and more!
-[Python Test Explorer](Python Test Explorer for Visual Studio Code)|Run Python tests within [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer)
+--- | ---
+[Black Formatter for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) | Support the [black formatter](https://github.com/psf/black)
+[Python for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | Support intelliSense, linting, debugging, code navigation, code formatting, etc
+[Python Test Explorer](https://code.visualstudio.com/docs/python/testing) | Run Python tests within the [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer)
 
 ## Workarounds
 
