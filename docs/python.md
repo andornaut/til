@@ -34,6 +34,7 @@ Name | Description
 [Django](https://www.djangoproject.com/) | High-level web framework
 [FastAPI](https://github.com/tiangolo/fastapi) | A modern, fast, web framework for building APIs. Based on Python type hints.
 [Flask](https://github.com/pallets/flask) | Micro framework for building web applications
+[NumPy](https://numpy.org/) | Scientific computing library
 [Pillow](https://github.com/python-pillow/Pillow) | Open and manipulate many image file formats
 [pytest](https://docs.pytest.org/en/) | A framework that makes it easy to write small, readable tests
 [records](https://github.com/kennethreitz/records) | A library for making raw SQL queries to most relational databases
