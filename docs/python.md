@@ -30,10 +30,10 @@
 Name | Description
 --- | ---
 [black](https://github.com/psf/black) | The uncompromising Python code formatter
-[Click](https://github.com/pallets/click/) | A composable command line interface toolkit
 [DeviPi](https://github.com/devpi/devpi)| Python PyPi staging server and packaging, testing, release tool
+[FastAPI](https://github.com/tiangolo/fastapi) | A modern, fast, web framework for building APIs. Based on Python type hints.
 [pytest](https://docs.pytest.org/en/) | A framework that makes it easy to write small, readable tests
-[Typer](https://github.com/tiangolo/typer) | Build great CLIs. Easy to code. Based on Python type hints.
+[Typer](https://github.com/tiangolo/typer) | Build great CLIs. Easy to code. Based on Python type hints. Built on top of [Click](https://github.com/pallets/click/).
 
 ## Tools
 
