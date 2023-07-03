@@ -46,7 +46,7 @@ Name | Description
 
 ### VS Code test discovery doesn't find any tests
 
-This only occurs when starting VS Code from a terminal that already has an active virtualenv (eg. by running `pipenv shell`).
+This only occurs when starting VS Code from a terminal that already has an active virtualenv (eg. after running `pipenv shell`).
 
 1. CTRL+Shift+P
 1. Select "Python: Select Interpreter"
