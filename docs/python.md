@@ -29,10 +29,17 @@
 
 Name | Description
 --- | ---
+[Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) | Parser, scraper
 [black](https://github.com/psf/black) | The uncompromising Python code formatter
 [DeviPi](https://github.com/devpi/devpi)| Python PyPi staging server and packaging, testing, release tool
+[Django](https://www.djangoproject.com/) | High-level web framework
 [FastAPI](https://github.com/tiangolo/fastapi) | A modern, fast, web framework for building APIs. Based on Python type hints.
+[Flask](https://github.com/pallets/flask) | Micro framework for building web applications
+[Pillow](https://github.com/python-pillow/Pillow) | Open and manipulate many image file formats
 [pytest](https://docs.pytest.org/en/) | A framework that makes it easy to write small, readable tests
+[records](https://github.com/kennethreitz/records) | A library for making raw SQL queries to most relational databases
+[requests](https://github.com/psf/requests) | A simple, yet elegant, HTTP library
+[SQLAlchemy](https://www.sqlalchemy.org/) | SQL toolkit and Object Relational Mapper 
 [Typer](https://github.com/tiangolo/typer) | Build great CLIs. Easy to code. Based on Python type hints. Built on top of [Click](https://github.com/pallets/click/).
 
 ## Tools
@@ -40,8 +47,8 @@ Name | Description
 Name | Description
 --- | ---
 [Black Formatter for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) | Support the [black formatter](https://github.com/psf/black)
+[pre-commit](https://github.com/pre-commit/pre-commit) | A framework for managing multi-language pre-commit hooks
 [Python for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | Support intelliSense, linting, debugging, code navigation, code formatting, etc
-[Python Test Explorer](https://code.visualstudio.com/docs/python/testing) | Run Python tests within the [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer)
 
 ## How-tos and Workarounds
 
