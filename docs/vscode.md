@@ -57,3 +57,11 @@ defaults delete -g ApplePressAndHoldEnabled # If necessary, reset global default
 ## Extensions
 
 * [Live Share](https://marketplace.visualstudio.com/items?itemName=MS-vsliveshare.vsliveshare-pack)
+
+## Fixes and workarounds
+
+### VS Code test discovery doesn't find tests
+
+1. CTRL+Shift+P
+1. Select "Python: Select Interpreter"
+1. Select the correct interpreter

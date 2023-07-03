@@ -303,6 +303,8 @@ rake
     * [Add CLI executable on macOS](docs/vscode.md#add-cli-executable-on-macos)
     * [Enable key repeating on macOS](docs/vscode.md#enable-key-repeating-on-macos)
     * [Extensions](docs/vscode.md#extensions)
+    * [Fixes and workarounds](docs/vscode.md#fixes-and-workarounds)
+      * [VS Code test discovery doesn't find tests](docs/vscode.md#vs-code-test-discovery-doesnt-find-tests)
   * [wget](docs/wget.md#wget)
     * [Download recursively](docs/wget.md#download-recursively)
   * [Woodworking](docs/woodworking.md#woodworking)
