@@ -33,3 +33,10 @@ Name | Description
 [DeviPi](https://github.com/devpi/devpi)| Python PyPi staging server and packaging, testing, release tool
 [pytest](https://docs.pytest.org/en/) | A framework that makes it easy to write small, readable tests
 [Typer](https://github.com/tiangolo/typer) | Build great CLIs. Easy to code. Based on Python type hints.
+
+## Tools
+
+Name | Description
+[Black Formatter for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) | A Visual Studio Code extension with support for the black formatter
+[Python for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)| Support intelliSense, linting, debugging, code navigation, code formatting, refactoring, variable explorer, test explorer, and more!
+[Python Test Explorer](Python Test Explorer for Visual Studio Code)|Run Python tests within [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer)

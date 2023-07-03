@@ -128,14 +128,16 @@ flatpak permission-show org.mozilla.firefox
 flatpak permission-reset org.mozilla.firefox
 ```
 
-## Upgrade Ubuntu from LTS to non-LTS
+## How-tos
+
+### Upgrade Ubuntu from LTS to non-LTS
 
 ```
 sudo sed -i 's/^\(Prompt\s*=\s*\)\w\+/\1normal/g' /etc/update-manager/release-upgrades
 sudo do-release-upgrade
 ```
 
-## Disable release upgrade notifications
+### Disable release upgrade notifications
 
 * [Ask Ubuntu](https://askubuntu.com/questions/843778/how-to-disable-release-upgrade-notification-emails)
 
@@ -144,7 +146,7 @@ sudo sed -i 's/^\(Prompt\s*=\s*\)\w\+/\1never/g' /etc/update-manager/release-upg
 echo -n "" > /var/lib/ubuntu-release-upgrader/release-upgrade-available
 ```
 
-## Disable language switcher
+### Disable language switcher
 
 Use `dconf watch /` to monitor changes.
 
@@ -171,7 +173,7 @@ dconf-editor
 # Set to []
 ```
 
-## Magic SysRq Keys
+### Magic SysRq Keys
 
 Force reboot an unresponsive system.
 
@@ -186,7 +188,7 @@ unRaw      (take control of keyboard back from X),
 reBoot.
 ```
 
-## Mount a network share in fstab
+### Mount a network share in fstab
 
 ```
 # /etc/fstab
@@ -202,7 +204,7 @@ Mount a subdirectory of a share as a non-root user
 
 ```
 
-## Preserve $PATH when using sudo
+### Preserve $PATH when using sudo
 
 - [StackOverflow](http://unix.stackexchange.com/a/83194)
 
@@ -210,7 +212,7 @@ Mount a subdirectory of a share as a non-root user
 $ sudo env "PATH=$PATH" command
 ```
 
-## sysctl settings
+### Increase inotify watches
 
 - [Inotify instructions](https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit)
 
@@ -222,7 +224,7 @@ fs.inotify.max_user_watches = 524288' | sudo tee -a /etc/sysctl.conf
 $ sudo sysctl -pf
 ```
 
-## Temporarily change the date/time using timedatectl
+### Temporarily change the date/time using timedatectl
 
 * [Wiki](https://wiki.archlinux.org/index.php/time)
 
@@ -233,7 +235,7 @@ timedatectl set-time "10:00:00"
 timedatectl set-ntp true
 ```
 
-## Wipe storage device using hdparm
+### Wipe storage device using hdparm
 
 * [Howto](https://wiki.archlinux.org/index.php/SSD_memory_cell_clearing)
 
@@ -245,14 +247,7 @@ hdparm --user-master u --security-erase PasSWorD /dev/sdX
 hdparm -I /dev/sdX (result: Security:not enabled)
 ```
 
-## Xephyr
-
-Grap mouse and keyboard input
-```
-CTRL + SHIFT + C
-```
-
-## debconf
+### Use debconf
 
 ```
 sudo debconf-show ${packageName}
@@ -260,6 +255,13 @@ sudo debconf-show ${packageName}
 # or
 
 sudo debconf-get-selections|grep -i ${packageName}
+```
+
+### Allow adm users to shutdown and reboot the system
+
+Add the following to `/etc/sudoers.d/power`:
+```
+%adm ALL=NOPASSWD: /sbin/halt, /sbin/poweroff, /sbin/reboot
 ```
 
 ## Debugging and troubleshooting
