@@ -30,7 +30,6 @@
 Name | Description
 --- | ---
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) | Parser, scraper
-[black](https://github.com/psf/black) | The uncompromising Python code formatter
 [DeviPi](https://github.com/devpi/devpi)| Python PyPi staging server and packaging, testing, release tool
 [Django](https://www.djangoproject.com/) | High-level web framework
 [FastAPI](https://github.com/tiangolo/fastapi) | A modern, fast, web framework for building APIs. Based on Python type hints.
@@ -47,6 +46,7 @@ Name | Description
 Name | Description
 --- | ---
 [Black Formatter for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) | Support the [black formatter](https://github.com/psf/black)
+[Flake8 for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8) | Support for the [flake8 linter](https://github.com/pycqa/flake8/)
 [pre-commit](https://github.com/pre-commit/pre-commit) | A framework for managing multi-language pre-commit hooks
 [Python for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | Support intelliSense, linting, debugging, code navigation, code formatting, etc
 
