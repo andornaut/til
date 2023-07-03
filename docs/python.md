@@ -43,7 +43,43 @@ Name | Description
 [Python for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | Support intelliSense, linting, debugging, code navigation, code formatting, etc
 [Python Test Explorer](https://code.visualstudio.com/docs/python/testing) | Run Python tests within the [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer)
 
-## Workarounds
+## How-tos and Workarounds
+
+### Develop a non-redistributable (no setup.py) local package using pipenv
+
+Add an `.env` file to the project root:
+```
+PYTHONPATH=.
+```
+Pipenv and 
+
+Add a `pytest.ini` file to the project root:
+```
+[pytest]
+pythonpath = .
+```
+
+Add the following line to `.vscode/launch.json` configurations:
+```
+"envFile": "${workspaceFolder}/.env",
+```
+
+Example:
+```json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: File with env",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            // Set to `false` to step into 3rd party libraries?
+            "justMyCode": true,
+        }
+    ]
+}
+```
 
 ### VS Code test discovery doesn't find any tests
 
