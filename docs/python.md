@@ -40,3 +40,15 @@ Name | Description
 [Black Formatter for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) | A Visual Studio Code extension with support for the black formatter
 [Python for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python)| Support intelliSense, linting, debugging, code navigation, code formatting, refactoring, variable explorer, test explorer, and more!
 [Python Test Explorer](Python Test Explorer for Visual Studio Code)|Run Python tests within [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer)
+
+## Workarounds
+
+### VS Code test discovery doesn't find any tests
+
+This only occurs when starting VS Code from a terminal that already has an active virtualenv (eg. by running `pipenv shell`).
+
+1. CTRL+Shift+P
+1. Select "Python: Select Interpreter"
+1. Select the correct interpreter
+1. Open "Text Explorer"
+
