@@ -74,7 +74,6 @@ Example:
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            // Set to `false` to step into 3rd party libraries?
             "justMyCode": true,
         }
     ]
