@@ -30,7 +30,7 @@
 Name | Description
 --- | ---
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) | Parser, scraper
-[DeviPi](https://github.com/devpi/devpi)| Python PyPi staging server and packaging, testing, release tool
+[DevPi](https://github.com/devpi/devpi)| Python PyPi staging server and packaging, testing, release tool
 [Django](https://www.djangoproject.com/) | High-level web framework
 [FastAPI](https://github.com/tiangolo/fastapi) | A modern, fast, web framework for building APIs. Based on Python type hints.
 [Flask](https://github.com/pallets/flask) | Micro framework for building web applications
@@ -52,7 +52,7 @@ Name | Description
 
 ## How-tos and Workarounds
 
-### Develop a non-redistributable (no setup.py) local package using pipenv
+### Develop a non-redistributable (no setup.py) local package using Pipenv
 
 Add an `.env` file to the project root:
 ```

@@ -191,7 +191,7 @@ rake
     * [Libraries and frameworks](docs/python.md#libraries-and-frameworks)
     * [Tools](docs/python.md#tools)
     * [How-tos and Workarounds](docs/python.md#how-tos-and-workarounds)
-      * [Develop a non-redistributable (no setup.py) local package using pipenv](docs/python.md#develop-a-non-redistributable-no-setuppy-local-package-using-pipenv)
+      * [Develop a non-redistributable (no setup.py) local package using Pipenv](docs/python.md#develop-a-non-redistributable-no-setuppy-local-package-using-pipenv)
       * [VS Code test discovery doesn't find any tests](docs/python.md#vs-code-test-discovery-doesnt-find-any-tests)
   * [Rails](docs/rails.md#rails)
     * [Common commands](docs/rails.md#common-commands)
