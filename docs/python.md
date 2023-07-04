@@ -48,6 +48,8 @@ Name | Description
 --- | ---
 [Black Formatter for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) | Support the [black formatter](https://github.com/psf/black)
 [Flake8 for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8) | Support for the [flake8 linter](https://github.com/pycqa/flake8/)
+[Pipenv](https://pipenv.pypa.io/en/latest/) | Dev workflows for humans
+[Poetry](https://python-poetry.org/) | Python packaging and dependency management made easy
 [pre-commit](https://github.com/pre-commit/pre-commit) | A framework for managing multi-language pre-commit hooks
 [Python for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | Support intelliSense, linting, debugging, code navigation, code formatting, etc
 
