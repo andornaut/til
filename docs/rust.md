@@ -25,13 +25,13 @@
 * [Rust for Rustaceans (2021)](https://nostarch.com/rust-rustaceans)
 * [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/index.html)
 * [The Rust Programming Language (2019)](https://doc.rust-lang.org/book/)
-  * [RefCell<T> and the Interior Mutability Pattern](https://doc.rust-lang.org/book/ch15-05-interior-mutability.html)
+  * [RefCell\<T> and the Interior Mutability Pattern](https://doc.rust-lang.org/book/ch15-05-interior-mutability.html)
   * [Shared-State Concurrency](https://doc.rust-lang.org/book/ch16-03-shared-state.html)
 Read a local copy of "The Rust Programming Language" book in a web browser with: `rustup doc --book`
 
 ## Articles, blogs, and courses
 
-* [Comprehensive Rust](https://google.github.io/comprehensive-rust/) - 4 day course by Google's Android team 
+* [Comprehensive Rust](https://google.github.io/comprehensive-rust/) - 4 day course by Google's Android team
 * [Finding Closure in Rust](https://huonw.github.io/blog/2015/05/finding-closure-in-rust/)
 * [How to Idiomatically Use Global Variables in Rust](https://www.sitepoint.com/rust-global-variables/)
 * [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/)
@@ -49,7 +49,8 @@ Read a local copy of "The Rust Programming Language" book in a web browser with:
 * [Install Rust](https://www.rust-lang.org/tools/install)
 
 Install system packages
-```
+
+```bash
 # Make sure rust isn't installed, because we'll use `rustup` to manage rust and cargo installations
 # Linux: apt remove cargo rust
 # macOS: brew uninstall rust
@@ -59,14 +60,16 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 Ensure that `~/.cargo/env`
 [is sourced in your environment](https://github.com/andornaut/dotfiles/blob/53bff380386a79c805b7bb8337f7c971b859103e/%24HOME/.bashrc.andornaut#L98). `rustup` may update `~/.bashrc`, `~/.profile`, and/or `~/.zshenv` accordingly, but you may wish to modify these files according to your needs.
-```
+
+```bash
 if [[ -f "${HOME}/.cargo/env" ]]; then
     source "${HOME}/.cargo/env"
 fi
 ```
 
 Update Rust on the stable, beta, or nightly channel
-```
+
+```bash
 #channel=beta
 #channel=nightly
 channel=stable
@@ -75,7 +78,8 @@ rustup default ${channel}
 ```
 
 Create a project
-```
+
+```bash
 # Use the binary template by default: --bin
 cargo new ${project_name}
 
@@ -95,7 +99,8 @@ cargo run
 ## Macros
 
 Features and crate-level configuration:
-```
+
+```rust
 // Requires Rust from the nightly channel as of rustc 1.59.0-nightly (e012a191d 2022-01-06)
 #![feature(mixed_integer_ops)]
 
@@ -111,7 +116,7 @@ Features and crate-level configuration:
 * [cargo-make](https://github.com/sagiegurari/cargo-make) - Task runner and build tool
 * [Specifying features](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)
 
-```
+```bash
 # List features enabled for each dependency
 cargo tree -f "{p} {f}"
 
@@ -128,43 +133,43 @@ cargo fix --allow-dirty
 ## Visual Studio Code
 
 * [CodeLLDB extension](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) - Debugger
-* [Rust extension](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust) - Language support. Conflicts with [Rust-analyzer extension](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer).
-* [Rust-analyzer extension](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer) - Language support (experimental, but **recommended**). Conflicts with [Rust extension](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust).
-* [Tasks](https://code.visualstudio.com/docs/editor/tasks#vscode)
+* [Rust-analyzer extension](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer) - Recommended language support extensions. Conflicts with [Rust extension](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust).
+* [Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust)
 
-`./.vscode/tasks.json`:
+### Debugging extensions
+
+* [Debugging with GDB](https://blog.logrocket.com/debugging-rust-apps-with-gdb/)
+
+The[CodeLLDB extension](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
+should create a run/debug configuration in `.vscode/launch.json`:
 
 ```json
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "cargo build",
-      "type": "shell",
-      "command": "cargo build",
-      "args": [],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": []
-    },
-    {
-      "label": "cargo run",
-      "type": "shell",
-      "command": "cargo",
-      "args": [
-        "run"
-      ],
-      "group": {
-        "kind": "test",
-        "isDefault": true
-      },
-      "problemMatcher": []
-    }
-  ]
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "Debug",
+            "program": "${workspaceFolder}/target/debug/filectrl",
+            "args": [],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
 }
 ```
+
+### Tasks
+
+* [Tasks](https://code.visualstudio.com/docs/editor/tasks#vscode)
+
+You can execute cargo tasks from within VS Code:
+
+1. Press: CTRL+Shift+P
+1. Enter "Tasks: Run Task"
+1. Enter "rust:"
+1. Select "Show All Tasks..."
 
 ## Crates - Frameworks and libraries
 
@@ -176,7 +181,7 @@ Name | Description
 [chrono-tz](https://github.com/chronotope/chrono-tz)|Companion of [chrono](https://github.com/chronotope/chrono) that adds timezone data
 [crossterm](https://github.com/crossterm-rs/crossterm)|Library for controlling terminals
 [cursive](https://github.com/gyscos/Cursive)|Text User Interface (TUI) library. ([Comparison to tui](https://github.com/gyscos/cursive/wiki/Cursive-vs-tui%E2%80%90rs)).
-[egui](https://github.com/emilk/egui) | An easy-to-use immediate mode GUI in Rust that runs on both web and native 
+[egui](https://github.com/emilk/egui) | An easy-to-use immediate mode GUI in Rust that runs on both web and native
 [enum-iterator](https://crates.io/crates/enum-iterator)|`#[derive(IntoEnumIterato)` for enums
 [gtk-rs](https://gtk-rs.org/)|GTK4, Cairo, glib, etc bindings
 [itertools](https://docs.rs/itertools/latest/itertools/)|Extra iterator adaptors, functions and macros
@@ -192,11 +197,9 @@ Name | Description
 
 ## Software
 
-* [bevy](https://bevyengine.org/) - Game engine
-
-## Debugging
-
-* [Debugging with GDB](https://blog.logrocket.com/debugging-rust-apps-with-gdb/)
+Name | Description
+--- | ---
+[bevy](https://bevyengine.org/) | Game engine
 
 ## Troubleshooting
 
