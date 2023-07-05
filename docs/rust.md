@@ -140,7 +140,7 @@ cargo fix --allow-dirty
 
 * [Debugging with GDB](https://blog.logrocket.com/debugging-rust-apps-with-gdb/)
 
-The[CodeLLDB extension](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
+The [CodeLLDB extension](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
 should create a run/debug configuration in `.vscode/launch.json`:
 
 ```json
@@ -199,6 +199,7 @@ Name | Description
 
 Name | Description
 --- | ---
+[Alacritty](https://github.com/alacritty/alacritty) | A cross-platform, OpenGL terminal emulator
 [bevy](https://bevyengine.org/) | Game engine
 
 ## Troubleshooting
