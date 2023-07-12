@@ -192,6 +192,7 @@ Name | Description
 [strum](https://github.com/Peternator7/strum)|Various `#[derive(...)]` for enums
 [tempfile](https://github.com/Stebalien/tempfile)|Create temporary files or directories
 [tera](https://tera.netlify.app/)|Template engine inspired by Jinja2
+[test-case](https://github.com/frondeus/test-case)|Macro to generate parameterized test cases
 [tokio](https://github.com/tokio-rs/tokio)|Async runtime, including IO, networking, scheduling, and timers
 [uuid](https://github.com/uuid-rs/uuid)|Generate and parse UUIDs
 
