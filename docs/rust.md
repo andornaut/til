@@ -179,12 +179,15 @@ Name | Description
 [clap](https://github.com/clap-rs/clap)|Parse command line arguments
 [chrono](https://github.com/chronotope/chrono)|Timezone-aware date and time handling
 [chrono-tz](https://github.com/chronotope/chrono-tz)|Companion of [chrono](https://github.com/chronotope/chrono) that adds timezone data
-[crossterm](https://github.com/crossterm-rs/crossterm)|Library for controlling terminals
+[color-to-tui](https://github.com/uttarayan21/color-to-tui)|Parse hex colors to `tui::style::Color`
+[crossterm](https://github.com/crossterm-rs/crossterm)|Cross-platform terminal library ([Documentation](https://docs.rs/crossterm/latest/crossterm/))
 [cursive](https://github.com/gyscos/Cursive)|Text User Interface (TUI) library. ([Comparison to tui](https://github.com/gyscos/cursive/wiki/Cursive-vs-tui%E2%80%90rs)).
-[egui](https://github.com/emilk/egui) | An easy-to-use immediate mode GUI in Rust that runs on both web and native
+[dirs-next](https://github.com/xdg-rs/dirs/tree/master/dirs)|Low-level library that provides conventional config/cache/data paths
+[egui](https://github.com/emilk/egui)|An easy-to-use immediate mode GUI in Rust that runs on both web and native
 [enum-iterator](https://crates.io/crates/enum-iterator)|`#[derive(IntoEnumIterato)` for enums
 [gtk-rs](https://gtk-rs.org/)|GTK4, Cairo, glib, etc bindings
 [itertools](https://docs.rs/itertools/latest/itertools/)|Extra iterator adaptors, functions and macros
+[notify](https://github.com/notify-rs/notify)|Cross-platform filesystem notification library
 [OnceCell](https://crates.io/crates/once_cell)|Single assignment cells and lazy values
 [rand](https://github.com/rust-random/rand)|Generate random numbers
 [ratatui](https://github.com/tui-rs-revival/ratatui)|Text User Interface (TUI) library. Successor to [tui](https://github.com/fdehau/tui-rs)
