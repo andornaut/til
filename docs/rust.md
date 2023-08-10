@@ -187,10 +187,11 @@ Name | Description
 [enum-iterator](https://crates.io/crates/enum-iterator)|`#[derive(IntoEnumIterato)` for enums
 [gtk-rs](https://gtk-rs.org/)|GTK4, Cairo, glib, etc bindings
 [itertools](https://docs.rs/itertools/latest/itertools/)|Extra iterator adaptors, functions and macros
+[lazy_static](https://crates.io/crates/lazy_static/)|A macro for declaring lazily evaluated statics
 [notify](https://github.com/notify-rs/notify)|Cross-platform filesystem notification library
 [OnceCell](https://crates.io/crates/once_cell)|Single assignment cells and lazy values
 [rand](https://github.com/rust-random/rand)|Generate random numbers
-[ratatui](https://github.com/tui-rs-revival/ratatui)|Text User Interface (TUI) library. Successor to [tui](https://github.com/fdehau/tui-rs)
+[ratatui](https://github.com/ratatui-org/ratatui)|Text User Interface (TUI) library. Successor to [tui](https://github.com/fdehau/tui-rs)
 [Serde JSON](https://github.com/serde-rs/json)|Serialize and deserialize JSON
 [strum](https://github.com/Peternator7/strum)|Various `#[derive(...)]` for enums
 [tempfile](https://github.com/Stebalien/tempfile)|Create temporary files or directories
