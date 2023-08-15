@@ -102,7 +102,7 @@ Path |Usage
 `~/.local/share/applications/` | user applications
 `/usr/share/applications/` | system-wide applications
 `~/.local/share/flatpak/exports/share/applications/` | Flatpak --user applications
-`~/var/lib/flatpak/exports/share/applications/` | Flatpak --system applications
+`/var/lib/flatpak/exports/share/applications/` | Flatpak --system applications
 
 ```
 # Get the mimetype for a given file:
