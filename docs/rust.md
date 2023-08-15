@@ -191,7 +191,7 @@ Name | Description
 [notify](https://github.com/notify-rs/notify)|Cross-platform filesystem notification library
 [OnceCell](https://crates.io/crates/once_cell)|Single assignment cells and lazy values
 [rand](https://github.com/rust-random/rand)|Generate random numbers
-[ratatui](https://github.com/ratatui-org/ratatui)|Text User Interface (TUI) library. Successor to [tui](https://github.com/fdehau/tui-rs)
+[ratatui](https://github.com/ratatui-org/ratatui)|Text User Interface (TUI) library. Successor to [tui](https://github.com/fdehau/tui-rs) ([ratatui-book](https://ratatui-org.github.io/ratatui-book/))
 [Serde JSON](https://github.com/serde-rs/json)|Serialize and deserialize JSON
 [strum](https://github.com/Peternator7/strum)|Various `#[derive(...)]` for enums
 [tempfile](https://github.com/Stebalien/tempfile)|Create temporary files or directories
