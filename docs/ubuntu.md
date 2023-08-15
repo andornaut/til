@@ -95,6 +95,9 @@ Path |Usage
 `/etc/xdg/mimeapps.list` | system-wide overrides
 `/usr/local/share/applications/mimeapps.list`, `/usr/share/applications/defaults.list`, `/usr/share/applications/mimeapps.list` | distribution-provided defaults
 
+Desktop applications and their `.desktop` files are located in `~/.local/share/applications//usr/share/applications/` and 
+`~/.local/share/applications/`
+
 ```
 # Get the mimetype for a given file:
 xdg-mime query filetype existing.pdf
