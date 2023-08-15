@@ -32,10 +32,10 @@ Application | Description
 [BSPWM](https://github.com/baskerville/bspwm)|Tiling window manager for X11 ([ansible-role-bspwm](https://github.com/andornaut/ansible-role-bspwm/))
 [ElKowars wacky widgets (EWW)](https://github.com/elkowar/eww/)|Bar for X11 and Wayland
 [Ly](https://github.com/fairyglade/ly)|Display manager
-[River WM](https://github.com/riverwm/river)|Dynamic tiling Wayland compositor 
-[Rofi](https://github.com/davatorium/rofi)|Window switcher, application launcher and dmenu replacement 
+[River WM](https://github.com/riverwm/river)|Dynamic tiling Wayland compositor
+[Rofi](https://github.com/davatorium/rofi)|Window switcher, application launcher and dmenu replacement
 [Stalonetray](https://github.com/kolbusa/stalonetray)|System tray for X11
-[Sway WM](https://swaywm.org/)|i3-compatible Wayland compositor 
+[Sway WM](https://swaywm.org/)|i3-compatible Wayland compositor
 [Waybar](https://github.com/Alexays/Waybar)|Bar for Wayland
 
 ### Monitoring and statistics commands
@@ -85,17 +85,32 @@ apt-file search ${pattern}
 ### Default application associations
 
 * [StackOverflow](https://unix.stackexchange.com/a/59088)
+* [XDG MIME Applications](https://wiki.archlinux.org/title/XDG_MIME_Applications)
 
-Edit `~/.config/mimeapps.list`:
-```
-[Default Applications]
-text/html=firefox.desktop
-application/pdf=org.gnome.Evince.desktop
-```
+Default application associations can be configured in a few places:
 
-Associate PDFs with Evince:
+Path |Usage
+--- | ---
+`~/.config/mimeapps.list` | user overrides
+`/etc/xdg/mimeapps.list` | system-wide overrides
+`/usr/local/share/applications/mimeapps.list`, `/usr/share/applications/defaults.list`, `/usr/share/applications/mimeapps.list` | distribution-provided defaults
+
 ```
+# Get the mimetype for a given file:
+xdg-mime query filetype existing.pdf
+> application/pdf
+
+# Check system-wide default:
+vim /usr/share/applications/defaults.list
+
+# Check the current default application:
+xdg-mime query default application/pdf
+
+# Set a new default application:
 xdg-mime default org.gnome.Evince.desktop application/pdf
+
+# View the override created above:
+vim ~/.config/mimeapps.list
 ```
 
 ### Post-install cleanup / Uninstall packages
@@ -166,6 +181,7 @@ ibus-daemon -rd
 ```
 
 Using dconf-editor:
+
 ```
 apt install dconf-editor
 dconf-editor
@@ -196,6 +212,7 @@ reBoot.
 ```
 
 Mount a subdirectory of a share as a non-root user
+
 ```
 # /etc/fstab
 # vers=1.0 is necessary for Samba to support Unix extnsions:
@@ -206,15 +223,15 @@ Mount a subdirectory of a share as a non-root user
 
 ### Preserve $PATH when using sudo
 
-- [StackOverflow](http://unix.stackexchange.com/a/83194)
+* [StackOverflow](http://unix.stackexchange.com/a/83194)
 
 ```
-$ sudo env "PATH=$PATH" command
+sudo env "PATH=$PATH" command
 ```
 
 ### Increase inotify watches
 
-- [Inotify instructions](https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit)
+* [Inotify instructions](https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit)
 
 ```
 $ echo '
@@ -260,6 +277,7 @@ sudo debconf-get-selections|grep -i ${packageName}
 ### Allow adm users to shutdown and reboot the system
 
 Add the following to `/etc/sudoers.d/power`:
+
 ```
 %adm ALL=NOPASSWD: /sbin/halt, /sbin/poweroff, /sbin/reboot
 ```
@@ -297,11 +315,13 @@ sudo sed -i -e 's/\([a-z]*.\?\)\?archive.ubuntu.com\|security.ubuntu.com/old-rel
 [GitHub issue](https://github.com/jonls/redshift/issues/858)
 
 1. Permit access to the symlink source by editing `/etc/apparmor.d/local/usr.bin.redshift`:
+
 ```
 owner @{HOME}/PATH_TO_VAULT/redshift.conf r,
 ```
 
 2. Restart [AppArmor](https://apparmor.net/):
+
 ```
 sudo systemctl reload apparmor
 ```
@@ -322,6 +342,7 @@ rm -rf .config/dconf/
 
 RSA SHA-1 is deprecated starting in Ubuntu 22.04. Re-enable it by adding the following
 to `/etc/ssh/ssh_config`:
+
 ```
 Host *
    # ...
