@@ -82,12 +82,12 @@ apt-file update
 apt-file search ${pattern}
 ```
 
-### Default application associations
+### Default applications
 
 * [StackOverflow](https://unix.stackexchange.com/a/59088)
 * [XDG MIME Applications](https://wiki.archlinux.org/title/XDG_MIME_Applications)
 
-Default application associations can be configured in a few places:
+Default application associations can be configured in:
 
 Path |Usage
 --- | ---
@@ -95,8 +95,14 @@ Path |Usage
 `/etc/xdg/mimeapps.list` | system-wide overrides
 `/usr/local/share/applications/mimeapps.list`, `/usr/share/applications/defaults.list`, `/usr/share/applications/mimeapps.list` | distribution-provided defaults
 
-Desktop applications and their `.desktop` files are located in `~/.local/share/applications//usr/share/applications/` and 
-`~/.local/share/applications/`
+Desktop applications and their `.desktop` files are located in:
+
+Path |Usage
+--- | ---
+`~/.local/share/applications/` | user applications
+`/usr/share/applications/` | system-wide applications
+`~/.local/share/flatpak/exports/share/applications/` | Flatpak --user applications
+`~/var/lib/flatpak/exports/share/applications/` | Flatpak --system applications
 
 ```
 # Get the mimetype for a given file:
