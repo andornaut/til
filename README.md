@@ -274,7 +274,7 @@ rake
       * [Monitoring and statistics commands](docs/ubuntu.md#monitoring-and-statistics-commands)
       * [Search for installed applications](docs/ubuntu.md#search-for-installed-applications)
       * [Search for Ubuntu packages by filename](docs/ubuntu.md#search-for-ubuntu-packages-by-filename)
-      * [Default application associations](docs/ubuntu.md#default-application-associations)
+      * [Default applications](docs/ubuntu.md#default-applications)
       * [Post-install cleanup / Uninstall packages](docs/ubuntu.md#post-install-cleanup--uninstall-packages)
       * [Flatpak](docs/ubuntu.md#flatpak)
     * [How-tos](docs/ubuntu.md#how-tos)

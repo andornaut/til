@@ -180,6 +180,7 @@ Name | Description
 [chrono](https://github.com/chronotope/chrono)|Timezone-aware date and time handling
 [chrono-tz](https://github.com/chronotope/chrono-tz)|Companion of [chrono](https://github.com/chronotope/chrono) that adds timezone data
 [color-to-tui](https://github.com/uttarayan21/color-to-tui)|Parse hex colors to `tui::style::Color`
+[copypasta](https://github.com/alacritty/copypasta)|Cross-platform Rust system clipboard library 
 [crossterm](https://github.com/crossterm-rs/crossterm)|Cross-platform terminal library ([Documentation](https://docs.rs/crossterm/latest/crossterm/))
 [cursive](https://github.com/gyscos/Cursive)|Text User Interface (TUI) library. ([Comparison to tui](https://github.com/gyscos/cursive/wiki/Cursive-vs-tui%E2%80%90rs)).
 [dirs-next](https://github.com/xdg-rs/dirs/tree/master/dirs)|Low-level library that provides conventional config/cache/data paths
