@@ -1,16 +1,26 @@
-# RetroArch
+# Retro games
 
-* [Official site](https://www.libretro.com/)
-* [CHD files](https://retropie.org.uk/docs/CHD-files/) - How to create
-* [Docs](https://docs.libretro.com/)
-* [Flathub](https://flathub.org/apps/details/org.libretro.RetroArch)
-* [ansible-workstation/games](https://github.com/andornaut/ansible-workstation/tree/master/roles/games)
-* [BIOS on GitHub](https://github.com/Abdess/retroarch_system)
-* [BIOS on Internet Archive](https://archive.org/download/RetroarchSystemFiles/Retroarch-System/)
+* [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
+* [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
 * [/r/Roms Megathread](https://r-roms.github.io/)
 * [Thumbnails](http://thumbnails.libretro.com/)
 
-## Cores
+## Miyoo Mini+
+
+* [Official store on AliExpress](https://miyoo.aliexpress.com/store/1101949807?shopId=1101949807)
+* [OnionOS](https://github.com/OnionUI/Onion)
+* [Ports Collection](https://github.com/OnionUI/Ports-Collection)
+* [/r/MiyooMini](https://www.reddit.com/r/MiyooMini/)
+
+## RetroArch
+
+* [Libretro](https://www.libretro.com/)
+  * [Docs](https://docs.libretro.com/)
+* [RetroArch on Flathub](https://flathub.org/apps/details/org.libretro.RetroArch)
+* [BIOS on GitHub](https://github.com/Abdess/retroarch_system)
+* [BIOS on Internet Archive](https://archive.org/download/RetroarchSystemFiles/Retroarch-System/)
+
+### Cores
 
 * [Emulation General Wiki](https://emulation.gametechwiki.com/index.php/Main_Page)
 
@@ -28,8 +38,6 @@ Sega Genesis | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_
 Sega Saturn | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) ([Mednafen](https://mednafen.github.io/))
 Sony PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Mednafen](https://mednafen.github.io/)) on Linux or [Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series
 Super Nintendo Entertainment System (SNES) | [bsnes-hd](https://github.com/DerKoun/bsnes-hd) or [Snex9x](https://docs.libretro.com/library/snes9x/)
-
-## Configuration
 
 ### Cache directory
 
@@ -111,14 +119,14 @@ input_hold_fast_forward_axis = "nul"
 input_rewind_axis = "nul"
 ```
 
-## RetroArch on Xbox Series
+### RetroArch on Xbox Series
 
 * [gamr13.github.io](https://gamr13.github.io/)
 * [Discord - Xbox Emulation Hub](https://discord.com/channels/1007582798598647889/1007590400220991549)
 * [Install guide video (YouTube)](https://www.youtube.com/watch?v=boHTJj8rDe0)
 * [Install guide video (YouTube)](https://www.youtube.com/watch?v=dV9GyKicrAg) (older)
 
-### USB disk drive permissions
+#### USB disk drive permissions
 
 From a Windows 10 computer or VM:
 
@@ -132,6 +140,20 @@ From a Windows 10 computer or VM:
 1. Tick the "Replace all child object permission ..." checkbox, then click "OK"
 
 This will produce an error about not being able to change permissions on the "System Volume Information" folder, click "Continue" to move forward.
+
+### Troubleshooting
+
+#### Disable Kiosk Mode
+
+```
+configFile=~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
+sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
+```
+
+#### Fix "Failed to load content" error
+
+* Try deleting and recreating the Playlist.
+* Try using unzipped (uncompressed) ROM files.
 
 ## Recommended games
 
@@ -370,17 +392,3 @@ Teenage Mutant Ninja Turtles - Tournament Fighters
 Terranigma
 Tetris & Dr. Mario
 ```
-
-## Troubleshooting
-
-### Disable Kiosk Mode
-
-```
-configFile=~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
-sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
-```
-
-### Fix "Failed to load content" error
-
-* Try deleting and recreating the Playlist.
-* Try using unzipped (uncompressed) ROM files.
