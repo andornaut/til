@@ -56,6 +56,9 @@ journalctl -b
 # View logs from the previous boot until the last reboot
 journalctl --boot=-1
 
+# Check disk usage from logs
+journalctl --disk-usage
+
 # Delete all but 1GB of logs
 journalctl --vacuum-size=1G
 
