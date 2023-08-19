@@ -58,6 +58,9 @@ journalctl --boot=-1
 
 # Delete all but 1GB of logs
 journalctl --vacuum-size=1G
+
+# ... or delete all logs older than 1 week
+journalctl --vacuum-time=1w
 ```
 
 ### Remove service
