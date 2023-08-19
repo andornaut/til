@@ -2,8 +2,8 @@
 
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
-* [/r/Roms Megathread](https://r-roms.github.io/)
 * [Thumbnails](http://thumbnails.libretro.com/)
+* [/r/Roms Megathread](https://r-roms.github.io/)
 
 ## Miyoo Mini+
 
@@ -19,6 +19,7 @@
 * [RetroArch on Flathub](https://flathub.org/apps/details/org.libretro.RetroArch)
 * [BIOS on GitHub](https://github.com/Abdess/retroarch_system)
 * [BIOS on Internet Archive](https://archive.org/download/RetroarchSystemFiles/Retroarch-System/)
+* [/r/RetroArch](https://www.reddit.com/r/RetroArch/)
 
 ### Cores
 
