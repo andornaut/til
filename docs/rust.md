@@ -130,6 +130,19 @@ cargo fix
 cargo fix --allow-dirty
 ```
 
+### Cargo.toml overriding direct and transitive dependencies
+
+* [Overriding dependencies](https://doc.rust-lang.org/cargo/reference/overriding-dependencies.html)
+
+```toml
+[patch.crates-io]
+# For:
+# * feat(table): enforce line alignment in table render
+# v0.22.1-alpha.2
+# https://github.com/ratatui-org/ratatui/commit/d2429bc3e44a34197511192dbd215dd32fdf2d9c
+ratatui = {git = "https://github.com/ratatui-org/ratatui.git", rev = "b6b2da5"}
+```
+
 ## Visual Studio Code
 
 * [CodeLLDB extension](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) - Debugger
