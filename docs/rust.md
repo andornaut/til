@@ -136,7 +136,7 @@ cargo fix --allow-dirty
 
 ```toml
 [patch.crates-io]
-# For:
+# Patch direct and transitive (from color-to-tui) dependencies on ratatui in order to use:
 # * feat(table): enforce line alignment in table render
 # v0.22.1-alpha.2
 # https://github.com/ratatui-org/ratatui/commit/d2429bc3e44a34197511192dbd215dd32fdf2d9c
