@@ -31,6 +31,7 @@ Read a local copy of "The Rust Programming Language" book in a web browser with:
 
 ## Articles, blogs, and courses
 
+* [After NLL: Interprocedural conflicts](http://smallcultfollowing.com/babysteps/blog/2018/11/01/after-nll-interprocedural-conflicts/)
 * [Comprehensive Rust](https://google.github.io/comprehensive-rust/) - 4 day course by Google's Android team
 * [Finding Closure in Rust](https://huonw.github.io/blog/2015/05/finding-closure-in-rust/)
 * [How to Idiomatically Use Global Variables in Rust](https://www.sitepoint.com/rust-global-variables/)
