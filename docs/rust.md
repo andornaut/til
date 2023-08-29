@@ -214,6 +214,7 @@ Name | Description
 [textwrap](https://github.com/mgeisler/textwrap)|A library for word wrapping text
 [tokio](https://github.com/tokio-rs/tokio)|Async runtime, including IO, networking, scheduling, and timers
 [uuid](https://github.com/uuid-rs/uuid)|Generate and parse UUIDs
+[winit](https://github.com/rust-windowing/winit)|Cross-platform window creation and management
 
 ## Software
 
