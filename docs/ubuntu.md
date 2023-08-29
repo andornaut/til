@@ -30,6 +30,7 @@ Application | Description
 --- | ---
 [Betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)|Lockscreen for X11
 [BSPWM](https://github.com/baskerville/bspwm)|Tiling window manager for X11 ([ansible-role-bspwm](https://github.com/andornaut/ansible-role-bspwm/))
+[clipboard](https://github.com/Slackadays/Clipboard)|TUI clipboard manager
 [ElKowars wacky widgets (EWW)](https://github.com/elkowar/eww/)|Bar for X11 and Wayland
 [Ly](https://github.com/fairyglade/ly)|Display manager
 [River WM](https://github.com/riverwm/river)|Dynamic tiling Wayland compositor
