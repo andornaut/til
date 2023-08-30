@@ -5,6 +5,14 @@
 * [Thumbnails](http://thumbnails.libretro.com/)
 * [/r/Roms Megathread](https://r-roms.github.io/)
 
+## Analogue Pocket
+
+* [Analogue.co](https://www.analogue.co/)
+  * [Manual](https://assets.analogue.co/pdf/f48dbccc2a7c529e3ef677db3b4ab9d8/Analogue+Pocket+User+Manual+v1.2.pdf)
+* [openFPGA Cores Inventory](https://openfpga-cores-inventory.github.io/analogue-pocket/)
+* [Pocket Sync](https://github.com/neil-morrison44/pocket-sync) - GUI tool to update openFPGA cores, and manage save states, save files, and screenshots
+* [Analogue Pocket Updater Utility](https://github.com/mattpannella/pocket-updater-utility) - CLI tool to update openFPGA cores and firmware
+
 ## Miyoo Mini+
 
 * [Official store on AliExpress](https://miyoo.aliexpress.com/store/1101949807?shopId=1101949807)
