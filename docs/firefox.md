@@ -11,6 +11,9 @@ browser.toolbars.bookmarks.showOtherBookmarks: false
 # Auto-reject cookie banner prompts
 cookiebanners.service.mode: 1
 cookiebanners.service.mode.privateBrowsing: 1
+
+# Don't paste on middle-click
+middlemouse.paste false
 ```
 
 ## Credit card autofill / autocomplete
