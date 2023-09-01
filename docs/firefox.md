@@ -3,6 +3,7 @@
 ## Misc. about:config settings
 
 * [Say “goodbye” to cookies and cookie banners with vanilla Firefox](https://beehaw.org/post/908043)
+* [How do I disable middle mouse button click paste?](https://askubuntu.com/a/97309)
 
 ```
 browser.bookmarks.showMobileBookmarks: false
