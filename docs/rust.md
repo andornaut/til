@@ -199,6 +199,7 @@ Name | Description
 [cursive](https://github.com/gyscos/Cursive)|Text User Interface (TUI) library. ([Comparison to tui](https://github.com/gyscos/cursive/wiki/Cursive-vs-tui%E2%80%90rs)).
 [dirs-next](https://github.com/xdg-rs/dirs/tree/master/dirs)|Low-level library that provides conventional config/cache/data paths
 [egui](https://github.com/emilk/egui)|An easy-to-use immediate mode GUI in Rust that runs on both web and native
+[env_logger](https://github.com/rust-cli/env_logger/)|A logging implementation for `log` which is configured via an environment variable
 [enum-iterator](https://crates.io/crates/enum-iterator)|`#[derive(IntoEnumIterato)` for enums
 [gtk-rs](https://gtk-rs.org/)|GTK4, Cairo, glib, etc bindings
 [itertools](https://docs.rs/itertools/latest/itertools/)|Extra iterator adaptors, functions and macros
