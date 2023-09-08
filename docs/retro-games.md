@@ -241,6 +241,7 @@ Metroid - Zero Mission
 Pokemon - Emerald Version
 Pokemon - FireRed Version
 Pokemon - LeafGreen Version
+Pokemon - Unbound (ROM hack)
 Sonic Advance 3
 Tony Hawk's Pro Skater 2
 Ultimate Card Games
