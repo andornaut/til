@@ -20,6 +20,15 @@
 * [Ports Collection](https://github.com/OnionUI/Ports-Collection)
 * [/r/MiyooMini](https://www.reddit.com/r/MiyooMini/)
 
+### Enable FTP server
+
+* [/r/MiyooMini](https://www.reddit.com/r/MiyooMini/comments/11uzlrw/fyi_you_can_enable_ftp_on_the_miyoo_mini_to_copy/)
+
+1. Navigate to: Apps > Package Manager > Apps
+1. Install the "Terminal" app
+1. Navigate to: Apps > Terminal
+1. Use the on-screen keyboard to enter ```tcpsvd -vE 0.0.0.0 21 ftpd -w /```, then hit `enter`
+
 ## RetroArch
 
 * [Libretro](https://www.libretro.com/)
