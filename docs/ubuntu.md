@@ -117,6 +117,14 @@ vim /usr/share/applications/defaults.list
 # Check the current default application:
 xdg-mime query default application/pdf
 
+# List all applications
+find /usr/share/applications/ \
+  /usr/share/applications/ \
+ ~/.local/share/flatpak/exports/share/applications/ \
+ /var/lib/flatpak/exports/share/applications/ \
+ -iname '*.desktop' \
+ -exec basename {} \;|sort|uniq
+
 # Set a new default application:
 xdg-mime default org.gnome.Evince.desktop application/pdf
 
