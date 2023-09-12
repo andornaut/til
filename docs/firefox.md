@@ -56,3 +56,10 @@ In Firefox Nightly for Android:
 1. Tap the logo 5 times
 1. Back in Settings, click Custom Add-on collection
 1. Enter eg. Collection owner: 16021357, Collection name: android
+
+## Bypass HSTS HTTPS/TLS certificate error
+
+1. Quit Firefox
+1. Edit `~/.mozilla/firefox/${profileName}/SiteSecurityServiceState.txt`
+1. Delete lines that begin with the domain in question
+1. Open Firefox and navigate to the site. You can now bypass the security warning by clicking a button.
