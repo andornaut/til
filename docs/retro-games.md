@@ -223,6 +223,11 @@ Tetris
 The Legend of Zelda
 ```
 
+### Nintendo Game Boy - April 21, 1989
+```
+Tetris - Rosy Retrospection (ROM hack)
+```
+
 ### Nintendo Game Boy Advance - March 21, 2001
 ```
 Advance Wars
@@ -249,7 +254,7 @@ Tony Hawk's Pro Skater 2
 Ultimate Card Games
 WarioWare, Inc. - Mega Microgame$!
 ```
-### Nintendo GameCube - November 14, 2001
+### Nintendo GameCube - September 14, 2001
 ```
 Animal Crossing
 Beyond Good & Evil
