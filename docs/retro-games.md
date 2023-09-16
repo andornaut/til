@@ -202,7 +202,6 @@ Turok - Dinosaur Hunter
 Wave Race 64 - Kawasaki Jet Ski
 WWF No Mercy
 ```
-
 ### Nintendo Entertainment System (NES) - October 18, 1985
 ```
 Batman: The Video Game
@@ -222,12 +221,14 @@ Teenage Mutant Ninja Turtles III: The Manhattan Project
 Tetris
 The Legend of Zelda
 ```
-
 ### Nintendo Game Boy - April 21, 1989
 ```
+Kirby's Dream Land 2
+Pokemon - Red and Blue
 Tetris - Rosy Retrospection (ROM hack)
+The Legend of Zelda - Link's Awakening
+Wario Land II
 ```
-
 ### Nintendo Game Boy Advance - March 21, 2001
 ```
 Advance Wars
