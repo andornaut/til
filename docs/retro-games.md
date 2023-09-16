@@ -2,6 +2,7 @@
 
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
+* [ROMhacking.net](https://www.romhacking.net)
 * [Thumbnails](http://thumbnails.libretro.com/)
 * [/r/Roms Megathread](https://r-roms.github.io/)
 
@@ -216,6 +217,7 @@ Mega Man 2
 Ninja Gaiden
 River City Ransom
 Super Mario Bros. 3
+Tecmo Super Bowl 2024 Presented by TecmoBowl.org (ROM hack)
 Teenage Mutant Ninja Turtles III: The Manhattan Project
 Tetris
 The Legend of Zelda
@@ -320,6 +322,7 @@ Mortal Kombat II
 MUSHA - Metallic Uniframe Super Hybrid Armor
 NFL Sports Talk Football '93 Starring Joe Montana
 NHL '94
+NHL '94 - 2023 Edition by Adam Catalyst (ROM hack)
 OutRun
 Phantasy Star IV
 Revenge of Shinobi, The
@@ -407,12 +410,14 @@ Kirby's Dream Land 3
 Legend of Zelda, The - A Link to the Past
 Mario Paint
 Mega Man X2
+Mega Man X3 - Zero Project (ROM hack)
 Mega Man X
 Ms. Pac-Man
 NBA Jam - Tournament Edition
 Secret of Mana
 Sparkster
 Star Fox
+Star Fox EX (ROM hack)
 Street Fighter II Turbo
 Super Bomberman
 Super Castlevania IV
