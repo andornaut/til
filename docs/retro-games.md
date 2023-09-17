@@ -2,8 +2,8 @@
 
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
+* [ROM hack patcher (online)](https://www.romhacking.net/patch/)
 * [ROMhacking.net](https://www.romhacking.net)
-  * [Online ROM patcher](https://www.romhacking.net/patch/) 
 * [Thumbnails](http://thumbnails.libretro.com/)
 * [/r/Roms Megathread](https://r-roms.github.io/)
 
@@ -124,7 +124,6 @@ rewind_enable = "false"
 ### Controller right-analog stick
 
 Set the following base configuration:
-
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 input_hold_fast_forward_axis = "+2"
@@ -132,7 +131,6 @@ input_rewind_axis = "-2"
 ```
 
 Unset the right-analog stick mappings for cores that do not support "rewind" or "fast-forward" or for consoles that make use of the right-analog stick, such as the Nintendo GameCube:
-
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
 input_hold_fast_forward_axis = "nul"
@@ -393,6 +391,7 @@ MediEvil
 Mega Man Legends
 Mega Man X4
 Metal Gear Solid
+NBA Jam 22 (ROM hack)
 Spyro the Dragon
 Tekken 3
 Twisted Metal 2
