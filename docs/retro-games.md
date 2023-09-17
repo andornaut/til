@@ -26,7 +26,7 @@
 
 1. Find the names of recommended BIOS' for each of your emulators from the [Onion Wiki](https://onionui.github.io/docs/emulators/consoles)
 1. Download the [BIOS files](https://archive.org/download/RetroarchSystemFiles/Retroarch-System/)
-1. Add bios files to `/mnt/SDCARD/BIOS` on the Miyoo Mini+
+1. Add bios files to [`/mnt/SDCARD/BIOS`](https://onionui.github.io/docs/emulators#bios-files) on the Miyoo Mini+
 1. Navigate to Apps > RetroArch > Load Core
 1. Select a Core to test
 1. Navigate to Apps > RetroArch -> Information > Core Information
