@@ -22,6 +22,16 @@
 * [Ports Collection](https://github.com/OnionUI/Ports-Collection)
 * [/r/MiyooMini](https://www.reddit.com/r/MiyooMini/)
 
+### RetroArch Core BIOS files
+
+1. Find the names of recommended BIOS' for each of your emulators from the [Onion Wiki](https://onionui.github.io/docs/emulators/consoles)
+1. Download the [BIOS files](https://archive.org/download/RetroarchSystemFiles/Retroarch-System/)
+1. Add bios files to `/mnt/SDCARD/BIOS` on the Miyoo Mini+
+1. Navigate to Apps > RetroArch > Load Core
+1. Select a Core to test
+1. Navigate to Apps > RetroArch -> Information > Core Information
+1. Confirm that the BIOS files that you added are listed as "present"
+
 ### Enable FTP server
 
 * [/r/MiyooMini](https://www.reddit.com/r/MiyooMini/comments/11uzlrw/fyi_you_can_enable_ftp_on_the_miyoo_mini_to_copy/)
