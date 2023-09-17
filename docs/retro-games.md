@@ -3,6 +3,7 @@
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
 * [ROMhacking.net](https://www.romhacking.net)
+  * [Online ROM patcher](https://www.romhacking.net/patch/) 
 * [Thumbnails](http://thumbnails.libretro.com/)
 * [/r/Roms Megathread](https://r-roms.github.io/)
 
