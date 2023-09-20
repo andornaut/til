@@ -113,6 +113,7 @@ video_driver = "d3d11"
 Console | Core | Rewind is supported
 --- | --- | ---
 Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | ✔
+Nintendo Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | ✔
 Nintendo Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | ✔
 Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/) | ✕\*
 Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/) | ✕
@@ -185,52 +186,7 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 
 ## Recommended games
 
-### Nintendo 64 - June 23, 1996
-```
-1080 Snowboarding
-Banjo-Kazooie
-Diddy Kong Racing
-Donkey Kong 64
-Excitebike 64
-F-Zero X
-International Superstar Soccer 2000
-Kirby 64 - The Crystal Shards
-Legend of Zelda, The - Majora's Mask
-Legend of Zelda, The - Ocarina of Time
-Mario Golf
-Mario Kart 64
-Mario Tennis
-Paper Mario
-Pilotwings 64
-Pokemon Puzzle League
-Star Fox 64
-Star Wars - Rogue Squadron
-Super Mario 64
-Super Smash Bros.
-Turok - Dinosaur Hunter
-Wave Race 64 - Kawasaki Jet Ski
-WWF No Mercy
-```
-### Nintendo Entertainment System (NES) - October 18, 1985
-```
-Batman: The Video Game
-Castlevania III: Dracula’s Curse
-Contra
-Dr. Mario
-DuckTales
-Kirby’s Adventure
-Punch-Out!!
-Metroid
-Mega Man 2
-Ninja Gaiden
-River City Ransom
-Super Mario Bros. 3
-Tecmo Super Bowl 2024 Presented by TecmoBowl.org (ROM hack)
-Teenage Mutant Ninja Turtles III: The Manhattan Project
-Tetris
-The Legend of Zelda
-```
-### Nintendo Game Boy - April 21, 1989
+### Nintendo - Game Boy - April 21, 1989
 ```
 Kirby's Dream Land 2
 Pokemon - Red and Blue
@@ -238,7 +194,7 @@ Tetris - Rosy Retrospection (ROM hack)
 The Legend of Zelda - Link's Awakening
 Wario Land II
 ```
-### Nintendo Game Boy Advance - March 21, 2001
+### Nintendo - Game Boy Advance - March 21, 2001
 ```
 Advance Wars
 Castlevania - Aria of Sorrow
@@ -264,7 +220,7 @@ Tony Hawk's Pro Skater 2
 Ultimate Card Games
 WarioWare, Inc. - Mega Microgame$!
 ```
-### Nintendo GameCube - September 14, 2001
+### Nintendo - GameCube - September 14, 2001
 ```
 Animal Crossing
 Beyond Good & Evil
@@ -288,127 +244,52 @@ Super Monkey Ball
 Super Smash Bros. Melee
 Tony Hawk's Pro Skater 3
 ```
-### Sega Dreamcast - November 27, 1998
+### Nintendo - Nintendo 64 - June 23, 1996
 ```
-Border Down
-Crazy Taxi
-Grandia II
-Jet Grind Radio
-Marvel vs. Capcom 2
-NFL Blitz 2000
-Rayman 2 - The Great Escape
-Rez
-Sonic Adventure
-Soulcalibur
-Spider-Man
-Street Fighter Alpha 3
-Tony Hawk's Pro Skater 2
+1080 Snowboarding
+Banjo-Kazooie
+Diddy Kong Racing
+Donkey Kong 64
+Excitebike 64
+F-Zero X
+International Superstar Soccer 2000
+Kirby 64 - The Crystal Shards
+Legend of Zelda, The - Majora's Mask
+Legend of Zelda, The - Ocarina of Time
+Mario Golf
+Mario Kart 64
+Mario Tennis
+Paper Mario
+Pilotwings 64
+Pokemon Puzzle League
+Star Fox 64
+Star Wars - Rogue Squadron
+Super Mario 64
+Super Smash Bros.
+Turok - Dinosaur Hunter
+Wave Race 64 - Kawasaki Jet Ski
+WWF No Mercy
 ```
-### Sega Game Gear - October 6, 1990
+### Nintendo - Nintendo Entertainment System (NES) - October 18, 1985
 ```
-Castle of Illusion Starring Mickey Mouse
-Coca-Cola Kid
-Columns
-Fantasy Zone
-Legend of Illusion Starring Mickey Mouse
-Lucky Dime Caper Starring Donald Duck, The
+Batman: The Video Game
+Castlevania III: Dracula’s Curse
+Contra
+Dr. Mario
+DuckTales
+Kirby’s Adventure
+Punch-Out!!
+Metroid
+Mega Man 2
 Ninja Gaiden
-Power Strike II
-Ristar
-Shining Force - The Sword of Hajya
-Shinobi
-World Series Baseball
-X-Men
+River City Ransom
+Super Mario Bros. 3
+Tecmo Super Bowl 2024 Presented by TecmoBowl.org (ROM hack)
+Teenage Mutant Ninja Turtles III: The Manhattan Project
+Tetris
+The Legend of Zelda
 ```
-### Sega Genesis - October 29, 1988
-```
-Aladdin
-Castlevania - Bloodlines
-Desert Strike - Return to the Gulf
-Earthworm Jim
-Ecco the Dolphin
-Evander Holyfield's 'Real Deal' Boxing
-Golden Axe
-Gunstar Heroes
-Herzog Zwei
-Madden NFL 95
-Michael Jackson's Moonwalker
-Mortal Kombat II
-MUSHA - Metallic Uniframe Super Hybrid Armor
-NFL Sports Talk Football '93 Starring Joe Montana
-NHL '94
-NHL '94 - 2023 Edition by Adam Catalyst (ROM hack)
-OutRun
-Phantasy Star IV
-Revenge of Shinobi, The
-Road Rash 3
-Rocket Knight Adventures
-Shining Force II
-Shinobi III - Return of the Ninja Master
-Sonic The Hedgehog 2
-Sonic The Hedgehog 3
-Sonic The Hedgehog
-Streets of Rage 2
-Super Monaco GP
-Super Thunder Blade
-Teenage Mutant Ninja Turtles - The Hyperstone Heist
-Thunder Force IV
-ToeJam & Earl
-Virtua Racing
-World Series Baseball 98
-X-Men 2 - Clone Wars
-X-Men
-```
-### Sega Saturn - November 22, 1994
-```
-Astal
-Burning Rangers
-Daytona USA - Championship Circuit Edition
-Dragon Force
-Guardian Heroes
-Manx TT SuperBike
-Marvel Super Heroes
-NiGHTS into Dreams...
-Panzer Dragoon Saga
-Radiant Silvergun
-Rayman
-Road Rash
-Saturn Bomberman
-Sega Rally Championship
-Shining Force III
-Shining the Holy Ark
-Sonic Jam
-Street Fighter Alpha 2
-Virtua Cop 2
-Virtua Fighter 2
-X-Men - Children of the Atom
-X-Men vs. Street Fighter
-```
-### Sony PlayStation (PSX) - December 3, 1994
-```
-Ace Combat 3 - Electrosphere
-Ape Escape
-Bust-A-Move 2 - Arcade Edition
-Castlevania - Symphony of the Night
-Chrono Cross
-Crash Bandicoot 2 - Cortex Strikes Back
-Final Fantasy Tactics
-Final Fantasy VII
-Gex - Enter the Gecko
-Grandia
-Gran Turismo 2
-MediEvil
-Mega Man Legends
-Mega Man X4
-Metal Gear Solid
-NBA Jam 22 (ROM hack)
-Spyro the Dragon
-Tekken 3
-Twisted Metal 2
-Wipeout XL
-Xenogears
-```
-### Super Nintendo Entertainment System (SNES) - November 21, 1990
+### Nintendo - Super Nintendo Entertainment System (SNES) - November 21, 1990
 ```
 Chrono Trigger
 Contra III - The Alien Wars
@@ -451,4 +332,124 @@ Teenage Mutant Ninja Turtles IV - Turtles in Time
 Teenage Mutant Ninja Turtles - Tournament Fighters
 Terranigma
 Tetris & Dr. Mario
+```
+### Sega - Dreamcast - November 27, 1998
+```
+Border Down
+Crazy Taxi
+Grandia II
+Jet Grind Radio
+Marvel vs. Capcom 2
+NFL Blitz 2000
+Rayman 2 - The Great Escape
+Rez
+Sonic Adventure
+Soulcalibur
+Spider-Man
+Street Fighter Alpha 3
+Tony Hawk's Pro Skater 2
+```
+### Sega - Game Gear - October 6, 1990
+```
+Castle of Illusion Starring Mickey Mouse
+Coca-Cola Kid
+Columns
+Fantasy Zone
+Legend of Illusion Starring Mickey Mouse
+Lucky Dime Caper Starring Donald Duck, The
+Ninja Gaiden
+Power Strike II
+Ristar
+Shining Force - The Sword of Hajya
+Shinobi
+World Series Baseball
+X-Men
+```
+### Sega - Genesis - October 29, 1988
+```
+Aladdin
+Castlevania - Bloodlines
+Desert Strike - Return to the Gulf
+Earthworm Jim
+Ecco the Dolphin
+Evander Holyfield's 'Real Deal' Boxing
+Golden Axe
+Gunstar Heroes
+Herzog Zwei
+Madden NFL 95
+Michael Jackson's Moonwalker
+Mortal Kombat II
+MUSHA - Metallic Uniframe Super Hybrid Armor
+NFL Sports Talk Football '93 Starring Joe Montana
+NHL '94
+NHL '94 - 2023 Edition by Adam Catalyst (ROM hack)
+OutRun
+Phantasy Star IV
+Revenge of Shinobi, The
+Road Rash 3
+Rocket Knight Adventures
+Shining Force II
+Shinobi III - Return of the Ninja Master
+Sonic The Hedgehog 2
+Sonic The Hedgehog 3
+Sonic The Hedgehog
+Streets of Rage 2
+Super Monaco GP
+Super Thunder Blade
+Teenage Mutant Ninja Turtles - The Hyperstone Heist
+Thunder Force IV
+ToeJam & Earl
+Virtua Racing
+World Series Baseball 98
+X-Men 2 - Clone Wars
+X-Men
+```
+### Sega - Saturn - November 22, 1994
+```
+Astal
+Burning Rangers
+Daytona USA - Championship Circuit Edition
+Dragon Force
+Guardian Heroes
+Manx TT SuperBike
+Marvel Super Heroes
+NiGHTS into Dreams...
+Panzer Dragoon Saga
+Radiant Silvergun
+Rayman
+Road Rash
+Saturn Bomberman
+Sega Rally Championship
+Shining Force III
+Shining the Holy Ark
+Sonic Jam
+Street Fighter Alpha 2
+Virtua Cop 2
+Virtua Fighter 2
+X-Men - Children of the Atom
+X-Men vs. Street Fighter
+```
+### Sony - PlayStation (PSX) - December 3, 1994
+```
+Ace Combat 3 - Electrosphere
+Ape Escape
+Bust-A-Move 2 - Arcade Edition
+Castlevania - Symphony of the Night
+Chrono Cross
+Crash Bandicoot 2 - Cortex Strikes Back
+Final Fantasy Tactics
+Final Fantasy VII
+Gex - Enter the Gecko
+Grandia
+Gran Turismo 2
+MediEvil
+Mega Man Legends
+Mega Man X4
+Metal Gear Solid
+NBA Jam 22 (ROM hack)
+Spyro the Dragon
+Tekken 3
+Twisted Metal 2
+Wipeout XL
+Xenogears
 ```
