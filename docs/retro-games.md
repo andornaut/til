@@ -108,21 +108,10 @@ video_driver = "d3d11"
 
 "Rewind" functionality is not supported by all cores.
 
-`*` Disable "rewind" on some cores where it is problematic.
-
-Console | Core | Rewind is supported
---- | --- | ---
-Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | ✔
-Nintendo Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | ✔
-Nintendo Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | ✔
-Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/) | ✕\*
-Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/) | ✕
-Sega Game Gear | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | ✔
-Sega Genesis | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | ✔
-Sega Saturn | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | ✔
-Sony PlayStation (PSX) | [Beetle PSX](https://docs.libretro.com/library/beetle_psx/) | ✔
-Sony PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) | ✔
-Super Nintendo Entertainment System (SNES) | [higan Accuracy](https://docs.libretro.com/library/higan_accuracy/) | ✔
+Console | Cores that don't support or have issues with "rewind"
+--- | ---
+Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/)
+Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/)
 
 Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
 
