@@ -97,6 +97,35 @@ cargo build
 cargo run
 ```
 
+## Testing
+
+* [Rust by example](https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html)
+* [test_case (crate)](https://crates.io/crates/test_case) - Generate parametrized test cases
+  
+```rust
+#[cfg(test)]
+mod tests {
+    // Note this useful idiom: importing names from outer (for mod tests) scope.
+    use super::*;
+
+    #[test]
+    fn test_add() {
+        assert_eq!(add(1, 2), 3);
+    }
+
+    use test_case::test_case;
+
+    #[test_case(-2, -4 ; "when both operands are negative")]
+    #[test_case(2,  4  ; "when both operands are positive")]
+    #[test_case(4,  2  ; "when operands are swapped")]
+    fn multiplication_tests(x: i8, y: i8) {
+        let actual = (x * y).abs();
+
+        assert_eq!(8, actual)
+    }
+}
+```
+
 ## Macros
 
 Features and crate-level configuration:
