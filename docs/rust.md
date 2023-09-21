@@ -99,13 +99,13 @@ cargo run
 
 ## Testing
 
+* [Controlling How Tests Are Run](https://doc.rust-lang.org/book/ch11-02-running-tests.html)
 * [Rust by example](https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html)
 * [test_case (crate)](https://crates.io/crates/test_case) - Generate parametrized test cases
   
 ```rust
 #[cfg(test)]
 mod tests {
-    // Note this useful idiom: importing names from outer (for mod tests) scope.
     use super::*;
 
     #[test]
@@ -124,6 +124,22 @@ mod tests {
         assert_eq!(8, actual)
     }
 }
+```
+
+Run tests using Cargo
+```bash
+# Display one character per test instead of one line
+# Test only this package's library unit tests
+cargo test --quiet --lib
+
+# Run all tests whose name matches `*navigate*`
+cargo test navigate
+
+# Run tests in a module and its submodules
+cargo test views::
+
+# Run tests in a module, but not its submodules
+cargo test views::tests
 ```
 
 ## Macros
