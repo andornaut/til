@@ -247,6 +247,7 @@ Name | Description
 [env_logger](https://github.com/rust-cli/env_logger/)|A logging implementation for `log` which is configured via an environment variable
 [enum-iterator](https://crates.io/crates/enum-iterator)|`#[derive(IntoEnumIterato)` for enums
 [gtk-rs](https://gtk-rs.org/)|GTK4, Cairo, glib, etc bindings
+[indicatif](https://docs.rs/indicatif/latest/indicatif/index.html)|Progress bar library
 [itertools](https://docs.rs/itertools/latest/itertools/)|Extra iterator adaptors, functions and macros
 [lazy_static](https://crates.io/crates/lazy_static/)|A macro for declaring lazily evaluated statics
 [notify](https://github.com/notify-rs/notify)|Cross-platform filesystem notification library
