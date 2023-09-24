@@ -56,3 +56,5 @@ EOF
 * [React Typescript handbook](https://www.typescriptlang.org/docs/handbook/react.html)
 * [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup)
 * [Examples](https://dev.to/bendman/react-typescript-cheatsheet-1f2h)
+* [tsconfig cheatsheet](https://www.totaltypescript.com/tsconfig-cheat-sheet)
+
