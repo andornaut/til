@@ -5,11 +5,13 @@
 
 ## ADB
 
-1. From the Android TV device: Navigate to the "Developer options"
+1. From the Android TV device: Navigate to Settings > About
+1. Scroll down to the bottom and click on "Build" and until you see the message "You are now a developer!"
+1. Navigate to Settings > Developer options
 1. Enable "ADB debugging"
  
 ```
-adb connect tv-livingroom
+adb connect tv-livingroom:5555
 # The TV will prompt to authorize the connection. Select "always allow".
 
 adb shell
