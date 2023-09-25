@@ -19,6 +19,8 @@ rake
     * [Software](docs/3d-printing.md#software)
     * [Stores](docs/3d-printing.md#stores)
       * [Filament](docs/3d-printing.md#filament)
+  * [Android TV](docs/androidtv.md#android-tv)
+    * [ADB](docs/androidtv.md#adb)
   * [Ansible](docs/ansible.md#ansible)
     * [Debugging](docs/ansible.md#debugging)
     * [Ansible Galaxy](docs/ansible.md#ansible-galaxy)
