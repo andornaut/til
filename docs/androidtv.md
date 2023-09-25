@@ -1,0 +1,37 @@
+# Android TV
+
+* [HomeAssistant Android Debug Bridge](https://www.home-assistant.io/integrations/androidtv/#adb-setup)
+* [Intents](https://gist.github.com/mcfrojd/9e6875e1db5c089b1e3ddeb7dba0f304)
+
+## ADB
+
+1. From the Android TV device: Navigate to the "Developer options"
+1. Enable "ADB debugging"
+ 
+```
+adb connect tv-livingroom
+# The TV will prompt to authorize the connection. Select "always allow".
+
+adb shell
+
+# List all intents
+pm list packages |\
+  sed -e "s/package://" |\
+  while read x; do cmd package resolve-activity --brief $x |\
+  tail -n 1 |\
+  grep -v "No activity found"; \
+  done
+
+am start -a android.intent.action.VIEW -n com.netflix.ninja/.MainActivity
+```
+
+
+App | Intent
+--- | ---
+Disney+ | com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity
+NetFlix | com.netflix.ninja/.MainActivity
+Prime Video | com.amazon.amazonvideo.livingroom/com.amazon.ignition.IgnitionActivity
+VLC | org.videolan.vlc/.StartActivity
+YouTube | com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity
+YouTube Kids | com.google.android.youtube.tvkids/com.google.android.apps.youtube.tvkids.activity.MainActivity 
+YouTube Music | com.google.android.youtube.tvmusic/com.google.android.apps.youtube.tvmusic.activity.MainActivity
