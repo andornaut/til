@@ -185,6 +185,7 @@ Wario Land II
 ```
 ### Nintendo - Game Boy Advance - March 21, 2001
 ```
+Apotris (https://akouzoukos.com/apotris/)
 Advance Wars
 Castlevania - Aria of Sorrow
 Final Fantasy Tactics Advance
