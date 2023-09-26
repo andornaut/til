@@ -41,6 +41,10 @@
 1. Navigate to: Apps > Terminal
 1. Use the on-screen keyboard to enter ```tcpsvd -vE 0.0.0.0 21 ftpd -w /```, then hit `enter`
 
+## Boxart
+
+Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCARD/Roms/GBA/Imgs`
+
 ## RetroArch
 
 * [Libretro](https://www.libretro.com/)
@@ -179,7 +183,7 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 ```
 Kirby's Dream Land 2
 Pokemon - Red and Blue
-Tetris - Rosy Retrospection (ROM hack)
+Tetris - Rosy Retrospection (https://www.romhacking.net/hacks/5813/)
 The Legend of Zelda - Link's Awakening
 Wario Land II
 ```
@@ -204,7 +208,7 @@ Metroid - Zero Mission
 Pokemon - Emerald Version
 Pokemon - FireRed Version
 Pokemon - LeafGreen Version
-Pokemon - Unbound (ROM hack)
+Pokemon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
 Sonic Advance 3
 Tony Hawk's Pro Skater 2
 Ultimate Card Games
@@ -274,7 +278,7 @@ Mega Man 2
 Ninja Gaiden
 River City Ransom
 Super Mario Bros. 3
-Tecmo Super Bowl 2024 Presented by TecmoBowl.org (ROM hack)
+Tecmo Super Bowl 2024 Presented by TecmoBowl.org (https://tecmobowl.org/files/file/821-tecmo-super-bowl-2024-presented-by-tecmobowlorg/)
 Teenage Mutant Ninja Turtles III: The Manhattan Project
 The Legend of Zelda
 ```
@@ -296,14 +300,14 @@ Kirby's Dream Land 3
 Legend of Zelda, The - A Link to the Past
 Mario Paint
 Mega Man X2
-Mega Man X3 - Zero Project (ROM hack)
+Mega Man X3 - Zero Project (https://www.romhacking.net/hacks/4086/)
 Mega Man X
 Ms. Pac-Man
 NBA Jam - Tournament Edition
 Secret of Mana
 Sparkster
 Star Fox
-Star Fox EX (ROM hack)
+Star Fox EX (https://www.romhacking.net/hacks/7285/)
 Street Fighter II Turbo
 Super Bomberman
 Super Castlevania IV
@@ -370,7 +374,7 @@ Mortal Kombat II
 MUSHA - Metallic Uniframe Super Hybrid Armor
 NFL Sports Talk Football '93 Starring Joe Montana
 NHL '94
-NHL '94 - 2023 Edition by Adam Catalyst (ROM hack)
+NHL '94 - 2023 Edition by Adam Catalyst (https://www.romhacking.net/hacks/7454/)
 OutRun
 Phantasy Star IV
 Revenge of Shinobi, The
@@ -434,7 +438,7 @@ MediEvil
 Mega Man Legends
 Mega Man X4
 Metal Gear Solid
-NBA Jam 22 (ROM hack)
+NBA Jam 22 (https://www.romhacking.net/hacks/5700/)
 Spyro the Dragon
 Tekken 3
 Twisted Metal 2
