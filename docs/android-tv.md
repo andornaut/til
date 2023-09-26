@@ -1,9 +1,10 @@
 # Android TV
 
-* [HomeAssistant Android Debug Bridge](https://www.home-assistant.io/integrations/androidtv/#adb-setup)
-* [Intents](https://gist.github.com/mcfrojd/9e6875e1db5c089b1e3ddeb7dba0f304)
-
 ## ADB
+
+* [ADB tips and tricks](https://www.xda-developers.com/adb-tips-tricks/)
+* [HomeAssistant Android Debug Bridge setup](https://www.home-assistant.io/integrations/androidtv/#adb-setup)
+* [Intents](https://gist.github.com/mcfrojd/9e6875e1db5c089b1e3ddeb7dba0f304)
 
 1. From the Android TV device: Navigate to Settings > About
 1. Scroll down to the bottom and click on "Build" and until you see the message "You are now a developer!"
