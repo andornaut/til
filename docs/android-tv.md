@@ -24,9 +24,12 @@ pm list packages |\
   grep -v "No activity found"; \
   done
 
+# Open Netflix app
 am start -a android.intent.action.VIEW -n com.netflix.ninja/.MainActivity
-```
 
+# Open a network stream in VLC
+am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n org.videolan.vlc/.gui.video.VideoPlayerActivity
+```
 
 App | Intent
 --- | ---
@@ -37,3 +40,4 @@ VLC | org.videolan.vlc/.StartActivity
 YouTube | com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity
 YouTube Kids | com.google.android.youtube.tvkids/com.google.android.apps.youtube.tvkids.activity.MainActivity 
 YouTube Music | com.google.android.youtube.tvmusic/com.google.android.apps.youtube.tvmusic.activity.MainActivity
+
