@@ -235,6 +235,7 @@ You can execute cargo tasks from within VS Code:
 Name | Description
 --- | ---
 [anyhow](https://github.com/dtolnay/anyhow)|Concrete `Error` type built on `std::error::Error`
+[cargo-nextest](https://nexte.st/)|A next-generation test runner
 [clap](https://github.com/clap-rs/clap)|Parse command line arguments
 [chrono](https://github.com/chronotope/chrono)|Timezone-aware date and time handling
 [chrono-tz](https://github.com/chronotope/chrono-tz)|Companion of [chrono](https://github.com/chronotope/chrono) that adds timezone data
