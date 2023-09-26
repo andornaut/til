@@ -276,7 +276,6 @@ River City Ransom
 Super Mario Bros. 3
 Tecmo Super Bowl 2024 Presented by TecmoBowl.org (ROM hack)
 Teenage Mutant Ninja Turtles III: The Manhattan Project
-Tetris
 The Legend of Zelda
 ```
 ### Nintendo - Super Nintendo Entertainment System (SNES) - November 21, 1990
@@ -321,7 +320,6 @@ Tecmo Super Bowl
 Teenage Mutant Ninja Turtles IV - Turtles in Time
 Teenage Mutant Ninja Turtles - Tournament Fighters
 Terranigma
-Tetris & Dr. Mario
 ```
 ### Sega - Dreamcast - November 27, 1998
 ```
