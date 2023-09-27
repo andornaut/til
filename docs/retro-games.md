@@ -422,6 +422,19 @@ Virtua Fighter 2
 X-Men - Children of the Atom
 X-Men vs. Street Fighter
 ```
+### SNK - Neo Geo - April 26, 1990
+```
+Bakumatsu Roman Daini Maku - Gekka no Kenshi - Tsuki ni Saku Hana, Chiri Yuku Hana ~ The Last Blade 2
+Big Tournament Golf ~ Neo Turf Masters
+Far East of Eden - Tengai Makyou Shinden ~ Far East of Eden - Kabuki Klash
+Flying Power Disc ~ Windjammers
+Garou Densetsu Special ~ Fatal Fury Special
+King of Fighters '98, The - Dream Match Never Ends ~ The King of Fighters '98 - The Slugfest
+League Bowling
+Magician Lord
+Puzzle Bobble ~ Bust-A-Move
+Sonic Wings 2 ~ Aero Fighters 2
+```
 ### Sony - PlayStation (PSX) - December 3, 1994
 ```
 Ace Combat 3 - Electrosphere
