@@ -182,15 +182,15 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 ### Nintendo - Game Boy - April 21, 1989
 ```
 Kirby's Dream Land 2
-Pokemon - Red and Blue
+Legend of Zelda, The - Link's Awakening
+Pokemon - Red Version
 Tetris - Rosy Retrospection (https://www.romhacking.net/hacks/5813/)
-The Legend of Zelda - Link's Awakening
 Wario Land II
 ```
 ### Nintendo - Game Boy Advance - March 21, 2001
 ```
-Apotris (https://akouzoukos.com/apotris/)
-Advance Wars
+Advance Wars (https://akouzoukos.com/apotris/)
+Apotris
 Castlevania - Aria of Sorrow
 Final Fantasy Tactics Advance
 Final Fantasy VI Advance
@@ -329,6 +329,7 @@ Terranigma
 ```
 Border Down
 Crazy Taxi
+Garou: Mark of the Wolves
 Grandia II
 Jet Grind Radio
 Marvel vs. Capcom 2
