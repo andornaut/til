@@ -266,21 +266,21 @@ WWF No Mercy
 ```
 ### Nintendo - Nintendo Entertainment System (NES) - October 18, 1985
 ```
-Batman: The Video Game
-Castlevania III: Dracula’s Curse
+Batman - The Video Game
+Castlevania III - Dracula's Curse
 Contra
 Dr. Mario
 DuckTales
-Kirby’s Adventure
-Punch-Out!!
-Metroid
+Kirby's Adventure
+Legend of Zelda, The
 Mega Man 2
+Metroid
 Ninja Gaiden
+Punch-Out!!
 River City Ransom
 Super Mario Bros. 3
 Tecmo Super Bowl 2024 Presented by TecmoBowl.org (https://tecmobowl.org/files/file/821-tecmo-super-bowl-2024-presented-by-tecmobowlorg/)
-Teenage Mutant Ninja Turtles III: The Manhattan Project
-The Legend of Zelda
+Teenage Mutant Ninja Turtles III - The Manhattan Project
 ```
 ### Nintendo - Super Nintendo Entertainment System (SNES) - November 21, 1990
 ```
@@ -306,8 +306,8 @@ Ms. Pac-Man
 NBA Jam - Tournament Edition
 Secret of Mana
 Sparkster
-Star Fox
 Star Fox EX (https://www.romhacking.net/hacks/7285/)
+Star Fox
 Street Fighter II Turbo
 Super Bomberman
 Super Castlevania IV
@@ -329,7 +329,7 @@ Terranigma
 ```
 Border Down
 Crazy Taxi
-Garou: Mark of the Wolves
+Garou - Mark of the Wolves
 Grandia II
 Jet Grind Radio
 Marvel vs. Capcom 2
@@ -374,8 +374,8 @@ Michael Jackson's Moonwalker
 Mortal Kombat II
 MUSHA - Metallic Uniframe Super Hybrid Armor
 NFL Sports Talk Football '93 Starring Joe Montana
-NHL '94
 NHL '94 - 2023 Edition by Adam Catalyst (https://www.romhacking.net/hacks/7454/)
+NHL '94
 OutRun
 Phantasy Star IV
 Revenge of Shinobi, The
@@ -430,11 +430,14 @@ Bust-A-Move 2 - Arcade Edition
 Castlevania - Symphony of the Night
 Chrono Cross
 Crash Bandicoot 2 - Cortex Strikes Back
+Diablo
 Final Fantasy Tactics
 Final Fantasy VII
 Gex - Enter the Gecko
 Grandia
-Gran Turismo 2
+Gran Turismo 2 (Arcade Mode)
+Gran Turismo 2 (Simulation Mode)
+Hot Shots Golf
 MediEvil
 Mega Man Legends
 Mega Man X4
