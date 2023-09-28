@@ -11,7 +11,7 @@ Application | Description
 [aseprite](https://www.aseprite.org/)|Pixel art tool
 [blueman](https://wiki.archlinux.org/title/Blueman)|Bluetooth manager
 [evince](https://en.wikipedia.org/wiki/Evince)|Document viewer
-[gnome-books](https://wiki.gnome.org/Apps/Books)|Ebook reader
+[flameshot](https://github.com/flameshot-org/flameshot/)|Screenshot capture
 [gnome-disks](https://gitlab.gnome.org/GNOME/gnome-disk-utility)|Tool to manage storage devices
 [heroic](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)|[Epic Games Store](https://www.epicgames.com) launcher
 [itch](https://itch.io/app)|[itch.io](https://itch.io) game launcher
