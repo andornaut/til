@@ -181,15 +181,15 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 
 ### Atari Jaguar - November 23, 1993
 ```
-Alien Vs Predator
+Alien vs Predator
 Battle Sphere
 Cannon Fodder
 Defender 2000
 Doom
-Flashback - The Quest For Identity
+Flashback - The Quest for Identity
 Iron Soldier
 Power Drive Rally
-Protector: Special Edition
+Protector - Special Edition
 Raiden
 Ruiner Pinball
 Super Burnout
@@ -473,6 +473,7 @@ Mega Man Legends
 Mega Man X4
 Metal Gear Solid
 NBA Jam 22 (https://www.romhacking.net/hacks/5700/)
+Rayman
 Spyro the Dragon
 Tekken 3
 Twisted Metal 2
