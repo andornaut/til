@@ -179,6 +179,24 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 
 ## Recommended games
 
+### Atari Jaguar - November 23, 1993
+```
+Alien Vs Predator
+BattleSphere
+Defender 2000
+Doom
+Flashback: The Quest For Identity
+Gorf Classic
+Iron Soldier
+Power Drive Rally
+Protector: Special Edition
+Raiden
+Ruiner Pinball
+Space Ace
+Super Burnout
+Tempest 2000
+Wolfenstein 3D
+```
 ### Nintendo - Game Boy - April 21, 1989
 ```
 Kirby's Dream Land 2
