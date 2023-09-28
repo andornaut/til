@@ -187,13 +187,11 @@ Cannon Fodder
 Defender 2000
 Doom
 Flashback - The Quest For Identity
- Gorf
 Iron Soldier
 Power Drive Rally
 Protector: Special Edition
 Raiden
 Ruiner Pinball
-Space Ace
 Super Burnout
 Tempest 2000
 Wolfenstein 3D
