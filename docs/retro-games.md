@@ -182,11 +182,12 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 ### Atari Jaguar - November 23, 1993
 ```
 Alien Vs Predator
-BattleSphere
+Battle Sphere
+Cannon Fodder
 Defender 2000
 Doom
-Flashback: The Quest For Identity
-Gorf Classic
+Flashback - The Quest For Identity
+ Gorf
 Iron Soldier
 Power Drive Rally
 Protector: Special Edition
