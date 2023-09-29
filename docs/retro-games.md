@@ -1,9 +1,9 @@
 # Retro games
 
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
+* [Homebrew games list](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
 * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
-* [Homebrew Games](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)
 * [ROMhacking.net](https://www.romhacking.net)
 * [Thumbnails](http://thumbnails.libretro.com/)
 * [/r/Roms Megathread](https://r-roms.github.io/)
