@@ -294,6 +294,7 @@ Legend of Zelda, The
 Mega Man 2
 Metroid
 Ninja Gaiden
+Pac-Man - Championship Edition (https://archive.org/details/championship)
 Punch-Out!!
 River City Ransom
 Super Mario Bros. 3
@@ -472,6 +473,7 @@ Hot Shots Golf
 MediEvil
 Mega Man Legends
 Mega Man X4
+Mega Man X6 (https://www.romhacking.net/hacks/4035/)
 Metal Gear Solid
 NBA Jam 22 (https://www.romhacking.net/hacks/5700/)
 Rayman
