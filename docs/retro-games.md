@@ -318,7 +318,6 @@ Kirby's Dream Land 3
 Legend of Zelda, The - A Link to the Past
 Mario Paint
 Mega Man X2
-Mega Man X3 - Zero Project (https://www.romhacking.net/hacks/4086/)
 Mega Man X
 Ms. Pac-Man
 NBA Jam - Tournament Edition
