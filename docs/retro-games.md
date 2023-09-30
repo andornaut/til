@@ -291,7 +291,6 @@ Dr. Mario
 DuckTales
 Kirby's Adventure
 Legend of Zelda, The
-Mega Man 2
 Metroid
 Ninja Gaiden
 Pac-Man - Championship Edition (https://archive.org/details/championship)
