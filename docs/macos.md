@@ -44,6 +44,18 @@ Install these applications:
 brew install --appdir ~/Applications/ --no-quarantine alacritty flameshot karabiner-elements rectangle
 ```
 
+Add CLI launcher scripts:
+`~/.local/bin/alacritty`
+```
+#!/usr/bin/env bash
+open --new ~/Applications/Alacritty.app --args $@
+```
+`~/.local/bin/code`
+```
+#!/usr/bin/env bash
+open --new -a 'Visual Studio Code' --args $@
+```
+
 [Enable font smoothing](https://pezcoder.medium.com/how-i-migrated-from-iterm-to-alacritty-c50a04705f95#fa82):
 ```
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
