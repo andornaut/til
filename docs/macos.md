@@ -28,8 +28,6 @@ brew install \
   font-source-code-pro \
   font-ubuntu
 
-brew install --cask --no-quarantine alacritty
-
 # Change shell to Bash
 echo '/opt/homebrew/bin/bash' | sudo tee -a /etc/shells
 chsh -s $(which bash)
@@ -37,10 +35,14 @@ chsh -s $(which bash)
 
 Install these applications:
 
-* [Hookshot](https://hookshot.app/) or [Rectangle](https://rectangleapp.com/)
+* [Alacritty](https://github.com/alacritty/alacritty)
+* [Flameshot](https://flameshot.org) (Paid alternative: [Monosnap](https://monosnap.com/))
 * [Karabiner Elements](https://karabiner-elements.pqrs.org/)
-* [Monosnap](https://monosnap.com/)
-* [Tuple](https://tuple.app/)
+* [Rectangle](https://rectangleapp.com/) (Paid version: [Hookshot](https://hookshot.app/))
+
+```
+brew --appdir ~/Applications/ --no-quarantine alacritty flameshot karabiner-elements rectangle
+```
 
 [Enable font smoothing](https://pezcoder.medium.com/how-i-migrated-from-iterm-to-alacritty-c50a04705f95#fa82):
 ```
