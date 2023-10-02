@@ -45,6 +45,7 @@ brew install --appdir ~/Applications/ --no-quarantine alacritty flameshot karabi
 ```
 
 Add CLI launcher scripts:
+
 `~/.local/bin/alacritty`
 ```
 #!/usr/bin/env bash
