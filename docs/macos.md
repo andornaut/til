@@ -41,7 +41,7 @@ Install these applications:
 * [Rectangle](https://rectangleapp.com/) (Paid version: [Hookshot](https://hookshot.app/))
 
 ```
-brew --appdir ~/Applications/ --no-quarantine alacritty flameshot karabiner-elements rectangle
+brew install --appdir ~/Applications/ --no-quarantine alacritty flameshot karabiner-elements rectangle
 ```
 
 [Enable font smoothing](https://pezcoder.medium.com/how-i-migrated-from-iterm-to-alacritty-c50a04705f95#fa82):
