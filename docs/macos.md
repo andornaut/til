@@ -48,6 +48,10 @@ defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 ```
 
+[Show all files in the Finder](defaults write com.apple.Finder AppleShowAllFiles YES)
+```https://macpaw.com/how-to/access-opt-folder-on-mac
+```
+
 ## Keyboard Shortcuts
 
 [All shortcuts](https://support.apple.com/en-ca/HT201236)
