@@ -26,7 +26,6 @@ brew install \
   font-droid-sans-mono-nerd-font \
   font-inconsolata \
   font-source-code-pro \
-  font-source-sans-pro \
   font-ubuntu
 
 brew install --cask --no-quarantine alacritty
