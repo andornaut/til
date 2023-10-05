@@ -30,7 +30,7 @@ brew install \
 
 # Change shell to Bash
 echo '/opt/homebrew/bin/bash' | sudo tee -a /etc/shells
-chsh -s $(which bash)
+chsh -s /opt/homebrew/bin/bash
 ```
 
 Install these applications:
