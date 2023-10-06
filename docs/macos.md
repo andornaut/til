@@ -89,13 +89,21 @@ Meta keys:
 | Control Command q | Lock screen |
 | / | [Go to a directory](https://support.apple.com/en-ca/guide/mac-help/mchlp1236/mac) when focussed on a Finder window |
 
-Rebind these shorcuts in System Preferences > Keyboard > Shortcuts -> Mission Control:
+Rebind these shorcuts in System Preferences > Keyboard > Shortcuts > Mission Control:
 
 | Key combination | Description |
 | --- | --- |
 | F3 | Mission Control |
 | ⌘ ← | Mission Control: Move left a space |
 | ⌘ → | Mission Control: Move right a space |
+
+Add a "[Paste and Match Style](https://scottswezey.com/always-paste-without-formatting-macos/)" shortcut in System Preferences > Keyboards > Shortcuts > App Shortcuts
+
+Field|Value
+---|---
+Application |All Applications
+Menu Title|Paste and Match Style
+Keyboard Shortcut|`^⌘v`
 
 ## Customizations
 
