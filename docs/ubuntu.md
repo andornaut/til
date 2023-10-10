@@ -141,12 +141,15 @@ sudo apt purge evolution* language-selector-gnome whoopsie*
 
 # Remove Snap
 sudo rm -rf /var/cache/snapd/
-sudo apt autoremove --purge snapd gnome-software-plugin-snap speech-dispatcher
+sudo apt remove --purge snapd gnome-software-plugin-snap speech-dispatcher
 sudo apt-mark hold snapd
 rm -rf ~/snap
 
 # Free up disk-space
 sudo apt autoremove && sudo apt clean
+
+# Uninstall other unnecessary programs
+sudo apt remove --purge tracker-miner-fs
 ```
 
 ### Flatpak
