@@ -19,6 +19,7 @@ Application | Description
 [obs](https://obsproject.com/)|Tool to record video and perform live streaming
 [pcmanfm](https://sourceforge.net/projects/pcmanfm/)|File manager
 [piper](https://github.com/libratbag/piper)|Configure mouse DPI
+[resources](https://github.com/nokyan/resources)|Monitor your system resources and processes 
 [retroarch](https://www.retroarch.com/)|ROM game and emulator launcher
 [seahorse](https://wiki.gnome.org/Apps/Seahorse) | Tool to manage the Gnome keyring
 [solaar](https://pwr-solaar.github.io/Solaar/)|Manage Logitech unifying receivers and devices
@@ -141,12 +142,15 @@ sudo apt purge evolution* language-selector-gnome whoopsie*
 
 # Remove Snap
 sudo rm -rf /var/cache/snapd/
-sudo apt autoremove --purge snapd gnome-software-plugin-snap speech-dispatcher
+sudo apt remove --purge snapd gnome-software-plugin-snap speech-dispatcher
 sudo apt-mark hold snapd
 rm -rf ~/snap
 
 # Free up disk-space
 sudo apt autoremove && sudo apt clean
+
+# Uninstall other unnecessary programs
+sudo apt remove --purge tracker-miner-fs
 ```
 
 ### Flatpak

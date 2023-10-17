@@ -1,6 +1,7 @@
 # Retro games
 
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
+* [Homebrew games list](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
 * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
 * [ROMhacking.net](https://www.romhacking.net)
@@ -293,9 +294,9 @@ Dr. Mario
 DuckTales
 Kirby's Adventure
 Legend of Zelda, The
-Mega Man 2
 Metroid
 Ninja Gaiden
+Pac-Man - Championship Edition (https://archive.org/details/championship)
 Punch-Out!!
 River City Ransom
 Super Mario Bros. 3
@@ -320,7 +321,6 @@ Kirby's Dream Land 3
 Legend of Zelda, The - A Link to the Past
 Mario Paint
 Mega Man X2
-Mega Man X3 - Zero Project (https://www.romhacking.net/hacks/4086/)
 Mega Man X
 Ms. Pac-Man
 NBA Jam - Tournament Edition
@@ -474,6 +474,7 @@ Hot Shots Golf
 MediEvil
 Mega Man Legends
 Mega Man X4
+Mega Man X6 (https://www.romhacking.net/hacks/4035/)
 Metal Gear Solid
 NBA Jam 22 (https://www.romhacking.net/hacks/5700/)
 Rayman

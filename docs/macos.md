@@ -26,27 +26,46 @@ brew install \
   font-droid-sans-mono-nerd-font \
   font-inconsolata \
   font-source-code-pro \
-  font-source-sans-pro \
   font-ubuntu
-
-brew install --cask --no-quarantine alacritty
 
 # Change shell to Bash
 echo '/opt/homebrew/bin/bash' | sudo tee -a /etc/shells
-chsh -s $(which bash)
+chsh -s /opt/homebrew/bin/bash
 ```
 
 Install these applications:
 
-* [Hookshot](https://hookshot.app/) or [Rectangle](https://rectangleapp.com/)
+* [Alacritty](https://github.com/alacritty/alacritty)
+* [Flameshot](https://flameshot.org) (Paid alternative: [Monosnap](https://monosnap.com/))
 * [Karabiner Elements](https://karabiner-elements.pqrs.org/)
-* [Monosnap](https://monosnap.com/)
-* [Tuple](https://tuple.app/)
+* [Rectangle](https://rectangleapp.com/) (Paid version: [Hookshot](https://hookshot.app/))
+
+```
+brew install --appdir ~/Applications/ --no-quarantine alacritty flameshot karabiner-elements rectangle
+```
+
+Add CLI launcher scripts:
+
+`~/.local/bin/alacritty`
+```
+#!/usr/bin/env bash
+open --new ~/Applications/Alacritty.app --args $@
+```
+`~/.local/bin/code`
+```
+#!/usr/bin/env bash
+open --new -a 'Visual Studio Code' --args $@
+```
 
 [Enable font smoothing](https://pezcoder.medium.com/how-i-migrated-from-iterm-to-alacritty-c50a04705f95#fa82):
 ```
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
+```
+
+[Show all files in the Finder](https://macpaw.com/how-to/access-opt-folder-on-mac)
+```
+defaults write com.apple.Finder AppleShowAllFiles YES
 ```
 
 ## Keyboard Shortcuts
@@ -70,13 +89,21 @@ Meta keys:
 | Control Command q | Lock screen |
 | / | [Go to a directory](https://support.apple.com/en-ca/guide/mac-help/mchlp1236/mac) when focussed on a Finder window |
 
-Rebind these shorcuts in System Preferences > Keyboard > Shortcuts -> Mission Control:
+Rebind these shorcuts in System Settings > Keyboard > Shortcuts > Mission Control:
 
 | Key combination | Description |
 | --- | --- |
 | F3 | Mission Control |
 | ⌘ ← | Mission Control: Move left a space |
 | ⌘ → | Mission Control: Move right a space |
+
+Add a "[Paste and Match Style](https://scottswezey.com/always-paste-without-formatting-macos/)" shortcut in System Settings > Keyboards > Shortcuts > App Shortcuts
+
+Field|Value
+---|---
+Application | All Applications
+Menu Title | Paste and Match Style
+Keyboard Shortcut | `⇧⌘V`
 
 ## Customizations
 
