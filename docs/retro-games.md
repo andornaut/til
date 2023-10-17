@@ -18,9 +18,12 @@
 ## Miyoo Mini+
 
 * [Official store on AliExpress](https://miyoo.aliexpress.com/store/1101949807?shopId=1101949807)
-* [OnionOS](https://github.com/OnionUI/Onion)
 * [Ports Collection](https://github.com/OnionUI/Ports-Collection)
 * [/r/MiyooMini](https://www.reddit.com/r/MiyooMini/)
+* Custom launchers:
+  * [Allium](https://github.com/goweiwen/Allium)
+  * [MinUI](https://github.com/shauninman/MinUI)
+  * [OnionOS](https://github.com/OnionUI/Onion)
 
 ### RetroArch Core BIOS files
 
