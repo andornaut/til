@@ -241,9 +241,11 @@ Name | Description
 [chrono-tz](https://github.com/chronotope/chrono-tz)|Companion of [chrono](https://github.com/chronotope/chrono) that adds timezone data
 [color-to-tui](https://github.com/uttarayan21/color-to-tui)|Parse hex colors to `tui::style::Color`
 [copypasta](https://github.com/alacritty/copypasta)|Cross-platform Rust system clipboard library 
+[criterion](https://github.com/bheisler/criterion.rs)|Statistics-driven benchmarking library
 [crossterm](https://github.com/crossterm-rs/crossterm)|Cross-platform terminal library ([Documentation](https://docs.rs/crossterm/latest/crossterm/))
 [cursive](https://github.com/gyscos/Cursive)|Text User Interface (TUI) library. ([Comparison to tui](https://github.com/gyscos/cursive/wiki/Cursive-vs-tui%E2%80%90rs)).
 [dirs-next](https://github.com/xdg-rs/dirs/tree/master/dirs)|Low-level library that provides conventional config/cache/data paths
+[divan](https://github.com/nvzqz/divan)|Fast and simple benchmarking
 [egui](https://github.com/emilk/egui)|An easy-to-use immediate mode GUI in Rust that runs on both web and native
 [env_logger](https://github.com/rust-cli/env_logger/)|A logging implementation for `log` which is configured via an environment variable
 [enum-iterator](https://crates.io/crates/enum-iterator)|`#[derive(IntoEnumIterato)` for enums
@@ -251,6 +253,7 @@ Name | Description
 [indicatif](https://docs.rs/indicatif/latest/indicatif/index.html)|Progress bar library
 [itertools](https://docs.rs/itertools/latest/itertools/)|Extra iterator adaptors, functions and macros
 [lazy_static](https://crates.io/crates/lazy_static/)|A macro for declaring lazily evaluated statics
+[mdBook](https://rust-lang.github.io/mdBook/)|A CLI tool to create books with Markdown
 [notify](https://github.com/notify-rs/notify)|Cross-platform filesystem notification library
 [OnceCell](https://crates.io/crates/once_cell)|Single assignment cells and lazy values
 [rand](https://github.com/rust-random/rand)|Generate random numbers
