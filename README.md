@@ -131,7 +131,7 @@ rake
     * [Minikube](docs/kubernetes.md#minikube)
   * [Leadership](docs/leadership.md#leadership)
     * [Books](docs/leadership.md#books)
-    * [Articles](docs/leadership.md#articles)
+    * [Articles and guides](docs/leadership.md#articles-and-guides)
     * [Courses](docs/leadership.md#courses)
     * [Newsletters](docs/leadership.md#newsletters)
   * [macOS](docs/macos.md#macos)

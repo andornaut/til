@@ -35,14 +35,16 @@
 * [The Pragmatic Programmer - From Journeyman to Master](https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer)
 * [The Principles of Product Development Flow - Second Generation Lean Product Development](https://www.goodreads.com/en/book/show/6278270-the-principles-of-product-development-flow)
 * [The Productive Programmer](https://www.oreilly.com/library/view/the-productive-programmer/9780596519780/)
+* [The Startup CTO's Handbook](https://github.com/ZachGoldberg/Startup-CTO-Handbook)
 * [Thinking in Bets - Making Smarter Decisions When You Don't Have All the Facts](https://www.goodreads.com/en/book/show/35957157-thinking-in-bets)
 * [Thinking in Systems - A Primer](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
 * [Turn the Ship Around! - A True Story of Turning Followers into Leaders](https://davidmarquet.com/turn-the-ship-around-book/)
 * [Value Stream Mapping - How to Visualize Work and Align Leadership for Organizational Transformation](https://www.oreilly.com/library/view/value-stream-mapping/9780071828918/)
 
-## Articles
+## Articles and guides
 
 * [Staff Developer Archetypes](https://staffeng.com/guides/staff-archetypes)
+* [System Design 101](https://github.com/ByteByteGoHq/system-design-101)
 
 ## Courses
 
