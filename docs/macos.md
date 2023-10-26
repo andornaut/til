@@ -36,9 +36,11 @@ chsh -s /opt/homebrew/bin/bash
 Install these applications:
 
 * [Alacritty](https://github.com/alacritty/alacritty)
-* [Flameshot](https://flameshot.org) (Paid alternative: [Monosnap](https://monosnap.com/))
+* [Flameshot](https://flameshot.org) (Paid alternative to [Monosnap](https://monosnap.com/))
 * [Karabiner Elements](https://karabiner-elements.pqrs.org/)
 * [Rectangle](https://rectangleapp.com/) (Paid version: [Hookshot](https://hookshot.app/))
+* [SketchyBar](https://github.com/FelixKratz/SketchyBar) - Status bar
+* [Yabai](https://github.com/koekeishiya/yabai) - Tiling window manager
 
 ```
 brew install --appdir ~/Applications/ --no-quarantine alacritty flameshot karabiner-elements rectangle
