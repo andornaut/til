@@ -40,6 +40,7 @@ Install these applications:
 * [Karabiner Elements](https://karabiner-elements.pqrs.org/)
 * [Rectangle](https://rectangleapp.com/) (Paid version: [Hookshot](https://hookshot.app/))
 * [SketchyBar](https://github.com/FelixKratz/SketchyBar) - Status bar
+* [skhd](https://github.com/koekeishiya/skhd)
 * [Yabai](https://github.com/koekeishiya/yabai) - Tiling window manager
 
 ```
