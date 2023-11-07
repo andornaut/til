@@ -62,3 +62,7 @@
 * [TCP/IP Illustrated, Volume 2 - The Implementation](https://www.oreilly.com/library/view/tcpip-illustrated/020163354X/)
 * [The Book of PF](https://www.goodreads.com/en/book/show/21929389-the-book-of-pf)
 * [Think OS - A Brief Introduction to Operating Systems](https://greenteapress.com/thinkos/)
+  
+## Articles and guides
+
+* [System Design 101](https://github.com/ByteByteGoHq/system-design-101)
