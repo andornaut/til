@@ -44,7 +44,6 @@
 ## Articles and guides
 
 * [Staff Developer Archetypes](https://staffeng.com/guides/staff-archetypes)
-* [System Design 101](https://github.com/ByteByteGoHq/system-design-101)
 
 ## Courses
 
