@@ -54,3 +54,8 @@
 
 * [Software Lead Weekly](https://softwareleadweekly.com/) - A weekly email for busy people who care about people, culture and leadership
 * [Sunday Brain Food](https://fs.blog/newsletter/) ([Archive](https://fs.blog/brain-food/)) - Every Sunday we share timeless insights and ideas that you can use at work and home
+
+## Metrics and analytics
+
+* [thoughtworks/metric](https://github.com/thoughtworks/metrik)
+* [GitClear](https://www.gitclear.com/) (paid)
