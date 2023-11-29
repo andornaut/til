@@ -15,7 +15,6 @@
 * [63/37 lead rosin core solder](https://www.pishop.ca/product/solder-wire-63-37-tin-lead-sn63-pb37-no-clean-water-washable-031-2oz/)
 * [Liquid flux pen](https://www.pishop.ca/product/liquid-flux-no-clean-in-10ml-pen-w-tip/)
 
-
 ## Tools
 
 * [Hakko 20G suction desoldering tool](https://www.amazon.ca/Simple-solder-suction-device-Hakko/dp/B001D7IGX2)
@@ -25,7 +24,8 @@
   * The firmware flashing intructions in the manual omit one step: While holding down the "SET" button, connect a USB-C cable, then press the "Run" button, then mount the "\*\_DFU" filesystem and copy over the \*.hex file to the
 * [Miniware TS101 Soldering Iron](https://www.miniware.com.cn/product/ts101-smart-soldering-iron/)
   * Flashing the firmware fails in Linux, but work in macOS
-* [Pinecil - Smart Mini Portable Soldering Iron](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/)
+* [Omnifixo - Helping hands](https://omnifixo.com/)
+* [Pinecil - Soldering Iron](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/)
 
 ## Stores
 
