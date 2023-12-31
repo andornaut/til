@@ -1,8 +1,8 @@
 # JavaScript
 
+* [Mozilla Developer Network (MDN)](https://developer.mozilla.org/en-US/)
 * [./NPM](./npm.md)
 * [./Software Engineering](./software-engineering.md)
-* [Mozilla Developer Network (MDN)](https://developer.mozilla.org/en-US/)
 
 ## Books
 
@@ -17,11 +17,22 @@
 
 * [Use `console.log()` like a pro](https://markodenic.com/use-console-log-like-a-pro/)
 
-## Getting started
-
-### Install NVM on macOS
+## Install NVM on Linux
 
 * [NVM on GitHub](https://github.com/nvm-sh/nvm)
+
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+cat <<'EOF' >> ~/.bashrc
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+EOF
+```
+
+## Install NVM on macOS
+
 * [NVM on Homebrew](https://formulae.brew.sh/formula/nvm)
 
 ```
@@ -29,9 +40,16 @@ brew install nvm
 
 cat <<'EOF' >> ~/.bashrc
 export NVM_DIR="$HOME/.nvm"
-    [ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
-    [ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+[ -s "$(brew --prefix)/opt/nvm/nvm.sh" ] && \. "$(brew --prefix)/opt/nvm/nvm.sh" # This loads nvm
+[ -s "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(brew --prefix)/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 EOF
+```
+
+## Getting started
+
+```bash
+nvm install --lts
+nvm use --lts
 ```
 
 ## React
@@ -47,14 +65,14 @@ EOF
 * [Google Core Web Vitals](https://web.dev/vitals/)
 * [React profiler](https://reactjs.org/docs/profiler.html)
 
-### Storybook
+## Storybook
 
 * [storybook.js.org](https://storybook.js.org/)
 
 ## TypeScript
 
-* [React Typescript handbook](https://www.typescriptlang.org/docs/handbook/react.html)
-* [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup)
 * [Examples](https://dev.to/bendman/react-typescript-cheatsheet-1f2h)
+* [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup)
+* [React Typescript handbook](https://www.typescriptlang.org/docs/handbook/react.html)
 * [tsconfig cheatsheet](https://www.totaltypescript.com/tsconfig-cheat-sheet)
 
