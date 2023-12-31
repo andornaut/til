@@ -35,7 +35,7 @@ EOF
 
 * [NVM on Homebrew](https://formulae.brew.sh/formula/nvm)
 
-```
+```bash
 brew install nvm
 
 cat <<'EOF' >> ~/.bashrc
