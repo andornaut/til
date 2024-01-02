@@ -17,13 +17,16 @@ adb connect tv-livingroom:5555
 
 adb shell
 
-# List all intents
+# List all activities/intents
 pm list packages |\
   sed -e "s/package://" |\
   while read x; do cmd package resolve-activity --brief $x |\
   tail -n 1 |\
   grep -v "No activity found"; \
   done
+
+# Find activities from open windows
+dumpsys window windows|grep -i activity
 
 # Open Netflix app
 am start -a android.intent.action.VIEW -n com.netflix.ninja/.MainActivity
@@ -36,6 +39,9 @@ am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n or
 
 App | Intent
 --- | ---
+AppleTV | com.apple.atve.sony.appletv/com.apple.atve.sony.appletv.MainActivity
+CBC Gem | ca.cbc.android.cbctv/tv.tou.android.home.views.activities.MainActivityTv
+CraveTV | ca.bellmedia.cravetv/axis.androidtv.sdk.app.MainActivity
 Disney+ | com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity
 NetFlix | com.netflix.ninja/.MainActivity
 Prime Video | com.amazon.amazonvideo.livingroom/com.amazon.ignition.IgnitionActivity
