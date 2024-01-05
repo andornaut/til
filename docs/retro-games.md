@@ -9,6 +9,14 @@
 * [Thumbnails](http://thumbnails.libretro.com/)
 * [/r/Roms Megathread](https://r-roms.github.io/)
 
+## Anbernic RG35XX+ 
+
+* [patreon.com/blackseraph](https://www.patreon.com/blackseraph) - Lead developer of GarlicOS
+* [GarlicOS 2.0 (Public Alpha) announcement](https://www.patreon.com/posts/92690050)
+* [GarlicOS on GitHub](https://github.com/GarlicOS/buildroot)
+
+Nov 14, 2023
+
 ## Analogue Pocket
 
 * [Analogue.co](https://www.analogue.co/)
