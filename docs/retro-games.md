@@ -21,15 +21,20 @@
 
 1. Download the "base" and "extras" zip files from [the latest MinUI release](https://github.com/shauninman/MinUI/releases). eg. 
 MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
-1. Unzip the base zip file and:
+1. Unzip the base zip file, and then:
    1. Copy rg35xx/dmenu.bin to the root of one of the unlabelled partitions (I'm not sure which one, but there are only a couple and the file is small anyway) of the stock Anbernic sdcard in the TF1 port 
    1. Copy Bios/ MinUI.zip and Roms/ to the root of the sdcard in the TF2 port
-1. Unzip the extras zip file and:
+1. Unzip the extras zip file, and then:
    1. Delete all sub-folders of Emus/ and Tools/ *except* rg35xxplus/
    1. Delete all sub-folders of Emus/rg35xxplus/ *except* GG.pak/ and PCE.pak/
    1. Delete all sub-folders of Bios/ *except* GG/
    1. Copy Bios/ Emus/ and Tools/ folders to the root of the sdcard in the TF2 port
-1. Copy additional BIOS and Roms to the Bios/ and Roms/ folders on the sdcard in the TF2 port
+1. Copy additional BIOS and Roms files to the system-specific sub-folders of the Bios/ and Roms/ folders on the sdcard in the TF2 port
+
+**Notes**
+
+* MinUI maps Roms to Bios' to Emus by the system abbreviation, which is included in parenthesis in sub-folders of the Roms/ folder. eg. `Roms/Sega Game Gear (GG)/` maps `Bios/GG` maps to `Emus/rg35xxplus/GG.pak`
+* MinUI cannot unzip 7z files, so prefer uncompressed Roms or zip files
 
 ## Analogue Pocket
 
