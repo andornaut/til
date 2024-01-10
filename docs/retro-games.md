@@ -228,6 +228,22 @@ Super Burnout
 Tempest 2000
 Wolfenstein 3D
 ```
+### Nintendo - DS - November 21, 2004
+```
+Advance Wars: Dual Strike
+Castlevania: Order of Ecclesia
+Chrono Trigger
+Dragon Quest V: Hand of the Heavenly Bride
+Fire Emblem: Shadow Dragon
+Kirby Super Star Ultra
+Mario Kart DS
+Mega Man ZX
+New Super Mario Bros.
+Phoenix Wright: Ace Attorney
+Pokémon HeartGold & SoulSilver
+Pokémon Platinum
+Rune Factory 3
+```
 ### Nintendo - Game Boy - April 21, 1989
 ```
 Kirby's Dream Land 2
