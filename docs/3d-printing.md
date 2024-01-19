@@ -26,12 +26,12 @@
 ## Hardware
 
 * [Bambu Lab P1P 3D printer](https://bambulab.com/en/p1)
+  * [BIQU Panda Hotend](https://biqu.equipment/products/biqu-panda-hotend)
   * [CHT Brass High Flow Nozzle For Bambu Lab X1 P1P](https://www.aliexpress.com/item/1005005246470567.html)
   * [High Temperature Plate (PEI)](https://ca.store.bambulab.com/products/bambu-high-temperature-plate)
   * [Hotend Kit For Bambu Lab X1 Carbon X1-Carbon Combo P1P](https://www.aliexpress.com/item/1005005291012768.html)
   * [Manual](https://wiki.bambulab.com/en/p1/manual)
   * [Printable upgrades](https://wiki.bambulab.com/en/p1/manual/p1p-upgrades)
-
 * [SUNLU FilaDryer S2 dry box](https://www.amazon.ca/gp/product/B0B1ZKTS44)
   * [Sunlu FilaDryer S2 Improvement Wedge](https://www.printables.com/model/219366-sunlu-filadryer-s2-improvement-wedge)
 

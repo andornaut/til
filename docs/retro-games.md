@@ -15,9 +15,27 @@
 * [GarlicOS 2.0 (Public Alpha) announcement](https://www.patreon.com/posts/92690050)
 * [GarlicOS on GitHub](https://github.com/GarlicOS/buildroot)
 * [MinUI](https://github.com/shauninman/MinUI)
+  * [MinUI Paks](https://github.com/shauninman/MinUI/blob/main/PAKS.md) 
 * [muOS](https://muos.xonglebongle.com/)
 
-Nov 14, 2023
+### MinUI
+
+1. Download the "base" and "extras" zip files from [the latest MinUI release](https://github.com/shauninman/MinUI/releases). eg. 
+MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
+1. Unzip the base zip file, and then:
+   1. Copy rg35xx/dmenu.bin to the root of one of the unlabelled partitions (I'm not sure which one, but there are only a couple and the file is small anyway) of the stock Anbernic sdcard in the TF1 port 
+   1. Copy Bios/ MinUI.zip and Roms/ to the root of the sdcard in the TF2 port
+1. Unzip the extras zip file, and then:
+   1. Delete all sub-folders of Emus/ and Tools/ *except* rg35xxplus/
+   1. Delete all sub-folders of Emus/rg35xxplus/ *except* GG.pak/ and PCE.pak/
+   1. Delete all sub-folders of Bios/ *except* GG/
+   1. Copy Bios/ Emus/ and Tools/ folders to the root of the sdcard in the TF2 port
+1. Copy additional BIOS and Roms files to the system-specific sub-folders of the Bios/ and Roms/ folders on the sdcard in the TF2 port
+
+**Notes**
+
+* MinUI maps Roms to Bios' to Emus by the system abbreviation, which is included in parenthesis in sub-folders of the Roms/ folder. eg. `Roms/Sega Game Gear (GG)/` maps `Bios/GG` maps to `Emus/rg35xxplus/GG.pak`
+* MinUI cannot unzip 7z files, so prefer uncompressed Roms or zip files
 
 ## Analogue Pocket
 
@@ -210,6 +228,22 @@ Ruiner Pinball
 Super Burnout
 Tempest 2000
 Wolfenstein 3D
+```
+### Nintendo - DS - November 21, 2004
+```
+Advance Wars: Dual Strike
+Castlevania: Order of Ecclesia
+Chrono Trigger
+Dragon Quest V: Hand of the Heavenly Bride
+Fire Emblem: Shadow Dragon
+Kirby Super Star Ultra
+Mario Kart DS
+Mega Man ZX
+New Super Mario Bros.
+Phoenix Wright: Ace Attorney
+Pokémon HeartGold & SoulSilver
+Pokémon Platinum
+Rune Factory 3
 ```
 ### Nintendo - Game Boy - April 21, 1989
 ```
