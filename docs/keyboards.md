@@ -58,11 +58,11 @@
 ## Software
 
 * [Ergogen](https://github.com/ergogen/ergogen) | Online: [Official](https://ergogen.xyz/) and [Unofficial, but better](https://ergogen.cache.works/) ([GitHub](https://github.com/MvEerd/ergogen-gui))
-  * [Ergogen Helper Scripts](https://github.com/infused-kim/kb_ergogen_helper)
-  * Footprints:
-    * [ergogen-contrib](https://github.com/Albert-IV/ergogen-contrib)
-    * [kb_ergogen_fp](https://github.com/infused-kim/kb_ergogen_fp)
-    * [MvEerd](https://github.com/MvEerd/ergogen/tree/mveerd/src/footprints)
+  * [ergogen-contrib](https://github.com/Albert-IV/ergogen-contrib)
+  * [Footprints by infused-kim](https://github.com/infused-kim/kb_ergogen_fp)
+  * [Footprints by MvEerd](https://github.com/MvEerd/ergogen/tree/mveerd/src/footprints)
+  * [Footprints by sboysel](https://github.com/sboysel/ergogen/tree/develop/src/footprints)
+  * [Helper scripts](https://github.com/infused-kim/kb_ergogen_helper)
   * [Schema](https://github.com/ergogen/ergogen/blob/develop/meta/schema.json) (v3, outdated)
   * [Useful components](https://github.com/Woovie/useful-ergogen-components)
   * [v4 docs (WIP)](https://deploy-preview-12--ergogen.netlify.app/)
@@ -71,6 +71,7 @@
 * [Keyboard Layout Editor](https://github.com/ijprest/keyboard-layout-editor) | [Online](http://www.keyboard-layout-editor.com/)
 * [KiCad](https://www.kicad.org)
   * [Freerouting](https://github.com/freerouting/freerouting)
+    * [Using Free Routing with Kicad](https://freerouting.org/freerouting/using-with-kicad)
   * [Getting started guide](https://docs.kicad.org/#_getting_started)
   * [KiCad automation scripts](https://github.com/productize/kicad-automation-scripts)
   * [kicad-round-tracks](https://github.com/mitxela/kicad-round-tracks)

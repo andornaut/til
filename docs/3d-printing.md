@@ -13,6 +13,7 @@
 
 ## Documentation and guides
 
+* [3D Printing Joints](https://coloringchaos.github.io/form-fall-16/joints)
 * [Bambu Studio Fine Tuning: Tips and Tricks for X1 and P1P](https://3dprintbeginner.com/bambu-studio-fine-tuning-tips-and-tricks/)
 * [Beginner’s Guide To 3D Printing](https://3dinsider.com/3d-printing-guide/)
 * [CAD tips for 3D printing infographic](https://pbs.twimg.com/media/EOj347eUYAE4bZu?format=jpg&name=large)

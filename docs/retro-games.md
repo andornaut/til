@@ -14,6 +14,8 @@
 * [patreon.com/blackseraph](https://www.patreon.com/blackseraph) - Lead developer of GarlicOS
 * [GarlicOS 2.0 (Public Alpha) announcement](https://www.patreon.com/posts/92690050)
 * [GarlicOS on GitHub](https://github.com/GarlicOS/buildroot)
+* [MinUI](https://github.com/shauninman/MinUI)
+* [muOS](https://muos.xonglebongle.com/)
 
 Nov 14, 2023
 
