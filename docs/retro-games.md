@@ -401,6 +401,7 @@ Marvel vs. Capcom 2
 NFL Blitz 2000
 Rayman 2 - The Great Escape
 Rez
+Sega Bass Fishing
 Sonic Adventure
 Soulcalibur
 Spider-Man
