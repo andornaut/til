@@ -178,16 +178,29 @@ This section is hidden until the above is clicked.
 
 * [GitHub searching-issues-and-pull-requests](https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests)
 * [GitHub using-search-to-filter-issues-and-pull-requests](https://docs.github.com/en/github/managing-your-work-on-github/using-search-to-filter-issues-and-pull-requests)
-
+* [GitHub Filtering and searching issues and pull requests](https://docs.github.com/en/issues/tracking-your-work-with-issues/filtering-and-searching-issues-and-pull-requests)
 
 ```
-is:pr,issue
-is:closed
-author:andornaut
+# What
 archived:false
-org:ORGNAME
+is:closed
+is:pr,issue
+
+# Who
+org:wmgtech
+author:andornaut
+involves:andornaut
 reviewed-by:andornaut
+
+# Date/time
+created:>=2024-12-31 
+merged:2024-01-01..2024-12-31
 ```
+
+**Example searches:**
+* [Pull requests `org:wmgtech is:pr author:andornaut`](https://github.com/pulls?q=org%3Awmgtech+is%3Apr+author%3Aandornaut)
+* [Pull requests `org:wmgtech is:pr involves:andornaut`](https://github.com/pulls?q=org%3Awmgtech+is%3Apr+involves%3Aandornaut)
+* [Pull requests `org:wmgtech is:pr reviewed-by:andornaut`](https://github.com/pulls?q=org%3Awmgtech+is%3Apr+reviewed-by%3Aandornaut) 
 
 ### Tips
 
