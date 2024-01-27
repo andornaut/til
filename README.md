@@ -231,6 +231,7 @@ rake
       * [Nintendo - Nintendo 64 - June 23, 1996](docs/retro-games.md#nintendo---nintendo-64---june-23-1996)
       * [Nintendo - Nintendo Entertainment System (NES) - October 18, 1985](docs/retro-games.md#nintendo---nintendo-entertainment-system-nes---october-18-1985)
       * [Nintendo - Super Nintendo Entertainment System (SNES) - November 21, 1990](docs/retro-games.md#nintendo---super-nintendo-entertainment-system-snes---november-21-1990)
+      * [Pico-8 - April 2015](docs/retro-games.md#pico-8---april-2015)
       * [Sega - Dreamcast - November 27, 1998](docs/retro-games.md#sega---dreamcast---november-27-1998)
       * [Sega - Game Gear - October 6, 1990](docs/retro-games.md#sega---game-gear---october-6-1990)
       * [Sega - Genesis - October 29, 1988](docs/retro-games.md#sega---genesis---october-29-1988)

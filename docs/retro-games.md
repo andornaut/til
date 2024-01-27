@@ -4,6 +4,7 @@
 * [CD Romance](https://cdromance.com/) - ROM hacks
 * [Homebrew games list](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
+* [Pico-8](https://www.lexaloffle.com/pico-8.php)
 * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
 * [ROMhacking.net](https://www.romhacking.net)
 * [Thumbnails](http://thumbnails.libretro.com/)
@@ -48,6 +49,7 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 ## Miyoo Mini+
 
 * [Official store on AliExpress](https://miyoo.aliexpress.com/store/1101949807?shopId=1101949807)
+* [Pico-8 wrapper](https://github.com/XK9274/pico-8-wrapper-miyoo)
 * [Ports Collection](https://github.com/OnionUI/Ports-Collection)
 * [/r/MiyooMini](https://www.reddit.com/r/MiyooMini/)
 * Custom launchers:
@@ -390,6 +392,32 @@ Teenage Mutant Ninja Turtles IV - Turtles in Time
 Teenage Mutant Ninja Turtles - Tournament Fighters
 Terranigma
 ```
+
+### Pico-8 - April 2015
+```
+Ascent
+Birds With Guns
+Breakout Hero
+Celeste
+Cherry Bomb
+Dank Tomb
+Dinky Kong
+Golf Sunday
+Just One Boss
+Kalikan
+Low Mem Sky
+Mai-Chan's Sweet Buns
+Marballs 2
+Mistigri
+Mot's 8-Ball Pool
+Mot's Grand Prix
+PICOHOT
+PICORACER-2048
+Pico World Race
+Shooting Star
+Steel Surge: Revolution
+```
+
 ### Sega - Dreamcast - November 27, 1998
 ```
 Border Down
