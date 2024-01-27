@@ -210,7 +210,7 @@ rake
     * [Miyoo Mini+](docs/retro-games.md#miyoo-mini)
       * [RetroArch Core BIOS files](docs/retro-games.md#retroarch-core-bios-files)
       * [Enable FTP server](docs/retro-games.md#enable-ftp-server)
-    * [Boxart](docs/retro-games.md#boxart)
+      * [Boxart](docs/retro-games.md#boxart)
     * [RetroArch](docs/retro-games.md#retroarch)
       * [Cores](docs/retro-games.md#cores)
       * [Cache directory](docs/retro-games.md#cache-directory)

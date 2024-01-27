@@ -49,6 +49,7 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 ## Miyoo Mini+
 
 * [Official store on AliExpress](https://miyoo.aliexpress.com/store/1101949807?shopId=1101949807)
+* [OnionOS emulators](https://onionui.github.io/docs/emulators)
 * [Pico-8 wrapper](https://github.com/XK9274/pico-8-wrapper-miyoo)
 * [Ports Collection](https://github.com/OnionUI/Ports-Collection)
 * [/r/MiyooMini](https://www.reddit.com/r/MiyooMini/)
@@ -76,7 +77,7 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 1. Navigate to: Apps > Terminal
 1. Use the on-screen keyboard to enter ```tcpsvd -vE 0.0.0.0 21 ftpd -w /```, then hit `enter`
 
-## Boxart
+### Boxart
 
 Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCARD/Roms/GBA/Imgs`
 
