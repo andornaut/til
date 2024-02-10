@@ -250,9 +250,13 @@ Rune Factory 3
 ```
 ### Nintendo - Game Boy - April 21, 1989
 ```
+BurgerTime Deluxe
+Castlevania II: Belmont's Revenge
+Donkey Kong
 Kirby's Dream Land 2
 Legend of Zelda, The - Link's Awakening
 Pokemon - Red Version
+Super Mario Land 2 - 6 Golden Coins
 Tetris - Rosy Retrospection (https://www.romhacking.net/hacks/5813/)
 Wario Land II
 ```
@@ -279,6 +283,7 @@ Pokemon - FireRed Version
 Pokemon - LeafGreen Version
 Pokemon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
 Sonic Advance 3
+TMNT
 Tony Hawk's Pro Skater 2
 Ultimate Card Games
 WarioWare, Inc. - Mega Microgame$!
@@ -367,6 +372,7 @@ Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
 Kirby's Dream Land 3
 Legend of Zelda, The - A Link to the Past
+Lemmings
 Mario Paint
 Mega Man X2
 Mega Man X
@@ -393,7 +399,6 @@ Teenage Mutant Ninja Turtles IV - Turtles in Time
 Teenage Mutant Ninja Turtles - Tournament Fighters
 Terranigma
 ```
-
 ### Pico-8 - April 2015
 ```
 Ascent
@@ -418,7 +423,6 @@ Pico World Race
 Shooting Star
 Steel Surge: Revolution
 ```
-
 ### Sega - Dreamcast - November 27, 1998
 ```
 Border Down
@@ -460,6 +464,7 @@ Castlevania - Bloodlines
 Desert Strike - Return to the Gulf
 Earthworm Jim
 Ecco the Dolphin
+Eternal Champions
 Evander Holyfield's 'Real Deal' Boxing
 Golden Axe
 Gunstar Heroes
@@ -495,10 +500,12 @@ X-Men
 ### Sega - Saturn - November 22, 1994
 ```
 Astal
+Batsugun
 Burning Rangers
 Daytona USA - Championship Circuit Edition
 Dragon Force
 Guardian Heroes
+Kingdom Grandprix (English translation patch: https://segaxtreme.net/resources/kingdom-grandprix-english-translation-patches.291/)
 Manx TT SuperBike
 Marvel Super Heroes
 NiGHTS into Dreams...
