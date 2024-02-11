@@ -559,8 +559,10 @@ Mega Man X4
 Mega Man X6 (https://www.romhacking.net/hacks/4035/)
 Metal Gear Solid
 NBA Jam 22 (https://www.romhacking.net/hacks/5700/)
+PaRappa the Rapper
 Rayman
 Spyro the Dragon
+Suikoden II
 Tekken 3
 Twisted Metal 2
 Wipeout XL
