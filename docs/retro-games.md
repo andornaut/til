@@ -107,7 +107,6 @@ Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/)
 Sega Game Gear | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega Genesis | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega Saturn | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) ([Mednafen](https://mednafen.github.io/))
-SNK - Neo Geo | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
 Sony PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Mednafen](https://mednafen.github.io/)) on Linux or [Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series
 Super Nintendo Entertainment System (SNES) | [bsnes-hd](https://github.com/DerKoun/bsnes-hd) or [Snex9x](https://docs.libretro.com/library/snes9x/)
 
