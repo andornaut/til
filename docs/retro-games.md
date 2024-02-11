@@ -96,16 +96,18 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 
 Platform | Core
 --- | ---
+Atari Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
 Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
 Nintendo DS (DSi) | [DeSmuME](https://docs.libretro.com/library/desmume/)
 Nintendo Entertainment System (NES) | [Mesen](https://docs.libretro.com/library/mesen/)
-Nintendo Game Boy/Color (GB) | [SameBoy](https://docs.libretro.com/library/sameboy/)
+Nintendo Game Boy/Color (GB/GBC) | [SameBoy](https://docs.libretro.com/library/sameboy/)
 Nintendo Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/)
 Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/)
 Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/)
 Sega Game Gear | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega Genesis | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega Saturn | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) ([Mednafen](https://mednafen.github.io/))
+SNK - Neo Geo | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
 Sony PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Mednafen](https://mednafen.github.io/)) on Linux or [Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series
 Super Nintendo Entertainment System (SNES) | [bsnes-hd](https://github.com/DerKoun/bsnes-hd) or [Snex9x](https://docs.libretro.com/library/snes9x/)
 
@@ -218,7 +220,6 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 ### Atari Jaguar - November 23, 1993
 ```
 Alien vs Predator
-Battle Sphere
 Cannon Fodder
 Defender 2000
 Doom
@@ -529,19 +530,6 @@ Virtua Fighter 2
 Virtual On - Cyber Troopers
 X-Men - Children of the Atom
 X-Men vs. Street Fighter
-```
-### SNK - Neo Geo - April 26, 1990
-```
-Bakumatsu Roman Daini Maku - Gekka no Kenshi - Tsuki ni Saku Hana, Chiri Yuku Hana ~ The Last Blade 2
-Big Tournament Golf ~ Neo Turf Masters
-Far East of Eden - Tengai Makyou Shinden ~ Far East of Eden - Kabuki Klash
-Flying Power Disc ~ Windjammers
-Garou Densetsu Special ~ Fatal Fury Special
-King of Fighters '98, The - Dream Match Never Ends ~ The King of Fighters '98 - The Slugfest
-League Bowling
-Magician Lord
-Puzzle Bobble ~ Bust-A-Move
-Sonic Wings 2 ~ Aero Fighters 2
 ```
 ### Sony - PlayStation (PSX) - December 3, 1994
 ```
