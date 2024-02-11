@@ -365,6 +365,7 @@ Donkey Kong Country
 EarthBound
 Final Fantasy III
 Final Fantasy II
+Final Fantasy - Mystic Quest
 F-Zero
 Gundam Wing - Endless Duel
 Illusion of Gaia
@@ -505,7 +506,7 @@ Burning Rangers
 Daytona USA - Championship Circuit Edition
 Dragon Force
 Guardian Heroes
-Kingdom Grandprix (English translation patch: https://segaxtreme.net/resources/kingdom-grandprix-english-translation-patches.291/)
+Shippuu Mahou Daisakusen - Kingdom Grandprix (English translation patch: https://segaxtreme.net/resources/kingdom-grandprix-english-translation-patches.291/)
 Manx TT SuperBike
 Marvel Super Heroes
 NiGHTS into Dreams...
@@ -521,6 +522,7 @@ Sonic Jam
 Street Fighter Alpha 2
 Virtua Cop 2
 Virtua Fighter 2
+Virtual On - Cyber Troopers
 X-Men - Children of the Atom
 X-Men vs. Street Fighter
 ```
