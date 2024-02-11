@@ -239,6 +239,7 @@ Castlevania: Order of Ecclesia
 Chrono Trigger
 Dragon Quest V: Hand of the Heavenly Bride
 Fire Emblem: Shadow Dragon
+Grand Theft Auto - Chinatown Wars
 Kirby Super Star Ultra
 Mario Kart DS
 Mega Man ZX
@@ -265,17 +266,17 @@ Wario Land II
 Advance Wars (https://akouzoukos.com/apotris/)
 Apotris
 Castlevania - Aria of Sorrow
+F-Zero - Maximum Velocity
 Final Fantasy Tactics Advance
 Final Fantasy VI Advance
 Fire Emblem - The Sacred Stones
-F-Zero - Maximum Velocity
 Golden Sun
 Gunstar Super Heroes
 Harvest Moon - Friends of Mineral Town
 Kirby & The Amazing Mirror
 Legend of Zelda, The - The Minish Cap
-Mario Kart - Super Circuit
 Mario & Luigi - Superstar Saga
+Mario Kart - Super Circuit
 Mega Man Zero
 Metroid - Zero Mission
 Pokemon - Emerald Version
@@ -303,9 +304,9 @@ NBA Street Vol. 2
 Need for Speed - Underground 2
 Paper Mario - The Thousand-Year Door
 Pikmin 2
+SSX Tricky
 Skies of Arcadia Legends
 Sonic Adventure 2 - Battle
-SSX Tricky
 Star Wars - Rogue Squadron II - Rogue Leader
 Super Mario Sunshine
 Super Monkey Ball
@@ -335,8 +336,8 @@ Star Wars - Rogue Squadron
 Super Mario 64
 Super Smash Bros.
 Turok - Dinosaur Hunter
-Wave Race 64 - Kawasaki Jet Ski
 WWF No Mercy
+Wave Race 64 - Kawasaki Jet Ski
 ```
 ### Nintendo - Nintendo Entertainment System (NES) - October 18, 1985
 ```
@@ -360,13 +361,13 @@ Teenage Mutant Ninja Turtles III - The Manhattan Project
 ```
 Chrono Trigger
 Contra III - The Alien Wars
-Donkey Kong Country 2 - Diddy's Kong Quest
 Donkey Kong Country
+Donkey Kong Country 2 - Diddy's Kong Quest
 EarthBound
-Final Fantasy III
-Final Fantasy II
-Final Fantasy - Mystic Quest
 F-Zero
+Final Fantasy - Mystic Quest
+Final Fantasy II
+Final Fantasy III
 Gundam Wing - Endless Duel
 Illusion of Gaia
 Ken Griffey Jr. Presents Major League Baseball
@@ -375,14 +376,14 @@ Kirby's Dream Land 3
 Legend of Zelda, The - A Link to the Past
 Lemmings
 Mario Paint
-Mega Man X2
 Mega Man X
+Mega Man X2
 Ms. Pac-Man
 NBA Jam - Tournament Edition
 Secret of Mana
 Sparkster
-Star Fox EX (https://www.romhacking.net/hacks/7285/)
 Star Fox
+Star Fox EX (https://www.romhacking.net/hacks/7285/)
 Street Fighter II Turbo
 Super Bomberman
 Super Castlevania IV
@@ -390,14 +391,14 @@ Super Double Dragon
 Super Mario All-Stars
 Super Mario Kart
 Super Mario RPG - Legend of the Seven Stars
-Super Mario World 2 - Yoshi's Island
 Super Mario World
+Super Mario World 2 - Yoshi's Island
 Super Metroid
 Super Punch-Out!!
 Super Tennis
 Tecmo Super Bowl
-Teenage Mutant Ninja Turtles IV - Turtles in Time
 Teenage Mutant Ninja Turtles - Tournament Fighters
+Teenage Mutant Ninja Turtles IV - Turtles in Time
 Terranigma
 ```
 ### Pico-8 - April 2015
@@ -461,6 +462,8 @@ X-Men
 ### Sega - Genesis - October 29, 1988
 ```
 Aladdin
+Altered Beast
+Beyond Oasis
 Castlevania - Bloodlines
 Desert Strike - Return to the Gulf
 Earthworm Jim
@@ -470,13 +473,13 @@ Evander Holyfield's 'Real Deal' Boxing
 Golden Axe
 Gunstar Heroes
 Herzog Zwei
+MUSHA - Metallic Uniframe Super Hybrid Armor
 Madden NFL 95
 Michael Jackson's Moonwalker
 Mortal Kombat II
-MUSHA - Metallic Uniframe Super Hybrid Armor
 NFL Sports Talk Football '93 Starring Joe Montana
-NHL '94 - 2023 Edition by Adam Catalyst (https://www.romhacking.net/hacks/7454/)
 NHL '94
+NHL '94 - 2023 Edition by Adam Catalyst (https://www.romhacking.net/hacks/7454/)
 OutRun
 Phantasy Star IV
 Revenge of Shinobi, The
@@ -484,9 +487,9 @@ Road Rash 3
 Rocket Knight Adventures
 Shining Force II
 Shinobi III - Return of the Ninja Master
+Sonic The Hedgehog
 Sonic The Hedgehog 2
 Sonic The Hedgehog 3
-Sonic The Hedgehog
 Streets of Rage 2
 Super Monaco GP
 Super Thunder Blade
@@ -495,8 +498,8 @@ Thunder Force IV
 ToeJam & Earl
 Virtua Racing
 World Series Baseball 98
-X-Men 2 - Clone Wars
 X-Men
+X-Men 2 - Clone Wars
 ```
 ### Sega - Saturn - November 22, 1994
 ```
@@ -506,7 +509,6 @@ Burning Rangers
 Daytona USA - Championship Circuit Edition
 Dragon Force
 Guardian Heroes
-Shippuu Mahou Daisakusen - Kingdom Grandprix (English translation patch: https://segaxtreme.net/resources/kingdom-grandprix-english-translation-patches.291/)
 Manx TT SuperBike
 Marvel Super Heroes
 NiGHTS into Dreams...
@@ -518,6 +520,7 @@ Saturn Bomberman
 Sega Rally Championship
 Shining Force III
 Shining the Holy Ark
+Shippuu Mahou Daisakusen - Kingdom Grandprix (English translation patch: https://segaxtreme.net/resources/kingdom-grandprix-english-translation-patches.291/)
 Sonic Jam
 Street Fighter Alpha 2
 Virtua Cop 2
@@ -551,9 +554,9 @@ Diablo
 Final Fantasy Tactics
 Final Fantasy VII
 Gex - Enter the Gecko
-Grandia
 Gran Turismo 2 (Arcade Mode)
 Gran Turismo 2 (Simulation Mode)
+Grandia
 Hot Shots Golf
 MediEvil
 Mega Man Legends
