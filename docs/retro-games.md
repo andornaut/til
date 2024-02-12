@@ -447,6 +447,7 @@ Sonic Adventure
 Soulcalibur
 Spider-Man
 Street Fighter Alpha 3
+Street Fighter III - 3rd Strike
 Tony Hawk's Pro Skater 2
 ```
 ### Sega - Game Gear - October 6, 1990
@@ -497,7 +498,10 @@ Shinobi III - Return of the Ninja Master
 Sonic The Hedgehog
 Sonic The Hedgehog 2
 Sonic The Hedgehog 3
+Space Harrier II
+Strider
 Streets of Rage 2
+Super Hang-On
 Super Monaco GP
 Super Thunder Blade
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
@@ -540,6 +544,8 @@ X-Men vs. Street Fighter
 ```
 Ace Combat 3 - Electrosphere
 Ape Escape
+Armored Core
+Battle Arena Toshinden
 Bust-A-Move 2 - Arcade Edition
 Castlevania - Symphony of the Night
 Chrono Cross
@@ -558,10 +564,14 @@ Mega Man X4
 Mega Man X6 (https://www.romhacking.net/hacks/4035/)
 Metal Gear Solid
 NBA Jam 22 (https://www.romhacking.net/hacks/5700/)
+Oddworld - Abe's Exoddus
 PaRappa the Rapper
+Persona
+R4 - Ridge Racer Type 4
 Rayman
 Spyro the Dragon
 Suikoden II
+Syphon Filter
 Tekken 3
 Twisted Metal 2
 Wipeout XL
