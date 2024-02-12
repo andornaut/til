@@ -342,17 +342,23 @@ Wave Race 64 - Kawasaki Jet Ski
 ### Nintendo - Nintendo Entertainment System (NES) - October 18, 1985
 ```
 Batman - The Video Game
+Blaster Master
 Castlevania III - Dracula's Curse
 Contra
+Double Dragon II
 Dr. Mario
 DuckTales
+Gradius
 Kirby's Adventure
 Legend of Zelda, The
+Mega Man 2
 Metroid
 Ninja Gaiden
 Pac-Man - Championship Edition (https://archive.org/details/championship)
 Punch-Out!!
 River City Ransom
+Super Mario Bros.
+Super Mario Bros. 2
 Super Mario Bros. 3
 Tecmo Super Bowl 2024 Presented by TecmoBowl.org (https://tecmobowl.org/files/file/821-tecmo-super-bowl-2024-presented-by-tecmobowlorg/)
 Teenage Mutant Ninja Turtles III - The Manhattan Project
