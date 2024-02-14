@@ -97,10 +97,11 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 
 Platform | Core
 --- | ---
+Atari Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
 Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
 Nintendo DS (DSi) | [DeSmuME](https://docs.libretro.com/library/desmume/)
 Nintendo Entertainment System (NES) | [Mesen](https://docs.libretro.com/library/mesen/)
-Nintendo Game Boy/Color (GB) | [SameBoy](https://docs.libretro.com/library/sameboy/)
+Nintendo Game Boy/Color (GB/GBC) | [SameBoy](https://docs.libretro.com/library/sameboy/)
 Nintendo Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/)
 Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/)
 Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/)
@@ -219,7 +220,6 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 ### Atari Jaguar - November 23, 1993
 ```
 Alien vs Predator
-Battle Sphere
 Cannon Fodder
 Defender 2000
 Doom
@@ -343,17 +343,23 @@ Wave Race 64 - Kawasaki Jet Ski
 ### Nintendo - Nintendo Entertainment System (NES) - October 18, 1985
 ```
 Batman - The Video Game
+Blaster Master
 Castlevania III - Dracula's Curse
 Contra
+Double Dragon II
 Dr. Mario
 DuckTales
+Gradius
 Kirby's Adventure
 Legend of Zelda, The
+Mega Man 2
 Metroid
 Ninja Gaiden
 Pac-Man - Championship Edition (https://archive.org/details/championship)
 Punch-Out!!
 River City Ransom
+Super Mario Bros.
+Super Mario Bros. 2
 Super Mario Bros. 3
 Tecmo Super Bowl 2024 Presented by TecmoBowl.org (https://tecmobowl.org/files/file/821-tecmo-super-bowl-2024-presented-by-tecmobowlorg/)
 Teenage Mutant Ninja Turtles III - The Manhattan Project
@@ -442,6 +448,7 @@ Sonic Adventure
 Soulcalibur
 Spider-Man
 Street Fighter Alpha 3
+Street Fighter III - 3rd Strike
 Tony Hawk's Pro Skater 2
 ```
 ### Sega - Game Gear - October 6, 1990
@@ -492,7 +499,10 @@ Shinobi III - Return of the Ninja Master
 Sonic The Hedgehog
 Sonic The Hedgehog 2
 Sonic The Hedgehog 3
+Space Harrier II
+Strider
 Streets of Rage 2
+Super Hang-On
 Super Monaco GP
 Super Thunder Blade
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
@@ -531,23 +541,12 @@ Virtual On - Cyber Troopers
 X-Men - Children of the Atom
 X-Men vs. Street Fighter
 ```
-### SNK - Neo Geo - April 26, 1990
-```
-Bakumatsu Roman Daini Maku - Gekka no Kenshi - Tsuki ni Saku Hana, Chiri Yuku Hana ~ The Last Blade 2
-Big Tournament Golf ~ Neo Turf Masters
-Far East of Eden - Tengai Makyou Shinden ~ Far East of Eden - Kabuki Klash
-Flying Power Disc ~ Windjammers
-Garou Densetsu Special ~ Fatal Fury Special
-King of Fighters '98, The - Dream Match Never Ends ~ The King of Fighters '98 - The Slugfest
-League Bowling
-Magician Lord
-Puzzle Bobble ~ Bust-A-Move
-Sonic Wings 2 ~ Aero Fighters 2
-```
 ### Sony - PlayStation (PSX) - December 3, 1994
 ```
 Ace Combat 3 - Electrosphere
 Ape Escape
+Armored Core
+Battle Arena Toshinden
 Bust-A-Move 2 - Arcade Edition
 Castlevania - Symphony of the Night
 Chrono Cross
@@ -566,10 +565,14 @@ Mega Man X4
 Mega Man X6 (https://www.romhacking.net/hacks/4035/)
 Metal Gear Solid
 NBA Jam 22 (https://www.romhacking.net/hacks/5700/)
+Oddworld - Abe's Exoddus
 PaRappa the Rapper
+Persona
+R4 - Ridge Racer Type 4
 Rayman
 Spyro the Dragon
 Suikoden II
+Syphon Filter
 Tekken 3
 Twisted Metal 2
 Wipeout XL

@@ -37,6 +37,7 @@ Install these applications:
 
 * [Alacritty](https://github.com/alacritty/alacritty)
 * [Flameshot](https://flameshot.org) (Paid alternative to [Monosnap](https://monosnap.com/))
+* [Kap](https://github.com/wulkano/Kap) - Screen recorder
 * [Karabiner Elements](https://karabiner-elements.pqrs.org/)
 * [Rectangle](https://rectangleapp.com/) (Paid version: [Hookshot](https://hookshot.app/))
 * [SketchyBar](https://github.com/FelixKratz/SketchyBar) - Status bar
