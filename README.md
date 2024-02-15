@@ -236,7 +236,6 @@ rake
       * [Sega - Game Gear - October 6, 1990](docs/retro-games.md#sega---game-gear---october-6-1990)
       * [Sega - Genesis - October 29, 1988](docs/retro-games.md#sega---genesis---october-29-1988)
       * [Sega - Saturn - November 22, 1994](docs/retro-games.md#sega---saturn---november-22-1994)
-      * [SNK - Neo Geo - April 26, 1990](docs/retro-games.md#snk---neo-geo---april-26-1990)
       * [Sony - PlayStation (PSX) - December 3, 1994](docs/retro-games.md#sony---playstation-psx---december-3-1994)
   * [Ruby](docs/ruby.md#ruby)
     * [Books](docs/ruby.md#books)
