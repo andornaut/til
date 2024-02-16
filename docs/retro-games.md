@@ -578,6 +578,7 @@ Spyro the Dragon
 Suikoden II
 Syphon Filter
 Tekken 3
+Tomb Raider
 Twisted Metal 2
 Wipeout XL
 Xenogears
