@@ -441,15 +441,19 @@ Grandia II
 Jet Grind Radio
 Marvel vs. Capcom 2
 NFL Blitz 2000
+Phantasy Star Online Ver. 2
+Power Stone
 Rayman 2 - The Great Escape
 Rez
 Sega Bass Fishing
 Sonic Adventure
 Soulcalibur
+Space Channel 5
 Spider-Man
 Street Fighter Alpha 3
 Street Fighter III - 3rd Strike
 Tony Hawk's Pro Skater 2
+Virtua Fighter 3tb
 ```
 ### Sega - Game Gear - October 6, 1990
 ```
