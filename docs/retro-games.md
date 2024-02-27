@@ -6,8 +6,8 @@
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
 * [[No-Intro] PropeR 1g1r Collection (2024)](https://archive.org/details/proper1g1r-collection)
 * [Pico-8](https://www.lexaloffle.com/pico-8.php)
-* [ROM hack patcher (online)](https://www.romhacking.net/patch/)
 * [ROMhacking.net](https://www.romhacking.net)
+  * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
 * [Thumbnails](http://thumbnails.libretro.com/)
 * [/r/Roms Megathread](https://r-roms.github.io/)
 
