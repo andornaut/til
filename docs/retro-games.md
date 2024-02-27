@@ -509,6 +509,7 @@ Streets of Rage 2
 Super Hang-On
 Super Monaco GP
 Super Thunder Blade
+Teenage Mutant Ninja Turtles - Shredder's Re-Revenge (https://www.romhacking.net/hacks/7399/)
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
 Thunder Force IV
 ToeJam & Earl
