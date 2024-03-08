@@ -6,6 +6,7 @@
 
 ## Books
 
+* [Eloquent JavaScript](https://eloquentjavascript.net)
 * [JavaScript Allongé, the "Six" Edition](https://leanpub.com/javascriptallongesix/read)
 * [JavaScript The Good Parts](https://www.oreilly.com/library/view/javascript-the-good/9780596517748/)
 * [JavaScript - The Definitive Guide](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/)
