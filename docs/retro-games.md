@@ -6,8 +6,8 @@
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
 * [[No-Intro] PropeR 1g1r Collection (2024)](https://archive.org/details/proper1g1r-collection)
 * [Pico-8](https://www.lexaloffle.com/pico-8.php)
-* [ROM hack patcher (online)](https://www.romhacking.net/patch/)
 * [ROMhacking.net](https://www.romhacking.net)
+  * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
 * [Thumbnails](http://thumbnails.libretro.com/)
 * [/r/Roms Megathread](https://r-roms.github.io/)
 
@@ -441,15 +441,19 @@ Grandia II
 Jet Grind Radio
 Marvel vs. Capcom 2
 NFL Blitz 2000
+Phantasy Star Online Ver. 2
+Power Stone
 Rayman 2 - The Great Escape
 Rez
 Sega Bass Fishing
 Sonic Adventure
 Soulcalibur
+Space Channel 5
 Spider-Man
 Street Fighter Alpha 3
 Street Fighter III - 3rd Strike
 Tony Hawk's Pro Skater 2
+Virtua Fighter 3tb
 ```
 ### Sega - Game Gear - October 6, 1990
 ```
@@ -505,6 +509,7 @@ Streets of Rage 2
 Super Hang-On
 Super Monaco GP
 Super Thunder Blade
+Teenage Mutant Ninja Turtles - Shredder's Re-Revenge (https://www.romhacking.net/hacks/7399/)
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
 Thunder Force IV
 ToeJam & Earl
@@ -574,6 +579,7 @@ Spyro the Dragon
 Suikoden II
 Syphon Filter
 Tekken 3
+Tomb Raider
 Twisted Metal 2
 Wipeout XL
 Xenogears
