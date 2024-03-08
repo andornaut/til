@@ -191,6 +191,8 @@ org:wmgtech
 author:andornaut
 involves:andornaut
 reviewed-by:andornaut
+# PRs where andornaut is a reviewer and not author
+reviewed-by:andornaut -author:andornaut
 
 # Date/time
 created:>=2024-12-31 
