@@ -27,6 +27,7 @@
 
 * [Bambu Lab P1P 3D printer](https://bambulab.com/en/p1)
   * [BIQU Panda Hotend](https://biqu.equipment/products/biqu-panda-hotend)
+  * [Boron Nitride Paste](https://www.sliceengineering.com/products/boron-nitride-paste)
   * [CHT Brass High Flow Nozzle For Bambu Lab X1 P1P](https://www.aliexpress.com/item/1005005246470567.html)
   * [High Temperature Plate (PEI)](https://ca.store.bambulab.com/products/bambu-high-temperature-plate)
   * [Hotend Kit For Bambu Lab X1 Carbon X1-Carbon Combo P1P](https://www.aliexpress.com/item/1005005291012768.html)

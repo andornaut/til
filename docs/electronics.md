@@ -24,6 +24,7 @@
   * The firmware flashing intructions in the manual omit one step: While holding down the "SET" button, connect a USB-C cable, then press the "Run" button, then mount the "\*\_DFU" filesystem and copy over the \*.hex file to the
 * [Miniware TS101 Soldering Iron](https://www.miniware.com.cn/product/ts101-smart-soldering-iron/)
   * Flashing the firmware fails in Linux, but work in macOS
+  * [Soldering Tips SET compatible with TS100 & TS101](https://cnckitchen.store/products/ts100-101-adapter-tips-set-m2-x-m3-m4-m5-m6-1-4-m8-100-lead-and-cadmium-free)
 * [Omnifixo - Helping hands](https://omnifixo.com/)
 * [Pinecil - Soldering Iron](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/)
 
