@@ -191,6 +191,8 @@ org:wmgtech
 author:andornaut
 involves:andornaut
 reviewed-by:andornaut
+# PRs where andornaut is a reviewer and not author
+reviewed-by:andornaut -author:andornaut
 
 # Date/time
 created:>=2024-12-31 
@@ -200,7 +202,7 @@ merged:2024-01-01..2024-12-31
 **Example searches:**
 * [Pull requests `org:wmgtech is:pr author:andornaut`](https://github.com/pulls?q=org%3Awmgtech+is%3Apr+author%3Aandornaut)
 * [Pull requests `org:wmgtech is:pr involves:andornaut`](https://github.com/pulls?q=org%3Awmgtech+is%3Apr+involves%3Aandornaut)
-* [Pull requests `org:wmgtech is:pr reviewed-by:andornaut`](https://github.com/pulls?q=org%3Awmgtech+is%3Apr+reviewed-by%3Aandornaut) 
+* [Pull requests `org:wmgtech is:pr reviewed-by:andornaut -author:andornaut`](https://github.com/pulls?q=org%3Awmgtech+is%3Apr+reviewed-by%3Aandornaut+-author%3Aandornaut)
 
 ### Tips
 
