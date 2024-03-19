@@ -388,6 +388,7 @@ Mega Man X2
 Ms. Pac-Man
 NBA Jam - Tournament Edition
 Secret of Mana
+Space Megaforce
 Sparkster
 Star Fox
 Star Fox EX (https://www.romhacking.net/hacks/7285/)
