@@ -136,6 +136,12 @@ defaults delete com.apple.dock autohide-delay && killall Dock
 defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 ```
 
+### Disable "Click wallpaper to reveal desktop"
+
+1. Open "System Settings"
+1. Search for "stage manager"
+1. Set "Click wallpaper to reveal desktop" to "Only in Stage Manager"
+
 ### Disable command+h (hide window)
 
 * [StackOverflow](https://superuser.com/a/1354665)

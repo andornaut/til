@@ -142,6 +142,7 @@ rake
     * [Customizations](docs/macos.md#customizations)
       * [Reduce menu (top bar) transparency](docs/macos.md#reduce-menu-top-bar-transparency)
       * [Dock](docs/macos.md#dock)
+      * [Disable "Click wallpaper to reveal desktop"](docs/macos.md#disable-click-wallpaper-to-reveal-desktop)
       * [Disable command+h (hide window)](docs/macos.md#disable-commandh-hide-window)
     * [KVM](docs/macos.md#kvm)
       * [Fix flakiness](docs/macos.md#fix-flakiness)
