@@ -47,16 +47,35 @@ Name | Description
 
 Name | Description
 --- | ---
-[Black Formatter for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) | Support the [black formatter](https://github.com/psf/black)
-[Flake8 for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8) | Support for the [flake8 linter](https://github.com/pycqa/flake8/)
-[Pipenv](https://pipenv.pypa.io/en/latest/) | Dev workflows for humans
+[Black Formatter for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) | Support the [black formatter](https://github.com/psf/black) (use [ruff](https://github.com/astral-sh/ruff) instead)
+[Flake8 for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8) | Support for the [flake8 linter](https://github.com/pycqa/flake8/) (use [ruff](https://github.com/astral-sh/ruff) instead)
+[Pipenv](https://pipenv.pypa.io/en/latest/) | Dev workflows for humans (use [Poetry](https://python-poetry.org/) instead)
+[Pipx](https://pipx.pypa.io/)
 [Poetry](https://python-poetry.org/) | Python packaging and dependency management made easy
 [pre-commit](https://github.com/pre-commit/pre-commit) | A framework for managing multi-language pre-commit hooks
 [Python for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | Support intelliSense, linting, debugging, code navigation, code formatting, etc
+[ruff](https://github.com/astral-sh/ruff)
 
-## How-tos and Workarounds
+## How-tos
+
+### Getting started with Poetry
+
+1. Install [pipx](https://pipx.pypa.io/stable/installation/)
+1. Install poetry ```pipx install poetry```
+1. Run ```poetry init```
+1. Update `pyproject.toml`
+
+[Poetry configuration](https://python-poetry.org/docs/configuration/)
+
+* Linux `~/.config/pypoetry`
+* macOS `~/Library/Application\ Support/pypoetry/config.toml`
+
+Configure Poetry to install venvs in the project directory, so that VSCode can enable them automatically:
+
+```poetry config virtualenvs.in-project true```
 
 ### Develop a non-redistributable (no setup.py) local package using Pipenv
+
 
 Add an `.env` file to the project root:
 ```
