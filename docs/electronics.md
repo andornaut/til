@@ -25,6 +25,7 @@
 * [Miniware TS101 Soldering Iron](https://www.miniware.com.cn/product/ts101-smart-soldering-iron/)
   * Flashing the firmware fails in Linux, but work in macOS
   * [Soldering Tips SET compatible with TS100 & TS101](https://cnckitchen.store/products/ts100-101-adapter-tips-set-m2-x-m3-m4-m5-m6-1-4-m8-100-lead-and-cadmium-free)
+* [NEWACALOX 30W Soldering Fan Smoke Absorber](https://www.aliexpress.com/item/1005004795640997.html?spm=a2g0o.order_list.order_list_main.137.61d718020oVHoX) (Select color: N-SE120)
 * [Omnifixo - Helping hands](https://omnifixo.com/)
 * [Pinecil - Soldering Iron](https://pine64.com/product/pinecil-smart-mini-portable-soldering-iron/)
 
@@ -32,9 +33,10 @@
 
 * [Adafruit](https://www.adafruit.com/)
 * [Digi-Key Electronics](https://www.digikey.ca/)
+* [LCSC Electronics](https://www.lcsc.com/)
 * [Mouser Electronics](https://www.mouser.ca/)
-* [SparkFun](https://www.sparkfun.com/)
 * [Newark](https://canada.newark.com/)
+* [SparkFun](https://www.sparkfun.com/)
 * [Zap Cables](https://www.zapcables.com/)
 
 ### PCB fabrication
