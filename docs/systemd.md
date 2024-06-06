@@ -121,9 +121,9 @@ loginctl enable-linger ${USER}
 ### Create a service to restart an always-on USB port
 
 ```
-systemctl edit --full --force restart-usb-always-on-port.service
-systemctl enable restart-usb-always-on-port
-systemctl start restart-usb-always-on-port
+systemctl edit --full --force usb-hub-workaround.service
+systemctl enable usb-hub-workaround.service
+systemctl start usb-hub-workaround.service
 ```
 
 Unit file: `/etc/systemd/system/usb-hub-workaround.service`
@@ -139,6 +139,7 @@ Description=Restart an always-on USB port (workaround)
 Type=oneshot
 Environment=port=1-8
 ExecStart=/bin/bash -c 'port=1-0:1.0 \
+set -e; \
 echo "Unbind USB port: ${port}"; \
 echo ${port} > /sys/bus/usb/drivers/usb/unbind; \
 echo "Bind USB port: ${port}"; \
