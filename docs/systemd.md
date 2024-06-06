@@ -129,21 +129,23 @@ systemctl start usb-hub-workaround.service
 Unit file: `/etc/systemd/system/usb-hub-workaround.service`
 ```
 [Unit]
-# A USB hub is connected to an always-on USB port, which causes
-# it to not initialize properly after a reboot. Restarting the
-# USB hub during boot works around this issue.
 # https://askubuntu.com/a/1005903
-Description=Restart an always-on USB port (workaround)
+Description=Workaround: Restart an always-on USB port
 
 [Service]
 Type=oneshot
+#usb 1-8: new high-speed USB device number 5 using xhci_hcd
+#usb 1-8: New USB device found, idVendor=05e3, idProduct=0610, bcdDevice=94.05
 Environment=port=1-8
-ExecStart=/bin/bash -c 'port=1-0:1.0 \
+Environment=sleepSeconds=2
+ExecStart=/bin/bash -c '\
 set -e; \
 echo "Unbind USB port: ${port}"; \
 echo ${port} > /sys/bus/usb/drivers/usb/unbind; \
+echo Sleeping for ${sleepSeconds} seconds...; \
+sleep ${sleepSeconds};\
 echo "Bind USB port: ${port}"; \
-echo ${port} > /sys/bus/usb/drivers/usb/bind'
+echo ${port} > /sys/bus/usb/drivers/usb/bind;'
 
 [Install]
 WantedBy=docker.service
