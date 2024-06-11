@@ -36,6 +36,7 @@ Application | Description
 [ElKowars wacky widgets (EWW)](https://github.com/elkowar/eww/)|Bar for X11 and Wayland
 [Hyprland](https://hyprland.org/)|A dynamic tiling Wayland compositor
 [Ly](https://github.com/fairyglade/ly)|Display manager
+[Mission Center](https://missioncenter.io/)|Monitor your CPU, Memory, Disk, Network and GPU usage
 [River WM](https://github.com/riverwm/river)|Dynamic tiling Wayland compositor
 [Rofi](https://github.com/davatorium/rofi)|Window switcher, application launcher and dmenu replacement
 [Stalonetray](https://github.com/kolbusa/stalonetray)|System tray for X11
