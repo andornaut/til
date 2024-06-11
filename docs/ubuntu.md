@@ -16,6 +16,7 @@ Application | Description
 [heroic](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)|[Epic Games Store](https://www.epicgames.com) launcher
 [itch](https://itch.io/app)|[itch.io](https://itch.io) game launcher
 [lutris](https://lutris.net/)|Wine, Steam, etc game launcher
+[Mission Center](https://missioncenter.io/)|Monitor your CPU, Memory, Disk, Network and GPU usage
 [obs](https://obsproject.com/)|Tool to record video and perform live streaming
 [pcmanfm](https://sourceforge.net/projects/pcmanfm/)|File manager
 [piper](https://github.com/libratbag/piper)|Configure mouse DPI
@@ -36,7 +37,6 @@ Application | Description
 [ElKowars wacky widgets (EWW)](https://github.com/elkowar/eww/)|Bar for X11 and Wayland
 [Hyprland](https://hyprland.org/)|A dynamic tiling Wayland compositor
 [Ly](https://github.com/fairyglade/ly)|Display manager
-[Mission Center](https://missioncenter.io/)|Monitor your CPU, Memory, Disk, Network and GPU usage
 [River WM](https://github.com/riverwm/river)|Dynamic tiling Wayland compositor
 [Rofi](https://github.com/davatorium/rofi)|Window switcher, application launcher and dmenu replacement
 [Stalonetray](https://github.com/kolbusa/stalonetray)|System tray for X11
