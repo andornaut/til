@@ -58,6 +58,7 @@
 
 ## Software
 
+* [Cosmos Keyboard Configurator](https://ryanis.cool/cosmos/beta)
 * [Ergogen](https://github.com/ergogen/ergogen) | Online: [Official](https://ergogen.xyz/) and [Unofficial, but better](https://ergogen.cache.works/) ([GitHub](https://github.com/MvEerd/ergogen-gui))
   * [ergogen-contrib](https://github.com/Albert-IV/ergogen-contrib)
   * [Footprints by ceoloide](https://github.com/ceoloide/ergogen-footprints)
