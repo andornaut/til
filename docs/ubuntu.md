@@ -51,6 +51,7 @@ Command | Description
 --- | ---
 atop | AT Computing's System & Process Monitor
 htop | ncurses-based process viewer for Linux
+iftop | A real-time console-based network bandwidth monitoring tool
 intel_gpu_top, nvtop, radeontop | Monitor graphics devices
 iostat | CPU and input/output statistics for devices and partitions
 lsof | Lists on its standard output file information about files opened by processes
