@@ -382,6 +382,7 @@ Final Fantasy - Mystic Quest
 Final Fantasy II
 Final Fantasy III
 Gundam Wing - Endless Duel
+Hook
 Illusion of Gaia
 Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
@@ -510,6 +511,7 @@ NHL '94
 NHL '94 - 2023 Edition by Adam Catalyst (https://www.romhacking.net/hacks/7454/)
 OutRun
 Phantasy Star IV
+Pirates! Gold
 Revenge of Shinobi, The
 Road Rash 3
 Rocket Knight Adventures
