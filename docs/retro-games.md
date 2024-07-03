@@ -350,7 +350,9 @@ Wave Race 64 - Kawasaki Jet Ski
 ```
 Batman - The Video Game
 Blaster Master
+Bubble Bobble
 Castlevania III - Dracula's Curse
+Chip 'n Dale - Rescue Rangers
 Contra
 Double Dragon II
 Dr. Mario
@@ -359,6 +361,7 @@ Gradius
 Kirby's Adventure
 Legend of Zelda, The
 Mega Man 2
+Mega Man 4
 Metroid
 Ninja Gaiden
 Pac-Man - Championship Edition (https://archive.org/details/championship)
