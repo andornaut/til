@@ -20,6 +20,7 @@
 * [CAD tips for 3D printing infographic](https://pbs.twimg.com/media/EOj347eUYAE4bZu?format=jpg&name=large)
 * [CHT High Flow nozzle for the BambuLab X1 & P1P](https://www.cnckitchen.com/blog/cht-high-flow-nozzle-for-the-bambulab-x1-amp-p1p)
 * [Common 3D printing problems troubleshooting guide](https://all3dp.com/1/common-3d-printing-problems-troubleshooting-3d-printer-issues/)
+* [Filament guide](https://bambulab.com/en-ca/filament/collections)
 * [Let's Print 3D](https://letsprint3d.net/)
   * [How to Finish 3D Prints with Chrome Paint](https://letsprint3d.net/guide-how-to-finish-3d-prints/)
   * [How to Print PETG Filament with Perfect Results](https://letsprint3d.net/how-to-print-petg/)

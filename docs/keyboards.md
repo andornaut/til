@@ -26,7 +26,7 @@
 * [Keebfolio: Awesome mechanical keyboards](https://github.com/BenRoe/awesome-mechanical-keyboard/)
 * [Keyboard Guides](https://github.com/sadekbaroudi/keyboard-guides) - Cases and QMK
 * [Keyboard.university](https://www.keyboard.university/)
-* [Let's Design A Keyboard With Ergogen v4](https://flatfootfox.com/ergogen-introduction/)
+* [Let's Design A Keyboard With Ergogen v4 by FlatFootFox](https://flatfootfox.com/ergogen-introduction/)
 * [Let's Split Guide](https://github.com/nicinabox/lets-split-guide)
 * [PCB designer guide](https://wiki.ai03.com/books/pcb-design/chapter/pcb-designer-guide)
 * [QMK hand-wiring guide](https://github.com/qmk/qmk_firmware/blob/master/docs/hand_wire.md)
@@ -91,6 +91,7 @@
 * [Clickety Split](https://clicketysplit.ca/)
 * [Desk Hero](https://www.deskhero.ca/)
 * [Drop /mechanical-keyboards/drops](https://drop.com/mechanical-keyboards/drops)
+* [ErgoMechStore](https://ergomech.store/)
 * [KBDfans](https://kbdfans.com/)
 * [Keebio](https://keeb.io/)
 * [Kono](https://kono.store/)
