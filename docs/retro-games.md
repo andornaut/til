@@ -254,20 +254,24 @@ Rune Factory 3
 ```
 ### Nintendo - Game Boy - April 21, 1989
 ```
+Bubble Bobble
 BurgerTime Deluxe
 Castlevania II: Belmont's Revenge
 Donkey Kong
 Kirby's Dream Land 2
 Legend of Zelda, The - Link's Awakening
 Pokemon - Red Version
+Pokemon - Yellow Version - Special Pikachu Edition
 Super Mario Land 2 - 6 Golden Coins
 Tetris - Rosy Retrospection (https://www.romhacking.net/hacks/5813/)
 Wario Land II
 ```
 ### Nintendo - Game Boy Advance - March 21, 2001
 ```
-Advance Wars (https://akouzoukos.com/apotris/)
-Apotris
+Advance Wars 
+Advance Wars 2
+Apotris (https://akouzoukos.com/apotris/)
+Astro Boy - Omega Factor
 Castlevania - Aria of Sorrow
 F-Zero - Maximum Velocity
 Final Fantasy Tactics Advance
@@ -382,8 +386,10 @@ Illusion of Gaia
 Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
 Kirby's Dream Land 3
+Kirby Super Star
 Legend of Zelda, The - A Link to the Past
 Lemmings
+Lufia II - Rise of the Sinistrals
 Mario Paint
 Mega Man X
 Mega Man X2
