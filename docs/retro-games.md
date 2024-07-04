@@ -258,12 +258,18 @@ Bubble Bobble
 BurgerTime Deluxe
 Castlevania II: Belmont's Revenge
 Donkey Kong
+Gradius - The Interstellar Assault
 Kirby's Dream Land 2
 Legend of Zelda, The - Link's Awakening
+Mario's Picross
+Mega Man V
+Metroid II - Return of Samus
+Operation C
 Pokemon - Red Version
 Pokemon - Yellow Version - Special Pikachu Edition
 Super Mario Land 2 - 6 Golden Coins
 Tetris - Rosy Retrospection (https://www.romhacking.net/hacks/5813/)
+Tiny Toon Adventures - Babs' Big Break
 Wario Land II
 ```
 ### Nintendo - Game Boy Advance - March 21, 2001
@@ -324,6 +330,7 @@ Tony Hawk's Pro Skater 3
 ```
 1080 Snowboarding
 Banjo-Kazooie
+Conker's Bad Fur Day
 Diddy Kong Racing
 Donkey Kong 64
 Excitebike 64
@@ -595,6 +602,7 @@ PaRappa the Rapper
 Persona
 R4 - Ridge Racer Type 4
 Rayman
+R-Type Delta
 Spyro the Dragon
 Suikoden II
 Syphon Filter
