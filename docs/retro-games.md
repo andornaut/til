@@ -279,6 +279,7 @@ Advance Wars 2
 Apotris (https://akouzoukos.com/apotris/)
 Astro Boy - Omega Factor
 Castlevania - Aria of Sorrow
+Crash Bandicoot - The Huge Adventure
 F-Zero - Maximum Velocity
 Final Fantasy Tactics Advance
 Final Fantasy VI Advance
@@ -291,12 +292,15 @@ Legend of Zelda, The - The Minish Cap
 Mario & Luigi - Superstar Saga
 Mario Kart - Super Circuit
 Mega Man Zero
+Megaman - Battle Network 3
 Metroid - Zero Mission
 Pokemon - Emerald Version
 Pokemon - FireRed Version
 Pokemon - LeafGreen Version
 Pokemon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
 Sonic Advance 3
+Spyro 2 - Season of Flame
+Super Monkey Ball Jr.
 TMNT
 Tony Hawk's Pro Skater 2
 Ultimate Card Games
