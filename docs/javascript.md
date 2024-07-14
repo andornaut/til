@@ -51,6 +51,10 @@ EOF
 ```bash
 nvm install --lts
 nvm use --lts
+
+# In a project directory, execute:
+nvm version > .nvmrc
+nvm use
 ```
 
 ## React
