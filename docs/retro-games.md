@@ -1,29 +1,42 @@
 # Retro games
 
-* [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
-* [CD Romance](https://cdromance.com/) - ROM hacks
-* [Homebrew games list](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)
-* [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
+* [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)* [CD Romance](https://cdromance.com/) - ROM hacks* [Homebrew games list](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)* [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
 * [MyAbandonware](https://www.myabandonware.com/)
 * [[No-Intro] PropeR 1g1r Collection (2024)](https://archive.org/details/proper1g1r-collection)
 * [Pico-8](https://www.lexaloffle.com/pico-8.php)
 * [PortMaster](https://portmaster.games/)
+* [RetroAchievements](https://retroachievements.org/)
 * [ROMhacking.net](https://www.romhacking.net)
   * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
 * [TheGamesDB](https://thegamesdb.net)
-* [Thumbnails](http://thumbnails.libretro.com/)
 * [/r/Roms Megathread](https://r-roms.github.io/)
+* [/v/'s Recommended Games Wiki](https://vsrecommendedgames.fandom.com/wiki/V/%27s_Recommended_Games_Wiki)
+* [Vimm's Lair](https://vimm.net/)
+* Artwork
+  * [System images (larger)](https://github.com/ruckage/es-theme-snes-mini/blob/master/art/icons_usa/)
+  * [System images (smaller)](https://github.com/Vidnez/retro-systems-icons-for-GarlicOS/tree/master/system) 
+  * [Thumbnails](http://thumbnails.libretro.com/)
 
-## Anbernic RG35XX+ 
+## Hardware
 
+### Anbernic RG35XX+ and RG40XXV
+
+* [Anbernic official store](https://anbernic.com/)
+* Custom firmware (CFW):
+  * [GarlicOS on GitHub](https://github.com/GarlicOS/buildroot)
+    * [GarlicOS 2.0 (Public Alpha) announcement](https://www.patreon.com/posts/92690050)
+    * [patreon.com/blackseraph](https://www.patreon.com/blackseraph) - Lead developer of GarlicOS
+  * [Knulli](https://knulli.org/)
+
+#### MinUI
+
+* [Anbernic](https://anbernic.com/)
 * [patreon.com/blackseraph](https://www.patreon.com/blackseraph) - Lead developer of GarlicOS
 * [GarlicOS 2.0 (Public Alpha) announcement](https://www.patreon.com/posts/92690050)
 * [GarlicOS on GitHub](https://github.com/GarlicOS/buildroot)
+* [Knulli](https://knulli.org/devices/anbernic/rg40xx-h/)
 * [MinUI](https://github.com/shauninman/MinUI)
   * [MinUI Paks](https://github.com/shauninman/MinUI/blob/main/PAKS.md) 
-* [muOS](https://muos.xonglebongle.com/)
-
-### MinUI
 
 1. Download the "base" and "extras" zip files from [the latest MinUI release](https://github.com/shauninman/MinUI/releases). eg. 
 MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
@@ -42,7 +55,32 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 * MinUI maps Roms to Bios' to Emus by the system abbreviation, which is included in parenthesis in sub-folders of the Roms/ folder. eg. `Roms/Sega Game Gear (GG)/` maps `Bios/GG` maps to `Emus/rg35xxplus/GG.pak`
 * MinUI cannot unzip 7z files, so prefer uncompressed Roms or zip files
 
-## Analogue Pocket
+#### Mustard OS / muOS
+
+* [muOS](https://muos.xonglebongle.com/)
+  * [Help (Documentation)](https://muos.dev/help)
+  * [Pico-8](https://muos.dev/emulators/pico8)
+  * [PortMaster](https://muos.dev/help/portmaster)
+* [muOS Artwork](https://github.com/antiKk/muOS-Artwork)
+* [muOS Discord](https://discord.gg/muos) 
+* [muOS GitHub](https://github.com/MustardOS/)
+  * [Themes](https://github.com/MustardOS/theme)
+
+##### Keyboard shortcuts
+
+Key | Description
+--- | ---
+Menu Start | Exit
+Menu X | Toggle RetroArch menu
+Menu Y | Toggle FPS
+Menu L1 | Slow motion
+Menu L2 | Save state
+Menu R1 | Fast forward
+Menu R2 | Load last state
+Menu Vol Up/Down | Increase/Decrease brightness
+Menu L1 | Exit [DraStic](https://muos.dev/emulators/drastic)
+
+### Analogue Pocket
 
 * [Analogue.co](https://www.analogue.co/)
   * [Manual](https://assets.analogue.co/pdf/f48dbccc2a7c529e3ef677db3b4ab9d8/Analogue+Pocket+User+Manual+v1.2.pdf)
@@ -50,19 +88,36 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 * [Pocket Sync](https://github.com/neil-morrison44/pocket-sync) - GUI tool to update openFPGA cores, and manage save states, save files, and screenshots
 * [Analogue Pocket Updater Utility](https://github.com/mattpannella/pocket-updater-utility) - CLI tool to update openFPGA cores and firmware
 
-## Miyoo Mini+
+### Miyoo Mini+
 
-* [Official store on AliExpress](https://miyoo.aliexpress.com/store/1101949807?shopId=1101949807)
-* [OnionOS emulators](https://onionui.github.io/docs/emulators)
+* [Miyoo official store on AliExpress](https://miyoo.aliexpress.com/store/1101949807?shopId=1101949807)
 * [Pico-8 wrapper](https://github.com/XK9274/pico-8-wrapper-miyoo)
 * [Ports Collection](https://github.com/OnionUI/Ports-Collection)
 * [/r/MiyooMini](https://www.reddit.com/r/MiyooMini/)
-* Custom launchers:
+* Custom firmware (CFW):
   * [Allium](https://github.com/goweiwen/Allium)
   * [MinUI](https://github.com/shauninman/MinUI)
-  * [OnionOS](https://github.com/OnionUI/Onion)
 
-### RetroArch Core BIOS files
+#### OnionOS
+
+* [OnionOS](https://github.com/OnionUI/Onion)
+  * [OnionOS emulators](https://onionui.github.io/docs/emulators)
+  * [OnionOS ports collection](https://onionui.github.io/docs/ports)
+ 
+##### Boxart
+
+Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCARD/Roms/GBA/Imgs`
+
+##### Enable FTP server
+
+* [/r/MiyooMini](https://www.reddit.com/r/MiyooMini/comments/11uzlrw/fyi_you_can_enable_ftp_on_the_miyoo_mini_to_copy/)
+
+1. Navigate to: Apps > Package Manager > Apps
+1. Install the "Terminal" app
+1. Navigate to: Apps > Terminal
+1. Use the on-screen keyboard to enter ```tcpsvd -vE 0.0.0.0 21 ftpd -w /```, then hit `enter`
+
+##### RetroArch Core BIOS files
 
 1. Find the names of recommended BIOS' for each of your emulators from the [Onion Wiki](https://onionui.github.io/docs/emulators/consoles)
 1. Download the [BIOS files](https://archive.org/download/RetroarchSystemFiles/Retroarch-System/)
@@ -72,117 +127,7 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 1. Navigate to Apps > RetroArch -> Information > Core Information
 1. Confirm that the BIOS files that you added are listed as "present"
 
-### Enable FTP server
-
-* [/r/MiyooMini](https://www.reddit.com/r/MiyooMini/comments/11uzlrw/fyi_you_can_enable_ftp_on_the_miyoo_mini_to_copy/)
-
-1. Navigate to: Apps > Package Manager > Apps
-1. Install the "Terminal" app
-1. Navigate to: Apps > Terminal
-1. Use the on-screen keyboard to enter ```tcpsvd -vE 0.0.0.0 21 ftpd -w /```, then hit `enter`
-
-### Boxart
-
-Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCARD/Roms/GBA/Imgs`
-
-## RetroArch
-
-* [Libretro](https://www.libretro.com/)
-  * [Docs](https://docs.libretro.com/)
-* [RetroArch on Flathub](https://flathub.org/apps/details/org.libretro.RetroArch)
-* [BIOS on GitHub](https://github.com/Abdess/retroarch_system)
-* [BIOS on Internet Archive](https://archive.org/download/RetroarchSystemFiles/Retroarch-System/)
-* [/r/RetroArch](https://www.reddit.com/r/RetroArch/)
-
-### Cores
-
-* [Emulation General Wiki](https://emulation.gametechwiki.com/index.php/Main_Page)
-
-Platform | Core
---- | ---
-Atari Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
-Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
-Nintendo DS (DSi) | [DeSmuME](https://docs.libretro.com/library/desmume/)
-Nintendo Entertainment System (NES) | [Mesen](https://docs.libretro.com/library/mesen/)
-Nintendo Game Boy/Color (GB/GBC) | [SameBoy](https://docs.libretro.com/library/sameboy/)
-Nintendo Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/)
-Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/)
-Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/)
-Sega Game Gear | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega Genesis | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega Saturn | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) ([Mednafen](https://mednafen.github.io/))
-Sony PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Mednafen](https://mednafen.github.io/)) on Linux or [Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series
-Super Nintendo Entertainment System (SNES) | [bsnes-hd](https://github.com/DerKoun/bsnes-hd) or [Snex9x](https://docs.libretro.com/library/snes9x/)
-
-### Cache directory
-
-1. Navigate to Settings -> Directories
-1. Configure a "Cache" directory
-1. Save the configuration, and restart RetroArch
-
-This may fix a copy/load error when running games with Nintendo GameCube/Dolphin.
-This may also prevent temporary files from littering the content directories,
-which may occur if RetroArch crashes before it is able to clean up.
-
-### Video drivers
-
-* [Changing behavior of “gl” and “glcore” video drivers](https://www.libretro.com/index.php/changing-behavior-of-gl-and-glcore-video-drivers/)
-
-1. Navigate to Settings -> Core
-1. Set "Allow Cores to Switch the Video Driver" to "On"
-1. Navigate to Settings -> Drivers
-1. Set "Video Driver" to "vulkan" on Linux or "d3d12" on Xbox Series
-1. Save the configuration, and restart RetroArch
-1. Create a [Core Override](https://docs.libretro.com/guides/overrides/) file for each of the following cores:
-
-Console | Core | Video driver on Linux | Video driver on Xbox Series
---- | --- | --- | ---
-Nintendo 64 | Mupen64Plus-Next | glcore | gl
-Nintendo GameCube | Dolphin | glcore | d3d11
-Sega Dreamcast | Flycast | vulcan | d3d11
-Sony PlayStation (PSX) | Beetle PSX | -- | d3d12
-Sony PlayStation (PSX) | Beetle PSX HW | glcore | --
-
-```
-# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
-# Must be set to d3d11 on Xbox Series
-video_driver = "d3d11"
-```
-
-### Rewind
-
-"Rewind" functionality is not supported by all cores.
-
-Console | Cores that don't support or have issues with "rewind"
---- | ---
-Nintendo GameCube | [Dolphin](https://docs.libretro.com/library/dolphin/)
-Sega Dreamcast | [Flycast](https://docs.libretro.com/library/flycast/)
-
-Create a [Core Override](https://docs.libretro.com/guides/overrides/) file:
-
-```
-# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
-input_rewind_axis = "nul"
-rewind_enable = "false"
-```
-
-### Controller right-analog stick
-
-Set the following base configuration:
-```
-# ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
-input_hold_fast_forward_axis = "+2"
-input_rewind_axis = "-2"
-```
-
-Unset the right-analog stick mappings for cores that do not support "rewind" or "fast-forward" or for consoles that make use of the right-analog stick, such as the Nintendo GameCube:
-```
-# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
-input_hold_fast_forward_axis = "nul"
-input_rewind_axis = "nul"
-```
-
-### RetroArch on Xbox Series
+### Xbox Series
 
 * [gamr13.github.io](https://gamr13.github.io/)
 * [Discord - Xbox Emulation Hub](https://discord.com/channels/1007582798598647889/1007590400220991549)
@@ -204,8 +149,6 @@ From a Windows 10 computer or VM:
 
 This will produce an error about not being able to change permissions on the "System Volume Information" folder, click "Continue" to move forward.
 
-### Troubleshooting
-
 #### Disable Kiosk Mode
 
 ```
@@ -218,14 +161,160 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 * Try deleting and recreating the Playlist.
 * Try using unzipped (uncompressed) ROM files.
 
-## Recommended games
+## RetroArch
 
-### Atari Jaguar - November 23, 1993
+* [Libretro](https://www.libretro.com/)
+  * [Docs](https://docs.libretro.com/)
+* [RetroArch on Flathub](https://flathub.org/apps/details/org.libretro.RetroArch)
+* [BIOS on GitHub](https://github.com/Abdess/retroarch_system)
+* [BIOS on Internet Archive](https://archive.org/download/RetroarchSystemFiles/Retroarch-System/)
+* [RGC: RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/)
+* [RGC: Shaders and Overlays on Retro Handhelds](https://retrogamecorps.com/2024/09/01/guide-shaders-and-overlays-on-retro-handhelds/)
+  * [RGC Overlay Pack](https://github.com/retrogamecorps/RGC-Overlay-Pack/releases)
+* [/r/RetroArch](https://www.reddit.com/r/RetroArch/)
+
+### Cache directory
+
+1. Navigate to Settings -> Directories
+1. Configure a "Cache" directory
+1. Save the configuration, and restart RetroArch
+
+This may fix a copy/load error when running games with Nintendo GameCube/Dolphin.
+This may also prevent temporary files from littering the content directories,
+which may occur if RetroArch crashes before it is able to clean up.
+
+### Cores
+
+* [Emulation General Wiki](https://emulation.gametechwiki.com/index.php/Main_Page)
+
+Platform | Desktop core | Handheld core
+--- | --- | ---
+Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | --
+NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle SuperGrafx](https://docs.libretro.com/library/beetle_sgx/) | --
+Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) 
+Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) 
+Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
+Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | --
+Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
+Nintendo - Nintendo DS (NDS) | [DeSmuME](https://docs.libretro.com/library/desmume/) | [DraStic](https://drastic-ds.com)
+Nintendo - Nintendo Entertainment System (FC, NES) | [Mesen](https://docs.libretro.com/library/mesen/) | [Mesen](https://docs.libretro.com/library/mesen/)
+Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Supafaust](https://github.com/libretro/supafaust)
+Sega - 32X | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
+Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/)
+Sega - Game Gear (GG) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
+Sega - Master System - Mark III (MS) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
+Sega - Mega-CD - Sega CD | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
+Sega - Mega Drive - Genesis (MD) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
+Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) or ([Mednafen](https://mednafen.github.io/))
+Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | ([Mednafen](https://mednafen.github.io/))
+
+### Drivers
+
+Type | Linux driver (flatpak)
+--- | ---
+Video | glcore
+Audio | pulse
+Microphone | alsathread
+Input | x
+Controller | udev
+Record | ffmpeg
+MIDI | alsa
+Camera | video4linux2
+Location | null
+
+### Rewind
+
+#### Configure the controller right-analog stick
+
+Set the following base configuration:
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
+input_hold_fast_forward_axis = "+2"
+input_rewind_axis = "-2"
+rewind_enable = "true"
+```
+
+#### Disable rewind for cores that don't support it
+
+"Rewind" functionality is not supported by all cores.
+
+Console | Cores that don't support rewind
+--- | ---
+Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
+Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/)
+Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/)
+
+Create a [Core Override](https://docs.libretro.com/guides/overrides/) file to unset the right-analog stick mappings for cores that do not support "rewind" or "fast-forward" or for consoles that make use of the right-analog stick, such as the Nintendo GameCube:
+```
+# Update the following core-specific config files:
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Virtual\ Jaguar/Virtual\ Jaguar.cfg
+input_hold_fast_forward_axis = "nul"
+input_rewind_axis = "nul"
+rewind_enable = "false"
+```
+
+### Shaders
+
+* [RGC Shaders](https://github.com/retrogamecorps/RGC-Overlay-Pack/tree/main/RGC%20shaders)
+
+Custom shaders must be added to the globally configured directory (see [this issue](https://github.com/flathub/org.libretro.RetroArch/issues/184)), which is
+`~/.local/share/flatpak/app/org.libretro.RetroArch/current/active/files/share/libretro/shaders/` when
+[RetroArch is installed via Flatpak](https://github.com/flathub/org.libretro.RetroArch).
+
+Which type of shaders you can load is determined by the video driver used:
+
+Video driver | Shader type
+--- | ---
+glcore | glsl (*.glsl, *.glslp)
+vulcan | slang (*.slang, *.slangp)
+
+Recommended shader: sharp-shimmerless from [Retro Game Corps' pack](https://github.com/retrogamecorps/RGC-Overlay-Pack/tree/main/RGC%20shaders)
+
+### Thumbnails
+
+On Flatpak installs, thumbnails are located in `~/.var/app/org.libretro.RetroArch/config/retroarch/thumbnails/`
+
+n.b. Thumbnail filenames cannot contain ampersand "&" characters. If the ROM name contains an ampersand, then replace it with an underscore "_" in the filenames of its thumbnails. For example, if a ROM is named "Sonic & Knuckles + Sonic The Hedgehog 3 (USA).md", its thumbnails must be named
+[Sonic _ Knuckles + Sonic The Hedgehog 3 (USA).png](http://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Sonic%20_%20Knuckles%20%2B%20Sonic%20The%20Hedgehog%203%20%28USA%29.png).
+
+### Video drivers
+
+* [Changing behavior of “gl” and “glcore” video drivers](https://www.libretro.com/index.php/changing-behavior-of-gl-and-glcore-video-drivers/)
+
+1. Navigate to Settings -> Core
+1. Set "Allow Cores to Switch the Video Driver" to "On"
+1. Navigate to Settings -> Drivers
+1. Set "Video Driver" to "vulkan" on Linux or "d3d12" on Xbox Series
+1. Save the configuration, and restart RetroArch
+1. Create a [Core Override](https://docs.libretro.com/guides/overrides/) file for each of the following cores:
+
+Console | Core | Video driver on Linux | Video driver on Xbox Series
+--- | --- | --- | ---
+Nintendo - Nintendo 64 | Mupen64Plus-Next | glcore | gl
+Nintendo - GameCube | Dolphin | glcore | d3d11
+Sega - Dreamcast | Flycast | vulcan | d3d11
+Sony - PlayStation (PSX) | Beetle PSX | -- | d3d12
+Sony - PlayStation (PSX) | Beetle PSX HW | glcore | --
+
+```
+# Set the default video driver to "glcore":
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
+video_driver = "glcore"
+
+# Set Flycast to "vulcan"
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
+video_driver = "vulcan"
+```
+
+## Games
+
+### Atari - Jaguar - November 23, 1993
 ```
 Alien vs Predator
 Cannon Fodder
 Defender 2000
-Doom
 Flashback - The Quest for Identity
 Iron Soldier
 Power Drive Rally
@@ -236,44 +325,51 @@ Super Burnout
 Tempest 2000
 Wolfenstein 3D
 ```
-### Nintendo - DS - November 21, 2004
+### NEC - PC Engine - TurboGrafx 16 (PCE) - October 30, 1987
 ```
-Advance Wars: Dual Strike
-Castlevania: Order of Ecclesia
-Chrono Trigger
-Dragon Quest V: Hand of the Heavenly Bride
-Fire Emblem: Shadow Dragon
-Grand Theft Auto - Chinatown Wars
-Kirby Super Star Ultra
-Mario Kart DS
-Mega Man ZX
-New Super Mario Bros.
-Phoenix Wright: Ace Attorney
-Pokémon HeartGold & SoulSilver
-Pokémon Platinum
-Rune Factory 3
+Air Zonk
+Alien Crush
+Blazing Lazers
+Bloody Wolf
+Bonk's Adventure
+Bonk's Revenge
+Cadash
+Devil's Crush
+Dungeon Explorer
+Legendary Axe, The
+Magical Chase
+Military Madness
+New Adventure Island
+Neutopia
+Neutopia II
+Ninja Spirit
+Soldier Blade
+Splatterhouse
 ```
-### Nintendo - Game Boy - April 21, 1989
+### Nintendo - Game Boy (GB) - April 21, 1989
 ```
 Bubble Bobble
 BurgerTime Deluxe
 Castlevania II: Belmont's Revenge
 Donkey Kong
+Final Fantasy Adventure
 Gradius - The Interstellar Assault
 Kirby's Dream Land 2
-Legend of Zelda, The - Link's Awakening
 Mario's Picross
 Mega Man V
 Metroid II - Return of Samus
+Mole Mania
 Operation C
-Pokemon - Red Version
-Pokemon - Yellow Version - Special Pikachu Edition
+Pokémon - Red Version
+Pokémon - Yellow Version - Special Pikachu Edition
+Super Mario Land
 Super Mario Land 2 - 6 Golden Coins
 Tetris - Rosy Retrospection (https://www.romhacking.net/hacks/5813/)
 Tiny Toon Adventures - Babs' Big Break
+Wario Land - Super Mario Land 3
 Wario Land II
 ```
-### Nintendo - Game Boy Advance - March 21, 2001
+### Nintendo - Game Boy Advance (GBA) - March 21, 2001
 ```
 Advance Wars 
 Advance Wars 2
@@ -286,19 +382,22 @@ Final Fantasy Tactics Advance
 Final Fantasy VI Advance
 Fire Emblem - The Sacred Stones
 Golden Sun
+Golden Sun - The Lost Age
 Gunstar Super Heroes
 Harvest Moon - Friends of Mineral Town
 Kirby & The Amazing Mirror
 Legend of Zelda, The - The Minish Cap
 Mario & Luigi - Superstar Saga
 Mario Kart - Super Circuit
-Mega Man Zero
 Megaman - Battle Network 3
+Metroid Fusion
 Metroid - Zero Mission
-Pokemon - Emerald Version
-Pokemon - FireRed Version
-Pokemon - LeafGreen Version
-Pokemon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
+Mother 3 (https://mother3.fobby.net/)
+Pokémon - Emerald Version
+Pokémon - FireRed Version
+Pokémon - LeafGreen Version
+Pokémon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
+Sigma Star Saga
 Sonic Advance 3
 Spyro 2 - Season of Flame
 Super Monkey Ball Jr.
@@ -306,13 +405,32 @@ TMNT
 Tony Hawk's Pro Skater 2
 Ultimate Card Games
 WarioWare, Inc. - Mega Microgame$!
+Wario Land 4
 ```
-### Nintendo - GameCube - September 14, 2001
+### Nintendo - Game Boy Color (GBC) - October 21, 1998
+```
+Dragon Warrior III
+Harry Potter and the Chamber of Secrets
+Harry Potter and the Sorcerer's Stone
+Harry Potter and the Chamber of Secrets
+Legend of Zelda, The - Link's Awakening DX
+Legend of Zelda, The - Oracle of Ages
+Legend of Zelda, The - Oracle of Seasons
+Metal Gear Solid
+Pocket Bomberman
+Pokémon - Crystal Version
+Pokémon Pinball
+Shantae
+Wario Land 3
+Wendy - Every Witch Way
+```
+### Nintendo - GameCube (GCN) - September 14, 2001
 ```
 Animal Crossing
 Beyond Good & Evil
 F-Zero GX
 Gotcha Force
+Ikaruga
 Legend of Zelda, The - The Wind Waker
 Legend of Zelda, The - Twilight Princess
 Luigi's Mansion
@@ -331,10 +449,12 @@ Super Monkey Ball
 Super Smash Bros. Melee
 Tony Hawk's Pro Skater 3
 ```
-### Nintendo - Nintendo 64 - June 23, 1996
+### Nintendo - Nintendo 64 (N64) - June 23, 1996
 ```
+007 - The World Is Not Enough
 1080 Snowboarding
 Banjo-Kazooie
+Banjo-Tooie
 Conker's Bad Fur Day
 Diddy Kong Racing
 Donkey Kong 64
@@ -347,56 +467,114 @@ Legend of Zelda, The - Ocarina of Time
 Mario Golf
 Mario Kart 64
 Mario Tennis
+Mega Man 64
 Paper Mario
 Pilotwings 64
-Pokemon Puzzle League
+Pokémon Puzzle League
 Star Fox 64
+Star Wars Episode I - Racer
 Star Wars - Rogue Squadron
 Super Mario 64
 Super Smash Bros.
 Turok - Dinosaur Hunter
-WWF No Mercy
 Wave Race 64 - Kawasaki Jet Ski
+WWF No Mercy
 ```
-### Nintendo - Nintendo Entertainment System (NES) - October 18, 1985
+### Nintendo - Nintendo DS (NDS) - November 21, 2004
+```
+Advance Wars: Dual Strike
+Castlevania - Dawn of Sorrow
+Castlevania - Order of Ecclesia
+Chrono Trigger
+Dragon Quest IV - Chapters of the Chose
+Dragon Quest V - Hand of the Heavenly Bride
+Dragon Quest IX - Sentinels of the Starry Skies
+Fire Emblem: Shadow Dragon
+Ghost Trick - Phantom Detective
+Grand Theft Auto - Chinatown Wars
+Kingdom Hearts - 358-2 Days
+Kirby - Canvas Curse
+Kirby Super Star Ultra
+Mario & Luigi - Bowser's Inside Story
+Mario Kart DS
+Mega Man Zero Collection
+Mega Man ZX
+Might & Magic - Clash of Heroes
+New Super Mario Bros.
+Nine Hours, Nine Persons, Nine Doors
+Phoenix Wright - Ace Attorney
+Picross DS
+Pokémon - Black Version 2
+Pokémon HeartGold & SoulSilver
+Pokémon Mystery Dungeon - Explorers of Sky
+Pokémon Platinum
+Professor Layton and the Curious Village
+Professor Layton and the Diabolical Box
+Professor Layton and the Unwound Future
+Rune Factory 3
+Shin Megami Tensei
+Solatorobo - Red the Hunter
+Sonic Rush
+Trauma Center - Under the Knife
+WarioWare - Touched!
+World Ends with You, The
+```
+### Nintendo - Nintendo Entertainment System (FC, NES) - October 18, 1985
 ```
 Batman - The Video Game
+Bionic Commando
+Blades of Steel
 Blaster Master
 Bubble Bobble
 Castlevania III - Dracula's Curse
 Chip 'n Dale - Rescue Rangers
 Contra
+Crystalis
+Darkwing Duck
+Donkey Kong
+Double Dragon
 Double Dragon II
 Dr. Mario
+Dragon Warrior IV
 DuckTales
+Excitebike
+Faxanadu
+Ghosts'n Goblins
 Gradius
 Kirby's Adventure
 Legend of Zelda, The
+Life Force
 Mega Man 2
 Mega Man 4
 Metroid
+NES Open Tournament Golf
 Ninja Gaiden
 Pac-Man - Championship Edition (https://archive.org/details/championship)
+Pin Bot
 Punch-Out!!
+Q-bert
 River City Ransom
+Rygar
+StarTropics
 Super Mario Bros.
 Super Mario Bros. 2
 Super Mario Bros. 3
-Tecmo Super Bowl 2024 Presented by TecmoBowl.org (https://tecmobowl.org/files/file/821-tecmo-super-bowl-2024-presented-by-tecmobowlorg/)
+Tecmo Super Bowl 2024 2.0.0 (https://tecmobowl.org/files/file/868-tecmo-super-bowl-2024/)
 Teenage Mutant Ninja Turtles III - The Manhattan Project
+Zelda II
 ```
-### Nintendo - Super Nintendo Entertainment System (SNES) - November 21, 1990
+### Nintendo - Super Nintendo Entertainment System (SFC, SNES) - November 21, 1990
 ```
 Chrono Trigger
 Contra III - The Alien Wars
 Donkey Kong Country
 Donkey Kong Country 2 - Diddy's Kong Quest
+Donkey Kong Country 3 - Dixie Kong's Double Trouble!
 EarthBound
 F-Zero
 Final Fantasy - Mystic Quest
 Final Fantasy II
 Final Fantasy III
-Gundam Wing - Endless Duel
 Hook
 Illusion of Gaia
 Ken Griffey Jr. Presents Major League Baseball
@@ -410,12 +588,13 @@ Mario Paint
 Mega Man X
 Mega Man X2
 Ms. Pac-Man
-NBA Jam - Tournament Edition
 Secret of Mana
+Shin Kidou Senki Gundam W - Endless Duel
 SimCity 2000
 Space Megaforce
 Sparkster
 Star Fox
+Star Fox 2
 Star Fox EX (https://www.romhacking.net/hacks/7285/)
 Star Trek - The Next Generation - Future's Past
 Street Fighter II Turbo
@@ -460,31 +639,61 @@ Pico World Race
 Shooting Star
 Steel Surge: Revolution
 ```
-### Sega - Dreamcast - November 27, 1998
+### Sega - 32X - November 21, 1994
 ```
+After Burner Complete
+Blackthorne
+Knuckles' Chaotix
+Kolibri
+Mortal Kombat II
+NBA Jam - Tournament Edition
+Pitfall - The Mayan Adventure
+Space Harrier
+Star Trek - Starfleet Academy - Starship Bridge Simulator
+Star Wars Arcade
+Stellar Assault
+Virtua Fighter
+Virtua Racing Deluxe
+WWF WrestleMania - The Arcade Game
+```
+### Sega - Dreamcast (DC) - November 27, 1998
+```
+Bangai-O
 Border Down
+Capcom vs. SNK
 Crazy Taxi
+Dead or Alive 2
 Garou - Mark of the Wolves
 Grandia II
+Ikaruga
 Jet Grind Radio
+Mars Matrix
 Marvel vs. Capcom 2
 NFL Blitz 2000
 Phantasy Star Online Ver. 2
 Power Stone
+Power Stone 2
 Rayman 2 - The Great Escape
+Resident Evil - Code - Veronica
 Rez
 Sega Bass Fishing
+Sega Rally 2
+Shenmue
+Skies of Arcadia
 Sonic Adventure
+Sonic Adventure 2
 Soulcalibur
 Space Channel 5
 Spider-Man
 Street Fighter Alpha 3
 Street Fighter III - 3rd Strike
-The King of Fighters - Dream Match 1999 
+The King of Fighters - Dream Match 1999
 Tony Hawk's Pro Skater 2
+Toy Commander
 Virtua Fighter 3tb
+Virtua Tennis
 ```
-### Sega - Game Gear - October 6, 1990
+### Sega - Game Gear (GG) - October 6, 1990
 ```
 Castle of Illusion Starring Mickey Mouse
 Coca-Cola Kid
@@ -500,33 +709,101 @@ Shinobi
 World Series Baseball
 X-Men
 ```
-### Sega - Genesis - October 29, 1988
+### Sega - Master System - Mark III (MS) - October 20, 1985
+```
+Alex Kidd in Miracle World
+Alex Kidd in Shinobi World
+Astérix
+Black Belt
+California Games
+Deep Duck Trouble Starring Donald Duck
+Double Dragon
+Fantasy Zone II
+Golden Axe Warrior
+Golvellius - Valley of Doom
+Hang On
+Land of Illusion Starring Mickey Mouse
+Master of Darkness
+Masters of Combat
+Miracle Warriors - Seal of The Dark Lord
+Ninja Gaiden
+Phantasy Star
+Power Strike
+Prince of Persia
+Psycho Fox
+Rampage
+Rastan
+Reggie Jackson Baseball
+Shinobi
+Sonic The Hedgehog
+Space Harrier
+Wonder Boy in Monster World
+Ys - The Vanished Omens
+```
+### Sega - Mega-CD - Sega CD - December 12, 1991
+```
+AH3 - Thunderstrike
+Amazing Spider-Man vs. The Kingpin, The
+Android Assault - The Revenge of Bari-Arm
+Batman Returns
+Dark Wizard
+Earthworm Jim Special Edition
+Ecco the Dolphin
+Eternal Champions - Challenge from the Dark Side
+Final Fight CD
+Heart of the Alien
+Keio Flying Squadron
+Lords of Thunder
+Lunar - Eternal Blue
+Lunar - The Silver Star
+Mickey Mania - The Timeless Adventures of Mickey Mouse
+Mortal Kombat
+Night Trap
+Popful Mail
+Road Avenger
+Robo Aleste
+Secret of Monkey Island, The
+Shining Force CD
+Silpheed
+Snatcher
+Sonic CD
+SoulStar
+Terminator, The
+Vay
+```
+### Sega - Mega Drive - Genesis (MD) - October 29, 1988
 ```
 After Burner II
 Aladdin
 Altered Beast
+Arnold Palmer Tournament Golf
 Beyond Oasis
 Castlevania - Bloodlines
 Comix Zone
 Desert Strike - Return to the Gulf
-Earthworm Jim
-Ecco the Dolphin
-Eternal Champions
+Dune - The Battle for Arrakis
+Earthworm Jim 2
 Evander Holyfield's 'Real Deal' Boxing
+Ghostbusters (USA, Europe) (Special Edition) (https://www.romhacking.net/hacks/7761/)
 Golden Axe
 Gunstar Heroes
 Herzog Zwei
+Jungle Strike
+Jurassic Park - Rampage Edition
 Micro Machines 2 - Turbo Tournament 
 MUSHA - Metallic Uniframe Super Hybrid Armor
 Madden NFL 95
 Michael Jackson's Moonwalker
-Mortal Kombat II
+Monster World IV
+MUSHA - Metallic Uniframe Super Hybrid Armor
 NFL Sports Talk Football '93 Starring Joe Montana
 NHL '94
-NHL '94 - 2023 Edition by Adam Catalyst (https://www.romhacking.net/hacks/7454/)
+NHL '94 - 2024 Edition (https://www.romhacking.net/hacks/8267/)
 OutRun
+PGA European Tour
 Phantasy Star IV
 Pirates! Gold
+Ranger X
 Revenge of Shinobi, The
 Road Rash 3
 Rocket Knight Adventures
@@ -534,26 +811,31 @@ Shining Force II
 Shinobi III - Return of the Ninja Master
 Sonic The Hedgehog
 Sonic The Hedgehog 2
-Sonic The Hedgehog 3
+Sonic & Knuckles + Sonic The Hedgehog 3
 Space Harrier II
 Strider
+Streets of Rage
 Streets of Rage 2
 Super Hang-On
 Super Monaco GP
 Super Thunder Blade
+Sword of Vermilion
 Teenage Mutant Ninja Turtles - Shredder's Re-Revenge (https://www.romhacking.net/hacks/7399/)
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
 Thunder Force IV
 ToeJam & Earl
-Virtua Racing
+Ultimate Mortal Kombat 3
+Urban Strike
 World Series Baseball 98
 X-Men
 X-Men 2 - Clone Wars
 ```
-### Sega - Saturn - November 22, 1994
+### Sega - Saturn (SS) - November 22, 1994
+* [Sega Saturn Patcher](https://segaxtreme.net/resources/sega-saturn-patcher.73/)
 ```
 Astal
 Batsugun
+Bug!
 Burning Rangers
 Daytona USA - Championship Circuit Edition
 Dragon Force
@@ -561,7 +843,9 @@ Guardian Heroes
 Manx TT SuperBike
 Marvel Super Heroes
 NiGHTS into Dreams...
+Panzer Dragoon II Zwei
 Panzer Dragoon Saga
+Powerslave
 Radiant Silvergun
 Rayman
 Road Rash
@@ -582,13 +866,18 @@ X-Men vs. Street Fighter
 ```
 Ace Combat 3 - Electrosphere
 Ape Escape
+Arcade's Greatest Hits - The Atari Collection 1
+Arcade's Greatest Hits - The Atari Collection 2
+Arcade's Greatest Hits - The Midway Collection 2
 Armored Core
 Battle Arena Toshinden
 Bust-A-Move 2 - Arcade Edition
 Castlevania - Symphony of the Night
 Chrono Cross
 Crash Bandicoot 2 - Cortex Strikes Back
+CTR - Crash Team Racing
 Diablo
+Doom
 Final Fantasy Tactics
 Final Fantasy VII
 Gex - Enter the Gecko
@@ -596,6 +885,7 @@ Gran Turismo 2 (Arcade Mode)
 Gran Turismo 2 (Simulation Mode)
 Grandia
 Hot Shots Golf
+Marvel vs. Capcom - Clash of Super Heroes
 MediEvil
 Mega Man Legends
 Mega Man X4
@@ -608,12 +898,54 @@ Persona
 R4 - Ridge Racer Type 4
 Rayman
 R-Type Delta
+Silent Hill
 Spyro the Dragon
 Suikoden II
 Syphon Filter
 Tekken 3
 Tomb Raider
 Twisted Metal 2
+Vandal Hearts
 Wipeout XL
 Xenogears
 ```
+
+## Ports
+
+### [PortMaster](http://portmaster.games/games.html) for Anbernic and Powkiddy devices
+
+* [Axiom Verge](http://portmaster.games/detail.html?name=axiom.verge)*
+* [Balatro](http://portmaster.games/detail.html?name=balatro)*
+* [Cave Story](https://portmaster.games/detail.html?name=cave.story)
+* [Celeste Classic](http://portmaster.games/detail.html?name=cceleste)
+* [Chasm](http://portmaster.games/detail.html?name=chasm)*
+* [ClassiCube](http://portmaster.games/detail.html?name=classicube)
+* [Downwell](http://portmaster.games/detail.html?name=downwell)*
+* [Duke Nukem 3D](http://portmaster.games/detail.html?name=duke.nukem.3d)*
+* [Fallout 1](http://portmaster.games/detail.html?name=fallout1&devices=)*
+* [Fallout 2](http://portmaster.games/detail.html?name=fallout2&devices=)*
+* [Grand Theft Auto 3](http://portmaster.games/detail.html?name=gta3)*
+* [Grand Theft Auto Vice City](http://portmaster.games/detail.html?name=gtavc)*
+* [Gravity Circuit](http://portmaster.games/detail.html?name=gravitycircuit)*
+* [Half-Life](http://portmaster.games/detail.html?name=half-life&devices=)*
+* [Maldita Castilla](http://portmaster.games/detail.html?name=maldita.castilla&devices=)
+* [OpenRCT2](http://portmaster.games/detail.html?name=openrct2)*
+* [RAWGL](http://portmaster.games/detail.html?name=rawgl)
+* [RVGL](http://portmaster.games/detail.html?name=rvgl)
+* [Shovel Knight Treasure Trove](http://portmaster.games/detail.html?name=shovel.knight)*
+* [Sonic Mania](https://portmaster.games/detail.html?name=sonic.mania)*
+* [Sonic Robo Blast 2 (SRB2)](http://portmaster.games/detail.html?name=srb2)
+* [Space Cadet Pinball](http://portmaster.games/detail.html?name=space.cadet.pinball)*
+* [Stardew Valley](http://portmaster.games/detail.html?name=stardewvalley)*
+* [TMNT: Shredder's Revenge](http://portmaster.games/detail.html?name=tmntsr)*
+* [Timespinner](http://portmaster.games/detail.html?name=timespinner)*
+* [Ur-Quan Masters (UQM)](http://portmaster.games/detail.html?name=uqm)
+* [VCMI - Heroes of Might and Magic III](http://portmaster.games/detail.html?name=vcmi&devices=)*
+
+#### Ports that do not work on Anbernic RG40XXV
+
+* [2048](http://portmaster.games/detail.html?name=2048) - Launches, but exits soon after
+* [Echo Chamber](http://portmaster.games/detail.html?name=echo_chamber&devices=) - Launches, runs, but controls do not work
+* [Minetest](http://portmaster.games/detail.html?name=minetest) - Requires more than 1GB of RAM for single player
+
+(`*` indicates that the port requires additional files to be installed)
