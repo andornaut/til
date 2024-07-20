@@ -515,6 +515,7 @@ Evander Holyfield's 'Real Deal' Boxing
 Golden Axe
 Gunstar Heroes
 Herzog Zwei
+Jungle Strike
 Micro Machines 2 - Turbo Tournament 
 MUSHA - Metallic Uniframe Super Hybrid Armor
 Madden NFL 95
