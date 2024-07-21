@@ -504,10 +504,12 @@ X-Men
 After Burner II
 Aladdin
 Altered Beast
+Arnold Palmer Tournament Golf
 Beyond Oasis
 Castlevania - Bloodlines
 Comix Zone
 Desert Strike - Return to the Gulf
+Dune - The Battle for Arrakis
 Earthworm Jim
 Ecco the Dolphin
 Eternal Champions
@@ -521,12 +523,14 @@ MUSHA - Metallic Uniframe Super Hybrid Armor
 Madden NFL 95
 Michael Jackson's Moonwalker
 Mortal Kombat II
+MUSHA - Metallic Uniframe Super Hybrid Armor
 NFL Sports Talk Football '93 Starring Joe Montana
 NHL '94
 NHL '94 - 2023 Edition by Adam Catalyst (https://www.romhacking.net/hacks/7454/)
 OutRun
 Phantasy Star IV
 Pirates! Gold
+Ranger X
 Revenge of Shinobi, The
 Road Rash 3
 Rocket Knight Adventures
@@ -541,6 +545,7 @@ Streets of Rage 2
 Super Hang-On
 Super Monaco GP
 Super Thunder Blade
+Sword of Vermilion
 Teenage Mutant Ninja Turtles - Shredder's Re-Revenge (https://www.romhacking.net/hacks/7399/)
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
 Thunder Force IV
@@ -582,6 +587,9 @@ X-Men vs. Street Fighter
 ```
 Ace Combat 3 - Electrosphere
 Ape Escape
+Arcade's Greatest Hits - The Atari Collection 1
+Arcade's Greatest Hits - The Atari Collection 2
+Arcade's Greatest Hits - The Midway Collection 2
 Armored Core
 Battle Arena Toshinden
 Bust-A-Move 2 - Arcade Edition
