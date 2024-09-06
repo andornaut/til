@@ -914,6 +914,7 @@ Xenogears
 
 ### [PortMaster](http://portmaster.games/games.html) for Anbernic and Powkiddy devices
 
+* [2048](http://portmaster.games/detail.html?name=2048)
 * [Axiom Verge](http://portmaster.games/detail.html?name=axiom.verge)*
 * [Balatro](http://portmaster.games/detail.html?name=balatro)*
 * [Cave Story](https://portmaster.games/detail.html?name=cave.story)
@@ -944,7 +945,6 @@ Xenogears
 
 #### Ports that do not work on Anbernic RG40XXV
 
-* [2048](http://portmaster.games/detail.html?name=2048) - Launches, but exits soon after
 * [Echo Chamber](http://portmaster.games/detail.html?name=echo_chamber&devices=) - Launches, runs, but controls do not work
 * [Minetest](http://portmaster.games/detail.html?name=minetest) - Requires more than 1GB of RAM for single player
 
