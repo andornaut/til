@@ -945,7 +945,7 @@ Xenogears
 
 #### Ports that do not work on Anbernic RG40XXV
 
-* [Echo Chamber](http://portmaster.games/detail.html?name=echo_chamber&devices=) - Launches, runs, but controls do not work
+* [Echo Chamber](http://portmaster.games/detail.html?name=echo_chamber&devices=) - Launches, runs, but controls (other than "select") do not work
 * [Minetest](http://portmaster.games/detail.html?name=minetest) - Requires more than 1GB of RAM for single player
 
 (`*` indicates that the port requires additional files to be installed)
