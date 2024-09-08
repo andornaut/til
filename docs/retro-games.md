@@ -926,8 +926,18 @@ Wipeout XL
 Xenogears
 ```
 
-## Ports for Linux-based handhelds
-* [PortMaster](http://portmaster.games/games.html) for Anbernic and Powkiddy devices
+## PC
+
+### Open implementations
+
+* [openblack](https://github.com/openblack/openblack) - Black & White
+* [OpenJKDF2](https://github.com/shinyquagsire23/OpenJKDF2/) - Dark Forces II: Jedi Knight
+* [OpenMW](https://openmw.org/) - The Elder Scrolls III: Morrowind
+* [OpenTDD](https://www.openttd.org/) - Transport Tycoon Deluxe
+
+### Port for Linux-based handhelds
+
+[PortMaster](http://portmaster.games/games.html) for Anbernic and Powkiddy devices
 
 * [2048](http://portmaster.games/detail.html?name=2048)
 * [Axiom Verge](http://portmaster.games/detail.html?name=axiom.verge)*
@@ -962,10 +972,4 @@ Xenogears
 
 (`*` indicates that the port requires additional files to be installed)
 
-## PC
-
-* [openblack](https://github.com/openblack/openblack) - Black & White
-* [OpenJKDF2](https://github.com/shinyquagsire23/OpenJKDF2/) - Dark Forces II: Jedi Knight
-* [OpenMW](https://openmw.org/) - The Elder Scrolls III: Morrowind
-* [OpenTDD](https://www.openttd.org/) - Transport Tycoon Deluxe
 * [VCMI](https://vcmi.eu/) - Heroes of Might and Magic III
