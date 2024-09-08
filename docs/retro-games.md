@@ -203,7 +203,7 @@ Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/g
 Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | --
 Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
 Nintendo - Nintendo DS (NDS) | [DeSmuME](https://docs.libretro.com/library/desmume/) | [DraStic](https://drastic-ds.com)
-Nintendo - Nintendo Entertainment System (FC, NES) | [Mesen](https://docs.libretro.com/library/mesen/) | [Mesen](https://docs.libretro.com/library/mesen/)
+Nintendo - Nintendo Entertainment System (FC, NES) | [Mesen](https://docs.libretro.com/library/mesen/) | [FCEUmm](https://docs.libretro.com/library/fceumm/)
 Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Supafaust](https://github.com/libretro/supafaust)
 Sega - 32X | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
 Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/)
