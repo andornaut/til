@@ -684,6 +684,7 @@ Power Stone
 Power Stone 2
 Rayman 2 - The Great Escape
 Resident Evil - Code - Veronica
+Re-volt
 Rez
 Sega Bass Fishing
 Sega Rally 2
@@ -941,10 +942,10 @@ Xenogears
 [PortMaster](http://portmaster.games/games.html) for Anbernic and Powkiddy devices
 
 * [2048](http://portmaster.games/detail.html?name=2048)
+* [Aleph-One Marathon 1](http://portmaster.games/detail.html?name=alephone-marathon&devices=)
 * [Axiom Verge](http://portmaster.games/detail.html?name=axiom.verge)*
 * [Balatro](http://portmaster.games/detail.html?name=balatro)*
 * [Cave Story](https://portmaster.games/detail.html?name=cave.story)
-* [Celeste Classic](http://portmaster.games/detail.html?name=cceleste)
 * [Chasm](http://portmaster.games/detail.html?name=chasm)*
 * [ClassiCube](http://portmaster.games/detail.html?name=classicube)
 * [Downwell](http://portmaster.games/detail.html?name=downwell)*
@@ -960,7 +961,6 @@ Xenogears
 * [Minetest](http://portmaster.games/detail.html?name=minetest) - Requires more than 1GB of RAM for single player
 * [OpenRCT2](http://portmaster.games/detail.html?name=openrct2)*
 * [RAWGL](http://portmaster.games/detail.html?name=rawgl)
-* [RVGL](http://portmaster.games/detail.html?name=rvgl)
 * [Shovel Knight Treasure Trove](http://portmaster.games/detail.html?name=shovel.knight)*
 * [Sonic Mania](https://portmaster.games/detail.html?name=sonic.mania)*
 * [Sonic Robo Blast 2 (SRB2)](http://portmaster.games/detail.html?name=srb2)
