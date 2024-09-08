@@ -211,7 +211,7 @@ Sega - Game Gear (GG) | [PicoDrive](https://docs.libretro.com/library/picodrive/
 Sega - Master System - Mark III (MS) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
 Sega - Mega-CD - Sega CD | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
 Sega - Mega Drive - Genesis (MD) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
-Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) or ([Mednafen](https://mednafen.github.io/))
+Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/)
 Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | ([Mednafen](https://mednafen.github.io/))
 
 ### Drivers
@@ -877,7 +877,6 @@ Virtua Cop 2
 Virtua Fighter 2
 Virtual On - Cyber Troopers
 X-Men - Children of the Atom
-X-Men vs. Street Fighter
 ```
 ### Sony - PlayStation (PSX) - December 3, 1994
 ```
