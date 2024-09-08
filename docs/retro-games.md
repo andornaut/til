@@ -14,6 +14,7 @@
 * [TheGamesDB](https://thegamesdb.net)
 * [/r/Roms Megathread](https://r-roms.github.io/)
 * [/v/'s Recommended Games Wiki](https://vsrecommendedgames.fandom.com/wiki/V/%27s_Recommended_Games_Wiki)
+* [Video Game Museum](https://www.video-games-museum.com/en)
 * [Vimm's Lair](https://vimm.net/)
 * Artwork
   * [System images (larger)](https://github.com/ruckage/es-theme-snes-mini/blob/master/art/icons_usa/)
@@ -197,6 +198,7 @@ Platform | Desktop core | Handheld core
 --- | --- | ---
 Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | --
 NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle SuperGrafx](https://docs.libretro.com/library/beetle_sgx/) | [Beetle SuperGrafx](https://docs.libretro.com/library/beetle_sgx/)
+NEC - PC Engine CD - TurboGrafx-CD (PCE) | [Beetle SuperGrafx](https://docs.libretro.com/library/beetle_sgx/) | [Beetle SuperGrafx](https://docs.libretro.com/library/beetle_sgx/)
 Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) 
 Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) 
 Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
@@ -351,6 +353,22 @@ Neutopia II
 Ninja Spirit
 Soldier Blade
 Splatterhouse
+```
+### NEC - PC Engine CD - TurboGrafx-CD - December 4, 1988
+```
+Akumajou Dracula X - Chi No Rondo (Castlevania - Rondo of Blood) (https://www.romhacking.net/translations/846/)
+Bonk III - Bonk's Big Adventure
+Cosmic Fantasy 2
+Dragon Slayer - The Legend of Heroes
+Dungeon Explorer II
+Gate of Thunder + Bonk's Adventure + Bonk's Revenge
+Lords of Thunder
+R-Type Complete
+Spriggan Mark 2 - Re Terraform Project
+Valis III
+Valis IV (English translation)
+Wonder Boy III - Monster Lair
+Ys Book I & II
 ```
 ### Nintendo - Game Boy (GB) - April 21, 1989
 ```
@@ -895,6 +913,7 @@ CTR - Crash Team Racing
 Diablo
 Doom
 Final Fantasy Tactics
+Final Fantasy IX
 Final Fantasy VII
 Gex - Enter the Gecko
 Gran Turismo 2 - Arcade Mode
@@ -926,9 +945,9 @@ Wipeout XL
 Xenogears
 ```
 
-## PC
+## PC Games
 
-### Open implementations
+### Engine (re-)implementations
 
 * [openblack](https://github.com/openblack/openblack) - Black & White
 * [OpenJKDF2](https://github.com/shinyquagsire23/OpenJKDF2/) - Dark Forces II: Jedi Knight
