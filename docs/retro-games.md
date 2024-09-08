@@ -1,6 +1,9 @@
 # Retro games
 
-* [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)* [CD Romance](https://cdromance.com/) - ROM hacks* [Homebrew games list](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)* [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
+* [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
+* [CD Romance](https://cdromance.com/) - ROM hacks
+* [Homebrew games list](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)
+* [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
 * [MyAbandonware](https://www.myabandonware.com/)
 * [[No-Intro] PropeR 1g1r Collection (2024)](https://archive.org/details/proper1g1r-collection)
 * [Pico-8](https://www.lexaloffle.com/pico-8.php)
@@ -65,6 +68,8 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 * [muOS Discord](https://discord.gg/muos) 
 * [muOS GitHub](https://github.com/MustardOS/)
   * [Themes](https://github.com/MustardOS/theme)
+  * 
+  * [Overlays](https://github.com/antiKk/muOS-Overlays)
 
 ##### Keyboard shortcuts
 
@@ -169,6 +174,7 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 * [BIOS on GitHub](https://github.com/Abdess/retroarch_system)
 * [BIOS on Internet Archive](https://archive.org/download/RetroarchSystemFiles/Retroarch-System/)
 * [RGC: RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/)
+* [Keyboard bindings for Menus/UI](https://docs.libretro.com/guides/input-and-controls/#menu-controls)
 * [RGC: Shaders and Overlays on Retro Handhelds](https://retrogamecorps.com/2024/09/01/guide-shaders-and-overlays-on-retro-handhelds/)
   * [RGC Overlay Pack](https://github.com/retrogamecorps/RGC-Overlay-Pack/releases)
 * [/r/RetroArch](https://www.reddit.com/r/RetroArch/)
@@ -410,16 +416,19 @@ Wario Land 4
 ### Nintendo - Game Boy Color (GBC) - October 21, 1998
 ```
 Dragon Warrior III
+Dragon Warrior Monsters 2
 Harry Potter and the Chamber of Secrets
 Harry Potter and the Sorcerer's Stone
 Harry Potter and the Chamber of Secrets
 Legend of Zelda, The - Link's Awakening DX
 Legend of Zelda, The - Oracle of Ages
 Legend of Zelda, The - Oracle of Seasons
+Magi Nation
 Metal Gear Solid
 Pocket Bomberman
 Pokémon - Crystal Version
 Pokémon Pinball
+Revelations - The Demon Slayer
 Shantae
 Wario Land 3
 Wendy - Every Witch Way
@@ -549,7 +558,7 @@ Mega Man 4
 Metroid
 NES Open Tournament Golf
 Ninja Gaiden
-Pac-Man - Championship Edition (https://archive.org/details/championship)
+Pac-Man - Championship Edition (https://retroachievements.org/game/16549)
 Pin Bot
 Punch-Out!!
 Q-bert
@@ -784,7 +793,8 @@ Desert Strike - Return to the Gulf
 Dune - The Battle for Arrakis
 Earthworm Jim 2
 Evander Holyfield's 'Real Deal' Boxing
-Ghostbusters (USA, Europe) (Special Edition) (https://www.romhacking.net/hacks/7761/)
+Fix-It Felix Jr. (http://68000.web.fc2.com/felix/index.html)
+Ghostbusters - Special Edition (https://www.romhacking.net/hacks/7761/)
 Golden Axe
 Gunstar Heroes
 Herzog Zwei
@@ -831,8 +841,12 @@ X-Men
 X-Men 2 - Clone Wars
 ```
 ### Sega - Saturn (SS) - November 22, 1994
+
+* [Fan translations](https://www.reddit.com/r/SegaSaturn/comments/10i21uc/sega_saturn_fan_translation_projects/)
 * [Sega Saturn Patcher](https://segaxtreme.net/resources/sega-saturn-patcher.73/)
+
 ```
+Akumajou Dracula X - Gekka no Yasoukyoku (Castlevania - Symphony of the Night) (https://segaxtreme.net/resources/dracula-x-symphony-of-the-night.83/)
 Astal
 Batsugun
 Bug!
@@ -840,6 +854,7 @@ Burning Rangers
 Daytona USA - Championship Circuit Edition
 Dragon Force
 Guardian Heroes
+Magical Night Dreams - Cotton 2 (https://segaxtreme.net/resources/cotton-2-english-patch.84/)
 Manx TT SuperBike
 Marvel Super Heroes
 NiGHTS into Dreams...
@@ -853,8 +868,9 @@ Saturn Bomberman
 Sega Rally Championship
 Shining Force III
 Shining the Holy Ark
-Shippuu Mahou Daisakusen - Kingdom Grandprix (English translation patch: https://segaxtreme.net/resources/kingdom-grandprix-english-translation-patches.291/)
+Shippuu Mahou Daisakusen - Kingdom Grandprix (https://segaxtreme.net/resources/kingdom-grandprix-english-translation-patches.291/)
 Sonic Jam
+Stellar Assault SS (https://segaxtreme.net/resources/stellar-assault-ss-english.170/)
 Street Fighter Alpha 2
 Virtua Cop 2
 Virtua Fighter 2
@@ -881,8 +897,8 @@ Doom
 Final Fantasy Tactics
 Final Fantasy VII
 Gex - Enter the Gecko
-Gran Turismo 2 (Arcade Mode)
-Gran Turismo 2 (Simulation Mode)
+Gran Turismo 2 - Arcade Mode
+Gran Turismo 2 - Simulation Mode
 Grandia
 Hot Shots Golf
 Marvel vs. Capcom - Clash of Super Heroes
@@ -910,9 +926,8 @@ Wipeout XL
 Xenogears
 ```
 
-## Ports
-
-### [PortMaster](http://portmaster.games/games.html) for Anbernic and Powkiddy devices
+## Ports for Linux-based handhelds
+* [PortMaster](http://portmaster.games/games.html) for Anbernic and Powkiddy devices
 
 * [2048](http://portmaster.games/detail.html?name=2048)
 * [Axiom Verge](http://portmaster.games/detail.html?name=axiom.verge)*
@@ -923,6 +938,7 @@ Xenogears
 * [ClassiCube](http://portmaster.games/detail.html?name=classicube)
 * [Downwell](http://portmaster.games/detail.html?name=downwell)*
 * [Duke Nukem 3D](http://portmaster.games/detail.html?name=duke.nukem.3d)*
+* [Echo Chamber](http://portmaster.games/detail.html?name=echo_chamber&devices=) - Doesn't work on muOS: Runs, but controls (other than "select") don't work
 * [Fallout 1](http://portmaster.games/detail.html?name=fallout1&devices=)*
 * [Fallout 2](http://portmaster.games/detail.html?name=fallout2&devices=)*
 * [Grand Theft Auto 3](http://portmaster.games/detail.html?name=gta3)*
@@ -930,6 +946,7 @@ Xenogears
 * [Gravity Circuit](http://portmaster.games/detail.html?name=gravitycircuit)*
 * [Half-Life](http://portmaster.games/detail.html?name=half-life&devices=)*
 * [Maldita Castilla](http://portmaster.games/detail.html?name=maldita.castilla&devices=)
+* [Minetest](http://portmaster.games/detail.html?name=minetest) - Requires more than 1GB of RAM for single player
 * [OpenRCT2](http://portmaster.games/detail.html?name=openrct2)*
 * [RAWGL](http://portmaster.games/detail.html?name=rawgl)
 * [RVGL](http://portmaster.games/detail.html?name=rvgl)
@@ -943,9 +960,12 @@ Xenogears
 * [Ur-Quan Masters (UQM)](http://portmaster.games/detail.html?name=uqm)
 * [VCMI - Heroes of Might and Magic III](http://portmaster.games/detail.html?name=vcmi&devices=)*
 
-#### Ports that do not work on Anbernic RG40XXV
-
-* [Echo Chamber](http://portmaster.games/detail.html?name=echo_chamber&devices=) - Launches, runs, but controls (other than "select") do not work
-* [Minetest](http://portmaster.games/detail.html?name=minetest) - Requires more than 1GB of RAM for single player
-
 (`*` indicates that the port requires additional files to be installed)
+
+## PC
+
+* [openblack](https://github.com/openblack/openblack) - Black & White
+* [OpenJKDF2](https://github.com/shinyquagsire23/OpenJKDF2/) - Dark Forces II: Jedi Knight
+* [OpenMW](https://openmw.org/) - The Elder Scrolls III: Morrowind
+* [OpenTDD](https://www.openttd.org/) - Transport Tycoon Deluxe
+* [VCMI](https://vcmi.eu/) - Heroes of Might and Magic III
