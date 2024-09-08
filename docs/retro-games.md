@@ -934,6 +934,7 @@ Xenogears
 * [OpenJKDF2](https://github.com/shinyquagsire23/OpenJKDF2/) - Dark Forces II: Jedi Knight
 * [OpenMW](https://openmw.org/) - The Elder Scrolls III: Morrowind
 * [OpenTDD](https://www.openttd.org/) - Transport Tycoon Deluxe
+* [VCMI](https://vcmi.eu/) - Heroes of Might and Magic III
 
 ### Port for Linux-based handhelds
 
@@ -971,5 +972,3 @@ Xenogears
 * [VCMI - Heroes of Might and Magic III](http://portmaster.games/detail.html?name=vcmi&devices=)*
 
 (`*` indicates that the port requires additional files to be installed)
-
-* [VCMI](https://vcmi.eu/) - Heroes of Might and Magic III
