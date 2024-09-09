@@ -76,6 +76,7 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 
 Key | Description
 --- | ---
+L1 L2 R1 R2 Power | Reboot
 Menu Start | Exit
 Menu X | Toggle RetroArch menu
 Menu Y | Toggle FPS
