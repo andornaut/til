@@ -355,6 +355,9 @@ Soldier Blade
 Splatterhouse
 ```
 ### NEC - PC Engine CD - TurboGrafx-CD - December 4, 1988
+* [English translation ROM hacks](https://www.romhacking.net/?page=translations&genre=&platform=5&status=&languageid=12&perpage=20&order=&dir=&title=&author=&transsearch=Go)
+* [List Japanese releases that are playable in English](https://www.reddit.com/r/TurboGrafx/comments/g047qm/pc_engine_games_that_are_fully_in_english/)
+
 ```
 Akumajou Dracula X - Chi No Rondo (Castlevania - Rondo of Blood) (https://www.romhacking.net/translations/846/)
 Bonk III - Bonk's Big Adventure
@@ -362,6 +365,7 @@ Cosmic Fantasy 2
 Dragon Slayer - The Legend of Heroes
 Dungeon Explorer II
 Gate of Thunder + Bonk's Adventure + Bonk's Revenge
+Gradius II - Gofer no Yabou (Japan)
 Lords of Thunder
 R-Type Complete
 Spriggan Mark 2 - Re Terraform Project
@@ -369,6 +373,7 @@ Valis III
 Valis IV (English translation)
 Wonder Boy III - Monster Lair
 Ys Book I & II
+Ys IV - The Dawn of Ys (https://www.romhacking.net/translations/514/)
 ```
 ### Nintendo - Game Boy (GB) - April 21, 1989
 ```
