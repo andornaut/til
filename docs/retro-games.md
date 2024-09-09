@@ -535,6 +535,7 @@ Mega Man ZX
 Might & Magic - Clash of Heroes
 New Super Mario Bros.
 Nine Hours, Nine Persons, Nine Doors
+Peggle Dual Shot
 Phoenix Wright - Ace Attorney
 Picross DS
 Pokémon - Black Version 2
