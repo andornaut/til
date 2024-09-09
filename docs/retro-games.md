@@ -197,8 +197,8 @@ which may occur if RetroArch crashes before it is able to clean up.
 Platform | Desktop core | Handheld core
 --- | --- | ---
 Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | --
-NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle SuperGrafx](https://docs.libretro.com/library/beetle_sgx/) | [Beetle SuperGrafx](https://docs.libretro.com/library/beetle_sgx/)
-NEC - PC Engine CD - TurboGrafx-CD (PCE) | [Beetle SuperGrafx](https://docs.libretro.com/library/beetle_sgx/) | [Beetle SuperGrafx](https://docs.libretro.com/library/beetle_sgx/)
+NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/)
+NEC - PC Engine CD - TurboGrafx-CD (PCE) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/)
 Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) 
 Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) 
 Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
