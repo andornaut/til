@@ -888,7 +888,6 @@ Panzer Dragoon II Zwei
 Panzer Dragoon Saga
 Powerslave
 Radiant Silvergun
-Rayman
 Road Rash
 Saturn Bomberman
 Sega Rally Championship
