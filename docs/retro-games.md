@@ -567,7 +567,6 @@ Contra
 Crystalis
 Darkwing Duck
 Donkey Kong
-Double Dragon
 Double Dragon II
 Dr. Mario
 Dragon Warrior IV
@@ -740,18 +739,28 @@ Virtua Tennis
 ```
 ### Sega - Game Gear (GG) - October 6, 1990
 ```
+Ax Battler: A Legend of Golden Axe
 Castle of Illusion Starring Mickey Mouse
 Coca-Cola Kid
 Columns
+Crystal Warriors
+Defenders of Oasis
 Fantasy Zone
+Fatal Fury Special
+Joe Montana Football
 Legend of Illusion Starring Mickey Mouse
 Lucky Dime Caper Starring Donald Duck, The
+Mighty Morphin Power Rangers: The Movie
 Ninja Gaiden
 Power Strike II
 Ristar
 Shining Force - The Sword of Hajya
 Shinobi
-World Series Baseball
+Shinobi II - The Silent Fury
+Sonic Drift 2
+Sonic Triple Trouble
+Tails Adventure
+World Series Baseball '95
 X-Men
 ```
 ### Sega - Master System - Mark III (MS) - October 20, 1985
