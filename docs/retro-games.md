@@ -739,7 +739,7 @@ Virtua Tennis
 ```
 ### Sega - Game Gear (GG) - October 6, 1990
 ```
-Ax Battler: A Legend of Golden Axe
+Ax Battler - A Legend of Golden Axe
 Castle of Illusion Starring Mickey Mouse
 Coca-Cola Kid
 Columns
@@ -750,7 +750,7 @@ Fatal Fury Special
 Joe Montana Football
 Legend of Illusion Starring Mickey Mouse
 Lucky Dime Caper Starring Donald Duck, The
-Mighty Morphin Power Rangers: The Movie
+Mighty Morphin Power Rangers - The Movie
 Ninja Gaiden
 Power Strike II
 Ristar
@@ -758,7 +758,7 @@ Shining Force - The Sword of Hajya
 Shinobi
 Shinobi II - The Silent Fury
 Sonic Drift 2
-Sonic Triple Trouble
+Sonic The Hedgehog - Triple Trouble
 Tails Adventure
 World Series Baseball '95
 X-Men
