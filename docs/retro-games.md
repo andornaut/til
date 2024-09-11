@@ -371,7 +371,7 @@ Lords of Thunder
 R-Type Complete
 Spriggan Mark 2 - Re Terraform Project
 Valis III
-Valis IV (English translation)
+Valis IV (https://www.reddit.com/r/TurboGrafx/comments/1cegjmb/valis_iv_english_translation/)
 Wonder Boy III - Monster Lair
 Ys Book I & II
 Ys IV - The Dawn of Ys (https://www.romhacking.net/translations/514/)
@@ -556,6 +556,7 @@ World Ends with You, The
 ### Nintendo - Nintendo Entertainment System (FC, NES) - October 18, 1985
 ```
 Batman - The Video Game
+Battletoads
 Bionic Commando
 Blades of Steel
 Blaster Master
@@ -697,17 +698,25 @@ Border Down
 Capcom vs. SNK
 Crazy Taxi
 Dead or Alive 2
+Dynamite Cop!
 Garou - Mark of the Wolves
 Grandia II
+Hydro Thunder
 Ikaruga
 Jet Grind Radio
+Le Mans 24 Hours
+Legacy of Kain - Soul Reaver
 Mars Matrix
 Marvel vs. Capcom 2
+MSR - Metropolis Street Racer
+NFL 2K2
 NFL Blitz 2000
 Phantasy Star Online Ver. 2
 Power Stone
 Power Stone 2
+Project Justice
 Rayman 2 - The Great Escape
+Record of Lodoss War
 Resident Evil - Code - Veronica
 Re-volt
 Rez
@@ -722,6 +731,7 @@ Space Channel 5
 Spider-Man
 Street Fighter Alpha 3
 Street Fighter III - 3rd Strike
+Sword of the Berserk - Guts' Rage
 The King of Fighters - Dream Match 1999
 Tony Hawk's Pro Skater 2
 Toy Commander
@@ -772,6 +782,7 @@ Reggie Jackson Baseball
 Shinobi
 Sonic The Hedgehog
 Space Harrier
+Ultima IV - Quest of the Avatar
 Wonder Boy in Monster World
 Ys - The Vanished Omens
 ```
@@ -812,6 +823,7 @@ After Burner II
 Aladdin
 Altered Beast
 Arnold Palmer Tournament Golf
+Bare Knuckle III (Streets of Rage III) (https://www.romhacking.net/translations/1375/)
 Beyond Oasis
 Castlevania - Bloodlines
 Comix Zone
@@ -822,6 +834,7 @@ Evander Holyfield's 'Real Deal' Boxing
 Fix-It Felix Jr. (http://68000.web.fc2.com/felix/index.html)
 Ghostbusters - Special Edition (https://www.romhacking.net/hacks/7761/)
 Golden Axe
+Greatest Heavyweights
 Gunstar Heroes
 Herzog Zwei
 Jungle Strike
@@ -829,6 +842,7 @@ Jurassic Park - Rampage Edition
 Micro Machines 2 - Turbo Tournament 
 MUSHA - Metallic Uniframe Super Hybrid Armor
 Madden NFL 95
+Marble Madness
 Michael Jackson's Moonwalker
 Monster World IV
 MUSHA - Metallic Uniframe Super Hybrid Armor
@@ -843,6 +857,7 @@ Ranger X
 Revenge of Shinobi, The
 Road Rash 3
 Rocket Knight Adventures
+Shadow Dancer - The Secret of Shinobi
 Shining Force II
 Shinobi III - Return of the Ninja Master
 Sonic The Hedgehog
@@ -874,12 +889,17 @@ X-Men 2 - Clone Wars
 ```
 Akumajou Dracula X - Gekka no Yasoukyoku (Castlevania - Symphony of the Night) (https://segaxtreme.net/resources/dracula-x-symphony-of-the-night.83/)
 Astal
+Baku Baku Animal - World Zookeeper Contest
 Batsugun
 Bug!
+Bulk Slash (https://segaxtreme.net/resources/bulk-slash-english.105/)
 Burning Rangers
 Daytona USA - Championship Circuit Edition
+DecAthlete
 Dragon Force
 Guardian Heroes
+Keio Flying Squadron 2
+Legend of Oasis, The
 Magical Night Dreams - Cotton 2 (https://segaxtreme.net/resources/cotton-2-english-patch.84/)
 Manx TT SuperBike
 Marvel Super Heroes
@@ -900,6 +920,7 @@ Street Fighter Alpha 2
 Virtua Cop 2
 Virtua Fighter 2
 Virtual On - Cyber Troopers
+World Series Baseball 98
 X-Men - Children of the Atom
 ```
 ### Sony - PlayStation (PSX) - December 3, 1994
