@@ -837,7 +837,6 @@ Vay
 ```
 ### Sega - Mega Drive - Genesis (MD) - October 29, 1988
 ```
-After Burner II
 Aladdin
 Altered Beast
 Arnold Palmer Tournament Golf
@@ -850,6 +849,7 @@ Dune - The Battle for Arrakis
 Earthworm Jim 2
 Evander Holyfield's 'Real Deal' Boxing
 Fix-It Felix Jr. (http://68000.web.fc2.com/felix/index.html)
+Flashback - The Quest for Identity
 Ghostbusters - Special Edition (https://www.romhacking.net/hacks/7761/)
 Golden Axe
 Greatest Heavyweights
@@ -858,7 +858,7 @@ Herzog Zwei
 Jungle Strike
 Jurassic Park - Rampage Edition
 Lost Vikings, The
-Micro Machines 2 - Turbo Tournament 
+Micro Machines 2 - Turbo Tournament
 MUSHA - Metallic Uniframe Super Hybrid Armor
 Madden NFL 95
 Marble Madness
@@ -881,12 +881,57 @@ Shadowrun
 Shining Force II
 Shinobi III - Return of the Ninja Master
 Sonic The Hedgehog
-Sonic The Hedgehog 2
+X-Men 2 - Clone Wars"|uniq|sort|uniquse and Donald Duckttps://www.romhacking.net/hacks/7399/)
+After Burner II
+Aladdin
+Altered Beast
+Arnold Palmer Tournament Golf
+Bare Knuckle III (Streets of Rage III) (https://www.romhacking.net/translations/1375/)
+Beyond Oasis
+Castlevania - Bloodlines
+Comix Zone
+Desert Strike - Return to the Gulf
+Dune - The Battle for Arrakis
+Earthworm Jim 2
+Evander Holyfield's 'Real Deal' Boxing
+Fix-It Felix Jr. (http://68000.web.fc2.com/felix/index.html)
+Flashback - The Quest for Identity
+Ghostbusters - Special Edition (https://www.romhacking.net/hacks/7761/)
+Golden Axe
+Greatest Heavyweights
+Gunstar Heroes
+Herzog Zwei
+Jungle Strike
+Jurassic Park - Rampage Edition
+Lost Vikings, The
+Madden NFL 95
+Marble Madness
+Michael Jackson's Moonwalker
+Micro Machines 2 - Turbo Tournament
+Monster World IV
+MUSHA - Metallic Uniframe Super Hybrid Armor
+NFL Sports Talk Football '93 Starring Joe Montana
+NHL '94
+NHL '94 - 2024 Edition (https://www.romhacking.net/hacks/8267/)
+OutRun
+PGA European Tour
+Phantasy Star IV
+Pirates! Gold
+Ranger X
+Revenge of Shinobi, The
+Road Rash 3
+Rocket Knight Adventures
+Shadow Dancer - The Secret of Shinobi
+Shadowrun
+Shining Force II
+Shinobi III - Return of the Ninja Master
 Sonic & Knuckles + Sonic The Hedgehog 3
+Sonic The Hedgehog
+Sonic The Hedgehog 2
 Space Harrier II
-Strider
 Streets of Rage
 Streets of Rage 2
+Strider
 Super Hang-On
 Super Monaco GP
 Super Thunder Blade
@@ -897,6 +942,7 @@ Thunder Force IV
 ToeJam & Earl
 Ultimate Mortal Kombat 3
 Urban Strike
+World of Illusion Starring Mickey Mouse and Donald Duck
 World Series Baseball 98
 X-Men
 X-Men 2 - Clone Wars
