@@ -68,9 +68,8 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 * [muOS Artwork](https://github.com/antiKk/muOS-Artwork)
 * [muOS Discord](https://discord.gg/muos) 
 * [muOS GitHub](https://github.com/MustardOS/)
-  * [Themes](https://github.com/MustardOS/theme)
-  * 
   * [Overlays](https://github.com/antiKk/muOS-Overlays)
+  * [Themes](https://github.com/MustardOS/theme)
 
 ##### Keyboard shortcuts
 
