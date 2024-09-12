@@ -404,6 +404,7 @@ Wario Land II
 Advance Wars 
 Advance Wars 2
 Apotris (https://akouzoukos.com/apotris/)
+Asterix & Obelix XXL
 Astro Boy - Omega Factor
 Castlevania - Aria of Sorrow
 Crash Bandicoot - The Huge Adventure
@@ -599,6 +600,9 @@ Zelda II
 ```
 ### Nintendo - Super Nintendo Entertainment System (SFC, SNES) - November 21, 1990
 ```
+ActRaiser
+Batman Returns
+Biker Mice from Mars
 Chrono Trigger
 Contra III - The Alien Wars
 Donkey Kong Country
@@ -609,6 +613,7 @@ F-Zero
 Final Fantasy - Mystic Quest
 Final Fantasy II
 Final Fantasy III
+Harvest Moon
 Hook
 Illusion of Gaia
 Ken Griffey Jr. Presents Major League Baseball
@@ -618,10 +623,14 @@ Kirby Super Star
 Legend of Zelda, The - A Link to the Past
 Lemmings
 Lufia II - Rise of the Sinistrals
+Magical Quest Starring Mickey Mouse, The
 Mario Paint
+Marvel Super Heroes in War of the Gems
 Mega Man X
 Mega Man X2
+Metal Warriors
 Ms. Pac-Man
+Pilotwings
 Secret of Mana
 Shin Kidou Senki Gundam W - Endless Duel
 SimCity 2000
@@ -632,6 +641,7 @@ Star Fox 2
 Star Fox EX (https://www.romhacking.net/hacks/7285/)
 Star Trek - The Next Generation - Future's Past
 Street Fighter II Turbo
+Super Adventure Island II
 Super Bomberman
 Super Castlevania IV
 Super Double Dragon
@@ -848,6 +858,7 @@ Gunstar Heroes
 Herzog Zwei
 Jungle Strike
 Jurassic Park - Rampage Edition
+Lost Vikings, The
 Micro Machines 2 - Turbo Tournament 
 MUSHA - Metallic Uniframe Super Hybrid Armor
 Madden NFL 95
@@ -867,6 +878,7 @@ Revenge of Shinobi, The
 Road Rash 3
 Rocket Knight Adventures
 Shadow Dancer - The Secret of Shinobi
+Shadowrun
 Shining Force II
 Shinobi III - Return of the Ninja Master
 Sonic The Hedgehog
@@ -978,6 +990,7 @@ Tomb Raider
 Twisted Metal 2
 Vandal Hearts
 Wipeout XL
+X-Men - Mutant Apocalypse
 Xenogears
 ```
 
