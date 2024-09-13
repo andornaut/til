@@ -333,12 +333,34 @@ Super Burnout
 Tempest 2000
 Wolfenstein 3D
 ```
+### NEC - PC Engine CD - TurboGrafx-CD - December 4, 1988
+* [English translation ROM hacks](https://www.romhacking.net/?page=translations&genre=&platform=5&status=&languageid=12&perpage=20&order=&dir=&title=&author=&transsearch=Go)
+* [List Japanese releases that are playable in English](https://www.reddit.com/r/TurboGrafx/comments/g047qm/pc_engine_games_that_are_fully_in_english/)
+
+```
+Akumajou Dracula X - Chi no Rondo (Castlevania - Rondo of Blood) (https://www.romhacking.net/translations/846/)
+Bonk III - Bonk's Big Adventure
+Cosmic Fantasy 2
+Dragon Slayer - The Legend of Heroes
+Dungeon Explorer II
+Gate of Thunder + Bonk's Adventure + Bonk's Revenge
+Gradius II - Gofer no Yabou
+Lords of Thunder
+R-Type Complete CD
+Spriggan Mark 2 - Re Terraform Project
+Valis III
+Valis IV (https://www.reddit.com/r/TurboGrafx/comments/1cegjmb/valis_iv_english_translation/)
+Wonder Boy III - Monster Lair
+Ys Book I & II
+Ys IV - The Dawn of Ys (https://www.romhacking.net/translations/514/)
+```
 ### NEC - PC Engine - TurboGrafx 16 (PCE) - October 30, 1987
 ```
 Air Zonk
 Alien Crush
 Blazing Lazers
 Bloody Wolf
+Bomberman '93
 Bonk's Adventure
 Bonk's Revenge
 Cadash
@@ -347,39 +369,17 @@ Dungeon Explorer
 Legendary Axe, The
 Magical Chase
 Military Madness
-New Adventure Island
-Neutopia
 Neutopia II
-Ninja Spirit
+Neutopia
+New Adventure Island
 Soldier Blade
 Splatterhouse
-```
-### NEC - PC Engine CD - TurboGrafx-CD - December 4, 1988
-* [English translation ROM hacks](https://www.romhacking.net/?page=translations&genre=&platform=5&status=&languageid=12&perpage=20&order=&dir=&title=&author=&transsearch=Go)
-* [List Japanese releases that are playable in English](https://www.reddit.com/r/TurboGrafx/comments/g047qm/pc_engine_games_that_are_fully_in_english/)
-
-```
-Akumajou Dracula X - Chi No Rondo (Castlevania - Rondo of Blood) (https://www.romhacking.net/translations/846/)
-Bonk III - Bonk's Big Adventure
-Cosmic Fantasy 2
-Dragon Slayer - The Legend of Heroes
-Dungeon Explorer II
-Gate of Thunder + Bonk's Adventure + Bonk's Revenge
-Gradius II - Gofer no Yabou (Japan)
-Lords of Thunder
-R-Type Complete
-Spriggan Mark 2 - Re Terraform Project
-Valis III
-Valis IV (https://www.reddit.com/r/TurboGrafx/comments/1cegjmb/valis_iv_english_translation/)
-Wonder Boy III - Monster Lair
-Ys Book I & II
-Ys IV - The Dawn of Ys (https://www.romhacking.net/translations/514/)
 ```
 ### Nintendo - Game Boy (GB) - April 21, 1989
 ```
 Bubble Bobble
 BurgerTime Deluxe
-Castlevania II: Belmont's Revenge
+Castlevania II - Belmont's Revenge
 Donkey Kong
 Final Fantasy Adventure
 Gradius - The Interstellar Assault
@@ -389,56 +389,58 @@ Mega Man V
 Metroid II - Return of Samus
 Mole Mania
 Operation C
-Pokémon - Red Version
-Pokémon - Yellow Version - Special Pikachu Edition
-Super Mario Land
+Pokemon - Red Version
+Pokemon - Yellow Version - Special Pikachu Edition
 Super Mario Land 2 - 6 Golden Coins
+Super Mario Land
 Tetris - Rosy Retrospection (https://www.romhacking.net/hacks/5813/)
 Tiny Toon Adventures - Babs' Big Break
-Wario Land - Super Mario Land 3
 Wario Land II
+Wario Land - Super Mario Land 3
 ```
 ### Nintendo - Game Boy Advance (GBA) - March 21, 2001
 ```
-Advance Wars 
-Advance Wars 2
+Advance Wars 2 - Black Hole Rising
+Advance Wars
 Apotris (https://akouzoukos.com/apotris/)
 Asterix & Obelix XXL
 Astro Boy - Omega Factor
 Banjo-Kazooie - Grunty's Revenge
 Castlevania - Aria of Sorrow
 Crash Bandicoot - The Huge Adventure
-F-Zero - Maximum Velocity
 Final Fantasy Tactics Advance
 Final Fantasy VI Advance
 Fire Emblem - The Sacred Stones
-Golden Sun
+F-Zero - Maximum Velocity
 Golden Sun - The Lost Age
+Golden Sun
 Gunstar Super Heroes
 Harvest Moon - Friends of Mineral Town
 Kirby & The Amazing Mirror
 Legend of Zelda, The - The Minish Cap
-Mario & Luigi - Superstar Saga
 Mario Kart - Super Circuit
-Megaman - Battle Network 3
+Mario & Luigi - Superstar Saga
+Megaman - Battle Network 3 - Blue Version
+Mega Man Zero
 Metroid Fusion
 Metroid - Zero Mission
-Mother 3 (https://mother3.fobby.net/)
+Mother 3
 Ninja Five-0
-Pokémon - Emerald Version
-Pokémon - FireRed Version
-Pokémon - LeafGreen Version
-Pokémon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
+Pokemon - Emerald Version
+Pokemon - FireRed Version
+Pokemon - LeafGreen Version
+Pokemon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
 Sigma Star Saga
 Sonic Advance 3
+Spider-Man - Mysterio's Menace
 Spyro 2 - Season of Flame
 Super Mario Advance 3 - Yoshi's Island
 Super Monkey Ball Jr.
 TMNT
 Tony Hawk's Pro Skater 2
 Ultimate Card Games
-WarioWare, Inc. - Mega Microgame$!
 Wario Land 4
+WarioWare, Inc. - Mega Microgame$!
 ```
 ### Nintendo - Game Boy Color (GBC) - October 21, 1998
 ```
