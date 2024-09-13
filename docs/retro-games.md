@@ -521,6 +521,7 @@ Star Wars - Rogue Squadron
 Super Mario 64
 Super Smash Bros.
 Turok - Dinosaur Hunter
+Turok 2 - Seeds of Evil
 Wave Race 64 - Kawasaki Jet Ski
 WWF No Mercy
 Yoshi's Story
