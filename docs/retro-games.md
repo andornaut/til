@@ -445,12 +445,11 @@ WarioWare, Inc. - Mega Microgame$!
 ### Nintendo - Game Boy Color (GBC) - October 21, 1998
 ```
 Dragon Warrior III
-Dragon Warrior Monsters 2
+Dragon Warrior Monsters 2 - Tara's Adventure
 Game & Watch Gallery 2
 Game & Watch Gallery 3
 Harry Potter and the Chamber of Secrets
 Harry Potter and the Sorcerer's Stone
-Harry Potter and the Chamber of Secrets
 Legend of Zelda, The - Link's Awakening DX
 Legend of Zelda, The - Oracle of Ages
 Legend of Zelda, The - Oracle of Seasons
@@ -458,13 +457,13 @@ Magi Nation
 Mario Tennis
 Metal Gear Solid
 Pocket Bomberman
-Pokémon - Crystal Version
-Pokémon Pinball
+Pokemon - Crystal Version
+Pokemon Pinball
 Revelations - The Demon Slayer
 Shantae
 Star Wars Episode I - Obi-Wan's Adventures
-Wario Land II
 Wario Land 3
+Wario Land II
 Wendy - Every Witch Way
 ```
 ### Nintendo - GameCube (GCN) - September 14, 2001
@@ -483,9 +482,9 @@ NBA Street Vol. 2
 Need for Speed - Underground 2
 Paper Mario - The Thousand-Year Door
 Pikmin 2
-SSX Tricky
 Skies of Arcadia Legends
 Sonic Adventure 2 - Battle
+SSX Tricky
 Star Wars - Rogue Squadron II - Rogue Leader
 Super Mario Sunshine
 Super Monkey Ball
@@ -522,37 +521,37 @@ Ogre Battle 64 - Person of Lordly Caliber
 Paper Mario
 Perfect Dark
 Pilotwings 64
-Pokémon Puzzle League
-Pokémon Snap
+Pokemon Puzzle League
+Pokemon Snap
 Pokemon Stadium 2
 Star Fox 64
 Star Wars Episode I - Racer
 Star Wars - Rogue Squadron
 Super Mario 64
 Super Smash Bros.
-Turok - Dinosaur Hunter
 Turok 2 - Seeds of Evil
+Turok - Dinosaur Hunter
 Wave Race 64 - Kawasaki Jet Ski
 WWF No Mercy
 Yoshi's Story
 ```
 ### Nintendo - Nintendo DS (NDS) - November 21, 2004
 ```
-Advance Wars: Dual Strike
+Advance Wars - Dual Strike
 Castlevania - Dawn of Sorrow
 Castlevania - Order of Ecclesia
 Chrono Trigger
-Dragon Quest IV - Chapters of the Chose
-Dragon Quest V - Hand of the Heavenly Bride
+Dragon Quest IV - Chapters of the Chosen
 Dragon Quest IX - Sentinels of the Starry Skies
-Fire Emblem: Shadow Dragon
+Dragon Quest V - Hand of the Heavenly Bride
+Fire Emblem - Shadow Dragon
 Ghost Trick - Phantom Detective
 Grand Theft Auto - Chinatown Wars
 Kingdom Hearts - 358-2 Days
 Kirby - Canvas Curse
 Kirby Super Star Ultra
-Mario & Luigi - Bowser's Inside Story
 Mario Kart DS
+Mario & Luigi - Bowser's Inside Story
 Mega Man Zero Collection
 Mega Man ZX
 Might & Magic - Clash of Heroes
@@ -561,15 +560,15 @@ Nine Hours, Nine Persons, Nine Doors
 Peggle Dual Shot
 Phoenix Wright - Ace Attorney
 Picross DS
-Pokémon - Black Version 2
-Pokémon HeartGold & SoulSilver
-Pokémon Mystery Dungeon - Explorers of Sky
-Pokémon Platinum
+Pokemon - Black Version 2
+Pokemon - HeartGold Version
+Pokemon Mystery Dungeon - Explorers of Sky
+Pokemon - Platinum Version
 Professor Layton and the Curious Village
 Professor Layton and the Diabolical Box
 Professor Layton and the Unwound Future
-Rune Factory 3
-Shin Megami Tensei
+Rune Factory 3 - A Fantasy Harvest Moon
+Shin Megami Tensei - Devil Survivor
 Solatorobo - Red the Hunter
 Sonic Rush
 Trauma Center - Under the Knife
@@ -578,6 +577,7 @@ World Ends with You, The
 ```
 ### Nintendo - Nintendo Entertainment System (FC, NES) - October 18, 1985
 ```
+Alwas Awakening
 Batman - The Video Game
 Battletoads
 Bionic Commando
@@ -590,9 +590,9 @@ Contra
 Crystalis
 Darkwing Duck
 Donkey Kong
-Double Dragon II
-Dr. Mario
+Double Dragon II - The Revenge
 Dragon Warrior IV
+Dr. Mario
 DuckTales
 Excitebike
 Faxanadu
@@ -613,12 +613,12 @@ Q-bert
 River City Ransom
 Rygar
 StarTropics
-Super Mario Bros.
 Super Mario Bros. 2
 Super Mario Bros. 3
-Tecmo Super Bowl 2024 2.0.0 (https://tecmobowl.org/files/file/868-tecmo-super-bowl-2024/)
+Super Mario Bros.
+Tecmo Super Bowl 2024 (https://tecmobowl.org/files/file/868-tecmo-super-bowl-2024/)
 Teenage Mutant Ninja Turtles III - The Manhattan Project
-Zelda II
+Zelda II - The Adventure of Link
 ```
 ### Nintendo - Super Nintendo Entertainment System (SFC, SNES) - November 21, 1990
 ```
@@ -627,14 +627,14 @@ Batman Returns
 Biker Mice from Mars
 Chrono Trigger
 Contra III - The Alien Wars
-Donkey Kong Country
 Donkey Kong Country 2 - Diddy's Kong Quest
 Donkey Kong Country 3 - Dixie Kong's Double Trouble!
+Donkey Kong Country
 EarthBound
-F-Zero
-Final Fantasy - Mystic Quest
-Final Fantasy II
 Final Fantasy III
+Final Fantasy II
+Final Fantasy - Mystic Quest
+F-Zero
 Harvest Moon
 Hook
 Illusion of Gaia
@@ -648,19 +648,20 @@ Lufia II - Rise of the Sinistrals
 Magical Quest Starring Mickey Mouse, The
 Mario Paint
 Marvel Super Heroes in War of the Gems
-Mega Man X
 Mega Man X2
+Mega Man X
 Metal Warriors
 Ms. Pac-Man
 Pilotwings
 Secret of Mana
 Shin Kidou Senki Gundam W - Endless Duel
-SimCity 2000
+Side Pocket
+SimCity 2000 - The Ultimate City Simulator
 Space Megaforce
 Sparkster
-Star Fox (https://www.romhacking.net/hacks/7163/)
 Star Fox 2
 Star Fox EX (https://www.romhacking.net/hacks/7285/)
+Star Fox (https://www.romhacking.net/hacks/7163/)
 Star Trek - The Next Generation - Future's Past
 Street Fighter II Turbo
 Super Adventure Island II
@@ -670,16 +671,18 @@ Super Double Dragon
 Super Mario All-Stars
 Super Mario Kart
 Super Mario RPG - Legend of the Seven Stars
-Super Mario World
 Super Mario World 2 - Yoshi's Island
+Super Mario World
 Super Metroid
 Super Punch-Out!!
 Super Tennis
 Tecmo Super Bowl
-Teenage Mutant Ninja Turtles - Tournament Fighters
 Teenage Mutant Ninja Turtles IV - Turtles in Time
+Teenage Mutant Ninja Turtles - Tournament Fighters
 Terranigma
 Where in the World Is Carmen Sandiego
+X-Men - Mutant Apocalypse
+Zombies Ate My Neighbors
 ```
 ### Pico-8 - April 2015
 ```
