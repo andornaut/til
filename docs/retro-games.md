@@ -488,12 +488,18 @@ Tony Hawk's Pro Skater 3
 1080 Snowboarding
 Banjo-Kazooie
 Banjo-Tooie
+Blast Corps
+Bomberman 64
 Conker's Bad Fur Day
 Diddy Kong Racing
 Donkey Kong 64
 Excitebike 64
 F-Zero X
+GoldenEye 007
+Harvest Moon 64
+Indiana Jones and the Infernal Machine
 International Superstar Soccer 2000
+Jet Force Gemini
 Kirby 64 - The Crystal Shards
 Legend of Zelda, The - Majora's Mask
 Legend of Zelda, The - Ocarina of Time
@@ -501,9 +507,14 @@ Mario Golf
 Mario Kart 64
 Mario Tennis
 Mega Man 64
+Mystical Ninja Starring Goemon
+Ogre Battle 64 - Person of Lordly Caliber
 Paper Mario
+Perfect Dark
 Pilotwings 64
 Pokémon Puzzle League
+Pokémon Snap
+Pokemon Stadium 2
 Star Fox 64
 Star Wars Episode I - Racer
 Star Wars - Rogue Squadron
@@ -512,6 +523,7 @@ Super Smash Bros.
 Turok - Dinosaur Hunter
 Wave Race 64 - Kawasaki Jet Ski
 WWF No Mercy
+Yoshi's Story
 ```
 ### Nintendo - Nintendo DS (NDS) - November 21, 2004
 ```
