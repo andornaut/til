@@ -405,6 +405,7 @@ Advance Wars 2
 Apotris (https://akouzoukos.com/apotris/)
 Asterix & Obelix XXL
 Astro Boy - Omega Factor
+Banjo-Kazooie - Grunty's Revenge
 Castlevania - Aria of Sorrow
 Crash Bandicoot - The Huge Adventure
 F-Zero - Maximum Velocity
@@ -423,6 +424,7 @@ Megaman - Battle Network 3
 Metroid Fusion
 Metroid - Zero Mission
 Mother 3 (https://mother3.fobby.net/)
+Ninja Five-0
 Pokémon - Emerald Version
 Pokémon - FireRed Version
 Pokémon - LeafGreen Version
@@ -430,6 +432,7 @@ Pokémon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
 Sigma Star Saga
 Sonic Advance 3
 Spyro 2 - Season of Flame
+Super Mario Advance 3 - Yoshi's Island
 Super Monkey Ball Jr.
 TMNT
 Tony Hawk's Pro Skater 2
@@ -441,6 +444,8 @@ Wario Land 4
 ```
 Dragon Warrior III
 Dragon Warrior Monsters 2
+Game & Watch Gallery 2
+Game & Watch Gallery 3
 Harry Potter and the Chamber of Secrets
 Harry Potter and the Sorcerer's Stone
 Harry Potter and the Chamber of Secrets
@@ -448,12 +453,15 @@ Legend of Zelda, The - Link's Awakening DX
 Legend of Zelda, The - Oracle of Ages
 Legend of Zelda, The - Oracle of Seasons
 Magi Nation
+Mario Tennis
 Metal Gear Solid
 Pocket Bomberman
 Pokémon - Crystal Version
 Pokémon Pinball
 Revelations - The Demon Slayer
 Shantae
+Star Wars Episode I - Obi-Wan's Adventures
+Wario Land II
 Wario Land 3
 Wendy - Every Witch Way
 ```
@@ -648,7 +656,7 @@ Shin Kidou Senki Gundam W - Endless Duel
 SimCity 2000
 Space Megaforce
 Sparkster
-Star Fox
+Star Fox (https://www.romhacking.net/hacks/7163/)
 Star Fox 2
 Star Fox EX (https://www.romhacking.net/hacks/7285/)
 Star Trek - The Next Generation - Future's Past
