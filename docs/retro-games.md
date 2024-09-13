@@ -1014,6 +1014,7 @@ Xenogears
 * [openblack](https://github.com/openblack/openblack) - Black & White
 * [OpenJKDF2](https://github.com/shinyquagsire23/OpenJKDF2/) - Dark Forces II: Jedi Knight
 * [OpenMW](https://openmw.org/) - The Elder Scrolls III: Morrowind
+* [OpenRA](https://github.com/OpenRA/OpenRA) - Command & Conquer: Red Alert
 * [OpenTDD](https://www.openttd.org/) - Transport Tycoon Deluxe
 * [VCMI](https://vcmi.eu/) - Heroes of Might and Magic III
 
