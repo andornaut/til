@@ -206,7 +206,7 @@ Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/
 Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus ](https://docs.libretro.com/library/mupen64plus/)
 Nintendo - Nintendo DS (NDS) | [melonDS](https://docs.libretro.com/library/melonds/) | [DraStic](https://drastic-ds.com) (Standalone)
 Nintendo - Nintendo Entertainment System (FC, NES) | [Mesen](https://docs.libretro.com/library/mesen/) | [FCEUmm](https://docs.libretro.com/library/fceumm/)
-Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Supafaust](https://github.com/libretro/supafaust)
+Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/)
 Sega - 32X | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
 Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast VL](https://docs.libretro.com/library/flycast/)
 Sega - Game Gear (GG) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
