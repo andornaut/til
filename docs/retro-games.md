@@ -203,7 +203,7 @@ Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte
 Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) 
 Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
 Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | --
-Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
+Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus ](https://docs.libretro.com/library/mupen64plus/)
 Nintendo - Nintendo DS (NDS) | [DeSmuME](https://docs.libretro.com/library/desmume/) | [DraStic](https://drastic-ds.com)
 Nintendo - Nintendo Entertainment System (FC, NES) | [Mesen](https://docs.libretro.com/library/mesen/) | [FCEUmm](https://docs.libretro.com/library/fceumm/)
 Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Supafaust](https://github.com/libretro/supafaust)
