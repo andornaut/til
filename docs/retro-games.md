@@ -808,10 +808,12 @@ California Games
 Deep Duck Trouble Starring Donald Duck
 Double Dragon
 Fantasy Zone II
+GG Aleste 3
 Golden Axe Warrior
 Golvellius - Valley of Doom
 Hang On
 Land of Illusion Starring Mickey Mouse
+Magical Puzzle Popils
 Master of Darkness
 Masters of Combat
 Miracle Warriors - Seal of The Dark Lord
@@ -826,6 +828,7 @@ Reggie Jackson Baseball
 Shinobi
 Sonic The Hedgehog
 Space Harrier
+Sylvan Tale (https://www.romhacking.net/translations/67/)
 Ultima IV - Quest of the Avatar
 Wonder Boy in Monster World
 Ys - The Vanished Omens
