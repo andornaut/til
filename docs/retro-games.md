@@ -26,6 +26,7 @@
 ### Anbernic RG35XX+ and RG40XXV
 
 * [Anbernic official store](https://anbernic.com/)
+* [Mr.Shield Screen Protector](https://www.aliexpress.us/item/1005007478485479.html?gatewayAdapt=4itemAdapt)
 * Custom firmware (CFW):
   * [GarlicOS on GitHub](https://github.com/GarlicOS/buildroot)
     * [GarlicOS 2.0 (Public Alpha) announcement](https://www.patreon.com/posts/92690050)
@@ -408,6 +409,9 @@ Astro Boy - Omega Factor
 Banjo-Kazooie - Grunty's Revenge
 Castlevania - Aria of Sorrow
 Crash Bandicoot - The Huge Adventure
+Double Dragon Advance
+Dragon Ball Z - Buu's Fury
+Dragon Ball Z - The Legacy of Goku II
 Final Fantasy Tactics Advance
 Final Fantasy VI Advance
 Fire Emblem - The Sacred Stones
