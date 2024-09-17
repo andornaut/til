@@ -408,6 +408,7 @@ Asterix & Obelix XXL
 Astro Boy - Omega Factor
 Banjo-Kazooie - Grunty's Revenge
 Castlevania - Aria of Sorrow
+Chessmaster
 Crash Bandicoot - The Huge Adventure
 Double Dragon Advance
 Dragon Ball Z - Buu's Fury
