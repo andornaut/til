@@ -216,6 +216,7 @@ Sega - Mega-CD - Sega CD | [Genesis Plus GX](https://docs.libretro.com/library/g
 Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Doesn't support .m3u)
 Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/)
+Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) [Optimization](https://www.reddit.com/r/ANBERNIC/comments/1fkztb1/universal_pppsspp_configuration_for_unmatched/)
 
 ### Drivers
 
@@ -1026,6 +1027,77 @@ Vandal Hearts
 Wipeout XL
 X-Men - Mutant Apocalypse
 Xenogears
+```
+### Sony - PlayStation Portable (PSP) - December 11, 2004
+```
+Ace Combat X - Skies of Deception
+Armored Core 3 Portable
+Burnout Legends
+Bust-A-Move - Deluxe
+Castlevania - The Dracula X Chronicles
+Crisis Core - Final Fantasy VII
+Daxter
+Def Jam - Fight for NY - The Takeover
+Disgaea - Afternoon of Darkness
+Disgaea 2 - Dark Hero Days
+Dragon Ball Z - Shin Budokai - Another Road
+Fat Princess - Fistful of Cake
+Final Fantasy - 20th Anniversary Edition
+Final Fantasy Tactics - The War of the Lions
+God of War - Chains of Olympus
+God of War - Ghost of Sparta
+Grand Theft Auto - Liberty City Stories
+Grand Theft Auto - Vice City Stories
+Guilty Gear XX Accent Core Plus
+Half-Minute Hero
+Harvey Birdman - Attorney at Law
+Jeanne d'Arc
+Killzone - Liberation
+Kingdom Hearts - Birth by Sleep
+Lara Croft Tomb Raider - Anniversary
+Lego Star Wars II - The Original Trilogy
+LocoRoco 2
+Lumines II
+Lunar - Silver Star Harmony
+Manhunt 2
+Marvel - Ultimate Alliance
+Mega Man - Powered Up
+Metal Gear Ac!d
+Metal Gear Solid - Peace Walker
+Midnight Club 3 - DUB Edition
+MLB 11
+Monster Hunter Portable 3rd (https://www.romhacking.net/reviews/8403/)
+N Plus
+Need for Speed - Carbon - Own the City
+OutRun 2006 - Coast 2 Coast
+PaRappa the Rapper
+Patapon 2
+PES 2014 - Pro Evolution Soccer
+Phantasy Star Portable 2 Infinity
+(https://gbatemp.net/threads/phantasy-star-portable-2-infinity-english-localization-v2-update-released-august-2022.576943/)
+Ratchet & Clank - Size Matters
+Resistance - Retribution
+Ridge Racer 2
+Rock Band Unplugged
+Shin Megami Tensei - Persona
+Shin Megami Tensei - Persona 2
+Shin Megami Tensei - Persona 3 Portable
+Sid Meier's Pirates!
+Silent Hill Origins
+Soulcalibur - Broken Destiny
+Space Invaders Extreme
+SSX on Tour
+Star Wars - Battlefront II
+Star Wars - The Force Unleashed
+Syphon Filter - Dark Mirror
+Tekken - Dark Resurrection
+Tony Hawk's Underground 2 Remix
+Virtua Tennis 3
+Warhammer 40,000 - Squad Command
+Warriors, The
+Worms - Open Warfare 2
+WipEout Pulse
+Ys Seven
 ```
 
 ## PC Games
