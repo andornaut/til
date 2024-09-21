@@ -1066,6 +1066,7 @@ Metal Gear Ac!d
 Metal Gear Solid - Peace Walker
 Midnight Club 3 - DUB Edition
 MLB 11
+Monster Hunter Freedom Unite
 Monster Hunter Portable 3rd (https://www.romhacking.net/reviews/8403/)
 N Plus
 Need for Speed - Carbon - Own the City
@@ -1091,13 +1092,17 @@ Star Wars - Battlefront II
 Star Wars - The Force Unleashed
 Syphon Filter - Dark Mirror
 Tekken - Dark Resurrection
+Tekken 6
 Tony Hawk's Underground 2 Remix
+Ultimate Ghosts'n Goblins
+Valkyria Chronicles II
 Virtua Tennis 3
 Warhammer 40,000 - Squad Command
 Warriors, The
 Worms - Open Warfare 2
 WipEout Pulse
 Ys Seven
+Ys - The Oath in Felghana
 ```
 
 ## PC Games
