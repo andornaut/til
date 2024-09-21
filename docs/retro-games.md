@@ -1099,8 +1099,8 @@ Valkyria Chronicles II
 Virtua Tennis 3
 Warhammer 40,000 - Squad Command
 Warriors, The
-Worms - Open Warfare 2
 WipEout Pulse
+Worms - Open Warfare 2
 Ys Seven
 Ys - The Oath in Felghana
 ```
