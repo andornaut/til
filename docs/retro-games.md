@@ -904,7 +904,7 @@ MUSHA - Metallic Uniframe Super Hybrid Armor
 NFL Sports Talk Football '93 Starring Joe Montana
 NHL '94
 NHL '94 - 2024 Edition (https://www.romhacking.net/hacks/8267/)
-OutRun
+OutRun (https://www.romhacking.net/reviews/3478/)
 PGA European Tour
 Phantasy Star IV
 Pirates! Gold
