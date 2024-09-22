@@ -1046,6 +1046,7 @@ Disgaea - Afternoon of Darkness
 Disgaea 2 - Dark Hero Days
 Dragon Ball Z - Shin Budokai - Another Road
 Fat Princess - Fistful of Cake
+Fight Night Round 3
 Final Fantasy - 20th Anniversary Edition
 Final Fantasy Tactics - The War of the Lions
 God of War - Chains of Olympus
@@ -1055,6 +1056,7 @@ Grand Theft Auto - Vice City Stories
 Guilty Gear XX Accent Core Plus
 Half-Minute Hero
 Harvey Birdman - Attorney at Law
+Hot Shots Golf - Open Tee 2
 Jeanne d'Arc
 Killzone - Liberation
 Kingdom Hearts - Birth by Sleep
@@ -1063,6 +1065,7 @@ Lego Star Wars II - The Original Trilogy
 LocoRoco 2
 Lumines II
 Lunar - Silver Star Harmony
+Madden NFL 08
 Manhunt 2
 Marvel - Ultimate Alliance
 Mega Man - Powered Up
@@ -1073,7 +1076,9 @@ MLB 11
 Monster Hunter Freedom Unite
 Monster Hunter Portable 3rd (https://www.romhacking.net/reviews/8403/)
 N Plus
+NBA 2K12
 NBA Street Showdown
+NHL 07
 Need for Speed - Carbon - Own the City
 OutRun 2006 - Coast 2 Coast
 PaRappa the Rapper
