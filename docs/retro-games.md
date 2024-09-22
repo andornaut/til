@@ -824,7 +824,7 @@ Master of Darkness
 Masters of Combat
 Miracle Warriors - Seal of The Dark Lord
 Ninja Gaiden
-Phantasy Star
+Phantasy Star (https://www.romhacking.net/translations/1069/)
 Power Strike
 Prince of Persia
 Psycho Fox
@@ -893,6 +893,7 @@ Gunstar Heroes
 Herzog Zwei
 Jungle Strike
 Jurassic Park - Rampage Edition
+Kid Chameleon (https://www.romhacking.net/hacks/5672/)
 Lost Vikings, The
 Madden NFL 95
 Marble Madness
