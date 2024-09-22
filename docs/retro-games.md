@@ -597,6 +597,7 @@ Crystalis
 Darkwing Duck
 Donkey Kong
 Double Dragon II - The Revenge
+Double Dribble
 Dragon Warrior IV
 Dr. Mario
 DuckTales
@@ -749,6 +750,7 @@ Legacy of Kain - Soul Reaver
 Mars Matrix
 Marvel vs. Capcom 2
 MSR - Metropolis Street Racer
+NBA 2K1
 NFL 2K2
 NFL Blitz 2000
 Phantasy Star Online Ver. 2
@@ -901,6 +903,7 @@ Michael Jackson's Moonwalker
 Micro Machines 2 - Turbo Tournament 
 Monster World IV
 MUSHA - Metallic Uniframe Super Hybrid Armor
+NBA Live 96
 NFL Sports Talk Football '93 Starring Joe Montana
 NHL '94
 NHL '94 - 2024 Edition (https://www.romhacking.net/hacks/8267/)
@@ -1070,6 +1073,7 @@ MLB 11
 Monster Hunter Freedom Unite
 Monster Hunter Portable 3rd (https://www.romhacking.net/reviews/8403/)
 N Plus
+NBA Street Showdown
 Need for Speed - Carbon - Own the City
 OutRun 2006 - Coast 2 Coast
 PaRappa the Rapper
