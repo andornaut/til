@@ -26,6 +26,7 @@
 ### Anbernic RG35XX+ and RG40XXV
 
 * [Anbernic official store](https://anbernic.com/)
+* [Joystick removal mod](https://makerworld.com/en/models/658135#profileId-585228)
 * [Mr.Shield Screen Protector](https://www.aliexpress.us/item/1005007478485479.html?gatewayAdapt=4itemAdapt)
 * Custom firmware (CFW):
   * [GarlicOS on GitHub](https://github.com/GarlicOS/buildroot)
