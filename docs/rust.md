@@ -35,6 +35,7 @@ Read a local copy of "The Rust Programming Language" book in a web browser with:
 * [Comprehensive Rust](https://google.github.io/comprehensive-rust/) - 4 day course by Google's Android team
 * [Finding Closure in Rust](https://huonw.github.io/blog/2015/05/finding-closure-in-rust/)
 * [How to Idiomatically Use Global Variables in Rust](https://www.sitepoint.com/rust-global-variables/)
+* [How to Learn Rust in 2024: A Complete Beginner’s Guide to Mastering Rust Programming](https://blog.jetbrains.com/rust/2024/09/20/how-to-learn-rust/)
 * [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/)
 * [Learning about Rust's next, peek, and windows](https://sts10.github.io/2020/10/06/peeking-the-pivot.html)
 * [min-sized-rust](https://github.com/johnthagen/min-sized-rust) - Minimize the size of a Rust binary
