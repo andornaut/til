@@ -1122,15 +1122,16 @@ Alone in the Dark 2
 BrainDead 13
 Captain Quazar
 Dragon's Lair
-Guardian Wa
 Gex
+Guardian War 
 Return Fire
 Road & Track Presents - The Need for Speed
+Road Rash
 Samurai Shodown
 Slayer
-Starblade
 Star Control II
 Star Fighter
+Starblade
 Super Street Fighter II Turbo
 Super Wing Commander
 Total Eclipse
