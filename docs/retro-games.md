@@ -219,6 +219,7 @@ Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/l
 Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Doesn't support .m3u)
 Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/)
 Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) ([Core System Files](https://github.com/hrydgard/ppsspp), [Optimization](https://www.reddit.com/r/ANBERNIC/comments/1fkztb1/universal_pppsspp_configuration_for_unmatched/))
+The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) |
 
 ### Drivers
 
@@ -970,7 +971,6 @@ Panzer Dragoon II Zwei
 Panzer Dragoon Saga
 Powerslave
 Radiant Silvergun
-Road Rash
 Saturn Bomberman
 Sega Rally Championship
 Shining Force III
@@ -1115,6 +1115,27 @@ WipEout Pulse
 Worms - Open Warfare 2
 Ys Seven
 Ys - The Oath in Felghana
+```
+### The 3DO Company - 3DO - October 4, 1993
+```
+Alone in the Dark 2
+BrainDead 13
+Captain Quazar
+Dragon's Lair
+Guardian Wa
+Gex
+Return Fire
+Road & Track Presents - The Need for Speed
+Samurai Shodown
+Slayer
+Starblade
+Star Control II
+Star Fighter
+Super Street Fighter II Turbo
+Super Wing Commander
+Total Eclipse
+Wing Commander III - Heart of the Tiger
+Wolfenstein 3D
 ```
 
 ## PC Games
