@@ -529,6 +529,7 @@ Mario Golf
 Mario Kart 64
 Mario Tennis
 Mega Man 64
+Mischief Makers
 Mystical Ninja Starring Goemon
 Ogre Battle 64 - Person of Lordly Caliber
 Paper Mario
@@ -537,6 +538,7 @@ Pilotwings 64
 Pokemon Puzzle League
 Pokemon Snap
 Pokemon Stadium 2
+Sin and Punishment - Successor of the Earth  (https://www.romhacking.net/translations/920/)
 Star Fox 64
 Star Wars Episode I - Racer
 Star Wars - Rogue Squadron
@@ -600,11 +602,13 @@ Bubble Bobble
 Castlevania III - Dracula's Curse
 Chip 'n Dale - Rescue Rangers
 Contra
+Crisis Force
 Crystalis
 Darkwing Duck
 Donkey Kong
 Double Dragon II - The Revenge
 Double Dribble
+Dragon Warrior III
 Dragon Warrior IV
 Dr. Mario
 DuckTales
@@ -615,11 +619,13 @@ Gradius
 Kirby's Adventure
 Legend of Zelda, The
 Life Force
+Little Samson
 Mega Man 2
 Mega Man 4
 Metroid
 NES Open Tournament Golf
 Ninja Gaiden
+Ninja Gaiden II - The Dark Sword of Chaos
 Pac-Man - Championship Edition (https://retroachievements.org/game/16549)
 Pin Bot
 Punch-Out!!
@@ -750,6 +756,7 @@ Capcom vs. SNK
 Crazy Taxi
 Dead or Alive 2
 Dynamite Cop!
+Fur Fighters
 Garou - Mark of the Wolves
 Grandia II
 Hydro Thunder
@@ -1135,6 +1142,7 @@ Alone in the Dark 2
 BrainDead 13
 Captain Quazar
 Dragon's Lair
+FIFA International Soccer
 Gex
 Guardian War 
 Return Fire
@@ -1142,6 +1150,7 @@ Road & Track Presents - The Need for Speed
 Road Rash
 Samurai Shodown
 Slayer
+Space Hulk - Vengeance of the Blood Angels
 Star Control II
 Star Fighter
 Starblade
