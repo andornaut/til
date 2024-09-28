@@ -370,6 +370,7 @@ Bonk's Adventure
 Bonk's Revenge
 Cadash
 Devil's Crush
+Dragon's Curse
 Dungeon Explorer
 Legendary Axe, The
 Magical Chase
@@ -498,7 +499,9 @@ Star Wars - Rogue Squadron II - Rogue Leader
 Super Mario Sunshine
 Super Monkey Ball
 Super Smash Bros. Melee
+Timesplitters 2
 Tony Hawk's Pro Skater 3
+Viewtiful Joe 
 ```
 ### Nintendo - Nintendo 64 (N64) - June 23, 1996
 ```
@@ -633,6 +636,7 @@ Zelda II - The Adventure of Link
 ### Nintendo - Super Nintendo Entertainment System (SFC, SNES) - November 21, 1990
 ```
 ActRaiser
+Aerobiz Supersonic
 Batman Returns
 Biker Mice from Mars
 Chrono Trigger
@@ -654,6 +658,7 @@ Kirby's Dream Land 3
 Kirby Super Star
 Legend of Zelda, The - A Link to the Past
 Lemmings
+Lion King, The
 Lufia II - Rise of the Sinistrals
 Magical Quest Starring Mickey Mouse, The
 Mario Paint
@@ -686,6 +691,7 @@ Super Mario World
 Super Metroid
 Super Punch-Out!!
 Super Tennis
+Super Turrican 2
 Tecmo Super Bowl
 Teenage Mutant Ninja Turtles IV - Turtles in Time
 Teenage Mutant Ninja Turtles - Tournament Fighters
@@ -776,6 +782,7 @@ Space Channel 5
 Spider-Man
 Street Fighter Alpha 3
 Street Fighter III - 3rd Strike
+Super Street Fighter II X for Matching Service (https://dreamcast-talk.com/forum/viewtopic.php?f=22&t=13803#p142158)
 Sword of the Berserk - Guts' Rage
 The King of Fighters - Dream Match 1999
 Tony Hawk's Pro Skater 2
@@ -879,6 +886,7 @@ Vay
 ```
 After Burner II
 Aladdin
+Alien Soldier
 Altered Beast
 Arnold Palmer Tournament Golf
 Bare Knuckle III (Streets of Rage III) (https://www.romhacking.net/translations/1375/)
@@ -899,6 +907,7 @@ Herzog Zwei
 Jungle Strike
 Jurassic Park - Rampage Edition
 Kid Chameleon (https://www.romhacking.net/hacks/5672/)
+Landstalker
 Lost Vikings, The
 Madden NFL 95
 Marble Madness
@@ -912,6 +921,7 @@ NHL '94
 NHL '94 - 2024 Edition (https://www.romhacking.net/hacks/8267/)
 OutRun (https://www.romhacking.net/reviews/3478/)
 PGA European Tour
+PGA Tour Golf II
 Phantasy Star IV
 Pirates! Gold
 Ranger X
@@ -929,6 +939,7 @@ Space Harrier II
 Streets of Rage
 Streets of Rage 2
 Strider
+Sub-Terrania
 Super Hang-On
 Super Monaco GP
 Super Thunder Blade
@@ -1001,6 +1012,7 @@ Crash Bandicoot 2 - Cortex Strikes Back
 CTR - Crash Team Racing
 Diablo
 Doom
+Driver - You Are the Wheelman
 Final Fantasy Tactics
 Final Fantasy IX
 Final Fantasy VII
