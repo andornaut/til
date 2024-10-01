@@ -646,6 +646,7 @@ ActRaiser
 Aerobiz Supersonic
 Batman Returns
 Biker Mice from Mars
+Breath of Fire II
 Chrono Trigger
 Contra III - The Alien Wars
 Donkey Kong Country 2 - Diddy's Kong Quest
@@ -1013,9 +1014,11 @@ Arcade's Greatest Hits - The Atari Collection 2
 Arcade's Greatest Hits - The Midway Collection 2
 Armored Core
 Battle Arena Toshinden
+Breath of Fire III
 Bust-A-Move 2 - Arcade Edition
 Castlevania - Symphony of the Night
 Chrono Cross
+Colony Wars
 Crash Bandicoot 2 - Cortex Strikes Back
 CTR - Crash Team Racing
 Diablo
@@ -1028,7 +1031,9 @@ Gex - Enter the Gecko
 Gran Turismo 2 - Arcade Mode
 Gran Turismo 2 - Simulation Mode
 Grandia
+Gundam Battle Assault 2
 Hot Shots Golf
+Klonoa - Door to Phantomile
 Marvel vs. Capcom - Clash of Super Heroes
 MediEvil
 Mega Man Legends
