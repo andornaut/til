@@ -413,6 +413,7 @@ Apotris (https://akouzoukos.com/apotris/)
 Asterix & Obelix XXL
 Astro Boy - Omega Factor
 Banjo-Kazooie - Grunty's Revenge
+Breath of Fire
 Castlevania - Aria of Sorrow
 Chessmaster
 Crash Bandicoot - The Huge Adventure
@@ -674,6 +675,7 @@ Marvel Super Heroes in War of the Gems
 Mega Man X2
 Mega Man X
 Metal Warriors
+Mighty Morphin Power Rangers - The Fighting Edition
 Ms. Pac-Man
 Pilotwings
 Secret of Mana
@@ -886,6 +888,7 @@ Secret of Monkey Island, The
 Shining Force CD
 Silpheed
 Snatcher
+Sol-Feace
 Sonic CD
 SoulStar
 Terminator, The
@@ -902,6 +905,7 @@ Bare Knuckle III (Streets of Rage III) (https://www.romhacking.net/translations/
 Beyond Oasis
 Castlevania - Bloodlines
 Comix Zone
+Contra - Hard Corps (https://www.romhacking.net/hacks/797/)
 Desert Strike - Return to the Gulf
 Dune - The Battle for Arrakis
 Earthworm Jim 2
@@ -913,6 +917,7 @@ Golden Axe
 Greatest Heavyweights
 Gunstar Heroes
 Herzog Zwei
+Jungle Book, The
 Jungle Strike
 Jurassic Park - Rampage Edition
 Kid Chameleon (https://www.romhacking.net/hacks/5672/)
@@ -920,10 +925,13 @@ Landstalker
 Lost Vikings, The
 Madden NFL 95
 Marble Madness
+Mega Turrican
 Michael Jackson's Moonwalker
 Micro Machines 2 - Turbo Tournament 
 Monster World IV
 MUSHA - Metallic Uniframe Super Hybrid Armor
+Mutant League Football
+Mutant League Hockey
 NBA Live 96
 NFL Sports Talk Football '93 Starring Joe Montana
 NHL '94
@@ -933,6 +941,7 @@ PGA European Tour
 PGA Tour Golf II
 Phantasy Star IV
 Pirates! Gold
+QuackShot Starring Donald Duck
 Ranger X
 Revenge of Shinobi, The
 Road Rash 3
@@ -945,6 +954,7 @@ Sonic & Knuckles + Sonic The Hedgehog 3
 Sonic The Hedgehog
 Sonic The Hedgehog 2
 Space Harrier II
+Sparkster
 Streets of Rage
 Streets of Rage 2
 Strider
@@ -953,6 +963,7 @@ Super Hang-On
 Super Monaco GP
 Super Thunder Blade
 Sword of Vermilion
+Sylvester & Tweety in Cagey Capers
 Teenage Mutant Ninja Turtles - Shredder's Re-Revenge (https://www.romhacking.net/hacks/7399/)
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
 Thunder Force IV
