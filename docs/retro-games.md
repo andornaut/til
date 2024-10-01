@@ -941,6 +941,7 @@ PGA European Tour
 PGA Tour Golf II
 Phantasy Star IV
 Pirates! Gold
+Populous
 QuackShot Starring Donald Duck
 Ranger X
 Revenge of Shinobi, The
@@ -1019,6 +1020,7 @@ X-Men - Children of the Atom
 ### Sony - PlayStation (PSX) - December 3, 1994
 ```
 Ace Combat 3 - Electrosphere
+Alundra
 Ape Escape
 Arcade's Greatest Hits - The Atari Collection 1
 Arcade's Greatest Hits - The Atari Collection 2
@@ -1065,6 +1067,7 @@ Syphon Filter
 Tekken 3
 Tomb Raider
 Twisted Metal 2
+Valkyrie Profile
 Vandal Hearts
 Wipeout XL
 X-Men - Mutant Apocalypse
@@ -1099,6 +1102,7 @@ Jeanne d'Arc
 Killzone - Liberation
 Kingdom Hearts - Birth by Sleep
 Lara Croft Tomb Raider - Anniversary
+Legend of Heroes, The - Trails in the Sky
 Lego Star Wars II - The Original Trilogy
 LocoRoco 2
 Lumines II
