@@ -891,6 +891,7 @@ Snatcher
 Sol-Feace
 Sonic CD
 SoulStar
+Space Ace
 Terminator, The
 Vay
 ```
