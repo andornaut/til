@@ -444,6 +444,7 @@ Pokemon - LeafGreen Version
 Pokemon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
 Sigma Star Saga
 Sonic Advance 3
+Sonic Pinball Party
 Spider-Man - Mysterio's Menace
 Spyro 2 - Season of Flame
 Super Mario Advance 3 - Yoshi's Island
@@ -769,6 +770,7 @@ Le Mans 24 Hours
 Legacy of Kain - Soul Reaver
 Mars Matrix
 Marvel vs. Capcom 2
+MDK2
 MSR - Metropolis Street Racer
 NBA 2K1
 NFL 2K2
@@ -907,6 +909,7 @@ Beyond Oasis
 Castlevania - Bloodlines
 Comix Zone
 Contra - Hard Corps (https://www.romhacking.net/hacks/797/)
+Crusader of Centy
 Desert Strike - Return to the Gulf
 Dune - The Battle for Arrakis
 Earthworm Jim 2
