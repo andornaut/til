@@ -442,6 +442,7 @@ Pokemon - Emerald Version
 Pokemon - FireRed Version
 Pokemon - LeafGreen Version
 Pokemon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
+Shining Force - Resurrection of the Dark Dragon
 Sigma Star Saga
 Sonic Advance 3
 Sonic Pinball Party
@@ -806,21 +807,25 @@ Virtua Tennis
 ### Sega - Game Gear (GG) - October 6, 1990
 ```
 Ax Battler - A Legend of Golden Axe
+Baku Baku
 Castle of Illusion Starring Mickey Mouse
-Coca-Cola Kid
+Coca-Cola Kid (https://www.romhacking.net/translations/1189/)
 Columns
 Crystal Warriors
 Defenders of Oasis
 Fantasy Zone
 Fatal Fury Special
 Joe Montana Football
+Jurassic Park
 Legend of Illusion Starring Mickey Mouse
 Lucky Dime Caper Starring Donald Duck, The
+Lunar - Sanposuru Gakuen (https://www.romhacking.net/translations/1454/)
 Mighty Morphin Power Rangers - The Movie
 Ninja Gaiden
 Power Strike II
 Ristar
 Shining Force - The Sword of Hajya
+Shining Force Gaiden - Final Conflict
 Shinobi
 Shinobi II - The Silent Fury
 Sonic Drift 2
@@ -905,19 +910,24 @@ Alien Soldier
 Altered Beast
 Arnold Palmer Tournament Golf
 Bare Knuckle III (Streets of Rage III) (https://www.romhacking.net/translations/1375/)
+Battletech - A Game of Armored Combat
 Beyond Oasis
 Castlevania - Bloodlines
 Comix Zone
 Contra - Hard Corps (https://www.romhacking.net/hacks/797/)
 Crusader of Centy
+Desert Demolition Starring Road Runner and Wile E. Coyote
 Desert Strike - Return to the Gulf
 Dune - The Battle for Arrakis
+Dynamite Headdy (https://www.romhacking.net/translations/1113/)
 Earthworm Jim 2
 Evander Holyfield's 'Real Deal' Boxing
 Fix-It Felix Jr. (http://68000.web.fc2.com/felix/index.html)
 Flashback - The Quest for Identity
 Ghostbusters - Special Edition (https://www.romhacking.net/hacks/7761/)
 Golden Axe
+Golden Axe II
+Golden Axe III
 Greatest Heavyweights
 Gunstar Heroes
 Herzog Zwei
@@ -929,6 +939,7 @@ Landstalker
 Lost Vikings, The
 Madden NFL 95
 Marble Madness
+McDonald's Treasure Land Adventure
 Mega Turrican
 Michael Jackson's Moonwalker
 Micro Machines 2 - Turbo Tournament 
@@ -943,23 +954,28 @@ NHL '94 - 2024 Edition (https://www.romhacking.net/hacks/8267/)
 OutRun (https://www.romhacking.net/reviews/3478/)
 PGA European Tour
 PGA Tour Golf II
+Phantasy Star II
 Phantasy Star IV
 Pirates! Gold
 Populous
+Punisher
 QuackShot Starring Donald Duck
 Ranger X
 Revenge of Shinobi, The
 Road Rash 3
 Rocket Knight Adventures
+Sagaia
 Shadow Dancer - The Secret of Shinobi
 Shadowrun
 Shining Force II
 Shinobi III - Return of the Ninja Master
 Sonic & Knuckles + Sonic The Hedgehog 3
+Sonic Spinball
 Sonic The Hedgehog
 Sonic The Hedgehog 2
 Space Harrier II
 Sparkster
+Star Trek - The Next Generation - Echoes from the Past
 Streets of Rage
 Streets of Rage 2
 Strider
@@ -973,8 +989,10 @@ Teenage Mutant Ninja Turtles - Shredder's Re-Revenge (https://www.romhacking.net
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
 Thunder Force IV
 ToeJam & Earl
+ToeJam & Earl in Panic on Funkotron
 Ultimate Mortal Kombat 3
 Urban Strike
+Vectorman
 World of Illusion Starring Mickey Mouse and Donald Duck
 World Series Baseball 98
 X-Men
