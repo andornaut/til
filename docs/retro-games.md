@@ -641,7 +641,7 @@ Super Mario Bros. 3
 Super Mario Bros.
 Tecmo Super Bowl 2024 (https://tecmobowl.org/files/file/868-tecmo-super-bowl-2024/)
 Teenage Mutant Ninja Turtles III - The Manhattan Project
-Zelda II - The Adventure of Link
+Zelda II - The Adventure of Link (https://github.com/ShadowOne333/Zelda2-Redux)
 ```
 ### Nintendo - Super Nintendo Entertainment System (SFC, SNES) - November 21, 1990
 ```
@@ -651,7 +651,7 @@ Batman Returns
 Biker Mice from Mars
 Breath of Fire II
 Chrono Trigger
-Contra III - The Alien Wars
+Contra III - The Alien Wars (https://github.com/VitorVilela7/SA1-Root/tree/master/Contra-III)
 Donkey Kong Country 2 - Diddy's Kong Quest
 Donkey Kong Country 3 - Dixie Kong's Double Trouble!
 Donkey Kong Country
@@ -660,6 +660,7 @@ Final Fantasy III
 Final Fantasy II
 Final Fantasy - Mystic Quest
 F-Zero
+Gradius III (https://github.com/VitorVilela7/SA1-Root/tree/master/Gradius-III)
 Harvest Moon
 Hook
 Illusion of Gaia
@@ -667,20 +668,21 @@ Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
 Kirby's Dream Land 3
 Kirby Super Star
-Legend of Zelda, The - A Link to the Past
+Legend of Zelda, The - A Link to the Past (https://www.romhacking.net/reviews/11915)
 Lemmings
 Lion King, The
 Lufia II - Rise of the Sinistrals
 Magical Quest Starring Mickey Mouse, The
 Mario Paint
 Marvel Super Heroes in War of the Gems
+Mega Man X3 (https://www.romhacking.net/hacks/4086/)
 Mega Man X2
 Mega Man X
 Metal Warriors
 Mighty Morphin Power Rangers - The Fighting Edition
 Ms. Pac-Man
 Pilotwings
-Secret of Mana
+Secret of Mana (https://www.romhacking.net/reviews/8862/)
 Shin Kidou Senki Gundam W - Endless Duel
 Side Pocket
 SimCity 2000 - The Ultimate City Simulator
@@ -702,6 +704,7 @@ Super Mario World 2 - Yoshi's Island
 Super Mario World
 Super Metroid
 Super Punch-Out!!
+Super R-Type (https://github.com/VitorVilela7/SA1-Root/tree/master/Super-R-Type)
 Super Tennis
 Super Turrican 2
 Tecmo Super Bowl
@@ -925,6 +928,7 @@ Evander Holyfield's 'Real Deal' Boxing
 Fix-It Felix Jr. (http://68000.web.fc2.com/felix/index.html)
 Flashback - The Quest for Identity
 Ghostbusters - Special Edition (https://www.romhacking.net/hacks/7761/)
+Ghouls'n Ghosts
 Golden Axe
 Golden Axe II
 Golden Axe III
@@ -975,6 +979,7 @@ Sonic The Hedgehog
 Sonic The Hedgehog 2
 Space Harrier II
 Sparkster
+Splatterhouse 3
 Star Trek - The Next Generation - Echoes from the Past
 Streets of Rage
 Streets of Rage 2
