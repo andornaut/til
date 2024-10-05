@@ -655,7 +655,7 @@ Aerobiz Supersonic
 Batman Returns
 Biker Mice from Mars
 Breath of Fire II
-Chrono Trigger
+Chrono Trigger (https://www.romhacking.net/hacks/3147/)
 Contra III - The Alien Wars (https://github.com/VitorVilela7/SA1-Root/tree/master/Contra-III)
 Donkey Kong Country 2 - Diddy's Kong Quest
 Donkey Kong Country 3 - Dixie Kong's Double Trouble!
