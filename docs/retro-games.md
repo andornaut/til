@@ -396,7 +396,7 @@ Mega Man V
 Metroid II - Return of Samus
 Mole Mania
 Operation C
-Pokemon - Red Version
+Pokemon - Red Version (https://github.com/jojobear13/shinpokered)
 Pokemon - Yellow Version - Special Pikachu Edition
 Super Mario Land 2 - 6 Golden Coins
 Super Mario Land
@@ -427,20 +427,24 @@ F-Zero - Maximum Velocity
 Golden Sun - The Lost Age
 Golden Sun
 Gunstar Super Heroes
+Hamtaro - Ham-Ham Games
 Harvest Moon - Friends of Mineral Town
+Justice League Heroes - The Flash
 Kirby & The Amazing Mirror
+Kirby - Nightmare in Dream Land
 Legend of Zelda, The - The Minish Cap
 Mario Kart - Super Circuit
 Mario & Luigi - Superstar Saga
 Megaman - Battle Network 3 - Blue Version
 Mega Man Zero
 Metroid Fusion
-Metroid - Zero Mission
+Metroid - Zero Mission (https://www.romhacking.net/reviews/7650/)
 Mother 3
 Ninja Five-0
 Pokemon - Emerald Version
 Pokemon - FireRed Version
 Pokemon - LeafGreen Version
+Pokemon Mystery Dungeon - Red Rescue Team
 Pokemon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
 Shining Force - Resurrection of the Dark Dragon
 Sigma Star Saga
@@ -450,6 +454,7 @@ Spider-Man - Mysterio's Menace
 Spyro 2 - Season of Flame
 Super Mario Advance 3 - Yoshi's Island
 Super Monkey Ball Jr.
+Sword of Mana
 TMNT
 Tony Hawk's Pro Skater 2
 Ultimate Card Games
@@ -464,7 +469,7 @@ Game & Watch Gallery 2
 Game & Watch Gallery 3
 Harry Potter and the Chamber of Secrets
 Harry Potter and the Sorcerer's Stone
-Legend of Zelda, The - Link's Awakening DX
+Legend of Zelda, The - Link's Awakening DX (https://www.romhacking.net/hacks/3597/)
 Legend of Zelda, The - Oracle of Ages
 Legend of Zelda, The - Oracle of Seasons
 Magi Nation
@@ -818,6 +823,8 @@ Crystal Warriors
 Defenders of Oasis
 Fantasy Zone
 Fatal Fury Special
+Frank Thomas Big Hurt Baseball
+Godzilla - Kaijuu Daishingeki (Godzilla - Monsters Attack, https://www.romhacking.net/translations/4140/)
 Joe Montana Football
 Jurassic Park
 Legend of Illusion Starring Mickey Mouse
