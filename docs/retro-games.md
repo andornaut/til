@@ -344,7 +344,7 @@ Wolfenstein 3D
 * [List Japanese releases that are playable in English](https://www.reddit.com/r/TurboGrafx/comments/g047qm/pc_engine_games_that_are_fully_in_english/)
 
 ```
-Akumajou Dracula X - Chi no Rondo (Castlevania - Rondo of Blood) (https://www.romhacking.net/translations/846/)
+Akumajou Dracula X - Chi no Rondo (Castlevania - Rondo of Blood, https://www.romhacking.net/translations/846/)
 Bonk III - Bonk's Big Adventure
 Cosmic Fantasy 2
 Dragon Slayer - The Legend of Heroes
@@ -509,6 +509,7 @@ Super Mario Sunshine
 Super Monkey Ball
 Super Smash Bros. Melee
 Timesplitters 2
+Tobu Tobu Girl Deluxe (https://tangramgames.itch.io/tobu-tobu-girl-deluxe)
 Tony Hawk's Pro Skater 3
 Viewtiful Joe 
 ```
@@ -919,7 +920,7 @@ Aladdin
 Alien Soldier
 Altered Beast
 Arnold Palmer Tournament Golf
-Bare Knuckle III (Streets of Rage III) (https://www.romhacking.net/translations/1375/)
+Bare Knuckle III (Streets of Rage III, https://www.romhacking.net/translations/1375/)
 Battletech - A Game of Armored Combat
 Beyond Oasis
 Castlevania - Bloodlines
@@ -1016,7 +1017,7 @@ X-Men 2 - Clone Wars
 * [Sega Saturn Patcher](https://segaxtreme.net/resources/sega-saturn-patcher.73/)
 
 ```
-Akumajou Dracula X - Gekka no Yasoukyoku (Castlevania - Symphony of the Night) (https://segaxtreme.net/resources/dracula-x-symphony-of-the-night.83/)
+Akumajou Dracula X - Gekka no Yasoukyoku (Castlevania - Symphony of the Night, https://segaxtreme.net/resources/dracula-x-symphony-of-the-night.83/)
 Astal
 Baku Baku Animal - World Zookeeper Contest
 Batsugun
@@ -1160,8 +1161,7 @@ OutRun 2006 - Coast 2 Coast
 PaRappa the Rapper
 Patapon 2
 PES 2014 - Pro Evolution Soccer
-Phantasy Star Portable 2 Infinity
-(https://gbatemp.net/threads/phantasy-star-portable-2-infinity-english-localization-v2-update-released-august-2022.576943/)
+Phantasy Star Portable 2 Infinity (https://gbatemp.net/threads/phantasy-star-portable-2-infinity-english-localization-v2-update-released-august-2022.576943/)
 Ratchet & Clank - Size Matters
 Resistance - Retribution
 Ridge Racer 2
