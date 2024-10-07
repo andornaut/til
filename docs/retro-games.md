@@ -426,6 +426,7 @@ Fire Emblem - The Sacred Stones
 F-Zero - Maximum Velocity
 Golden Sun - The Lost Age
 Golden Sun
+Goodboy Galaxy (demo, https://goodboygalaxy.itch.io/goodboy-galaxy-demo)
 Gunstar Super Heroes
 Hamtaro - Ham-Ham Games
 Harvest Moon - Friends of Mineral Town
@@ -481,6 +482,7 @@ Pokemon Pinball
 Revelations - The Demon Slayer
 Shantae
 Star Wars Episode I - Obi-Wan's Adventures
+Tobu Tobu Girl Deluxe (https://tangramgames.itch.io/tobu-tobu-girl-deluxe)
 Wario Land 3
 Wario Land II
 Wendy - Every Witch Way
@@ -509,7 +511,6 @@ Super Mario Sunshine
 Super Monkey Ball
 Super Smash Bros. Melee
 Timesplitters 2
-Tobu Tobu Girl Deluxe (https://tangramgames.itch.io/tobu-tobu-girl-deluxe)
 Tony Hawk's Pro Skater 3
 Viewtiful Joe 
 ```
