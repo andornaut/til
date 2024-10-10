@@ -653,6 +653,7 @@ Zelda II - The Adventure of Link (https://github.com/ShadowOne333/Zelda2-Redux)
 ### Nintendo - Super Nintendo Entertainment System (SFC, SNES) - November 21, 1990
 ```
 ActRaiser
+Adventures of Batman & Robin, The
 Aerobiz Supersonic
 Batman Returns
 Biker Mice from Mars
