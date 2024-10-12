@@ -222,7 +222,7 @@ Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/l
 Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Doesn't support .m3u)
 Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/)
 Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) ([Core System Files](https://github.com/hrydgard/ppsspp), [Optimization](https://www.reddit.com/r/ANBERNIC/comments/1fkztb1/universal_pppsspp_configuration_for_unmatched/))
-The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) |
+The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) 
 
 ### Drivers
 
@@ -347,23 +347,24 @@ Battle Wheels
 Blue Lightning
 Checkered Flag
 Chip's Challenge
-Cyberball
-Eye of the Beholder
+ *Cyberball
+ *Eye of the Beholder
 Gates of Zendocon
 Klax
 Ninja Gaiden
 Rampart
-RoadBlasters
+Road Blasters
 Robotron - 2084
 Rygar
 Shadow of the Beast
+Shanghai
 S.T.U.N. Runner
 Todd's Adventures in Slime World
 Toki
 WarBirds
 Xenophobe
 Xybots
-Zaku
+ *Zaku
 Zarlor Mercenary
 ```
 ### NEC - PC Engine CD - TurboGrafx-CD - December 4, 1988
