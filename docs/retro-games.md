@@ -399,7 +399,7 @@ Zarlor Mercenary
 ```
 ### NEC - PC Engine CD - TurboGrafx-CD - December 4, 1988
 * [English translation ROM hacks](https://www.romhacking.net/?page=translations&genre=&platform=5&status=&languageid=12&perpage=20&order=&dir=&title=&author=&transsearch=Go)
-* [List Japanese releases that are playable in English](https://www.reddit.com/r/TurboGrafx/comments/g047qm/pc_engine_games_that_are_fully_in_english/)
+* [Japanese releases that are playable in English](https://www.reddit.com/r/TurboGrafx/comments/g047qm/pc_engine_games_that_are_fully_in_english/)
 ```
 Akumajou Dracula X - Chi no Rondo (Castlevania - Rondo of Blood, https://www.romhacking.net/translations/846/)
 Bonk III - Bonk's Big Adventure
@@ -417,7 +417,7 @@ Wonder Boy III - Monster Lair
 Ys Book I & II
 Ys IV - The Dawn of Ys (https://www.romhacking.net/translations/514/)
 ```
-### NEC - PC Engine - TurboGrafx 16 (PCE) - October 30, 1987
+### NEC - PC Engine - TurboGrafx 16 (PCE, TG-16) - October 30, 1987
 ```
 Air Zonk
 Alien Crush
