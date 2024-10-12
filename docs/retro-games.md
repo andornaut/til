@@ -201,6 +201,7 @@ which may occur if RetroArch crashes before it is able to clean up.
 
 Platform | Desktop core (x64) | Handheld core (ARM)
 --- | --- | ---
+Atari - 7800 | [ProSystem](https://docs.libretro.com/library/prosystem/) | 
 Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
 Atari - Lynx | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/)
 NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/)
@@ -326,20 +327,48 @@ video_driver = "vulcan"
 
 ## Games
 
+### Atari - 7800 - May 1986
+```
+Alien Brigade
+Asteroids
+Ballblazer
+Centipede
+Commando
+Desert Falcon
+Dig Dug
+Donkey Kong
+Donkey Kong Junior
+Food Fight
+Galaga
+Joust
+Mario Bros.
+Midnight Mutants
+Ms. Pac-Man
+Ninja Golf
+Pole Position II
+Winter Games
+Xevious
+```
 ### Atari - Jaguar - November 23, 1993
 ```
 Alien vs Predator
+Attack of the Mutant Penguins
 Cannon Fodder
 Defender 2000
+Fight for Life
 Flashback - The Quest for Identity
+International Sensible Soccer
 Iron Soldier
+Pinball Fantasies
 Power Drive Rally
 Protector - Special Edition
 Raiden
 Ruiner Pinball
+Skyhammer
 Super Burnout
 Tempest 2000
 Wolfenstein 3D
+Worms
 ```
 ### Atari - Lynx - September 1, 1989
 ```
@@ -371,7 +400,6 @@ Zarlor Mercenary
 ### NEC - PC Engine CD - TurboGrafx-CD - December 4, 1988
 * [English translation ROM hacks](https://www.romhacking.net/?page=translations&genre=&platform=5&status=&languageid=12&perpage=20&order=&dir=&title=&author=&transsearch=Go)
 * [List Japanese releases that are playable in English](https://www.reddit.com/r/TurboGrafx/comments/g047qm/pc_engine_games_that_are_fully_in_english/)
-
 ```
 Akumajou Dracula X - Chi no Rondo (Castlevania - Rondo of Blood, https://www.romhacking.net/translations/846/)
 Bonk III - Bonk's Big Adventure
@@ -1227,10 +1255,13 @@ Ys - The Oath in Felghana
 Alone in the Dark 2
 BrainDead 13
 Captain Quazar
+Crash 'n Burn
 Dragon's Lair
 FIFA International Soccer
 Gex
-Guardian War 
+Guardian War
+Lucienne's Quest
+Out of This World
 Return Fire
 Road & Track Presents - The Need for Speed
 Road Rash
@@ -1243,6 +1274,7 @@ Starblade
 Super Street Fighter II Turbo
 Super Wing Commander
 Total Eclipse
+Twisted - The Game Show
 Wing Commander III - Heart of the Tiger
 Wolfenstein 3D
 ```
