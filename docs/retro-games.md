@@ -202,6 +202,7 @@ which may occur if RetroArch crashes before it is able to clean up.
 Platform | Desktop core (x64) | Handheld core (ARM)
 --- | --- | ---
 Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
+Atari - Lynx | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/)
 NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/)
 NEC - PC Engine CD - TurboGrafx-CD (PCECD) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/)
 Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) 
@@ -339,6 +340,31 @@ Ruiner Pinball
 Super Burnout
 Tempest 2000
 Wolfenstein 3D
+```
+### Atari - Lynx - September 1, 1989
+```
+Battle Wheels
+Blue Lightning
+Checkered Flag
+Chip's Challenge
+Cyberball
+Eye of the Beholder
+Gates of Zendocon
+Klax
+Ninja Gaiden
+Rampart
+RoadBlasters
+Robotron - 2084
+Rygar
+Shadow of the Beast
+S.T.U.N. Runner
+Todd's Adventures in Slime World
+Toki
+WarBirds
+Xenophobe
+Xybots
+Zaku
+Zarlor Mercenary
 ```
 ### NEC - PC Engine CD - TurboGrafx-CD - December 4, 1988
 * [English translation ROM hacks](https://www.romhacking.net/?page=translations&genre=&platform=5&status=&languageid=12&perpage=20&order=&dir=&title=&author=&transsearch=Go)
