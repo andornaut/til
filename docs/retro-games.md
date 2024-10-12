@@ -347,8 +347,8 @@ Battle Wheels
 Blue Lightning
 Checkered Flag
 Chip's Challenge
- *Cyberball
- *Eye of the Beholder
+Crystal Mines II
+Eye of the Beholder
 Gates of Zendocon
 Klax
 Ninja Gaiden
@@ -361,10 +361,11 @@ Shanghai
 S.T.U.N. Runner
 Todd's Adventures in Slime World
 Toki
+Tournament Cyberball
 WarBirds
 Xenophobe
 Xybots
- *Zaku
+Zaku
 Zarlor Mercenary
 ```
 ### NEC - PC Engine CD - TurboGrafx-CD - December 4, 1988
