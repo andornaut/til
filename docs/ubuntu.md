@@ -111,6 +111,10 @@ Path |Usage
 `/var/lib/flatpak/exports/share/applications/` | Flatpak --system applications
 
 ```
+# Use a TUI program to set default association
+apt install libfile-mimeinfo-perl
+mimeopen -d existing.pdf
+
 # Get the mimetype for a given file:
 xdg-mime query filetype existing.pdf
 > application/pdf
