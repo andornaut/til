@@ -201,7 +201,7 @@ which may occur if RetroArch crashes before it is able to clean up.
 
 Platform | Desktop core (x64) | Handheld core (ARM)
 --- | --- | ---
-Atari - 7800 | [ProSystem](https://docs.libretro.com/library/prosystem/) | 
+Atari - 7800 | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/)
 Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
 Atari - Lynx | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/)
 NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/)
