@@ -53,7 +53,7 @@ am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n or
 1. Open Launcher Manager app and select the "Projectivy Launcher"
 
 Do not install enable "Projectivy Launcher" in Android's accessibility settings as directed by Projectivy, because
-doing so will trigger the following bug as noted in the first post on the [official Projectivy Launcher thread](https://xdaforums.com/t/app-android-tv-projectivy-launcher.4436549/#post-86794031):
+doing so will trigger the following bug as noted in the first post on the [official Projectivy Launcher thread](https://xdaforums.com/t/app-android-tv-projectivy-launcher.4436549/#post-86794031) (see, also, this [post on Reddit](https://www.reddit.com/r/AndroidTV/comments/1bictvi/projectivity_launcher_and_soundbar_volume_issue/)]:
 
 > long press on volume buttons doesn't work on FengOs : there's a bug on FengOs -> as soon as an accessibility service is enabled (Projectivy Launcher, but also Button Mapper for example), the long press volume buttons doesn't work anymore.
 
