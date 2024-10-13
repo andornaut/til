@@ -1,6 +1,6 @@
 # Android
 
-## ADB
+## ADB Debugging
 
 * [ADB tips and tricks](https://www.xda-developers.com/adb-tips-tricks/)
 * [HomeAssistant Android Debug Bridge setup](https://www.home-assistant.io/integrations/androidtv/#adb-setup)
@@ -35,7 +35,31 @@ am start -a android.intent.action.VIEW -n com.netflix.ninja/.MainActivity
 am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n org.videolan.vlc/.gui.video.VideoPlayerActivity
 ```
 
-### Apps 
+## Android TV / Google TV
+
+### Projectivy Launcher
+
+* [GitHub](https://github.com/spocky/miproja1)
+* [Google Play](https://play.google.com/store/apps/details?id=com.spocky.projengmenu&hl=en_CA)
+* [XDA Forums](https://xdaforums.com/t/app-android-tv-projectivy-launcher.4436549/)
+
+#### Installation and setup
+
+1. Install the [Projectivy app](https://play.google.com/store/apps/details?id=com.spocky.projengmenu&hl=en_CA)
+1. Enable [ADB Debugging][#ADB Debugging] (Required by the "Launcher Manager" app)
+1. Install the [Downloader app](https://play.google.com/store/apps/details?id=com.esaba.downloader&hl=en)
+1. Open the Downloader app and paste the URL: https://troypoint.com/launcher-manager/
+1. Scroll to the bottom and install "Launcher Manager"
+1. Open Launcher Manager app and select the "Projectivy Launcher"
+
+Do not install enable "Projectivy Launcher" in Android's accessibility settings as directed by Projectivy, because
+doing so will trigger the following bug as noted in the first post on the [official Projectivy Launcher thread](https://xdaforums.com/t/app-android-tv-projectivy-launcher.4436549/#post-86794031):
+
+> long press on volume buttons doesn't work on FengOs : there's a bug on FengOs -> as soon as an accessibility service is enabled (Projectivy Launcher, but also Button Mapper for example), the long press volume buttons doesn't work anymore.
+
+The workaround is to disable "Projectivy Launcher" in Android's accessibility settings, which is fine as long as "Launcher Manager" is configured as described above.
+
+### TV Apps 
 
 App | Intent
 --- | ---
