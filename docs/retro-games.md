@@ -763,6 +763,7 @@ Super Adventure Island II
 Super Bomberman
 Super Castlevania IV
 Super Double Dragon
+Super Ghouls 'N Ghosts
 Super Mario All-Stars
 Super Mario Kart
 Super Mario RPG - Legend of the Seven Stars
@@ -817,7 +818,8 @@ Pitfall - The Mayan Adventure
 Space Harrier
 Star Trek - Starfleet Academy - Starship Bridge Simulator
 Star Wars Arcade
-Stellar Assault
+Stellar Assault (aka Shadow Squadron)
+Tempo
 Virtua Fighter
 Virtua Racing Deluxe
 WWF WrestleMania - The Arcade Game
