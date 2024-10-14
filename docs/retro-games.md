@@ -1315,6 +1315,7 @@ Wolfenstein 3D
 * [Maldita Castilla](http://portmaster.games/detail.html?name=maldita.castilla&devices=)
 * [Minetest](http://portmaster.games/detail.html?name=minetest) - Requires more than 1GB of RAM for single player
 * [OpenRCT2](http://portmaster.games/detail.html?name=openrct2)*
+* [Pokemon Reborn](https://portmaster.games/detail.html?name=reborn)
 * [RAWGL](http://portmaster.games/detail.html?name=rawgl)
 * [Shovel Knight Treasure Trove](http://portmaster.games/detail.html?name=shovel.knight)*
 * [Sonic Mania](https://portmaster.games/detail.html?name=sonic.mania)*
@@ -1327,3 +1328,11 @@ Wolfenstein 3D
 * [VCMI - Heroes of Might and Magic III](http://portmaster.games/detail.html?name=vcmi&devices=)*
 
 (`*` indicates that the port requires additional files to be installed)
+
+#### Running steam console in Flatpak (used to download some PortMaster port files)
+
+* [StackExchange](https://gaming.stackexchange.com/a/402182)
+
+```
+flatpak run com.valvesoftware.Steam "steam://open/console"
+```
