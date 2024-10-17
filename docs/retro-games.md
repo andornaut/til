@@ -661,6 +661,8 @@ World Ends with You, The
 ### Nintendo - Nintendo Entertainment System (FC, NES) - October 18, 1985
 ```
 Alwas Awakening
+Adventure Island 3
+Adventures of Lolo
 Batman - The Video Game
 Battletoads
 Bionic Commando
@@ -669,6 +671,8 @@ Blaster Master
 Bubble Bobble
 Castlevania III - Dracula's Curse
 Chip 'n Dale - Rescue Rangers
+Chip 'n Dale - Rescue Rangers 2
+Cobra Triangle
 Contra
 Crisis Force
 Crystalis
@@ -682,22 +686,29 @@ Dr. Mario
 DuckTales
 Excitebike
 Faxanadu
+G.I. Joe - A Real American Hero
 Ghosts'n Goblins
 Gradius
 Guardian Legend, The
 Gun Nac
+Kid Icarus
 Kirby's Adventure
 Legend of Zelda, The
 Life Force
 Little Samson
 Maniac Mansion
 Mega Man 2
+Mega Man 3
 Mega Man 4
+Mega Man 5
+Mega Man 6
 Metroid
+Might and Magic - Book One - Secret of the Inner Sanctum
 NES Open Tournament Golf
 Ninja Gaiden
 Ninja Gaiden II - The Dark Sword of Chaos
 Pac-Man - Championship Edition (https://retroachievements.org/game/16549)
+Paperboy
 Pin Bot
 Punch-Out!!
 Q-bert
@@ -710,8 +721,11 @@ Super Mario Bros. 2
 Super Mario Bros. 3
 Super Mario Bros.
 Tecmo Super Bowl 2024 (https://tecmobowl.org/files/file/868-tecmo-super-bowl-2024/)
+Teenage Mutant Ninja Turtles II - The Arcade Game
 Teenage Mutant Ninja Turtles III - The Manhattan Project
+Wizardry - Proving Grounds of the Mad Overlord
 Zelda II - The Adventure of Link (https://github.com/ShadowOne333/Zelda2-Redux)
+Zoda's Revenge - StarTropics II
 ```
 ### Nintendo - Super Nintendo Entertainment System (SFC, SNES) - November 21, 1990
 ```
