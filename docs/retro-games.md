@@ -684,10 +684,13 @@ Excitebike
 Faxanadu
 Ghosts'n Goblins
 Gradius
+Guardian Legend, The
+Gun Nac
 Kirby's Adventure
 Legend of Zelda, The
 Life Force
 Little Samson
+Maniac Mansion
 Mega Man 2
 Mega Man 4
 Metroid
@@ -698,9 +701,11 @@ Pac-Man - Championship Edition (https://retroachievements.org/game/16549)
 Pin Bot
 Punch-Out!!
 Q-bert
+R.C. Pro-Am
 River City Ransom
 Rygar
 StarTropics
+Super Dodge Ball
 Super Mario Bros. 2
 Super Mario Bros. 3
 Super Mario Bros.
