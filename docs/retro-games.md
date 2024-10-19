@@ -576,29 +576,38 @@ Viewtiful Joe
 ```
 007 - The World Is Not Enough
 1080 Snowboarding
+Army Men - Sarge's Heroes 2
 Banjo-Kazooie
 Banjo-Tooie
 Blast Corps
 Bomberman 64
+Castlevania - Legacy of Darkness
 Conker's Bad Fur Day
+Cruis'n World
 Diddy Kong Racing
 Donkey Kong 64
+Doom 64
 Excitebike 64
 F-Zero X
+Goemon's Great Adventure
 GoldenEye 007
 Harvest Moon 64
 Indiana Jones and the Infernal Machine
 International Superstar Soccer 2000
 Jet Force Gemini
+Killer Instinct Gold
 Kirby 64 - The Crystal Shards
 Legend of Zelda, The - Majora's Mask
 Legend of Zelda, The - Ocarina of Time
 Mario Golf
 Mario Kart 64
+Mario Party 3
 Mario Tennis
 Mega Man 64
 Mischief Makers
 Mystical Ninja Starring Goemon
+Neon Genesis Evangelion
+NFL Blitz
 Ogre Battle 64 - Person of Lordly Caliber
 Paper Mario
 Perfect Dark
@@ -606,6 +615,7 @@ Pilotwings 64
 Pokemon Puzzle League
 Pokemon Snap
 Pokemon Stadium 2
+San Francisco Rush - Extreme Racing
 Sin and Punishment - Successor of the Earth  (https://www.romhacking.net/translations/920/)
 Star Fox 64
 Star Wars Episode I - Racer
@@ -615,6 +625,8 @@ Super Smash Bros.
 Turok 2 - Seeds of Evil
 Turok - Dinosaur Hunter
 Wave Race 64 - Kawasaki Jet Ski
+WCW-nWo Revenge
+WinBack - Covert Operations
 WWF No Mercy
 Yoshi's Story
 ```
