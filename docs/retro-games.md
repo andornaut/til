@@ -804,13 +804,17 @@ Zombies Ate My Neighbors
 ### Pico-8 - April 2015
 ```
 Ascent
+Beckon the Hellspawn
 Birds With Guns
 Breakout Hero
+Cab Ride
 Celeste
 Cherry Bomb
+Combo Pool
 Dank Tomb
 Dinky Kong
 Golf Sunday
+High Stakes
 Just One Boss
 Kalikan
 Low Mem Sky
@@ -823,7 +827,12 @@ PICOHOT
 PICORACER-2048
 Pico World Race
 Shooting Star
-Steel Surge: Revolution
+Splore
+Steel Surge Revolution
+Suika Game Demake
+Swordfish
+Wizards Rule
+Yggdrasil
 ```
 ### Sega - 32X - November 21, 1994
 ```
@@ -979,6 +988,7 @@ Lunar - Eternal Blue
 Lunar - The Silver Star
 Mickey Mania - The Timeless Adventures of Mickey Mouse
 Mortal Kombat
+NHL '94
 Night Trap
 Popful Mail
 Road Avenger
