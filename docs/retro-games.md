@@ -852,6 +852,7 @@ After Burner Complete
 Blackthorne
 Knuckles' Chaotix
 Kolibri
+Metal Head
 Mortal Kombat II
 NBA Jam - Tournament Edition
 Pitfall - The Mayan Adventure
@@ -863,6 +864,7 @@ Tempo
 Virtua Fighter
 Virtua Racing Deluxe
 WWF WrestleMania - The Arcade Game
+Zaxxon's Motherbase 2000
 ```
 ### Sega - Dreamcast (DC) - November 27, 1998
 ```
@@ -870,6 +872,7 @@ Bangai-O
 Border Down
 Capcom vs. SNK
 Crazy Taxi
+Cyber Troopers - Virtual-On - Oratorio Tangram
 Dead or Alive 2
 Dynamite Cop!
 Fur Fighters
