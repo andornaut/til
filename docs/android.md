@@ -65,7 +65,7 @@ Name | Description
 --- | ---
 [iSponsorBlock](https://github.com/Galactic-Dev/iSponsorBlock)| A jailbreak tweak that implements the SponsorBlock API to skip sponsorships in YouTube videos
 [NewPipe](https://github.com/TeamNewPipe/NewPipe/) | A libre lightweight streaming front-end for Android
-[ReVanced](revanced.app) | Android app
+[ReVanced](https://revanced.app) [/r/revancedapp/](https://www.reddit.com/r/revancedapp/) | YouTube app for Android with no adds, SponsorBlock integration, and video quality settings persistence
 [SmartTube GitHub](https://github.com/yuliskov/SmartTube) | An advanced player for set-top boxes and tvs running Android OS 
 
 ### TV Apps
