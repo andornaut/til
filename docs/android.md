@@ -23,7 +23,7 @@ pm list packages |\
   while read x; do cmd package resolve-activity --brief $x |\
   tail -n 1 |\
   grep -v "No activity found"; \
-  done
+  done | sort
 
 # Find activities from open windows
 dumpsys window windows|grep -i activity
@@ -59,7 +59,16 @@ doing so will trigger the following bug as noted in the first post on the [offic
 
 The workaround is to disable "Projectivy Launcher" in Android's accessibility settings, which is fine as long as "Launcher Manager" is configured as described above.
 
-### TV Apps 
+### YouTube app alternatives
+
+Name | Description
+--- | ---
+[iSponsorBlock](https://github.com/Galactic-Dev/iSponsorBlock)| A jailbreak tweak that implements the SponsorBlock API to skip sponsorships in YouTube videos
+[NewPipe](https://github.com/TeamNewPipe/NewPipe/) | A libre lightweight streaming front-end for Android
+[ReVanced](revanced.app) | Android app
+[SmartTube GitHub](https://github.com/yuliskov/SmartTube) | An advanced player for set-top boxes and tvs running Android OS 
+
+### TV Apps
 
 App | Intent
 --- | ---
@@ -69,6 +78,7 @@ CraveTV | ca.bellmedia.cravetv/axis.androidtv.sdk.app.MainActivity
 Disney+ | com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity
 NetFlix | com.netflix.ninja/.MainActivity
 Prime Video | com.amazon.amazonvideo.livingroom/com.amazon.ignition.IgnitionActivity
+SmartTube | com.liskovsoft.smarttubetv.beta/com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity
 VLC | org.videolan.vlc/.StartActivity
 YouTube | com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity
 YouTube Kids | com.google.android.youtube.tvkids/com.google.android.apps.youtube.tvkids.activity.MainActivity 
