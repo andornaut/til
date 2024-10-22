@@ -764,6 +764,7 @@ Hook
 Illusion of Gaia
 Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
+King of Dragons
 Kirby's Dream Land 3
 Kirby Super Star
 Legend of Zelda, The - A Link to the Past (https://www.romhacking.net/reviews/11915)
