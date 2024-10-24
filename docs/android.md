@@ -51,7 +51,7 @@ am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n or
 1. Install the [Projectivy app](https://play.google.com/store/apps/details?id=com.spocky.projengmenu&hl=en_CA) from Google Play Store
 1. Enable [ADB Debugging](#adb-debugging) (Required by the "Launcher Manager" app)
 1. Install the [Downloader app](https://play.google.com/store/apps/details?id=com.esaba.downloader&hl=en) from Google Play Store
-1. Open the Downloader app and paste the URL: https://troypoint.com/launcher-manager/
+1. Open the Downloader app and paste the URL: https://troypoint.com/troypoint-toolbox/
 1. Scroll to the bottom and install "Launcher Manager"
 1. Open Launcher Manager app and select the "Projectivy Launcher"
 
