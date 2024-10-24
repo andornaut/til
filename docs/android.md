@@ -47,6 +47,7 @@ am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n or
 
 #### Installation and setup
 
+
 1. Install the [Projectivy app](https://play.google.com/store/apps/details?id=com.spocky.projengmenu&hl=en_CA)
 1. Enable [ADB Debugging](#adb-debugging) (Required by the "Launcher Manager" app)
 1. Install the [Downloader app](https://play.google.com/store/apps/details?id=com.esaba.downloader&hl=en)
@@ -69,6 +70,12 @@ Name | Description
 [NewPipe](https://github.com/TeamNewPipe/NewPipe/) | A libre lightweight streaming front-end for Android
 [ReVanced](https://revanced.app) [/r/revancedapp/](https://www.reddit.com/r/revancedapp/) | YouTube app for Android with no adds, SponsorBlock integration, and video quality settings persistence
 [SmartTube GitHub](https://github.com/yuliskov/SmartTube) | An advanced player for set-top boxes and tvs running Android OS 
+
+#### SmartTube
+
+1. Install the [Downloader app by AFTVnews](https://www.aftvnews.com/downloader/)
+1. Open the Downloader app and paste the URL: https://kutt.it/stn_beta
+1. Download and install [SmartTube](https://github.com/yuliskov/SmartTube)
 
 ### TV Apps
 
