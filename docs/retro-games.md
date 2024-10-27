@@ -504,6 +504,7 @@ Pokemon - Emerald Version
 Pokemon - FireRed Version
 Pokemon - LeafGreen Version
 Pokemon Mystery Dungeon - Red Rescue Team
+Pokemon Pinball - Ruby & Sapphire
 Pokemon Unbound (https://www.pokecommunity.com/showthread.php?t=382178)
 Shining Force - Resurrection of the Dark Dragon
 Sigma Star Saga
@@ -817,6 +818,7 @@ Zombies Ate My Neighbors
 ```
 ### Pico-8 - April 2015
 ```
+Alpine Alpaca
 Ascent
 Beckon the Hellspawn
 Birds With Guns
