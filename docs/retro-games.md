@@ -138,6 +138,12 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 1. Navigate to Apps > RetroArch -> Information > Core Information
 1. Confirm that the BIOS files that you added are listed as "present"
 
+### Retroid Pocket Mini
+
+* [Official store](https://www.goretroid.com/en-ca/collections/frontpage/products/retroid-pocket-mini-handheld)
+* [ROCKNIX](https://github.com/ROCKNIX/distribution) - Custom firmware
+  * [Retroid Pocket Mini details](https://rocknix.org/devices/retroid/retroid-pocket-mini/)
+
 ### Xbox Series
 
 * [gamr13.github.io](https://gamr13.github.io/)
@@ -492,6 +498,7 @@ Justice League Heroes - The Flash
 Kirby & The Amazing Mirror
 Kirby - Nightmare in Dream Land
 Legend of Zelda, The - The Minish Cap
+Lord of the Rings, The - The Two Towers
 Mario Kart - Super Circuit
 Mario & Luigi - Superstar Saga
 Megaman - Battle Network 3 - Blue Version
@@ -1192,6 +1199,7 @@ Grandia
 Gundam Battle Assault 2
 Hot Shots Golf
 Klonoa - Door to Phantomile
+Legend of Dragoon, The
 Marvel vs. Capcom - Clash of Super Heroes
 MediEvil
 Mega Man Legends
@@ -1211,6 +1219,7 @@ Suikoden II
 Syphon Filter
 Tekken 3
 Tomb Raider
+Tomba!
 Twisted Metal 2
 Valkyrie Profile
 Vandal Hearts
