@@ -15,6 +15,7 @@
   * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
 * [TheGamesDB](https://thegamesdb.net)
 * [/r/Roms Megathread](https://r-roms.github.io/)
+  * [BIOS files](https://r-roms.github.io/megathread/misc/#bios-files)
 * [/v/'s Recommended Games Wiki](https://vsrecommendedgames.fandom.com/wiki/V/%27s_Recommended_Games_Wiki)
 * [Video Game Museum](https://www.video-games-museum.com/en)
 * [Vimm's Lair](https://vimm.net/)
@@ -131,7 +132,7 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 ##### RetroArch Core BIOS files
 
 1. Find the names of recommended BIOS' for each of your emulators from the [Onion Wiki](https://onionui.github.io/docs/emulators/consoles)
-1. Download the [BIOS files](https://archive.org/download/RetroarchSystemFiles/Retroarch-System/)
+1. Download the [BIOS files](https://github.com/Abdess/retroarch_system)
 1. Add bios files to [`/mnt/SDCARD/BIOS`](https://onionui.github.io/docs/emulators#bios-files) on the Miyoo Mini+
 1. Navigate to Apps > RetroArch > Load Core
 1. Select a Core to test
@@ -184,7 +185,6 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
   * [Docs](https://docs.libretro.com/)
 * [RetroArch on Flathub](https://flathub.org/apps/details/org.libretro.RetroArch)
 * [BIOS on GitHub](https://github.com/Abdess/retroarch_system)
-* [BIOS on Internet Archive](https://archive.org/download/RetroarchSystemFiles/Retroarch-System/)
 * [RGC: RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/)
 * [Keyboard bindings for Menus/UI](https://docs.libretro.com/guides/input-and-controls/#menu-controls)
 * [RGC: Shaders and Overlays on Retro Handhelds](https://retrogamecorps.com/2024/09/01/guide-shaders-and-overlays-on-retro-handhelds/)
@@ -228,6 +228,7 @@ Sega - Mega-CD - Sega CD | [Genesis Plus GX](https://docs.libretro.com/library/g
 Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Doesn't support .m3u)
 Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/)
+Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) |
 Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) ([Core System Files](https://github.com/hrydgard/ppsspp), [Optimization](https://www.reddit.com/r/ANBERNIC/comments/1fkztb1/universal_pppsspp_configuration_for_unmatched/))
 The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) 
 
@@ -1230,32 +1231,30 @@ Xenogears
 ### Sony - PlayStation 2 (PS2) - 4 March 2000
 ```
 Baldur's Gate - Dark Alliance II
+Burnout 3 - Takedown
 Champions of Norrath
 Devil May Cry 3 - Dante's Awakening
+Dragon Quest VIII - Journey of the Cursed King
+Final Fantasy X
+God Hand
 God of War II
 Gradius V
 Gran Turismo 4
 Grand Theft Auto - San Andreas
 Grand Theft Auto - Vice City
 Hitman - Blood Money
-King of Fighters '98, The - Ultimate Match
-Mega Man X8
-Monster Hunte
-Ōkami
-Psychonauts
-Virtua Fighter 4 - Evolution
-
-Burnout 3 - Takedown
-Dragon Quest VIII - Journey of the Cursed King
-Final Fantasy X
-God Hand
 Jak and Daxter - The Precursor Legacy
 Katamari Damacy
+King of Fighters '98, The - Ultimate Match
 Lord of the Rings, The - The Two Towers
+Mega Man X8
 Midnight Club 3 - DUB Edition
+Monster Hunte
 Nickelodeon SpongeBob SquarePants - Battle for Bikini Bottom
+Ōkami
 Oni
 Prince of Persia - The Sands of Time
+Psychonauts
 Ratchet & Clank - Up Your Arsenal!
 Rogue Galaxy
 Shadow of the Colossus
@@ -1267,6 +1266,7 @@ SSX 3
 Thunder Force VI
 TimeSplitters 2
 Tony Hawk's Pro Skater 4
+Virtua Fighter 4 - Evolution
 X-Men Legends
 ```
 ### Sony - PlayStation Portable (PSP) - December 11, 2004
