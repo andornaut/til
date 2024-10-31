@@ -1227,6 +1227,48 @@ Wipeout XL
 X-Men - Mutant Apocalypse
 Xenogears
 ```
+### Sony - PlayStation 2 (PS2) - 4 March 2000
+```
+Baldur's Gate - Dark Alliance II
+Champions of Norrath
+Devil May Cry 3 - Dante's Awakening
+God of War II
+Gradius V
+Gran Turismo 4
+Grand Theft Auto - San Andreas
+Grand Theft Auto - Vice City
+Hitman - Blood Money
+King of Fighters '98, The - Ultimate Match
+Mega Man X8
+Monster Hunte
+Ōkami
+Psychonauts
+Virtua Fighter 4 - Evolution
+
+Burnout 3 - Takedown
+Dragon Quest VIII - Journey of the Cursed King
+Final Fantasy X
+God Hand
+Jak and Daxter - The Precursor Legacy
+Katamari Damacy
+Lord of the Rings, The - The Two Towers
+Midnight Club 3 - DUB Edition
+Nickelodeon SpongeBob SquarePants - Battle for Bikini Bottom
+Oni
+Prince of Persia - The Sands of Time
+Ratchet & Clank - Up Your Arsenal!
+Rogue Galaxy
+Shadow of the Colossus
+SkyGunner
+Sly Cooper and the Thievius Raccoonus
+Sonic Unleashed
+Spider-Man 2
+SSX 3
+Thunder Force VI
+TimeSplitters 2
+Tony Hawk's Pro Skater 4
+X-Men Legends
+```
 ### Sony - PlayStation Portable (PSP) - December 11, 2004
 ```
 Ace Combat X - Skies of Deception
