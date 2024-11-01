@@ -1233,6 +1233,7 @@ Xenogears
 Baldur's Gate - Dark Alliance II
 Burnout 3 - Takedown
 Champions of Norrath
+Dark Cloud 2
 Devil May Cry 3 - Dante's Awakening
 Dragon Quest VIII - Journey of the Cursed King
 Final Fantasy X
@@ -1244,13 +1245,18 @@ Grand Theft Auto - San Andreas
 Grand Theft Auto - Vice City
 Hitman - Blood Money
 Jak and Daxter - The Precursor Legacy
+Jurassic Park - Operation Genesis
 Katamari Damacy
 King of Fighters '98, The - Ultimate Match
+Klonoa 2 - Lunatea's Veil
 Lord of the Rings, The - The Two Towers
+Marc Ecko's Getting Up - Contents Under Pressure
 Mega Man X8
+Metal Gear Solid 3 - Snake Eater
 Midnight Club 3 - DUB Edition
 Monster Hunte
 Nickelodeon SpongeBob SquarePants - Battle for Bikini Bottom
+Odin Sphere
 Ōkami
 Oni
 Prince of Persia - The Sands of Time
