@@ -1228,7 +1228,7 @@ Wipeout XL
 X-Men - Mutant Apocalypse
 Xenogears
 ```
-### Sony - PlayStation 2 (PS2) - 4 March 2000
+### Sony - PlayStation 2 (PS2) - March 4, 2000
 ```
 Baldur's Gate - Dark Alliance II
 Bully
