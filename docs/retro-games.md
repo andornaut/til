@@ -1231,6 +1231,7 @@ Xenogears
 ### Sony - PlayStation 2 (PS2) - 4 March 2000
 ```
 Baldur's Gate - Dark Alliance II
+Bully
 Burnout 3 - Takedown
 Champions of Norrath
 Dark Cloud 2
@@ -1263,6 +1264,7 @@ Prince of Persia - The Sands of Time
 Psychonauts
 Ratchet & Clank - Up Your Arsenal!
 Rogue Galaxy
+Sega Ages 2500 Series Vol. 30 - Galaxy Force II - Special Extended Edition
 Shadow of the Colossus
 SkyGunner
 Sly Cooper and the Thievius Raccoonus
