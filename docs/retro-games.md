@@ -1230,132 +1230,126 @@ Xenogears
 ```
 ### Sony - PlayStation 2 (PS2) - March 4, 2000
 ```
+Ace Combat Zero - The Belkan War
+Armored Core - Nexus
 Baldur's Gate - Dark Alliance II
 Bully
 Burnout 3 - Takedown
 Champions of Norrath
 Dark Cloud 2
+Def Jam - Fight for NY
 Devil May Cry 3 - Dante's Awakening
+Dragon Ball Z - Budokai 3
 Dragon Quest VIII - Journey of the Cursed King
+Enter The Matrix
+Fight Night Round 3
 Final Fantasy X
 God Hand
 God of War II
 Gradius V
 Gran Turismo 4
+Grand Theft Auto - Liberty City Stories
 Grand Theft Auto - San Andreas
 Grand Theft Auto - Vice City
+Guilty Gear XX Accent Core Plus
+GunGrave
+Harvey Birdman - Attorney at Law
 Hitman - Blood Money
+Hot Shots Golf 3
 Jak and Daxter - The Precursor Legacy
 Jurassic Park - Operation Genesis
 Katamari Damacy
 King of Fighters '98, The - Ultimate Match
+Kingdom Hearts
 Klonoa 2 - Lunatea's Veil
+Lara Croft Tomb Raider - Legend
+Lego Star Wars II - The Original Trilogy
 Lord of the Rings, The - The Two Towers
+Madden NFL 08
+Manhunt 2
 Marc Ecko's Getting Up - Contents Under Pressure
+Marvel - Ultimate Alliance
 Mega Man X8
 Metal Gear Solid 3 - Snake Eater
 Midnight Club 3 - DUB Edition
-Monster Hunte
+MLB 11
+Monster Hunter
+NBA 2K12
+NBA Street Vol. 2
+Need for Speed - Carbon - Collector's Edition
+NHL 07
 Nickelodeon SpongeBob SquarePants - Battle for Bikini Bottom
 Odin Sphere
 Ōkami
 Oni
+OutRun 2006 - Coast 2 Coast
+PaRappa the Rapper 2
+PES 2014 - Pro Evolution Soccer
 Prince of Persia - The Sands of Time
 Psychonauts
+Punisher, The
 Ratchet & Clank - Up Your Arsenal!
 Rogue Galaxy
 Sega Ages 2500 Series Vol. 30 - Galaxy Force II - Special Extended Edition
 Shadow of the Colossus
+Silent Hill Origins
+Simpsons, The - Hit & Run
 SkyGunner
 Sly Cooper and the Thievius Raccoonus
 Sonic Unleashed
+Soulcalibur II
 Spider-Man 2
 SSX 3
+Star Wars - Battlefront II
+Star Wars - The Force Unleashed
+Syphon Filter - Dark Mirror
+Tekken 5
 Thunder Force VI
 TimeSplitters 2
 Tony Hawk's Pro Skater 4
+Tony Hawk's Underground
 Virtua Fighter 4 - Evolution
+Warriors, The
+Worms 4 - Mayhem
 X-Men Legends
 ```
 ### Sony - PlayStation Portable (PSP) - December 11, 2004
 ```
-Ace Combat X - Skies of Deception
-Armored Core 3 Portable
-Burnout Legends
 Bust-A-Move - Deluxe
 Castlevania - The Dracula X Chronicles
 Crisis Core - Final Fantasy VII
 Daxter
-Def Jam - Fight for NY - The Takeover
 Disgaea - Afternoon of Darkness
 Disgaea 2 - Dark Hero Days
-Dragon Ball Z - Shin Budokai - Another Road
 Fat Princess - Fistful of Cake
-Fight Night Round 3
-Final Fantasy - 20th Anniversary Edition
 Final Fantasy Tactics - The War of the Lions
 God of War - Chains of Olympus
 God of War - Ghost of Sparta
-Grand Theft Auto - Liberty City Stories
-Grand Theft Auto - Vice City Stories
-Guilty Gear XX Accent Core Plus
 Half-Minute Hero
-Harvey Birdman - Attorney at Law
-Hot Shots Golf - Open Tee 2
 Jeanne d'Arc
-Killzone - Liberation
-Kingdom Hearts - Birth by Sleep
-Lara Croft Tomb Raider - Anniversary
 Legend of Heroes, The - Trails in the Sky
-Lego Star Wars II - The Original Trilogy
 LocoRoco 2
 Lumines II
 Lunar - Silver Star Harmony
-Madden NFL 08
-Manhunt 2
-Marvel - Ultimate Alliance
 Mega Man - Powered Up
 Metal Gear Ac!d
 Metal Gear Solid - Peace Walker
-Midnight Club 3 - DUB Edition
-MLB 11
-Monster Hunter Freedom Unite
-Monster Hunter Portable 3rd (https://www.romhacking.net/reviews/8403/)
 N Plus
-NBA 2K12
-NBA Street Showdown
-NHL 07
-Need for Speed - Carbon - Own the City
-OutRun 2006 - Coast 2 Coast
-PaRappa the Rapper
 Patapon 2
-PES 2014 - Pro Evolution Soccer
 Phantasy Star Portable 2 Infinity (https://gbatemp.net/threads/phantasy-star-portable-2-infinity-english-localization-v2-update-released-august-2022.576943/)
 Ratchet & Clank - Size Matters
 Resistance - Retribution
-Ridge Racer 2
 Rock Band Unplugged
 Shin Megami Tensei - Persona
 Shin Megami Tensei - Persona 2
 Shin Megami Tensei - Persona 3 Portable
 Sid Meier's Pirates!
-Silent Hill Origins
-Soulcalibur - Broken Destiny
 Space Invaders Extreme
-SSX on Tour
-Star Wars - Battlefront II
-Star Wars - The Force Unleashed
-Syphon Filter - Dark Mirror
-Tekken - Dark Resurrection
 Tekken 6
-Tony Hawk's Underground 2 Remix
 Ultimate Ghosts'n Goblins
 Valkyria Chronicles II
 Virtua Tennis 3
 Warhammer 40,000 - Squad Command
-Warriors, The
-WipEout Pulse
-Worms - Open Warfare 2
 Ys Seven
 Ys - The Oath in Felghana
 ```
