@@ -1239,6 +1239,8 @@ Champions of Norrath
 Dark Cloud 2
 Def Jam - Fight for NY
 Devil May Cry 3 - Dante's Awakening
+Disgaea - Hour of Darkness
+Disgaea 2 - Cursed Memories
 Dragon Ball Z - Budokai 3
 Dragon Quest VIII - Journey of the Cursed King
 Enter The Matrix
@@ -1315,12 +1317,9 @@ X-Men Legends
 ```
 ### Sony - PlayStation Portable (PSP) - December 11, 2004
 ```
-Bust-A-Move - Deluxe
 Castlevania - The Dracula X Chronicles
 Crisis Core - Final Fantasy VII
 Daxter
-Disgaea - Afternoon of Darkness
-Disgaea 2 - Dark Hero Days
 Fat Princess - Fistful of Cake
 Final Fantasy Tactics - The War of the Lions
 God of War - Chains of Olympus
@@ -1342,7 +1341,6 @@ Resistance - Retribution
 Rock Band Unplugged
 Shin Megami Tensei - Persona
 Shin Megami Tensei - Persona 2
-Shin Megami Tensei - Persona 3 Portable
 Sid Meier's Pirates!
 Space Invaders Extreme
 Tekken 6
