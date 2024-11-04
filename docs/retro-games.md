@@ -1246,10 +1246,13 @@ Dragon Quest VIII - Journey of the Cursed King
 Enter The Matrix
 Fight Night Round 3
 Final Fantasy X
+Final Fantasy XII
 God Hand
+God of War
 God of War II
 Gradius V
 Gran Turismo 4
+Grand Theft Auto III
 Grand Theft Auto - Liberty City Stories
 Grand Theft Auto - San Andreas
 Grand Theft Auto - Vice City
@@ -1275,6 +1278,7 @@ Mega Man X8
 Metal Gear Solid 3 - Snake Eater
 Midnight Club 3 - DUB Edition
 MLB 11
+Mobile Suit Gundam - Zeonic Front
 Monster Hunter
 NBA 2K12
 NBA Street Vol. 2
@@ -1292,8 +1296,11 @@ Psychonauts
 Punisher, The
 Ratchet & Clank - Up Your Arsenal!
 Rogue Galaxy
+R-Type Final
 Sega Ages 2500 Series Vol. 30 - Galaxy Force II - Special Extended Edition
 Shadow of the Colossus
+Shin Megami Tensei - Persona 3 FES
+Shin Megami Tensei - Persona 4
 Silent Hill Origins
 Simpsons, The - Hit & Run
 SkyGunner
@@ -1310,10 +1317,14 @@ Thunder Force VI
 TimeSplitters 2
 Tony Hawk's Pro Skater 4
 Tony Hawk's Underground
+Twisted Metal - Black
 Virtua Fighter 4 - Evolution
 Warriors, The
+Way of the Samurai 2
 Worms 4 - Mayhem
 X-Men Legends
+XIII
+Yakuza
 ```
 ### Sony - PlayStation Portable (PSP) - December 11, 2004
 ```
