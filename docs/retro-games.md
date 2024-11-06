@@ -745,6 +745,7 @@ Tecmo Super Bowl 2024 (https://tecmobowl.org/files/file/868-tecmo-super-bowl-202
 Teenage Mutant Ninja Turtles II - The Arcade Game
 Teenage Mutant Ninja Turtles III - The Manhattan Project
 Teenage Mutant Ninja Turtles - Tournament Fighters
+Vice - Project Doom
 Wizardry - Proving Grounds of the Mad Overlord
 Zelda II - The Adventure of Link (https://github.com/ShadowOne333/Zelda2-Redux)
 Zoda's Revenge - StarTropics II
