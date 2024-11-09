@@ -1,6 +1,7 @@
 # Git
 
 * [On undoing, fixing, or removing commits in git](https://sethrobertson.github.io/GitFixUm/fixup.html)
+
 * [Useful commands](http://orga.cat/posts/most-useful-git-commands)
 * [Clean-up outdated branches](http://railsware.com/blog/2014/08/11/git-housekeeping-tutorial-clean-up-outdated-branches-in-local-and-remote-repositories/)
 
@@ -162,6 +163,8 @@ git remote set-head origin --auto
 ```
 
 ## Github
+
+* [GitHub markdown tricks](https://notes.aliciasykes.com/36402/github-markdown-tricks)
 
 ### Collapsable section markdown
 
