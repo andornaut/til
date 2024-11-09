@@ -143,37 +143,23 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 ### Retroid Pocket Mini
 
 * [Official store](https://www.goretroid.com/en-ca/collections/frontpage/products/retroid-pocket-mini-handheld)
-* [ROCKNIX](https://github.com/ROCKNIX/distribution) - Custom firmware
+
+#### Rocknix custom firmware
+
+* [Documentation](https://rocknix.org/)
   * [Retroid Pocket Mini details](https://rocknix.org/devices/retroid/retroid-pocket-mini/)
   * [Retroid Pocket Mini supported emulators and cores](https://github.com/ROCKNIX/distribution/blob/dev/documentation/PER_DEVICE_DOCUMENTATION/SD865/SUPPORTED_EMULATORS_AND_CORES.md)
+* [GitHub](https://github.com/ROCKNIX/distribution)
 
-System | Folder | Core
---- | --- | ---
-Atari - 7800 | atari7800 | https://docs.libretro.com/library/prosystem/
-Atari - Jaguar | atarijaguar | https://docs.libretro.com/library/virtual_jaguar/
-Atari - Lynx | atarilynx | https://rocknix.org/systems/atarilynx/
-NEC - PC Engine CD - TurboGrafx-CD | pcenginecd | https://docs.libretro.com/library/beetle_pce_fast/
-NEC - PC Engine - TurboGrafx 16 | pcengine | https://docs.libretro.com/library/beetle_pce_fast/
-Nintendo - Game Boy | gb | https://docs.libretro.com/library/gambatte/
-Nintendo - Game Boy Advance | gba | https://docs.libretro.com/library/mgba/
-Nintendo - Game Boy Color | gbc | https://docs.libretro.com/library/gambatte/
-Nintendo - GameCube | gamecube | https://dolphin-emu.org/docs/guides/
-Nintendo - Nintendo 64 | n64 | https://docs.libretro.com/library/mupen64plus/
-Nintendo - Nintendo DS | nds | https://docs.libretro.com/library/melonds/
-Nintendo - Nintendo Entertainment System | nes | https://docs.libretro.com/library/nestopia_ue/
-Nintendo - Super Nintendo Entertainment System | snes | https://docs.libretro.com/library/snes9x/
-Pico-8 | 
-Sega - 32X | https://docs.libretro.com/library/picodrive/
-Sega - Dreamcast | dreamcast | https://docs.libretro.com/library/flycast/
-Sega - Game Gear | gamegear | https://docs.libretro.com/library/gearsystem/
-Sega - Master System - Mark III | mastersystem | https://docs.libretro.com/library/gearsystem/
-Sega - Mega-CD - Sega CD | segacd | https://docs.libretro.com/library/genesis_plus_gx/
-Sega - Mega Drive - Genesis | genesis | https://docs.libretro.com/library/genesis_plus_gx/
-Sega - Saturn | saturn | https://docs.libretro.com/library/yabause/
-Sony - PlayStation | psx | https://docs.libretro.com/library/beetle_psx/
-Sony - PlayStation 2 | ps2 | AetherSX2
-Sony - PlayStation Portable | psp | https://www.ppsspp.org/docs/intro/
-The 3DO Company - 3DO | 3do | https://docs.libretro.com/library/opera/
+In-game keyboard shortcuts
+
+Key | Description
+--- | ---
+Home Start Start | Exit a game
+Home Y | Show FPS
+Home X | RetroArch Quick Menu
+Home R1 | Save to next slot
+Home L1 | Load last slot
 
 ### Xbox Series
 
@@ -246,7 +232,7 @@ Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte
 Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) 
 Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
 Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | -- | [Dolphin](https://docs.libretro.com/library/dolphin/)
-Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus](https://docs.libretro.com/library/mupen64plus/)
+Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
 Nintendo - Nintendo DS (NDS) | [melonDS](https://docs.libretro.com/library/melonds/) | [DraStic](https://drastic-ds.com) (Standalone) | [melonDS](https://docs.libretro.com/library/melonds/)
 Nintendo - Nintendo Entertainment System (FC, NES) | [Nestopia UE](https://docs.libretro.com/library/nestopia_ue/) | [FCEUmm](https://docs.libretro.com/library/fceumm/) | [Nestopia UE](https://docs.libretro.com/library/nestopia_ue/)
 Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/)
