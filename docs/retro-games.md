@@ -233,7 +233,7 @@ Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgb
 Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
 Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | -- | [Dolphin](https://docs.libretro.com/library/dolphin/)
 Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
-Nintendo - Nintendo DS (NDS) | [melonDS](https://docs.libretro.com/library/melonds/) | [DraStic](https://drastic-ds.com) (Standalone) | [melonDS](https://docs.libretro.com/library/melonds/)
+Nintendo - Nintendo DS (NDS) | [melonDS](https://docs.libretro.com/library/melonds/) | [DraStic](https://drastic-ds.com) (Standalone) | [DraStic](https://drastic-ds.com) (Standalone)
 Nintendo - Nintendo Entertainment System (FC, NES) | [Nestopia UE](https://docs.libretro.com/library/nestopia_ue/) | [FCEUmm](https://docs.libretro.com/library/fceumm/) | [Nestopia UE](https://docs.libretro.com/library/nestopia_ue/)
 Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/)
 Sega - 32X | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
