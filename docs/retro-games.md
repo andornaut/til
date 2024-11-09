@@ -151,7 +151,7 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
   * [Retroid Pocket Mini supported emulators and cores](https://github.com/ROCKNIX/distribution/blob/dev/documentation/PER_DEVICE_DOCUMENTATION/SD865/SUPPORTED_EMULATORS_AND_CORES.md)
 * [GitHub](https://github.com/ROCKNIX/distribution)
 
-In-game keyboard shortcuts
+##### In-game keyboard shortcuts
 
 Key | Description
 --- | ---
