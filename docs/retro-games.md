@@ -1427,6 +1427,7 @@ Wolfenstein 3D
 * [2048](http://portmaster.games/detail.html?name=2048)
 * [Aleph-One Marathon 1](http://portmaster.games/detail.html?name=alephone-marathon)
 * [Cave Story (Evo)](https://portmaster.games/detail.html?name=cave.story-evo)
+* [Celeste Classic](http://portmaster.games/detail.html?name=spelunky)
 * [Chasm](http://portmaster.games/detail.html?name=chasm)*
 * [Descent III](https://portmaster.games/detail.html?name=descent3)*
 * [Downwell](http://portmaster.games/detail.html?name=downwell)*
@@ -1448,6 +1449,7 @@ Wolfenstein 3D
 * [Sonic Mania](https://portmaster.games/detail.html?name=sonic.mania)*
 * [Sonic Robo Blast 2 (SRB2)](http://portmaster.games/detail.html?name=srb2)
 * [Space Cadet Pinball](http://portmaster.games/detail.html?name=space.cadet.pinball)*
+* [Spelunky](http://portmaster.games/detail.html?name=spelunky)
 * [Stardew Valley](http://portmaster.games/detail.html?name=stardewvalley)*
 * [Star Wars Jedi Knight II - Jedi Outcast](https://portmaster.games/detail.html?name=jedioutcast)
 * [TMNT: Shredder's Revenge](http://portmaster.games/detail.html?name=tmntsr)*
