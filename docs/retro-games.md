@@ -1438,7 +1438,7 @@ Wolfenstein 3D
 * [Maldita Castilla](http://portmaster.games/detail.html?name=maldita.castilla&devices=)
 * [Minetest](http://portmaster.games/detail.html?name=minetest) (aka Luanti) - Requires more than 1GB of RAM for single player
 * [OpenRCT2](http://portmaster.games/detail.html?name=openrct2)*
-* [Pokemon Reborn](https://portmaster.games/detail.html?name=reborn)
+* [Pokemon Reborn](https://portmaster.games/detail.html?name=reborn)*
 * [RAWGL](http://portmaster.games/detail.html?name=rawgl)
 * [Shovel Knight Treasure Trove](http://portmaster.games/detail.html?name=shovel.knight)*
 * [Sonic Mania](https://portmaster.games/detail.html?name=sonic.mania)*
