@@ -1412,6 +1412,7 @@ Wolfenstein 3D
 
 ### Engine (re-)implementations
 
+* [eduke32](https://www.eduke32.com/) - Duke Nukem
 * [openblack](https://github.com/openblack/openblack) - Black & White
 * [OpenJKDF2](https://github.com/shinyquagsire23/OpenJKDF2/) - Dark Forces II: Jedi Knight
 * [OpenMW](https://openmw.org/) - The Elder Scrolls III: Morrowind
@@ -1425,8 +1426,6 @@ Wolfenstein 3D
 
 * [2048](http://portmaster.games/detail.html?name=2048)
 * [Aleph-One Marathon 1](http://portmaster.games/detail.html?name=alephone-marathon&devices=)
-* [Axiom Verge](http://portmaster.games/detail.html?name=axiom.verge)*
-* [Balatro](http://portmaster.games/detail.html?name=balatro)*
 * [Cave Story](https://portmaster.games/detail.html?name=cave.story)
 * [Chasm](http://portmaster.games/detail.html?name=chasm)*
 * [ClassiCube](http://portmaster.games/detail.html?name=classicube)
