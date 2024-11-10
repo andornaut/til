@@ -1428,18 +1428,15 @@ Wolfenstein 3D
 * [Aleph-One Marathon 1](http://portmaster.games/detail.html?name=alephone-marathon&devices=)
 * [Cave Story](https://portmaster.games/detail.html?name=cave.story)
 * [Chasm](http://portmaster.games/detail.html?name=chasm)*
-* [ClassiCube](http://portmaster.games/detail.html?name=classicube)
 * [Downwell](http://portmaster.games/detail.html?name=downwell)*
 * [Duke Nukem 3D](http://portmaster.games/detail.html?name=duke.nukem.3d)*
 * [Echo Chamber](http://portmaster.games/detail.html?name=echo_chamber&devices=) - Doesn't work on muOS: Runs, but controls (other than "select") don't work
 * [Fallout 1](http://portmaster.games/detail.html?name=fallout1&devices=)*
 * [Fallout 2](http://portmaster.games/detail.html?name=fallout2&devices=)*
-* [Grand Theft Auto 3](http://portmaster.games/detail.html?name=gta3)*
-* [Grand Theft Auto Vice City](http://portmaster.games/detail.html?name=gtavc)*
 * [Gravity Circuit](http://portmaster.games/detail.html?name=gravitycircuit)*
 * [Half-Life](http://portmaster.games/detail.html?name=half-life&devices=)*
 * [Maldita Castilla](http://portmaster.games/detail.html?name=maldita.castilla&devices=)
-* [Minetest](http://portmaster.games/detail.html?name=minetest) - Requires more than 1GB of RAM for single player
+* [Minetest](http://portmaster.games/detail.html?name=minetest) (aka Luanti) - Requires more than 1GB of RAM for single player
 * [OpenRCT2](http://portmaster.games/detail.html?name=openrct2)*
 * [Pokemon Reborn](https://portmaster.games/detail.html?name=reborn)
 * [RAWGL](http://portmaster.games/detail.html?name=rawgl)
