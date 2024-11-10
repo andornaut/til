@@ -1426,7 +1426,7 @@ Wolfenstein 3D
 
 * [2048](http://portmaster.games/detail.html?name=2048)
 * [Aleph-One Marathon 1](http://portmaster.games/detail.html?name=alephone-marathon&devices=)
-* [Cave Story](https://portmaster.games/detail.html?name=cave.story)
+* [Cave Story (Evo)](https://portmaster.games/detail.html?name=cave.story-evo)
 * [Chasm](http://portmaster.games/detail.html?name=chasm)*
 * [Downwell](http://portmaster.games/detail.html?name=downwell)*
 * [Duke Nukem 3D](http://portmaster.games/detail.html?name=duke.nukem.3d)*
