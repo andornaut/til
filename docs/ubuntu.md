@@ -175,6 +175,8 @@ flatpak permission-reset org.mozilla.firefox
 
 ## How-tos
 
+* [How to create a swapfile](https://linuxize.com/post/create-a-linux-swap-file/)
+
 ### Upgrade Ubuntu from LTS to non-LTS
 
 ```
