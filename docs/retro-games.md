@@ -1413,6 +1413,7 @@ Wolfenstein 3D
 
 ### Engine (re-)implementations
 
+* [devilutionX](https://github.com/diasurgical/devilutionX) - Diablo 1
 * [eduke32](https://www.eduke32.com/) - Duke Nukem
 * [openblack](https://github.com/openblack/openblack) - Black & White
 * [OpenJKDF2](https://github.com/shinyquagsire23/OpenJKDF2/) - Dark Forces II: Jedi Knight
