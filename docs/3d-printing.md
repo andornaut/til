@@ -34,6 +34,7 @@
   * [High Temperature Plate (PEI)](https://ca.store.bambulab.com/products/bambu-high-temperature-plate)
   * [Hotend Kit For Bambu Lab X1 Carbon X1-Carbon Combo P1P](https://www.aliexpress.com/item/1005005291012768.html)
   * [Lightyear G10 Build Plate](https://lightyeardirect.com/products/magnetic-garolite-g-10-composite-build-plate-for-bambulab-x1c-and-p1p)
+  * [Maintenance](https://wiki.bambulab.com/en/p1/maintenance)
   * [Manual](https://wiki.bambulab.com/en/p1/manual)
   * [Printable upgrades](https://wiki.bambulab.com/en/p1/manual/p1p-upgrades)
 * [SUNLU FilaDryer S2 dry box](https://www.amazon.ca/gp/product/B0B1ZKTS44)
