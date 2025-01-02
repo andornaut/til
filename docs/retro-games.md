@@ -77,6 +77,13 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
   * [antiKk's Overlays](https://github.com/antiKk/muOS-Overlays)
   * [mugwomp93's Overlays](https://github.com/mugwomp93/muOS_Customization)
   * [Themes](https://github.com/MustardOS/theme)
+ 
+Category | Path
+--- | ---
+Retroarch config | `/MUOS/info/config/retroarch.cfg`
+ROMs | `/ROMS/`
+Saves | `/MUOS/save/file/`
+Save states | `/MUOS/save/state/`
 
 ##### Keyboard shortcuts
 
@@ -151,6 +158,13 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
   * [Retroid Pocket Mini details](https://rocknix.org/devices/retroid/retroid-pocket-mini/)
   * [Retroid Pocket Mini supported emulators and cores](https://github.com/ROCKNIX/distribution/blob/dev/documentation/PER_DEVICE_DOCUMENTATION/SD865/SUPPORTED_EMULATORS_AND_CORES.md)
 * [GitHub](https://github.com/ROCKNIX/distribution)
+
+Category | Path
+--- | ---
+Retroarch | `/storage/.config/retroarch/retroarch.cfg`
+ROMs | `/storage/roms`
+Saves | `/storage/roms`
+Save states | `/storage/roms/savestates`
 
 ##### In-game keyboard shortcuts
 
