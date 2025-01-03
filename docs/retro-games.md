@@ -171,11 +171,11 @@ Save states | `/storage/roms/savestates`
 
 Key | Description
 --- | ---
-Home Start Start | Exit a game
-Home Y | Show FPS
-Home X | RetroArch Quick Menu
-Home R1 | Save to next slot
-Home L1 | Load last slot
+Home<Hold> Start Start,  L1<Hold> Start+Select| Exit a game
+Home<Hold> Y | Show FPS
+Home<Hold> X | RetroArch Quick Menu
+Home<Hold> R1 | Save to next slot
+Home<Hold> L1 | Load last slot
 
 ### Xbox Series
 
