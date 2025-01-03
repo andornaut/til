@@ -158,6 +158,7 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
   * [Retroid Pocket Mini details](https://rocknix.org/devices/retroid/retroid-pocket-mini/)
   * [Retroid Pocket Mini supported emulators and cores](https://github.com/ROCKNIX/distribution/blob/dev/documentation/PER_DEVICE_DOCUMENTATION/SD865/SUPPORTED_EMULATORS_AND_CORES.md)
 * [GitHub](https://github.com/ROCKNIX/distribution)
+* [Unofficial nightly builds](https://nightly.link/tiopex/distribution/workflows/build-nightly/ci) (Download `sd865` builds for Retroid Pocket Mini)
 
 Category | Path
 --- | ---

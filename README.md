@@ -224,6 +224,8 @@ rake
           * [Enable FTP server](docs/retro-games.md#enable-ftp-server)
           * [RetroArch Core BIOS files](docs/retro-games.md#retroarch-core-bios-files)
       * [Retroid Pocket Mini](docs/retro-games.md#retroid-pocket-mini)
+        * [Rocknix custom firmware](docs/retro-games.md#rocknix-custom-firmware)
+          * [In-game keyboard shortcuts](docs/retro-games.md#in-game-keyboard-shortcuts)
       * [Xbox Series](docs/retro-games.md#xbox-series)
         * [USB disk drive permissions](docs/retro-games.md#usb-disk-drive-permissions)
         * [Disable Kiosk Mode](docs/retro-games.md#disable-kiosk-mode)
