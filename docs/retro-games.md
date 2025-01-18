@@ -853,6 +853,7 @@ Tecmo Super Bowl
 Teenage Mutant Ninja Turtles IV - Turtles in Time
 Teenage Mutant Ninja Turtles - Tournament Fighters
 Terranigma
+U.N. Squadron
 Where in the World Is Carmen Sandiego
 X-Men - Mutant Apocalypse
 Zombies Ate My Neighbors
