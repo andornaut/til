@@ -47,6 +47,7 @@
 
  * [Network ports](https://wiki.bambulab.com/en/general/printer-network-ports)
  * [GitHub issue: Add the ability to connect Bambu Lab printers in LAN Only Mode](https://github.com/SoftFever/OrcaSlicer/issues/8099#issuecomment-2601027353)
+ * [Alternative: Send fake SSDP response to OrcaSlicer](https://gist.github.com/Alex-Schaefer/72a9e2491a42da2ef99fb87601955cc3#file-bambu-ssdp-discovery-py)
 
 1. From the P1P's physical control panel, [enable "LAN-only mode"](https://wiki.bambulab.com/en/knowledge-sharing/enable-lan-mode)
 2. From pfSense, install the [UDP Broadcast Relay package](https://docs.netgate.com/pfsense/en/latest/packages/udpbroadcastrelay.html)
