@@ -54,7 +54,7 @@
    * In addition to udp:2021, according to [this thread](https://forum.bambulab.com/t/use-ssdp-standards/7173/2), the p1p uses udp:1900, which is standard, whereas the X1C uses udp:1990, which is non-standard
 4. Configure firewall rules to allow traffic between subnets on ports 1900, 1990, 2021
    * Use the [firewall log](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/firewall.html) (Status > System Logs > Firewall) to figure out what firewall rules to create
-   * I have monitored UDP traffic going from <bambulabp1p>:1900 to 239.255.255.250:1990
+   * I have monitored UDP traffic going from \<bambulabp1p>:1900 to 239.255.255.250:1990
 5. From OrcaSlicer, navigate to the "Device" tab, click the "+" icon, then the P1P device should appear in the "Other Device" section
 
 ## Supplies
