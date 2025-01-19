@@ -48,10 +48,10 @@
  * [Network ports](https://wiki.bambulab.com/en/general/printer-network-ports)
 
 1. Install the [UDP Broadcast Relay package](https://docs.netgate.com/pfsense/en/latest/packages/udpbroadcastrelay.html)
-2. Configure one "interface" to bind the two subnets for each of the following ports: 1900,1990,2021
-   * According to [this thread](https://forum.bambulab.com/t/use-ssdp-standards/7173/2), the p1p uses udp:1900, which is standard, whereas the X1C uses udp:1990, which is non-standard
-3. Configure firewall rules to allow traffic between subnets on ports 1900,1990,2021
-   * Use the [firewall log](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/firewall.html) (Status > System Logs > Firewall) to figure out what rules to create
+2. Configure one "interface" to bind the two subnets for each of the following ports: 1900, 1990, 2021
+   * In addition to udp:2021, according to [this thread](https://forum.bambulab.com/t/use-ssdp-standards/7173/2), the p1p uses udp:1900, which is standard, whereas the X1C uses udp:1990, which is non-standard
+3. Configure firewall rules to allow traffic between subnets on ports 1900, 1990, 2021
+   * Use the [firewall log](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/firewall.html) (Status > System Logs > Firewall) to figure out what rules to create 
 
 ## Supplies
 
