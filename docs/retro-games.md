@@ -674,6 +674,7 @@ Yoshi's Story
 ### Nintendo - Nintendo DS (NDS) - November 21, 2004
 ```
 Advance Wars - Dual Strike
+Another Code - Two Memories
 Castlevania - Dawn of Sorrow
 Castlevania - Order of Ecclesia
 Chrono Trigger
@@ -853,6 +854,7 @@ Tecmo Super Bowl
 Teenage Mutant Ninja Turtles IV - Turtles in Time
 Teenage Mutant Ninja Turtles - Tournament Fighters
 Terranigma
+U.N. Squadron
 Where in the World Is Carmen Sandiego
 X-Men - Mutant Apocalypse
 Zombies Ate My Neighbors
@@ -1305,6 +1307,7 @@ Lara Croft Tomb Raider - Legend
 Lego Star Wars II - The Original Trilogy
 Lord of the Rings, The - The Two Towers
 Madden NFL 08
+Mana Khemia - Alchemists of Al-Revis
 Manhunt 2
 Marc Ecko's Getting Up - Contents Under Pressure
 Marvel - Ultimate Alliance
