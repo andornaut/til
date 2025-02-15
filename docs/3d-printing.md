@@ -27,6 +27,11 @@
 
 ## Hardware
 
+* [SUNLU FilaDryer S2 dry box](https://www.amazon.ca/gp/product/B0B1ZKTS44)
+  * [Sunlu FilaDryer S2 Improvement Wedge](https://www.printables.com/model/219366-sunlu-filadryer-s2-improvement-wedge)
+
+### BambuLab P1P
+
 * [Bambu Lab P1P 3D printer](https://bambulab.com/en/p1)
   * [BIQU Panda Hotend](https://biqu.equipment/products/biqu-panda-hotend)
   * [Boron Nitride Paste](https://www.sliceengineering.com/products/boron-nitride-paste)
@@ -37,8 +42,21 @@
   * [Maintenance](https://wiki.bambulab.com/en/p1/maintenance)
   * [Manual](https://wiki.bambulab.com/en/p1/manual)
   * [Printable upgrades](https://wiki.bambulab.com/en/p1/manual/p1p-upgrades)
-* [SUNLU FilaDryer S2 dry box](https://www.amazon.ca/gp/product/B0B1ZKTS44)
-  * [Sunlu FilaDryer S2 Improvement Wedge](https://www.printables.com/model/219366-sunlu-filadryer-s2-improvement-wedge)
+
+#### Device discovery across subnets using pfSense
+
+ * [Network ports](https://wiki.bambulab.com/en/general/printer-network-ports)
+ * [GitHub issue: Add the ability to connect Bambu Lab printers in LAN Only Mode](https://github.com/SoftFever/OrcaSlicer/issues/8099#issuecomment-2601027353)
+ * [Alternative: Send fake SSDP response to OrcaSlicer](https://gist.github.com/Alex-Schaefer/72a9e2491a42da2ef99fb87601955cc3#file-bambu-ssdp-discovery-py)
+
+1. From the P1P's physical control panel, [enable "LAN-only mode"](https://wiki.bambulab.com/en/knowledge-sharing/enable-lan-mode)
+2. From pfSense, install the [UDP Broadcast Relay package](https://docs.netgate.com/pfsense/en/latest/packages/udpbroadcastrelay.html)
+3. Configure one "interface" to bind the two subnets for each of the following ports: 1900, 1990, 2021
+   * In addition to udp:2021, according to [this thread](https://forum.bambulab.com/t/use-ssdp-standards/7173/2), the p1p uses udp:1900, which is standard, whereas the X1C uses udp:1990, which is non-standard
+4. Configure firewall rules to allow traffic between subnets on ports 1900, 1990, 2021
+   * Use the [firewall log](https://docs.netgate.com/pfsense/en/latest/monitoring/logs/firewall.html) (Status > System Logs > Firewall) to figure out what firewall rules to create
+   * I have monitored UDP traffic going from \<bambulabp1p>:1900 to 239.255.255.250:1990
+5. From OrcaSlicer, navigate to the "Device" tab, click the "+" icon, then the P1P device should appear in the "Other Device" section
 
 ## Supplies
 
