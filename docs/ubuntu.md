@@ -319,12 +319,55 @@ Add the following to `/etc/sudoers.d/power`:
 
 * [How to update kernel to the latest mainline](https://askubuntu.com/questions/119080/how-to-update-kernel-to-the-latest-mainline-version-without-any-distro-upgrade/142001#142000)
 
-1. Navigate to kernel.ubuntu.com/~kernel-ppa/mainline/
+#### Install a pre-packaged kernel
+
+1. Navigate to [kernel.ubuntu.com/mainline/](https://kernel.ubuntu.com/mainline/)
 2. Navigate to the folder for the kernel version you're looking for, e.g.: `v6.13/`
 3. Navigate to the folder for your architecture, e.g.: `amd64/`
 4. Download the 4 `.deb` files `linux-headers*all*`, `linux-headers*amd64*`, `linux-image*`, `linux-modules*`
 5. Install all 4 `.deb` files with `sudo apt install ./linux*deb`
 6. Note that if the linux-image*deb file is "unsigned", then you will need to disable secure boot in your BIOS
+
+#### Compile your own kernel
+
+* [Building all Ubuntu extra modules - kernel compilation](https://forum.level1techs.com/t/building-all-ubuntu-extra-modules-kernel-compilation/224734)
+
+```bash
+# Download and extract the kernel source
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.tar.gz
+tar -xf linux-6.13.tar.gz
+cd linux-6.13/
+
+# Copy the config-* file that you want to base your new config on
+cp -v /boot/config-$(uname -r) .config
+make oldconfig
+
+# Build the kernel *.deb files
+scripts/config --disable SYSTEM_TRUSTED_KEYS
+scripts/config --disable SYSTEM_REVOCATION_KEYS
+scripts/config --set-str CONFIG_SYSTEM_TRUSTED_KEYS ""
+scripts/config --set-str CONFIG_SYSTEM_REVOCATION_KEYS ""
+fakeroot make -j7 # this built the kernel
+make -j7 bindeb-pkg # this made the kernel debs
+
+# Install the kernel *.deb files
+cd ..
+apt install ./linux-*deb
+```
+
+#### Uninstall old kernel packages
+
+```bash
+dpkg --list | egrep -i --color 'linux-image|linux-headers|linux-modules' | awk '{ print $2 }'
+
+version=6.8
+apt purge \
+  linux-headers-${version}* \
+  linux-image-${version}* \
+  linux-image-unsigned-${version}* \
+  linux-modules-${version}* \
+  linux-modules-extra-${version}*
+```
 
 ## Debugging and troubleshooting
 
