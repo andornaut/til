@@ -315,6 +315,17 @@ Add the following to `/etc/sudoers.d/power`:
 %adm ALL=NOPASSWD: /sbin/halt, /sbin/poweroff, /sbin/reboot
 ```
 
+### Upgrade to the latest kernel
+
+* [How to update kernel to the latest mainline](https://askubuntu.com/questions/119080/how-to-update-kernel-to-the-latest-mainline-version-without-any-distro-upgrade/142001#142000)
+
+1. Navigate to kernel.ubuntu.com/~kernel-ppa/mainline/
+2. Navigate to the folder for the kernel version you're looking for, e.g.: `v6.13/`
+3. Navigate to the folder for your architecture, e.g.: `amd64/`
+4. Download the 4 `.deb` files `linux-headers*all*`, `linux-headers*amd64*`, `linux-image*`, `linux-modules*`
+5. Install all 4 `.deb` files with `sudo apt install ./linux*deb`
+6. Note that if the linux-image*deb file is "unsigned", then you will need to disable secure boot in your BIOS
+
 ## Debugging and troubleshooting
 
 * [LiveCdRecovery](https://help.ubuntu.com/community/LiveCdRecovery) - Chroot an Ubuntu ISO on a USB drive
