@@ -304,6 +304,47 @@ sudo debconf-show ${packageName}
 # or
 sudo debconf-get-selections|grep -i ${packageName}
 ```
+### Use Netplan
+
+```bash
+# Print configurations from /etc/netplan/*.yaml
+sudo netplan get
+
+# Apply (enable) all Netplan configurations
+sudo netplan apply
+
+sudo ifconfig enp9s0 down
+ip address show enp9s0
+sudo ifconfig enp9s0 up
+```
+
+### Install and configure NetworkManager
+
+```
+sudo apt install network-manager-gnome
+
+# Create a couple of `.conf` files
+$ cat  /etc/NetworkManager/conf.d/manage-all.conf
+[keyfile]
+unmanaged-devices=none
+$ cat /etc/NetworkManager/conf.d/dns.conf
+[main]
+dns=systemd-resolved
+
+# Autostart nm-applet
+$ cp /usr/share/applications/nm-applet.desktop ~/.config/autostart/
+
+# Set Netplan configurations to be rendered by NetworkManager
+$ sudo cat /etc/netplan/dhcp.yaml
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    enp9s0:
+      dhcp4: true
+
+$ sudo systemctl restart NetworkManager
+```
 
 ### Allow adm users to shutdown and reboot the system
 
