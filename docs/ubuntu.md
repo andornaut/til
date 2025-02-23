@@ -313,9 +313,9 @@ sudo netplan get
 # Apply (enable) all Netplan configurations
 sudo netplan apply
 
-sudo ifconfig enp9s0 down
+sudo ip set device down enp9s0
 ip address show enp9s0
-sudo ifconfig enp9s0 up
+sudo ip set device up enp9s0
 ```
 
 ### Install and configure NetworkManager
