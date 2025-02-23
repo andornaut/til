@@ -64,14 +64,14 @@ powertop | Power consumption and power management diagnosis tool
 sensors | Print temperature sensors information
 vmstat | Report virtual memory statistics
 
-```
+```bash
 # Monitor a process' utilization
 pid=$(ps -e|grep filectrl|cut -f1 -d' ');pidstat -h -r -u -v -p $pid 10
 ```
 
 ### Search for installed applications
 
-```
+```bash
 grep -li ${SEARCH_TEXT} /usr/share/applications/*.desktop
 # or
 dpkg -l | grep ${SEARCH_TEXT}
@@ -83,7 +83,7 @@ $ grep -li music /usr/share/applications/*.desktop
 
 ### Search for Ubuntu packages by filename
 
-```
+```bash
 sudo apt-get install apt-file
 apt-file update
 apt-file search ${pattern}
@@ -111,7 +111,7 @@ Path |Usage
 `~/.local/share/flatpak/exports/share/applications/` | Flatpak --user applications
 `/var/lib/flatpak/exports/share/applications/` | Flatpak --system applications
 
-```
+```bash
 # Use a TUI program to set default association
 apt install libfile-mimeinfo-perl
 mimeopen -d existing.pdf
@@ -145,7 +145,7 @@ vim ~/.config/mimeapps.list
 
 * [Ask Ubuntu](https://askubuntu.com/a/984800)
 
-```
+```bash
 sudo apt purge evolution* language-selector-gnome whoopsie*
 
 # Remove Snap
@@ -165,7 +165,7 @@ sudo apt remove --purge tracker-miner-fs
 
 * [Flatpak.org](https://flatpak.org/)
 
-```
+```bash
 # Exec into the container
 flatpak enter org.mozilla.firefox bash
 
@@ -180,7 +180,7 @@ flatpak permission-reset org.mozilla.firefox
 
 ### Upgrade Ubuntu from LTS to non-LTS
 
-```
+```bash
 sudo sed -i 's/^\(Prompt\s*=\s*\)\w\+/\1normal/g' /etc/update-manager/release-upgrades
 sudo do-release-upgrade
 ```
@@ -189,7 +189,7 @@ sudo do-release-upgrade
 
 * [Ask Ubuntu](https://askubuntu.com/questions/843778/how-to-disable-release-upgrade-notification-emails)
 
-```
+```bash
 sudo sed -i 's/^\(Prompt\s*=\s*\)\w\+/\1never/g' /etc/update-manager/release-upgrades
 echo -n "" > /var/lib/ubuntu-release-upgrader/release-upgrade-available
 ```
@@ -202,7 +202,7 @@ Using dconf:
 
 [@au [] specifies the type of the empty array](https://developer.gnome.org/glib/stable/gvariant-text.html#gvariant-text-type-annotations) (which would not parse otherwise)
 
-```
+```bash
 # Remove language switcher keyboard shortcut
 dconf write /org/gnome/desktop/wm/keybindings/switch-input-source '@au []'
 
@@ -215,7 +215,7 @@ ibus-daemon -rd
 
 Using dconf-editor:
 
-```
+```bash
 apt install dconf-editor
 dconf-editor
 # Navigate to: /org/gnome/desktop/wm/keybindings/switch-input-source
@@ -251,14 +251,13 @@ Mount a subdirectory of a share as a non-root user
 # vers=1.0 is necessary for Samba to support Unix extnsions:
 # https://askubuntu.com/a/995142
 //$HOSTNAME/homes/src /home/andornaut/src cifs vers=1.0,user,uid=andornaut,gid=andornaut,credentials=/home/andornaut/.smb_credentials_on_$HOSTNAME,nofail 0 0
-
 ```
 
 ### Preserve $PATH when using sudo
 
 * [StackOverflow](http://unix.stackexchange.com/a/83194)
 
-```
+```bash
 sudo env "PATH=$PATH" command
 ```
 
@@ -266,7 +265,7 @@ sudo env "PATH=$PATH" command
 
 * [Inotify instructions](https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit)
 
-```
+```bash
 $ echo '
 fs.file-max = 100000
 fs.inotify.max_user_watches = 524288' | sudo tee -a /etc/sysctl.conf
@@ -278,7 +277,7 @@ $ sudo sysctl -pf
 
 * [Wiki](https://wiki.archlinux.org/index.php/time)
 
-```
+```bash
 timedatectl set-ntp false
 timedatectl set-time "2016-06-20 10:00:00"
 timedatectl set-time "10:00:00"
@@ -289,7 +288,7 @@ timedatectl set-ntp true
 
 * [Howto](https://wiki.archlinux.org/index.php/SSD_memory_cell_clearing)
 
-```
+```bash
 hdparm -I /dev/sdX (result: Security:not enabled)
 hdparm --user-master u --security-set-pass PasSWorD /dev/sdX
 hdparm -I /dev/sdX (result: Security:enabled)
@@ -299,11 +298,10 @@ hdparm -I /dev/sdX (result: Security:not enabled)
 
 ### Use debconf
 
-```
+```bash
 sudo debconf-show ${packageName}
 
 # or
-
 sudo debconf-get-selections|grep -i ${packageName}
 ```
 
@@ -383,7 +381,7 @@ apt purge \
 
 ### Fix broken grub install
 
-```
+```bash
 efiPartition=/dev/nvme0n1p1
 rootPartition=/dev/nvme0n1p2
 mount ${rootPartition} /mnt \
@@ -409,7 +407,7 @@ reboot
 
 This error occurs when running `apt update` on an unsupported version of Ubuntu.
 
-```
+```bash
 sudo sed -i -e 's/\([a-z]*.\?\)\?archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
 ```
 
@@ -425,7 +423,7 @@ owner @{HOME}/PATH_TO_VAULT/redshift.conf r,
 
 2. Restart [AppArmor](https://apparmor.net/):
 
-```
+```bash
 sudo systemctl reload apparmor
 ```
 
@@ -435,7 +433,7 @@ sudo systemctl reload apparmor
 
 This can be caused by accessing the "Sound" section/tab of Gnome Control Center on an installation provisioned by [ansible-workstation](https://github.com/andornaut/ansible-workstation).
 
-```
+```bash
 rm -rf .config/dconf/
 ```
 
@@ -462,8 +460,9 @@ input: BRLTTY 6.4 Linux Screen Driver Keyboard as /devices/virtual/input/input21
 usb 2-3: usbfs: interface 0 claimed by ch341 while 'brltty' sets config #1
 ch341-uart ttyUSB0: ch341-uart converter now disconnected from ttyUSB0
 ```
+
 Disable brltty:
-```
+```bash
 sudo systemctl stop brltty-udev brltty
 sudo systemctl disable brltty-udev brltty
 sudo systemctl mask brltty-udev  brltty
