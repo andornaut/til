@@ -353,6 +353,14 @@ make -j7 bindeb-pkg # this made the kernel debs
 # Install the kernel *.deb files
 cd ..
 apt install ./linux-*deb
+
+# To generate initrd for the running kernel set `kernelVersion=$(uname -r)`
+kernelVersion=6.13.4-061304-generic
+update-initramfs -c -k ${kernelVersion}
+
+rootPartition=/dev/nvme0n1p2
+update-grub
+grub-install ${rootPartition}
 ```
 
 #### Uninstall old kernel packages
@@ -376,15 +384,23 @@ apt purge \
 ### Fix broken grub install
 
 ```
-mount /dev/sda1 /mnt \
+efiPartition=/dev/nvme0n1p1
+rootPartition=/dev/nvme0n1p2
+mount ${rootPartition} /mnt \
   mount --bind /dev /mnt/dev \
   mount --bind /proc /mnt/proc \
   mount --bind /sys /mnt/sys \
+  mount ${efiPartition} /boot/efi
   chroot /mnt
 
-grub-install /dev/sda
+# To generate initrd for the running kernel set `kernelVersion=$(uname -r)`
+kernelVersion=6.13.4-061304-generic
+update-initramfs -c -k ${kernelVersion}
+update-grub
+grub-install ${rootPartition}
 
-umount /mnt/proc/ /mnt/dev /mnt/sys /mnt
+exit
+reboot
 ```
 
 ### apt update 404
