@@ -380,7 +380,14 @@ Add the following to `/etc/sudoers.d/power`:
 
 * [How to update kernel to the latest mainline](https://askubuntu.com/questions/119080/how-to-update-kernel-to-the-latest-mainline-version-without-any-distro-upgrade/142001#142000)
 
-#### Install a pre-packaged kernel
+#### Install a HWE kernel
+
+```bash
+apt search linux-image-generic-hwe
+sudo apt install linux-image-generic-hwe-24.04
+```
+
+#### Install a pre-packaged mainline kernel
 
 1. Navigate to [kernel.ubuntu.com/mainline/](https://kernel.ubuntu.com/mainline/)
 2. Navigate to the folder for the kernel version you're looking for, e.g.: `v6.13/`
