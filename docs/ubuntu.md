@@ -333,7 +333,7 @@ unmanaged-devices=*,except:type:wifi,except:type:gsm,except:type:cdma
 Instead, create an override in `/etc/NetworkManager/conf.d/99-unmanaged-devices.conf` with content:
 ```ini
 [keyfile]
-unmanaged-devices=interface-name:veth*;type:bridge
+unmanaged-devices=interface-name:veth*;type:bridge;type:loopback
 ```
 
 Checked managed/unmanaged status with:
