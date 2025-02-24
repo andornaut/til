@@ -459,6 +459,37 @@ sudo ./dkms-install.sh
 sudo modprobe r8125
 ```
 
+### Install AMD GPU DKMS kernel module (driver)
+
+* [AMD GPU drivers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/amdgpu-install.html#ubuntu)
+  * [Kernel version compatibility](https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html#operating-systems-and-kernel-versions)
+* [AMD Quick start installation guide on Ubuntu](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/quick-start.html)
+* [AMD Running ROCm Docker containers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/how-to/docker.html)
+
+1. Navigate to [repo.radeon.com/amdgpu-install/latest/ubuntu/noble/](https://repo.radeon.com/amdgpu-install/latest/ubuntu/noble/) and get a link to the latest `.deb` file
+2. Continue with the instructions below:
+
+```bash
+# Install
+sudo apt update
+sudo apt install "linux-headers-$(uname -r)" "linux-modules-extra-$(uname -r)"
+sudo apt install python3-setuptools python3-wheel
+sudo usermod -a -G render,video $LOGNAME # Add the current user to the render and video groups
+
+latestPackageUrl='https://repo.radeon.com/amdgpu-install/latest/ubuntu/noble/amdgpu-install_6.3.60303-1_all.deb'
+latestPackageFile="./$(basename "${latestPackageUrl}")"
+wget "${latestPackageUrl}"
+sudo dpkg -i "${latestPackageFile}"
+sudo apt update
+sudo apt install amdgpu-dkms rocm
+
+# Uninstall
+amdgpu-install --uninstall
+
+# Reinstal
+amdgpu-install
+```
+
 ## Debugging and troubleshooting
 
 * [LiveCdRecovery](https://help.ubuntu.com/community/LiveCdRecovery) - Chroot an Ubuntu ISO on a USB drive
