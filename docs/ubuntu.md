@@ -313,9 +313,9 @@ sudo netplan get
 # Apply (enable) all Netplan configurations
 sudo netplan apply
 
-sudo ip set device down enp9s0
+sudo ip link set down enp9s0
 ip address show enp9s0
-sudo ip set device up enp9s0
+sudo ip link set up enp9s0
 ```
 
 ### Install and configure NetworkManager
@@ -443,6 +443,20 @@ apt purge \
   linux-image-unsigned-${version}* \
   linux-modules-${version}* \
   linux-modules-extra-${version}*
+```
+
+### Install kernel driver for Realtek 
+
+* [Realtek PCIe FE / GBE / 2.5G / 5G Ethernet Family Controller Software](https://www.realtek.com/Download/List?cate_id=584)
+* [x870 ethernet/bluetooth drivers](https://www.reddit.com/r/linux4noobs/comments/1g6wyzb/x870_ethernetbluetooth_drivers/)
+  
+```bash
+sudo apt install linux-headers-$(uname -r) 
+sudo apt install build-essential debmake debhelper devscripts dkms
+git clone https://github.com/awesometic/realtek-r8125-dkms.git
+cd realtek-r8125-dkms/
+sudo ./dkms-install.sh
+sudo modprobe r8125
 ```
 
 ## Debugging and troubleshooting
