@@ -445,7 +445,7 @@ apt purge \
   linux-modules-extra-${version}*
 ```
 
-### Install kernel driver for Realtek 
+### Install kernel module (driver) for Realtek r8125 2.5G enternet
 
 * [Realtek PCIe FE / GBE / 2.5G / 5G Ethernet Family Controller Software](https://www.realtek.com/Download/List?cate_id=584)
 * [x870 ethernet/bluetooth drivers](https://www.reddit.com/r/linux4noobs/comments/1g6wyzb/x870_ethernetbluetooth_drivers/)
