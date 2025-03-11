@@ -7,7 +7,9 @@
 
 ---
 
-## Initialize a repo
+## How-tos
+
+### Initialize a repo
 
 ```
 git init
@@ -17,24 +19,24 @@ git remote add origin ${URL}
 git push --set-upstream origin master
 ```
 
-## Show commit log with branches and tags
+### Show commit log with branches and tags
 
 ```
 git log --graph --all --decorate
 ```
 
-## Create a patch
+### Create a patch
 ```
 git diff --patch-with-raw > out.patch
 git diff HEAD~1 --relative
 ```
 
-## Create a symbolic branch link
+### Create a symbolic branch link
 ```
 git symbolic-ref refs/heads/master refs/heads/main
 ```
 
-## Fetch changes from origin/master without checking out master
+### Fetch changes from origin/master without checking out master
 
 [Git alias](https://github.com/andornaut/dotfiles/blob/dd397e2966df7ba97b7b2043020bdd958d32f0a3/%24HOME/.config/git/config#L15)
 
@@ -42,7 +44,7 @@ git symbolic-ref refs/heads/master refs/heads/main
 git checkout --detach --quiet HEAD && git fetch origin master:master && git checkout --quiet -
 ```
 
-## Clean-up local branches
+### Clean-up local branches
 ```
 git branch --merged
 git branch -d merged-branch-name
@@ -50,7 +52,7 @@ git branch --no-merged
 git branch -D un-merged-branch-name
 ```
 
-## Prune tracking branches
+### Prune tracking branches
 
 * [Fix `error: cannot lock ref`](https://stackoverflow.com/a/62429686)
 
@@ -66,19 +68,19 @@ git remote prune origin
 git fetch -p
 ```
 
-## List merged branches on origin
+### List merged branches on origin
 ```
 for branch in `git branch -r --merged | grep -v HEAD`; do \
 	echo -e `git show --format="%ci %cr %an" $branch | head -n 1` \\t$branch; \
 done | sort -r
 ```
 
-## See commit history for the last two commits, including the diff
+### See commit history for the last two commits, including the diff
 ```
 git log -p -2
 ```
 
-## Squash all but first commit
+### Squash all but first commit
 ```
 git rebase -i $(git rev-list --max-parents=0 HEAD)
 # Change all but the first "pick" to "squash"
@@ -88,18 +90,18 @@ git push --force
 git rebase -i --root
 ```
 
-## Pull a --force pushed branch
+### Pull a --force pushed branch
 ```
 git fetch
 git reset origin/$(git branch --show-current) --hard
 ```
 
-## Change origin URL
+### Change origin URL
 ```
 git remote set-url origin git://$URL
 ```
 
-## Project-specific configuration
+### Project-specific configuration
 
 ```
 git config user.name "andornaut" \
@@ -107,7 +109,7 @@ git config user.name "andornaut" \
     && git config user.email "andornaut@users.noreply.github.com"
 ```
 
-## Convert a mercurial repo to git
+### Convert a mercurial repo to git
 
 [hg-fast-export](https://github.com/frej/fast-export)
 
@@ -118,7 +120,7 @@ git init
 hg-fast-export.sh -r <repo> -B <branches_map> -A <users_map>
 ```
 
-## Ignore/unignore changes to a file
+### Ignore/unignore changes to a file
 
 ```
 # Ignore
@@ -128,14 +130,21 @@ git update-index --assume-unchanged ${filepath}
 git update-index --no-assume-unchanged ${filepath}
 ```
 
-## Delete tag
+### Ignore lock files when doing `git diff`
+
+```
+# .gitattributes
+*.lock -diff
+```
+
+### Delete tag
 
 ```
 git tag -d v0.0.1
 git push origin :refs/tags/v0.0.1
 ```
 
-## Undo commits
+### Undo commits
 
 * [How-to](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/)
 
@@ -144,7 +153,7 @@ git push origin :refs/tags/v0.0.1
 git revert -m 1 ${MERGE_COMMIT_SHA}
 ```
 
-## Get default branch name
+### Get default branch name
 
 * [Stackoverflow](https://stackoverflow.com/questions/28666357/git-how-to-get-default-branch)
 * [Dotfiles Git config](https://github.com/andornaut/dotfiles/blob/master/%24HOME/.config/git/config)
@@ -154,7 +163,7 @@ git revert -m 1 ${MERGE_COMMIT_SHA}
     dbr = !bash -c 'set -o pipefail && git symbolic-ref refs/remotes/origin/HEAD 2>/dev/null|cut -d / -f 4-||git remote show origin 2>/dev/null|awk \"/HEAD branch/ {print \\$NF}\"||echo main'
 ```
 
-## Set default branch
+### Set default branch
 
 [Stackoverflow](https://stackoverflow.com/a/66895556) - Allow git to set your origin/HEAD, determining what branch to use automatically
 
