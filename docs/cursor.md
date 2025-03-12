@@ -1,6 +1,7 @@
 # Cursor
 
 * [Cusor - The AI Code Editor](https://www.cursor.com/)
+* [./Visual Studio Code](./vscode.md)
 
 ## Keyboard shortcuts
 
