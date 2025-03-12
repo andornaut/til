@@ -1,5 +1,7 @@
 # Visual Studio Code
 
+* [Official](https://code.visualstudio.com/)
+* [Cursor](./cursor.md)
 * [Tips and tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 
 ## Keyboard shortcuts
