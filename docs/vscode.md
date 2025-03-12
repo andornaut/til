@@ -1,8 +1,8 @@
 # Visual Studio Code
 
-* [Official](https://code.visualstudio.com/)
-* [Cursor](./cursor.md)
+* [Visual Studio Code - Your code editor. Redefined with AI](https://code.visualstudio.com/)
 * [Tips and tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
+* [./Cursor](./cursor.md)
 
 ## Keyboard shortcuts
 
