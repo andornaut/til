@@ -78,8 +78,9 @@ channel=stable
 rustup update ${channel}
 rustup default ${channel}
 
-# Install cargo-audit globally
+# Install cargo addons globally
 cargo install cargo-audit
+cargo install cargo-outdated
 ```
 
 Create a project
