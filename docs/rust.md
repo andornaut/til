@@ -77,6 +77,9 @@ Update Rust on the stable, beta, or nightly channel
 channel=stable
 rustup update ${channel}
 rustup default ${channel}
+
+# Install cargo-audit globally
+cargo install cargo-audit
 ```
 
 Create a project
