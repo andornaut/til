@@ -11,6 +11,7 @@ brew install \
     bash \
     coreutils \
     curl \
+    htop \
     jq \
     nmap \
     svn \
