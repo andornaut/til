@@ -14,10 +14,11 @@ Application | Description
 [flameshot](https://github.com/flameshot-org/flameshot/)|Screenshot capture
 [gnome-disks](https://gitlab.gnome.org/GNOME/gnome-disk-utility)|Tool to manage storage devices
 [heroic](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)|[Epic Games Store](https://www.epicgames.com) launcher
-[itch](https://itch.io/app)|[itch.io](https://itch.io) game launcher
+[itch](https://itch.io/app)|[itch.io](https://itch.io)|Game launcher
+[LACT](https://github.com/ilya-zlobintsev/LACT)|Linux GPU Configuration Tool
 [lutris](https://lutris.net/)|Wine, Steam, etc game launcher
 [Mission Center](https://missioncenter.io/)|Monitor your CPU, Memory, Disk, Network and GPU usage
-[netplan](https://netplan.readthedocs.io/en/stable/) - Network configuration
+[netplan](https://netplan.readthedocs.io/en/stable/)|Network configuration
 [obs](https://obsproject.com/)|Tool to record video and perform live streaming
 [pcmanfm](https://sourceforge.net/projects/pcmanfm/)|File manager
 [piper](https://github.com/libratbag/piper)|Configure mouse DPI
