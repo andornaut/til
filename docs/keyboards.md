@@ -82,7 +82,11 @@
   * [KiKit – Automation for KiCAD](https://github.com/yaqwsx/KiKit)
 * [KMK firmware](https://github.com/KMKfw/kmk_firmware)
 * [Plate & Case Builder](http://builder.swillkb.com/) (Online only)
+
+### Firmware
+
 * [QMK firmware](https://github.com/qmk/qmk_firmware)
+* [RMK firmware](https://github.com/HaoboGu/rmk)
 * [ZMK firmware](https://zmk.dev/)
 
 ## Stores
