@@ -7,7 +7,7 @@
 * [DeepSeek](https://chat.deepseek.com)
 * [Gemini](https://gemini.google.com/)
 * [Le Chat](https://chat.mistral.ai/chat)
-* [Perpexity](https://www.perplexity.ai/0
+* [Perpexity](https://www.perplexity.ai/)
 
 ## Platform as a Service (PaaS)
 
