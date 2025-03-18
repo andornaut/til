@@ -14,10 +14,11 @@ Application | Description
 [flameshot](https://github.com/flameshot-org/flameshot/)|Screenshot capture
 [gnome-disks](https://gitlab.gnome.org/GNOME/gnome-disk-utility)|Tool to manage storage devices
 [heroic](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)|[Epic Games Store](https://www.epicgames.com) launcher
-[itch](https://itch.io/app)|[itch.io](https://itch.io) game launcher
+[itch](https://itch.io/app)|[itch.io](https://itch.io)|Game launcher
+[LACT](https://github.com/ilya-zlobintsev/LACT)|Linux GPU Configuration Tool
 [lutris](https://lutris.net/)|Wine, Steam, etc game launcher
 [Mission Center](https://missioncenter.io/)|Monitor your CPU, Memory, Disk, Network and GPU usage
-[netplan](https://netplan.readthedocs.io/en/stable/) - Network configuration
+[netplan](https://netplan.readthedocs.io/en/stable/)|Network configuration
 [obs](https://obsproject.com/)|Tool to record video and perform live streaming
 [pcmanfm](https://sourceforge.net/projects/pcmanfm/)|File manager
 [piper](https://github.com/libratbag/piper)|Configure mouse DPI
@@ -64,14 +65,14 @@ powertop | Power consumption and power management diagnosis tool
 sensors | Print temperature sensors information
 vmstat | Report virtual memory statistics
 
-```
+```bash
 # Monitor a process' utilization
 pid=$(ps -e|grep filectrl|cut -f1 -d' ');pidstat -h -r -u -v -p $pid 10
 ```
 
 ### Search for installed applications
 
-```
+```bash
 grep -li ${SEARCH_TEXT} /usr/share/applications/*.desktop
 # or
 dpkg -l | grep ${SEARCH_TEXT}
@@ -83,7 +84,7 @@ $ grep -li music /usr/share/applications/*.desktop
 
 ### Search for Ubuntu packages by filename
 
-```
+```bash
 sudo apt-get install apt-file
 apt-file update
 apt-file search ${pattern}
@@ -111,7 +112,7 @@ Path |Usage
 `~/.local/share/flatpak/exports/share/applications/` | Flatpak --user applications
 `/var/lib/flatpak/exports/share/applications/` | Flatpak --system applications
 
-```
+```bash
 # Use a TUI program to set default association
 apt install libfile-mimeinfo-perl
 mimeopen -d existing.pdf
@@ -145,7 +146,7 @@ vim ~/.config/mimeapps.list
 
 * [Ask Ubuntu](https://askubuntu.com/a/984800)
 
-```
+```bash
 sudo apt purge evolution* language-selector-gnome whoopsie*
 
 # Remove Snap
@@ -165,7 +166,7 @@ sudo apt remove --purge tracker-miner-fs
 
 * [Flatpak.org](https://flatpak.org/)
 
-```
+```bash
 # Exec into the container
 flatpak enter org.mozilla.firefox bash
 
@@ -180,7 +181,7 @@ flatpak permission-reset org.mozilla.firefox
 
 ### Upgrade Ubuntu from LTS to non-LTS
 
-```
+```bash
 sudo sed -i 's/^\(Prompt\s*=\s*\)\w\+/\1normal/g' /etc/update-manager/release-upgrades
 sudo do-release-upgrade
 ```
@@ -189,7 +190,7 @@ sudo do-release-upgrade
 
 * [Ask Ubuntu](https://askubuntu.com/questions/843778/how-to-disable-release-upgrade-notification-emails)
 
-```
+```bash
 sudo sed -i 's/^\(Prompt\s*=\s*\)\w\+/\1never/g' /etc/update-manager/release-upgrades
 echo -n "" > /var/lib/ubuntu-release-upgrader/release-upgrade-available
 ```
@@ -202,7 +203,7 @@ Using dconf:
 
 [@au [] specifies the type of the empty array](https://developer.gnome.org/glib/stable/gvariant-text.html#gvariant-text-type-annotations) (which would not parse otherwise)
 
-```
+```bash
 # Remove language switcher keyboard shortcut
 dconf write /org/gnome/desktop/wm/keybindings/switch-input-source '@au []'
 
@@ -215,7 +216,7 @@ ibus-daemon -rd
 
 Using dconf-editor:
 
-```
+```bash
 apt install dconf-editor
 dconf-editor
 # Navigate to: /org/gnome/desktop/wm/keybindings/switch-input-source
@@ -251,14 +252,13 @@ Mount a subdirectory of a share as a non-root user
 # vers=1.0 is necessary for Samba to support Unix extnsions:
 # https://askubuntu.com/a/995142
 //$HOSTNAME/homes/src /home/andornaut/src cifs vers=1.0,user,uid=andornaut,gid=andornaut,credentials=/home/andornaut/.smb_credentials_on_$HOSTNAME,nofail 0 0
-
 ```
 
 ### Preserve $PATH when using sudo
 
 * [StackOverflow](http://unix.stackexchange.com/a/83194)
 
-```
+```bash
 sudo env "PATH=$PATH" command
 ```
 
@@ -266,7 +266,7 @@ sudo env "PATH=$PATH" command
 
 * [Inotify instructions](https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit)
 
-```
+```bash
 $ echo '
 fs.file-max = 100000
 fs.inotify.max_user_watches = 524288' | sudo tee -a /etc/sysctl.conf
@@ -278,7 +278,7 @@ $ sudo sysctl -pf
 
 * [Wiki](https://wiki.archlinux.org/index.php/time)
 
-```
+```bash
 timedatectl set-ntp false
 timedatectl set-time "2016-06-20 10:00:00"
 timedatectl set-time "10:00:00"
@@ -289,7 +289,7 @@ timedatectl set-ntp true
 
 * [Howto](https://wiki.archlinux.org/index.php/SSD_memory_cell_clearing)
 
-```
+```bash
 hdparm -I /dev/sdX (result: Security:not enabled)
 hdparm --user-master u --security-set-pass PasSWorD /dev/sdX
 hdparm -I /dev/sdX (result: Security:enabled)
@@ -299,12 +299,74 @@ hdparm -I /dev/sdX (result: Security:not enabled)
 
 ### Use debconf
 
-```
+```bash
 sudo debconf-show ${packageName}
 
 # or
-
 sudo debconf-get-selections|grep -i ${packageName}
+```
+### Use Netplan
+
+```bash
+# Print configurations from /etc/netplan/*.yaml
+sudo netplan get
+
+# Apply (enable) all Netplan configurations
+sudo netplan apply
+
+sudo ip link set down enp9s0
+ip address show enp9s0
+sudo ip link set up enp9s0
+```
+
+### Install and configure NetworkManager
+
+* [Permanently configuring a device as unmanaged in NetworkManager](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/configuring-networkmanager-to-ignore-certain-devices_configuring-and-managing-networking#permanently-configuring-a-device-as-unmanaged-in-networkmanager_configuring-networkmanager-to-ignore-certain-devices)
+
+Install Network Manager:
+
+```bash
+sudo apt install network-manager-gnome
+
+# Autostart nm-applet
+$ cp /usr/share/applications/nm-applet.desktop ~/.config/autostart/
+
+# Set Netplan configurations to be rendered by NetworkManager
+$ sudo cat /etc/netplan/dhcp.yaml
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    enp9s0:
+      dhcp4: true
+
+$ sudo systemctl restart NetworkManager
+```
+
+Network Manager configuration lives in `/etc/NetworkManager/conf.d` and `/usr/lib/NetworkManager/conf.d` and can be viewed by executing `sudo NetworkManager --print-config`.
+
+The configuration in `/usr/lib/NetworkManager/conf.d/10-globally-managed-devices.conf` sets all devices except wifi and cellular to "unmanaged", but this doesn't appear to be applied:
+```ini
+[keyfile]
+unmanaged-devices=*,except:type:wifi,except:type:gsm,except:type:cdma
+```
+
+Instead, create an override in `/etc/NetworkManager/conf.d/99-unmanaged-devices.conf` with content:
+```ini
+[keyfile]
+unmanaged-devices=interface-name:veth*;type:bridge;type:loopback
+```
+
+Checked managed/unmanaged status with:
+
+```bash
+systemctl reload NetworkManager
+nmcli device status
+```
+
+Note that [rfkill](https://manpages.ubuntu.com/manpages/xenial/man8/rfkill.8.html) may be "soft blocking" your wireless device, which you can unblock using:
+```bash
+rfkill unblock wlan
 ```
 
 ### Allow adm users to shutdown and reboot the system
@@ -315,22 +377,144 @@ Add the following to `/etc/sudoers.d/power`:
 %adm ALL=NOPASSWD: /sbin/halt, /sbin/poweroff, /sbin/reboot
 ```
 
+### Upgrade to the latest kernel
+
+* [How to update kernel to the latest mainline](https://askubuntu.com/questions/119080/how-to-update-kernel-to-the-latest-mainline-version-without-any-distro-upgrade/142001#142000)
+
+#### Install a HWE kernel
+
+```bash
+apt search linux-image-generic-hwe
+sudo apt install linux-image-generic-hwe-24.04
+```
+
+#### Install a pre-packaged mainline kernel
+
+1. Navigate to [kernel.ubuntu.com/mainline/](https://kernel.ubuntu.com/mainline/)
+2. Navigate to the folder for the kernel version you're looking for, e.g.: `v6.13/`
+3. Navigate to the folder for your architecture, e.g.: `amd64/`
+4. Download the 4 `.deb` files `linux-headers*all*`, `linux-headers*amd64*`, `linux-image*`, `linux-modules*`
+5. Install all 4 `.deb` files with `sudo apt install ./linux*deb`
+6. Note that if the linux-image*deb file is "unsigned", then you will need to disable secure boot in your BIOS
+
+#### Compile your own kernel
+
+* [Building all Ubuntu extra modules - kernel compilation](https://forum.level1techs.com/t/building-all-ubuntu-extra-modules-kernel-compilation/224734)
+
+```bash
+# Download and extract the kernel source
+wget https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.13.tar.gz
+tar -xf linux-6.13.tar.gz
+cd linux-6.13/
+
+# Copy the config-* file that you want to base your new config on
+cp -v /boot/config-$(uname -r) .config
+make oldconfig
+
+# Build the kernel *.deb files
+scripts/config --disable SYSTEM_TRUSTED_KEYS
+scripts/config --disable SYSTEM_REVOCATION_KEYS
+scripts/config --set-str CONFIG_SYSTEM_TRUSTED_KEYS ""
+scripts/config --set-str CONFIG_SYSTEM_REVOCATION_KEYS ""
+fakeroot make -j7 # this built the kernel
+make -j7 bindeb-pkg # this made the kernel debs
+
+# Install the kernel *.deb files
+cd ..
+apt install ./linux-*deb
+
+# To generate initrd for the running kernel set `kernelVersion=$(uname -r)`
+kernelVersion=6.13.4-061304-generic
+update-initramfs -c -k ${kernelVersion}
+
+rootPartition=/dev/nvme0n1p2
+update-grub
+grub-install ${rootPartition}
+```
+
+#### Uninstall old kernel packages
+
+```bash
+dpkg --list | egrep -i --color 'linux-image|linux-headers|linux-modules' | awk '{ print $2 }'
+
+version=6.8
+apt purge \
+  linux-headers-${version}* \
+  linux-image-${version}* \
+  linux-image-unsigned-${version}* \
+  linux-modules-${version}* \
+  linux-modules-extra-${version}*
+```
+
+### Install kernel module (driver) for Realtek r8125 2.5G enternet
+
+* [Realtek PCIe FE / GBE / 2.5G / 5G Ethernet Family Controller Software](https://www.realtek.com/Download/List?cate_id=584)
+* [x870 ethernet/bluetooth drivers](https://www.reddit.com/r/linux4noobs/comments/1g6wyzb/x870_ethernetbluetooth_drivers/)
+  
+```bash
+sudo apt install linux-headers-$(uname -r) 
+sudo apt install build-essential debmake debhelper devscripts dkms
+git clone https://github.com/awesometic/realtek-r8125-dkms.git
+cd realtek-r8125-dkms/
+sudo ./dkms-install.sh
+sudo modprobe r8125
+```
+
+### Install AMD GPU DKMS kernel module (driver)
+
+* [AMD GPU drivers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/amdgpu-install.html#ubuntu)
+  * [Kernel version compatibility](https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html#operating-systems-and-kernel-versions)
+* [AMD Quick start installation guide on Ubuntu](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/quick-start.html)
+* [AMD Running ROCm Docker containers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/how-to/docker.html)
+
+1. Navigate to [repo.radeon.com/amdgpu-install/latest/ubuntu/noble/](https://repo.radeon.com/amdgpu-install/latest/ubuntu/noble/) and get a link to the latest `.deb` file
+2. Continue with the instructions below:
+
+```bash
+# Install
+sudo apt update
+sudo apt install "linux-headers-$(uname -r)" "linux-modules-extra-$(uname -r)"
+sudo apt install python3-setuptools python3-wheel
+sudo usermod -a -G render,video $LOGNAME # Add the current user to the render and video groups
+
+latestPackageUrl='https://repo.radeon.com/amdgpu-install/latest/ubuntu/noble/amdgpu-install_6.3.60303-1_all.deb'
+latestPackageFile="./$(basename "${latestPackageUrl}")"
+wget "${latestPackageUrl}"
+sudo dpkg -i "${latestPackageFile}"
+sudo apt update
+sudo apt install amdgpu-dkms rocm
+
+# Uninstall
+amdgpu-install --uninstall
+
+# Reinstal
+amdgpu-install
+```
+
 ## Debugging and troubleshooting
 
 * [LiveCdRecovery](https://help.ubuntu.com/community/LiveCdRecovery) - Chroot an Ubuntu ISO on a USB drive
 
 ### Fix broken grub install
 
-```
-mount /dev/sda1 /mnt \
+```bash
+efiPartition=/dev/nvme0n1p1
+rootPartition=/dev/nvme0n1p2
+mount ${rootPartition} /mnt \
   mount --bind /dev /mnt/dev \
   mount --bind /proc /mnt/proc \
   mount --bind /sys /mnt/sys \
+  mount ${efiPartition} /boot/efi
   chroot /mnt
 
-grub-install /dev/sda
+# To generate initrd for the running kernel set `kernelVersion=$(uname -r)`
+kernelVersion=6.13.4-061304-generic
+update-initramfs -c -k ${kernelVersion}
+update-grub
+grub-install ${rootPartition}
 
-umount /mnt/proc/ /mnt/dev /mnt/sys /mnt
+exit
+reboot
 ```
 
 ### apt update 404
@@ -339,7 +523,7 @@ umount /mnt/proc/ /mnt/dev /mnt/sys /mnt
 
 This error occurs when running `apt update` on an unsupported version of Ubuntu.
 
-```
+```bash
 sudo sed -i -e 's/\([a-z]*.\?\)\?archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
 ```
 
@@ -355,7 +539,7 @@ owner @{HOME}/PATH_TO_VAULT/redshift.conf r,
 
 2. Restart [AppArmor](https://apparmor.net/):
 
-```
+```bash
 sudo systemctl reload apparmor
 ```
 
@@ -365,7 +549,7 @@ sudo systemctl reload apparmor
 
 This can be caused by accessing the "Sound" section/tab of Gnome Control Center on an installation provisioned by [ansible-workstation](https://github.com/andornaut/ansible-workstation).
 
-```
+```bash
 rm -rf .config/dconf/
 ```
 
@@ -392,8 +576,9 @@ input: BRLTTY 6.4 Linux Screen Driver Keyboard as /devices/virtual/input/input21
 usb 2-3: usbfs: interface 0 claimed by ch341 while 'brltty' sets config #1
 ch341-uart ttyUSB0: ch341-uart converter now disconnected from ttyUSB0
 ```
+
 Disable brltty:
-```
+```bash
 sudo systemctl stop brltty-udev brltty
 sudo systemctl disable brltty-udev brltty
 sudo systemctl mask brltty-udev  brltty
