@@ -15,6 +15,8 @@ rake
     * [Communities](docs/3d-printing.md#communities)
     * [Documentation and guides](docs/3d-printing.md#documentation-and-guides)
     * [Hardware](docs/3d-printing.md#hardware)
+      * [BambuLab P1P](docs/3d-printing.md#bambulab-p1p)
+        * [Device discovery across subnets using pfSense](docs/3d-printing.md#device-discovery-across-subnets-using-pfsense)
     * [Supplies](docs/3d-printing.md#supplies)
     * [Software](docs/3d-printing.md#software)
     * [Stores](docs/3d-printing.md#stores)
