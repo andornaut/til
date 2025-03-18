@@ -39,6 +39,8 @@ am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n or
 
 ## Android TV / Google TV
 
+* [FLauncher](https://play.google.com/store/apps/details?id=me.efesser.flauncher&hl=en_CA)
+
 ### Projectivy Launcher
 
 * [GitHub](https://github.com/spocky/miproja1)

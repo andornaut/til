@@ -39,6 +39,11 @@ systemctl edit $service
 
 # Show tree of critical path targets
 systemd-analyze critical-chain
+
+# Show unit files and their e.g. "wants" dependencies
+/home/andornaut/.config/systemd
+tree /etc/systemd/system
+tree /etc/systemd/user
 ```
 
 ## journalctl commands

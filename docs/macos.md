@@ -11,6 +11,7 @@ brew install \
     bash \
     coreutils \
     curl \
+    htop \
     jq \
     nmap \
     svn \
@@ -36,12 +37,15 @@ chsh -s /opt/homebrew/bin/bash
 Install these applications:
 
 * [Alacritty](https://github.com/alacritty/alacritty)
+* [Cursor](https://www.cursor.com/)
 * [Flameshot](https://flameshot.org) (Paid alternative to [Monosnap](https://monosnap.com/))
 * [Kap](https://github.com/wulkano/Kap) - Screen recorder
 * [Karabiner Elements](https://karabiner-elements.pqrs.org/)
 * [Rectangle](https://rectangleapp.com/) (Paid version: [Hookshot](https://hookshot.app/))
 * [SketchyBar](https://github.com/FelixKratz/SketchyBar) - Status bar
 * [skhd](https://github.com/koekeishiya/skhd)
+* [superwhisper](https://superwhisper.com/)
+* [Visual Studio Code](https://code.visualstudio.com/)
 * [Yabai](https://github.com/koekeishiya/yabai) - Tiling window manager
 
 ```
