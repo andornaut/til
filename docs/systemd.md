@@ -41,7 +41,7 @@ systemctl edit $service
 systemd-analyze critical-chain
 
 # Show unit files and their e.g. "wants" dependencies
-/home/andornaut/.config/systemd
+tree /home/andornaut/.config/systemd
 tree /etc/systemd/system
 tree /etc/systemd/user
 ```
