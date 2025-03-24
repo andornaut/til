@@ -2,6 +2,7 @@
 
 * [./Software Engineering](./software-engineering.md)
 * [Blog](https://blog.rust-lang.org/) - Official blog
+* [Compiler explorer](https://rust.godbolt.org/)
 * [Crates.io](https://crates.io) - Public package repository
 * [Discord](https://discord.gg/rust-lang) - Official discord server
 * [Docs.rs](https://docs.rs/) - Documentation host for crates
