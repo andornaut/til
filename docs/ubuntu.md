@@ -394,7 +394,7 @@ sudo apt install linux-image-generic-hwe-24.04
 2. Navigate to the folder for the kernel version you're looking for, e.g.: `v6.13/`
 3. Navigate to the folder for your architecture, e.g.: `amd64/`
 4. Download the 4 `.deb` files `linux-headers*all*`, `linux-headers*amd64*`, `linux-image*`, `linux-modules*`
-5. Install all 4 `.deb` files with `sudo apt install ./linux*deb`
+5. Install all 4 `.deb` files with `sudo dpkg -i ./linux*deb`
 6. Note that if the linux-image*deb file is "unsigned", then you will need to disable secure boot in your BIOS
 
 #### Compile your own kernel
