@@ -29,9 +29,13 @@
 * [Aider](https://aider.chat/)
 * [./Cursor](./cursor.md)
 
-## Articles, blogs, channels
+## Articles, blogs, videos
 
+* [AlphaGo - The Movie](https://youtu.be/WXuK6gekU1Y?si=EuLOmjwqvATUdL2T)
+* [Andrej Karpathy - Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI)
 * [Simon Willison’s Weblog](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
+* [Stephen Wolfram - What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
+* [vcubingx - Language Modeling (playlist)](https://www.youtube.com/watch?v=1il-s4mgNdI&list=PLyPKqVSnetmELS_I3FRfXZRKAxV5HB9fc)
 
 ## Courses
 
