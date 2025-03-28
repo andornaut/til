@@ -477,7 +477,7 @@ sudo apt install "linux-headers-$(uname -r)" "linux-modules-extra-$(uname -r)"
 sudo apt install python3-setuptools python3-wheel
 sudo usermod -a -G render,video $LOGNAME # Add the current user to the render and video groups
 
-latestPackageUrl='https://repo.radeon.com/amdgpu-install/latest/ubuntu/noble/amdgpu-install_6.3.60303-1_all.deb'
+latestPackageUrl='https://repo.radeon.com/amdgpu-install/latest/ubuntu/noble/amdgpu-install_6.3.60304-1_all.deb'
 latestPackageFile="./$(basename "${latestPackageUrl}")"
 wget "${latestPackageUrl}"
 sudo dpkg -i "${latestPackageFile}"
