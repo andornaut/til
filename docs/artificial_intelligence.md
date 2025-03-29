@@ -27,16 +27,22 @@
 ## Software development
 
 * [Aider](https://aider.chat/)
+* [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
 * [./Cursor](./cursor.md)
 
 ## Articles, blogs, videos
 
 * [AlphaGo - The Movie](https://youtu.be/WXuK6gekU1Y?si=EuLOmjwqvATUdL2T)
 * [Andrej Karpathy - Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI)
+* [3Blue1Brown - Neural Networks](https://www.3blue1brown.com/topics/neural-networks)
 * [Simon Willison’s Weblog](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
 * [Stephen Wolfram - What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
 * [vcubingx - Language Modeling (playlist)](https://www.youtube.com/watch?v=1il-s4mgNdI&list=PLyPKqVSnetmELS_I3FRfXZRKAxV5HB9fc)
 
+## Books
+
+* [Generative Deep Learning, 2nd Edition](https://www.oreilly.com/library/view/generative-deep-learning/9781098134174/)
+ 
 ## Courses
 
 * [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) - 21 Lessons, Get Started Building with Generative AI
