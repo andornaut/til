@@ -24,7 +24,7 @@
 * [superwhisper](https://superwhisper.com/)
 * [TensorFlow](https://www.tensorflow.org/)
 
-## Software development
+## Software development tools
 
 * [Aider](https://aider.chat/)
 * [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
