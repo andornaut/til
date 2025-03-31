@@ -39,7 +39,7 @@ rake
     * [Platform as a Service (PaaS)](docs/artificial_intelligence.md#platform-as-a-service-paas)
     * [Software](docs/artificial_intelligence.md#software)
     * [Software development](docs/artificial_intelligence.md#software-development)
-    * [Articles, blogs, channels](docs/artificial_intelligence.md#articles-blogs-channels)
+    * [Articles, blogs, videos](docs/artificial_intelligence.md#articles-blogs-videos)
     * [Courses](docs/artificial_intelligence.md#courses)
   * [bash](docs/bash.md#bash)
     * [Books](docs/bash.md#books)
