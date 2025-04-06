@@ -28,7 +28,9 @@
 * [Ollama](https://ollama.com/)
 * [Open WebUI](https://openwebui.com/)
 * [Speaches](https://speaches.ai/) - An OpenAI API-compatible server supporting streaming transcription, translation, and speech generation
-* [superwhisper](https://superwhisper.com/)
+* [Whisper](https://openai.com/index/whisper/)
+    * [awesome-whisper](https://github.com/sindresorhus/awesome-whisper) - A list of whisper software
+    * [superwhisper](https://superwhisper.com/) - Voice dictation on macOS
 * [TensorFlow](https://www.tensorflow.org/)
 
 ### Software development tools
