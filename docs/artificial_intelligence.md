@@ -23,6 +23,7 @@
 
 * [ansible-role-homeassistantfrigate #llm](https://github.com/andornaut/ansible-ctrl/tree/master/roles/homeassistant-frigate#llm)
 * [ansible-role-homeassistantfrigate #voice-assistant](https://github.com/andornaut/ansible-ctrl/tree/master/roles/homeassistant-frigate#voice-assistant)
+* [Claude Code](https://github.com/anthropics/claude-code)
 * [Keras](https://keras.io/)
 * [LibreChat](https://www.librechat.ai/)
 * [Ollama](https://ollama.com/)
