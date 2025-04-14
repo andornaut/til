@@ -165,7 +165,7 @@ rake
       * [Reduce menu (top bar) transparency](docs/macos.md#reduce-menu-top-bar-transparency)
       * [Dock](docs/macos.md#dock)
       * [Disable "Click wallpaper to reveal desktop"](docs/macos.md#disable-click-wallpaper-to-reveal-desktop)
-      * [Disable CMD+h to hide window](docs/macos.md#disable-cmdh-to-hide-window)
+      * [Prevent CMD+h from hiding windows](docs/macos.md#prevent-cmdh-from-hiding-windows)
       * [Press CMD+Enter to open Alacritty](docs/macos.md#press-cmdenter-to-open-alacritty)
     * [KVM](docs/macos.md#kvm)
       * [Fix flakiness](docs/macos.md#fix-flakiness)
