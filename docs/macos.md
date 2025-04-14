@@ -146,7 +146,7 @@ defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 1. Search for "stage manager"
 1. Set "Click wallpaper to reveal desktop" to "Only in Stage Manager"
 
-### Disable CMD+h to hide window
+### Prevent CMD+h from hiding windows
 
 * [StackOverflow](https://superuser.com/a/1354665)
 * [@andornaut/dotfiles](https://github.com/andornaut/dotfiles/blob/master/%24HOME/.config/karabiner/assets/complex_modifications/disable_command_h.json)
