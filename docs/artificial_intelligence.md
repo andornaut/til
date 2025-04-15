@@ -41,10 +41,13 @@
 * [Cline](https://github.com/cline/cline)
 * [Continue](https://www.continue.dev/)
 * [./Cursor](./cursor.md)
+* [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
 * [Roo-Code](https://github.com/RooVetGit/Roo-Code)
 
 ## Articles and blogs
 
+* [Gemini - Prompting guide 101](https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf)
+* [GPT 4.1 Prompting Guide](https://cookbook.openai.com/examples/gpt4-1_prompting_guide)
 * [Simon Willison’s Weblog](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
 * [Stephen Wolfram - What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
 
@@ -55,11 +58,11 @@
 ## Courses
 
 * [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) - 21 Lessons, Get Started Building with Generative AI
-* [Free Generative AI & Large Language Models Courses](https://learn.activeloop.ai/)
+* [Generative AI & Large Language Models Courses](https://learn.activeloop.ai/)
 
 ## Videos
 
+* [3Blue1Brown - Neural Networks](https://www.3blue1brown.com/topics/neural-networks)
 * [AlphaGo - The Movie](https://youtu.be/WXuK6gekU1Y?si=EuLOmjwqvATUdL2T)
 * [Andrej Karpathy - Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI)
-* [3Blue1Brown - Neural Networks](https://www.3blue1brown.com/topics/neural-networks)
 * [vcubingx - Language Modeling (playlist)](https://www.youtube.com/watch?v=1il-s4mgNdI&list=PLyPKqVSnetmELS_I3FRfXZRKAxV5HB9fc)
