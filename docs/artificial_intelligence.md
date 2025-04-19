@@ -37,15 +37,17 @@
 ### Software development tools
 
 * [Aider](https://aider.chat/)
+* [Augment Code](https://www.augmentcode.com/)
 * [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)
 * [Cline](https://github.com/cline/cline)
 * [Continue](https://www.continue.dev/)
 * [./Cursor](./cursor.md)
 * [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
 * [Roo-Code](https://github.com/RooVetGit/Roo-Code)
+* [Windsurf Editor](https://windsurf.com/editor)
 
 ## Articles and blogs
-
+* [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices)
 * [Gemini - Prompting guide 101](https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf)
 * [GPT 4.1 Prompting Guide](https://cookbook.openai.com/examples/gpt4-1_prompting_guide)
 * [Simon Willison’s Weblog](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
