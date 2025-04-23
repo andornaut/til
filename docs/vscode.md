@@ -31,7 +31,9 @@ Shift+F11|⇧F11|Step out
 F10|F10|Step over
 Shift+F5|⇧F5|Stop
 
-## Add CLI executable on macOS
+## How-tos
+
+### Add CLI executable on macOS
 
 1. Launch VS Code.
 1. Open the Command Palette (⇧⌘P)
@@ -47,7 +49,7 @@ alias scratch="code --new-window ${HOME}/scratch.md"
 alias til="code --new-window ${HOME}/src/github.com/andornaut/til"
 ```
 
-## Enable key repeating on macOS
+### Enable key repeating on macOS
 
 * [Howto](https://github.com/VSCodeVim/Vim#mac)
 
@@ -56,7 +58,14 @@ defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 defaults delete -g ApplePressAndHoldEnabled # If necessary, reset global default
 ```
 
-## Extensions
+### Disable Copilot
+
+* [Stackoverflow](https://stackoverflow.com/questions/75377406/how-can-i-disable-github-copilot-in-vs-code)
+
+1. Press CTRL+SHIFT+p
+2. Enter "Hide copilot"
+
+### Extensions
 
 Name | Description
 --- | ---
