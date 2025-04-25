@@ -43,8 +43,9 @@
 * [Cline](https://github.com/cline/cline)
 * [Continue](https://www.continue.dev/)
 * [./Cursor](./cursor.md)
-* [GitHub Copilot in VS Code](https://code.visualstudio.com/docs/copilot/overview)
-* [Roo-Code](https://github.com/RooVetGit/Roo-Code)
+* [GitHub Copilot for VS Code](https://code.visualstudio.com/docs/copilot/overview)
+* [Roo Code](https://github.com/RooVetGit/Roo-Code)
+  * [Community Projects](https://docs.roocode.com/community)
 * [Windsurf Editor](https://windsurf.com/editor)
 
 ## Articles and blogs
