@@ -238,33 +238,41 @@ which may occur if RetroArch crashes before it is able to clean up.
 ### Cores
 
 * [Emulation General Wiki](https://emulation.gametechwiki.com/index.php/Main_Page)
+* [Retro Game Corps - Recommended RetroArch classic cores](https://retrogamecorps.com/2022/03/13/android-emulation-starter-guide/#RetroArch)
 
-Platform | Desktop core (x64) | Anbernic RG40XXV (ARM) | Retroid Pocket Mini (ARM)
---- | --- | --- | ---
-Atari - 7800 | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/)
-Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
-Atari - Lynx | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/)
-NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/)
-NEC - PC Engine CD - TurboGrafx-CD (PCECD) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/)
-Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)  | [Gambatte](https://docs.libretro.com/library/gambatte/) 
-Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) 
-Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
-Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | -- | [Dolphin](https://docs.libretro.com/library/dolphin/)
-Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
-Nintendo - Nintendo DS (NDS) | [melonDS](https://docs.libretro.com/library/melonds/) | [DraStic](https://drastic-ds.com) (Standalone) | [DraStic](https://drastic-ds.com) (Standalone)
-Nintendo - Nintendo Entertainment System (FC, NES) | [Nestopia UE](https://docs.libretro.com/library/nestopia_ue/) | [FCEUmm](https://docs.libretro.com/library/fceumm/) | [Nestopia UE](https://docs.libretro.com/library/nestopia_ue/)
-Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/)
-Sega - 32X | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
-Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast VL](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/)
-Sega - Game Gear (GG) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega - Master System - Mark III (MS) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega - Mega-CD - Sega CD | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Standalone)
-Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/)
-Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | -- | AetherSX2
-Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) ([Core System Files](https://github.com/hrydgard/ppsspp), [Optimization](https://www.reddit.com/r/ANBERNIC/comments/1fkztb1/universal_pppsspp_configuration_for_unmatched/)) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) 
-The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) 
+Platform | Desktop core (x64) | Anbernic RG40XXV (ARM) | Retroid Pocket Mini (ARM) | Retroid Pocket Flip 2 (Android)
+--- | --- | --- | --- | ---
+Arcade | | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
+Atari - 7800 | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/) |
+Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) |
+Atari - Lynx | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/) |
+NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce_fast/)
+NEC - PC Engine CD - TurboGrafx-CD (PCECD) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce_fast/)
+Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)  | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
+Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/)
+Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
+Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | -- | [Dolphin](https://docs.libretro.com/library/dolphin/) |
+Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
+Nintendo - Nintendo DS (NDS) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/) | [DraStic](https://drastic-ds.com) (Standalone) | [DraStic](https://drastic-ds.com) (Standalone) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/)
+Nintendo - Nintendo Entertainment System (FC, NES) | [Nestopia](https://docs.libretro.com/library/nestopia/) | [FCEUmm](https://docs.libretro.com/library/fceumm/) | [Nestopia](https://docs.libretro.com/library/nestopia/) | [Nestopia](https://docs.libretro.com/library/nestopia/)
+Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/)
+Sega - 32X | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
+Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast VL](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/)
+Sega - Game Gear (GG) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) |
+Sega - Master System - Mark III (MS) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
+Sega - Mega-CD - Sega CD | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
+Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
+Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Standalone) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/)
+SNK Neo Geo | | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
+Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/)
+Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | -- | AetherSX2 |
+Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) ([Core System Files](https://github.com/hrydgard/ppsspp), [Optimization](https://www.reddit.com/r/ANBERNIC/comments/1fkztb1/universal_pppsspp_configuration_for_unmatched/)) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/)
+The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) |
+O
+
+#### System specific cores
+
+* [ScummVM](https://docs.libretro.com/library/scummvm/)
 
 ### Drivers
 
