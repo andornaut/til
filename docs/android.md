@@ -11,12 +11,25 @@
 1. From the Android TV device: Navigate to Settings > About
 1. Scroll down to the bottom and click on "Build" and until you see the message "You are now a developer!"
 1. Navigate to Settings > Developer options
-1. Enable "ADB debugging"
- 
+1. Enable "USB debugging" and "Wireless debugging"
+
+### Connect via USB
+```bash
+$ adb devices
+List of devices attached
+296b55ab        device
+
+# It should show a list of devices as above. If it says "unauthorized", then check the android device to see if there's a USB debugging popup.
 ```
+
+### Connect via network
+```bash
 adb connect tv-livingroom:5555
 # The TV will prompt to authorize the connection. Select "always allow".
+```
 
+### ADB usage
+```bash
 adb shell
 
 # List all activities/intents
@@ -36,6 +49,7 @@ am start -a android.intent.action.VIEW -n com.netflix.ninja/.MainActivity
 # Open a network stream in VLC
 am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n org.videolan.vlc/.gui.video.VideoPlayerActivity
 ```
+
 
 ## Android TV / Google TV
 
