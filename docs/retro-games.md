@@ -2,8 +2,7 @@
 
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
 * [CD Romance](https://cdromance.com/) - ROM hacks
-* [EmulationStation Desktop Edition](https://es-de.org/)
-* [ES-DE](https://es-de.org/)
+* [EmulationStation Desktop Edition (ES-DE)](https://es-de.org/)
   * [Android FAQ](https://gitlab.com/es-de/emulationstation-de/-/blob/master/FAQ-ANDROID.md?ref_type=heads#every-time-i-reboot-my-device-es-de-is-starting-the-onboarding-process-why-is-this-happening)
   * [es-de-android-custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems)
   * [ES Applauncher](https://github.com/schattenphoenix/es_applauncher) 
