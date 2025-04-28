@@ -147,12 +147,17 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 1. Navigate to Apps > RetroArch -> Information > Core Information
 1. Confirm that the BIOS files that you added are listed as "present"
 
-### Retroid Pocket Mini
-* [Android Handheld Starter Guide](https://www.youtube.com/watch?app=desktop&v=I4mqgcDYZFo)
+### Retroid Pocket Mini / Flip 2
+
 * [How to Install Android 13 on the Retroid Pocket Mini](https://retrohandhelds.gg/how-to-install-android-13-retroid-pocket-mini/)
+* [Obtainium-Emulation-Pack](https://github.com/RJNY/Obtainium-Emulation-Pack)
 * [Official store](https://www.goretroid.com/en-ca/collections/frontpage/products/retroid-pocket-mini-handheld)
-* [Retroid Pocket Mini Update Android 13 | Easy How To Guide](https://www.youtube.com/watch?app=desktop&v=XTR6V_pQu1U)
+* [Retroid Pocket Mini Update Android 13 | Easy How To Guide (Video)](https://www.youtube.com/watch?app=desktop&v=XTR6V_pQu1U)
+* [Retro Game Corps - Android Handheld Starter Guide (Video)](https://www.youtube.com/watch?app=desktop&v=I4mqgcDYZFo)
+* [Retro Game Corps - ES-DE on Android Guide: My Favorite Launcher! (Video)](https://www.youtube.com/watch?v=X-bVwlMwobE)
 * [(Unofficial) stock firmware](https://github.com/TheGammaSqueeze/Retroid_Pocket_Stock_Firmware)
+* [es-de-android-custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems)
+* [ES Applauncher](https://github.com/schattenphoenix/es_applauncher)
 
 #### Rocknix custom firmware
 
