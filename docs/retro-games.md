@@ -1,6 +1,7 @@
 # Retro games
 
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
+* [BIOS](https://github.com/Abdess/retroarch_system)
 * [CD Romance](https://cdromance.com/) - ROM hacks
 * [EmulationStation Desktop Edition (ES-DE)](https://es-de.org/)
   * [Android FAQ](https://gitlab.com/es-de/emulationstation-de/-/blob/master/FAQ-ANDROID.md?ref_type=heads#every-time-i-reboot-my-device-es-de-is-starting-the-onboarding-process-why-is-this-happening)
