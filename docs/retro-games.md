@@ -1,6 +1,7 @@
 # Retro games
 
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
+* [Backup & Restore Android Retro Handhelds! (Video)](https://www.youtube.com/watch?app=desktop&v=EZhlyGXCSF0)
 * [BIOS](https://github.com/Abdess/retroarch_system)
 * [CD Romance](https://cdromance.com/) - ROM hacks
 * [EmulationStation Desktop Edition (ES-DE)](https://es-de.org/)
@@ -158,10 +159,11 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 
 ### Retroid Pocket Mini / Flip 2
 
+* [DIY Screen Replacement! (Video)](https://www.youtube.com/live/LiaTAjsIKEs)
 * [How to Install Android 13 on the Retroid Pocket Mini](https://retrohandhelds.gg/how-to-install-android-13-retroid-pocket-mini/)
 * [Obtainium-Emulation-Pack](https://github.com/RJNY/Obtainium-Emulation-Pack)
 * [Official store](https://www.goretroid.com/en-ca/collections/frontpage/products/retroid-pocket-mini-handheld)
-* [Retroid Pocket Mini Update Android 13 | Easy How To Guide (Video)](https://www.youtube.com/watch?app=desktop&v=XTR6V_pQu1U)
+* [Update Android 13 | Easy How To Guide (Video)](https://www.youtube.com/watch?app=desktop&v=XTR6V_pQu1U)
 * [(Unofficial) stock firmware](https://github.com/TheGammaSqueeze/Retroid_Pocket_Stock_Firmware)
 
 #### Rocknix custom firmware
@@ -169,6 +171,7 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 * [Documentation](https://rocknix.org/)
   * [Retroid Pocket Mini details](https://rocknix.org/devices/retroid/retroid-pocket-mini/)
   * [Retroid Pocket Mini supported emulators and cores](https://github.com/ROCKNIX/distribution/blob/dev/documentation/PER_DEVICE_DOCUMENTATION/SD865/SUPPORTED_EMULATORS_AND_CORES.md)
+* [Nightly builds](https://nightly.rocknix.org/) 
 * [GitHub](https://github.com/ROCKNIX/distribution)
 * [Unofficial nightly builds](https://nightly.link/tiopex/distribution/workflows/build-nightly/ci) (Download `sd865` builds for Retroid Pocket Mini)
 
