@@ -398,6 +398,8 @@ rake
       * [Language-specific extensions](docs/vscode.md#language-specific-extensions)
   * [wget](docs/wget.md#wget)
     * [Download recursively](docs/wget.md#download-recursively)
+  * [Windows](docs/windows.md#windows)
+    * [Make a bootable Windows USB from Linux](docs/windows.md#make-a-bootable-windows-usb-from-linux)
   * [Woodworking](docs/woodworking.md#woodworking)
     * [Wood (lumber)](docs/woodworking.md#wood-lumber)
       * [Lumber yards](docs/woodworking.md#lumber-yards)
