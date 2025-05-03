@@ -543,6 +543,7 @@ Apotris (https://akouzoukos.com/apotris/)
 Asterix & Obelix XXL
 Astro Boy - Omega Factor
 Banjo-Kazooie - Grunty's Revenge
+Bookworm
 Breath of Fire
 Castlevania - Aria of Sorrow
 Chessmaster
@@ -559,6 +560,7 @@ Golden Sun
 Goodboy Galaxy (demo, https://goodboygalaxy.itch.io/goodboy-galaxy-demo)
 Gunstar Super Heroes
 Hamtaro - Ham-Ham Games
+Hamtaro - Ham-Ham Heartbreak
 Harvest Moon - Friends of Mineral Town
 Justice League Heroes - The Flash
 Kirby & The Amazing Mirror
