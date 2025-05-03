@@ -1,38 +1,35 @@
 # Retro games
 
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
-* [BIOS](https://github.com/Abdess/retroarch_system)
+* Artwork
+  * [System images (larger)](https://github.com/ruckage/es-theme-snes-mini/blob/master/art/icons_usa/)
+  * [System images (smaller)](https://github.com/Vidnez/retro-systems-icons-for-GarlicOS/tree/master/system) 
+  * [Thumbnails](http://thumbnails.libretro.com/)
+* [Backup & Restore Android Retro Handhelds! (Video)](https://www.youtube.com/watch?app=desktop&v=EZhlyGXCSF0)
+* [BIOS (GitHub)](https://github.com/Abdess/retroarch_system)
+* [BIOS (Megathread)](https://r-roms.github.io/megathread/misc/#bios-files)
 * [CD Romance](https://cdromance.com/) - ROM hacks
-* [EmulationStation Desktop Edition (ES-DE)](https://es-de.org/)
-  * [Android FAQ](https://gitlab.com/es-de/emulationstation-de/-/blob/master/FAQ-ANDROID.md?ref_type=heads#every-time-i-reboot-my-device-es-de-is-starting-the-onboarding-process-why-is-this-happening)
-  * [es-de-android-custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems)
-  * [ES Applauncher](https://github.com/schattenphoenix/es_applauncher)
 * [Homebrew games list](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
 * [MyAbandonware](https://www.myabandonware.com/)
 * [No-Intro](https://no-intro.org/)
-* [[No-Intro] PropeR 1g1r Collection (2024)](https://archive.org/details/proper1g1r-collection)
+  * [PropeR 1g1r Collection (2024)](https://archive.org/details/proper1g1r-collection)
+  * [The Official No-Intro Convention](https://datomatic.no-intro.org/stuff/The%20Official%20No-Intro%20Convention%20(20071030).pdf)
 * [Pico-8](https://www.lexaloffle.com/pico-8.php)
 * [PortMaster](https://portmaster.games/)
 * [RetroAchievements](https://retroachievements.org/)
 * [Retro Game Crops](https://retrogamecorps.com/)
   * [Android Emulation Starter Guide](https://retrogamecorps.com/2022/03/13/android-emulation-starter-guide/#RetroArch)
   * [Android Handheld Starter Guide (Video)](https://www.youtube.com/watch?app=desktop&v=I4mqgcDYZFo)
-  * [ES-DE on Android Guide: My Favorite Launcher! (Video)](https://www.youtube.com/watch?v=X-bVwlMwobE) 
   * [RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/#Options)
 * [Retro-Sanctuary](https://retro-sanctuary.com/)
 * [ROMhacking.net](https://www.romhacking.net)
   * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
 * [TheGamesDB](https://thegamesdb.net)
 * [/r/Roms Megathread](https://r-roms.github.io/)
-  * [BIOS files](https://r-roms.github.io/megathread/misc/#bios-files)
 * [/v/'s Recommended Games Wiki](https://vsrecommendedgames.fandom.com/wiki/V/%27s_Recommended_Games_Wiki)
 * [Video Game Museum](https://www.video-games-museum.com/en)
 * [Vimm's Lair](https://vimm.net/)
-* Artwork
-  * [System images (larger)](https://github.com/ruckage/es-theme-snes-mini/blob/master/art/icons_usa/)
-  * [System images (smaller)](https://github.com/Vidnez/retro-systems-icons-for-GarlicOS/tree/master/system) 
-  * [Thumbnails](http://thumbnails.libretro.com/)
 
 ## Hardware
 
@@ -158,10 +155,11 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 
 ### Retroid Pocket Mini / Flip 2
 
+* [DIY Screen Replacement! (Video)](https://www.youtube.com/live/LiaTAjsIKEs)
 * [How to Install Android 13 on the Retroid Pocket Mini](https://retrohandhelds.gg/how-to-install-android-13-retroid-pocket-mini/)
 * [Obtainium-Emulation-Pack](https://github.com/RJNY/Obtainium-Emulation-Pack)
 * [Official store](https://www.goretroid.com/en-ca/collections/frontpage/products/retroid-pocket-mini-handheld)
-* [Retroid Pocket Mini Update Android 13 | Easy How To Guide (Video)](https://www.youtube.com/watch?app=desktop&v=XTR6V_pQu1U)
+* [Update Android 13 | Easy How To Guide (Video)](https://www.youtube.com/watch?app=desktop&v=XTR6V_pQu1U)
 * [(Unofficial) stock firmware](https://github.com/TheGammaSqueeze/Retroid_Pocket_Stock_Firmware)
 
 #### Rocknix custom firmware
@@ -169,6 +167,7 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 * [Documentation](https://rocknix.org/)
   * [Retroid Pocket Mini details](https://rocknix.org/devices/retroid/retroid-pocket-mini/)
   * [Retroid Pocket Mini supported emulators and cores](https://github.com/ROCKNIX/distribution/blob/dev/documentation/PER_DEVICE_DOCUMENTATION/SD865/SUPPORTED_EMULATORS_AND_CORES.md)
+* [Nightly builds](https://nightly.rocknix.org/) 
 * [GitHub](https://github.com/ROCKNIX/distribution)
 * [Unofficial nightly builds](https://nightly.link/tiopex/distribution/workflows/build-nightly/ci) (Download `sd865` builds for Retroid Pocket Mini)
 
@@ -220,17 +219,26 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 
 #### Fix "Failed to load content" error
 
-* Try deleting and recreating the Playlist.
-* Try using unzipped (uncompressed) ROM files.
+* Try deleting and recreating the Playlist
+* Try using unzipped (uncompressed) ROM files
+
+## EmulationStation (ES-DE)
+
+* [ES Applauncher](https://github.com/schattenphoenix/es_applauncher)
+* [ES-DE)](https://es-de.org/)
+* [es-de-android-custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems)
+* [ES-DE Android Apps](https://github.com/BinaryQuantumSoul/esde_android_apps)
+  * [Android FAQ](https://gitlab.com/es-de/emulationstation-de/-/blob/master/FAQ-ANDROID.md?ref_type=heads#every-time-i-reboot-my-device-es-de-is-starting-the-onboarding-process-why-is-this-happening)
+* [ES-DE on Android Guide: My Favorite Launcher! (Video)](https://www.youtube.com/watch?v=X-bVwlMwobE) 
 
 ## RetroArch
 
+* [Keyboard bindings for Menus/UI](https://docs.libretro.com/guides/input-and-controls/#menu-controls)
 * [Libretro](https://www.libretro.com/)
   * [Docs](https://docs.libretro.com/)
 * [RetroArch on Flathub](https://flathub.org/apps/details/org.libretro.RetroArch)
-* [BIOS on GitHub](https://github.com/Abdess/retroarch_system)
+* [RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/)
 * [RGC: RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/)
-* [Keyboard bindings for Menus/UI](https://docs.libretro.com/guides/input-and-controls/#menu-controls)
 * [RGC: Shaders and Overlays on Retro Handhelds](https://retrogamecorps.com/2024/09/01/guide-shaders-and-overlays-on-retro-handhelds/)
   * [RGC Overlay Pack](https://github.com/retrogamecorps/RGC-Overlay-Pack/releases)
 * [/r/RetroArch](https://www.reddit.com/r/RetroArch/)
@@ -299,6 +307,10 @@ Location | null
 
 ### Rewind
 
+From [Retro Game Corps](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/):
+
+> For the Rewind function to work, you will need to go into Settings > Frame Throttle > Rewind > ON. **This is not something I would recommend turning on as a global configuration**, because some systems (like Saturn or PS1) will be very slow with it on, and some (like PSP) may outright crash.
+
 #### Configure the controller right-analog stick
 
 Set the following base configuration:
@@ -306,18 +318,20 @@ Set the following base configuration:
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 input_hold_fast_forward_axis = "+2"
 input_rewind_axis = "-2"
-rewind_enable = "true"
 ```
 
-#### Disable rewind for cores that don't support it
+#### Only enable rewind for certain cores
 
-"Rewind" functionality is not supported by all cores.
+"Rewind" functionality is not supported by all cores, and may cause problems with some cores that nominally support it.
 
-Console | Cores that don't support rewind
+Console | Cores that don't support rewind (well)
 --- | ---
 Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
 Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/)
 Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/)
+Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/)
+Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/)
+Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/)
 
 Create a [Core Override](https://docs.libretro.com/guides/overrides/) file to unset the right-analog stick mappings for cores that do not support "rewind" or "fast-forward" or for consoles that make use of the right-analog stick, such as the Nintendo GameCube:
 ```
@@ -529,6 +543,7 @@ Apotris (https://akouzoukos.com/apotris/)
 Asterix & Obelix XXL
 Astro Boy - Omega Factor
 Banjo-Kazooie - Grunty's Revenge
+Bookworm
 Breath of Fire
 Castlevania - Aria of Sorrow
 Chessmaster
@@ -545,6 +560,7 @@ Golden Sun
 Goodboy Galaxy (demo, https://goodboygalaxy.itch.io/goodboy-galaxy-demo)
 Gunstar Super Heroes
 Hamtaro - Ham-Ham Games
+Hamtaro - Ham-Ham Heartbreak
 Harvest Moon - Friends of Mineral Town
 Justice League Heroes - The Flash
 Kirby & The Amazing Mirror
