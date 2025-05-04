@@ -161,6 +161,7 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 * [Official store](https://www.goretroid.com/en-ca/collections/frontpage/products/retroid-pocket-mini-handheld)
 * [Update Android 13 | Easy How To Guide (Video)](https://www.youtube.com/watch?app=desktop&v=XTR6V_pQu1U)
 * [(Unofficial) stock firmware](https://github.com/TheGammaSqueeze/Retroid_Pocket_Stock_Firmware)
+* [What the Retroid Pocket Mini Should Have Been](https://www.youtube.com/watch?v=quOhoJZiZmk&t=743s) - Follow these instructions to install Android 13, especially the button release timing for EDL and QFILL
 
 #### Rocknix custom firmware
 
