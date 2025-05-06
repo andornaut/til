@@ -1420,6 +1420,7 @@ Metal Gear Ac!d
 Metal Gear Solid - Peace Walker
 N Plus
 Patapon 2
+Peggle
 Phantasy Star Portable 2 Infinity (https://gbatemp.net/threads/phantasy-star-portable-2-infinity-english-localization-v2-update-released-august-2022.576943/)
 Ratchet & Clank - Size Matters
 Resistance - Retribution
