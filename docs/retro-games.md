@@ -157,10 +157,35 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 
 * [DIY Screen Replacement! (Video)](https://www.youtube.com/live/LiaTAjsIKEs)
 * [How to Install Android 13 on the Retroid Pocket Mini](https://retrohandhelds.gg/how-to-install-android-13-retroid-pocket-mini/)
+  * Important: Only reboot the Retroid into EDL mode when you're actually ready to press "Download" in QFIL
+  * Important: Do NOT release the vol up,down and power buttons until after you press "Download" in QFIL
 * [Obtainium-Emulation-Pack](https://github.com/RJNY/Obtainium-Emulation-Pack)
 * [Official store](https://www.goretroid.com/en-ca/collections/frontpage/products/retroid-pocket-mini-handheld)
-* [Update Android 13 | Easy How To Guide (Video)](https://www.youtube.com/watch?app=desktop&v=XTR6V_pQu1U)
 * [(Unofficial) stock firmware](https://github.com/TheGammaSqueeze/Retroid_Pocket_Stock_Firmware)
+
+#### Setup
+
+1. Follow these guides:
+  * [Android Emulation Starter Guide](https://retrogamecorps.com/2022/03/13/android-emulation-starter-guide/#RetroArch)
+  * [Android Handheld Starter Guide (Video)](https://www.youtube.com/watch?app=desktop&v=I4mqgcDYZFo)
+  * [RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/#Options)
+2. Copy [these custom-systems XMLs](https://github.com/GlazedBelmont/es-de-android-custom-systems) to `/mnt/sdcard/ES-DE/custom-systems/`
+3. Create these folders on the removable sdcard (e.g.: `/storage/78DC-BF74/`):
+```text
+AZAHAR
+BIOS
+DOLPHIN
+ES-DE
+└──downloaded_media 
+NETHERSX2
+RETROARCH
+├──saves
+└──states 
+ROMS
+```
+4. In ES-DE, configure the new location for "downloaded_media" in Menu>Other settings>Game media directory
+5. In Retroarch, configure the new locations for saves and states in Settings>Directory
+6. Point Azahar, Dolphin, and NetherSX2 apps to the new locations for their configurations
 
 #### Rocknix custom firmware
 
