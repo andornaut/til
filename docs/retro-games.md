@@ -22,6 +22,7 @@
   * [Android Emulation Starter Guide](https://retrogamecorps.com/2022/03/13/android-emulation-starter-guide/#RetroArch)
   * [Android Handheld Starter Guide (Video)](https://www.youtube.com/watch?app=desktop&v=I4mqgcDYZFo)
   * [RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/#Options)
+* [Retro Game Talk](https://retrogametalk.com/repository/)
 * [Retro-Sanctuary](https://retro-sanctuary.com/)
 * [ROMhacking.net](https://www.romhacking.net)
   * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
@@ -1444,6 +1445,7 @@ Metal Gear Ac!d
 Metal Gear Solid - Peace Walker
 N Plus
 Patapon 2
+Peggle
 Phantasy Star Portable 2 Infinity (https://gbatemp.net/threads/phantasy-star-portable-2-infinity-english-localization-v2-update-released-august-2022.576943/)
 Ratchet & Clank - Size Matters
 Resistance - Retribution
