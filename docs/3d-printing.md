@@ -20,6 +20,7 @@
 * [CAD tips for 3D printing infographic](https://pbs.twimg.com/media/EOj347eUYAE4bZu?format=jpg&name=large)
 * [CHT High Flow nozzle for the BambuLab X1 & P1P](https://www.cnckitchen.com/blog/cht-high-flow-nozzle-for-the-bambulab-x1-amp-p1p)
 * [Common 3D printing problems troubleshooting guide](https://all3dp.com/1/common-3d-printing-problems-troubleshooting-3d-printer-issues/)
+* [Design for 3D-Printing](https://blog.rahix.de/design-for-3d-printing/)
 * [Filament guide](https://bambulab.com/en-ca/filament/collections)
 * [Ironing tips](https://www.reddit.com/r/BambuLab/comments/1ipq9dk/update_to_ironing_settings_got_it_completely/?share_id=0G-YprScisyUwhU5ckBzF)
 * [Let's Print 3D](https://letsprint3d.net/)
