@@ -26,8 +26,10 @@
 * [Keebfolio: Awesome mechanical keyboards](https://github.com/BenRoe/awesome-mechanical-keyboard/)
 * [Keyboard Guides](https://github.com/sadekbaroudi/keyboard-guides) - Cases and QMK
 * [Keyboard.university](https://www.keyboard.university/)
+* [Le Oeuf](https://github.com/eggsworks/le-oeuf)
 * [Let's Design A Keyboard With Ergogen v4 by FlatFootFox](https://flatfootfox.com/ergogen-introduction/)
 * [Let's Split Guide](https://github.com/nicinabox/lets-split-guide)
+* [mikefive](https://github.com/mikeholscher/zmk-config-mikefive)
 * [PCB designer guide](https://wiki.ai03.com/books/pcb-design/chapter/pcb-designer-guide)
 * [QMK hand-wiring guide](https://github.com/qmk/qmk_firmware/blob/master/docs/hand_wire.md)
   * [Split Keyboard](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_split_keyboard.md)
