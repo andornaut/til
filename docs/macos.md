@@ -123,7 +123,7 @@ Keyboard Shortcut | `⇧⌘V`
 1. Navigate to: Accessibility > Display > Display (tab)
 1. Enable: Reduce transparency
 
-### Dock
+### Dock show/hid
 
 * [uBar](https://brawersoftware.com/products/ubar) - Dock alternative
 * [How to hide the dock](https://apple.stackexchange.com/a/298826)
@@ -134,19 +134,25 @@ defaults write com.apple.dock autohide -bool true && killall Dock
 defaults write com.apple.dock autohide-delay -float 1000 && killall Dock
 defaults write com.apple.dock no-bouncing -bool TRUE && killall Dock
 
-# Restore Dock
+# Show Dock
 defaults write com.apple.dock autohide -bool false && killall Dock
 defaults delete com.apple.dock autohide-delay && killall Dock
 defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 ```
 
+### Disable Dictation
+
+1. Open "System Settings"
+1. Search for "Keyboard"
+1. Set "Dictation" > "Shortcut" to "Press 🎤"
+
 ### Disable "Click wallpaper to reveal desktop"
 
 1. Open "System Settings"
-1. Search for "stage manager"
+1. Search for "Stage Manager"
 1. Set "Click wallpaper to reveal desktop" to "Only in Stage Manager"
 
-### Prevent CMD+h from hiding windows
+### Disable CMD+h to hiding windows
 
 * [StackOverflow](https://superuser.com/a/1354665)
 * [@andornaut/dotfiles](https://github.com/andornaut/dotfiles/blob/master/%24HOME/.config/karabiner/assets/complex_modifications/disable_command_h.json)
@@ -154,7 +160,7 @@ defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 1. Install [Karabiner-elements](https://karabiner-elements.pqrs.org/)
 1. Import and enable the [Prevent unintended command-h hide window (rev 2)](https://ke-complex-modifications.pqrs.org/#disable_cmd_h_hide_window) "complex modification rule"
 
-### Press CMD+Enter to open Alacritty
+### Open Alacritty with CMD+Enter
 
 * [@andornaut/dotfiles](https://github.com/andornaut/dotfiles/blob/master/%24HOME/.config/karabiner/assets/complex_modifications/open_alacritty.json)
 
