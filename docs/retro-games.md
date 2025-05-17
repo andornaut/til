@@ -1139,6 +1139,7 @@ Arnold Palmer Tournament Golf
 Bare Knuckle III (Streets of Rage III, https://www.romhacking.net/translations/1375/)
 Battletech - A Game of Armored Combat
 Beyond Oasis
+Captain America and The Avengers
 Castlevania - Bloodlines
 Comix Zone
 Contra - Hard Corps (https://www.romhacking.net/hacks/797/)
