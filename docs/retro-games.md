@@ -867,6 +867,7 @@ Gradius III (https://github.com/VitorVilela7/SA1-Root/tree/master/Gradius-III)
 Harvest Moon
 Hook
 Illusion of Gaia
+Judge Dredd
 Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
 King of Dragons
