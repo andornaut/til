@@ -26,6 +26,7 @@ Application | Description
 [retroarch](https://www.retroarch.com/)|ROM game and emulator launcher
 [seahorse](https://wiki.gnome.org/Apps/Seahorse) | Tool to manage the Gnome keyring
 [solaar](https://pwr-solaar.github.io/Solaar/)|Manage Logitech unifying receivers and devices
+[trash-cli](https://github.com/andreafrancia/trash-cli)|Command line interface to the freedesktop.org trashcan. 
 [uhubctl](https://github.com/mvp/uhubctl)|USB hub per-port power control
 [usb-creator-gtk](https://launchpad.net/ubuntu/+source/usb-creator)|Tool to write ISO files to USB storage devices
 
@@ -58,6 +59,7 @@ intel_gpu_top, nvtop, radeontop | Monitor graphics devices
 iostat | CPU and input/output statistics for devices and partitions
 lsof | Lists on its standard output file information about files opened by processes
 mtr | Combines  the functionality of the traceroute and ping programs in a single network diagnostic tool
+ncdu | TUI disk usage analyzer
 nethogs | Net top tool grouping bandwidth per process
 netstat | Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
 pidstat | Monitor individual tasks currently being managed by the Linux kernel
