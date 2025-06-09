@@ -93,7 +93,6 @@
 
 ## Stores
 
-* [42 Keebs](https://42keebs.eu/)
 * [Clickety Split](https://clicketysplit.ca/)
 * [Desk Hero](https://www.deskhero.ca/)
 * [Drop /mechanical-keyboards/drops](https://drop.com/mechanical-keyboards/drops)
@@ -106,3 +105,4 @@
 * [splitkb.com](https://splitkb.com/)
 * [Tai-Hao](https://shop.tai-hao.com/)
 * [TheKey.Company](https://thekey.company)
+* [Unikeys](https://unikeyboards.com/)
