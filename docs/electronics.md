@@ -36,6 +36,7 @@
 * [LCSC Electronics](https://www.lcsc.com/)
 * [Mouser Electronics](https://www.mouser.ca/)
 * [Newark](https://canada.newark.com/)
+* [SnapEDA](https://www.snapeda.com/home/)
 * [SparkFun](https://www.sparkfun.com/)
 * [Zap Cables](https://www.zapcables.com/)
 

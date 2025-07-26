@@ -2,6 +2,19 @@
 
 * [APK Mirror](https://www.apkmirror.com/)
 
+## Applications
+
+Name | Description
+--- | ---
+[CDisplayEx](https://www.cdisplayex.com/) | Comic reader (.cbr files)
+[GlassesOn](https://play.google.com/store/apps/details?id=com.sixoversix.copyglass&hl=en_CA) | Pupillary distance calculator
+[OpenVPN for Android](https://play.google.com/store/apps/details?id=de.blinkt.openvpn) | Unofficial OpenVPN client
+[prim-ftpd](https://github.com/wolpi/prim-ftpd) | FTP server
+[ReadEra](https://readera.org/) | Ebook reader
+[Solid Explorer](https://neatbytes.com/solidexplorer/) | File manager
+[TOwaste](https://www.toronto.ca/services-payments/recycling-organics-garbage/towaste-app/) | Find out what waste items go where, what bins to put out when, and where to donate used items or find a City of Toronto drop-off depot
+[VLC Media Player](https://www.videolan.org/vlc/) | Multimedia (audio & video) player
+
 ## ADB Debugging
 
 * [ADB tips and tricks](https://www.xda-developers.com/adb-tips-tricks/)
