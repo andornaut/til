@@ -462,10 +462,12 @@ sudo modprobe r8125
 
 ### Install AMD GPU DKMS kernel module (driver)
 
+
 * [AMD GPU drivers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/amdgpu-install.html#ubuntu)
   * [Kernel version compatibility](https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html#operating-systems-and-kernel-versions)
 * [AMD Quick start installation guide on Ubuntu](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/quick-start.html)
 * [AMD Running ROCm Docker containers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/how-to/docker.html)
+* [ArchWiki](https://wiki.archlinux.org/title/AMDGPU#Manually)
 
 1. Navigate to [repo.radeon.com/amdgpu-install/latest/ubuntu/noble/](https://repo.radeon.com/amdgpu-install/latest/ubuntu/noble/) and get a link to the latest `.deb` file
 2. Continue with the instructions below:
