@@ -28,7 +28,7 @@
   * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
 * [TheGamesDB](https://thegamesdb.net)
 * [/r/Roms Megathread](https://r-roms.github.io/)
-* [/v/'s Recommended Games Wiki](https://vsrecommendedgames.fandom.com/wiki/V/%27s_Recommended_Games_Wiki)
+* [/v/'s Recommended Games Wiki](https://vsrecommendedgames.miraheze.org/wiki/Main_Page)
 * [Video Game Museum](https://www.video-games-museum.com/en)
 * [Vimm's Lair](https://vimm.net/)
 
@@ -867,6 +867,7 @@ Gradius III (https://github.com/VitorVilela7/SA1-Root/tree/master/Gradius-III)
 Harvest Moon
 Hook
 Illusion of Gaia
+Judge Dredd
 Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
 King of Dragons
@@ -1139,6 +1140,7 @@ Arnold Palmer Tournament Golf
 Bare Knuckle III (Streets of Rage III, https://www.romhacking.net/translations/1375/)
 Battletech - A Game of Armored Combat
 Beyond Oasis
+Captain America and The Avengers
 Castlevania - Bloodlines
 Comix Zone
 Contra - Hard Corps (https://www.romhacking.net/hacks/797/)
@@ -1288,7 +1290,6 @@ CTR - Crash Team Racing
 Diablo
 Doom
 Driver - You Are the Wheelman
-Final Fantasy Tactics
 Final Fantasy IX
 Final Fantasy VII
 Gex - Enter the Gecko
@@ -1307,7 +1308,6 @@ Mega Man X6 (https://www.romhacking.net/hacks/4035/)
 Metal Gear Solid
 NBA Jam 22 (https://www.romhacking.net/hacks/5700/)
 Oddworld - Abe's Exoddus
-PaRappa the Rapper
 Persona
 R4 - Ridge Racer Type 4
 Rayman
@@ -1354,6 +1354,7 @@ Grand Theft Auto III
 Grand Theft Auto - Liberty City Stories
 Grand Theft Auto - San Andreas
 Grand Theft Auto - Vice City
+Grand Theft Auto - Vice City Stories
 Guilty Gear XX Accent Core Plus
 GunGrave
 Harvey Birdman - Attorney at Law
@@ -1398,7 +1399,6 @@ Rogue Galaxy
 R-Type Final
 Sega Ages 2500 Series Vol. 30 - Galaxy Force II - Special Extended Edition
 Shadow of the Colossus
-Shin Megami Tensei - Persona 3 FES
 Shin Megami Tensei - Persona 4
 Silent Hill Origins
 Simpsons, The - Hit & Run
@@ -1427,9 +1427,12 @@ Yakuza
 ```
 ### Sony - PlayStation Portable (PSP) - December 11, 2004
 ```
+Asterix & Obelix XXL 2
 Castlevania - The Dracula X Chronicles
+Crimson Gem Saga
 Crisis Core - Final Fantasy VII
 Daxter
+Echochrome
 Fat Princess - Fistful of Cake
 Final Fantasy Tactics - The War of the Lions
 God of War - Chains of Olympus
@@ -1444,21 +1447,27 @@ Mega Man - Powered Up
 Metal Gear Ac!d
 Metal Gear Solid - Peace Walker
 N Plus
+PaRappa the Rapper
 Patapon 2
 Peggle
 Phantasy Star Portable 2 Infinity (https://gbatemp.net/threads/phantasy-star-portable-2-infinity-english-localization-v2-update-released-august-2022.576943/)
+PixelJunk Monsters Deluxe
 Ratchet & Clank - Size Matters
 Resistance - Retribution
 Rock Band Unplugged
 Shin Megami Tensei - Persona
-Shin Megami Tensei - Persona 2
+Shin Megami Tensei - Persona 2 - Innocent Sin
+Shin Megami Tensei - Persona 3 Portable
 Sid Meier's Pirates!
+Silent Hill Origins
 Space Invaders Extreme
+Star Ocean - Second Evolution
 Tekken 6
 Ultimate Ghosts'n Goblins
 Valkyria Chronicles II
 Virtua Tennis 3
 Warhammer 40,000 - Squad Command
+WipEout Pulse
 Ys Seven
 Ys - The Oath in Felghana
 ```
