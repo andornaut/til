@@ -60,7 +60,7 @@
 * [Generative Deep Learning, 2nd Edition](https://www.oreilly.com/library/view/generative-deep-learning/9781098134174/)
  
 ## Courses
-
+* [Agents Towards Production](https://github.com/NirDiamant/agents-towards-production)
 * [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) - 21 Lessons, Get Started Building with Generative AI
 * [Generative AI & Large Language Models Courses](https://learn.activeloop.ai/)
 * [Practical Deep Learning](https://course.fast.ai/)
