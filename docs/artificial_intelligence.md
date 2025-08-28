@@ -24,6 +24,7 @@
 * [ansible-role-homeassistantfrigate #llm](https://github.com/andornaut/ansible-ctrl/tree/master/roles/homeassistant-frigate#llm)
 * [ansible-role-homeassistantfrigate #voice-assistant](https://github.com/andornaut/ansible-ctrl/tree/master/roles/homeassistant-frigate#voice-assistant)
 * [Claude Code](https://github.com/anthropics/claude-code)
+* [Codex](https://developers.openai.com/codex) by OpenAI
 * [Keras](https://keras.io/)
 * [LibreChat](https://www.librechat.ai/)
 * [Model Context Protocol (MCP) Servers](https://github.com/modelcontextprotocol/servers)
