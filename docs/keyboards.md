@@ -34,6 +34,7 @@
 * [QMK hand-wiring guide](https://github.com/qmk/qmk_firmware/blob/master/docs/hand_wire.md)
   * [Split Keyboard](https://github.com/qmk/qmk_firmware/blob/master/docs/feature_split_keyboard.md)
 * [ruiqimao's keyboard PCB guide](https://github.com/ruiqimao/keyboard-pcb-guide)
+* [Sockets](https://github.com/joric/nrfmicro/wiki/Sockets)
 * [SOD-123 Component Package](https://blog.mbedded.ninja/pcb-design/component-packages/sod-123-component-package/)
 * [Unified Daughterboard Project](https://unified-daughterboard.github.io/#/)
 
