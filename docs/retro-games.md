@@ -1241,11 +1241,12 @@ Astal
 Baku Baku Animal - World Zookeeper Contest
 Batsugun
 Bug!
-Bulk Slash (https://segaxtreme.net/resources/bulk-slash-english.105/)
+Bulk Slash (https://retrogamealk.com/repository/sega_saturn_isos/bulk-slash-japan/)
 Burning Rangers
 Daytona USA - Championship Circuit Edition
 DecAthlete
 Dragon Force
+Grandia (https://retrogametalk.com/repository/sega_saturn_isos/grandia-english-patched/)
 Guardian Heroes
 Keio Flying Squadron 2
 Legend of Oasis, The
