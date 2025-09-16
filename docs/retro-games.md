@@ -1120,6 +1120,7 @@ Popful Mail
 Road Avenger
 Robo Aleste
 Secret of Monkey Island, The
+Sewer Shark
 Shining Force CD
 Silpheed
 Snatcher
@@ -1480,6 +1481,7 @@ BrainDead 13
 Captain Quazar
 Crash 'n Burn
 Dragon's Lair
+Dune
 FIFA International Soccer
 Gex
 Guardian War
