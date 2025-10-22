@@ -26,6 +26,7 @@
 * [Retro-Sanctuary](https://retro-sanctuary.com/)
 * [ROMhacking.net](https://www.romhacking.net)
   * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
+* [Romheaven](https://romheaven.com/roms)
 * [TheGamesDB](https://thegamesdb.net)
 * [/r/Roms Megathread](https://r-roms.github.io/)
 * [/v/'s Recommended Games Wiki](https://vsrecommendedgames.miraheze.org/wiki/Main_Page)
@@ -1119,6 +1120,7 @@ Popful Mail
 Road Avenger
 Robo Aleste
 Secret of Monkey Island, The
+Sewer Shark
 Shining Force CD
 Silpheed
 Snatcher
@@ -1240,11 +1242,12 @@ Astal
 Baku Baku Animal - World Zookeeper Contest
 Batsugun
 Bug!
-Bulk Slash (https://segaxtreme.net/resources/bulk-slash-english.105/)
+Bulk Slash (https://retrogamealk.com/repository/sega_saturn_isos/bulk-slash-japan/)
 Burning Rangers
 Daytona USA - Championship Circuit Edition
 DecAthlete
 Dragon Force
+Grandia (https://retrogametalk.com/repository/sega_saturn_isos/grandia-english-patched/)
 Guardian Heroes
 Keio Flying Squadron 2
 Legend of Oasis, The
@@ -1478,6 +1481,7 @@ BrainDead 13
 Captain Quazar
 Crash 'n Burn
 Dragon's Lair
+Dune
 FIFA International Soccer
 Gex
 Guardian War

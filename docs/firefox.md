@@ -62,5 +62,5 @@ In Firefox Nightly for Android:
 * [More targetted Firefox HSTS bypass](https://sim642.eu/blog/2024/08/10/firefox-hsts-bypass/)
 
 1. Quit Firefox
-1. Edit `~/.mozilla/firefox/${profileName}/SiteSecurityServiceState.bin` (This will remove all HSTS data for all domains)
+1. Remove `~/.mozilla/firefox/${profileName}/SiteSecurityServiceState.bin` (This will remove all HSTS data for all domains)
 1. Open Firefox and navigate to the site. You can now bypass the security warning by clicking a button.
