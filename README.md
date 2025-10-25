@@ -79,6 +79,7 @@ rake
     * [Bypass HSTS HTTPS/TLS certificate error](docs/firefox.md#bypass-hsts-httpstls-certificate-error)
   * [FPV](docs/fpv.md#fpv)
     * [Hardware](docs/fpv.md#hardware)
+    * [Software](docs/fpv.md#software)
     * [3D printing models](docs/fpv.md#3d-printing-models)
   * [Git](docs/git.md#git)
     * [How-tos](docs/git.md#how-tos)
