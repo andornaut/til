@@ -4,7 +4,6 @@
 
 Category | Item
 --- | ---
-
 Battery container | [Bat-Safe LiPo Battery Charging Safe Box](https://www.bat-safe.com/product-page/bat-safe)
 Cases | [DJI Goggles 3 case](https://www.aliexpress.com/item/1005006857667055.html?spm=a2g0o.order_list.order_list_main.5.721e1802an9A9C)
 Chargers | [SkyRC B6neo+ Smart Charger](https://www.skyrc.com/b6neo+) <br> [XT30M XT60F adapter](https://www.aliexpress.com/item/1005004012096228.html?spm=a2g0o.order_list.order_list_main.10.721e1802an9A9C)
