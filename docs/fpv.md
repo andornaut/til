@@ -8,6 +8,7 @@
 Category | Item
 --- | ---
 Adapters | [XT30M XT60F adapter](https://www.aliexpress.com/item/1005004012096228.html?spm=a2g0o.order_list.order_list_main.10.721e1802an9A9C)
+Batteries | [Lava 2S 550mAH 75C](https://betafpv.com/products/lava-2s-3s-4s-550mah-75c-battery-2pcs?variant=40377078153350) <br> [Sub250 4S 720mAh 100C](https://sub250.com/en-ca/collections/batteries-chargers/products/4s-720mah-100c-battery)
 Battery accessories | [Bat-Safe LiPo Battery Charging Safe Box](https://www.bat-safe.com/product-page/bat-safe) <br> [VIFLY ShortSaver 2 Smart Smoke Stopper](https://www.aliexpress.com/item/1005006955105388.html)
 Cases | [DJI Goggles 3 case](https://www.aliexpress.com/item/1005006857667055.html?spm=a2g0o.order_list.order_list_main.5.721e1802an9A9C) <br> [TX15 Radio Case](https://radiomasterrc.com/products/tx15-radio-case)
 Chargers | [SkyRC B6neo+ Smart Charger](https://www.skyrc.com/b6neo+) <br> [HOTA D6 PRO](https://rotorvillage.ca/hota-d6-pro-charger-325w-15a/) <br> [ToolKitRC Q6AC AC/DC](https://rotorvillage.ca/toolkitrc-q6ac-1000w-50a-quad-channel-ac-dc-charger/)
@@ -20,7 +21,26 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 
 * [Betaflight](https://www.betaflight.com/)
 * [Liftoff: FPV Drone Racing](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/)
+* [VelociDrone](https://www.velocidrone.com/)
   
 ## 3D printing models
 
 * [TX15 max Gimbal Protector](https://makerworld.com/en/models/1913867-tx15-max-gimbal-protector-tpu-pla)
+
+## Videos and YouTube Channels
+
+* [FlowState: The FPV Drone Documentary](https://www.youtube.com/watch?v=UoMWFrqOmQo)
+* [Colibri FPV](https://www.youtube.com/@colibrifpv)
+* [Joshua Bardwell](https://www.youtube.com/@JoshuaBardwell)
+* [Rimzler](https://www.youtube.com/@rimzler)
+
+## Websites
+
+* [OscarLiang](https://oscarliang.com/)'
+
+## Stores
+
+* [BetaFPV](https://betafpv.com/)
+* [Flywoo](https://flywoo.net/)
+* [GetFPV](https://www.getfpv.com/)
+* [Sub250](https://sub250.com/)
