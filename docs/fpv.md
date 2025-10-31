@@ -20,6 +20,7 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 ## Software
 
 * [Betaflight](https://www.betaflight.com/)
+* [EdgeTX](https://edgetx.org/)
 * [Liftoff: FPV Drone Racing](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/)
 * [VelociDrone](https://www.velocidrone.com/)
   
@@ -32,6 +33,10 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 * [FlowState: The FPV Drone Documentary](https://www.youtube.com/watch?v=UoMWFrqOmQo)
 * [Colibri FPV](https://www.youtube.com/@colibrifpv)
 * [Joshua Bardwell](https://www.youtube.com/@JoshuaBardwell)
+  * [Betaflight 4.3 Complete Walkthrough](https://www.youtube.com/playlist?list=PLwoDb7WF6c8nT4jjsE4VENEmwu9x8zDiE)
+  * [EdgeTX 101 Complete Beginner Guide](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lhlzE6_iA2X50bk3pIYcbb)
+  * [Learn to fly an FPV drone TODAY (for total beginners)](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP)
+  * [Sub250g FPV Drone Beginner Build Series](https://www.youtube.com/playlist?list=PLwoDb7WF6c8mEdPbe9yyCopFaoZL5K9f0)
 * [Rimzler](https://www.youtube.com/@rimzler)
 
 ## Websites
