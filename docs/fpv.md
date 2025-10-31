@@ -21,6 +21,7 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 
 * [Betaflight](https://www.betaflight.com/)
 * [EdgeTX](https://edgetx.org/)
+  * [Online flash tool](https://buddy.edgetx.org/#/flash)
 * [Liftoff: FPV Drone Racing](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/)
 * [VelociDrone](https://www.velocidrone.com/)
   
