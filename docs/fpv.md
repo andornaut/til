@@ -38,14 +38,19 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
   * [Learn to fly an FPV drone TODAY (for total beginners)](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP)
   * [Sub250g FPV Drone Beginner Build Series](https://www.youtube.com/playlist?list=PLwoDb7WF6c8mEdPbe9yyCopFaoZL5K9f0)
 * [Rimzler](https://www.youtube.com/@rimzler)
+* [Ultimate LiPo battery charging guide! 2023. How to charge lipo battery](https://www.youtube.com/watch?v=4N4tlSfITqA)
 
 ## Websites
 
 * [OscarLiang](https://oscarliang.com/)'
 
-## Stores
+### Stores
 
+* [AvionRC](https://avionrc.com/)
 * [BetaFPV](https://betafpv.com/)
+* [DJI](https://www.dji.com/)
 * [Flywoo](https://flywoo.net/)
 * [GetFPV](https://www.getfpv.com/)
+* [RadioMasterRC](https://radiomasterrc.com/)
+* [Rotor Riot](https://rotorriot.com/)
 * [Sub250](https://sub250.com/)
