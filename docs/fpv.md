@@ -51,7 +51,7 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 * [BetaFPV](https://betafpv.com/)
 * [DJI](https://www.dji.com/)
 * [Flywoo](https://flywoo.net/)
-* [GepRC](https://geprc.com/)
+* [GEPRC](https://geprc.com/)
 * [GetFPV](https://www.getfpv.com/)
 * [RadioMasterRC](https://radiomasterrc.com/)
 * [Rotor Riot](https://rotorriot.com/)
