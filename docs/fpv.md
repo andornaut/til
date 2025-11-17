@@ -89,3 +89,24 @@ SW6 | Camera control 3
 ### Flash ExpressLRS onto TX15
 
 
+### Flash Betaflight firmware
+
+Normal mode `dmesg` log:
+```
+1060799.769020] usb 7-1.4.3: new full-speed USB device number 111 using xhci_hcd
+[1060799.929909] usb 7-1.4.3: New USB device found, idVendor=0483, idProduct=5740, bcdDevice= 2.00
+[1060799.929914] usb 7-1.4.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[1060799.929916] usb 7-1.4.3: Product: Betaflight STM32F405
+[1060799.929917] usb 7-1.4.3: Manufacturer: Betaflight
+[1060799.929918] usb 7-1.4.3: SerialNumber: 0x8000000
+```
+
+DFU mode `dmesg` log
+```
+[1060823.098709] usb 7-1.4.3: new full-speed USB device number 112 using xhci_hcd
+[1060823.255941] usb 7-1.4.3: New USB device found, idVendor=0483, idProduct=df11, bcdDevice=22.00
+[1060823.255946] usb 7-1.4.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[1060823.255947] usb 7-1.4.3: Product: STM32  BOOTLOADER
+[1060823.255948] usb 7-1.4.3: Manufacturer: STMicroelectronics
+[1060823.255948] usb 7-1.4.3: SerialNumber: 366837633135
+```
