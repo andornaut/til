@@ -185,9 +185,54 @@ defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 1. System Preferences -> Energy Saver -> Power Adapter
 1. Enable: "Enable Power Nap while plugged into a power adapter"
 
-### Fix flakiness
+### Fix USB audio devices (Elgato Wave:3) failing after KVM switch
 
-* Use [display_switch](https://github.com/haimgel/display-switch) to workaround flaky KVM switching.
+Some USB audio devices, such as the Elgato Wave:3), fail to re-initialize properly when switching back to macOS via a KVM.
+The device appears in input lists, but transmits no audio until physically replugged.
+
+This can be worked around by restarting `coreaudiod` immediately upon device connection using [Hammerspoon](https://www.hammerspoon.org/).
+
+1. **Allow passwordless restart of CoreAudio:**
+   
+Add this to `sudoers`:
+
+```bash
+andornaut ALL=(ALL) NOPASSWD: /usr/bin/killall coreaudiod
+```
+
+2. Install Hammerspoon:
+
+```bash
+brew install --cask hammerspoon
+```
+
+3. Configure the watcher script:
+
+Add the following to your ~/.hammerspoon/init.lua. Note: Update `vendorID` and `productID` for your specific device. You can find these by running `system_profiler SPUSBDataType`.
+
+```lua
+-- Elgato Wave:3 (Vendor: 0x0fd9=4057, Product: 0x0070=112)
+local function usbDeviceCallback(data)
+    if not data then return end
+
+    if (data.eventType == "added") and (data.vendorID == 4057) and (data.productID == 112) then
+        -- Restart CoreAudio to force driver re-initialization
+        hs.execute("sudo /usr/bin/killall coreaudiod", true)
+
+        hs.notify.new({
+            title="Audio Fix Applied",
+            informativeText="Wave:3 Connected - CoreAudio Restarted"
+        }):send()
+    end
+end
+
+local wave3Watcher = hs.usb.watcher.new(usbDeviceCallback)
+wave3Watcher:start()
+```
+
+### Fix flakiness using DisplaySwitch
+
+Use [display_switch](https://github.com/haimgel/display-switch) to workaround flaky KVM switching.
 
 ```
 $ cat ~/Library/Preferences/display-switch.ini
