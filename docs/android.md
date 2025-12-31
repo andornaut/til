@@ -46,12 +46,14 @@ List of devices attached
 1. When prompted, enter the pairing code
 
 ```bash
-# The port number will change everytime Wireless Debugging is disabled-then-enabled.
+# The port number will change everytime "Wireless Debugging" is disabled-then-enabled.
 adb connect tv-basement:PORT
 ```
 
 ### ADB usage
+
 ```bash
+adb connect
 adb shell
 
 # List all activities/intents
@@ -91,6 +93,8 @@ am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n or
 1. Scroll to the bottom and install "Launcher Manager"
 1. Open Launcher Manager app and select the "Projectivy Launcher"
 
+##### Launcher Manager workarounds
+
 If Launch Manager doesn't work (such as on a Hisense U88QG), then set Projectivy as the default launcher via the following adb commands:
 
 ```bash
@@ -102,6 +106,15 @@ pm disable-user --user 0 com.google.android.tungsten.setupwraith
 ```
 
 ... then reboot the TV. After rebooting, wifi may be disabled and you may need to re-enter the wifi password.
+
+Alternatively, we can make the TV's ADB port static temporarily (won't survive a reboot!):
+
+```bash
+adb connect
+adb tcpip 5555
+```
+
+... then run the "Launcher Manager" app, and it should be able to connect to ADB.
 
 n.b. **Do not enable Projectivy in "Accessibility settings"**
 
