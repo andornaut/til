@@ -157,7 +157,7 @@ Name | Description
 To launch apps via Home Assitant, configure a dashboard button:
 
 ```
-# For Android 13, using media_player.play_media
+# For Android 12, using media_player.play_media
 - type: button
   icon: mdi:youtube
   name: YouTube
@@ -195,7 +195,7 @@ To launch apps via Home Assitant, configure a dashboard button:
       entity_id: remote.basement_tv_remote
 ```
 
-App | Intent (Android 13) | Activity (Android 14)
+App | Intent (Android 12) | Activity (Android 14)
 --- | --- | ---
 AppleTV | com.apple.atve.sony.appletv/com.apple.atve.sony.appletv.MainActivity | https://tv.apple.com
 CBC Gem | ca.cbc.android.cbctv/tv.tou.android.home.views.activities.MainActivityTv | https://gem.cbc.ca
