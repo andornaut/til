@@ -182,7 +182,9 @@ To launch apps via Home Assitant, configure a dashboard button:
     target:
       entity_id: remote.basement_tv_remote
 
-# Sometimes the URL won't work, but the package name will:
+# Sometimes the URL won't work, but the package name will.
+# The package name is the part of the intent before the forward slash.
+# e.g. The package name is "com.google.android.youtube.tv" in the intent "com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity"
 - type: button
   icon: mdi:music-circle
   name: YouTube Music
