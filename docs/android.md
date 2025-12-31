@@ -36,9 +36,17 @@ List of devices attached
 ```
 
 ### Connect via network
+
+1. Navigate to Android Settings -> System - Developer Options
+1. Enable: USB debugging
+1. Select: Wireless Debugging -> Pair device with pairing code
+1. Note the IP address, port number and pairing code
+1. Run `adb pair IP_ADDRESS:PORT`
+1. When prompted, enter the pairing code
+
 ```bash
-adb connect tv-livingroom:5555
-# The TV will prompt to authorize the connection. Select "always allow".
+# The port number will change everytime Wireless Debugging is disabled-then-enabled.
+adb connect tv-basement:PORT
 ```
 
 ### ADB usage
@@ -63,7 +71,6 @@ am start -a android.intent.action.VIEW -n com.netflix.ninja/.MainActivity
 am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n org.videolan.vlc/.gui.video.VideoPlayerActivity
 ```
 
-
 ## Android TV / Google TV
 
 * [FLauncher](https://play.google.com/store/apps/details?id=me.efesser.flauncher&hl=en_CA)
@@ -76,13 +83,26 @@ am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n or
 
 #### Installation and setup
 
-
 1. Install the [Projectivy app](https://play.google.com/store/apps/details?id=com.spocky.projengmenu&hl=en_CA) from Google Play Store
 1. Enable [ADB Debugging](#adb-debugging) (Required by the "Launcher Manager" app)
 1. Install the [Downloader app](https://play.google.com/store/apps/details?id=com.esaba.downloader&hl=en) from Google Play Store
 1. Open the Downloader app and paste the URL: https://troypoint.com/troypoint-toolbox/
 1. Scroll to the bottom and install "Launcher Manager"
 1. Open Launcher Manager app and select the "Projectivy Launcher"
+
+If Launch Manager doesn't work (such as on a Hisense U88QG), then set Projectivy as the default launcher via the following adb commands:
+
+```bash
+adb connect IP_ADDRESS:PORT
+adb shell
+cmd package set-home-activity com.spocky.projengmenu/com.spocky.projengmenu.ui.home.MainActivity
+pm disable-user --user 0 com.google.android.apps.tv.launcherx
+pm disable-user --user 0 com.google.android.tungsten.setupwraith
+```
+
+... then reboot the TV. After rebooting, wifi may be disabled and you may need to re-enter the wifi password.
+
+### Gotchas
 
 Do not install enable "Projectivy Launcher" in Android's accessibility settings as directed by Projectivy, because
 doing so will trigger the following bug as noted in the first post on the [official Projectivy Launcher thread](https://xdaforums.com/t/app-android-tv-projectivy-launcher.4436549/#post-86794031) (see, also, this [post on Reddit](https://www.reddit.com/r/AndroidTV/comments/1bictvi/projectivity_launcher_and_soundbar_volume_issue/)):
