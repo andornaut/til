@@ -27,6 +27,7 @@ Name | Description
 1. Enable "USB debugging" and "Wireless debugging"
 
 ### Connect via USB
+
 ```bash
 $ adb devices
 List of devices attached
@@ -102,7 +103,7 @@ pm disable-user --user 0 com.google.android.tungsten.setupwraith
 
 ... then reboot the TV. After rebooting, wifi may be disabled and you may need to re-enter the wifi password.
 
-### Gotchas
+n.b. **Do not enable Projectivy in "Accessibility settings"**
 
 Do not install enable "Projectivy Launcher" in Android's accessibility settings as directed by Projectivy, because
 doing so will trigger the following bug as noted in the first post on the [official Projectivy Launcher thread](https://xdaforums.com/t/app-android-tv-projectivy-launcher.4436549/#post-86794031) (see, also, this [post on Reddit](https://www.reddit.com/r/AndroidTV/comments/1bictvi/projectivity_launcher_and_soundbar_volume_issue/)):
