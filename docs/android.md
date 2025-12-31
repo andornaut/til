@@ -50,6 +50,10 @@ List of devices attached
 adb connect tv-basement:PORT
 ```
 
+### Force ADB server port to 5555
+
+Newer TVs running Android 14+ bind their ADB server to random ports, which breaks integrations that expect the port to be static 5555. You can use [adb-auto-enable](https://github.com/mouldybread/adb-auto-enable) to force the ADB server port back to its previous static default of 5555.
+
 ### ADB usage
 
 ```bash
@@ -95,6 +99,12 @@ am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n or
 
 ##### Launcher Manager workarounds
 
+###### Recommended: Install adb-auto-enable
+
+* [adb-auto-enable](https://github.com/mouldybread/adb-auto-enable)
+
+##### Alternative: Manual ADB commands
+
 If Launch Manager doesn't work (such as on a Hisense U88QG), then set Projectivy as the default launcher via the following adb commands:
 
 ```bash
@@ -107,7 +117,9 @@ pm disable-user --user 0 com.google.android.tungsten.setupwraith
 
 ... then reboot the TV. After rebooting, wifi may be disabled and you may need to re-enter the wifi password.
 
-Alternatively, we can make the TV's ADB port static temporarily (won't survive a reboot!):
+###### Alternative: Temporarily bind ADB to port 5555
+
+You can temorarily bind the TV's ADB port to 5555, but thi swon't survive a reboot:
 
 ```bash
 adb connect
