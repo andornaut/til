@@ -154,16 +154,56 @@ Name | Description
 
 ### TV Apps
 
-App | Intent
---- | ---
-AppleTV | com.apple.atve.sony.appletv/com.apple.atve.sony.appletv.MainActivity
-CBC Gem | ca.cbc.android.cbctv/tv.tou.android.home.views.activities.MainActivityTv
-CraveTV | ca.bellmedia.cravetv/axis.androidtv.sdk.app.MainActivity
-Disney+ | com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity
-NetFlix | com.netflix.ninja/.MainActivity
-Prime Video | com.amazon.amazonvideo.livingroom/com.amazon.ignition.IgnitionActivity
-SmartTube | com.liskovsoft.smarttubetv.beta/com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity
-VLC | org.videolan.vlc/.StartActivity
-YouTube | com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity
-YouTube Kids | com.google.android.youtube.tvkids/com.google.android.apps.youtube.tvkids.activity.MainActivity 
-YouTube Music | com.google.android.youtube.tvmusic/com.google.android.apps.youtube.tvmusic.activity.MainActivity
+To launch apps via Home Assitant, configure a dashboard button:
+
+```
+# For Android 13, using media_player.play_media
+- type: button
+  icon: mdi:youtube
+  name: YouTube
+  tap_action:
+    action: perform-action
+    perform_action: media_player.play_media
+    data:
+      media_content_id: YouTube
+      media_content_type: app
+    target:
+      entity_id: media_player.basement_tv
+
+# For Android 14, using remote.turn_on
+- type: button
+  icon: mdi:youtube
+  name: YouTube
+  tap_action:
+    action: perform-action
+    perform_action: remote.turn_on
+    data:
+      activity: "https://www.youtube.com"
+    target:
+      entity_id: remote.basement_tv_remote
+
+# Sometimes the URL won't work, but the package name will:
+- type: button
+  icon: mdi:music-circle
+  name: YouTube Music
+  tap_action:
+    action: perform-action
+    perform_action: remote.turn_on
+    data:
+      activity: "com.google.android.youtube.tvmusic"
+    target:
+      entity_id: remote.basement_tv_remote
+```
+
+App | Intent (Android 13) | Activity (Android 14)
+--- | --- | ---
+AppleTV | com.apple.atve.sony.appletv/com.apple.atve.sony.appletv.MainActivity | https://tv.apple.com
+CBC Gem | ca.cbc.android.cbctv/tv.tou.android.home.views.activities.MainActivityTv | https://gem.cbc.ca
+CraveTV | ca.bellmedia.cravetv/axis.androidtv.sdk.app.MainActivity | https://www.crave.ca
+Disney+ | com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity | https://www.disneyplus.com
+NetFlix | com.netflix.ninja/.MainActivity | netflix://
+Prime Video | com.amazon.amazonvideo.livingroom/com.amazon.ignition.IgnitionActivity | https://app.primevideo.com
+SmartTube | com.liskovsoft.smarttubetv.beta/com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity | https://www.youtube.com
+VLC | org.videolan.vlc/.StartActivity | vlc://
+YouTube | com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity | https://www.youtube.com
+YouTube Music | com.google.android.youtube.tvmusic/com.google.android.apps.youtube.tvmusic.activity.MainActivity | https://www.youtube.com/music
