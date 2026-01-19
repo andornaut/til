@@ -75,3 +75,27 @@ sudo apt install tio
 sudo tio /dev/ttyUSB0
 # ctrl-t ?   List available key commands
 ```
+
+## Enable PoE 802.3at on a Ruckus R610 wireless access point
+
+n.b. The PoE port provides power to the LAN2 port
+
+```bash
+ssh ap.example.com
+enable
+config
+
+# Select the target access point
+ap xx:xx:xx:xx:xx:xx 
+power-mode 802.3at
+end
+end
+reboot
+```
+
+Alternatively, if in a different CLI mode, which is based on how long after rebooting this process is started:
+
+```bash
+ssh ap.example.com
+set power-mode at
+```
