@@ -4,7 +4,7 @@
 * [Tips and tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 * [./Cursor](./cursor.md)
 
-## Keyboard shortcuts
+## Keyboard/ shortcuts
 
 * [Keybinding docs](https://code.visualstudio.com/docs/getstarted/keybindings)
 * Keyboard shortcuts for [linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) or [macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
@@ -54,8 +54,14 @@ alias til="code --new-window ${HOME}/src/github.com/andornaut/til"
 * [Howto](https://github.com/VSCodeVim/Vim#mac)
 
 ```
+# Enable key repeating
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
-defaults delete -g ApplePressAndHoldEnabled # If necessary, reset global default
+
+# Reset to default
+defaults delete -g ApplePressAndHoldEnabled
+
+# Enable key repeating on Cursor (VS Code fork)
+defaults write com.todesktop.230313mzl4w4u92 ApplePressAndHoldEnabled -bool false
 ```
 
 ### Disable Copilot
