@@ -197,6 +197,7 @@ This can be worked around by restarting `coreaudiod` immediately upon device con
 Add this to `sudoers`:
 
 ```bash
+andornaut ALL=(ALL) NOPASSWD: /usr/bin/killall ControlCenter
 andornaut ALL=(ALL) NOPASSWD: /usr/bin/killall coreaudiod
 ```
 
@@ -211,21 +212,34 @@ brew install --cask hammerspoon
 Add the following to your ~/.hammerspoon/init.lua. Note: Update `vendorID` and `productID` for your specific device. You can find these by running `system_profiler SPUSBDataType`.
 
 ```lua
--- Elgato Wave:3 (Vendor: 0x0fd9=4057, Product: 0x0070=112)
 local function usbDeviceCallback(data)
     if not data then return end
 
+    -- Watch for "added" event for Elgato Wave:3
     if (data.eventType == "added") and (data.vendorID == 4057) and (data.productID == 112) then
-        -- Restart CoreAudio to force driver re-initialization
-        hs.execute("sudo /usr/bin/killall coreaudiod", true)
-
+        print("Detected Wave:3")
         hs.notify.new({
-            title="Audio Fix Applied",
-            informativeText="Wave:3 Connected - CoreAudio Restarted"
+            title="Detected Wave:3",
+            informativeText="Waiting for USB to settle..."
         }):send()
+
+        hs.timer.doAfter(5, function()
+            hs.execute("sudo /usr/bin/killall coreaudiod", true)
+            print("Restarted CoreAudio")
+
+            hs.timer.doAfter(2, function()
+                hs.execute("sudo killall ControlCenter", true)
+                print("Restarted ControlCenter")
+                hs.notify.new({
+                    title="Restarted CoreAudio and ControlCenter",
+                    informativeText="Wave:3 should be available now"
+                }):send()
+            end)
+        end)
     end
 end
 
+-- Create and start the watcher
 local wave3Watcher = hs.usb.watcher.new(usbDeviceCallback)
 wave3Watcher:start()
 ```
