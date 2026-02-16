@@ -39,7 +39,9 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
   * [Learn to fly an FPV drone TODAY (for total beginners)](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP)
   * [Sub250g FPV Drone Beginner Build Series](https://www.youtube.com/playlist?list=PLwoDb7WF6c8mEdPbe9yyCopFaoZL5K9f0)
 * [Rimzler](https://www.youtube.com/@rimzler)
+* [TX15 Setup, ELRS Bind & Betaflight Arming Guide](https://www.youtube.com/watch?v=4QUMUIjeuLo)
 * [Ultimate LiPo battery charging guide! 2023. How to charge lipo battery](https://www.youtube.com/watch?v=4N4tlSfITqA)
+
 
 ## Websites
 
