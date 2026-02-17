@@ -24,6 +24,7 @@
 * [ansible-role-homeassistantfrigate #llm](https://github.com/andornaut/ansible-ctrl/tree/master/roles/homeassistant-frigate#llm)
 * [ansible-role-homeassistantfrigate #voice-assistant](https://github.com/andornaut/ansible-ctrl/tree/master/roles/homeassistant-frigate#voice-assistant)
 * [Claude Code](https://github.com/anthropics/claude-code)
+  * [claude-code-router](https://github.com/musistudio/claude-code-router) - Use OpenRouter
   * [free-claude-code](https://github.com/Alishahryar1/free-claude-code) - Proxy that converts Claude Code's API requests to NVIDIA NIM or OpenRouter format
 * [Codex](https://developers.openai.com/codex) by OpenAI
 * [Keras](https://keras.io/)
