@@ -27,6 +27,7 @@ Name | Description
 1. Enable "USB debugging" and "Wireless debugging"
 
 ### Connect via USB
+
 ```bash
 $ adb devices
 List of devices attached
@@ -36,13 +37,27 @@ List of devices attached
 ```
 
 ### Connect via network
+
+1. Navigate to Android Settings -> System - Developer Options
+1. Enable: USB debugging
+1. Select: Wireless Debugging -> Pair device with pairing code
+1. Note the IP address, port number and pairing code
+1. Run `adb pair IP_ADDRESS:PORT`
+1. When prompted, enter the pairing code
+
 ```bash
-adb connect tv-livingroom:5555
-# The TV will prompt to authorize the connection. Select "always allow".
+# The port number will change everytime "Wireless Debugging" is disabled-then-enabled.
+adb connect tv-basement:PORT
 ```
 
+### Force ADB server port to 5555
+
+Newer TVs running Android 14+ bind their ADB server to random ports, which breaks integrations that expect the port to be static 5555. You can use [adb-auto-enable](https://github.com/mouldybread/adb-auto-enable) to force the ADB server port back to its previous static default of 5555.
+
 ### ADB usage
+
 ```bash
+adb connect
 adb shell
 
 # List all activities/intents
@@ -63,7 +78,6 @@ am start -a android.intent.action.VIEW -n com.netflix.ninja/.MainActivity
 am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n org.videolan.vlc/.gui.video.VideoPlayerActivity
 ```
 
-
 ## Android TV / Google TV
 
 * [FLauncher](https://play.google.com/store/apps/details?id=me.efesser.flauncher&hl=en_CA)
@@ -76,13 +90,45 @@ am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n or
 
 #### Installation and setup
 
-
 1. Install the [Projectivy app](https://play.google.com/store/apps/details?id=com.spocky.projengmenu&hl=en_CA) from Google Play Store
 1. Enable [ADB Debugging](#adb-debugging) (Required by the "Launcher Manager" app)
 1. Install the [Downloader app](https://play.google.com/store/apps/details?id=com.esaba.downloader&hl=en) from Google Play Store
 1. Open the Downloader app and paste the URL: https://troypoint.com/troypoint-toolbox/
 1. Scroll to the bottom and install "Launcher Manager"
 1. Open Launcher Manager app and select the "Projectivy Launcher"
+
+##### Launcher Manager workarounds
+
+###### Recommended: Install adb-auto-enable
+
+* [adb-auto-enable](https://github.com/mouldybread/adb-auto-enable)
+
+##### Alternative: Manual ADB commands
+
+If Launch Manager doesn't work (such as on a Hisense U88QG), then set Projectivy as the default launcher via the following adb commands:
+
+```bash
+adb connect IP_ADDRESS:PORT
+adb shell
+cmd package set-home-activity com.spocky.projengmenu/com.spocky.projengmenu.ui.home.MainActivity
+pm disable-user --user 0 com.google.android.apps.tv.launcherx
+pm disable-user --user 0 com.google.android.tungsten.setupwraith
+```
+
+... then reboot the TV. After rebooting, wifi may be disabled and you may need to re-enter the wifi password.
+
+###### Alternative: Temporarily bind ADB to port 5555
+
+You can temorarily bind the TV's ADB port to 5555, but thi swon't survive a reboot:
+
+```bash
+adb connect
+adb tcpip 5555
+```
+
+... then run the "Launcher Manager" app, and it should be able to connect to ADB.
+
+n.b. **Do not enable Projectivy in "Accessibility settings"**
 
 Do not install enable "Projectivy Launcher" in Android's accessibility settings as directed by Projectivy, because
 doing so will trigger the following bug as noted in the first post on the [official Projectivy Launcher thread](https://xdaforums.com/t/app-android-tv-projectivy-launcher.4436549/#post-86794031) (see, also, this [post on Reddit](https://www.reddit.com/r/AndroidTV/comments/1bictvi/projectivity_launcher_and_soundbar_volume_issue/)):
@@ -108,16 +154,58 @@ Name | Description
 
 ### TV Apps
 
-App | Intent
---- | ---
-AppleTV | com.apple.atve.sony.appletv/com.apple.atve.sony.appletv.MainActivity
-CBC Gem | ca.cbc.android.cbctv/tv.tou.android.home.views.activities.MainActivityTv
-CraveTV | ca.bellmedia.cravetv/axis.androidtv.sdk.app.MainActivity
-Disney+ | com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity
-NetFlix | com.netflix.ninja/.MainActivity
-Prime Video | com.amazon.amazonvideo.livingroom/com.amazon.ignition.IgnitionActivity
-SmartTube | com.liskovsoft.smarttubetv.beta/com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity
-VLC | org.videolan.vlc/.StartActivity
-YouTube | com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity
-YouTube Kids | com.google.android.youtube.tvkids/com.google.android.apps.youtube.tvkids.activity.MainActivity 
-YouTube Music | com.google.android.youtube.tvmusic/com.google.android.apps.youtube.tvmusic.activity.MainActivity
+To launch apps via Home Assitant, configure a dashboard button:
+
+```
+# For Android 12, using media_player.play_media
+- type: button
+  icon: mdi:youtube
+  name: YouTube
+  tap_action:
+    action: perform-action
+    perform_action: media_player.play_media
+    data:
+      media_content_id: YouTube
+      media_content_type: app
+    target:
+      entity_id: media_player.basement_tv
+
+# For Android 14, using remote.turn_on
+- type: button
+  icon: mdi:youtube
+  name: YouTube
+  tap_action:
+    action: perform-action
+    perform_action: remote.turn_on
+    data:
+      activity: "https://www.youtube.com"
+    target:
+      entity_id: remote.basement_tv_remote
+
+# Sometimes the URL won't work, but the package name will.
+# The package name is the part of the intent before the forward slash.
+# e.g. The package name is "com.google.android.youtube.tv" in the intent "com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity"
+- type: button
+  icon: mdi:music-circle
+  name: YouTube Music
+  tap_action:
+    action: perform-action
+    perform_action: remote.turn_on
+    data:
+      activity: "com.google.android.youtube.tvmusic"
+    target:
+      entity_id: remote.basement_tv_remote
+```
+
+App | Intent (Android 12) | Activity (Android 14)
+--- | --- | ---
+AppleTV | com.apple.atve.sony.appletv/com.apple.atve.sony.appletv.MainActivity | https://tv.apple.com
+CBC Gem | ca.cbc.android.cbctv/tv.tou.android.home.views.activities.MainActivityTv | https://gem.cbc.ca
+CraveTV | ca.bellmedia.cravetv/axis.androidtv.sdk.app.MainActivity | https://www.crave.ca
+Disney+ | com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity | https://www.disneyplus.com
+NetFlix | com.netflix.ninja/.MainActivity | netflix://
+Prime Video | com.amazon.amazonvideo.livingroom/com.amazon.ignition.IgnitionActivity | https://app.primevideo.com
+SmartTube | com.liskovsoft.smarttubetv.beta/com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity | https://www.youtube.com
+VLC | org.videolan.vlc/.StartActivity | vlc://
+YouTube | com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity | https://www.youtube.com
+YouTube Music | com.google.android.youtube.tvmusic/com.google.android.apps.youtube.tvmusic.activity.MainActivity | https://www.youtube.com/music

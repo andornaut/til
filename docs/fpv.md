@@ -20,8 +20,12 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 ## Software
 
 * [Betaflight](https://www.betaflight.com/)
+* [DJI Assistant 2 (Consumer Drones Series)](https://www.dji.com/ca/downloads/softwares/dji-assistant-2-consumer-drones-series)
+* [DJI Fly (Android or iOS)](https://www.dji.com/ca/downloads/djiapp/dji-fly)
 * [EdgeTX](https://edgetx.org/)
   * [Online flash tool](https://buddy.edgetx.org/#/flash)
+* [ExpressLRS](https://www.expresslrs.org)
+  * [Binding ExpressLRS](https://www.expresslrs.org/quick-start/binding/)
 * [Liftoff: FPV Drone Racing](https://store.steampowered.com/app/410340/Liftoff_FPV_Drone_Racing/)
 * [VelociDrone](https://www.velocidrone.com/)
   
@@ -33,9 +37,13 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 
 * [FlowState: The FPV Drone Documentary](https://www.youtube.com/watch?v=UoMWFrqOmQo)
 * [Colibri FPV](https://www.youtube.com/@colibrifpv)
+* [How to Bind, Activate & Update Your DJI O4 Air Unit](https://www.youtube.com/watch?v=H6zOYMqRI6E)
+* [TX15 Setup, ELRS Bind & Betaflight Arming Guide](https://www.youtube.com/watch?v=4QUMUIjeuLo)
 * [Joshua Bardwell](https://www.youtube.com/@JoshuaBardwell)
   * [Betaflight 4.3 Complete Walkthrough](https://www.youtube.com/playlist?list=PLwoDb7WF6c8nT4jjsE4VENEmwu9x8zDiE)
   * [EdgeTX 101 Complete Beginner Guide](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lhlzE6_iA2X50bk3pIYcbb)
+  * [Find your perfect rates](https://www.youtube.com/watch?v=Ql62iRkLX3s)
+  * [I love/hate Betaflight 4.5 Angle & Horizon Mode](https://www.youtube.com/watch?v=Gmy1u8AkMeI)
   * [Learn to fly an FPV drone TODAY (for total beginners)](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lCKhQOTy-Vb9LfW0VAIrTP)
   * [Sub250g FPV Drone Beginner Build Series](https://www.youtube.com/playlist?list=PLwoDb7WF6c8mEdPbe9yyCopFaoZL5K9f0)
 * [Rimzler](https://www.youtube.com/@rimzler)
@@ -58,3 +66,49 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 * [RadioMasterRC](https://radiomasterrc.com/)
 * [Rotor Riot](https://rotorriot.com/)
 * [Sub250](https://sub250.com/)
+
+## Betaflight modes
+
+SA | Arm
+SB | ↑ Angle Mode, -	Horizon Mode, ↓	Acro Mode (Unassigned)
+SE | Flip over after crash (Turtle mode)
+SF | Prearm
+SW1 | Beeper
+SW2 | Telemetry
+SW3 | Disable OSD
+SW4 | Camera control 1
+SW5 | Camera control 2
+SW6 | Camera control 3
+
+1. Ensure the drone is not bound / is off
+1. Press "SYS" to navigate to the SYS>Tools section
+1. Press "ExpressLRS"
+1. Set Packet rate: 333 Full 2.4G, and Switch Mode: 12ch Mixed
+   If you need more than 12 channels, then set Switch Mode: 16ch Rate/2
+
+## How-tos
+
+### Flash ExpressLRS onto TX15
+
+
+### Flash Betaflight firmware
+
+Normal mode `dmesg` log:
+```
+1060799.769020] usb 7-1.4.3: new full-speed USB device number 111 using xhci_hcd
+[1060799.929909] usb 7-1.4.3: New USB device found, idVendor=0483, idProduct=5740, bcdDevice= 2.00
+[1060799.929914] usb 7-1.4.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[1060799.929916] usb 7-1.4.3: Product: Betaflight STM32F405
+[1060799.929917] usb 7-1.4.3: Manufacturer: Betaflight
+[1060799.929918] usb 7-1.4.3: SerialNumber: 0x8000000
+```
+
+DFU mode `dmesg` log
+```
+[1060823.098709] usb 7-1.4.3: new full-speed USB device number 112 using xhci_hcd
+[1060823.255941] usb 7-1.4.3: New USB device found, idVendor=0483, idProduct=df11, bcdDevice=22.00
+[1060823.255946] usb 7-1.4.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[1060823.255947] usb 7-1.4.3: Product: STM32  BOOTLOADER
+[1060823.255948] usb 7-1.4.3: Manufacturer: STMicroelectronics
+[1060823.255948] usb 7-1.4.3: SerialNumber: 366837633135
+```
