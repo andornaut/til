@@ -185,9 +185,68 @@ defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 1. System Preferences -> Energy Saver -> Power Adapter
 1. Enable: "Enable Power Nap while plugged into a power adapter"
 
-### Fix flakiness
+### Fix USB audio devices (Elgato Wave:3) failing after KVM switch
 
-* Use [display_switch](https://github.com/haimgel/display-switch) to workaround flaky KVM switching.
+Some USB audio devices, such as the Elgato Wave:3), fail to re-initialize properly when switching back to macOS via a KVM.
+The device appears in input lists, but transmits no audio until physically replugged.
+
+This can be worked around by restarting `coreaudiod` immediately upon device connection using [Hammerspoon](https://www.hammerspoon.org/).
+
+1. **Allow passwordless restart of CoreAudio:**
+   
+Add this to `sudoers`:
+
+```bash
+andornaut ALL=(ALL) NOPASSWD: /usr/bin/killall ControlCenter
+andornaut ALL=(ALL) NOPASSWD: /usr/bin/killall coreaudiod
+```
+
+2. Install Hammerspoon:
+
+```bash
+brew install --cask hammerspoon
+```
+
+3. Configure the watcher script:
+
+Add the following to your ~/.hammerspoon/init.lua. Note: Update `vendorID` and `productID` for your specific device. You can find these by running `system_profiler SPUSBDataType`.
+
+```lua
+local function usbDeviceCallback(data)
+    if not data then return end
+
+    -- Watch for "added" event for Elgato Wave:3
+    if (data.eventType == "added") and (data.vendorID == 4057) and (data.productID == 112) then
+        print("Detected Wave:3")
+        hs.notify.new({
+            title="Detected Wave:3",
+            informativeText="Waiting for USB to settle..."
+        }):send()
+
+        hs.timer.doAfter(5, function()
+            hs.execute("sudo /usr/bin/killall coreaudiod", true)
+            print("Restarted CoreAudio")
+
+            hs.timer.doAfter(2, function()
+                hs.execute("sudo killall ControlCenter", true)
+                print("Restarted ControlCenter")
+                hs.notify.new({
+                    title="Restarted CoreAudio and ControlCenter",
+                    informativeText="Wave:3 should be available now"
+                }):send()
+            end)
+        end)
+    end
+end
+
+-- Create and start the watcher
+local wave3Watcher = hs.usb.watcher.new(usbDeviceCallback)
+wave3Watcher:start()
+```
+
+### Fix flakiness using DisplaySwitch
+
+Use [display_switch](https://github.com/haimgel/display-switch) to workaround flaky KVM switching.
 
 ```
 $ cat ~/Library/Preferences/display-switch.ini
