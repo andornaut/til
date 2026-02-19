@@ -32,6 +32,7 @@
 * [Model Context Protocol (MCP) Servers](https://github.com/modelcontextprotocol/servers)
 * [Ollama](https://ollama.com/)
 * [OpenClaw](https://openclaw.ai/)
+* [OpenCode](https://opencode.ai/)
 * [Open WebUI](https://openwebui.com/)
 * [Speaches](https://speaches.ai/) - An OpenAI API-compatible server supporting streaming transcription, translation, and speech generation
 * [Whisper](https://openai.com/index/whisper/)
