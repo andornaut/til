@@ -75,18 +75,14 @@ SA | Arm
 SB | Flight modes: ↑ Angle, -	Horizon, ↓	Acro
 SE | Flip over after crash (Turtle mode)
 SF | Prearm
+S1 | Backlight
+S2 | Volume
 SW1 | Beeper
 SW2 | Telemetry
 SW3 | OSD Disable
 SW4 | Camera control 1
 SW5 | Camera control 2
 SW6 | Camera control 3
-
-1. Ensure the drone is not bound / is off
-1. Press "SYS" to navigate to the SYS>Tools section
-1. Press "ExpressLRS"
-1. Set Packet rate: 333 Full 2.4G, and Switch Mode: 12ch Mixed
-   If you need more than 12 channels, then set Switch Mode: 16ch Rate/2
 
 ### Flight Modes
 
@@ -105,7 +101,21 @@ SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
 
 ## How-tos
 
-### Bind Radio Master TX15 Radio Controller to ExpressLRS receiver
+### Configure ExpressLRS transmission settings on a RadioMaster TX15 Radio Controller
+
+1. Ensure the drone is not bound (is off)
+1. Press "SYS" on the RC to navigate to the SYS>Tools section
+1. Press "ExpressLRS"
+1. Set Packet rate: 333 Full 2.4G, and Switch Mode: 12ch Mixed.
+
+**Notes**
+
+* Channels 1-4: Are sent at full resolution (the sticks: Pitch, Roll, Yaw, Throttle). Channel 5 (AUX 1): Is the Arm switch. Channels 6-12: Are sent in a "mixed" format, which allows for the use of 3-position switches.
+* "Full" mode sends high-resolution data for all channels.
+
+If you need more than 12 channels, then set Switch Mode: 16ch Rate/2, which enables more switches, but cuts the update speed in half.
+
+### Bind RadioMaster TX15 Radio Controller to ExpressLRS receiver
 
 n.b. If the green light on the flight controller is flashing, then that means the RC isn't connected to the receiver. If it's flashing then the RC is connected to the receiver.
 
