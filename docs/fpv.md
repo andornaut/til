@@ -101,6 +101,33 @@ SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
 
 ## How-tos
 
+### Configure S1 and S2 encoders on RadioMaster TX15 Radio Controller
+
+1. Press "SYS" on the RC
+1. Press "PAGE>" to navigate to th Global functions section
+1. Set GF1 to Backlight on S1
+1. Set GF2 to Volume on S2
+1. Set GF3 to RacingMode on SD↓
+
+### Configure dynamic motor idle
+
+1. Navigate to the "Motors" tab in Betaflight
+1. n.b. Take off the props to prevent the drone from moving
+1. Plug in a battery and use the "Master" slider to spin the motors at exactly 5.5% (1055 on the slider)
+1. Divide the RPM number by 100
+1. Navigate to the "PID Tuning" tab and set the value above (e.g. 90) as the "Dynamic Idle Value"
+
+From the Betaflight CLI, execute:
+
+```text
+set dshot_idle_value = 0
+set dyn_idle_min_rpm = 90
+set transient_throttle_limit = 0
+save
+```
+
+Take that RPM number, divide by 100, and enter that as your Dynamic Idle Value.
+
 ### Configure ExpressLRS transmission settings on a RadioMaster TX15 Radio Controller
 
 1. Ensure the drone is not bound (is off)
@@ -127,10 +154,39 @@ n.b. If the green light on the flight controller is flashing, then that means th
 
 ### Flash ExpressLRS onto TX15
 
+1. Press the "SYS" button on the RC
+1. Select the "ExpressLRS" Lua script
+1. Select "Enable WiFi"
+  * The radio screen will display "WiFi Running" and show the SSID (ExpressLRS TX) and Password (expresslrs).
+1.  Open the ExpressLRS Configurator.
+1. Select the latest 3.x.x Release
+  * Device Category: RadioMaster 2.4 GHz
+  * Device: RadioMaster TX15 Internal 2.4GHz TX (or the matching internal target).
+  * Flashing Method: WIFI
+1. Enter your Binding Phrase (Mandatory for easy pairing with your Pavo Pico II) and your Regulatory Domain (e.g., ISM_2400).
+1. Click Build & Flash
+
 ### Flash Betaflight firmware
 
-Normal mode `dmesg` log:
-```
+1. Enter "DFU" mode by holding the physical "Boot" button on the Flight Controller while plugging in the USB
+  * Alternative method: Execute `bl` in the Betaflight CLI (this doesn't work on a Pavo Pico II)
+  * On the Pavo Pico II, the boot button is on the side of the Flight Controller PCB that doesn't have any LEDs / on the same side as the USB port adapter; it's a tiny button on the far side of the PCB away from the USB port adapter.
+  * When in DFU mode, the port dropdown in the top-right of Betaflight (shown when the USB cable is plugged in, but Betaflight is disconnected) should display "DFU - ..." instead of e.g. `/dev/ttyACM0`.
+1. Click "Update Firmware" on the top-right of Betaflight
+1. Navigate to the to the "Firmware Flasher" section
+1. Select a board, e.g. BETAFPVF405
+   * While in normal mode, you can also click "Auto-detect" to populate this dropdown
+1. Select the version to flash, e.g. "4.5.3 [23-Nov-2025]"
+1. Enable "Full chip erase"
+1. Click "Load Firmware [Online]"
+1. Click "Flash Firmware"
+  * If after rebooting and reconnecting, you see an error like "The configurator version used (10.10.0) does not support firmware 25.12.2", then you must downgrade to an older firmware version. The latest version of BETAFPVF405 firmware supported by configurator 10.10.0 is "4.5.3 [23-Nov-2025]".
+
+When you connect your flight controller, Linux sees two completely different USB devices depending on whether the board is in "Normal" mode or "DFU" (Bootloader) mode.
+
+**Normal (default) mode `dmesg` log:**
+
+```text
 1060799.769020] usb 7-1.4.3: new full-speed USB device number 111 using xhci_hcd
 [1060799.929909] usb 7-1.4.3: New USB device found, idVendor=0483, idProduct=5740, bcdDevice= 2.00
 [1060799.929914] usb 7-1.4.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
@@ -139,8 +195,11 @@ Normal mode `dmesg` log:
 [1060799.929918] usb 7-1.4.3: SerialNumber: 0x8000000
 ```
 
-DFU mode `dmesg` log
-```
+In this state, you can configure the drone, but you cannot flash new firmware.
+
+**DFU mode `dmesg` log:**
+
+```text
 [1060823.098709] usb 7-1.4.3: new full-speed USB device number 112 using xhci_hcd
 [1060823.255941] usb 7-1.4.3: New USB device found, idVendor=0483, idProduct=df11, bcdDevice=22.00
 [1060823.255946] usb 7-1.4.3: New USB device strings: Mfr=1, Product=2, SerialNumber=3
@@ -148,3 +207,5 @@ DFU mode `dmesg` log
 [1060823.255948] usb 7-1.4.3: Manufacturer: STMicroelectronics
 [1060823.255948] usb 7-1.4.3: SerialNumber: 366837633135
 ```
+
+In this state, you can flash new firmware, but you cannot configure the drone.
