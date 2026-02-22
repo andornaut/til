@@ -13,7 +13,7 @@ Battery accessories | [Bat-Safe LiPo Battery Charging Safe Box](https://www.bat-
 Cases | [DJI Goggles 3 case](https://www.aliexpress.com/item/1005006857667055.html?spm=a2g0o.order_list.order_list_main.5.721e1802an9A9C) <br> [TX15 Radio Case](https://radiomasterrc.com/products/tx15-radio-case)
 Chargers | [SkyRC B6neo+ Smart Charger](https://www.skyrc.com/b6neo+) <br> [HOTA D6 PRO](https://rotorvillage.ca/hota-d6-pro-charger-325w-15a/) <br> [ToolKitRC Q6AC AC/DC](https://rotorvillage.ca/toolkitrc-q6ac-1000w-50a-quad-channel-ac-dc-charger/)
 Drones | [Pavo Pico II Brushless Whoop Quadcopter](https://betafpv.com/products/pavo-pico-ii-brushless-whoop-quadcopter) <br> [GEPRC Cinelog30 V3](https://geprc.com/product/geprc-cinelog30-v3-o4-pro-quadcopter/) <br> [DeepSpace SEEKER3](https://www.deepspacefpv.com/DeepSpace-SEEKER3-3inch-freestyle-FPV-Drone-DJI-O4-PRO-Analog-PNP-with-GPS-4S-sub250g-p6408559.html)
-Radios (Remote Controls) | [TX15 Radio Controller](https://radiomasterrc.com/products/tx15-radio-controller-elrs-m2)
+Radios (Remote Controls) | [Radio Master TX15 Radio Controller](https://radiomasterrc.com/products/tx15-radio-controller-elrs-m2)
 Tools | [iFlight Prop Tool](https://www.aliexpress.com/item/1005001864404840.html)
 VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180771) <br> [DJI O4 Air Unit Pro](https://store.dji.com/ca/product/dji-o4-air-unit-pro?vid=180741)
 
@@ -35,8 +35,8 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 
 ## Videos and YouTube Channels
 
-* [FlowState: The FPV Drone Documentary](https://www.youtube.com/watch?v=UoMWFrqOmQo)
 * [Colibri FPV](https://www.youtube.com/@colibrifpv)
+* [FlowState: The FPV Drone Documentary](https://www.youtube.com/watch?v=UoMWFrqOmQo)
 * [How to Bind, Activate & Update Your DJI O4 Air Unit](https://www.youtube.com/watch?v=H6zOYMqRI6E)
 * [TX15 Setup, ELRS Bind & Betaflight Arming Guide](https://www.youtube.com/watch?v=4QUMUIjeuLo)
 * [Joshua Bardwell](https://www.youtube.com/@JoshuaBardwell)
@@ -69,13 +69,15 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 
 ## Betaflight modes
 
+Switch | Description
+--- | ---
 SA | Arm
 SB | ↑ Angle Mode, -	Horizon Mode, ↓	Acro Mode (Unassigned)
-SE | Flip over after crash (Turtle mode)
+SE | Flip over after crash (Turtle mode, toggle switch)
 SF | Prearm
 SW1 | Beeper
 SW2 | Telemetry
-SW3 | Disable OSD
+SW3 | OSD Disable
 SW4 | Camera control 1
 SW5 | Camera control 2
 SW6 | Camera control 3
@@ -86,10 +88,24 @@ SW6 | Camera control 3
 1. Set Packet rate: 333 Full 2.4G, and Switch Mode: 12ch Mixed
    If you need more than 12 channels, then set Switch Mode: 16ch Rate/2
 
+## Express LRS modes
+
+SC | Throttle: ↑ 50%, -	75%, ↓	100%
+SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
+
 ## How-tos
 
-### Flash ExpressLRS onto TX15
+### Bind Radio Master TX15 Radio Controller to ExpressLRS controller
 
+n.b. If the green light on the flight controller is flashing, then that means the FC isn't connected to the RC. If it's flashing then the FC is connected to the RC.
+
+1. Connect a USB cable from your computer to the flight controller. The green light on the flight controller should be flashing.
+2. Unplug and plug it in 3 times in quick succession. The green light on the flight controller should be solid.
+3. Click the SYS button on the RC
+4. Navigate to ExpressLRS, and scroll down
+5. Click "Bind"
+
+### Flash ExpressLRS onto TX15
 
 ### Flash Betaflight firmware
 
