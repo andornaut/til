@@ -72,8 +72,8 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 Switch | Description
 --- | ---
 SA | Arm
-SB | ↑ Angle Mode, -	Horizon Mode, ↓	Acro Mode (Unassigned)
-SE | Flip over after crash (Turtle mode, toggle switch)
+SB | Flight modes: ↑ Angle, -	Horizon, ↓	Acro
+SE | Flip over after crash (Turtle mode)
 SF | Prearm
 SW1 | Beeper
 SW2 | Telemetry
@@ -88,19 +88,29 @@ SW6 | Camera control 3
 1. Set Packet rate: 333 Full 2.4G, and Switch Mode: 12ch Mixed
    If you need more than 12 channels, then set Switch Mode: 16ch Rate/2
 
+### Flight Modes
+
+Switch | Mode | How it flies | Stick behavior
+--- | --- | --- | ---
+SB ↑ | Angle | Self-Leveling. The drone snaps back to level when you release the sticks. | Great for takeoff and landing. Limited tilt angle (the drone cannot flip over)
+SB - | Horizon | Hybrid. Self-levels at center sticks, but allows flips at full deflection. | Best for practicing your first flips without losing control
+SB ↓ | Acro (Manual) | The drone stays at the angle you set. No self-leveling. | This is the "standard" FPV experience
+
 ## Express LRS modes
 
+Switch | Description
+--- | ---
 SC | Throttle: ↑ 50%, -	75%, ↓	100%
 SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
 
 ## How-tos
 
-### Bind Radio Master TX15 Radio Controller to ExpressLRS controller
+### Bind Radio Master TX15 Radio Controller to ExpressLRS receiver
 
-n.b. If the green light on the flight controller is flashing, then that means the FC isn't connected to the RC. If it's flashing then the FC is connected to the RC.
+n.b. If the green light on the flight controller is flashing, then that means the RC isn't connected to the receiver. If it's flashing then the RC is connected to the receiver.
 
-1. Connect a USB cable from your computer to the flight controller. The green light on the flight controller should be flashing.
-2. Unplug and plug it in 3 times in quick succession. The green light on the flight controller should be solid.
+1. Connect a USB cable from your computer to the flight controller. The green light on the Express LRS receiver should be flashing.
+2. Unplug and plug it in 3 times in quick succession. The green light on the Express LRS receiver should be solid.
 3. Click the SYS button on the RC
 4. Navigate to ExpressLRS, and scroll down
 5. Click "Bind"
