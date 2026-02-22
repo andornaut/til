@@ -157,21 +157,21 @@ n.b. If the green light on the flight controller is flashing, then that means th
 1. Press the "SYS" button on the RC
 1. Select the "ExpressLRS" Lua script
 1. Select "Enable WiFi"
-  * The radio screen will display "WiFi Running" and show the SSID (ExpressLRS TX) and Password (expresslrs).
+   * The radio screen will display "WiFi Running" and show the SSID (ExpressLRS TX) and Password (expresslrs).
 1.  Open the ExpressLRS Configurator.
 1. Select the latest 3.x.x Release
-  * Device Category: RadioMaster 2.4 GHz
-  * Device: RadioMaster TX15 Internal 2.4GHz TX (or the matching internal target).
-  * Flashing Method: WIFI
+   * Device Category: RadioMaster 2.4 GHz
+   * Device: RadioMaster TX15 Internal 2.4GHz TX (or the matching internal target).
+   * Flashing Method: WIFI
 1. Enter your Binding Phrase (Mandatory for easy pairing with your Pavo Pico II) and your Regulatory Domain (e.g., ISM_2400).
 1. Click Build & Flash
 
 ### Flash Betaflight firmware
 
 1. Enter "DFU" mode by holding the physical "Boot" button on the Flight Controller while plugging in the USB
-  * Alternative method: Execute `bl` in the Betaflight CLI (this doesn't work on a Pavo Pico II)
-  * On the Pavo Pico II, the boot button is on the side of the Flight Controller PCB that doesn't have any LEDs / on the same side as the USB port adapter; it's a tiny button on the far side of the PCB away from the USB port adapter.
-  * When in DFU mode, the port dropdown in the top-right of Betaflight (shown when the USB cable is plugged in, but Betaflight is disconnected) should display "DFU - ..." instead of e.g. `/dev/ttyACM0`.
+   * Alternative method: Execute `bl` in the Betaflight CLI (this doesn't work on a Pavo Pico II)
+   * On the Pavo Pico II, the boot button is on the side of the Flight Controller PCB that doesn't have any LEDs / on the same side as the USB port adapter; it's a tiny button on the far side of the PCB away from the USB port adapter.
+   * When in DFU mode, the port dropdown in the top-right of Betaflight (shown when the USB cable is plugged in, but Betaflight is disconnected) should display "DFU - ..." instead of e.g. `/dev/ttyACM0`.
 1. Click "Update Firmware" on the top-right of Betaflight
 1. Navigate to the to the "Firmware Flasher" section
 1. Select a board, e.g. BETAFPVF405
@@ -180,7 +180,7 @@ n.b. If the green light on the flight controller is flashing, then that means th
 1. Enable "Full chip erase"
 1. Click "Load Firmware [Online]"
 1. Click "Flash Firmware"
-  * If after rebooting and reconnecting, you see an error like "The configurator version used (10.10.0) does not support firmware 25.12.2", then you must downgrade to an older firmware version. The latest version of BETAFPVF405 firmware supported by configurator 10.10.0 is "4.5.3 [23-Nov-2025]".
+   * If after rebooting and reconnecting, you see an error like "The configurator version used (10.10.0) does not support firmware 25.12.2", then you must downgrade to an older firmware version. The latest version of BETAFPVF405 firmware supported by configurator 10.10.0 is "4.5.3 [23-Nov-2025]".
 
 When you connect your flight controller, Linux sees two completely different USB devices depending on whether the board is in "Normal" mode or "DFU" (Bootloader) mode.
 
