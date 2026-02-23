@@ -168,6 +168,8 @@ n.b. If the green light on the flight controller is flashing, then that means th
 
 ### Flash Betaflight firmware
 
+n.b. Flashing a firmware will reset all Betaflight configuration, so save a backup first!
+
 1. Enter "DFU" mode by holding the physical "Boot" button on the Flight Controller while plugging in the USB
    * Alternative methods: The following two methods do not work on older FC firmwares
      * Alternative method 1: Navigate to the "Setup" section, and click "Activate Boot Loader / DFU"
