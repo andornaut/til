@@ -236,9 +236,9 @@ If you need more than 12 channels, then set Switch Mode: 16ch Rate/2, which enab
    1. Short Press: Press the power button once quickly and let go. The green LED lights will light up to show you your current battery level.
    1. Long Press: Immediately press the power button a second time, but this time hold it down for about 2 to 3 seconds.
       * Listen for the Chime: You will hear an ascending startup chime, and the screens inside the goggles will light up. You can let go of the button as soon as you hear the chime.
-1. Use the 5D joystick down to open the menu, then Menu -> Status -> Switch
+1. Press the 5D joystick down to open the menu, then Menu -> Status -> Switch
 1. Select the DJI O4 Air Unit
 1. Put the Goggles into Bind Mode by holding the power button down for about 4 to 5 seconds 
    * The goggles start to beep continuously, which means they are searching for the drone.
-1. Put the Drone into Bind Mode by pressing the tiny physical button next to the microSD card slot and the status LED. Hold the button until the status LED on the Air Unit starts flashing.
+1. Put the Drone into Bind Mode by pressing the tiny physical button next to the status LED. Hold the button until the status LED on the Air Unit starts flashing.
    * The goggles will stop beeping when the connection is successful5
