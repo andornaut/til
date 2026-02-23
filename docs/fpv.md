@@ -169,9 +169,11 @@ n.b. If the green light on the flight controller is flashing, then that means th
 ### Flash Betaflight firmware
 
 1. Enter "DFU" mode by holding the physical "Boot" button on the Flight Controller while plugging in the USB
-   * Alternative method: Execute `bl` in the Betaflight CLI (this doesn't work on a Pavo Pico II)
+   * Alternative methods: The following two methods do not work on older FC firmwares
+     * Alternative method 1: Navigate to the "Setup" section, and click "Activate Boot Loader / DFU"
+     * Alternative method 2: Execute `bl` in the Betaflight CLI
    * On the Pavo Pico II, the boot button is on the side of the Flight Controller PCB that doesn't have any LEDs / on the same side as the USB port adapter; it's a tiny button on the far side of the PCB away from the USB port adapter.
-   * When in DFU mode, the port dropdown in the top-right of Betaflight (shown when the USB cable is plugged in, but Betaflight is disconnected) should display "DFU - ..." instead of e.g. `/dev/ttyACM0`.
+   * When in DFU mode, the port dropdown in the top-right of Betaflight (shown when the USB cable is plugged in, but Betaflight is disconnected) should display "DFU - STM32 BOOTLOADER" instead of e.g. `/dev/ttyACM0`.
 1. Click "Update Firmware" on the top-right of Betaflight
 1. Navigate to the to the "Firmware Flasher" section
 1. Select a board, e.g. BETAFPVF405
