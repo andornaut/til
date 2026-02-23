@@ -70,22 +70,20 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 
 ## Betaflight modes
 
-Switch | Description
---- | ---
-SA | Arm
-SB | Flight modes: ↑ Angle, -	Horizon, ↓	Acro
-SE | Flip over after crash (Turtle mode)
-SF | Prearm
-S1 | Backlight
-S2 | Volume
-SW1 | Beeper
-SW2 | Telemetry
-SW3 | OSD Disable
-SW4 | Camera control 1
-SW5 | Camera control 2
-SW6 | Camera control 3
+Switch | AUX | Description
+--- | --- | ---
+SA | 1 | Arm
+SB | 2 | Flight modes: ↑ Angle, -	Horizon, ↓	Acro (Manual)
+SE | 3 | Flip over after crash (Turtle mode)
+SF | 4 | Prearm
+SW1 | 5 | Beeper
+SW2 | 6 Telemetry
+SW3 | 7 | OSD Disable
+SW4 | 8 | Camera control 1
+SW5 | 9 | Camera control 2
+SW6 | 10 | Camera control 3
 
-### Flight Modes
+#### Flight Modes
 
 Switch | Mode | How it flies | Stick behavior
 --- | --- | --- | ---
@@ -97,6 +95,8 @@ SB ↓ | Acro (Manual) | The drone stays at the angle you set. No self-leveling.
 
 Switch | Description
 --- | ---
+S1 | Backlight (encoder)
+S2 | Volume (encoder)
 SC | Throttle: ↑ 50%, -	75%, ↓	100%
 SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
 
@@ -114,7 +114,6 @@ SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
 1. Press "PAGE>" to navigate to th Global functions section
 1. Set GF1 to Backlight on S1
 1. Set GF2 to Volume on S2
-1. Set GF3 to RacingMode on SD↓
 
 ### Configure dynamic motor idle
 
