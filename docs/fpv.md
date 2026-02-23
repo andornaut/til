@@ -102,20 +102,17 @@ SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
 
 ## How-tos
 
-### Backup Betaflight configuration
+### Betaflight
 
-1. Nativate to the CLI tab.
-1. Enter `diff all` and hit Enter, in order to list every single setting that is different from the Betaflight default
-1. Click "Save to File"
+#### Backup Betaflight firmware
 
-### Configure S1 and S2 encoders on RadioMaster TX15 Radio Controller
+1. Navigate to the CLI tab
+1. Execute `dump all` (or `dump diff` to save changes from the defaults)
+1. Click "Save to File'
 
-1. Press "SYS" on the RC
-1. Press "PAGE>" to navigate to th Global functions section
-1. Set GF1 to Backlight on S1
-1. Set GF2 to Volume on S2
+[Download stock/default CLI from BetaFPV](https://support.betafpv.com/hc/en-us/articles/52638111624217-CLI-and-Firmware-for-Pavo20-Pro-%E2%85%A1-F405-2-3S-20A-V1-0-FC): Search for "CLI for quadcopter (Do not need to be flashed separately", then download "ELRS：BF4.5.0 F405_20A_Pavo20 Pro II 3S_ELRS 20250909.txt"
 
-### Configure dynamic motor idle
+#### Configure dynamic motor idle
 
 1. Navigate to the "Motors" tab in Betaflight
 1. n.b. Take off the props to prevent the drone from moving
@@ -133,61 +130,7 @@ set transient_throttle_limit = 0
 save
 ```
 
-Take that RPM number, divide by 100, and enter that as your Dynamic Idle Value.
-
-### Configure ExpressLRS transmission settings on a RadioMaster TX15 Radio Controller
-
-1. Ensure the drone is not bound (is off)
-1. Press "SYS" on the RC to navigate to the SYS>Tools section
-1. Press "ExpressLRS"
-1. Set Packet rate: 333 Full 2.4G, and Switch Mode: 12ch Mixed.
-
-**Notes**
-
-* Channels 1-4: Are sent at full resolution (the sticks: Pitch, Roll, Yaw, Throttle). Channel 5 (AUX 1): Is the Arm switch. Channels 6-12: Are sent in a "mixed" format, which allows for the use of 3-position switches.
-* "Full" mode sends high-resolution data for all channels.
-
-If you need more than 12 channels, then set Switch Mode: 16ch Rate/2, which enables more switches, but cuts the update speed in half.
-
-### Bind DJI Googles 3 to Pavo Pico II
-
-1. Connect a LiPo battery to the Pavo Pico II
-1. Turn on the DJI Googles 3 (do the same to turn off the goggles):
-   1. Short Press: Press the power button once quickly and let go. The green LED lights will light up to show you your current battery level.
-   1. Long Press: Immediately press the power button a second time, but this time hold it down for about 2 to 3 seconds.
-      * Listen for the Chime: You will hear an ascending startup chime, and the screens inside the goggles will light up. You can let go of the button as soon as you hear the chime.
-1. Use the 5D joystick down to open the menu, then Menu -> Status -> Switch
-1. Select the DJI O4 Air Unit
-1. Put the Goggles into Bind Mode by holding the power button down for about 4 to 5 seconds 
-   * The goggles start to beep continuously, which means they are searching for the drone.
-1. Put the Drone into Bind Mode by pressing the tiny physical button next to the microSD card slot and the status LED. Hold the button until the status LED on the Air Unit starts flashing.
-   * The goggles will stop beeping when the connection is successful5
-
-### Bind RadioMaster TX15 Radio Controller to ExpressLRS receiver
-
-n.b. If the green light on the flight controller is flashing, then that means the RC isn't connected to the receiver. If it's flashing then the RC is connected to the receiver.
-
-1. Connect a USB cable from your computer to the flight controller. The green light on the Express LRS receiver should be flashing.
-2. Unplug and plug it in 3 times in quick succession. The green light on the Express LRS receiver should be solid.
-3. Click the SYS button on the RC
-4. Navigate to ExpressLRS, and scroll down
-5. Click "Bind"
-
-### Flash ExpressLRS onto TX15
-
-1. Press the "SYS" button on the RC
-1. Select the "ExpressLRS" Lua script
-1. Select "Enable WiFi"
-   * The radio screen will display "WiFi Running" and show the SSID (ExpressLRS TX) and Password (expresslrs).
-1.  Open the ExpressLRS Configurator.
-1. Select the latest 3.x.x Release
-   * Device Category: RadioMaster 2.4 GHz
-   * Device: RadioMaster TX15 Internal 2.4GHz TX (or the matching internal target).
-   * Flashing Method: WIFI
-1. Enter your Binding Phrase (Mandatory for easy pairing with your Pavo Pico II) and your Regulatory Domain (e.g., ISM_2400).
-1. Click Build & Flash
-
-### Flash Betaflight firmware
+#### Flash Betaflight firmware
 
 n.b. Flashing a firmware will reset all Betaflight configuration, so save a backup first!
 
@@ -235,3 +178,67 @@ In this state, you can configure the drone, but you cannot flash new firmware.
 ```
 
 In this state, you can flash new firmware, but you cannot configure the drone.
+
+### RadioMaster TX15 Radio Controller
+
+#### Bind RadioMaster TX15 Radio Controller to ExpressLRS receiver
+
+n.b. If the green light on the flight controller is flashing, then that means the RC isn't connected to the receiver. If it's flashing then the RC is connected to the receiver.
+
+1. Connect a USB cable from your computer to the flight controller. The green light on the Express LRS receiver should be flashing.
+2. Unplug and plug it in 3 times in quick succession. The green light on the Express LRS receiver should be solid.
+3. Click the SYS button on the RC
+4. Navigate to ExpressLRS, and scroll down
+5. Click "Bind"
+
+#### Configure S1 and S2 encoders on RadioMaster TX15 Radio Controller
+
+1. Press "SYS" on the RC
+1. Press "PAGE>" to navigate to th Global functions section
+1. Set GF1 to Backlight on S1
+1. Set GF2 to Volume on S2
+
+
+Take that RPM number, divide by 100, and enter that as your Dynamic Idle Value.
+
+#### Configure ExpressLRS transmission settings on a RadioMaster TX15 Radio Controller
+
+1. Ensure the drone is not bound (is off)
+1. Press "SYS" on the RC to navigate to the SYS>Tools section
+1. Press "ExpressLRS"
+1. Set Packet rate: 333 Full 2.4G, and Switch Mode: 12ch Mixed.
+
+**Notes**
+
+* Channels 1-4: Are sent at full resolution (the sticks: Pitch, Roll, Yaw, Throttle). Channel 5 (AUX 1): Is the Arm switch. Channels 6-12: Are sent in a "mixed" format, which allows for the use of 3-position switches.
+* "Full" mode sends high-resolution data for all channels.
+
+If you need more than 12 channels, then set Switch Mode: 16ch Rate/2, which enables more switches, but cuts the update speed in half.
+
+#### Flash ExpressLRS on RadioMaster TX15 Radio Controller
+
+1. Press the "SYS" button on the RC
+1. Select the "ExpressLRS" Lua script
+1. Select "Enable WiFi"
+   * The radio screen will display "WiFi Running" and show the SSID (ExpressLRS TX) and Password (expresslrs).
+1.  Open the ExpressLRS Configurator.
+1. Select the latest 3.x.x Release
+   * Device Category: RadioMaster 2.4 GHz
+   * Device: RadioMaster TX15 Internal 2.4GHz TX (or the matching internal target).
+   * Flashing Method: WIFI
+1. Enter your Binding Phrase (Mandatory for easy pairing with your Pavo Pico II) and your Regulatory Domain (e.g., ISM_2400).
+1. Click Build & Flash
+
+### Bind DJI Googles 3 to Pavo Pico II
+
+1. Connect a LiPo battery to the Pavo Pico II
+1. Turn on the DJI Googles 3 (do the same to turn off the goggles):
+   1. Short Press: Press the power button once quickly and let go. The green LED lights will light up to show you your current battery level.
+   1. Long Press: Immediately press the power button a second time, but this time hold it down for about 2 to 3 seconds.
+      * Listen for the Chime: You will hear an ascending startup chime, and the screens inside the goggles will light up. You can let go of the button as soon as you hear the chime.
+1. Use the 5D joystick down to open the menu, then Menu -> Status -> Switch
+1. Select the DJI O4 Air Unit
+1. Put the Goggles into Bind Mode by holding the power button down for about 4 to 5 seconds 
+   * The goggles start to beep continuously, which means they are searching for the drone.
+1. Put the Drone into Bind Mode by pressing the tiny physical button next to the microSD card slot and the status LED. Hold the button until the status LED on the Air Unit starts flashing.
+   * The goggles will stop beeping when the connection is successful5
