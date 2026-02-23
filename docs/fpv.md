@@ -53,7 +53,8 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 
 ## Websites
 
-* [OscarLiang](https://oscarliang.com/)'
+* [OscarLiang](https://oscarliang.com/)
+  * [FPV drone tuning](https://oscarliang.com/fpv-drone-tuning/) 
 
 ### Stores
 
@@ -101,6 +102,12 @@ SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
 
 ## How-tos
 
+### Backup Betaflight configuration
+
+1. Nativate to the CLI tab.
+1. Enter `diff all` and hit Enter, in order to list every single setting that is different from the Betaflight default
+1. Click "Save to File"
+
 ### Configure S1 and S2 encoders on RadioMaster TX15 Radio Controller
 
 1. Press "SYS" on the RC
@@ -113,15 +120,16 @@ SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
 
 1. Navigate to the "Motors" tab in Betaflight
 1. n.b. Take off the props to prevent the drone from moving
-1. Plug in a battery and use the "Master" slider to spin the motors at exactly 5.5% (1055 on the slider)
+1. Plug in a battery and use the "Master" slider to spin the motors up until all four motors are spinning stable and consistently - this defines the minimum value for "Dynamic Idle Value", but to find the idle value consult [this guide on tuning Dynamic Idle Value](https://oscarliang.com/how-to-enable-and-configure-betaflight-dynamic-idle/
+   * On a Pavo Pico II, this _minimum_ RPM is about 2000
 1. Divide the RPM number by 100
-1. Navigate to the "PID Tuning" tab and set the value above (e.g. 90) as the "Dynamic Idle Value"
+1. Navigate to the "PID Tuning" tab and set the value above (e.g. "80") as the "Dynamic Idle Value"
 
 From the Betaflight CLI, execute:
 
 ```text
 set dshot_idle_value = 0
-set dyn_idle_min_rpm = 90
+set dyn_idle_min_rpm = 80
 set transient_throttle_limit = 0
 save
 ```
@@ -185,6 +193,7 @@ n.b. Flashing a firmware will reset all Betaflight configuration, so save a back
 1. Click "Load Firmware [Online]"
 1. Click "Flash Firmware"
    * If after rebooting and reconnecting, you see an error like "The configurator version used (10.10.0) does not support firmware 25.12.2", then you must downgrade to an older firmware version. The latest version of BETAFPVF405 firmware supported by configurator 10.10.0 is "4.5.3 [23-Nov-2025]".
+   * For a Pavo Pico II, import these CLI commands: "[CLI for quadcopter (Do not need to be flashed separately)](https://support.betafpv.com/hc/en-us/articles/50758255044889-CLI-and-Firmware-for-Pavo-Pico-%E2%85%A1-F405-2-3S-20A-V1-0-FC)" (ELRS version)
 
 When you connect your flight controller, Linux sees two completely different USB devices depending on whether the board is in "Normal" mode or "DFU" (Bootloader) mode.
 
