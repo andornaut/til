@@ -77,7 +77,7 @@ SB | 2 | Flight modes: ↑ Angle, -	Horizon, ↓	Acro (Manual)
 SE | 3 | Flip over after crash (Turtle mode)
 SF | 4 | Prearm
 SW1 | 5 | Beeper
-SW2 | 6 Telemetry
+SW2 | 6 | Telemetry
 SW3 | 7 | OSD Disable
 SW4 | 8 | Camera control 1
 SW5 | 9 | Camera control 2
