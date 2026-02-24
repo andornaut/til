@@ -110,8 +110,6 @@ SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
 1. Execute `dump all` (or `dump diff` to save changes from the defaults)
 1. Click "Save to File'
 
-[Download stock/default CLI from BetaFPV](https://support.betafpv.com/hc/en-us/articles/52638111624217-CLI-and-Firmware-for-Pavo20-Pro-%E2%85%A1-F405-2-3S-20A-V1-0-FC): Search for "CLI for quadcopter (Do not need to be flashed separately", then download "ELRS：BF4.5.0 F405_20A_Pavo20 Pro II 3S_ELRS 20250909.txt"
-
 #### Configure dynamic motor idle
 
 1. Navigate to the "Motors" tab in Betaflight
@@ -149,7 +147,7 @@ n.b. Flashing a firmware will reset all Betaflight configuration, so save a back
 1. Click "Load Firmware [Online]"
 1. Click "Flash Firmware"
    * If after rebooting and reconnecting, you see an error like "The configurator version used (10.10.0) does not support firmware 25.12.2", then you must downgrade to an older firmware version. The latest version of BETAFPVF405 firmware supported by configurator 10.10.0 is "4.5.3 [23-Nov-2025]".
-   * For a Pavo Pico II, import these CLI commands: "[CLI for quadcopter (Do not need to be flashed separately)](https://support.betafpv.com/hc/en-us/articles/50758255044889-CLI-and-Firmware-for-Pavo-Pico-%E2%85%A1-F405-2-3S-20A-V1-0-FC)" (ELRS version)
+   * For a Pavo Pico II, import Betafpv CLI commands from [CLI and Firmware for Pavo Pico Ⅱ (F405 2-3S 20A V1.0 FC)](https://support.betafpv.com/hc/en-us/articles/50758255044889-CLI-and-Firmware-for-Pavo-Pico-%E2%85%A1-F405-2-3S-20A-V1-0-FC), download the text file labelled "ELRS:BF4.5.3 F405_20A_Pavo_Pico_ELRS 20260104.txt"
 
 When you connect your flight controller, Linux sees two completely different USB devices depending on whether the board is in "Normal" mode or "DFU" (Bootloader) mode.
 
