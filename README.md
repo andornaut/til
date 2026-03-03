@@ -12,6 +12,7 @@ rake
 
 <!-- mdtoc -->
   * [3D Printing](docs/3d-printing.md#3d-printing)
+    * [TEST](docs/3d-printing.md#test)
     * [Communities](docs/3d-printing.md#communities)
     * [Documentation and guides](docs/3d-printing.md#documentation-and-guides)
     * [Hardware](docs/3d-printing.md#hardware)
