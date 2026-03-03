@@ -1,0 +1,32 @@
+name: Update README TOC
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  mdtoc:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: .ruby-version
+
+      - name: Install dependencies
+        run: gem install mdtoc rake
+
+      - name: Run mdtoc
+        run: mdtoc --append --create --output README.md docs/
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "docs: update README TOC"
+          file_pattern: 'README.md'
