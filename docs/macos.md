@@ -213,24 +213,20 @@ local WAVE3_VENDOR_ID = 4057
 local WAVELINK_APP = "Elgato Wave Link"
 local WAVELINK_PROCESS = "WaveLinkMacOS"
 
--- Polls every `interval` seconds until `condition()` returns a truthy value or `timeout` is reached.
--- Calls `onSuccess(result)` on success, or displays a generic timeout notification on failure.
-local function poll(interval, timeout, condition, onSuccess)
+-- Polls every POLLING_INTERVAL seconds until `condition()` returns a truthy value or POLLING_TIMEOUT is reached.
+-- Calls `onSuccess(result)` on success, `onFailure()` on timeout.
+local function poll(condition, onSuccess, onFailure)
     local elapsed = 0
     local poller
-    poller = hs.timer.doEvery(interval, function()
-        elapsed = elapsed + interval
+    poller = hs.timer.doEvery(POLLING_INTERVAL, function()
+        elapsed = elapsed + POLLING_INTERVAL
         local result = condition()
         if result then
             poller:stop()
             onSuccess(result)
-        elseif elapsed >= timeout then
+        elseif elapsed >= POLLING_TIMEOUT then
             poller:stop()
-            print("Polling timed out after " .. timeout .. "s")
-            hs.notify.new({
-                title = "⚠️ Polling timed out",
-                informativeText = "Timed out after " .. timeout .. "s",
-            }):send()
+            onFailure()
         end
     end)
 end
@@ -239,26 +235,22 @@ local function restartWaveLink()
     print("Stopping process " .. WAVELINK_PROCESS)
     hs.execute("killall " .. WAVELINK_PROCESS, true)
 
-    poll(POLLING_INTERVAL, POLLING_TIMEOUT,
+    poll(
         function() return not hs.application.find(WAVELINK_PROCESS) end,
         function()
             hs.application.launchOrFocus(WAVELINK_APP)
             print("Launched " .. WAVELINK_APP)
-
-            poll(POLLING_INTERVAL, POLLING_TIMEOUT,
-                function()
-                    local app = hs.application.find(WAVELINK_APP)
-                    return app and #app:allWindows() > 0 and app
-                end,
-                function(app)
-                    app:activate()
-                    print("Focussed the " .. WAVELINK_APP .. " window")
-                    hs.notify.new({
-                        title = "Restarted " .. WAVELINK_APP,
-                        informativeText = "Wave:3 should be available now",
-                    }):send()
-                end
-            )
+            hs.notify.new({
+                title = "Restarted " .. WAVELINK_APP,
+                informativeText = "Wave:3 should be available now",
+            }):send()
+        end,
+        function()
+            print("Failed to restart " .. WAVELINK_APP)
+            hs.notify.new({
+                title = "⚠️ Failed to restart " .. WAVELINK_APP,
+                informativeText = WAVELINK_PROCESS .. " did not exit after " .. POLLING_TIMEOUT .. "s",
+            }):send()
         end
     )
 end
