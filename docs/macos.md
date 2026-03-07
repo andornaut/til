@@ -203,46 +203,73 @@ brew install --cask hammerspoon
 Add the following to your `~/.hammerspoon/init.lua`. Note: Update `WAVE3_VENDOR_ID` and `WAVE3_PRODUCT_ID` for your specific device. You can find these by running `system_profiler SPUSBDataType`.
 
 ```lua
-local WAVE3_VENDOR_ID = 4057
+-- Required to resolve apps by display name (e.g. "Elgato Wave Link") when macOS registers them under a different internal name
+hs.application.enableSpotlightForNameSearches(true)
+
+local POLLING_INTERVAL = 0.5
+local POLLING_TIMEOUT = 10
 local WAVE3_PRODUCT_ID = 112
+local WAVE3_VENDOR_ID = 4057
 local WAVELINK_APP = "Elgato Wave Link"
 local WAVELINK_PROCESS = "WaveLinkMacOS"
 
-local function restartWaveLink()
-    hs.execute("killall " .. WAVELINK_PROCESS, true)
-
+-- Polls every `interval` seconds until `condition()` returns a truthy value or `timeout` is reached.
+-- Calls `onSuccess(result)` on success, or displays a generic timeout notification on failure.
+local function poll(interval, timeout, condition, onSuccess)
     local elapsed = 0
-    local timeout = 5
-    local interval = 0.5
-
     local poller
     poller = hs.timer.doEvery(interval, function()
         elapsed = elapsed + interval
-        local running = hs.application.find(WAVELINK_PROCESS)
-        if not running then
+        local result = condition()
+        if result then
             poller:stop()
-            hs.application.launchOrFocus(WAVELINK_APP)
-            hs.notify.new({
-                title = "Restarted " .. WAVELINK_APP,
-                informativeText = "Wave:3 should be available now",
-            }):send()
+            onSuccess(result)
         elseif elapsed >= timeout then
             poller:stop()
+            print("Polling timed out after " .. timeout .. "s")
             hs.notify.new({
-                title = "⚠️ Failed to restart " .. WAVELINK_APP,
-                informativeText = "Unable to stop " .. WAVELINK_PROCESS .. " within timeout of " .. timeout .. "s",
+                title = "⚠️ Polling timed out",
+                informativeText = "Timed out after " .. timeout .. "s",
             }):send()
         end
     end)
+end
+
+local function restartWaveLink()
+    print("Stopping process " .. WAVELINK_PROCESS)
+    hs.execute("killall " .. WAVELINK_PROCESS, true)
+
+    poll(POLLING_INTERVAL, POLLING_TIMEOUT,
+        function() return not hs.application.find(WAVELINK_PROCESS) end,
+        function()
+            hs.application.launchOrFocus(WAVELINK_APP)
+            print("Launched " .. WAVELINK_APP)
+
+            poll(POLLING_INTERVAL, POLLING_TIMEOUT,
+                function()
+                    local app = hs.application.find(WAVELINK_APP)
+                    return app and #app:allWindows() > 0 and app
+                end,
+                function(app)
+                    app:activate()
+                    print("Focussed the " .. WAVELINK_APP .. " window")
+                    hs.notify.new({
+                        title = "Restarted " .. WAVELINK_APP,
+                        informativeText = "Wave:3 should be available now",
+                    }):send()
+                end
+            )
+        end
+    )
 end
 
 local function usbDeviceCallback(data)
     if not data then return end
 
     if (data.eventType == "added") and (data.vendorID == WAVE3_VENDOR_ID) and (data.productID == WAVE3_PRODUCT_ID) then
-        print("Detected Wave:3")
+        print("Detected Elgato Wave:3")
         hs.notify.new({
-            title = "Detected Wave:3",
+            title = "Detected Elgato Wave:3",
             informativeText = "Waiting for USB to settle...",
         }):send()
 
