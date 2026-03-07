@@ -190,18 +190,9 @@ defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 Some USB audio devices, such as the Elgato Wave:3), fail to re-initialize properly when switching back to macOS via a KVM.
 The device appears in input lists, but transmits no audio until physically replugged.
 
-This can be worked around by restarting `coreaudiod` immediately upon device connection using [Hammerspoon](https://www.hammerspoon.org/).
+This can be worked around by restarting [Elgato Wave Link](https://www.elgato.com/ca/en/s/wave-link-app) upon device connection using [Hammerspoon](https://www.hammerspoon.org/).
 
-1. **Allow passwordless restart of CoreAudio:**
-   
-Add this to `sudoers`:
-
-```bash
-andornaut ALL=(ALL) NOPASSWD: /usr/bin/killall ControlCenter
-andornaut ALL=(ALL) NOPASSWD: /usr/bin/killall coreaudiod
-```
-
-2. Install Hammerspoon:
+1. Install Hammerspoon:
 
 ```bash
 brew install --cask hammerspoon
@@ -209,37 +200,58 @@ brew install --cask hammerspoon
 
 3. Configure the watcher script:
 
-Add the following to your ~/.hammerspoon/init.lua. Note: Update `vendorID` and `productID` for your specific device. You can find these by running `system_profiler SPUSBDataType`.
+Add the following to your `~/.hammerspoon/init.lua`. Note: Update `WAVE3_VENDOR_ID` and `WAVE3_PRODUCT_ID` for your specific device. You can find these by running `system_profiler SPUSBDataType`.
 
 ```lua
+local WAVE3_VENDOR_ID = 4057
+local WAVE3_PRODUCT_ID = 112
+local WAVELINK_APP = "Elgato Wave Link"
+local WAVELINK_PROCESS = "WaveLinkMacOS"
+
+local function restartWaveLink()
+    hs.execute("killall " .. WAVELINK_PROCESS, true)
+
+    local elapsed = 0
+    local timeout = 5
+    local interval = 0.5
+
+    local poller
+    poller = hs.timer.doEvery(interval, function()
+        elapsed = elapsed + interval
+        local running = hs.application.find(WAVELINK_PROCESS)
+        if not running then
+            poller:stop()
+            hs.application.launchOrFocus(WAVELINK_APP)
+            hs.notify.new({
+                title = "Restarted " .. WAVELINK_APP,
+                informativeText = "Wave:3 should be available now",
+            }):send()
+        elseif elapsed >= timeout then
+            poller:stop()
+            hs.notify.new({
+                title = "⚠️ Failed to restart " .. WAVELINK_APP,
+                informativeText = "Unable to stop " .. WAVELINK_PROCESS .. " within timeout of " .. timeout .. "s",
+            }):send()
+        end
+    end)
+end
+
 local function usbDeviceCallback(data)
     if not data then return end
 
-    -- Watch for "added" event for Elgato Wave:3
-    if (data.eventType == "added") and (data.vendorID == 4057) and (data.productID == 112) then
+    if (data.eventType == "added") and (data.vendorID == WAVE3_VENDOR_ID) and (data.productID == WAVE3_PRODUCT_ID) then
         print("Detected Wave:3")
         hs.notify.new({
-            title="Detected Wave:3",
-            informativeText="Waiting for USB to settle..."
+            title = "Detected Wave:3",
+            informativeText = "Waiting for USB to settle...",
         }):send()
 
-        hs.timer.doAfter(5, function()
-            hs.execute("sudo /usr/bin/killall coreaudiod", true)
-            print("Restarted CoreAudio")
-
-            hs.timer.doAfter(2, function()
-                hs.execute("sudo killall ControlCenter", true)
-                print("Restarted ControlCenter")
-                hs.notify.new({
-                    title="Restarted CoreAudio and ControlCenter",
-                    informativeText="Wave:3 should be available now"
-                }):send()
-            end)
+        hs.timer.doAfter(3, function()
+            restartWaveLink()
         end)
     end
 end
 
--- Create and start the watcher
 local wave3Watcher = hs.usb.watcher.new(usbDeviceCallback)
 wave3Watcher:start()
 ```
