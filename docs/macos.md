@@ -212,11 +212,15 @@ brew install --cask hammerspoon
 Add the following to your `~/.hammerspoon/init.lua`. Note: Update `WAVE3_VENDOR_ID` and `WAVE3_PRODUCT_ID` for your specific device. You can find these by running `system_profiler SPUSBDataType`.
 
 ```lua
+-- Required in /etc/sudoers.d/coreaudiod to allow passwordless coreaudiod restart:
+-- ${USER} ALL=(ALL) NOPASSWD: /usr/bin/killall coreaudiod
+
 -- Required to resolve apps by display name (e.g. "Elgato Wave Link") when macOS registers them under a different internal name
 hs.application.enableSpotlightForNameSearches(true)
 
 local POLLING_INTERVAL = 0.5
-local POLLING_TIMEOUT = 10
+local POLLING_TIMEOUT = 20
+local WAVE3_AUDIO_DEVICE = "Elgato Wave:3"
 local WAVE3_PRODUCT_ID = 112
 local WAVE3_VENDOR_ID = 4057
 local WAVELINK_APP = "Elgato Wave Link"
@@ -240,19 +244,49 @@ local function poll(condition, onSuccess, onFailure)
     end)
 end
 
-local function restartWaveLink()
+local function isWave3AudioAvailable()
+    for _, device in ipairs(hs.audiodevice.allDevices()) do
+        if device:name() == WAVE3_AUDIO_DEVICE then return true end
+    end
+    return false
+end
+
+local function restartWaveLink(allowCoreAudioRestart)
     print("Stopping process " .. WAVELINK_PROCESS)
     hs.execute("killall " .. WAVELINK_PROCESS, true)
 
     poll(
         function() return not hs.application.find(WAVELINK_PROCESS) end,
         function()
-            hs.application.launchOrFocus(WAVELINK_APP)
+            -- open -n forces a new instance, ensuring the app opens with a window rather than resuming a windowless state
+            -- hs.application.launchOrFocus(WAVELINK_APP)
+            hs.execute("open -n -a '" .. WAVELINK_APP .. "'", true)
             print("Launched " .. WAVELINK_APP)
-            hs.notify.new({
-                title = "Restarted " .. WAVELINK_APP,
-                informativeText = "Wave:3 should be available now",
-            }):send()
+
+            poll(
+                isWave3AudioAvailable,
+                function()
+                    print(WAVE3_AUDIO_DEVICE .. " is now available")
+                    hs.notify.new({
+                        title = WAVE3_AUDIO_DEVICE .. " is now available",
+                    }):send()
+                end,
+                function()
+                    if allowCoreAudioRestart then
+                        print("Restarting coreaudiod")
+                        hs.execute("sudo /usr/bin/killall coreaudiod", true)
+                        hs.notify.new({
+                            title = "⚠️ Restarted coreaudiod because " .. WAVE3_AUDIO_DEVICE .. " is not available",
+                        }):send()
+                        restartWaveLink(false)
+                    else
+                        print("Skipping coreaudio restart to avoid infinite recursion. Giving up!")
+                        hs.notify.new({
+                            title = "⚠️ " .. WAVE3_AUDIO_DEVICE .. " is still not available after restarting coreaudiod. Giving up!",
+                        }):send()
+                    end
+                end
+            )
         end,
         function()
             print("Failed to restart " .. WAVELINK_APP)
@@ -268,14 +302,14 @@ local function usbDeviceCallback(data)
     if not data then return end
 
     if (data.eventType == "added") and (data.vendorID == WAVE3_VENDOR_ID) and (data.productID == WAVE3_PRODUCT_ID) then
-        print("Detected Elgato Wave:3")
+        print("Detected " .. WAVE3_AUDIO_DEVICE)
         hs.notify.new({
-            title = "Detected Elgato Wave:3",
+            title = "Detected " .. WAVE3_AUDIO_DEVICE,
             informativeText = "Waiting for USB to settle...",
         }):send()
 
         hs.timer.doAfter(3, function()
-            restartWaveLink()
+            restartWaveLink(true)
         end)
     end
 end
