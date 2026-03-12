@@ -180,6 +180,15 @@ defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 }
 ```
 
+### Show dotfiles / hidden files in Finder
+
+1. Open Terminal
+1. Run 
+   ```bash
+   defaults write com.apple.finder AppleShowAllFiles YES
+   killall Finder
+   ```
+
 ## KVM
 
 1. System Preferences -> Energy Saver -> Power Adapter
