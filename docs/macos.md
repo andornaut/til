@@ -218,13 +218,31 @@ Add the following to your `~/.hammerspoon/init.lua`. Note: Update `WAVE3_VENDOR_
 -- Required to resolve apps by display name (e.g. "Elgato Wave Link") when macOS registers them under a different internal name
 hs.application.enableSpotlightForNameSearches(true)
 
-local POLLING_INTERVAL = 0.5
+local POLLING_INTERVAL = 1
 local POLLING_TIMEOUT = 20
-local WAVE3_AUDIO_DEVICE = "Elgato Wave:3"
+local USB_SETTLE_DELAY = 3
+local WAVE3_DEVICE_NAME = "Elgato Wave:3"
 local WAVE3_PRODUCT_ID = 112
 local WAVE3_VENDOR_ID = 4057
 local WAVELINK_APP = "Elgato Wave Link"
 local WAVELINK_PROCESS = "WaveLinkMacOS"
+local WAVELINK_VIRTUAL_DEVICE_NAME = "Wave Link MicrophoneFX"
+
+local function info(title, informativeText)
+    if informativeText then
+        print(title .. ": " .. informativeText)
+    else
+        print(title)
+    end
+    hs.notify.new({
+        title = title,
+        informativeText = informativeText,
+    }):send()
+end
+
+local function warn(title, informativeText)
+    info("⚠️ " .. title, informativeText)
+end
 
 -- Polls every POLLING_INTERVAL seconds until `condition()` returns a truthy value or POLLING_TIMEOUT is reached.
 -- Calls `onSuccess(result)` on success, `onFailure()` on timeout.
@@ -244,56 +262,63 @@ local function poll(condition, onSuccess, onFailure)
     end)
 end
 
-local function isWave3AudioAvailable()
-    for _, device in ipairs(hs.audiodevice.allDevices()) do
-        if device:name() == WAVE3_AUDIO_DEVICE then return true end
-    end
-    return false
+local isRestarting = false
+
+local function isWaveLinkReady()
+    local hw = hs.audiodevice.findInputByName(WAVE3_DEVICE_NAME)
+    local virtual = hs.audiodevice.findInputByName(WAVELINK_VIRTUAL_DEVICE_NAME)
+    local hwFound = hw ~= nil
+    local hwInUse = hwFound and hw:inUse()
+    local virtualFound = virtual ~= nil
+
+    print(string.format("isWaveLinkReady: hw=%s, hwInUse=%s, virtual=%s",
+        tostring(hwFound), tostring(hwInUse), tostring(virtualFound)))
+
+    return hwFound and hwInUse and virtualFound
 end
 
 local function restartWaveLink(allowCoreAudioRestart)
-    print("Stopping process " .. WAVELINK_PROCESS)
+    if isRestarting then
+        print("Already restarting, ignoring duplicate trigger")
+        return
+    end
+    isRestarting = true
+
+    print("Stopping " .. WAVELINK_APP)
     hs.execute("killall " .. WAVELINK_PROCESS, true)
 
     poll(
         function() return not hs.application.find(WAVELINK_PROCESS) end,
         function()
             -- open -n forces a new instance, ensuring the app opens with a window rather than resuming a windowless state
-            -- hs.application.launchOrFocus(WAVELINK_APP)
             hs.execute("open -n -a '" .. WAVELINK_APP .. "'", true)
             print("Launched " .. WAVELINK_APP)
 
             poll(
-                isWave3AudioAvailable,
+                isWaveLinkReady,
                 function()
-                    print(WAVE3_AUDIO_DEVICE .. " is now available")
-                    hs.notify.new({
-                        title = WAVE3_AUDIO_DEVICE .. " is now available",
-                    }):send()
+                    isRestarting = false
+                    info(WAVE3_DEVICE_NAME .. " is now available")
                 end,
                 function()
                     if allowCoreAudioRestart then
-                        print("Restarting coreaudiod")
                         hs.execute("sudo /usr/bin/killall coreaudiod", true)
-                        hs.notify.new({
-                            title = "⚠️ Restarted coreaudiod because " .. WAVE3_AUDIO_DEVICE .. " is not available",
-                        }):send()
+                        warn("Restarted coreaudiod",
+                            WAVE3_DEVICE_NAME .. " was not ready after " .. POLLING_TIMEOUT .. "s")
+                        isRestarting = false
                         restartWaveLink(false)
                     else
-                        print("Skipping coreaudio restart to avoid infinite recursion. Giving up!")
-                        hs.notify.new({
-                            title = "⚠️ " .. WAVE3_AUDIO_DEVICE .. " is still not available after restarting coreaudiod. Giving up!",
-                        }):send()
+                        isRestarting = false
+                        warn(WAVE3_DEVICE_NAME .. " unavailable",
+                            WAVE3_DEVICE_NAME .. " was not ready even after restarting coreaudiod")
                     end
                 end
             )
         end,
         function()
-            print("Failed to restart " .. WAVELINK_APP)
-            hs.notify.new({
-                title = "⚠️ Failed to restart " .. WAVELINK_APP,
-                informativeText = WAVELINK_PROCESS .. " did not exit after " .. POLLING_TIMEOUT .. "s",
-            }):send()
+            isRestarting = false
+            warn("Failed to stop " .. WAVELINK_APP,
+                WAVELINK_PROCESS .. " did not exit after " .. POLLING_TIMEOUT .. "s")
         end
     )
 end
@@ -302,13 +327,9 @@ local function usbDeviceCallback(data)
     if not data then return end
 
     if (data.eventType == "added") and (data.vendorID == WAVE3_VENDOR_ID) and (data.productID == WAVE3_PRODUCT_ID) then
-        print("Detected " .. WAVE3_AUDIO_DEVICE)
-        hs.notify.new({
-            title = "Detected " .. WAVE3_AUDIO_DEVICE,
-            informativeText = "Waiting for USB to settle...",
-        }):send()
+        info("Detected " .. WAVE3_DEVICE_NAME, "Waiting for USB to settle...")
 
-        hs.timer.doAfter(3, function()
+        hs.timer.doAfter(USB_SETTLE_DELAY, function()
             restartWaveLink(true)
         end)
     end
@@ -316,6 +337,18 @@ end
 
 local wave3Watcher = hs.usb.watcher.new(usbDeviceCallback)
 wave3Watcher:start()
+
+local prevVirtualPresent = hs.audiodevice.findInputByName(WAVELINK_VIRTUAL_DEVICE_NAME) ~= nil
+hs.audiodevice.watcher.setCallback(function(event)
+    if event == "dev#" then
+        local nowPresent = hs.audiodevice.findInputByName(WAVELINK_VIRTUAL_DEVICE_NAME) ~= nil
+        if nowPresent ~= prevVirtualPresent then
+            print(WAVELINK_VIRTUAL_DEVICE_NAME .. (nowPresent and " added" or " removed"))
+            prevVirtualPresent = nowPresent
+        end
+    end
+end)
+hs.audiodevice.watcher.start()
 ```
 
 ### Fix flakiness using DisplaySwitch
