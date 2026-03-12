@@ -198,6 +198,7 @@ rake
       * [Disable "Click wallpaper to reveal desktop"](docs/macos.md#disable-click-wallpaper-to-reveal-desktop)
       * [Disable CMD+h to hiding windows](docs/macos.md#disable-cmdh-to-hiding-windows)
       * [Open Alacritty with CMD+Enter](docs/macos.md#open-alacritty-with-cmdenter)
+      * [Show dotfiles / hidden files in Finder](docs/macos.md#show-dotfiles--hidden-files-in-finder)
     * [KVM](docs/macos.md#kvm)
       * [Fix USB audio devices (Elgato Wave:3) failing after KVM switch](docs/macos.md#fix-usb-audio-devices-elgato-wave3-failing-after-kvm-switch)
       * [Fix flakiness using DisplaySwitch](docs/macos.md#fix-flakiness-using-displayswitch)
