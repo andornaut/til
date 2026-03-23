@@ -15,6 +15,10 @@ cookiebanners.service.mode.privateBrowsing: 1
 
 # Don't paste on middle-click
 middlemouse.paste false
+
+# Increase scrollbar thumb size (Linux)
+widget.non-native-theme.scrollbar.size.override: 20
+widget.non-native-theme.scrollbar.style: 4
 ```
 
 ## Credit card autofill / autocomplete
