@@ -100,6 +100,7 @@
 * [ErgoMechStore](https://ergomech.store/)
 * [KBDfans](https://kbdfans.com/)
 * [Keebio](https://keeb.io/)
+* [King Cables](https://www.kingcables.org)
 * [Kono](https://kono.store/)
 * [Omega Keys](https://omegakeys.ca/)
 * [Shockport](https://shockport.ca/)

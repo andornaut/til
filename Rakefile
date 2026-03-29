@@ -12,7 +12,7 @@ task :mdtoc do
       exit 1
     fi
     mdtoc --append --create --output README.md docs/
-    git add README.md docs/**/*.md 2>/dev/null || true
+    git add README.md docs/*.md
     git commit -qm 'Update TOC' || true
     git pull
     git push
