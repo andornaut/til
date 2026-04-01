@@ -228,6 +228,7 @@ rake
   * [Wifi](docs/networking.md#wifi)
   * [Serial console](docs/networking.md#serial-console)
   * [Enable PoE 802.3at on a Ruckus R610 wireless access point](docs/networking.md#enable-poe-802.3at-on-a-ruckus-r610-wireless-access-point)
+  * [Enable PoE 802.3at on a Ruckus R610 wireless access point](docs/networking.md#enable-poe-802.3at-on-a-ruckus-r610-wireless-access-point-1)
 * [NPM](docs/npm.md#npm)
   * [Install Node and NPM using NVM](docs/npm.md#install-node-and-npm-using-nvm)
   * [Linking](docs/npm.md#linking)
