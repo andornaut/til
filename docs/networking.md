@@ -81,21 +81,34 @@ sudo tio /dev/ttyUSB0
 n.b. The PoE port provides power to the LAN2 port
 
 ```bash
-ssh ap.example.com
-enable
-config
-
-# Select the target access point
-ap xx:xx:xx:xx:xx:xx 
-power-mode 802.3at
-end
-end
-reboot
+# Login with the web admin username and password
+ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa wifi
+ruckus> enable
+ruckus# config
+ruckus(config)# ap <mac-address>
+ruckus(config-ap)# power-mode 802.3atend
+ruckus(config-ap)# end
+ruckus(config)# end
+ruckus# reboot
 ```
 
 Alternatively, if in a different CLI mode, which is based on how long after rebooting this process is started:
 
 ```bash
-ssh ap.example.com
+# Login with the web admin username and password
+ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa wifi
 set power-mode at
+```
+
+## Enable PoE 802.3at on a Ruckus R610 wireless access point
+
+```bash
+# Login with the web admin username and password
+ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa wifi
+ruckus> enable
+ruckus# config
+ruckus(config)# ap <mac-address>
+ruckus(config-ap)# usb-port enable
+ruckus(config-ap)# end
+ruckus(config)# end
 ```
