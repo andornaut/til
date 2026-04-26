@@ -75,9 +75,11 @@
     # Install video playback dependencies:
     sudo apt install gstreamer1.0-libav gstreamer1.0-plugins-bad
     ```
+* [BumpMesh ](https://bumpmesh.com/)
 * [FreeCAD](https://www.freecad.org/)
 * [OnShape](https://cad.onshape.com/)
 * [OpenSCAD](https://openscad.org/)
+* [Prusa Slicer](https://www.prusa3d.com/p/prusaslicer/)
 
 ## Stores
 
