@@ -388,6 +388,7 @@ rake
     * [Post-install cleanup / Uninstall packages](docs/ubuntu.md#post-install-cleanup-uninstall-packages)
     * [Flatpak](docs/ubuntu.md#flatpak)
   * [How-tos](docs/ubuntu.md#how-tos)
+    * [Reclaim disk space](docs/ubuntu.md#reclaim-disk-space)
     * [Upgrade Ubuntu from LTS to non-LTS](docs/ubuntu.md#upgrade-ubuntu-from-lts-to-non-lts)
     * [Disable release upgrade notifications](docs/ubuntu.md#disable-release-upgrade-notifications)
     * [Disable language switcher](docs/ubuntu.md#disable-language-switcher)

@@ -181,6 +181,32 @@ flatpak permission-reset org.mozilla.firefox
 
 * [How to create a swapfile](https://linuxize.com/post/create-a-linux-swap-file/)
 
+### Reclaim disk space
+
+```bash
+# Remove orphaned packages and clear the apt cache
+sudo apt autoremove --purge
+sudo apt autoclean   # remove cached .deb files for packages no longer downloadable
+sudo apt clean       # remove all cached .deb files in /var/cache/apt/archives
+
+# Prune Docker images, containers, networks, and build cache
+docker system prune       # remove dangling images, stopped containers, unused networks
+docker system prune -a --volumes   # also remove unused images and volumes
+
+# Vacuum the systemd journal
+sudo journalctl --vacuum-size=200M   # keep at most 200M
+sudo journalctl --vacuum-time=7d     # keep at most 7 days
+
+# Remove rotated/compressed logs
+sudo find /var/log -type f \( -name '*.gz' -o -name '*.[0-9]' -o -name '*.old' \) -delete
+
+# Clear thumbnail and user caches
+rm -rf ~/.cache/thumbnails/*
+
+# Empty the trash
+trash-empty   # from trash-cli
+```
+
 ### Upgrade Ubuntu from LTS to non-LTS
 
 ```bash
