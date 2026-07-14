@@ -1,6 +1,6 @@
 # Retro games
 
-* [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/master/roles/games)
+* [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/main/roles/games)
 * Artwork
   * [System images (larger)](https://github.com/ruckage/es-theme-snes-mini/blob/master/art/icons_usa/)
   * [System images (smaller)](https://github.com/Vidnez/retro-systems-icons-for-GarlicOS/tree/master/system) 
@@ -265,11 +265,48 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 * [Libretro](https://www.libretro.com/)
   * [Docs](https://docs.libretro.com/)
 * [RetroArch on Flathub](https://flathub.org/apps/details/org.libretro.RetroArch)
-* [RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/)
 * [RGC: RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/)
 * [RGC: Shaders and Overlays on Retro Handhelds](https://retrogamecorps.com/2024/09/01/guide-shaders-and-overlays-on-retro-handhelds/)
   * [RGC Overlay Pack](https://github.com/retrogamecorps/RGC-Overlay-Pack/releases)
 * [/r/RetroArch](https://www.reddit.com/r/RetroArch/)
+
+### Ansible
+
+On the desktops, RetroArch is managed by the `retroarch` tag of the
+[games role](https://github.com/andornaut/ansible-ctrl/tree/main/roles/games): the libretro cores, the
+BIOS set, a curated subset of `retroarch.cfg`'s keys, the per-core overrides and core options, and the
+playlists. Everything below that describes a setting is enforced there rather than clicked through the UI.
+The role owns only the keys it names, so a setting changed in the app still persists; the managed ones snap
+back on the next run.
+
+```bash
+ansible-playbook --ask-become-pass games.yml --tags retroarch
+```
+
+**Close RetroArch first.** It rewrites the whole of `retroarch.cfg` when it exits
+(`config_save_on_exit`), so a running instance overwrites whatever the play just enforced.
+
+**Playlists are generated from the ROM library, not scanned.** RetroArch's in-app content scanner needs
+a display and has to be driven by hand on every host, and the resulting core association only ever lives
+inside each scanned `.lpl`. The role walks the library instead and writes each playlist from a
+directory-to-core table (`games_retroarch_systems`), so adding a ROM means re-running the tag. The core
+association is therefore the Desktop column of the table below, in one reviewable place.
+
+RetroArch only reads the library, and writes everything (playlists, saves, states, `system/`, cache)
+under `~/.var/app/org.libretro.RetroArch/config/retroarch`, so a host can mount the library read-only.
+
+**Cores come from the buildbot, not the in-app Core Updater.** Libretro cores are packaged for neither apt
+nor flatpak, and the in-app updater is one manual download per core per host. They are the same artifacts:
+`https://buildbot.libretro.com/nightly/linux/<arch>/latest/<core>_libretro.so.zip`, where `<arch>` is the
+*kernel* name (`x86_64`, `aarch64`), not the Debian one. The buildbot rebuilds every core nightly, so pull a
+core once and leave it: re-downloading on a schedule swaps a working core for an untested nightly. Delete a
+core's `.so` to force a fresh build.
+
+**The BIOS set has to be local.** Cores treat the system directory as writable scratch space (Dolphin keeps
+its `Sys` tree there, PPSSPP its own state), so it cannot be an alias for a read-only network mount: copy
+the BIOS in, rather than pointing `system_directory` at the library. Copy it with `rsync`, which compares
+size and mtime; a checksumming copy reads the whole ~600MB set back across the network on every run. Do not
+`--delete` on that copy, or it takes the cores' own state with it.
 
 ### Cache directory
 
@@ -289,49 +326,218 @@ which may occur if RetroArch crashes before it is able to clean up.
 Platform | Desktop core (x64) | Anbernic RG40XXV (ARM) | Retroid Pocket Mini (ARM) | Retroid Pocket Flip 2 (Android)
 --- | --- | --- | --- | ---
 Arcade | | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
+Atari - 2600 | [Stella](https://docs.libretro.com/library/stella/) | | |
 Atari - 7800 | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/)
 Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
-Atari - Lynx | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/)
-NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce_fast/)
-NEC - PC Engine CD - TurboGrafx-CD (PCECD) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce_fast/)
+Atari - Lynx | [Beetle Lynx](https://docs.libretro.com/library/beetle_lynx/) | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/) | [Beetle Lynx](https://docs.libretro.com/library/beetle_lynx/)
+NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/)
+NEC - PC Engine CD - TurboGrafx-CD (PCECD) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/)
 Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)  | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
 Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/)
 Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
-Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | -- | [Dolphin](https://docs.libretro.com/library/dolphin/) | [Dolphin](https://docs.libretro.com/library/dolphin/)
-Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/)
+Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | -- | [Dolphin](https://docs.libretro.com/library/dolphin/) | [Dolphin](https://dolphin-emu.org/) (Standalone: the libretro core crashes on load on Android)
+Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) + [ParaLLEl-RDP/RSP](https://github.com/Themaister/parallel-rdp) (Vulkan) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) + GLideN64 (HLE)
 Nintendo - Nintendo DS (NDS) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/) | [DraStic](https://drastic-ds.com) (Standalone) | [DraStic](https://drastic-ds.com) (Standalone) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/)
-Nintendo - Nintendo Entertainment System (FC, NES) | [Nestopia](https://docs.libretro.com/library/nestopia/) | [FCEUmm](https://docs.libretro.com/library/fceumm/) | [Nestopia](https://docs.libretro.com/library/nestopia/) | [Nestopia](https://docs.libretro.com/library/nestopia/)
+Nintendo - Nintendo Entertainment System (FC, NES) | [Mesen](https://docs.libretro.com/library/mesen/) | [FCEUmm](https://docs.libretro.com/library/fceumm/) | [Nestopia](https://docs.libretro.com/library/nestopia/) | [Mesen](https://docs.libretro.com/library/mesen/)
 Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/)
+Pico-8 | [Retro8](https://github.com/Jakz/retro8) | | |
 Sega - 32X | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
 Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast VL](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/)
 Sega - Game Gear (GG) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega - Master System - Mark III (MS) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega - Mega-CD - Sega CD | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Standalone) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/)
+Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Standalone) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/)
 SNK Neo Geo | | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
 Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/)
 Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | -- | AetherSX2 | [NetherSX2-classic](https://github.com/Trixarian/NetherSX2-classic)
 Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) ([Core System Files](https://github.com/hrydgard/ppsspp), [Optimization](https://www.reddit.com/r/ANBERNIC/comments/1fkztb1/universal_pppsspp_configuration_for_unmatched/)) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/)
 The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/)
 
+#### Desktop vs. Flip 2: why they differ where they do
+
+The desktop column is accuracy-first: the hardware can afford a cycle-accurate core, so it runs one. The Flip 2
+is a **Snapdragon 865** (2020 flagship, ~55% of an 8 Gen 2's single-core score, and single-core is what every one
+of these cores is bound by), so it cannot, and three rows diverge. Everywhere else the accuracy core is free and
+both run the same one.
+
+Platform | Diverges because
+--- | ---
+Saturn | Beetle Saturn has **no dynamic recompiler**: it interprets both SH-2s. A Snapdragon 855+ cannot hold full speed on it. Not a close call.
+N64 | ParaLLEl-RDP is a Vulkan compute renderer needing `VK_KHR_8bit_storage`, which **no Adreno driver exposes**. Reported at ~1fps even on a Snapdragon 8 Elite. A hard blocker, not a performance question: the Flip 2 stays on GLideN64 HLE.
+PS2 | LRPS2 is x86_64-only; its recompiler has no ARM target and no Android build exists. Use NetherSX2 standalone.
+
+Two shared rows come with conditions rather than a clean yes. **Beetle PSX HW** runs on the Flip 2 but is a pure
+interpreter with no dynarec, so it costs battery: keep internal resolution at 2-3x (an 845 collapsed at 4x) and
+run-ahead off, and set the core's renderer to `hardware_vk` explicitly or it silently falls back to software at
+1x. **Mesen** should be fine on an 865 in absolute terms, but libretro's own core info warns it off weak mobile
+hardware: check the FPS overlay, and avoid the Bisqwit NTSC filters, which are what actually blow its budget.
+Both are worth testing for 10+ minutes, not 60 seconds: the marginal cores pass a short test and fail once the
+thermal budget engages.
+
+GameCube is listed as standalone Dolphin on the Flip 2 because the libretro Dolphin core crashes on load on
+Android. The libretro core remains usable on the desktop, but standalone Dolphin is ahead of it there too.
+
+**SNES is the one row that goes the other way**: rather than let the desktop take a more accurate core than the
+handheld can run, both stay on Snes9x. A bsnes-family core is the more accurate line, but it schedules the SA-1
+and SuperFX coprocessors cycle-accurately against the 65816, roughly doubling cost, and that is unverified on an
+865 (the failure mode is audio crackle in exactly the games worth being accurate about: Super Mario RPG, Yoshi's
+Island). Modern Snes9x is far more accurate than its reputation: the gap is timing edge cases rather than visible
+behaviour, and it keeps rewind and MSU-1, which bsnes does not do. One core everywhere is worth more than that
+trade.
+
 #### System specific cores
 
 * [ScummVM](https://docs.libretro.com/library/scummvm/)
+
+#### Pico-8
+
+RetroArch cannot run the official (paid) PICO-8 binary: libretro cores are shared libraries
+implementing the libretro API, and PICO-8 is a closed-source standalone executable. Retro8 is a
+reimplementation, so compatibility is worse than the real runtime and there is no Splore. Prefer the
+standalone binary if you own it. On linux/x86_64 the libretro buildbot ships Retro8 but not Fake-08.
+
+Cartridges are `.p8.png`: the game is steganographed into a picture of its own label. RetroArch's
+built-in image viewer claims every `.png` **ahead of the core the playlist asks for**, so a cartridge
+launches as a static picture of that label instead of the game. Symptoms: the core loads at the PNG's
+dimensions (160x205) rather than PICO-8's 128x128, and saves land under `saves/image display/`. Fix:
+
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
+builtin_imageviewer_enable = "false"
+```
+
+#### Zipped ROMs and `block_extract`
+
+Most cores never see the archive: RetroArch unpacks a `.zip` and hands over what is inside, which is
+why cores that do not list `zip` among their extensions still play zipped ROMs. A core that sets
+**`block_extract`** is the exception, and is handed the archive untouched. Dolphin is the only one of
+these in this collection, and it cannot open a zip: a zipped GameCube ROM does not fail politely, it
+segfaults RetroArch (`Failed to load content`). Keep GameCube content as `.iso`/`.rvz`.
+
+`block_extract` is not in the core's `.info` file. Read it, and the core's real `library_name`, out of
+the `.so`:
+
+```python
+import ctypes
+class Info(ctypes.Structure):
+    _fields_ = [("library_name", ctypes.c_char_p), ("library_version", ctypes.c_char_p),
+                ("valid_extensions", ctypes.c_char_p), ("need_fullpath", ctypes.c_bool),
+                ("block_extract", ctypes.c_bool)]
+core = ctypes.CDLL("<cores_dir>/dolphin_libretro.so")
+info = Info(); core.retro_get_system_info(ctypes.byref(info))
+print(info.library_name.decode(), info.valid_extensions.decode(), info.block_extract)
+```
+
+Note that `valid_extensions` from the `.so` is narrower than the `supported_extensions` in the `.info`,
+and it is the `.info` that RetroArch goes by. Virtual Jaguar reports only `j64|jag` yet plays this
+library's `.rom` files perfectly well: content given as an explicit path is not filtered on extension.
+
+#### Cores rot when the runtime moves
+
+A core downloaded from the buildbot is a binary linked against the flatpak runtime. Upgrade the runtime
+and a core can stop resolving its libraries: a 2024 Dolphin failed with `libbz2.so.1.0: cannot open
+shared object file`, killing every GameCube title, with no symptom other than "Failed to open libretro
+core". Re-downloading the core fixes it. Check from **inside the sandbox**, because the missing library
+is missing from the runtime, not the host, and `ldd` on the host will call the core healthy:
+
+```bash
+flatpak run --command=ldd org.libretro.RetroArch <core>.so | grep 'not found'
+```
 
 ### Drivers
 
 Type | Linux driver (flatpak)
 --- | ---
-Video | glcore
-Audio | pulse
-Microphone | alsathread
-Input | x
+Video | glcore (per-core `vulkan`: Beetle PSX HW, Flycast, Mupen64Plus-Next)
+Audio | pipewire
+Microphone | pipewire
+Input | udev
 Controller | udev
+Menu | ozone
 Record | ffmpeg
 MIDI | alsa
 Camera | video4linux2
 Location | null
+
+The input driver used to be `x`, which only works under an X11 video context and so breaks on a
+Wayland session. `udev` reads `/dev/input` directly and works under both, and it serves the keyboard,
+the mouse and the lightgun bindings. Confirm with `retroarch -v`, which logs
+`[Input] Found input driver: "udev".`
+
+The audio driver used to be `pulse`. RetroArch has had a native PipeWire driver since 1.20, and its own
+description of it is "if the system uses PipeWire, make sure to use this driver instead of, e.g., PulseAudio":
+`pulse` reaches the same server through the `pipewire-pulse` shim, which is a buffer and a hop that buy nothing.
+The driver is much younger than the pulse one, so `pulse` is the fallback if it ever xruns.
+
+#### Why the global video driver stays glcore
+
+Switching the global driver to `vulkan` looks like the obvious upgrade on a modern GPU and is not. A core asks
+the frontend for its preferred renderer and matches it, so a `vulkan` global silently moves **PPSSPP and Dolphin**
+onto their Vulkan backends too, which is where their libretro bug reports live (PPSSPP's loses the device on
+fast-forward). That needs overrides back to `glcore` for more cores than going the other way needs overrides
+forward. slang shaders work on `glcore` and `vulkan` alike, so nothing is lost by staying.
+
+The three cores that do want Vulkan get it per-core, which `driver_switch_enable = "true"` permits:
+
+Core | Why vulkan
+--- | ---
+Beetle PSX HW | Its OpenGL renderer leaves "all games" with "graphical glitches and rendering issues of varying severity" per the libretro docs; the Vulkan one is the stable path and is closer to the software renderer's accuracy.
+Flycast | Better frame pacing and much faster texture/framebuffer uploads.
+Mupen64Plus-Next | ParaLLEl-RDP is Vulkan-only (it needs `VK_EXT_external_memory_host`) and there will never be an OpenGL port.
+
+#### Core options are a different file
+
+`config/<library_name>/<library_name>.cfg` holds RetroArch settings overridden for that core.
+`config/<library_name>/<library_name>.opt` holds the **core's own** options, which are namespaced by the core and
+are not discoverable from `retroarch.cfg`. Read the real keys out of the `.so`, because the libretro docs lag the
+cores:
+
+```bash
+strings <cores_dir>/genesis_plus_gx_libretro.so | grep '^genesis_plus_gx_'
+```
+
+RetroArch writes *every* option a core exposes into the `.opt` file, so it cannot be templated whole the way a
+`.cfg` override can: enforce it key by key or the untouched options get discarded.
+
+Core | Option | Value | Why
+--- | --- | --- | ---
+Genesis Plus GX | `genesis_plus_gx_ym2612` | `nuked (ym2612)` | The default MAME FM synthesis is fast and approximate; Nuked is cycle-accurate, and is why a Mega Drive sounds like the hardware rather than like an emulator.
+Genesis Plus GX | `genesis_plus_gx_ym2413_core` | `nuked` | Same, for the Master System's FM add-on, which is a separate chip and so a separate option.
+Mupen64Plus-Next | `mupen64plus-rdp-plugin` | `parallel` | Low-level emulation of the real RDP, where the default GLideN64 is a high-level reimplementation that guesses at what each game meant. This is what renders the framebuffer effects (Zelda's lens of truth, Mario's paintings) correctly rather than approximately.
+Mupen64Plus-Next | `mupen64plus-rsp-plugin` | `parallel` | The matching RSP.
+
+The core only requests a Vulkan context when its `rdp-plugin` option is `parallel`, so the core option and the
+`video_driver` override have to be set together or ParaLLEl-RDP silently does not engage.
+
+### Lightgun and menu pointer
+
+The menu pointer (`menu_mouse_enable`, off by default) and the lightgun
+(`input_player1_gun_trigger_mbtn = "1"`, offscreen shot on `2`) both read the mouse through the `udev` input
+driver, so they need the `/dev/input` access the pad already has. The distro's `70-uaccess.rules` tags
+joysticks but not the mouse or keyboard, so out of the box the pad works while the pointer and lightgun are
+dead; a `70-retroarch-input.rules` tagging them too fixes it. (`menu_unified_controls` stays off, so the menu
+keeps its own arrows/Enter/Backspace.)
+
+**`input_player1_mouse_index` picks the mouse by position, not name.** An idle KVM / virtual-HID that
+advertises buttons but emits nothing takes a slot in the enumeration-order list; if it sorts to index 0 (the
+default), the cursor still moves (motion is summed across mice) but every click lands on the dead device.
+Pinning the index does not help, the order being unstable across launches: drop that device's `ID_INPUT_MOUSE`
+in the same udev rule so a real mouse holds index 0.
+
+### Savestates
+
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
+savestate_auto_index = "true"
+savestate_max_keep = "100"
+```
+
+RetroArch defaults to one save slot that each save overwrites; auto-index takes the next slot and keeps the
+last 100, so a misfire cannot clobber an earlier save. Saves and states sort into per-core dirs
+(`saves/<library_name>/`, `states/<library_name>/`), so a core swap orphans them: states never migrate (a
+dump of the old core's internal state), and battery saves move only within an emulator family (Mednafen's
+`.srm` between its cores, but DeSmuME's `.dsv` is not a melonDS `.sav`).
 
 ### Rewind
 
@@ -339,38 +545,197 @@ From [Retro Game Corps](https://retrogamecorps.com/2022/02/28/retroarch-starter-
 
 > For the Rewind function to work, you will need to go into Settings > Frame Throttle > Rewind > ON. **This is not something I would recommend turning on as a global configuration**, because some systems (like Saturn or PS1) will be very slow with it on, and some (like PSP) may outright crash.
 
-#### Configure the controller right-analog stick
+That advice is written for a handheld. On a desktop, rewind is worth having on globally, and the cost the guide is
+warning about is mostly `rewind_buffer_size` (see below), which is a setting rather than a limit.
 
-Set the following base configuration:
+#### Bind it three ways
+
+The right stick is the nicest binding, but it is not available on the dual-analog consoles (PlayStation, GameCube,
+PS2), where it is the camera or C-stick: left bound to fast-forward, looking right runs the game at 3x. So bind an
+alternative as well.
+
+**`input_*_btn` and `input_*_axis` are physical device indices, not RetroPad IDs.** This is the trap. The physical
+indices differ per controller model, so there is no value that is correct everywhere: on an Xbox Series X pad the
+right stick's Y axis is 4 and L3/R3 are 9/10, on an Xbox One BT the axis is 3, and on an 8BitDo Ultimate the
+buttons are 13/14. Guessing does not produce a near-miss, it produces a *different button*: the RetroPad IDs
+(`2` for the stick, `14`/`15` for L3/R3) mean axis 2 on an Xbox pad, which is the **left trigger**, so pulling L2
+fast-forwards the game, and two buttons that do not exist.
+
+Read the real numbers out of RetroArch's own autoconfig profile for the pad, which is the authority the frontend
+itself uses:
+
+```bash
+flatpak run --command=grep org.libretro.RetroArch -E '^input_(r_y_minus_axis|r_y_plus_axis|l3_btn|r3_btn)' \
+  "/app/share/libretro/autoconfig/udev/Microsoft_X-Box_Series_XS_pad.cfg"
+```
+
 ```
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
-input_hold_fast_forward_axis = "+2"
-input_rewind_axis = "-2"
+# Xbox Series X. Check the autoconfig profile above for any other pad.
+input_rewind_axis = "-4"             # right stick up
+input_hold_fast_forward_axis = "+4"  # right stick down
+input_rewind_btn = "9"               # L3
+input_hold_fast_forward_btn = "10"   # R3
+input_rewind = "r"                   # keyboard: the one binding no core takes away
+input_hold_fast_forward = "l"
+```
+
+No console here has clickable sticks, so L3/R3 are free on all of them except the PS2, whose games do use them.
+
+Do **not** reach for a Hotkey-Enable combo (Select+L and the like) to solve this: `input_enable_hotkey_btn` gates
+*every* hotkey, so binding it means holding Select to use the right stick too.
+
+#### Rewind buffer size
+
+This, not the CPU, is what decides how far back you can go. The ring buffer holds deltas between consecutive
+savestates, so a core with a big state fills it quickly. RetroArch's default is 20MB, sized for a handheld; on a
+desktop there is no reason not to buy the window:
+
+```
+rewind_buffer_size = "268435456"   # 256MB
+rewind_granularity = "1"
 ```
 
 #### Only enable rewind for certain cores
 
 "Rewind" functionality is not supported by all cores, and may cause problems with some cores that nominally support it.
 
-Console | Cores that don't support rewind (well)
---- | ---
-Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
-Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/)
-Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/)
-Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/)
-Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/)
-Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/)
-
-Create a [Core Override](https://docs.libretro.com/guides/overrides/) file to unset the right-analog stick mappings for cores that do not support "rewind" or "fast-forward" or for consoles that make use of the right-analog stick, such as the Nintendo GameCube:
+Whether a core can rewind at all is decided by the `savestate_features` field of its `.info` file: RetroArch refuses rewind for a `basic` core, permits it for `serialized`, and permits rewind plus runahead for `deterministic`. Read it rather than the per-core "Rewind" row on docs.libretro.com, which is stale for several cores (Dolphin and Opera both claim support they do not have):
 ```
-# Update the following core-specific config files:
-# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/dolphin-emu/dolphin-emu.cfg
-# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
-# ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Virtual\ Jaguar/Virtual\ Jaguar.cfg
+grep savestate_features ~/.local/share/flatpak/app/org.libretro.RetroArch/current/active/files/share/libretro/info/<core>_libretro.info
+```
+
+Console | Core | `savestate_features` | Savestate | Rewind
+--- | --- | --- | --- | ---
+Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | none (no savestates) | -- | Impossible
+Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | `basic` | -- | Refused by RetroArch
+Sony - PlayStation 2 (PS2) | [LRPS2](https://docs.libretro.com/library/lrps2/) | `basic` | -- | Refused by RetroArch
+The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) | `basic` | -- | Refused by RetroArch
+Nintendo - NES | [Mesen](https://docs.libretro.com/library/mesen/) | `deterministic` | 1KB | Works
+Sega - Mega Drive | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | `deterministic` | 26KB | Works
+Nintendo - SNES | [Snes9x](https://docs.libretro.com/library/snes9x/) | `deterministic` | 102KB | Works
+Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | `serialized` | 986KB | Works
+Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) | `deterministic` | 1.1MB | Works
+Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | `deterministic` | 1.4MB | Works
+Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/) | `serialized` | 3.0MB | Works
+Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | `serialized` | 5.5MB | Works
+Nintendo - Nintendo DS (NDS) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/) | `serialized` | | Works in NDS mode only: DSi mode has no savestates at all
+
+Earlier versions of this page said Flycast and PPSSPP crash at boot with rewind on, that Beetle Saturn is refused
+at load over threaded audio, and that Beetle PSX HW's states are too big to be worth it. **None of that held up
+when tested**: all four boot and run with rewind enabled, and the savestate sizes above (read off the `.state`
+files RetroArch actually wrote) put Beetle PSX HW at 1.1MB, next to the 986KB of Mupen64Plus-Next, which had
+rewind on all along. Turn rewind on everywhere the core allows it and raise `rewind_buffer_size`.
+
+Two [Core Overrides](https://docs.libretro.com/guides/overrides/) come out of the table, covering
+**different, only partly overlapping** sets of cores. Keep them apart: unsetting the right-analog axes is for
+the dual-analog consoles (a camera or C-stick left bound to fast-forward scrubs the game whenever the player
+looks around); disabling rewind is for cores that cannot rewind (`basic` savestates or none). Applying both
+to every core, as an earlier version did, switches rewind off on cores that support it and unbinds the stick
+on single-stick cores that want it.
+
+The override dir is the core's runtime `library_name`, not its `.info` name: Dolphin reports `dolphin-emu`,
+and `pcsx2` reports `LRPS2 (alpha)` (newer builds drop the `(alpha)`, so the dir follows the nightly). Files
+live at `config/<library_name>/<library_name>.cfg`.
+
+`library_name` | Axes → `nul` | L3/R3 → `nul` | `rewind_enable = "false"` | Why
+--- | --- | --- | --- | ---
+`Beetle PSX HW` | yes | | | dual-analog; rewind stays on (L3/R3 + keyboard)
+`dolphin-emu` | yes | | yes | dual-analog; `basic` savestates
+`LRPS2 (alpha)` | yes | yes | yes | dual-analog; PS2 games use stick clicks; `basic`
+`Virtual Jaguar` | | | yes | no savestates
+
+Flycast, PPSSPP, and Beetle Saturn take neither override: single-stick and rewind-capable (Flycast's only
+override is the `vulkan` driver, in [Video drivers](#video-drivers)).
+
+```
+# axes: Beetle PSX HW, dolphin-emu, LRPS2 (alpha)
 input_hold_fast_forward_axis = "nul"
 input_rewind_axis = "nul"
+# btns: LRPS2 (alpha) only
+input_hold_fast_forward_btn = "nul"
+input_rewind_btn = "nul"
+# rewind: dolphin-emu, LRPS2 (alpha), Virtual Jaguar
 rewind_enable = "false"
 ```
+
+### Input latency: preemptive frames
+
+* [Run-Ahead and Preemptive Frames](https://docs.libretro.com/guides/runahead/)
+
+Emulators reproduce the 1-3 frames of lag the original hardware had, then add their own. Preemptive frames
+runs the core ahead of the display and shows the result the moment the input is known, hiding it. It is the
+cheaper half of a pair: run-ahead re-runs *every* frame, preemptive frames only when the controller state
+changes, for the same win. They are mutually exclusive.
+
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
+preemptive_frames_enable = "false"   # off globally; enabled per core
+run_ahead_enabled = "false"
+run_ahead_frames = "1"
+```
+
+**Off globally, on per core** (the opposite of rewind). RetroArch permits it only on a core declaring
+`savestate_features = "deterministic"` and, on the rest, puts `Preemptive Frames unavailable...` on screen at
+every launch. A global setting thus buys nothing on the non-deterministic cores and nags on all of them, so
+enable it per core:
+
+```bash
+grep -l 'savestate_features = "deterministic"' ~/.local/share/flatpak/app/org.libretro.RetroArch/current/active/files/share/libretro/info/*.info
+```
+
+One frame is conservative: more is free only until it exceeds a game's own internal lag, past which the
+picture jitters (per-game). Enable on the cheap deterministic cores (Stella, Gambatte, mGBA, Mesen, Snes9x,
+Beetle PCE, Genesis Plus GX, PicoDrive). Everything else is `serialized` or `basic` and cannot take it at all
+(ProSystem and Beetle Lynx included). Two cores clear the `deterministic` bar but are still left off:
+
+Core | Why not
+--- | ---
+[Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | The most expensive core in the set: interprets both SH-2s with no recompiler. An extra emulated frame is not affordable.
+[Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) | The only `deterministic` core here that is also hardware-rendered, the case the run-ahead docs warn against.
+
+### Latency: swapchain images
+
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
+video_max_swapchain_images = "2"
+```
+
+Double rather than triple buffering: one less frame queued between the core and the screen. A desktop GPU will not
+miss a deadline running 2D consoles, so the frame that triple buffering keeps in reserve only buys latency. Raise
+back to `"3"` if frame pacing hiccups.
+
+### Fullscreen and VRR
+
+```
+# ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
+video_fullscreen = "true"
+video_windowed_fullscreen = "true"
+```
+
+RetroArch defaults to a window, where the compositor owns frame pacing. `windowed_fullscreen` makes
+fullscreen borderless rather than an exclusive mode switch, which works under both X11 and Wayland (Wayland
+has no exclusive fullscreen).
+
+`vrr_runloop_enable` is off by default; turn it on only on a variable-refresh panel, which also needs VRR
+enabled outside RetroArch (compositor setting under Wayland; `Option "VariableRefresh"` in `xorg.conf.d`
+under X11, where it conflicts with `TearFree`). It is mutually exclusive with the other video-to-audio sync
+methods, so it cannot combine with a swap interval above 1 or black frame insertion; a conflict shows as
+audio drift with nothing visibly wrong. On a fixed-refresh panel leave VRR off and use BFI instead.
+
+```
+video_vsync = "true"                # VRR sync needs this on
+video_swap_interval = "1"           # and this at 1
+video_black_frame_insertion = "0"   # and BFI off; BFI is the fixed-refresh alternative
+```
+
+Other pinned globals (all off/absent by default):
+
+Key | Value | Why
+--- | --- | ---
+`check_firmware_before_loading` | `true` | Refuse to launch a core whose required BIOS is missing, rather than boot a black screen or corrupt state.
+`video_threaded` | `false` | A no-op for hardware-rendered cores; on software ones it buys speed by breaking frame pacing and audio sync.
+`notification_show_autoconfig_fails` | `false` | A keyboard trips a "not configured in port N" toast every launch (no joypad profile) yet works anyway, so it is noise.
 
 ### Shaders
 
@@ -385,7 +750,7 @@ Which type of shaders you can load is determined by the video driver used:
 Video driver | Shader type
 --- | ---
 glcore | glsl (*.glsl, *.glslp)
-vulcan | slang (*.slang, *.slangp)
+vulkan | slang (*.slang, *.slangp)
 
 Recommended shader: sharp-shimmerless from [Retro Game Corps' pack](https://github.com/retrogamecorps/RGC-Overlay-Pack/tree/main/RGC%20shaders)
 
@@ -400,30 +765,39 @@ n.b. Thumbnail filenames cannot contain ampersand "&" characters. If the ROM nam
 
 * [Changing behavior of “gl” and “glcore” video drivers](https://www.libretro.com/index.php/changing-behavior-of-gl-and-glcore-video-drivers/)
 
+The global driver is `glcore` and three cores are overridden to `vulkan`. See
+[Why the global video driver stays glcore](#why-the-global-video-driver-stays-glcore) for why it is not the other
+way around.
+
 1. Navigate to Settings -> Core
 1. Set "Allow Cores to Switch the Video Driver" to "On"
 1. Navigate to Settings -> Drivers
-1. Set "Video Driver" to "vulkan" on Linux or "d3d12" on Xbox Series
+1. Set "Video Driver" to "glcore" on Linux or "d3d12" on Xbox Series
 1. Save the configuration, and restart RetroArch
 1. Create a [Core Override](https://docs.libretro.com/guides/overrides/) file for each of the following cores:
 
 Console | Core | Video driver on Linux | Video driver on Xbox Series
 --- | --- | --- | ---
-Nintendo - Nintendo 64 | Mupen64Plus-Next | glcore | gl
-Nintendo - GameCube | Dolphin | glcore | d3d11
-Sega - Dreamcast | Flycast | vulcan | d3d11
+Nintendo - Nintendo 64 | Mupen64Plus-Next | vulkan (required by ParaLLEl-RDP) | gl
+Nintendo - GameCube | Dolphin | -- (global glcore) | d3d11
+Sega - Dreamcast | Flycast | vulkan | d3d11
 Sony - PlayStation (PSX) | Beetle PSX | -- | d3d12
-Sony - PlayStation (PSX) | Beetle PSX HW | glcore | --
+Sony - PlayStation (PSX) | Beetle PSX HW | vulkan | --
 
 ```
 # Set the default video driver to "glcore":
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 video_driver = "glcore"
 
-# Set Flycast to "vulcan"
+# Set Flycast to "vulkan" (same for "Beetle PSX HW" and "Mupen64Plus-Next")
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/config/Flycast/Flycast.cfg
-video_driver = "vulcan"
+video_driver = "vulkan"
 ```
+
+Mupen64Plus-Next is set here rather than left to "Allow Cores to Switch the Video Driver" because hot-switching
+that core to Vulkan mid-session crashes it
+([mupen64plus-libretro-nx#370](https://github.com/libretro/mupen64plus-libretro-nx/issues/370)). An override is
+applied before video init, so the core comes up on Vulkan instead of moving to it.
 
 ## Games
 
