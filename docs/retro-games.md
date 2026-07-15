@@ -1786,6 +1786,44 @@ Virtual On - Cyber Troopers
 World Series Baseball 98
 X-Men - Children of the Atom
 ```
+### SNK - Neo Geo CD - September 9, 1994
+* Redump `Japanese Romaji ~ English` dual titles; run on the NeoCD core (`.chd`). The 1999+ Neo Geo library never came to CD and needs the arcade fbneo core instead.
+```
+2020 Super Baseball
+Aero Fighters 2
+Art of Fighting 2
+Baseball Stars 2
+Blue's Journey
+Burning Fight
+Crossed Swords II
+Double Dragon
+Far East of Eden - Kabuki Klash
+Fatal Fury Special
+Ironclad
+Last Blade, The
+Last Blade 2, The
+Last Hope (homebrew)
+Last Resort
+League Bowling
+Magician Lord
+Metal Slug 2
+Mutation Nation
+NAM-1975
+Neo Turf Masters
+Ninja Commando
+Power Spikes II
+Pulstar
+Puzzle Bobble
+Robo Army
+Samurai Shodown II
+Samurai Shodown RPG (Shinsetsu Samurai Spirits) (English translation)
+Sengoku 2
+Super Sidekicks 3 - The Next Glory
+Top Hunter - Roddy & Cathy
+Twinkle Star Sprites
+Viewpoint
+Windjammers
+```
 ### Sony - PlayStation (PSX) - December 3, 1994
 ```
 Ace Combat 3 - Electrosphere
