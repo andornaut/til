@@ -48,13 +48,8 @@
 
 #### MinUI
 
-* [Anbernic](https://anbernic.com/)
-* [patreon.com/blackseraph](https://www.patreon.com/blackseraph) - Lead developer of GarlicOS
-* [GarlicOS 2.0 (Public Alpha) announcement](https://www.patreon.com/posts/92690050)
-* [GarlicOS on GitHub](https://github.com/GarlicOS/buildroot)
-* [Knulli](https://knulli.org/devices/anbernic/rg40xx-h/)
 * [MinUI](https://github.com/shauninman/MinUI)
-  * [MinUI Paks](https://github.com/shauninman/MinUI/blob/main/PAKS.md) 
+  * [MinUI Paks](https://github.com/shauninman/MinUI/blob/main/PAKS.md)
 
 1. Download the "base" and "extras" zip files from [the latest MinUI release](https://github.com/shauninman/MinUI/releases). eg. 
 MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
@@ -245,25 +240,22 @@ ISO path | sdcard `ROMS/gc`, recursive
 
 ##### PS2: NetherSX2-Turnip
 
-Package `xyz.aethersx2.tturnip`, the `NetherSX2-…-Turnip` build (4248, "patch") from the
-[Obtainium Emulation Pack](https://github.com/RJNY/Obtainium-Emulation-Pack), which bundles a Turnip
-Adreno driver. The "Classic" (3668) build is the same package with the older AetherSX2 UI; some titles
-run better on one than the other (e.g. Sly Cooper on 3668), and since they share the package id,
-swapping keeps the data.
+Package `xyz.aethersx2.tturnip`, the `NetherSX2-…-Turnip` build (4248 "patch") from the
+[Obtainium Emulation Pack](https://github.com/RJNY/Obtainium-Emulation-Pack), for its bundled Turnip
+Adreno driver. The "Classic" (3668) build is the same package with the older AetherSX2 UI (some titles
+favour one, e.g. Sly Cooper on 3668); they share the package id, so swapping keeps the data.
 
-Emulator settings (renderer, resolution, controls) live in app-private storage, so `adb` cannot read
-or write them on a non-rooted device: set them by hand. In the app, set the renderer to Vulkan and
-select the Turnip driver (the reason for this build). The built-in gamepad auto-maps when undocked;
-manual remapping is only needed for the D-pad, sticks, or analog triggers, and docking with an
-external controller tends to lose the mapping each session. The PS2 BIOS goes in the app's own `bios/`
-folder (`/storage/emulated/0/Android/data/xyz.aethersx2.tturnip/files/bios/`); the 4MB `SCPH-*` /
-`ps2-0200*` dumps, not the 512KB PS1 `scph*` ones.
+Settings live in app-private storage, so set them by hand (`adb` cannot reach them on a non-rooted
+device): renderer Vulkan, and the Turnip driver. The built-in gamepad auto-maps undocked; remap only if
+the D-pad, sticks, or analog triggers misbehave. Put the PS2 BIOS (the 4MB `SCPH-*` / `ps2-0200*` dumps,
+not the 512KB PS1 `scph*` ones) in the app's `bios/` folder,
+`/storage/emulated/0/Android/data/xyz.aethersx2.tturnip/files/bios/`.
 
 ES-DE launches it via the `AetherSX2-Turnip (Standalone)` label, whose find rule
-(`ES-DE/custom_systems/es_find_rules.xml`, `AETHERSX2-TURNIP` entry) ships pointing at a different fork
-(`xyz.aethersx2.custom`). Repoint it to `xyz.aethersx2.tturnip/xyz.aethersx2.android.EmulationActivity`,
-and set the PS2 system's `<alternativeEmulator>` to that label. Neither file is managed by `sync.py`, so
-re-copying the [custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems) reverts both.
+(`ES-DE/custom_systems/es_find_rules.xml`) ships pointing at a different fork (`xyz.aethersx2.custom`):
+repoint it to `xyz.aethersx2.tturnip/xyz.aethersx2.android.EmulationActivity` and set the PS2
+`<alternativeEmulator>` to that label. `sync.py` manages neither file, so re-copying the
+[custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems) reverts both.
 
 #### Rocknix custom firmware
 
@@ -428,7 +420,7 @@ Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/l
 Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Standalone) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/)
 SNK Neo Geo | | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
 Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/)
-Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | -- | AetherSX2 | [NetherSX2-classic](https://github.com/Trixarian/NetherSX2-classic)
+Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | -- | AetherSX2 | [NetherSX2-Turnip](https://github.com/nckstwrt/NetherSX2-Turnip) (Standalone)
 Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) ([Core System Files](https://github.com/hrydgard/ppsspp), [Optimization](https://www.reddit.com/r/ANBERNIC/comments/1fkztb1/universal_pppsspp_configuration_for_unmatched/)) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/)
 The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/)
 
@@ -443,7 +435,7 @@ Platform | Diverges because
 --- | ---
 Saturn | Beetle Saturn has **no dynamic recompiler**: it interprets both SH-2s. A Snapdragon 855+ cannot hold full speed on it. Not a close call.
 N64 | ParaLLEl-RDP is a Vulkan compute renderer needing `VK_KHR_8bit_storage`, which **no Adreno driver exposes**. Reported at ~1fps even on a Snapdragon 8 Elite. A hard blocker, not a performance question: the Flip 2 stays on GLideN64 HLE.
-PS2 | LRPS2 is x86_64-only; its recompiler has no ARM target and no Android build exists. Use NetherSX2 standalone.
+PS2 | LRPS2 is x86_64-only; its recompiler has no ARM target and no Android build exists. Use NetherSX2-Turnip standalone.
 
 Two shared rows come with conditions rather than a clean yes. **Beetle PSX HW** runs on the Flip 2 but is a pure
 interpreter with no dynarec, so it costs battery: keep internal resolution at 2-3x (an 845 collapsed at 4x) and
@@ -1966,7 +1958,7 @@ Wolfenstein 3D
 * [OpenJKDF2](https://github.com/shinyquagsire23/OpenJKDF2/) - Dark Forces II: Jedi Knight
 * [OpenMW](https://openmw.org/) - The Elder Scrolls III: Morrowind
 * [OpenRA](https://github.com/OpenRA/OpenRA) - Command & Conquer: Red Alert
-* [OpenTDD](https://www.openttd.org/) - Transport Tycoon Deluxe
+* [OpenTTD](https://www.openttd.org/) - Transport Tycoon Deluxe
 * [VCMI](https://vcmi.eu/) - Heroes of Might and Magic III
 
 ### Port for Linux-based handhelds
@@ -1976,7 +1968,7 @@ Wolfenstein 3D
 * [2048](http://portmaster.games/detail.html?name=2048)
 * [Aleph-One Marathon 1](http://portmaster.games/detail.html?name=alephone-marathon)
 * [Cave Story (Evo)](https://portmaster.games/detail.html?name=cave.story-evo)
-* [Celeste Classic](http://portmaster.games/detail.html?name=spelunky)
+* [Celeste Classic](http://portmaster.games/detail.html?name=cceleste)
 * [Chasm](http://portmaster.games/detail.html?name=chasm)*
 * [Descent III](https://portmaster.games/detail.html?name=descent3)*
 * [Downwell](http://portmaster.games/detail.html?name=downwell)*
