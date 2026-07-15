@@ -337,6 +337,7 @@ rake
     * [Sega - Mega-CD - Sega CD - December 12, 1991](docs/retro-games.md#sega-mega-cd-sega-cd-december-12-1991)
     * [Sega - Mega Drive - Genesis (MD) - October 29, 1988](docs/retro-games.md#sega-mega-drive-genesis-md-october-29-1988)
     * [Sega - Saturn (SS) - November 22, 1994](docs/retro-games.md#sega-saturn-ss-november-22-1994)
+    * [SNK - Neo Geo CD - September 9, 1994](docs/retro-games.md#snk-neo-geo-cd-september-9-1994)
     * [Sony - PlayStation (PSX) - December 3, 1994](docs/retro-games.md#sony-playstation-psx-december-3-1994)
     * [Sony - PlayStation 2 (PS2) - March 4, 2000](docs/retro-games.md#sony-playstation-2-ps2-march-4-2000)
     * [Sony - PlayStation Portable (PSP) - December 11, 2004](docs/retro-games.md#sony-playstation-portable-psp-december-11-2004)
