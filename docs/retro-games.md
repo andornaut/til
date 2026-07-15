@@ -190,6 +190,38 @@ ROMS
 5. In Retroarch, configure the new locations for saves and states in Settings>Directory
 6. Point Azahar, Dolphin, and NetherSX2 apps to the new locations for their configurations
 
+#### RetroArch on stock Android
+
+Category | Path
+--- | ---
+retroarch.cfg | `/storage/emulated/0/Android/data/com.retroarch.aarch64/files/retroarch.cfg` (or `/storage/emulated/0/RetroArch/` if RetroArch is granted all-files access)
+Per-core overrides | `<config dir>/config/<library_name>/<library_name>.cfg` and `.opt`
+Cores | in-app Core Updater, or the Android buildbot: `https://buildbot.libretro.com/nightly/android/latest/arm64-v8a/<core>_libretro_android.so.zip` (ABI `arm64-v8a` for the Snapdragon 865, not the kernel `aarch64` the desktop uses)
+Core `.info` set | `https://buildbot.libretro.com/assets/frontend/info.zip`
+
+The saves, states, cores, playlists, thumbnails, and system (BIOS) directories are all relocatable to
+the removable sdcard via Settings>Directory; the folder layout above puts them under `RETROARCH/`.
+Newer Android can refuse to load an executable `.so` core from external storage: if cores fail to
+load from the sdcard, keep the cores directory in the app files dir (`.../files/cores`).
+
+#### Sync the desktop config to the Flip 2
+
+The [games role](https://github.com/andornaut/ansible-ctrl/tree/main/roles/games)'s
+[files/retroid/](https://github.com/andornaut/ansible-ctrl/tree/main/roles/games/files/retroid)
+mirrors the same managed RetroArch config (settings, per-core overrides/options, generated playlists,
+cores, BIOS, thumbnails) onto the Flip 2 over `adb`, applying the Android divergences from the
+[Cores](#cores) table (ARM cores, GLideN64 HLE for N64, YabaSanshiro for Saturn, standalone Dolphin
+and NetherSX2 for GameCube and PS2). Run it by hand from a host that mounts the ROM library:
+
+```bash
+roles/games/files/retroid/sync.py --library-dir /path/to/rom-library --dry-run   # preview
+roles/games/files/retroid/sync.py --library-dir /path/to/rom-library             # sync
+```
+
+Close RetroArch on the device first (it rewrites `retroarch.cfg` on exit). Two device-specific values
+have to be filled in once (the core `library_name`s and the pad's physical rewind/fast-forward
+indices); the tooling's `README.md` gives the `adb` commands that read them.
+
 #### Rocknix custom firmware
 
 * [Documentation](https://rocknix.org/)
@@ -282,6 +314,9 @@ back on the next run.
 ```bash
 ansible-playbook --ask-become-pass games.yml --tags retroarch
 ```
+
+The same managed config can be mirrored onto the Retroid Pocket Flip 2 over `adb`; see
+[Sync the desktop config to the Flip 2](#sync-the-desktop-config-to-the-flip-2).
 
 **Close RetroArch first.** It rewrites the whole of `retroarch.cfg` when it exits
 (`config_save_on_exit`), so a running instance overwrites whatever the play just enforced.
