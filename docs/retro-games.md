@@ -378,6 +378,31 @@ the BIOS in, rather than pointing `system_directory` at the library. Copy it wit
 size and mtime; a checksumming copy reads the whole ~600MB set back across the network on every run. Do not
 `--delete` on that copy, or it takes the cores' own state with it.
 
+### Multi-disc games
+
+How a multi-disc game is laid out on disk is decided by one thing: whether the system's RetroArch
+core reads an `.m3u` playlist to swap discs. A core that does gets a hidden folder plus a
+one-line-per-disc `.m3u`, so only the `.m3u` shows in the playlist and the swap is automatic. A core
+that does not gets a visible folder and no `.m3u`, because a hidden folder would leave nothing to
+launch. Every disc of a game uses the same container format (all `.chd`, or all `.rvz` on GameCube);
+never mix formats within one game.
+
+System | Core | Multi-disc layout
+--- | --- | ---
+Sony - PlayStation | Beetle PSX HW | hidden `.Game/` dir + `.m3u`, `.chd`
+Sony - PlayStation 2 | LRPS2 | hidden `.Game/` dir + `.m3u`, `.chd`
+Sega - Saturn | Beetle Saturn | hidden `.Game/` dir + `.m3u`, `.chd`
+Sega - Dreamcast | Flycast | hidden `.Game/` dir + `.m3u`, `.chd`
+Sega - Mega-CD - Sega CD | Genesis Plus GX | hidden `.Game/` dir + `.m3u`, `.chd`
+NEC - PC Engine CD - TurboGrafx-CD | Beetle PCE | hidden `.Game/` dir + `.m3u`, `.chd`
+The 3DO Company - 3DO | Opera | visible `Game/` dir, no `.m3u`, `.chd`
+Nintendo - GameCube | Dolphin | visible `Game/` dir, no `.m3u`, `.rvz`
+Sony - PlayStation Portable | PPSSPP | single-UMD, no multi-disc
+Cartridge systems | (various) | single file, no multi-disc
+
+The `.m3u` lists each disc with a path relative to itself, pointing into the hidden `.Game/`
+subdirectory; the library's `games/AGENTS.md` has the exact naming.
+
 ### Cache directory
 
 1. Navigate to Settings -> Directories
@@ -871,6 +896,29 @@ applied before video init, so the core comes up on Vulkan instead of moving to i
 
 ## Games
 
+### Atari - 2600 - September 11, 1977
+```
+Adventure
+Asteroids
+Demon Attack
+Dig Dug
+Donkey Kong
+Enduro
+Frogger
+H.E.R.O.
+Joust
+Kaboom!
+Keystone Kapers
+Missile Command
+Ms. Pac-Man
+Pitfall! - Pitfall Harry's Jungle Adventure
+Q-bert
+RealSports Tennis
+River Raid
+Space Invaders
+Yars' Revenge
+```
+
 ### Atari - 7800 - May 1986
 ```
 Alien Brigade
@@ -926,16 +974,15 @@ Gates of Zendocon
 Klax
 Ninja Gaiden
 Rampart
-Road Blasters
-Robotron - 2084
+RoadBlasters
 Rygar
+S.T.U.N. Runner
 Shadow of the Beast
 Shanghai
-S.T.U.N. Runner
 Todd's Adventures in Slime World
 Toki
 Tournament Cyberball
-WarBirds
+Warbirds
 Xenophobe
 Xybots
 Zaku
@@ -959,6 +1006,7 @@ Valis III
 Valis IV (https://www.reddit.com/r/TurboGrafx/comments/1cegjmb/valis_iv_english_translation/)
 Wonder Boy III - Monster Lair
 Ys Book I & II
+Ys III - Wanderers from Ys
 Ys IV - The Dawn of Ys (https://www.romhacking.net/translations/514/)
 ```
 ### NEC - PC Engine - TurboGrafx 16 (PCE, TG-16) - October 30, 1987
@@ -974,11 +1022,12 @@ Cadash
 Devil's Crush
 Dragon's Curse
 Dungeon Explorer
+Galaga '90
 Legendary Axe, The
 Magical Chase
 Military Madness
-Neutopia II
 Neutopia
+Neutopia II
 New Adventure Island
 Soldier Blade
 Splatterhouse
@@ -991,6 +1040,7 @@ Castlevania II - Belmont's Revenge
 Donkey Kong
 Final Fantasy Adventure
 Gradius - The Interstellar Assault
+Great Greed
 Kirby's Dream Land 2
 Mario's Picross
 Mega Man V
@@ -999,17 +1049,17 @@ Mole Mania
 Operation C
 Pokemon - Red Version (https://github.com/jojobear13/shinpokered)
 Pokemon - Yellow Version - Special Pikachu Edition
-Super Mario Land 2 - 6 Golden Coins
 Super Mario Land
+Super Mario Land 2 - 6 Golden Coins
 Tetris - Rosy Retrospection (https://www.romhacking.net/hacks/5813/)
 Tiny Toon Adventures - Babs' Big Break
-Wario Land II
 Wario Land - Super Mario Land 3
+Wario Land II
 ```
 ### Nintendo - Game Boy Advance (GBA) - March 21, 2001
 ```
-Advance Wars 2 - Black Hole Rising
 Advance Wars
+Advance Wars 2 - Black Hole Rising
 Alien Hominid
 Apotris (https://akouzoukos.com/apotris/)
 Asterix & Obelix XXL
@@ -1023,12 +1073,12 @@ Crash Bandicoot - The Huge Adventure
 Double Dragon Advance
 Dragon Ball Z - Buu's Fury
 Dragon Ball Z - The Legacy of Goku II
+F-Zero - Maximum Velocity
 Final Fantasy Tactics Advance
 Final Fantasy VI Advance
 Fire Emblem - The Sacred Stones
-F-Zero - Maximum Velocity
-Golden Sun - The Lost Age
 Golden Sun
+Golden Sun - The Lost Age
 Goodboy Galaxy (demo, https://goodboygalaxy.itch.io/goodboy-galaxy-demo)
 Gunstar Super Heroes
 Hamtaro - Ham-Ham Games
@@ -1039,12 +1089,12 @@ Kirby & The Amazing Mirror
 Kirby - Nightmare in Dream Land
 Legend of Zelda, The - The Minish Cap
 Lord of the Rings, The - The Two Towers
-Mario Kart - Super Circuit
 Mario & Luigi - Superstar Saga
-Megaman - Battle Network 3 - Blue Version
+Mario Kart - Super Circuit
+Mega Man - Battle Network 3 - Blue Version
 Mega Man Zero
-Metroid Fusion
 Metroid - Zero Mission (https://www.romhacking.net/reviews/7650/)
+Metroid Fusion
 Mother 3
 Ninja Five-0
 Pokemon - Emerald Version
@@ -1100,10 +1150,12 @@ Beyond Good & Evil
 F-Zero GX
 Gotcha Force
 Ikaruga
+Incredible Hulk, The - Ultimate Destruction
 Legend of Zelda, The - The Wind Waker
 Legend of Zelda, The - Twilight Princess
 Luigi's Mansion
 Mario Kart - Double Dash!!
+Metroid Prime
 Metroid Prime 2 - Echoes
 NBA Street Vol. 2
 Need for Speed - Underground 2
@@ -1116,9 +1168,9 @@ Star Wars - Rogue Squadron II - Rogue Leader
 Super Mario Sunshine
 Super Monkey Ball
 Super Smash Bros. Melee
-Timesplitters 2
+TimeSplitters 2
 Tony Hawk's Pro Skater 3
-Viewtiful Joe 
+Viewtiful Joe
 ```
 ### Nintendo - Nintendo 64 (N64) - June 23, 1996
 ```
@@ -1164,14 +1216,14 @@ Pokemon Puzzle League
 Pokemon Snap
 Pokemon Stadium 2
 San Francisco Rush - Extreme Racing
-Sin and Punishment - Successor of the Earth  (https://www.romhacking.net/translations/920/)
+Sin and Punishment - Successor of the Earth (https://www.romhacking.net/translations/920/)
 Star Fox 64
-Star Wars Episode I - Racer
 Star Wars - Rogue Squadron
+Star Wars Episode I - Racer
 Super Mario 64
 Super Smash Bros.
-Turok 2 - Seeds of Evil
 Turok - Dinosaur Hunter
+Turok 2 - Seeds of Evil
 Wave Race 64 - Kawasaki Jet Ski
 WCW-nWo Revenge
 WinBack - Covert Operations
@@ -1188,14 +1240,16 @@ Chrono Trigger
 Dragon Quest IV - Chapters of the Chosen
 Dragon Quest IX - Sentinels of the Starry Skies
 Dragon Quest V - Hand of the Heavenly Bride
+Elite Beat Agents
 Fire Emblem - Shadow Dragon
 Ghost Trick - Phantom Detective
 Grand Theft Auto - Chinatown Wars
 Kingdom Hearts - 358-2 Days
 Kirby - Canvas Curse
 Kirby Super Star Ultra
-Mario Kart DS
+Legend of Zelda, The - Phantom Hourglass
 Mario & Luigi - Bowser's Inside Story
+Mario Kart DS
 Mega Man Zero Collection
 Mega Man ZX
 Might & Magic - Clash of Heroes
@@ -1206,8 +1260,8 @@ Phoenix Wright - Ace Attorney
 Picross DS
 Pokemon - Black Version 2
 Pokemon - HeartGold Version
-Pokemon Mystery Dungeon - Explorers of Sky
 Pokemon - Platinum Version
+Pokemon Mystery Dungeon - Explorers of Sky
 Professor Layton and the Curious Village
 Professor Layton and the Diabolical Box
 Professor Layton and the Unwound Future
@@ -1221,15 +1275,17 @@ World Ends with You, The
 ```
 ### Nintendo - Nintendo Entertainment System (FC, NES) - October 18, 1985
 ```
-Alwas Awakening
 Adventure Island 3
 Adventures of Lolo
+Alwas Awakening
+Baseball Stars
 Batman - The Video Game
 Battletoads
 Bionic Commando
 Blades of Steel
 Blaster Master
 Bubble Bobble
+Castlevania
 Castlevania III - Dracula's Curse
 Chip 'n Dale - Rescue Rangers
 Chip 'n Dale - Rescue Rangers 2
@@ -1241,12 +1297,13 @@ Darkwing Duck
 Donkey Kong
 Double Dragon II - The Revenge
 Double Dribble
+Dr. Mario
 Dragon Warrior III
 Dragon Warrior IV
-Dr. Mario
 DuckTales
 Excitebike
 Faxanadu
+Final Fantasy
 G.I. Joe - A Real American Hero
 Ghosts'n Goblins
 Gradius
@@ -1256,8 +1313,10 @@ Kid Icarus
 Kirby's Adventure
 Legend of Zelda, The
 Life Force
+Little Nemo - The Dream Master
 Little Samson
 Maniac Mansion
+Mega Man
 Mega Man 2
 Mega Man 3
 Mega Man 4
@@ -1278,13 +1337,13 @@ River City Ransom
 Rygar
 StarTropics
 Super Dodge Ball
+Super Mario Bros.
 Super Mario Bros. 2
 Super Mario Bros. 3
-Super Mario Bros.
 Tecmo Super Bowl 2024 (https://tecmobowl.org/files/file/868-tecmo-super-bowl-2024/)
+Teenage Mutant Ninja Turtles - Tournament Fighters
 Teenage Mutant Ninja Turtles II - The Arcade Game
 Teenage Mutant Ninja Turtles III - The Manhattan Project
-Teenage Mutant Ninja Turtles - Tournament Fighters
 Vice - Project Doom
 Wizardry - Proving Grounds of the Mad Overlord
 Zelda II - The Adventure of Link (https://github.com/ShadowOne333/Zelda2-Redux)
@@ -1295,19 +1354,21 @@ Zoda's Revenge - StarTropics II
 ActRaiser
 Adventures of Batman & Robin, The
 Aerobiz Supersonic
+Arkanoid
 Batman Returns
 Biker Mice from Mars
 Breath of Fire II
 Chrono Trigger (https://www.romhacking.net/hacks/3147/)
 Contra III - The Alien Wars (https://github.com/VitorVilela7/SA1-Root/tree/master/Contra-III)
+Demon's Crest
+Donkey Kong Country
 Donkey Kong Country 2 - Diddy's Kong Quest
 Donkey Kong Country 3 - Dixie Kong's Double Trouble!
-Donkey Kong Country
 EarthBound
-Final Fantasy III
-Final Fantasy II
-Final Fantasy - Mystic Quest
 F-Zero
+Final Fantasy - Mystic Quest
+Final Fantasy II
+Final Fantasy III
 Gradius III (https://github.com/VitorVilela7/SA1-Root/tree/master/Gradius-III)
 Harvest Moon
 Hook
@@ -1316,8 +1377,8 @@ Judge Dredd
 Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
 King of Dragons
-Kirby's Dream Land 3
 Kirby Super Star
+Kirby's Dream Land 3
 Legend of Zelda, The - A Link to the Past (https://www.romhacking.net/reviews/11915)
 Lemmings
 Lion King, The
@@ -1325,22 +1386,24 @@ Lufia II - Rise of the Sinistrals
 Magical Quest Starring Mickey Mouse, The
 Mario Paint
 Marvel Super Heroes in War of the Gems
-Mega Man X3 (https://www.romhacking.net/hacks/4086/)
-Mega Man X2
+Mega Man 7
 Mega Man X
+Mega Man X2
+Mega Man X3 (https://www.romhacking.net/hacks/4086/)
 Metal Warriors
 Mighty Morphin Power Rangers - The Fighting Edition
 Ms. Pac-Man
 Pilotwings
+Plumber For All Seasons, A
 Secret of Mana (https://www.romhacking.net/reviews/8862/)
 Shin Kidou Senki Gundam W - Endless Duel
 Side Pocket
 SimCity 2000 - The Ultimate City Simulator
 Space Megaforce
 Sparkster
+Star Fox (https://www.romhacking.net/hacks/7163/)
 Star Fox 2
 Star Fox EX (https://www.romhacking.net/hacks/7285/)
-Star Fox (https://www.romhacking.net/hacks/7163/)
 Star Trek - The Next Generation - Future's Past
 Street Fighter II Turbo
 Super Adventure Island II
@@ -1351,19 +1414,20 @@ Super Ghouls 'N Ghosts
 Super Mario All-Stars
 Super Mario Kart
 Super Mario RPG - Legend of the Seven Stars
-Super Mario World 2 - Yoshi's Island
 Super Mario World
+Super Mario World 2 - Yoshi's Island
 Super Metroid
 Super Punch-Out!!
 Super R-Type (https://github.com/VitorVilela7/SA1-Root/tree/master/Super-R-Type)
 Super Tennis
 Super Turrican 2
 Tecmo Super Bowl
-Teenage Mutant Ninja Turtles IV - Turtles in Time
 Teenage Mutant Ninja Turtles - Tournament Fighters
+Teenage Mutant Ninja Turtles IV - Turtles in Time
 Terranigma
 U.N. Squadron
 Where in the World Is Carmen Sandiego
+Wild Guns
 X-Men - Mutant Apocalypse
 Zombies Ate My Neighbors
 ```
@@ -1390,11 +1454,10 @@ Marballs 2
 Mistigri
 Mot's 8-Ball Pool
 Mot's Grand Prix
+Pico World Race
 PICOHOT
 PICORACER-2048
-Pico World Race
 Shooting Star
-Splore
 Steel Surge Revolution
 Suika Game Demake
 Swordfish
@@ -1414,7 +1477,7 @@ Pitfall - The Mayan Adventure
 Space Harrier
 Star Trek - Starfleet Academy - Starship Bridge Simulator
 Star Wars Arcade
-Stellar Assault (aka Shadow Squadron)
+Stellar Assault
 Tempo
 Virtua Fighter
 Virtua Racing Deluxe
@@ -1434,11 +1497,10 @@ Fur Fighters
 Garou - Mark of the Wolves
 Grandia II
 Hydro Thunder
-Ikaruga
 Jet Grind Radio
+King of Fighters, The - Dream Match 1999
 Le Mans 24 Hours
 Legacy of Kain - Soul Reaver
-Mars Matrix
 Marvel vs. Capcom 2
 MDK2
 MSR - Metropolis Street Racer
@@ -1450,13 +1512,14 @@ Power Stone
 Power Stone 2
 Project Justice
 Rayman 2 - The Great Escape
+Re-Volt
 Record of Lodoss War
 Resident Evil - Code - Veronica
-Re-volt
 Rez
 Sega Bass Fishing
 Sega Rally 2
 Shenmue
+Shenmue II
 Skies of Arcadia
 Sonic Adventure
 Sonic Adventure 2
@@ -1467,7 +1530,6 @@ Street Fighter Alpha 3
 Street Fighter III - 3rd Strike
 Super Street Fighter II X for Matching Service (https://dreamcast-talk.com/forum/viewtopic.php?f=22&t=13803#p142158)
 Sword of the Berserk - Guts' Rage
-The King of Fighters - Dream Match 1999
 Tony Hawk's Pro Skater 2
 Toy Commander
 Virtua Fighter 3tb
@@ -1482,26 +1544,30 @@ Coca-Cola Kid (https://www.romhacking.net/translations/1189/)
 Columns
 Crystal Warriors
 Defenders of Oasis
+Dragon Crystal
 Fantasy Zone
 Fatal Fury Special
 Frank Thomas Big Hurt Baseball
+GG Aleste 3
 Godzilla - Kaijuu Daishingeki (Godzilla - Monsters Attack, https://www.romhacking.net/translations/4140/)
 Joe Montana Football
 Jurassic Park
 Legend of Illusion Starring Mickey Mouse
 Lucky Dime Caper Starring Donald Duck, The
 Lunar - Sanposuru Gakuen (https://www.romhacking.net/translations/1454/)
+Magical Puzzle Popils
 Mighty Morphin Power Rangers - The Movie
 Ninja Gaiden
 Power Strike II
 Ristar
-Shining Force - The Sword of Hajya
 Shining Force Gaiden - Final Conflict
 Shinobi
 Shinobi II - The Silent Fury
 Sonic Drift 2
-Sonic The Hedgehog - Triple Trouble
+Sonic the Hedgehog - Triple Trouble
+Sylvan Tale (https://www.romhacking.net/translations/67/)
 Tails Adventure
+Wonder Boy - The Dragon's Trap
 World Series Baseball '95
 X-Men
 ```
@@ -1509,21 +1575,19 @@ X-Men
 ```
 Alex Kidd in Miracle World
 Alex Kidd in Shinobi World
-Astérix
+Asterix
 Black Belt
 California Games
 Deep Duck Trouble Starring Donald Duck
 Double Dragon
 Fantasy Zone II
-GG Aleste 3
 Golden Axe Warrior
 Golvellius - Valley of Doom
 Hang On
 Land of Illusion Starring Mickey Mouse
-Magical Puzzle Popils
 Master of Darkness
 Masters of Combat
-Miracle Warriors - Seal of The Dark Lord
+Miracle Warriors - Seal of the Dark Lord
 Ninja Gaiden
 Phantasy Star (https://www.romhacking.net/translations/1069/)
 Power Strike
@@ -1533,9 +1597,8 @@ Rampage
 Rastan
 Reggie Jackson Baseball
 Shinobi
-Sonic The Hedgehog
+Sonic the Hedgehog
 Space Harrier
-Sylvan Tale (https://www.romhacking.net/translations/67/)
 Ultima IV - Quest of the Avatar
 Wonder Boy in Monster World
 Ys - The Vanished Omens
@@ -1547,11 +1610,11 @@ Amazing Spider-Man vs. The Kingpin, The
 Android Assault - The Revenge of Bari-Arm
 Batman Returns
 Dark Wizard
-Earthworm Jim Special Edition
+Dune
 Ecco the Dolphin
 Eternal Champions - Challenge from the Dark Side
 Final Fight CD
-Heart of the Alien
+Heart of the Alien - Out of This World Parts I and II
 Keio Flying Squadron
 Lords of Thunder
 Lunar - Eternal Blue
@@ -1570,7 +1633,7 @@ Silpheed
 Snatcher
 Sol-Feace
 Sonic CD
-SoulStar
+Soulstar
 Space Ace
 Terminator, The
 Vay
@@ -1578,20 +1641,18 @@ Vay
 ### Sega - Mega Drive - Genesis (MD) - October 29, 1988
 * [Mega Drive Tracker](https://md.restartmag.com/)
 ```
-After Burner II
 Aladdin
 Alien Soldier
 Altered Beast
 Arnold Palmer Tournament Golf
 Bare Knuckle III (Streets of Rage III, https://www.romhacking.net/translations/1375/)
-Battletech - A Game of Armored Combat
 Beyond Oasis
-Captain America and The Avengers
+Blades of Vengeance
+Captain America and the Avengers
 Castlevania - Bloodlines
 Comix Zone
 Contra - Hard Corps (https://www.romhacking.net/hacks/797/)
 Crusader of Centy
-Desert Demolition Starring Road Runner and Wile E. Coyote
 Desert Strike - Return to the Gulf
 Dune - The Battle for Arrakis
 Dynamite Headdy (https://www.romhacking.net/translations/1113/)
@@ -1599,7 +1660,7 @@ Earthworm Jim 2
 Evander Holyfield's 'Real Deal' Boxing
 Fix-It Felix Jr. (http://68000.web.fc2.com/felix/index.html)
 Flashback - The Quest for Identity
-Ghostbusters - Special Edition (https://www.romhacking.net/hacks/7761/)
+Ghostbusters (https://www.romhacking.net/hacks/7761/)
 Ghouls'n Ghosts
 Golden Axe
 Golden Axe II
@@ -1612,13 +1673,14 @@ Jungle Strike
 Jurassic Park - Rampage Edition
 Kid Chameleon (https://www.romhacking.net/hacks/5672/)
 Landstalker
+Light Crusader
 Lost Vikings, The
 Madden NFL 95
 Marble Madness
 McDonald's Treasure Land Adventure
 Mega Turrican
 Michael Jackson's Moonwalker
-Micro Machines 2 - Turbo Tournament 
+Micro Machines 2 - Turbo Tournament
 Monster World IV
 MUSHA - Metallic Uniframe Super Hybrid Armor
 Mutant League Football
@@ -1634,7 +1696,7 @@ Phantasy Star II
 Phantasy Star IV
 Pirates! Gold
 Populous
-Punisher
+Punisher, The
 QuackShot Starring Donald Duck
 Ranger X
 Revenge of Shinobi, The
@@ -1645,10 +1707,11 @@ Shadow Dancer - The Secret of Shinobi
 Shadowrun
 Shining Force II
 Shinobi III - Return of the Ninja Master
-Sonic & Knuckles + Sonic The Hedgehog 3
+Sonic & Knuckles + Sonic the Hedgehog 3
+Sonic 3 Complete
 Sonic Spinball
-Sonic The Hedgehog
-Sonic The Hedgehog 2
+Sonic the Hedgehog
+Sonic the Hedgehog 2
 Space Harrier II
 Sparkster
 Splatterhouse 3
@@ -1667,7 +1730,7 @@ Teenage Mutant Ninja Turtles - The Hyperstone Heist
 Thunder Force IV
 ToeJam & Earl
 ToeJam & Earl in Panic on Funkotron
-Ultimate Mortal Kombat 3
+Ultracore
 Urban Strike
 Vectorman
 World of Illusion Starring Mickey Mouse and Donald Duck
@@ -1681,16 +1744,17 @@ X-Men 2 - Clone Wars
 * [Sega Saturn Patcher](https://segaxtreme.net/resources/sega-saturn-patcher.73/)
 
 ```
-Akumajou Dracula X - Gekka no Yasoukyoku (Castlevania - Symphony of the Night, https://segaxtreme.net/resources/dracula-x-symphony-of-the-night.83/)
 Astal
 Baku Baku Animal - World Zookeeper Contest
 Batsugun
 Bug!
 Bulk Slash (https://retrogamealk.com/repository/sega_saturn_isos/bulk-slash-japan/)
 Burning Rangers
+Castlevania - Symphony of the Night (https://segaxtreme.net/resources/dracula-x-symphony-of-the-night.83/)
 Daytona USA - Championship Circuit Edition
 DecAthlete
 Dragon Force
+Duke Nukem 3D
 Grandia (https://retrogametalk.com/repository/sega_saturn_isos/grandia-english-patched/)
 Guardian Heroes
 Keio Flying Squadron 2
@@ -1704,13 +1768,16 @@ Panzer Dragoon Saga
 Powerslave
 Radiant Silvergun
 Saturn Bomberman
+Sega Ages - After Burner II
 Sega Rally Championship
 Shining Force III
 Shining the Holy Ark
-Shippuu Mahou Daisakusen - Kingdom Grandprix (https://segaxtreme.net/resources/kingdom-grandprix-english-translation-patches.291/)
+Shippuu Mahou Daisakusen - Kingdom-Grandprix (https://segaxtreme.net/resources/kingdom-grandprix-english-translation-patches.291/)
 Sonic Jam
 Stellar Assault SS (https://segaxtreme.net/resources/stellar-assault-ss-english.170/)
 Street Fighter Alpha 2
+Tactics Ogre - Let Us Cling Together
+Ultimate Mortal Kombat 3
 Virtua Cop 2
 Virtua Fighter 2
 Virtual On - Cyber Troopers
@@ -1739,12 +1806,14 @@ Doom
 Driver - You Are the Wheelman
 Final Fantasy IX
 Final Fantasy VII
+Final Fantasy VIII
+Front Mission 3
 Gex - Enter the Gecko
 Gran Turismo 2 - Arcade Mode
 Gran Turismo 2 - Simulation Mode
-Grandia
 Gundam Battle Assault 2
 Hot Shots Golf
+Jumping Flash!
 Klonoa - Door to Phantomile
 Legend of Dragoon, The
 Marvel vs. Capcom - Clash of Super Heroes
@@ -1753,12 +1822,13 @@ Mega Man Legends
 Mega Man X4
 Mega Man X6 (https://www.romhacking.net/hacks/4035/)
 Metal Gear Solid
+Misadventures of Tron Bonne, The
 NBA Jam 22 (https://www.romhacking.net/hacks/5700/)
-Oddworld - Abe's Exoddus
+Oddworld - Abe's Oddysee
 Persona
+R-Type Delta
 R4 - Ridge Racer Type 4
 Rayman
-R-Type Delta
 Silent Hill
 Spyro the Dragon
 Suikoden II
@@ -1767,10 +1837,11 @@ Tekken 3
 Tomb Raider
 Tomba!
 Twisted Metal 2
+Vagrant Story
 Valkyrie Profile
 Vandal Hearts
+Wild Arms
 Wipeout XL
-X-Men - Mutant Apocalypse
 Xenogears
 ```
 ### Sony - PlayStation 2 (PS2) - March 4, 2000
@@ -1788,22 +1859,24 @@ Disgaea - Hour of Darkness
 Disgaea 2 - Cursed Memories
 Dragon Ball Z - Budokai 3
 Dragon Quest VIII - Journey of the Cursed King
-Enter The Matrix
+Enter the Matrix
 Fight Night Round 3
 Final Fantasy X
 Final Fantasy XII
+Giants - Citizen Kabuto
+Gitaroo Man
 God Hand
 God of War
 God of War II
 Gradius V
 Gran Turismo 4
-Grand Theft Auto III
 Grand Theft Auto - Liberty City Stories
 Grand Theft Auto - San Andreas
 Grand Theft Auto - Vice City
 Grand Theft Auto - Vice City Stories
+Grand Theft Auto III
 Guilty Gear XX Accent Core Plus
-GunGrave
+Gungrave
 Harvey Birdman - Attorney at Law
 Hitman - Blood Money
 Hot Shots Golf 3
@@ -1814,7 +1887,7 @@ King of Fighters '98, The - Ultimate Match
 Kingdom Hearts
 Klonoa 2 - Lunatea's Veil
 Lara Croft Tomb Raider - Legend
-Lego Star Wars II - The Original Trilogy
+LEGO Star Wars II - The Original Trilogy
 Lord of the Rings, The - The Two Towers
 Madden NFL 08
 Mana Khemia - Alchemists of Al-Revis
@@ -1824,7 +1897,7 @@ Marvel - Ultimate Alliance
 Mega Man X8
 Metal Gear Solid 3 - Snake Eater
 Midnight Club 3 - DUB Edition
-MLB 11
+MLB 11 - The Show
 Mobile Suit Gundam - Zeonic Front
 Monster Hunter
 NBA 2K12
@@ -1833,17 +1906,18 @@ Need for Speed - Carbon - Collector's Edition
 NHL 07
 Nickelodeon SpongeBob SquarePants - Battle for Bikini Bottom
 Odin Sphere
-Ōkami
 Oni
+Onimusha - Warlords
+Ookami
 OutRun 2006 - Coast 2 Coast
 PaRappa the Rapper 2
 PES 2014 - Pro Evolution Soccer
 Prince of Persia - The Sands of Time
 Psychonauts
 Punisher, The
-Ratchet & Clank - Up Your Arsenal!
-Rogue Galaxy
 R-Type Final
+Ratchet & Clank - Up Your Arsenal
+Rogue Galaxy
 Sega Ages 2500 Series Vol. 30 - Galaxy Force II - Special Extended Edition
 Shadow of the Colossus
 Shin Megami Tensei - Persona 4
@@ -1890,6 +1964,7 @@ Legend of Heroes, The - Trails in the Sky
 LocoRoco 2
 Lumines II
 Lunar - Silver Star Harmony
+Mega Man - Maverick Hunter X
 Mega Man - Powered Up
 Metal Gear Ac!d
 Metal Gear Solid - Peace Walker
@@ -1898,7 +1973,7 @@ PaRappa the Rapper
 Patapon 2
 Peggle
 Phantasy Star Portable 2 Infinity (https://gbatemp.net/threads/phantasy-star-portable-2-infinity-english-localization-v2-update-released-august-2022.576943/)
-PixelJunk Monsters Deluxe
+PixelJunk Monsters - Deluxe
 Ratchet & Clank - Size Matters
 Resistance - Retribution
 Rock Band Unplugged
@@ -1915,17 +1990,16 @@ Valkyria Chronicles II
 Virtua Tennis 3
 Warhammer 40,000 - Squad Command
 WipEout Pulse
-Ys Seven
 Ys - The Oath in Felghana
+Ys Seven
 ```
 ### The 3DO Company - 3DO - October 4, 1993
 ```
+Alone in the Dark
 Alone in the Dark 2
-BrainDead 13
 Captain Quazar
 Crash 'n Burn
 Dragon's Lair
-Dune
 FIFA International Soccer
 Gex
 Guardian War
@@ -1944,7 +2018,6 @@ Super Street Fighter II Turbo
 Super Wing Commander
 Total Eclipse
 Twisted - The Game Show
-Wing Commander III - Heart of the Tiger
 Wolfenstein 3D
 ```
 
