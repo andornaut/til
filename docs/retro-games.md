@@ -199,10 +199,13 @@ Per-core overrides | `<config dir>/config/<library_name>/<library_name>.cfg` and
 Cores | in-app Core Updater, or the Android buildbot: `https://buildbot.libretro.com/nightly/android/latest/arm64-v8a/<core>_libretro_android.so.zip` (ABI `arm64-v8a` for the Snapdragon 865, not the kernel `aarch64` the desktop uses)
 Core `.info` set | `https://buildbot.libretro.com/assets/frontend/info.zip`
 
-The saves, states, cores, playlists, thumbnails, and system (BIOS) directories are all relocatable to
-the removable sdcard via Settings>Directory; the folder layout above puts them under `RETROARCH/`.
-Newer Android can refuse to load an executable `.so` core from external storage: if cores fail to
-load from the sdcard, keep the cores directory in the app files dir (`.../files/cores`).
+The saves, states, playlists, thumbnails, and system (BIOS) directories are all relocatable to the
+removable sdcard via Settings>Directory; the folder layout above puts them under `RETROARCH/`. Cores
+are the exception: the sdcard and emulated storage are mounted `noexec`, so RetroArch cannot `dlopen`
+a core `.so` from either the sdcard or the app files dir. Only the app-private dir
+(`/data/user/0/com.retroarch.aarch64/cores`) is exec-capable, and it is where the in-app Core Updater
+installs, so leave `libretro_directory` at that default and install cores through Online Updater > Core
+Downloader.
 
 #### Sync the desktop config to the Flip 2
 
@@ -221,6 +224,46 @@ roles/games/files/retroid/sync.py --library-dir /path/to/rom-library            
 Close RetroArch on the device first (it rewrites `retroarch.cfg` on exit). Two device-specific values
 have to be filled in once (the core `library_name`s and the pad's physical rewind/fast-forward
 indices); the tooling's `README.md` gives the `adb` commands that read them.
+
+#### Standalone emulator settings (stock Android)
+
+GameCube and PS2 run in standalone apps, launched from ES-DE, not as libretro playlist entries.
+
+##### GameCube: Dolphin
+
+Config is plain `.ini` in accessible storage (`adb`-writable), under
+`/storage/emulated/0/Android/data/org.dolphinemu.dolphinemu/files/Config/` (`Dolphin.ini`, `GFX.ini`).
+
+Setting | Value
+--- | ---
+Graphics backend | Vulkan (Adreno 650)
+Internal resolution | 2x (1280x1056); 3x is crisper but a few demanding titles dip (Rogue Leader, F-Zero GX)
+Backend multithreading | on
+Wait for shaders before starting | on (avoids first-run stutter)
+Color correction | on
+ISO path | sdcard `ROMS/gc`, recursive
+
+##### PS2: NetherSX2-Turnip
+
+Package `xyz.aethersx2.tturnip`, the `NetherSX2-…-Turnip` build (4248, "patch") from the
+[Obtainium Emulation Pack](https://github.com/RJNY/Obtainium-Emulation-Pack), which bundles a Turnip
+Adreno driver. The "Classic" (3668) build is the same package with the older AetherSX2 UI; some titles
+run better on one than the other (e.g. Sly Cooper on 3668), and since they share the package id,
+swapping keeps the data.
+
+Emulator settings (renderer, resolution, controls) live in app-private storage, so `adb` cannot read
+or write them on a non-rooted device: set them by hand. In the app, set the renderer to Vulkan and
+select the Turnip driver (the reason for this build). The built-in gamepad auto-maps when undocked;
+manual remapping is only needed for the D-pad, sticks, or analog triggers, and docking with an
+external controller tends to lose the mapping each session. The PS2 BIOS goes in the app's own `bios/`
+folder (`/storage/emulated/0/Android/data/xyz.aethersx2.tturnip/files/bios/`); the 4MB `SCPH-*` /
+`ps2-0200*` dumps, not the 512KB PS1 `scph*` ones.
+
+ES-DE launches it via the `AetherSX2-Turnip (Standalone)` label, whose find rule
+(`ES-DE/custom_systems/es_find_rules.xml`, `AETHERSX2-TURNIP` entry) ships pointing at a different fork
+(`xyz.aethersx2.custom`). Repoint it to `xyz.aethersx2.tturnip/xyz.aethersx2.android.EmulationActivity`,
+and set the PS2 system's `<alternativeEmulator>` to that label. Neither file is managed by `sync.py`, so
+re-copying the [custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems) reverts both.
 
 #### Rocknix custom firmware
 
