@@ -1146,11 +1146,13 @@ Wendy - Every Witch Way
 ### Nintendo - GameCube (GCN) - September 14, 2001
 ```
 Animal Crossing
+Baten Kaitos - Eternal Wings and the Lost Ocean
 Beyond Good & Evil
 F-Zero GX
 Gotcha Force
 Ikaruga
 Incredible Hulk, The - Ultimate Destruction
+Killer7
 Legend of Zelda, The - The Wind Waker
 Legend of Zelda, The - Twilight Princess
 Luigi's Mansion
@@ -1168,6 +1170,7 @@ Star Wars - Rogue Squadron II - Rogue Leader
 Super Mario Sunshine
 Super Monkey Ball
 Super Smash Bros. Melee
+Tales of Symphonia
 TimeSplitters 2
 Tony Hawk's Pro Skater 3
 Viewtiful Joe
@@ -1997,6 +2000,7 @@ Ys Seven
 ```
 Alone in the Dark
 Alone in the Dark 2
+BrainDead 13
 Captain Quazar
 Crash 'n Burn
 Dragon's Lair
@@ -2018,6 +2022,7 @@ Super Street Fighter II Turbo
 Super Wing Commander
 Total Eclipse
 Twisted - The Game Show
+Wing Commander III - Heart of the Tiger
 Wolfenstein 3D
 ```
 
