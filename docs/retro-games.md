@@ -8,7 +8,6 @@
 * [Backup & Restore Android Retro Handhelds! (Video)](https://www.youtube.com/watch?app=desktop&v=EZhlyGXCSF0)
 * [BIOS (GitHub)](https://github.com/Abdess/retroarch_system)
 * [BIOS (Megathread)](https://r-roms.github.io/megathread/misc/#bios-files)
-* [CD Romance](https://cdromance.com/) - ROM hacks
 * [Homebrew games list](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
 * [MyAbandonware](https://www.myabandonware.com/)
