@@ -193,7 +193,7 @@ Per-core overrides | `<config dir>/config/<library_name>/<library_name>.cfg` and
 Cores | in-app Core Updater, or the Android buildbot: `https://buildbot.libretro.com/nightly/android/latest/arm64-v8a/<core>_libretro_android.so.zip` (ABI `arm64-v8a` for the Snapdragon 865, not the kernel `aarch64` the desktop uses)
 Core `.info` set | `https://buildbot.libretro.com/assets/frontend/info.zip`
 
-The saves, states, playlists, thumbnails, and system (BIOS) directories are all relocatable to the
+The saves, states, playlists, thumbnails, shader and system (BIOS) directories are all relocatable to the
 removable sdcard via Settings>Directory; the folder layout above puts them under `RETROARCH/`. Cores
 are the exception: the sdcard and emulated storage are mounted `noexec`, so RetroArch cannot `dlopen`
 a core `.so` from either the sdcard or the app files dir. Only the app-private dir
@@ -201,14 +201,20 @@ a core `.so` from either the sdcard or the app files dir. Only the app-private d
 installs, so leave `libretro_directory` at that default and install cores through Online Updater > Core
 Downloader.
 
+Shaders default to an app-private dir too (`/data/user/0/<package>/shaders`, which `adb` cannot write),
+but `noexec` does not apply to them: they are text and PNGs, not loadable objects. Point
+`video_shader_dir` at the sdcard and they can be pushed like any other tree.
+
 #### Sync the desktop config to the Flip 2
 
 The [games role](https://github.com/andornaut/ansible-ctrl/tree/main/roles/games)'s
 [files/retroid/](https://github.com/andornaut/ansible-ctrl/tree/main/roles/games/files/retroid)
 mirrors the same managed RetroArch config (settings, per-core overrides/options, generated playlists,
-cores, BIOS, thumbnails) onto the Flip 2 over `adb`, applying the Android divergences from the
+cores, BIOS, shaders, thumbnails) onto the Flip 2 over `adb`, applying the Android divergences from the
 [Cores](#cores) table (ARM cores, GLideN64 HLE for N64, YabaSanshiro for Saturn, standalone Dolphin
-and NetherSX2 for GameCube and PS2). Run it by hand from a host that mounts the ROM library:
+and NetherSX2 for GameCube and PS2) and the vulkan driver that
+[CRT Geom Deluxe](#crt-geom-deluxe-on-the-flip-2) requires. Run it by hand from a host that mounts the
+ROM library:
 
 ```bash
 roles/games/files/retroid/sync.py --library-dir /path/to/rom-library --dry-run   # preview
@@ -450,7 +456,7 @@ which may occur if RetroArch crashes before it is able to clean up.
 
 Platform | Desktop core (x64) | Anbernic RG40XXV (ARM) | Retroid Pocket Mini (ARM) | Retroid Pocket Flip 2 (Android)
 --- | --- | --- | --- | ---
-Arcade | | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
+Arcade | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/) | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
 Atari - 2600 | [Stella](https://docs.libretro.com/library/stella/) | | |
 Atari - 7800 | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/)
 Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
@@ -475,6 +481,7 @@ Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/l
 Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Standalone) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/)
 SNK - Neo Geo | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/) | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
 SNK - Neo Geo CD | [NeoCD](https://docs.libretro.com/library/neocd/) | | | [NeoCD](https://docs.libretro.com/library/neocd/)
+SNK - Neo Geo Pocket Color (NGPC) | [Beetle NeoPop](https://docs.libretro.com/library/beetle_neopop/) | | | [Beetle NeoPop](https://docs.libretro.com/library/beetle_neopop/)
 Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/)
 Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | -- | AetherSX2 | [NetherSX2-Turnip](https://github.com/nckstwrt/NetherSX2-Turnip) (Standalone)
 Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) ([Core System Files](https://github.com/hrydgard/ppsspp), [Optimization](https://www.reddit.com/r/ANBERNIC/comments/1fkztb1/universal_pppsspp_configuration_for_unmatched/)) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/)
@@ -899,14 +906,45 @@ Custom shaders must be added to the globally configured directory (see [this iss
 `~/.local/share/flatpak/app/org.libretro.RetroArch/current/active/files/share/libretro/shaders/` when
 [RetroArch is installed via Flatpak](https://github.com/flathub/org.libretro.RetroArch).
 
-Which type of shaders you can load is determined by the video driver used:
+Which type of shaders you can load is determined by the video driver used, and a preset in the wrong
+format does not load at all:
 
 Video driver | Shader type
 --- | ---
-glcore | glsl (*.glsl, *.glslp)
+gl (GL 2.x / GLES) | glsl (*.glsl, *.glslp)
+glcore | slang (*.slang, *.slangp)
 vulkan | slang (*.slang, *.slangp)
 
 Recommended shader: sharp-shimmerless from [Retro Game Corps' pack](https://github.com/retrogamecorps/RGC-Overlay-Pack/tree/main/RGC%20shaders)
+
+#### CRT Geom Deluxe on the Flip 2
+
+The Flip 2 runs [CRT Geom Deluxe](https://github.com/libretro/slang-shaders/blob/master/crt/crt-geom-deluxe.slangp),
+which is what settles that device's video driver. Deluxe is slang-only (there is no GLSL port), and the
+Android RetroArch build compiles in `gl` and `vulkan` but **not `glcore`** (confirm by pulling the APK:
+`libretroarch-activity.so` has no `[GLCore]` log strings, 94 `[Vulkan]` ones, and glslang + SPIRV-Cross).
+So vulkan is the only slang-capable driver there, and it is the global.
+
+Over plain `crt-geom`, which keeps the same curvature, tilt, corners, overscan and gaussian scanline beam,
+Deluxe adds four things and costs five passes instead of one:
+
+Adds | Parameters | What it buys
+--- | --- | ---
+Real mask textures | `mask_type` (1-20), `aperture_strength`, `aperture_brightboost` | Aperture grille, slot mask and delta triad as actual textures. `crt-geom`'s `DOTMASK` is a procedural 2-phase RGB toggle with no brightness compensation, so raising it only darkens the picture.
+Phosphor persistence | `phosphor_power`, `phosphor_amplitude` | Frame-to-frame afterglow. This is what makes 30fps dither-blending read correctly: Genesis transparency, PSX dithering.
+Halation | `halation`, `width` | Light bleeding through the glass into neighbouring phosphors. `crt-geom` has none.
+Raster bloom | `rasterbloom` | The raster swells as the image brightens, like a real beam.
+
+Two cores stay on `gl` and therefore get no shader. **Mupen64Plus-Next**, because GLideN64 is an OpenGL
+renderer that fails to load content at all under the vulkan driver, and ParaLLEl-RDP (the Vulkan path)
+needs `VK_KHR_8bit_storage`, which no Adreno driver exposes. **PPSSPP**, because the libretro core's
+Vulkan path on Android has a long run of crash reports, unlike standalone PPSSPP, whose own docs do
+recommend Vulkan. Pin both with a per-core override rather than relying on `driver_switch_enable`:
+switching the driver after the core is instantiated is itself a crash trigger.
+
+Masks come out dim at 1080p on a handheld panel, so `aperture_brightboost` is the first parameter to
+reach for. `halation` and `phosphor_amplitude` at 0 drop the expensive passes and leave roughly plain
+`crt-geom` with real masks, which is the fallback if a core cannot hold 60fps.
 
 ### Thumbnails
 
@@ -919,9 +957,11 @@ n.b. Thumbnail filenames cannot contain ampersand "&" characters. If the ROM nam
 
 * [Changing behavior of “gl” and “glcore” video drivers](https://www.libretro.com/index.php/changing-behavior-of-gl-and-glcore-video-drivers/)
 
-The global driver is `glcore` and three cores are overridden to `vulkan`. See
+On the desktop the global driver is `glcore` and three cores are overridden to `vulkan`. See
 [Why the global video driver stays glcore](#why-the-global-video-driver-stays-glcore) for why it is not the other
-way around.
+way around. The Flip 2 inverts this (global `vulkan`, two cores pinned back to `gl`) because Android has no
+`glcore` driver and slang shaders need one that is not `gl`: see
+[CRT Geom Deluxe on the Flip 2](#crt-geom-deluxe-on-the-flip-2).
 
 1. Navigate to Settings -> Core
 1. Set "Allow Cores to Switch the Video Driver" to "On"
