@@ -394,13 +394,44 @@ Sega - Saturn | Beetle Saturn | hidden `.Game/` dir + `.m3u`, `.chd`
 Sega - Dreamcast | Flycast | hidden `.Game/` dir + `.m3u`, `.chd`
 Sega - Mega-CD - Sega CD | Genesis Plus GX | hidden `.Game/` dir + `.m3u`, `.chd`
 NEC - PC Engine CD - TurboGrafx-CD | Beetle PCE | hidden `.Game/` dir + `.m3u`, `.chd`
+SNK - Neo Geo CD | NeoCD | single-disc only; no `.m3u` (neocd does not list it), `.chd`
+SNK - Neo Geo | FinalBurn Neo | not disc-based; one `.zip` romset per game
 The 3DO Company - 3DO | Opera | visible `Game/` dir, no `.m3u`, `.chd`
 Nintendo - GameCube | Dolphin | visible `Game/` dir, no `.m3u`, `.rvz`
-Sony - PlayStation Portable | PPSSPP | single-UMD, no multi-disc
+Sony - PlayStation Portable | PPSSPP | **cannot swap**: one root `.iso` per disc, loaded separately
 Cartridge systems | (various) | single file, no multi-disc
 
 The `.m3u` lists each disc with a path relative to itself, pointing into the hidden `.Game/`
 subdirectory; the library's `games/AGENTS.md` has the exact naming.
+
+#### PSP is the one system with no working multi-disc layout
+
+**PPSSPP does not read `.m3u`, and this cannot be fixed from the frontend.** Its
+`supported_extensions` are `elf|iso|cso|prx|pbp|chd`, and it sets `need_fullpath`, so RetroArch hands
+the core the `.m3u` *path* rather than expanding the playlist itself. The core's loader has no m3u
+parser and rejects it:
+
+```
+[INFO]  [Content] Content loading skipped. Implementation will load it on its own.
+[INFO]  [RCHEEVOS] Extracted ... (Disc 1).iso from playlist     <- RetroAchievements' own m3u parser
+[ERROR] [LOADER] CPU_Init didn't recognize file.                <- the core refusing the m3u
+```
+
+The RetroAchievements line is the trap: it parses the m3u itself, so a log skimmed for "m3u" reads
+like success while the core loaded nothing.
+
+Adding `m3u` to the PSP row of `games_retroarch_systems` **would not fail the run** — the generator's
+`validate_system` unions the core's `.info` extensions, and RetroArch does not filter content given as
+an explicit path (the same reason Virtual Jaguar plays `.rom`) — it would emit a playlist entry that
+launches to an error. So the only layout that works is **one root `.iso` per disc**, swapped by
+loading the other playlist entry.
+
+This library therefore does not carry multi-disc PSP titles: manually loading a second entry
+mid-playthrough is a worse experience than the game is worth, so a 2-UMD title is skipped and the gap
+filled from another system where possible. Note the libretro thumbnail repo *does* publish per-disc
+art plus a base (m3u-labelled) entry for such titles, e.g.
+`Legend of Heroes - Trails in the Sky - Second Chapter (Europe) (PSN) (Disc 1|2).png` — that base
+entry is for frontends whose PSP core can swap, and is not evidence that this one can.
 
 ### Cache directory
 
@@ -442,7 +473,8 @@ Sega - Master System - Mark III (MS) | [Genesis Plus GX](https://docs.libretro.c
 Sega - Mega-CD - Sega CD | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Standalone) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/)
-SNK Neo Geo | | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
+SNK - Neo Geo | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/) | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
+SNK - Neo Geo CD | [NeoCD](https://docs.libretro.com/library/neocd/) | | | [NeoCD](https://docs.libretro.com/library/neocd/)
 Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/)
 Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | -- | AetherSX2 | [NetherSX2-Turnip](https://github.com/nckstwrt/NetherSX2-Turnip) (Standalone)
 Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) ([Core System Files](https://github.com/hrydgard/ppsspp), [Optimization](https://www.reddit.com/r/ANBERNIC/comments/1fkztb1/universal_pppsspp_configuration_for_unmatched/)) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/)
@@ -501,13 +533,41 @@ dimensions (160x205) rather than PICO-8's 128x128, and saves land under `saves/i
 builtin_imageviewer_enable = "false"
 ```
 
+#### Neo Geo
+
+The two Neo Geo systems are unrelated as far as RetroArch is concerned, and only one of them is an
+arcade library:
+
+System | Core | Content | Naming
+--- | --- | --- | ---
+`SNK - Neo Geo` | fbneo | MVS arcade romsets (`.zip`) | short MAME romset id (`mslug3.zip`)
+`SNK - Neo Geo CD` | neocd | Redump discs (`.chd`) | normal Redump titles
+
+`SNK - Neo Geo` is the **only** system here whose filenames are not No-Intro/Redump titles, because
+fbneo identifies a romset by its arcade id rather than its name. That would leave the playlist reading
+`mslug3`, so the [games role](https://github.com/andornaut/ansible-ctrl/tree/main/roles/games) maps
+each id to its full title (`files/fbneo-arcade-names.json`, regenerated from libretro-database's FBNeo
+DAT by `gen-fbneo-arcade-names.py`) and labels the playlist from the map while the file on disk stays
+the romset. Thumbnails are therefore keyed to the **mapped title**, not the filename, and take the
+same SMB-safe rewrites as everything else (`Ganryu _ Musashi Ganryuki.png`).
+
+BIOS: the cartridge BIOS is `neogeo.zip`, in the BIOS set's `fbneo/` subdir. Neo Geo CD needs a
+*different* BIOS, in `neocd/`; the fbneo set does not include it. The 1999+ Neo Geo library never came
+to CD, which is why both systems exist rather than one.
+
 #### Zipped ROMs and `block_extract`
 
 Most cores never see the archive: RetroArch unpacks a `.zip` and hands over what is inside, which is
 why cores that do not list `zip` among their extensions still play zipped ROMs. A core that sets
-**`block_extract`** is the exception, and is handed the archive untouched. Dolphin is the only one of
-these in this collection, and it cannot open a zip: a zipped GameCube ROM does not fail politely, it
-segfaults RetroArch (`Failed to load content`). Keep GameCube content as `.iso`/`.rvz`.
+**`block_extract`** is the exception, and is handed the archive untouched. Two cores here set it, and
+they pull in opposite directions:
+
+* **Dolphin** cannot open a zip: a zipped GameCube ROM does not fail politely, it segfaults RetroArch
+  (`Failed to load content`). Keep GameCube content as `.iso`/`.rvz`.
+* **FinalBurn Neo** *wants* the zip, and opens it itself. A Neo Geo romset is many chip dumps in one
+  archive (`256-c1.c1`, `256-p1.p1`), so it is stored as `.zip` and must never be unpacked or
+  repacked. This is why `SNK - Neo Geo/` diverges from the library's No-Intro naming: the filename is
+  the short arcade romset id the core looks up (`mslug3.zip`), not a title.
 
 `block_extract` is not in the core's `.info` file. Read it, and the core's real `library_name`, out of
 the `.so`:
@@ -895,6 +955,54 @@ applied before video init, so the core comes up on Vulkan instead of moving to i
 
 ## Games
 
+### Arcade
+```
+19XX - The War Against Destiny
+Alien vs. Predator
+Aliens
+Arkanoid
+Armed Police Batrider
+Armored Warriors
+Cadillacs and Dinosaurs
+Captain Commando
+Darius Gaiden - Silver Hawk
+DoDonPachi
+Donkey Kong
+Dungeons & Dragons - Shadow over Mystara
+ESP Ra.De. - A.D.2018 Tokyo
+Final Fight
+Ghouls'n Ghosts
+Giga Wing
+Gunbird 2
+Hyper Street Fighter II - The Anniversary Edition
+JoJo's Bizarre Adventure
+King of Dragons, The
+Knights of the Round
+Mars Matrix - Hyper Solid Shooting
+Marvel Super Heroes
+Marvel vs. Capcom - Clash of Super Heroes
+Metal Black
+Mystic Warriors
+Nemesis
+Pang
+Progear
+Punisher, The
+Q*bert
+R-Type
+Salamander
+Simpsons, The
+Street Fighter Alpha 3
+Street Fighter III 3rd Strike - Fight for the Future
+Strider
+Sunset Riders
+Super Puzzle Fighter II Turbo
+Teenage Mutant Ninja Turtles
+Truxton II
+Vampire Savior - The Lord of Vampire
+Warriors of Fate
+X-Men
+X-Men vs. Street Fighter
+```
 ### Atari - 2600 - September 11, 1977
 ```
 Adventure
@@ -1861,6 +1969,23 @@ Tokuten-ou 3 - Eikou e no Chousen ~ Super Sidekicks 3 - The Next Glory
 Top Hunter - Roddy & Cathy
 Twinkle Star Sprites
 Viewpoint
+```
+
+### SNK - Neo Geo Pocket Color (NGPC) - March 19, 1999
+```
+Big Bang Pro Wrestling
+Biomotor Unitron
+Dark Arms - Beast Buster 1999
+Dive Alert - Becky's Version
+Faselei!
+Last Blade, The - Beyond the Destiny
+Metal Slug - 1st Mission
+Metal Slug - 2nd Mission
+Puzzle Link 2
+Samurai Shodown! 2 - Pocket Fighting Series
+SNK vs. Capcom - Card Fighters' Clash - Capcom Version
+SNK vs. Capcom - Card Fighters' Clash - SNK Version
+SNK vs. Capcom - The Match of the Millennium
 ```
 ### Sony - PlayStation (PSX) - December 3, 1994
 ```
