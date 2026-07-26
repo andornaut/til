@@ -1031,7 +1031,6 @@ Q*bert
 R-Type
 Salamander
 Simpsons, The
-Street Fighter Alpha 3
 Street Fighter III 3rd Strike - Fight for the Future
 Strider
 Sunset Riders
@@ -1046,21 +1045,15 @@ X-Men vs. Street Fighter
 ### Atari - 2600 - September 11, 1977
 ```
 Adventure
-Asteroids
 Demon Attack
-Dig Dug
 Donkey Kong
 Enduro
 Frogger
 H.E.R.O.
-Joust
 Kaboom!
 Keystone Kapers
 Missile Command
-Ms. Pac-Man
 Pitfall! - Pitfall Harry's Jungle Adventure
-Q-bert
-RealSports Tennis
 River Raid
 Space Invaders
 Yars' Revenge
@@ -1094,7 +1087,6 @@ Alien vs Predator
 Attack of the Mutant Penguins
 Cannon Fodder
 Defender 2000
-Fight for Life
 Flashback - The Quest for Identity
 International Sensible Soccer
 Iron Soldier
@@ -1113,7 +1105,6 @@ Worms
 ```
 Battle Wheels
 Blue Lightning
-Checkered Flag
 Chip's Challenge
 Crystal Mines II
 Eye of the Beholder
@@ -1143,7 +1134,6 @@ Cosmic Fantasy 2
 Dragon Slayer - The Legend of Heroes
 Dungeon Explorer II
 Gate of Thunder + Bonk's Adventure + Bonk's Revenge
-Gradius II - Gofer no Yabou
 Lords of Thunder
 R-Type Complete CD
 Spriggan Mark 2 - Re Terraform Project
@@ -1151,7 +1141,6 @@ Valis III
 Valis IV
 Wonder Boy III - Monster Lair
 Ys Book I & II
-Ys III - Wanderers from Ys
 Ys IV - The Dawn of Ys
 ```
 ### NEC - PC Engine - TurboGrafx 16 (PCE, TG-16) - October 30, 1987
@@ -1174,32 +1163,32 @@ Military Madness
 Neutopia
 Neutopia II
 New Adventure Island
+Ninja Spirit
 Soldier Blade
 Splatterhouse
 ```
 ### Nintendo - Game Boy (GB) - April 21, 1989
 ```
-Bubble Bobble
 BurgerTime Deluxe
 Castlevania II - Belmont's Revenge
 Donkey Kong
 Final Fantasy Adventure
 Gradius - The Interstellar Assault
 Great Greed
+Kid Icarus - Of Myths and Monsters
+Kirby's Dream Land
 Kirby's Dream Land 2
 Mario's Picross
 Mega Man V
 Metroid II - Return of Samus
 Mole Mania
 Operation C
-Pokemon - Red Version
 Pokemon - Yellow Version - Special Pikachu Edition
 Super Mario Land
 Super Mario Land 2 - 6 Golden Coins
 Tetris - Rosy Retrospection
 Tiny Toon Adventures - Babs' Big Break
 Wario Land - Super Mario Land 3
-Wario Land II
 ```
 ### Nintendo - Game Boy Advance (GBA) - March 21, 2001
 ```
@@ -1214,14 +1203,16 @@ Bookworm
 Breath of Fire
 Castlevania - Aria of Sorrow
 Chessmaster
-Crash Bandicoot - The Huge Adventure
 Double Dragon Advance
 Dragon Ball Z - Buu's Fury
 Dragon Ball Z - The Legacy of Goku II
+Drill Dozer
 F-Zero - Maximum Velocity
 Final Fantasy Tactics Advance
-Final Fantasy VI Advance
+Final Fantasy V Advance
+Fire Emblem
 Fire Emblem - The Sacred Stones
+Game & Watch Gallery 4
 Golden Sun
 Golden Sun - The Lost Age
 Goodboy Galaxy (demo)
@@ -1229,7 +1220,6 @@ Gunstar Super Heroes
 Hamtaro - Ham-Ham Games
 Hamtaro - Ham-Ham Heartbreak
 Harvest Moon - Friends of Mineral Town
-Justice League Heroes - The Flash
 Kirby & The Amazing Mirror
 Kirby - Nightmare in Dream Land
 Legend of Zelda, The - The Minish Cap
@@ -1237,26 +1227,22 @@ Lord of the Rings, The - The Two Towers
 Mario & Luigi - Superstar Saga
 Mario Kart - Super Circuit
 Mega Man - Battle Network 3 - Blue Version
-Mega Man Zero
 Metroid - Zero Mission
 Metroid Fusion
 Mother 3
 Ninja Five-0
 Pokemon - Emerald Version
-Pokemon - FireRed Version
 Pokemon - LeafGreen Version
 Pokemon Mystery Dungeon - Red Rescue Team
 Pokemon Pinball - Ruby & Sapphire
 Pokemon Unbound
 Shining Force - Resurrection of the Dark Dragon
 Sigma Star Saga
+Sonic Advance
 Sonic Advance 3
 Sonic Pinball Party
 Spider-Man - Mysterio's Menace
 Spyro 2 - Season of Flame
-Super Mario Advance 3 - Yoshi's Island
-Super Monkey Ball Jr.
-Sword of Mana
 TMNT
 Tony Hawk's Pro Skater 2
 Ultimate Card Games
@@ -1265,6 +1251,7 @@ WarioWare, Inc. - Mega Microgame$!
 ```
 ### Nintendo - Game Boy Color (GBC) - October 21, 1998
 ```
+Dragon Warrior I & II
 Dragon Warrior III
 Dragon Warrior Monsters 2 - Tara's Adventure
 Game & Watch Gallery 2
@@ -1277,12 +1264,11 @@ Legend of Zelda, The - Oracle of Seasons
 Magi Nation
 Mario Tennis
 Metal Gear Solid
-Pocket Bomberman
 Pokemon - Crystal Version
 Pokemon Pinball
+Pokemon Trading Card Game
 Revelations - The Demon Slayer
 Shantae
-Star Wars Episode I - Obi-Wan's Adventures
 Tobu Tobu Girl Deluxe
 Wario Land 3
 Wario Land II
@@ -1293,11 +1279,14 @@ Wendy - Every Witch Way
 Animal Crossing
 Baten Kaitos - Eternal Wings and the Lost Ocean
 Beyond Good & Evil
+Chibi-Robo! Plug into Adventure!
 F-Zero GX
+Fire Emblem - Path of Radiance
 Gotcha Force
 Ikaruga
 Incredible Hulk, The - Ultimate Destruction
 Killer7
+Kirby Air Ride
 Legend of Zelda, The - The Wind Waker
 Legend of Zelda, The - Twilight Princess
 Luigi's Mansion
@@ -1324,10 +1313,11 @@ Viewtiful Joe
 ```
 007 - The World Is Not Enough
 1080 Snowboarding
-Army Men - Sarge's Heroes 2
 Banjo-Kazooie
 Banjo-Tooie
+Beetle Adventure Racing!
 Blast Corps
+Body Harvest
 Bomberman 64
 Castlevania - Legacy of Darkness
 Conker's Bad Fur Day
@@ -1351,10 +1341,8 @@ Mario Golf
 Mario Kart 64
 Mario Party 3
 Mario Tennis
-Mega Man 64
 Mischief Makers
 Mystical Ninja Starring Goemon
-Neon Genesis Evangelion
 NFL Blitz
 Ogre Battle 64 - Person of Lordly Caliber
 Paper Mario
@@ -1365,6 +1353,7 @@ Pokemon Snap
 Pokemon Stadium 2
 San Francisco Rush - Extreme Racing
 Sin and Punishment - Successor of the Earth
+SpaceStation Silicon Valley
 Star Fox 64
 Star Wars - Rogue Squadron
 Star Wars Episode I - Racer
@@ -1382,20 +1371,24 @@ Yoshi's Story
 ```
 Advance Wars - Dual Strike
 Another Code - Two Memories
+Apollo Justice - Ace Attorney
+Bangai-O Spirits
 Castlevania - Dawn of Sorrow
 Castlevania - Order of Ecclesia
-Chrono Trigger
+Castlevania - Portrait of Ruin
 Dragon Quest IV - Chapters of the Chosen
 Dragon Quest IX - Sentinels of the Starry Skies
 Dragon Quest V - Hand of the Heavenly Bride
+Dragon Quest VI - Realms of Revelation
 Elite Beat Agents
 Etrian Odyssey
+Etrian Odyssey III - The Drowned City
+Final Fantasy III
 Fire Emblem - Shadow Dragon
 Ghost Trick - Phantom Detective
 Grand Theft Auto - Chinatown Wars
 Kingdom Hearts - 358-2 Days
 Kirby - Canvas Curse
-Kirby Super Star Ultra
 Legend of Zelda, The - Phantom Hourglass
 Mario & Luigi - Bowser's Inside Story
 Mario Kart DS
@@ -1407,6 +1400,8 @@ New Super Mario Bros.
 Nine Hours, Nine Persons, Nine Doors
 Peggle Dual Shot
 Phoenix Wright - Ace Attorney
+Phoenix Wright - Ace Attorney - Justice for All
+Phoenix Wright - Ace Attorney - Trials and Tribulations
 Picross DS
 Pokemon - Black Version 2
 Pokemon - HeartGold Version
@@ -1415,6 +1410,8 @@ Pokemon Mystery Dungeon - Explorers of Sky
 Professor Layton and the Curious Village
 Professor Layton and the Diabolical Box
 Professor Layton and the Unwound Future
+Radiant Historia
+Retro Game Challenge
 Rune Factory 3 - A Fantasy Harvest Moon
 Shin Megami Tensei - Devil Survivor
 Solatorobo - Red the Hunter
@@ -1435,21 +1432,20 @@ Bionic Commando
 Blades of Steel
 Blaster Master
 Bubble Bobble
+Bucky O'Hare
 Castlevania
+Castlevania II - Simon's Quest
 Castlevania III - Dracula's Curse
 Chip 'n Dale - Rescue Rangers
 Chip 'n Dale - Rescue Rangers 2
 Cobra Triangle
 Contra
-Crisis Force
 Crystalis
 Darkwing Duck
 Donkey Kong
 Double Dragon II - The Revenge
 Double Dribble
 Dr. Mario
-Dragon Warrior III
-Dragon Warrior IV
 DuckTales
 Excitebike
 Faxanadu
@@ -1459,6 +1455,7 @@ Ghosts'n Goblins
 Gradius
 Guardian Legend, The
 Gun Nac
+Journey to Silius
 Kid Icarus
 Kirby's Adventure
 Legend of Zelda, The
@@ -1485,7 +1482,10 @@ Q-bert
 R.C. Pro-Am
 River City Ransom
 Rygar
+Shatterhand
 StarTropics
+Summer Carnival '92 - Recca
+Super C
 Super Dodge Ball
 Super Mario Bros.
 Super Mario Bros. 2
@@ -1505,6 +1505,7 @@ ActRaiser
 Adventures of Batman & Robin, The
 Aerobiz Supersonic
 Arkanoid
+Axelay
 Bahamut Lagoon (English translation)
 Batman Returns
 Biker Mice from Mars
@@ -1516,23 +1517,27 @@ Donkey Kong Country
 Donkey Kong Country 2 - Diddy's Kong Quest
 Donkey Kong Country 3 - Dixie Kong's Double Trouble!
 EarthBound
+EarthBound Beginnings
 F-Zero
 Final Fantasy - Mystic Quest
 Final Fantasy II
 Final Fantasy III
+Fire Emblem - Seisen no Keifu
 Gradius III
 Harvest Moon
 Hook
 Illusion of Gaia
-Judge Dredd
 Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
 King of Dragons
 Kirby Super Star
 Kirby's Dream Land 3
+Legend of the Mystical Ninja, The
 Legend of Zelda, The - A Link to the Past
 Lemmings
 Lion King, The
+Live A Live
+Lufia & the Fortress of Doom
 Lufia II - Rise of the Sinistrals
 Magical Quest Starring Mickey Mouse, The
 Mario Paint
@@ -1542,14 +1547,15 @@ Mega Man X
 Mega Man X2
 Mega Man X3
 Metal Warriors
-Mighty Morphin Power Rangers - The Fighting Edition
-Ms. Pac-Man
 Pilotwings
 Plumber For All Seasons, A
+Pocky & Rocky 2
+Rendering Ranger R2
 Secret of Mana
 Shin Kidou Senki Gundam W - Endless Duel
 Side Pocket
 SimCity 2000 - The Ultimate City Simulator
+Soul Blazer
 Space Megaforce
 Sparkster
 Star Fox
@@ -1569,17 +1575,19 @@ Super Mario World
 Super Mario World 2 - Yoshi's Island
 Super Metroid
 Super Punch-Out!!
-Super R-Type
 Super Tennis
 Super Turrican 2
 Tecmo Super Bowl
 Teenage Mutant Ninja Turtles - Tournament Fighters
 Teenage Mutant Ninja Turtles IV - Turtles in Time
 Terranigma
+Tetris Attack
+Trials of Mana
 U.N. Squadron
 Where in the World Is Carmen Sandiego
 Wild Guns
 X-Men - Mutant Apocalypse
+Ys V - Ushinawareta Suna no Miyako Kefin
 Zombies Ate My Neighbors
 ```
 ### Pico-8 - April 2015
@@ -1621,7 +1629,6 @@ After Burner Complete
 Blackthorne
 Knuckles' Chaotix
 Kolibri
-Metal Head
 Mortal Kombat II
 NBA Jam - Tournament Edition
 Pitfall - The Mayan Adventure
@@ -1630,16 +1637,15 @@ Star Trek - Starfleet Academy - Starship Bridge Simulator
 Star Wars Arcade
 Stellar Assault
 Tempo
-Virtua Fighter
 Virtua Racing Deluxe
 WWF WrestleMania - The Arcade Game
-Zaxxon's Motherbase 2000
 ```
 ### Sega - Dreamcast (DC) - November 27, 1998
 ```
 Bangai-O
 Border Down
 Capcom vs. SNK
+ChuChu Rocket!
 Crazy Taxi
 Cyber Troopers - Virtual-On - Oratorio Tangram
 Dead or Alive 2
@@ -1649,9 +1655,9 @@ Garou - Mark of the Wolves
 Grandia II
 Hydro Thunder
 Jet Grind Radio
-King of Fighters, The - Dream Match 1999
 Le Mans 24 Hours
 Legacy of Kain - Soul Reaver
+Mars Matrix
 Marvel vs. Capcom 2
 MDK2
 MSR - Metropolis Street Racer
@@ -1667,12 +1673,10 @@ Re-Volt
 Record of Lodoss War
 Resident Evil - Code - Veronica
 Rez
-Sega Bass Fishing
-Sega Rally 2
+Samba de Amigo
 Shenmue
 Shenmue II
 Sonic Adventure
-Sonic Adventure 2
 Soulcalibur
 Space Channel 5
 Spider-Man
@@ -1682,13 +1686,13 @@ Super Street Fighter II X for Matching Service
 Sword of the Berserk - Guts' Rage
 Tony Hawk's Pro Skater 2
 Toy Commander
+Under Defeat
 Virtua Fighter 3tb
 Virtua Tennis
 ```
 ### Sega - Game Gear (GG) - October 6, 1990
 ```
 Ax Battler - A Legend of Golden Axe
-Baku Baku
 Castle of Illusion Starring Mickey Mouse
 Coca-Cola Kid
 Columns
@@ -1696,8 +1700,6 @@ Crystal Warriors
 Defenders of Oasis
 Dragon Crystal
 Fantasy Zone
-Fatal Fury Special
-Frank Thomas Big Hurt Baseball
 GG Aleste 3
 Godzilla - Kaijuu Daishingeki (Godzilla - Monsters Attack)
 Joe Montana Football
@@ -1707,9 +1709,7 @@ Lucky Dime Caper Starring Donald Duck, The
 Lunar - Sanposuru Gakuen
 Magical Puzzle Popils
 Mighty Morphin Power Rangers - The Movie
-Ninja Gaiden
 Power Strike II
-Ristar
 Shining Force Gaiden - Final Conflict
 Shinobi
 Shinobi II - The Silent Fury
@@ -1717,7 +1717,6 @@ Sonic Drift 2
 Sonic the Hedgehog - Triple Trouble
 Sylvan Tale
 Tails Adventure
-Wonder Boy - The Dragon's Trap
 World Series Baseball '95
 X-Men
 ```
@@ -1745,13 +1744,10 @@ Prince of Persia
 Psycho Fox
 Rampage
 Rastan
-Reggie Jackson Baseball
 Shinobi
 Sonic the Hedgehog
-Space Harrier
 Ultima IV - Quest of the Avatar
 Wonder Boy in Monster World
-Ys - The Vanished Omens
 ```
 ### Sega - Mega-CD - Sega CD - December 12, 1991
 ```
@@ -1764,11 +1760,8 @@ Dune
 Ecco the Dolphin
 Eternal Champions - Challenge from the Dark Side
 Final Fight CD
-Heart of the Alien - Out of This World Parts I and II
 Keio Flying Squadron
-Lords of Thunder
 Lunar - Eternal Blue
-Lunar - The Silver Star
 Mickey Mania - The Timeless Adventures of Mickey Mouse
 Mortal Kombat
 NHL '94
@@ -1793,11 +1786,9 @@ Vay
 Aladdin
 Alien Soldier
 Altered Beast
-Arnold Palmer Tournament Golf
 Bare Knuckle III (Streets of Rage III)
 Beyond Oasis
 Blades of Vengeance
-Captain America and the Avengers
 Castlevania - Bloodlines
 Comix Zone
 Contra - Hard Corps
@@ -1806,14 +1797,11 @@ Desert Strike - Return to the Gulf
 Dune - The Battle for Arrakis
 Dynamite Headdy
 Earthworm Jim 2
-Evander Holyfield's 'Real Deal' Boxing
 Fix-It Felix Jr.
-Flashback - The Quest for Identity
 Ghostbusters
 Ghouls'n Ghosts
 Golden Axe
 Golden Axe II
-Golden Axe III
 Greatest Heavyweights
 Gunstar Heroes
 Herzog Zwei
@@ -1836,19 +1824,16 @@ Mutant League Football
 Mutant League Hockey
 NBA Live 96
 NFL Sports Talk Football '93 Starring Joe Montana
-NHL '94
 NHL '94 - 2024 Edition
 OutRun
-PGA European Tour
-PGA Tour Golf II
 Phantasy Star II
 Phantasy Star IV
-Pirates! Gold
 Populous
 Punisher, The
 QuackShot Starring Donald Duck
 Ranger X
 Revenge of Shinobi, The
+Ristar
 Road Rash 3
 Rocket Knight Adventures
 Sagaia
@@ -1856,24 +1841,19 @@ Shadow Dancer - The Secret of Shinobi
 Shadowrun
 Shining Force II
 Shinobi III - Return of the Ninja Master
-Sonic & Knuckles + Sonic the Hedgehog 3
 Sonic 3 Complete
 Sonic Spinball
 Sonic the Hedgehog
 Sonic the Hedgehog 2
-Space Harrier II
 Sparkster
 Splatterhouse 3
-Star Trek - The Next Generation - Echoes from the Past
 Streets of Rage
 Streets of Rage 2
-Strider
 Sub-Terrania
 Super Hang-On
 Super Monaco GP
 Super Thunder Blade
 Sword of Vermilion
-Sylvester & Tweety in Cagey Capers
 Teenage Mutant Ninja Turtles - Shredder's Re-Revenge
 Teenage Mutant Ninja Turtles - The Hyperstone Heist
 Thunder Force IV
@@ -1883,7 +1863,6 @@ Ultracore
 Urban Strike
 Vectorman
 World of Illusion Starring Mickey Mouse and Donald Duck
-World Series Baseball 98
 X-Men
 X-Men 2 - Clone Wars
 ```
@@ -1897,7 +1876,7 @@ Batsugun
 Bug!
 Bulk Slash
 Burning Rangers
-Castlevania - Symphony of the Night
+Darius Gaiden
 Daytona USA - Championship Circuit Edition
 DecAthlete
 Dragon Force
@@ -1908,8 +1887,8 @@ Keio Flying Squadron 2
 Legend of Oasis, The
 Magical Night Dreams - Cotton 2
 Manx TT SuperBike
-Marvel Super Heroes
 NiGHTS into Dreams...
+Panzer Dragoon
 Panzer Dragoon II Zwei
 Panzer Dragoon Saga
 Powerslave
@@ -1917,16 +1896,15 @@ Radiant Silvergun
 Saturn Bomberman
 Sega Ages - After Burner II
 Sega Rally Championship
-Shining Force III
+Shining Force III Collection Deluxe
 Shining the Holy Ark
 Shippuu Mahou Daisakusen - Kingdom-Grandprix
-Sonic Jam
 Stellar Assault SS
 Street Fighter Alpha 2
-Tactics Ogre - Let Us Cling Together
 Ultimate Mortal Kombat 3
 Virtua Cop 2
 Virtua Fighter 2
+Virtua Fighter Remix
 Virtual On - Cyber Troopers
 World Series Baseball 98
 X-Men - Children of the Atom
@@ -1940,7 +1918,6 @@ Captain Tomaday
 Ganryu
 King of Fighters '99, The
 King of Fighters 2000, The
-King of Fighters 2001, The
 King of Fighters 2002, The
 King of Fighters 2003, The
 King of the Monsters 2
@@ -1991,7 +1968,6 @@ Last Hope (homebrew)
 Last Resort
 League Bowling
 Magician Lord
-Metal Slug 2
 Mutation Nation
 NAM-1975
 Ninja Commando
@@ -2032,8 +2008,6 @@ SNK vs. Capcom - The Match of the Millennium
 Ace Combat 3 - Electrosphere
 Alundra
 Ape Escape
-Arcade's Greatest Hits - The Atari Collection 1
-Arcade's Greatest Hits - The Atari Collection 2
 Arcade's Greatest Hits - The Midway Collection 2
 Armored Core
 Battle Arena Toshinden
@@ -2044,11 +2018,15 @@ Bust-A-Move 2 - Arcade Edition
 Castlevania - Symphony of the Night
 Chrono Cross
 Colony Wars
+Crash Bandicoot
+Crash Bandicoot - Warped
 Crash Bandicoot 2 - Cortex Strikes Back
 CTR - Crash Team Racing
 Diablo
 Doom
+Dragon Warrior VII
 Driver - You Are the Wheelman
+Einhaender
 Final Fantasy IX
 Final Fantasy VII
 Final Fantasy VIII
@@ -2058,26 +2036,28 @@ Gran Turismo 2 - Arcade Mode
 Gran Turismo 2 - Simulation Mode
 Gundam Battle Assault 2
 Hot Shots Golf
+I.Q - Intelligent Qube
 Jade Cocoon - Story of the Tamamayu
 Jumping Flash!
 Klonoa - Door to Phantomile
 Legend of Dragoon, The
-Marvel vs. Capcom - Clash of Super Heroes
 MediEvil
+Mega Man 8
 Mega Man Legends
+Mega Man Legends 2
 Mega Man X4
-Mega Man X6
 Metal Gear Solid
 Misadventures of Tron Bonne, The
 NBA Jam 22
-Oddworld - Abe's Oddysee
-Persona
+Oddworld - Abe's Exoddus
+Policenauts
 R-Type Delta
 R4 - Ridge Racer Type 4
 Rayman
 SaGa Frontier
 Silent Hill
 Spyro the Dragon
+Suikoden
 Suikoden II
 Syphon Filter
 Tekken 3
@@ -2094,20 +2074,20 @@ Xenogears
 ```
 ### Sony - PlayStation 2 (PS2) - March 4, 2000
 ```
+Ace Combat 5 - The Unsung War
 Ace Combat Zero - The Belkan War
-Armored Core - Nexus
 Baldur's Gate - Dark Alliance II
 Bully
 Burnout 3 - Takedown
 Champions of Norrath
 Dark Cloud 2
 Def Jam - Fight for NY
+Devil May Cry
 Devil May Cry 3 - Dante's Awakening
 Disgaea - Hour of Darkness
 Disgaea 2 - Cursed Memories
 Dragon Ball Z - Budokai 3
 Dragon Quest VIII - Journey of the Cursed King
-Enter the Matrix
 Fight Night Round 3
 Final Fantasy X
 Final Fantasy XII
@@ -2118,61 +2098,60 @@ God of War
 God of War II
 Gradius V
 Gran Turismo 4
-Grand Theft Auto - Liberty City Stories
 Grand Theft Auto - San Andreas
 Grand Theft Auto - Vice City
-Grand Theft Auto - Vice City Stories
 Grand Theft Auto III
 Guilty Gear XX Accent Core Plus
 Gungrave
 Harvey Birdman - Attorney at Law
 Hitman - Blood Money
 Hot Shots Golf 3
+Ico
+Jak 3
 Jak and Daxter - The Precursor Legacy
+Jak II
 Jurassic Park - Operation Genesis
 Katamari Damacy
 King of Fighters '98, The - Ultimate Match
 Kingdom Hearts
+Kingdom Hearts II - Final Mix
 Klonoa 2 - Lunatea's Veil
 Lara Croft Tomb Raider - Legend
 LEGO Star Wars II - The Original Trilogy
 Lord of the Rings, The - The Two Towers
-Madden NFL 08
 Mana Khemia - Alchemists of Al-Revis
-Manhunt 2
 Marc Ecko's Getting Up - Contents Under Pressure
 Marvel - Ultimate Alliance
-Mega Man X8
+Metal Gear Solid 2 - Sons of Liberty
 Metal Gear Solid 3 - Snake Eater
 Midnight Club 3 - DUB Edition
 MLB 11 - The Show
-Mobile Suit Gundam - Zeonic Front
-Monster Hunter
-NBA 2K12
-NBA Street Vol. 2
 Need for Speed - Carbon - Collector's Edition
-NHL 07
 Nickelodeon SpongeBob SquarePants - Battle for Bikini Bottom
 Odin Sphere
 Oni
 Onimusha - Warlords
+Onimusha 3 - Demon Siege
 Ookami
 OutRun 2006 - Coast 2 Coast
 PaRappa the Rapper 2
-PES 2014 - Pro Evolution Soccer
 Prince of Persia - The Sands of Time
 Psychonauts
 Punisher, The
 Puyo Puyo Fever
 R-Type Final
+Ratchet & Clank
+Ratchet & Clank - Going Commando
 Ratchet & Clank - Up Your Arsenal
 Rogue Galaxy
 Sega Ages 2500 Series Vol. 30 - Galaxy Force II - Special Extended Edition
 Shadow of the Colossus
+Shin Megami Tensei - Nocturne
 Shin Megami Tensei - Persona 4
 Silent Hill Origins
 Simpsons, The - Hit & Run
 SkyGunner
+Sly 2 - Band of Thieves
 Sly Cooper and the Thievius Raccoonus
 Sonic Unleashed
 Soulcalibur II
@@ -2182,19 +2161,16 @@ Star Wars - Battlefront II
 Star Wars - The Force Unleashed
 Syphon Filter - Dark Mirror
 Tekken 5
-Thunder Force VI
-TimeSplitters 2
 Tom Clancy's Splinter Cell - Chaos Theory
-Tony Hawk's Pro Skater 4
-Tony Hawk's Underground
 Twisted Metal - Black
 Virtua Fighter 4 - Evolution
 Warriors, The
 Way of the Samurai 2
 Worms 4 - Mayhem
-X-Men Legends
+X-Men Legends II - Rise of Apocalypse
 XIII
 Yakuza
+Zone of the Enders - The 2nd Runner
 ```
 ### Sony - PlayStation Portable (PSP) - December 11, 2004
 ```
@@ -2206,6 +2182,7 @@ Darkstalkers Chronicle - The Chaos Tower
 Daxter
 Echochrome
 Fat Princess - Fistful of Cake
+Final Fantasy II - 20th Anniversary Edition
 Final Fantasy Tactics - The War of the Lions
 God of War - Chains of Olympus
 God of War - Ghost of Sparta
@@ -2219,10 +2196,12 @@ Mega Man - Maverick Hunter X
 Mega Man - Powered Up
 Metal Gear Ac!d
 Metal Gear Solid - Peace Walker
+Monster Hunter Freedom Unite
 N Plus
 PaRappa the Rapper
 Patapon 2
 Peggle
+Persona 2 - Batsu
 Phantasy Star Portable 2 Infinity
 PixelJunk Monsters - Deluxe
 Ratchet & Clank - Size Matters
@@ -2232,10 +2211,9 @@ Shin Megami Tensei - Persona
 Shin Megami Tensei - Persona 2 - Innocent Sin
 Shin Megami Tensei - Persona 3 Portable
 Sid Meier's Pirates!
-Silent Hill Origins
 Space Invaders Extreme
 Star Ocean - Second Evolution
-Tekken 6
+Tactics Ogre - Let Us Cling Together
 Ultimate Ghosts'n Goblins
 Valkyria Chronicles II
 Virtua Tennis 3
@@ -2249,10 +2227,8 @@ Ys Seven
 Alone in the Dark
 Alone in the Dark 2
 BrainDead 13
-Captain Quazar
 Crash 'n Burn
 Dragon's Lair
-FIFA International Soccer
 Gex
 Guardian War
 Lucienne's Quest
@@ -2261,17 +2237,13 @@ Return Fire
 Road & Track Presents - The Need for Speed
 Road Rash
 Samurai Shodown
-Slayer
 Space Hulk - Vengeance of the Blood Angels
 Star Control II
 Star Fighter
 Starblade
-Super Street Fighter II Turbo
 Super Wing Commander
 Total Eclipse
-Twisted - The Game Show
 Wing Commander III - Heart of the Tiger
-Wolfenstein 3D
 ```
 
 ## PC Games
