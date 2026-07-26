@@ -1053,6 +1053,7 @@ H.E.R.O.
 Kaboom!
 Keystone Kapers
 Missile Command
+Pitfall II - Lost Caverns
 Pitfall! - Pitfall Harry's Jungle Adventure
 River Raid
 Space Invaders
@@ -1296,7 +1297,10 @@ Metroid Prime 2 - Echoes
 NBA Street Vol. 2
 Need for Speed - Underground 2
 Paper Mario - The Thousand-Year Door
+Pikmin
 Pikmin 2
+Resident Evil
+Resident Evil 4
 Skies of Arcadia Legends
 Sonic Adventure 2 - Battle
 SSX Tricky
@@ -2148,6 +2152,7 @@ Sega Ages 2500 Series Vol. 30 - Galaxy Force II - Special Extended Edition
 Shadow of the Colossus
 Shin Megami Tensei - Nocturne
 Shin Megami Tensei - Persona 4
+Silent Hill 2
 Silent Hill Origins
 Simpsons, The - Hit & Run
 SkyGunner
