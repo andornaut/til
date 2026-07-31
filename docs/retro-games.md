@@ -426,7 +426,7 @@ which may occur if RetroArch crashes before it is able to clean up.
 Platform | Desktop core (x64) | Retroid Pocket Flip 2 (Android)
 --- | --- | ---
 Arcade | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/) | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
-Atari - 2600 | [Stella](https://docs.libretro.com/library/stella/) | 
+Atari - 2600 | [Stella](https://docs.libretro.com/library/stella/) | [Stella](https://docs.libretro.com/library/stella/)
 Atari - 7800 | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/)
 Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
 Atari - Lynx | [Beetle Lynx](https://docs.libretro.com/library/beetle_lynx/) | [Beetle Lynx](https://docs.libretro.com/library/beetle_lynx/)
