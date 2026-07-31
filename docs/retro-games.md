@@ -34,7 +34,7 @@
 
 ## Hardware
 
-### Anbernic RG35XX+ and RG40XXV
+### Anbernic RG35XX+
 
 * [Anbernic official store](https://anbernic.com/)
 * [Joystick removal mod](https://makerworld.com/en/models/658135#profileId-585228)
@@ -149,16 +149,11 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 1. Navigate to Apps > RetroArch -> Information > Core Information
 1. Confirm that the BIOS files that you added are listed as "present"
 
-### Retroid Pocket Mini / Flip 2
+### Retroid Pocket Flip 2
 
 * [DIY Screen Replacement! (Video)](https://www.youtube.com/live/LiaTAjsIKEs)
-* [How to Install Android 13 on the Retroid Pocket Mini](https://retrohandhelds.gg/how-to-install-android-13-retroid-pocket-mini/)
-  * Important: Only reboot the Retroid into EDL mode when you're actually ready to press "Download" in QFIL
-  * Important: Do NOT release the vol up,down and power buttons until after you press "Download" in QFIL
 * [Obtainium-Emulation-Pack](https://github.com/RJNY/Obtainium-Emulation-Pack)
-* [Official store](https://www.goretroid.com/en-ca/collections/frontpage/products/retroid-pocket-mini-handheld)
 * [(Unofficial) stock firmware](https://github.com/TheGammaSqueeze/Retroid_Pocket_Stock_Firmware)
-* [What the Retroid Pocket Mini Should Have Been](https://www.youtube.com/watch?v=quOhoJZiZmk&t=743s) - Follow these instructions to install Android 13, especially the button release timing for EDL and QFILL
 
 #### Setup
 
@@ -261,32 +256,6 @@ ES-DE launches it via the `AetherSX2-Turnip (Standalone)` label, whose find rule
 repoint it to `xyz.aethersx2.tturnip/xyz.aethersx2.android.EmulationActivity` and set the PS2
 `<alternativeEmulator>` to that label. `sync.py` manages neither file, so re-copying the
 [custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems) reverts both.
-
-#### Rocknix custom firmware
-
-* [Documentation](https://rocknix.org/)
-  * [Retroid Pocket Mini details](https://rocknix.org/devices/retroid/retroid-pocket-mini/)
-  * [Retroid Pocket Mini supported emulators and cores](https://github.com/ROCKNIX/distribution/blob/dev/documentation/PER_DEVICE_DOCUMENTATION/SD865/SUPPORTED_EMULATORS_AND_CORES.md)
-* [Nightly builds](https://nightly.rocknix.org/) 
-* [GitHub](https://github.com/ROCKNIX/distribution)
-* [Unofficial nightly builds](https://nightly.link/tiopex/distribution/workflows/build-nightly/ci) (Download `sd865` builds for Retroid Pocket Mini)
-
-Category | Path
---- | ---
-Retroarch | `/storage/.config/retroarch/retroarch.cfg`
-ROMs | `/storage/roms`
-Saves | `/storage/roms`
-Save states | `/storage/roms/savestates`
-
-##### In-game keyboard shortcuts
-
-Key | Description
---- | ---
-Home<Hold> Start Start,  L1<Hold> Start+Select| Exit a game
-Home<Hold> Y | Show FPS
-Home<Hold> X | RetroArch Quick Menu
-Home<Hold> R1 | Save to next slot
-Home<Hold> L1 | Load last slot
 
 ### Xbox Series
 
@@ -454,38 +423,38 @@ which may occur if RetroArch crashes before it is able to clean up.
 * [Emulation General Wiki](https://emulation.gametechwiki.com/index.php/Main_Page)
 * [Retro Game Corps - Recommended RetroArch classic cores](https://retrogamecorps.com/2022/03/13/android-emulation-starter-guide/#RetroArch)
 
-Platform | Desktop core (x64) | Anbernic RG40XXV (ARM) | Retroid Pocket Mini (ARM) | Retroid Pocket Flip 2 (Android)
---- | --- | --- | --- | ---
-Arcade | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/) | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
-Atari - 2600 | [Stella](https://docs.libretro.com/library/stella/) | | |
-Atari - 7800 | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/)
-Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
-Atari - Lynx | [Beetle Lynx](https://docs.libretro.com/library/beetle_lynx/) | [Handy](https://docs.libretro.com/library/handy/) | [Handy](https://docs.libretro.com/library/handy/) | [Beetle Lynx](https://docs.libretro.com/library/beetle_lynx/)
-NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/)
-NEC - PC Engine CD - TurboGrafx-CD (PCECD) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE FAST](https://docs.libretro.com/library/beetle_pce_fast/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/)
-Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)  | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
-Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/)
-Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
-Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | -- | [Dolphin](https://docs.libretro.com/library/dolphin/) | [Dolphin](https://dolphin-emu.org/) (Standalone: the libretro core crashes on load on Android)
-Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) + [ParaLLEl-RDP/RSP](https://github.com/Themaister/parallel-rdp) (Vulkan) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) + GLideN64 (HLE)
-Nintendo - Nintendo DS (NDS) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/) | [DraStic](https://drastic-ds.com) (Standalone) | [DraStic](https://drastic-ds.com) (Standalone) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/)
-Nintendo - Nintendo Entertainment System (FC, NES) | [Mesen](https://docs.libretro.com/library/mesen/) | [FCEUmm](https://docs.libretro.com/library/fceumm/) | [Nestopia](https://docs.libretro.com/library/nestopia/) | [Mesen](https://docs.libretro.com/library/mesen/)
-Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/)
-Pico-8 | [Retro8](https://github.com/Jakz/retro8) | | |
-Sega - 32X | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
-Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast VL](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/)
-Sega - Game Gear (GG) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega - Master System - Mark III (MS) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega - Mega-CD - Sega CD | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/) (Standalone) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/)
-SNK - Neo Geo | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/) | | | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
-SNK - Neo Geo CD | [NeoCD](https://docs.libretro.com/library/neocd/) | | | [NeoCD](https://docs.libretro.com/library/neocd/)
-SNK - Neo Geo Pocket Color (NGPC) | [Beetle NeoPop](https://docs.libretro.com/library/beetle_neopop/) | | | [Beetle NeoPop](https://docs.libretro.com/library/beetle_neopop/)
-Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [PCSX ReARMed](https://docs.libretro.com/library/pcsx_rearmed/) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/)
-Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | -- | AetherSX2 | [NetherSX2-Turnip](https://github.com/nckstwrt/NetherSX2-Turnip) (Standalone)
-Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) ([Core System Files](https://github.com/hrydgard/ppsspp), [Optimization](https://www.reddit.com/r/ANBERNIC/comments/1fkztb1/universal_pppsspp_configuration_for_unmatched/)) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/)
-The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/)
+Platform | Desktop core (x64) | Retroid Pocket Flip 2 (Android)
+--- | --- | ---
+Arcade | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/) | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
+Atari - 2600 | [Stella](https://docs.libretro.com/library/stella/) | 
+Atari - 7800 | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/)
+Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
+Atari - Lynx | [Beetle Lynx](https://docs.libretro.com/library/beetle_lynx/) | [Beetle Lynx](https://docs.libretro.com/library/beetle_lynx/)
+NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/)
+NEC - PC Engine CD - TurboGrafx-CD (PCECD) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/)
+Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
+Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/)
+Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
+Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | [Dolphin](https://dolphin-emu.org/) (Standalone: the libretro core crashes on load on Android)
+Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) + [ParaLLEl-RDP/RSP](https://github.com/Themaister/parallel-rdp) (Vulkan) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) + GLideN64 (HLE)
+Nintendo - Nintendo DS (NDS) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/)
+Nintendo - Nintendo Entertainment System (FC, NES) | [Mesen](https://docs.libretro.com/library/mesen/) | [Mesen](https://docs.libretro.com/library/mesen/)
+Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/)
+Pico-8 | [Retro8](https://github.com/Jakz/retro8) | 
+Sega - 32X | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
+Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/)
+Sega - Game Gear (GG) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
+Sega - Master System - Mark III (MS) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
+Sega - Mega-CD - Sega CD | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
+Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
+Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/)
+SNK - Neo Geo | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/) | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
+SNK - Neo Geo CD | [NeoCD](https://docs.libretro.com/library/neocd/) | [NeoCD](https://docs.libretro.com/library/neocd/)
+SNK - Neo Geo Pocket Color (NGPC) | [Beetle NeoPop](https://docs.libretro.com/library/beetle_neopop/) | [Beetle NeoPop](https://docs.libretro.com/library/beetle_neopop/)
+Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/)
+Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | [NetherSX2-Turnip](https://github.com/nckstwrt/NetherSX2-Turnip) (Standalone)
+Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/)
+The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/)
 
 #### Desktop vs. Flip 2: why they differ where they do
 
@@ -998,6 +967,7 @@ applied before video init, so the core comes up on Vulkan instead of moving to i
 ### Arcade
 ```
 19XX - The War Against Destiny
+After Burner II
 Alien vs. Predator
 Aliens
 Arkanoid
@@ -1281,6 +1251,7 @@ Animal Crossing
 Baten Kaitos - Eternal Wings and the Lost Ocean
 Beyond Good & Evil
 Chibi-Robo! Plug into Adventure!
+Eternal Darkness - Sanity's Requiem
 F-Zero GX
 Fire Emblem - Path of Radiance
 Gotcha Force
@@ -1654,8 +1625,8 @@ Crazy Taxi
 Cyber Troopers - Virtual-On - Oratorio Tangram
 Dead or Alive 2
 Dynamite Cop!
+Fatal Fury - Mark of the Wolves
 Fur Fighters
-Garou - Mark of the Wolves
 Grandia II
 Hydro Thunder
 Jet Grind Radio
@@ -1898,7 +1869,6 @@ Panzer Dragoon Saga
 Powerslave
 Radiant Silvergun
 Saturn Bomberman
-Sega Ages - After Burner II
 Sega Rally Championship
 Shining Force III Collection Deluxe
 Shining the Holy Ark
