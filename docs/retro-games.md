@@ -373,7 +373,7 @@ SNK - Neo Geo CD | NeoCD | single-disc only; no `.m3u` (neocd does not list it),
 SNK - Neo Geo | FinalBurn Neo | not disc-based; one `.zip` romset per game
 The 3DO Company - 3DO | Opera | visible `Game/` dir, no `.m3u`, `.chd`
 Nintendo - GameCube | Dolphin | visible `Game/` dir, no `.m3u`, `.rvz`
-Sony - PlayStation Portable | PPSSPP | **cannot swap**: one root `.iso` per disc, loaded separately
+Sony - PlayStation Portable | PPSSPP | **cannot swap**: one root `.chd` per disc, loaded separately
 Cartridge systems | (various) | single file, no multi-disc
 
 The `.m3u` lists each disc with a path relative to itself, pointing into the hidden `.Game/`
@@ -398,8 +398,14 @@ like success while the core loaded nothing.
 Adding `m3u` to the PSP row of `games_retroarch_systems` **would not fail the run** — the generator's
 `validate_system` unions the core's `.info` extensions, and RetroArch does not filter content given as
 an explicit path (the same reason Virtual Jaguar plays `.rom`) — it would emit a playlist entry that
-launches to an error. So the only layout that works is **one root `.iso` per disc**, swapped by
+launches to an error. So the only layout that works is **one root disc image per disc**, swapped by
 loading the other playlist entry.
+
+PSP images are stored as `.chd`, which is in the core's `supported_extensions` above and about half
+the size of the `.iso` it is made from (`chdman createdvd`). `chdman` refuses an image whose size is
+not a whole number of 2048-byte sectors: that means the file is a raw dump carrying per-sector ECC
+and subchannel (typically 2448 bytes per sector) rather than a plain ISO, so the fix is a properly
+formed dump, never padding or truncating it into alignment.
 
 This library therefore does not carry multi-disc PSP titles: manually loading a second entry
 mid-playthrough is a worse experience than the game is worth, so a 2-UMD title is skipped and the gap
@@ -445,7 +451,7 @@ Sega - 32X | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDr
 Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/)
 Sega - Game Gear (GG) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega - Master System - Mark III (MS) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
-Sega - Mega-CD - Sega CD | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
+Sega - Mega-CD - Sega CD | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) ([PicoDrive](https://docs.libretro.com/library/picodrive/) for `Night Trap (USA) (Sega CD 32X) (RE-1)`, see below) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/)
 SNK - Neo Geo | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/) | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
@@ -468,6 +474,22 @@ Platform | Diverges because
 Saturn | Beetle Saturn has **no dynamic recompiler**: it interprets both SH-2s. A Snapdragon 855+ cannot hold full speed on it. Not a close call.
 N64 | ParaLLEl-RDP is a Vulkan compute renderer needing `VK_KHR_8bit_storage`, which **no Adreno driver exposes**. Reported at ~1fps even on a Snapdragon 8 Elite. A hard blocker, not a performance question: the Flip 2 stays on GLideN64 HLE.
 PS2 | LRPS2 is x86_64-only; its recompiler has no ARM target and no Android build exists. Use NetherSX2-Turnip standalone.
+
+#### One game runs on a core other than its system's
+
+A system's core covers every game in its directory, with one exception, expressed as a `game_cores`
+entry in `games_retroarch_systems` rather than by moving the file:
+
+Game | Directory | Core | Why
+--- | --- | --- | ---
+`Night Trap (USA) (Sega CD 32X) (RE-1)` | Sega - Mega-CD - Sega CD | PicoDrive | The 1994 re-release is a Sega CD disc that also requires the 32X, which it uses to widen the video window and deepen the palette. Genesis Plus GX does not emulate the 32X; PicoDrive does.
+
+It stays in the Sega CD directory because Redump and libretro both catalogue it there, and that is
+where its art resolves: the 32X thumbnail repository publishes no Night Trap at all. Only the
+playlist entry's `core_path` differs, so the label, playlist and thumbnails are unaffected. The
+generator hard-fails when a `game_cores` entry names a label no file matches, so renaming the game
+means updating the entry. It is unrelated to `games_retroarch_core_overrides`, which holds per-core
+RetroArch settings rather than core choice.
 
 Two shared rows come with conditions rather than a clean yes. **Beetle PSX HW** runs on the Flip 2 but is a pure
 interpreter with no dynarec, so it costs battery: keep internal resolution at 2-3x (an 845 collapsed at 4x) and
@@ -1016,7 +1038,6 @@ X-Men vs. Street Fighter
 ```
 Adventure
 Demon Attack
-Donkey Kong
 Enduro
 Frogger
 H.E.R.O.
@@ -1039,7 +1060,6 @@ Centipede
 Commando
 Desert Falcon
 Dig Dug
-Donkey Kong
 Donkey Kong Junior
 Food Fight
 Galaga
