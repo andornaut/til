@@ -294,6 +294,7 @@ rake
     * [Cache directory](docs/retro-games.md#cache-directory)
     * [Cores](docs/retro-games.md#cores)
       * [Desktop vs. Flip 2: why they differ where they do](docs/retro-games.md#desktop-vs.-flip-2-why-they-differ-where-they-do)
+      * [One game runs on a core other than its system's](docs/retro-games.md#one-game-runs-on-a-core-other-than-its-systems)
       * [System specific cores](docs/retro-games.md#system-specific-cores)
       * [Pico-8](docs/retro-games.md#pico-8)
       * [Neo Geo](docs/retro-games.md#neo-geo)
