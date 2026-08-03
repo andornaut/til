@@ -995,6 +995,7 @@ Aliens
 Arkanoid
 Armed Police Batrider
 Armored Warriors
+Battle Garegga
 Cadillacs and Dinosaurs
 Captain Commando
 Darius Gaiden - Silver Hawk
@@ -1003,8 +1004,10 @@ Donkey Kong
 Dungeons & Dragons - Shadow over Mystara
 ESP Ra.De. - A.D.2018 Tokyo
 Final Fight
+Gauntlet II
 Ghouls'n Ghosts
 Giga Wing
+Gradius II - GOFER no Yabou
 Gunbird 2
 Hyper Street Fighter II - The Anniversary Edition
 JoJo's Bizarre Adventure
@@ -1016,6 +1019,7 @@ Marvel vs. Capcom - Clash of Super Heroes
 Metal Black
 Mystic Warriors
 Nemesis
+Pac-Man
 Pang
 Progear
 Punisher, The
@@ -1024,6 +1028,7 @@ R-Type
 Robotron - 2084
 Salamander
 Simpsons, The
+Smash T.V.
 Strider
 Sunset Riders
 Super Puzzle Fighter II Turbo
@@ -1424,6 +1429,7 @@ World Ends with You, The
 ```
 Adventure Island 3
 Adventures of Lolo
+Adventures of Lolo 3
 Alwas Awakening
 Baseball Stars
 Batman - The Video Game
@@ -1492,8 +1498,6 @@ Super Mario Bros. 2
 Super Mario Bros. 3
 Tecmo Super Bowl
 Tecmo Super Bowl 2024
-Teenage Mutant Ninja Turtles - Tournament Fighters
-Teenage Mutant Ninja Turtles II - The Arcade Game
 Teenage Mutant Ninja Turtles III - The Manhattan Project
 Vice - Project Doom
 Wizardry - Proving Grounds of the Mad Overlord
@@ -1565,7 +1569,6 @@ Star Fox EX
 Star Trek - The Next Generation - Future's Past
 Street Fighter II Turbo
 Super Adventure Island II
-Super Bomberman
 Super Castlevania IV
 Super Double Dragon
 Super Ghouls 'N Ghosts
@@ -1901,6 +1904,7 @@ Sega Rally Championship
 Shining Force III Collection Deluxe
 Shining the Holy Ark
 Shippuu Mahou Daisakusen - Kingdom-Grandprix
+Silhouette Mirage
 Stellar Assault SS
 Street Fighter Alpha 2
 Ultimate Mortal Kombat 3
@@ -2156,6 +2160,8 @@ Ratchet & Clank - Up Your Arsenal
 Rogue Galaxy
 Sega Ages 2500 Series Vol. 30 - Galaxy Force II - Special Extended Edition
 Shadow of the Colossus
+Shin Megami Tensei - Digital Devil Saga
+Shin Megami Tensei - Digital Devil Saga 2
 Shin Megami Tensei - Nocturne
 Shin Megami Tensei - Persona 4
 Silent Hill 2
@@ -2163,7 +2169,6 @@ Simpsons, The - Hit & Run
 SkyGunner
 Sly 2 - Band of Thieves
 Sly Cooper and the Thievius Raccoonus
-Sonic Unleashed
 Soulcalibur II
 Spider-Man 2
 SSX 3
