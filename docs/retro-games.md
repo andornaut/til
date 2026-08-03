@@ -1049,6 +1049,7 @@ Frogger
 H.E.R.O.
 Kaboom!
 Keystone Kapers
+MegaMania - A Space Nightmare
 Missile Command
 Montezuma's Revenge - Featuring Panama Joe
 Pitfall II - Lost Caverns
@@ -1094,6 +1095,7 @@ Pinball Fantasies
 Power Drive Rally
 Protector - Special Edition
 Raiden
+Rayman
 Ruiner Pinball
 Skyhammer
 Super Burnout
@@ -1163,11 +1165,13 @@ Neutopia
 Neutopia II
 New Adventure Island
 Ninja Spirit
+Parasol Stars - The Story of Bubble Bobble III
 Soldier Blade
 Splatterhouse
 ```
 ### Nintendo - Game Boy (GB) - April 21, 1989
 ```
+Balloon Kid
 BurgerTime Deluxe
 Castlevania II - Belmont's Revenge
 Donkey Kong
@@ -1380,6 +1384,7 @@ Bangai-O Spirits
 Castlevania - Dawn of Sorrow
 Castlevania - Order of Ecclesia
 Castlevania - Portrait of Ruin
+Contra 4
 Dragon Quest IV - Chapters of the Chosen
 Dragon Quest IX - Sentinels of the Starry Skies
 Dragon Quest V - Hand of the Heavenly Bride
@@ -1392,6 +1397,7 @@ Final Fantasy III
 Fire Emblem - Shadow Dragon
 Ghost Trick - Phantom Detective
 Grand Theft Auto - Chinatown Wars
+Hotel Dusk - Room 215
 Kingdom Hearts - 358-2 Days
 Kirby - Canvas Curse
 Legend of Zelda, The - Phantom Hourglass
@@ -1429,6 +1435,7 @@ World Ends with You, The
 ```
 Adventure Island 3
 Adventures of Lolo
+Adventures of Lolo 2
 Adventures of Lolo 3
 Alwas Awakening
 Baseball Stars
@@ -1536,6 +1543,7 @@ Ken Griffey Jr. Presents Major League Baseball
 Killer Instinct
 King of Dragons
 Kirby Super Star
+Kirby's Dream Course
 Kirby's Dream Land 3
 Legend of the Mystical Ninja, The
 Legend of Zelda, The - A Link to the Past
@@ -1556,6 +1564,7 @@ Pilotwings
 Plumber For All Seasons, A
 Pocky & Rocky 2
 Rendering Ranger R2
+seaQuest DSV
 Secret of Mana
 Shin Kidou Senki Gundam W - Endless Duel
 Side Pocket
@@ -1563,7 +1572,6 @@ SimCity 2000 - The Ultimate City Simulator
 Soul Blazer
 Space Megaforce
 Sparkster
-Star Fox
 Star Fox 2
 Star Fox EX
 Star Trek - The Next Generation - Future's Past
@@ -1646,6 +1654,7 @@ Stellar Assault
 Tempo
 Virtua Racing Deluxe
 WWF WrestleMania - The Arcade Game
+Zaxxon's Motherbase 2000
 ```
 ### Sega - Dreamcast (DC) - November 27, 1998
 ```
@@ -1765,6 +1774,7 @@ Android Assault - The Revenge of Bari-Arm
 Batman Returns
 Dark Wizard
 Dune
+Earthworm Jim - Special Edition
 Ecco the Dolphin
 Eternal Champions - Challenge from the Dark Side
 Final Fight CD
@@ -2061,7 +2071,6 @@ Oddworld - Abe's Exoddus
 Policenauts
 R-Type Delta
 R4 - Ridge Racer Type 4
-Rayman
 SaGa Frontier
 Silent Hill
 Spyro 2 - Ripto's Rage!
@@ -2247,6 +2256,8 @@ Crash 'n Burn
 Dragon's Lair
 Gex
 Guardian War
+Icebreaker
+Killing Time
 Lucienne's Quest
 Out of This World
 Return Fire
