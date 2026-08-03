@@ -1021,9 +1021,9 @@ Progear
 Punisher, The
 Q*bert
 R-Type
+Robotron - 2084
 Salamander
 Simpsons, The
-Street Fighter III 3rd Strike - Fight for the Future
 Strider
 Sunset Riders
 Super Puzzle Fighter II Turbo
@@ -1037,6 +1037,7 @@ X-Men vs. Street Fighter
 ### Atari - 2600 - September 11, 1977
 ```
 Adventure
+Chopper Command
 Demon Attack
 Enduro
 Frogger
@@ -1044,10 +1045,13 @@ H.E.R.O.
 Kaboom!
 Keystone Kapers
 Missile Command
+Montezuma's Revenge - Featuring Panama Joe
 Pitfall II - Lost Caverns
 Pitfall! - Pitfall Harry's Jungle Adventure
 River Raid
+Solaris
 Space Invaders
+Warlords
 Yars' Revenge
 ```
 
@@ -1126,7 +1130,6 @@ Dragon Slayer - The Legend of Heroes
 Dungeon Explorer II
 Gate of Thunder + Bonk's Adventure + Bonk's Revenge
 Lords of Thunder
-R-Type Complete CD
 Spriggan Mark 2 - Re Terraform Project
 Valis III
 Valis IV
@@ -1164,6 +1167,7 @@ BurgerTime Deluxe
 Castlevania II - Belmont's Revenge
 Donkey Kong
 Final Fantasy Adventure
+Gargoyle's Quest
 Gradius - The Interstellar Assault
 Great Greed
 Kid Icarus - Of Myths and Monsters
@@ -1230,6 +1234,7 @@ Pokemon Unbound
 Shining Force - Resurrection of the Dark Dragon
 Sigma Star Saga
 Sonic Advance
+Sonic Advance 2
 Sonic Advance 3
 Sonic Pinball Party
 Spider-Man - Mysterio's Menace
@@ -1242,6 +1247,7 @@ WarioWare, Inc. - Mega Microgame$!
 ```
 ### Nintendo - Game Boy Color (GBC) - October 21, 1998
 ```
+Bionic Commando - Elite Forces
 Dragon Warrior I & II
 Dragon Warrior III
 Dragon Warrior Monsters 2 - Tara's Adventure
@@ -1306,7 +1312,6 @@ Viewtiful Joe
 ```
 ### Nintendo - Nintendo 64 (N64) - June 23, 1996
 ```
-007 - The World Is Not Enough
 1080 Snowboarding
 Banjo-Kazooie
 Banjo-Tooie
@@ -1338,7 +1343,6 @@ Mario Party 3
 Mario Tennis
 Mischief Makers
 Mystical Ninja Starring Goemon
-NFL Blitz
 Ogre Battle 64 - Person of Lordly Caliber
 Paper Mario
 Perfect Dark
@@ -1347,7 +1351,6 @@ Pokemon Puzzle League
 Pokemon Snap
 Pokemon Stadium 2
 San Francisco Rush - Extreme Racing
-Sin and Punishment - Successor of the Earth
 SpaceStation Silicon Valley
 Star Fox 64
 Star Wars - Rogue Squadron
@@ -1356,6 +1359,7 @@ Super Mario 64
 Super Smash Bros.
 Turok - Dinosaur Hunter
 Turok 2 - Seeds of Evil
+Tsumi to Batsu - Hoshi no Keishousha (Sin and Punishment - Successor of the Earth)
 Wave Race 64 - Kawasaki Jet Ski
 WCW-nWo Revenge
 WinBack - Covert Operations
@@ -1377,6 +1381,7 @@ Dragon Quest V - Hand of the Heavenly Bride
 Dragon Quest VI - Realms of Revelation
 Elite Beat Agents
 Etrian Odyssey
+Etrian Odyssey II - Heroes of Lagaard
 Etrian Odyssey III - The Drowned City
 Final Fantasy III
 Fire Emblem - Shadow Dragon
@@ -1485,6 +1490,7 @@ Super Dodge Ball
 Super Mario Bros.
 Super Mario Bros. 2
 Super Mario Bros. 3
+Tecmo Super Bowl
 Tecmo Super Bowl 2024
 Teenage Mutant Ninja Turtles - Tournament Fighters
 Teenage Mutant Ninja Turtles II - The Arcade Game
@@ -1572,7 +1578,6 @@ Super Metroid
 Super Punch-Out!!
 Super Tennis
 Super Turrican 2
-Tecmo Super Bowl
 Teenage Mutant Ninja Turtles - Tournament Fighters
 Teenage Mutant Ninja Turtles IV - Turtles in Time
 Terranigma
@@ -1598,10 +1603,12 @@ Cherry Bomb
 Combo Pool
 Dank Tomb
 Dinky Kong
+Dusk Child
 Golf Sunday
 High Stakes
 Just One Boss
 Kalikan
+Lair, The
 Low Mem Sky
 Mai-Chan's Sweet Buns
 Marballs 2
@@ -1611,6 +1618,8 @@ Mot's Grand Prix
 Pico World Race
 PICOHOT
 PICORACER-2048
+POOM
+Porklike
 Shooting Star
 Steel Surge Revolution
 Suika Game Demake
@@ -1696,7 +1705,7 @@ Defenders of Oasis
 Dragon Crystal
 Fantasy Zone
 GG Aleste 3
-Godzilla - Kaijuu Daishingeki (Godzilla - Monsters Attack)
+Gojira - Kaijuu Daishingeki (Godzilla - Monsters Attack)
 Joe Montana Football
 Jurassic Park
 Legend of Illusion Starring Mickey Mouse
@@ -1742,6 +1751,7 @@ Rastan
 Shinobi
 Sonic the Hedgehog
 Ultima IV - Quest of the Avatar
+Wonder Boy in Monster Land
 Wonder Boy in Monster World
 ```
 ### Sega - Mega-CD - Sega CD - December 12, 1991
@@ -1824,7 +1834,6 @@ OutRun
 Phantasy Star II
 Phantasy Star IV
 Populous
-Punisher, The
 QuackShot Starring Donald Duck
 Ranger X
 Revenge of Shinobi, The
@@ -1871,7 +1880,6 @@ Batsugun
 Bug!
 Bulk Slash
 Burning Rangers
-Darius Gaiden
 Daytona USA - Championship Circuit Edition
 DecAthlete
 Dragon Force
@@ -1913,13 +1921,11 @@ Ganryu
 King of Fighters '99, The
 King of Fighters 2000, The
 King of Fighters 2002, The
-King of Fighters 2003, The
 King of the Monsters 2
 Magical Drop III
 Matrimelee
 Metal Slug
 Metal Slug 3
-Metal Slug 4
 Metal Slug 5
 Metal Slug X
 Neo Bomberman
@@ -1929,7 +1935,6 @@ Prehistoric Isle 2
 Rage of the Dragons
 Real Bout Fatal Fury 2
 Samurai Shodown IV
-Samurai Shodown V
 Samurai Shodown V Special
 Sengoku 3
 Shock Troopers
@@ -1987,15 +1992,19 @@ Big Bang Pro Wrestling
 Biomotor Unitron
 Dark Arms - Beast Buster 1999
 Dive Alert - Becky's Version
+Fantastic Night Dreams - Cotton
 Faselei!
+King of Fighters R-2 - Pocket Fighting Series
 Last Blade, The - Beyond the Destiny
 Metal Slug - 1st Mission
 Metal Slug - 2nd Mission
 Puzzle Link 2
 Samurai Shodown! 2 - Pocket Fighting Series
+SNK Gals' Fighters
 SNK vs. Capcom - Card Fighters' Clash - Capcom Version
 SNK vs. Capcom - Card Fighters' Clash - SNK Version
 SNK vs. Capcom - The Match of the Millennium
+Sonic The Hedgehog - Pocket Adventure
 ```
 ### Sony - PlayStation (PSX) - December 3, 1994
 ```
@@ -2007,6 +2016,7 @@ Armored Core
 Battle Arena Toshinden
 Brave Fencer Musashi
 Breath of Fire III
+Breath of Fire IV
 Bushido Blade
 Bust-A-Move 2 - Arcade Edition
 Castlevania - Symphony of the Night
@@ -2050,6 +2060,7 @@ R4 - Ridge Racer Type 4
 Rayman
 SaGa Frontier
 Silent Hill
+Spyro 2 - Ripto's Rage!
 Spyro the Dragon
 Suikoden
 Suikoden II
@@ -2068,8 +2079,10 @@ Xenogears
 ```
 ### Sony - PlayStation 2 (PS2) - March 4, 2000
 ```
+Ace Combat 04 - Shattered Skies
 Ace Combat 5 - The Unsung War
 Ace Combat Zero - The Belkan War
+Baldur's Gate - Dark Alliance
 Baldur's Gate - Dark Alliance II
 Bully
 Burnout 3 - Takedown
@@ -2082,6 +2095,7 @@ Disgaea - Hour of Darkness
 Disgaea 2 - Cursed Memories
 Dragon Ball Z - Budokai 3
 Dragon Quest VIII - Journey of the Cursed King
+ESPN NBA 2K5
 Fight Night Round 3
 Final Fantasy X
 Final Fantasy XII
@@ -2113,6 +2127,7 @@ Klonoa 2 - Lunatea's Veil
 Lara Croft Tomb Raider - Legend
 LEGO Star Wars II - The Original Trilogy
 Lord of the Rings, The - The Two Towers
+Madden NFL 2005
 Mana Khemia - Alchemists of Al-Revis
 Marc Ecko's Getting Up - Contents Under Pressure
 Marvel - Ultimate Alliance
@@ -2125,6 +2140,7 @@ Nickelodeon SpongeBob SquarePants - Battle for Bikini Bottom
 Odin Sphere
 Oni
 Onimusha - Warlords
+Onimusha 2 - Samurai's Destiny
 Onimusha 3 - Demon Siege
 Ookami
 OutRun 2006 - Coast 2 Coast
@@ -2143,7 +2159,6 @@ Shadow of the Colossus
 Shin Megami Tensei - Nocturne
 Shin Megami Tensei - Persona 4
 Silent Hill 2
-Silent Hill Origins
 Simpsons, The - Hit & Run
 SkyGunner
 Sly 2 - Band of Thieves
@@ -2184,6 +2199,8 @@ God of War - Ghost of Sparta
 Half-Minute Hero
 Jeanne d'Arc
 Legend of Heroes, The - Trails in the Sky
+Legend of Heroes, The - Trails in the Sky SC (Disc 1)
+Legend of Heroes, The - Trails in the Sky SC (Disc 2)
 LocoRoco 2
 Lumines II
 Lunar - Silver Star Harmony
@@ -2220,7 +2237,6 @@ Ys Seven
 ### The 3DO Company - 3DO - October 4, 1993
 ```
 Alone in the Dark
-Alone in the Dark 2
 BrainDead 13
 Crash 'n Burn
 Dragon's Lair
@@ -2231,7 +2247,6 @@ Out of This World
 Return Fire
 Road & Track Presents - The Need for Speed
 Road Rash
-Samurai Shodown
 Space Hulk - Vengeance of the Blood Angels
 Star Control II
 Star Fighter
