@@ -12,6 +12,7 @@
 * [Le Chat](https://chat.mistral.ai/chat)
 * [Perplexity](https://www.perplexity.ai/)
 * [Qwen Chat](https://chat.qwen.ai/) by Alibaba
+* [Z.ai](https://chat.z.ai/) - The GLM models, by Zhipu (rebranded to Z.ai)
 
 ## Models and leaderboards
 
@@ -41,8 +42,10 @@ Model documentation, which is the only authoritative source for context windows,
 * [Fireworks AI](https://fireworks.ai/)
 * [Groq](https://groq.com/)
 * [Hugging Face](https://huggingface.co/)
+* [Moonshot AI](https://platform.moonshot.ai/) - The Kimi models; OpenAI-compatible
 * [OpenRouter](https://openrouter.ai/)
 * [Together AI](https://www.together.ai/)
+* [Z.ai](https://z.ai/) - The GLM models; OpenAI-compatible
 
 ## Software
 
@@ -59,6 +62,7 @@ Model documentation, which is the only authoritative source for context windows,
   * [Servers](https://github.com/modelcontextprotocol/servers)
 * [OpenClaw](https://openclaw.ai/)
 * [Open WebUI](https://openwebui.com/)
+* [PyTorch](https://pytorch.org/)
 * [Speaches](https://speaches.ai/) - An OpenAI API-compatible server supporting streaming transcription, translation, and speech generation
 * [TensorFlow](https://www.tensorflow.org/)
 * [Whisper](https://openai.com/index/whisper/)
@@ -91,7 +95,6 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 
 ### Software development tools
 
-* [Aider](https://aider.chat/) - Terminal pair programming against the git repo; model-agnostic, auto-commits
 * [Antigravity](https://antigravity.google/) by Google - Agent platform; the IDE plus [Antigravity CLI](https://antigravity.google/product/antigravity-cli). Replaced Gemini CLI in 2026-06
 * [Claude Code](https://code.claude.com/docs/en/overview)
 * [Cline](https://github.com/cline/cline) - VS Code agent with per-action approval; broad model support
