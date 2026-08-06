@@ -63,7 +63,7 @@ systemctl reload NetworkManager
 nmcli device status
 ```
 
-Note that [rfkill](https://manpages.ubuntu.com/manpages/xenial/man8/rfkill.8.html) may be "soft blocking" your wireless device, which you can unblock using:
+Note that [rfkill](https://manpages.ubuntu.com/manpages/noble/man8/rfkill.8.html) may be "soft blocking" your wireless device, which you can unblock using:
 ```bash
 rfkill unblock wlan
 ```

@@ -21,7 +21,7 @@ brew install \
     vim
 
 # Fonts
-brew tap homebrew/cask-fonts
+# n.b. the homebrew/cask-fonts tap was deprecated in 2024; the fonts moved into homebrew/cask
 brew install \
   --cask font-source-code-pro \
   font-droid-sans-mono-nerd-font \
@@ -391,8 +391,11 @@ sudo usermod ${USER} -aG i2c
 * [Facebook Watchman](https://facebook.github.io/watchman/docs/install.html#installing-on-os-x-via-homebrew)
 * [StackOverflow](https://apple.stackexchange.com/a/366319)
 
+n.b. `ulimit` takes a single limit, so `ulimit -n 65536 104857` sets both the soft and hard limit to 65536 and discards the second number without an error. Set them separately.
+
 ```
-$ echo 'ulimit -n 65536 104857' >> ~/.bashrc
+$ echo 'ulimit -S -n 65536' >> ~/.bashrc
+$ echo 'ulimit -H -n 104857' >> ~/.bashrc
 
 $ cat <<-END >> /etc/sysctl.conf
 kern.maxfiles=10485760

@@ -7,9 +7,8 @@
 * [NVM](https://github.com/nvm-sh/nvm)
 
 ```
-nvm install v16
-nvm alias stable v16
-nvm alias default stable
+nvm install --lts
+nvm alias default 'lts/*'
 nvm use default
 ```
 

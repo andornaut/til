@@ -31,12 +31,12 @@ fwupdmgr update
 
 [Guide](https://blog.codinghorror.com/is-your-computer-stable/)
 
-Run [mprime](ftp://mersenne.org/gimps/p95v289.linux64.tar.gz) and monitor system temperatures.
+Run [mprime](https://www.mersenne.org/download/) and monitor system temperatures.
 
 ## Webcam
 
 * [Arch wiki](https://wiki.archlinux.org/title/Webcam_setup)
-* [v4l2-ctl](https://manpages.ubuntu.com/manpages/xenial/man1/v4l2-ctl.1.html)
+* [v4l2-ctl](https://manpages.ubuntu.com/manpages/noble/man1/v4l2-ctl.1.html)
 * [udev rules example](https://wiki.archlinux.org/title/Udev#udev_rule_example)
 
 Update settings
@@ -88,7 +88,7 @@ sudo sed -i 's/\(options snd-usb-audio index.*\)/#\1/g' \
 - [pulseaudio-ctl](https://github.com/graysky2/pulseaudio-ctl)
 
 ```
-set-sink-port 0 analog-output-headphones
+pactl set-sink-port 0 analog-output-headphones
 ```
 
 ## Pulseaudio / ALSA: save pavucontrol configuration
