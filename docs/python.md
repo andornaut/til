@@ -108,7 +108,7 @@ Example:
             "request": "launch",
             "program": "${file}",
             "justMyCode": true,
-            "envFile": "${workspaceFolder}/.env",
+            "envFile": "${workspaceFolder}/.env"
         }
     ]
 }

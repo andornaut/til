@@ -38,7 +38,7 @@
 * [SOD-123 Component Package](https://blog.mbedded.ninja/pcb-design/component-packages/sod-123-component-package/)
 * [Unified Daughterboard Project](https://unified-daughterboard.github.io/#/)
 
-## Keyboards
+## Keyboard designs
 
 * [Absolem keyboard](https://github.com/mrzealot/absolem)
 * [Corne keyboard build guide](https://github.com/foostan/crkbd/blob/main/corne-cherry/doc/v3/buildguide_en.md)

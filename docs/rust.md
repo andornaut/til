@@ -209,7 +209,7 @@ ratatui = {git = "https://github.com/ratatui-org/ratatui.git", rev = "b6b2da5"}
 The [CodeLLDB extension](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb)
 should create a run/debug configuration in `.vscode/launch.json`:
 
-```json
+```jsonc
 {
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
@@ -284,7 +284,7 @@ Name | Description
 
 ## Troubleshooting
 
-```bash
+```text
 cargo build
    Compiling space_time_rewind v0.1.0 (/home/andornaut/src/github.com/andornaut/space-time-rewind)
 thread 'rustc' panicked at 'failed to lookup `SourceFile` in new context', compiler/rustc_query_impl/src/on_disk_cache.rs:514:22
