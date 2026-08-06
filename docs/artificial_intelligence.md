@@ -97,12 +97,13 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 ### Software development tools
 
 * [Aider](https://aider.chat/)
+* [Antigravity](https://antigravity.google/) by Google - Agent platform; the IDE plus [Antigravity CLI](https://antigravity.google/product/antigravity-cli)
+  * Supersedes [Gemini CLI](https://github.com/google-gemini/gemini-cli), which stopped serving consumer tiers (AI Pro/Ultra, free Code Assist) on 2026-06-18. The repo still gets releases and enterprise access is unchanged, but new work goes to Antigravity CLI - see the [transition notice](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)
 * [Augment Code](https://www.augmentcode.com/)
 * [Claude Code](https://code.claude.com/docs/en/overview)
 * [Cline](https://github.com/cline/cline)
 * [Continue](https://www.continue.dev/)
 * [./Cursor](./cursor.md)
-* [Gemini CLI](https://github.com/google-gemini/gemini-cli)
 * [GitHub Copilot for VS Code](https://code.visualstudio.com/docs/copilot/overview)
 * [goose](https://github.com/block/goose) - Open source agent from Block; CLI and desktop, any model, MCP extensions
 * [Kilo Code](https://github.com/Kilo-Org/kilocode)
