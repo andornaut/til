@@ -283,6 +283,8 @@ dconf-editor
 
 Force reboot an unresponsive system.
 
+n.b. Ubuntu ships `kernel.sysrq = 176`, which is sync (16) + remount read-only (32) + reboot (128) - so only the S, U, and B steps do anything. The R, E, and I steps need keyboard control (4) and process signalling (64), so they are silently ignored until you set `kernel.sysrq = 1` in `/etc/sysctl.d/10-magic-sysrq.conf`.
+
 ```
 ALT + SHIFT + PRINT SCR + R E I S U B
 
@@ -295,6 +297,8 @@ reBoot.
 ```
 
 ### Mount a network share in fstab
+
+n.b. `$HOSTNAME` below is a placeholder to substitute by hand - fstab is not read by a shell and does not expand variables.
 
 ```
 # /etc/fstab
@@ -345,12 +349,14 @@ timedatectl set-ntp true
 
 * [Howto](https://wiki.archlinux.org/index.php/SSD_memory_cell_clearing)
 
+n.b. The BIOS freezes drives at boot, and a frozen drive rejects both commands below. Check for `frozen` in the `hdparm -I` output; a suspend/resume cycle clears it.
+
 ```bash
-hdparm -I /dev/sdX (result: Security:not enabled)
+hdparm -I /dev/sdX          # expect: not frozen, and Security: not enabled
 hdparm --user-master u --security-set-pass PasSWorD /dev/sdX
-hdparm -I /dev/sdX (result: Security:enabled)
+hdparm -I /dev/sdX          # expect: Security: enabled
 hdparm --user-master u --security-erase PasSWorD /dev/sdX
-hdparm -I /dev/sdX (result: Security:not enabled)
+hdparm -I /dev/sdX          # expect: Security: not enabled
 ```
 
 ### Allow adm users to shutdown and reboot the system

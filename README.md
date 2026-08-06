@@ -191,7 +191,7 @@ rake
 * [Keyboards](docs/keyboards.md#keyboards)
   * [Communities](docs/keyboards.md#communities)
   * [Documentation and guides](docs/keyboards.md#documentation-and-guides)
-  * [Keyboards](docs/keyboards.md#keyboards-1)
+  * [Keyboard designs](docs/keyboards.md#keyboard-designs)
   * [Supplies](docs/keyboards.md#supplies)
   * [Tools](docs/keyboards.md#tools)
   * [Software](docs/keyboards.md#software)

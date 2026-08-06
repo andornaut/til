@@ -166,7 +166,7 @@ sudo tio /dev/ttyUSB0
 
 n.b. The PoE port provides power to the LAN2 port
 
-```bash
+```text
 # Login with the web admin username and password
 ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa wifi
 ruckus> enable
@@ -180,7 +180,7 @@ ruckus# reboot
 
 Alternatively, if in a different CLI mode, which is based on how long after rebooting this process is started:
 
-```bash
+```text
 # Login with the web admin username and password
 ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa wifi
 set power-mode at
@@ -188,7 +188,7 @@ set power-mode at
 
 ## Enable the USB port on a Ruckus R610 wireless access point
 
-```bash
+```text
 # Login with the web admin username and password
 ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa wifi
 ruckus> enable
