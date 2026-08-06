@@ -70,7 +70,7 @@ FROM
 
 ## Log all queries
 
-* [Runtime logging configuration](https://www.postgresql.org/docs/9.5/static/runtime-config-logging.html)
+* [Runtime logging configuration](https://www.postgresql.org/docs/current/runtime-config-logging.html)
 
 ```
 SET log_min_duration_statement TO 0;

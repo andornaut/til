@@ -12,12 +12,14 @@
 ### Initialize a repo
 
 ```
-git init
+git init -b main
 git add .
 git commit -m 'Initial import.'
 git remote add origin ${URL}
-git push --set-upstream origin master
+git push --set-upstream origin main
 ```
+
+n.b. `git init` names the first branch after `init.defaultBranch`, which is still `master` unless configured, so pushing a hard-coded branch name is a coin flip. `-b` settles it.
 
 ### Show commit log with branches and tags
 

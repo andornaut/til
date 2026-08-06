@@ -57,8 +57,10 @@ alias til="code --new-window ${HOME}/src/github.com/andornaut/til"
 # Enable key repeating
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
-# Reset to default
-defaults delete -g ApplePressAndHoldEnabled
+# Reset to default. n.b. this has to name the same domain that was written;
+# `defaults delete -g ApplePressAndHoldEnabled` clears the global key and
+# leaves the per-app one in place
+defaults delete com.microsoft.VSCode ApplePressAndHoldEnabled
 
 # Enable key repeating on Cursor (VS Code fork)
 defaults write com.todesktop.230313mzl4w4u92 ApplePressAndHoldEnabled -bool false
