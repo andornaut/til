@@ -143,6 +143,23 @@ git tag -d v0.0.1
 git push origin :refs/tags/v0.0.1
 ```
 
+### Recover a lost commit or branch
+
+`git reflog` records everywhere HEAD has been, so commits orphaned by a reset, a rebase, or a deleted
+branch are still reachable until they are garbage collected.
+
+```
+git reflog
+
+# Point a new branch at the commit you found
+git branch ${recovered} ${sha}
+
+# The reflog of one branch, rather than of HEAD
+git reflog show ${branch}
+```
+
+n.b. `git gc --prune=now` (above) discards them, so don't run it while you're still looking.
+
 ### Undo commits
 
 * [How-to](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/)

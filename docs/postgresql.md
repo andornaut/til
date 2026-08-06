@@ -1,5 +1,39 @@
 # PostgreSQL
 
+## psql
+
+```
+psql -h ${host} -U ${user} -d ${database}
+```
+
+Meta-command | Description
+--- | ---
+`\l` | List databases
+`\c ${database}` | Connect to another database
+`\dt` | List tables
+`\d ${table}` | Describe a table, including its indexes and constraints
+`\du` | List roles
+`\dn` | List schemas
+`\x` | Toggle expanded output, which prints one column per line
+`\timing` | Toggle query timing
+`\e` | Edit the current query in $EDITOR
+`\?` | List meta-commands
+`\q` | Quit
+
+## Show database and relation sizes
+
+```
+SELECT datname, pg_size_pretty(pg_database_size(datname)) AS size
+FROM pg_database
+ORDER BY pg_database_size(datname) DESC;
+
+-- Largest relations in the current database, including indexes
+SELECT relname, pg_size_pretty(pg_total_relation_size(relid)) AS size
+FROM pg_catalog.pg_statio_user_tables
+ORDER BY pg_total_relation_size(relid) DESC
+LIMIT 20;
+```
+
 ## Diff schemas
 
 Use [apgdiff](http://apgdiff.com).

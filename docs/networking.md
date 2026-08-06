@@ -24,6 +24,24 @@ $ sudo systemctl restart NetworkManager
 ( nmcli dev list || nmcli dev show ) 2>/dev/null | grep DNS
 ```
 
+## Query DNS
+
+```
+# Ask the system resolver
+dig +short example.com
+
+# Ask a specific nameserver, for a specific record type
+dig @1.1.1.1 example.com MX
+
+# Follow the delegation from the root nameservers down, which bypasses caches
+dig +trace example.com
+
+# Reverse lookup
+dig -x 192.0.2.1
+```
+
+n.b. `dig` talks to the nameserver directly, so it ignores `/etc/hosts` and nsswitch; use `getent hosts ${name}` to resolve the way an application would.
+
 ## Show processes listening or connecting to the network
 
 * [Find out what processes are making network connections](https://shallowsky.com/blog/linux/monitor-net-connections.html)

@@ -14,6 +14,26 @@
 # Reload unit files
 systemctl daemon-reload
 
+# Show status, including the last few log lines
+systemctl status $service
+
+systemctl start $service
+systemctl stop $service
+systemctl restart $service
+
+# Re-read the service's own config without restarting it, if the unit supports it
+systemctl reload $service
+
+# Show the effective unit file, including any overrides
+systemctl cat $service
+
+# Show every property of a unit, which is more than `status` prints
+systemctl show $service
+
+# Scriptable checks
+systemctl is-enabled $service
+systemctl is-active $service
+
 # Start service on boot
 systemctl enable $service
 

@@ -27,3 +27,20 @@ mount /dev/mapper/${vol_name} /media/${vol_name}
 domain=example.com
 openssl req -new -newkey rsa:2048 -nodes -keyout ${domain}.key -out ${domain}.csr
 ```
+
+## Inspect a CSR or certificate
+```
+openssl req -in ${domain}.csr -noout -text
+openssl x509 -in ${domain}.crt -noout -text
+
+# Just the validity dates and the subject alternative names
+openssl x509 -in ${domain}.crt -noout -dates -ext subjectAltName
+
+# Confirm that a key and a certificate belong together: the two digests must match
+openssl rsa -in ${domain}.key -noout -modulus | openssl sha256
+openssl x509 -in ${domain}.crt -noout -modulus | openssl sha256
+
+# Inspect the certificate that a server actually presents
+openssl s_client -connect ${domain}:443 -servername ${domain} </dev/null \
+  | openssl x509 -noout -subject -issuer -dates
+```
