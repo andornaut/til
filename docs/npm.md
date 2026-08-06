@@ -13,6 +13,21 @@ nvm alias default stable
 nvm use default
 ```
 
+## Installing and auditing
+
+```
+# Install exactly what package-lock.json specifies, erroring if it disagrees with
+# package.json. Unlike `npm install`, it never writes the lockfile, which is what you want in CI.
+npm ci
+
+npm outdated
+npm audit
+npm audit fix
+
+# Explain why a package is installed, by printing the paths that depend on it
+npm ls ${package}
+```
+
 ## Linking
 
 * [npm config - prefix](https://docs.npmjs.com/misc/config#prefix)

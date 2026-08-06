@@ -8,6 +8,20 @@
 * [The Shellcoder's Handbook - Discovering and Exploiting Security Holes](https://www.oreilly.com/library/view/the-shellcoders-handbook/9780470080238/)
 * [Unix Power Tools](https://www.oreilly.com/library/view/unix-power-tools/0596003307/)
 
+## Strict mode
+
+```
+set -euo pipefail
+```
+
+> ``-e`` exit as soon as a command fails, rather than carrying on with the rest of the script
+
+> ``-u`` treat the expansion of an unset variable as an error
+
+> ``-o pipefail`` a pipeline's status is that of the last command to fail, not that of the last command; without it ``false | true`` succeeds
+
+n.b. ``-e`` is not applied to a command whose status is already being tested, so ``if ! foo; then`` and ``foo || handle`` still work as written.
+
 ## Command combination operator
 
 ```

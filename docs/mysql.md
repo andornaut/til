@@ -1,5 +1,25 @@
 # MySQL
 
+## Connect and explore
+
+```
+mysql -h ${host} -u ${user} -p ${database}
+```
+
+```
+SHOW DATABASES;
+USE ${database};
+SHOW TABLES;
+DESCRIBE ${table};
+
+-- Running queries, and the variables/status of the server
+SHOW FULL PROCESSLIST;
+SHOW VARIABLES LIKE 'max_connections';
+SHOW ENGINE INNODB STATUS\G
+```
+
+n.b. Ending a statement with `\G` prints one column per line, which is easier to read than a wide table.
+
 ## Show table constraints
 
 * [StackOverflow](https://stackoverflow.com/a/12095312)

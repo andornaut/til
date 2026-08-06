@@ -19,3 +19,25 @@ action:
 > ``@:`` is a no-op recipe
 
 n.b. Recipe lines must be indented with a TAB, not spaces
+
+## Useful flags
+
+```
+# Print the recipes without running them
+make -n ${target}
+
+# Run independent recipes in parallel
+make -j$(nproc)
+
+# Print make's internal database - every variable, rule and implicit rule - without building
+make -p -n
+```
+
+## .PHONY
+
+```
+.PHONY: build test clean
+```
+
+> A target that isn't a file must be declared ``.PHONY``, otherwise make treats a file of the same
+> name as the target's output and skips the recipe as "up to date"
