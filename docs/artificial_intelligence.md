@@ -41,7 +41,7 @@ Model documentation, which is the only authoritative source for context windows,
 * [Fireworks AI](https://fireworks.ai/)
 * [Groq](https://groq.com/)
 * [Hugging Face](https://huggingface.co/)
-* [Hyperbolic](https://hyperbolic.xyz/)
+* [Hyperbolic](https://www.hyperbolic.ai/)
 * [OpenRouter](https://openrouter.ai/)
 * [Scaleway](https://www.scaleway.com/)
 * [Together AI](https://www.together.ai/)
@@ -51,9 +51,8 @@ Model documentation, which is the only authoritative source for context windows,
 * [ansible-role-homeassistantfrigate #llm](https://github.com/andornaut/ansible-ctrl/tree/master/roles/homeassistant-frigate#llm)
 * [ansible-role-homeassistantfrigate #voice-assistant](https://github.com/andornaut/ansible-ctrl/tree/master/roles/homeassistant-frigate#voice-assistant)
 * [Claude Code](https://github.com/anthropics/claude-code)
-  * [claude-code-router](https://github.com/musistudio/claude-code-router) - Use OpenRouter
+  * [claude-code-router](https://github.com/musistudio/claude-code-router) - Local control plane that routes an agent across models and providers
   * [free-claude-code](https://github.com/Alishahryar1/free-claude-code) - Proxy that converts Claude Code's API requests to NVIDIA NIM or OpenRouter format
-* [Codex](https://developers.openai.com/codex) by OpenAI
 * [Keras](https://keras.io/)
 * [LibreChat](https://www.librechat.ai/)
 * [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
@@ -61,7 +60,6 @@ Model documentation, which is the only authoritative source for context windows,
   * [Registry](https://registry.modelcontextprotocol.io/)
   * [Servers](https://github.com/modelcontextprotocol/servers)
 * [OpenClaw](https://openclaw.ai/)
-* [OpenCode](https://opencode.ai/)
 * [Open WebUI](https://openwebui.com/)
 * [Speaches](https://speaches.ai/) - An OpenAI API-compatible server supporting streaming transcription, translation, and speech generation
 * [TensorFlow](https://www.tensorflow.org/)
@@ -99,19 +97,19 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 * [Aider](https://aider.chat/)
 * [Antigravity](https://antigravity.google/) by Google - Agent platform; the IDE plus [Antigravity CLI](https://antigravity.google/product/antigravity-cli)
   * Supersedes [Gemini CLI](https://github.com/google-gemini/gemini-cli), which stopped serving consumer tiers (AI Pro/Ultra, free Code Assist) on 2026-06-18. The repo still gets releases and enterprise access is unchanged, but new work goes to Antigravity CLI - see the [transition notice](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)
-* [Augment Code](https://www.augmentcode.com/)
+* [Augment Code](https://www.augmentcode.com/) - Pivoted to multi-agent orchestration; inline completions and the individual plans were retired in 2026
 * [Claude Code](https://code.claude.com/docs/en/overview)
 * [Cline](https://github.com/cline/cline)
-* [Continue](https://www.continue.dev/)
+* [Continue](https://www.continue.dev/) - n.b. Active development ended with 2.0 in 2026-06; the project's focus moved to running agents in CI
 * [./Cursor](./cursor.md)
+* [Devin Desktop](https://devin.ai/desktop) by Cognition - The former Windsurf Editor, rebranded 2026-06-02; windsurf.com now redirects to devin.ai. Cascade was replaced by Devin Local on 2026-07-01
 * [GitHub Copilot for VS Code](https://code.visualstudio.com/docs/copilot/overview)
 * [goose](https://github.com/block/goose) - Open source agent from Block; CLI and desktop, any model, MCP extensions
 * [Kilo Code](https://github.com/Kilo-Org/kilocode)
-* [OpenAI Codex CLI](https://github.com/openai/codex)
-* [Roo Code](https://github.com/RooVetGit/Roo-Code)
-  * [Community Projects](https://docs.roocode.com/community)
-* [Windsurf Editor](https://windsurf.com/editor)
+* [OpenAI Codex](https://developers.openai.com/codex) - [Codex CLI](https://github.com/openai/codex)
+* [OpenCode](https://opencode.ai/) - Terminal agent from the SST team; any of 75+ providers
 * [Zed](https://zed.dev/)
+* [Zoo Code](https://github.com/Zoo-Code-Org/Zoo-Code) - Community fork of Roo Code, which shut down on 2026-05-15 (its repo is archived and the extension is gone; the farewell notice points here and to Cline)
 
 ## Articles and blogs
 * [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) - Start with the simplest thing that works; most "agent" problems are a workflow
