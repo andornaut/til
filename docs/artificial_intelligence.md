@@ -41,9 +41,7 @@ Model documentation, which is the only authoritative source for context windows,
 * [Fireworks AI](https://fireworks.ai/)
 * [Groq](https://groq.com/)
 * [Hugging Face](https://huggingface.co/)
-* [Hyperbolic](https://www.hyperbolic.ai/)
 * [OpenRouter](https://openrouter.ai/)
-* [Scaleway](https://www.scaleway.com/)
 * [Together AI](https://www.together.ai/)
 
 ## Software
@@ -87,36 +85,29 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 
 ### Evaluation and observability
 
-* [Braintrust](https://www.braintrust.dev/)
 * [Inspect](https://inspect.aisi.org.uk/) - Evaluation framework from the UK AI Security Institute
 * [Langfuse](https://langfuse.com/) - Tracing, prompt management, and evaluation
 * [promptfoo](https://www.promptfoo.dev/) - Prompt testing and red-teaming from the command line
 
 ### Software development tools
 
-* [Aider](https://aider.chat/)
-* [Antigravity](https://antigravity.google/) by Google - Agent platform; the IDE plus [Antigravity CLI](https://antigravity.google/product/antigravity-cli)
-  * Supersedes [Gemini CLI](https://github.com/google-gemini/gemini-cli), which stopped serving consumer tiers (AI Pro/Ultra, free Code Assist) on 2026-06-18. The repo still gets releases and enterprise access is unchanged, but new work goes to Antigravity CLI - see the [transition notice](https://developers.googleblog.com/an-important-update-transitioning-gemini-cli-to-antigravity-cli/)
-* [Augment Code](https://www.augmentcode.com/) - Pivoted to multi-agent orchestration; inline completions and the individual plans were retired in 2026
+* [Aider](https://aider.chat/) - Terminal pair programming against the git repo; model-agnostic, auto-commits
+* [Antigravity](https://antigravity.google/) by Google - Agent platform; the IDE plus [Antigravity CLI](https://antigravity.google/product/antigravity-cli). Replaced Gemini CLI in 2026-06
 * [Claude Code](https://code.claude.com/docs/en/overview)
-* [Cline](https://github.com/cline/cline)
-* [Continue](https://www.continue.dev/) - n.b. Active development ended with 2.0 in 2026-06; the project's focus moved to running agents in CI
+* [Cline](https://github.com/cline/cline) - VS Code agent with per-action approval; broad model support
 * [./Cursor](./cursor.md)
-* [Devin Desktop](https://devin.ai/desktop) by Cognition - The former Windsurf Editor, rebranded 2026-06-02; windsurf.com now redirects to devin.ai. Cascade was replaced by Devin Local on 2026-07-01
+* [Devin Desktop](https://devin.ai/desktop) by Cognition - The former Windsurf Editor, rebranded 2026-06-02; windsurf.com now redirects to devin.ai
 * [GitHub Copilot for VS Code](https://code.visualstudio.com/docs/copilot/overview)
 * [goose](https://github.com/block/goose) - Open source agent from Block; CLI and desktop, any model, MCP extensions
-* [Kilo Code](https://github.com/Kilo-Org/kilocode)
+* [Kilo Code](https://github.com/Kilo-Org/kilocode) - Agent that runs in VS Code, JetBrains, and the CLI; 500+ models at provider pricing
 * [OpenAI Codex](https://developers.openai.com/codex) - [Codex CLI](https://github.com/openai/codex)
 * [OpenCode](https://opencode.ai/) - Terminal agent from the SST team; any of 75+ providers
 * [Zed](https://zed.dev/)
-* [Zoo Code](https://github.com/Zoo-Code-Org/Zoo-Code) - Community fork of Roo Code, which shut down on 2026-05-15 (its repo is archived and the extension is gone; the farewell notice points here and to Cline)
 
 ## Articles and blogs
 * [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) - Start with the simplest thing that works; most "agent" problems are a workflow
 * [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices)
 * [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
-* [Gemini - Prompting guide 101](https://services.google.com/fh/files/misc/gemini-for-google-workspace-prompting-guide-101.pdf)
-* [GPT 4.1 Prompting Guide](https://cookbook.openai.com/examples/gpt4-1_prompting_guide) - Written for GPT-4.1; the model-specific parts have dated, the structure hasn't
 * [Simon Willison’s Weblog](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
 * [Stephen Wolfram - What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
 
