@@ -14,7 +14,7 @@ Application | Description
 [flameshot](https://github.com/flameshot-org/flameshot/)|Screenshot capture
 [gnome-disks](https://gitlab.gnome.org/GNOME/gnome-disk-utility)|Tool to manage storage devices
 [heroic](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher)|[Epic Games Store](https://www.epicgames.com) launcher
-[itch](https://itch.io/app)|[itch.io](https://itch.io)|Game launcher
+[itch](https://itch.io/app)|[itch.io](https://itch.io) game launcher
 [LACT](https://github.com/ilya-zlobintsev/LACT)|Linux GPU Configuration Tool
 [lutris](https://lutris.net/)|Wine, Steam, etc game launcher
 [Mission Center](https://missioncenter.io/)|Monitor your CPU, Memory, Disk, Network and GPU usage
@@ -131,7 +131,7 @@ xdg-mime query default application/pdf
 
 # List all applications
 find /usr/share/applications/ \
-  /usr/share/applications/ \
+ ~/.local/share/applications/ \
  ~/.local/share/flatpak/exports/share/applications/ \
  /var/lib/flatpak/exports/share/applications/ \
  -iname '*.desktop' \
@@ -277,7 +277,7 @@ Mount a subdirectory of a share as a non-root user
 
 ```
 # /etc/fstab
-# vers=1.0 is necessary for Samba to support Unix extnsions:
+# vers=1.0 is necessary for Samba to support Unix extensions:
 # https://askubuntu.com/a/995142
 //$HOSTNAME/homes/src /home/andornaut/src cifs vers=1.0,user,uid=andornaut,gid=andornaut,credentials=/home/andornaut/.smb_credentials_on_$HOSTNAME,nofail 0 0
 ```
@@ -299,7 +299,7 @@ $ echo '
 fs.file-max = 100000
 fs.inotify.max_user_watches = 524288' | sudo tee -a /etc/sysctl.conf
 
-$ sudo sysctl -pf
+$ sudo sysctl -p
 ```
 
 ### Temporarily change the date/time using timedatectl
@@ -474,7 +474,7 @@ apt purge \
   linux-modules-extra-${version}*
 ```
 
-### Install kernel module (driver) for Realtek r8125 2.5G enternet
+### Install kernel module (driver) for Realtek r8125 2.5G ethernet
 
 * [Realtek PCIe FE / GBE / 2.5G / 5G Ethernet Family Controller Software](https://www.realtek.com/Download/List?cate_id=584)
 * [x870 ethernet/bluetooth drivers](https://www.reddit.com/r/linux4noobs/comments/1g6wyzb/x870_ethernetbluetooth_drivers/)
@@ -517,7 +517,7 @@ sudo apt install amdgpu-dkms rocm
 # Uninstall
 amdgpu-install --uninstall
 
-# Reinstal
+# Reinstall
 amdgpu-install
 ```
 
@@ -531,11 +531,11 @@ amdgpu-install
 efiPartition=/dev/nvme0n1p1
 rootPartition=/dev/nvme0n1p2
 mount ${rootPartition} /mnt \
-  mount --bind /dev /mnt/dev \
-  mount --bind /proc /mnt/proc \
-  mount --bind /sys /mnt/sys \
-  mount ${efiPartition} /boot/efi
-  chroot /mnt
+  && mount --bind /dev /mnt/dev \
+  && mount --bind /proc /mnt/proc \
+  && mount --bind /sys /mnt/sys \
+  && mount ${efiPartition} /mnt/boot/efi
+chroot /mnt
 
 # To generate initrd for the running kernel set `kernelVersion=$(uname -r)`
 kernelVersion=6.13.4-061304-generic

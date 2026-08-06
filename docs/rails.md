@@ -24,22 +24,22 @@ $ rails test --verbose test/test_pr.rb
 
 # Run a test script in Rails.env='development' instead of 'test'
 $ cat <<-EOF > test.rb
-class TestFoo < MiniTest::Test
+class TestFoo < Minitest::Test
   def test_bar
     assert false
   end
 end
-MiniTest.autorun
+Minitest.autorun
 EOF
 $ rails runner test.rb
 
 # Run a test from stdin in Rails.env='development' instead of 'test'
 $ cat <<-EOF | rails runner -
-class TestFoo < MiniTest::Test
+class TestFoo < Minitest::Test
   def test_bar
     assert false
   end
 end
-MiniTest.autorun
+Minitest.autorun
 EOF
 ```

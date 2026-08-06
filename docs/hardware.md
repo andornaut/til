@@ -62,7 +62,7 @@ SYMLINK=="dell-ultrasharp-webcam", ACTION=="add", RUN+="/usr/bin/v4l2-ctl -d /de
 EOF
 
 # Razer Kiyo
-sudo bash -c 'cat > /etc/udev/rules.d/99-dell-ultrasharp-webcam.rules' <<-EOF
+sudo bash -c 'cat > /etc/udev/rules.d/99-razer-kiyo-webcam.rules' <<-EOF
 KERNEL=="video[0-9]*", SUBSYSTEM=="video4linux", SUBSYSTEMS=="usb", ATTRS{idVendor}=="1532", ATTRS{idProduct}=="0e03", ATTR{index}=="0", SYMLINK+="razer-kiyo-webcam"
 SYMLINK=="razer-kiyo-webcam", ACTION=="add", RUN+="/usr/bin/v4l2-ctl -d /dev/razer-kiyo-webcam --set-ctrl backlight_compensation=1"
 SYMLINK=="razer-kiyo-webcam", ACTION=="add", RUN+="/usr/bin/v4l2-ctl -d /dev/razer-kiyo-webcam --set-ctrl zoom_absolute=100"

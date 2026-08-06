@@ -86,7 +86,7 @@ ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa wifi
 ruckus> enable
 ruckus# config
 ruckus(config)# ap <mac-address>
-ruckus(config-ap)# power-mode 802.3atend
+ruckus(config-ap)# power-mode 802.3at
 ruckus(config-ap)# end
 ruckus(config)# end
 ruckus# reboot
@@ -100,7 +100,7 @@ ssh -o HostKeyAlgorithms=+ssh-rsa -o PubkeyAcceptedAlgorithms=+ssh-rsa wifi
 set power-mode at
 ```
 
-## Enable PoE 802.3at on a Ruckus R610 wireless access point
+## Enable the USB port on a Ruckus R610 wireless access point
 
 ```bash
 # Login with the web admin username and password

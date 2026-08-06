@@ -6,7 +6,7 @@ Use [apgdiff](http://apgdiff.com).
 
 ## Query user password hash
 
-- [Docs](www.postgresql.org/docs/9.3/static/sql-alterrole.html)
+- [Docs](https://www.postgresql.org/docs/current/sql-alterrole.html)
 
 ```
 SELECT * FROM pg_catalog.pg_shadow;
@@ -43,7 +43,7 @@ SET log_min_duration_statement TO 0;
 SET log_statement TO 'all';
 ```
 
-Excerpt from a example docker-compose.yml:
+Excerpt from an example docker-compose.yml:
 
 ```
 command:

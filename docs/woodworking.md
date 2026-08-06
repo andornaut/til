@@ -18,7 +18,7 @@
 
 * Linear foot: The length of a given board
 * Board foot: Thickness * Width * Length. Measure in inches, then divide by 144 (144 inches³ = 1 board foot).
-* MBF: 1000(mili)-board-feet
+* MBF: 1000 board feet ("M" is the Roman numeral for 1000, not "milli")
 
 Lumber sold by linear foot is usually more expensive than lumber sold by board foot.
 
@@ -27,5 +27,5 @@ Lumber sold by linear foot is usually more expensive than lumber sold by board f
 * 2-by-4 is actually 1½" thick by 3½" wide
 * 2-by-8 is actually 1½" thick by 7¼" wide
 
-The length measurement is the always the same.
+The length measurement is always the same.
 

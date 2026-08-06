@@ -4,7 +4,7 @@
 * [Tips and tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
 * [./Cursor](./cursor.md)
 
-## Keyboard/ shortcuts
+## Keyboard shortcuts
 
 * [Keybinding docs](https://code.visualstudio.com/docs/getstarted/keybindings)
 * Keyboard shortcuts for [linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) or [macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
@@ -14,8 +14,8 @@ Linux|macOS|Description
 Ctrl+p|⌘p|Quick Open, Go to File
 Ctrl+Shift+p|⌘⇧P|Show Command Palette
 ⌃`|⌃`|Show integrated terminal
-|Ctrl+k Ctrl+c|⌘k ⌘c|Add line comment (cord shortcuts)
-|Ctrl+k Ctrl+u|⌘k ⌘u|Remove line comment (cord shortcuts)
+Ctrl+k Ctrl+c|⌘k ⌘c|Add line comment (chord shortcuts)
+Ctrl+k Ctrl+u|⌘k ⌘u|Remove line comment (chord shortcuts)
 ||⌥⇧A|Toggle block comment
 ||⌘⇧O|Go to Symbol
 ||⌘⇧E|Show Explorer / Toggle focus
@@ -26,7 +26,7 @@ Ctrl+Shift+Y||Show debug console
 Ctrl+Shift+L|⌘⇧L|Select all occurrences of the current selection
 F9|F9|Toggle breakpoint
 F5|F5|Start/Continue
-F1|F1|Step into
+F11|F11|Step into
 Shift+F11|⇧F11|Step out
 F10|F10|Step over
 Shift+F5|⇧F5|Stop
@@ -39,7 +39,7 @@ Shift+F5|⇧F5|Stop
 1. Open the Command Palette (⇧⌘P)
 1. Type 'shell command' and then select: Shell Command: Install 'code' command in PATH
 
-This will install an script in `/usr/local/bin/code` that can be used to open Code.
+This will install a script in `/usr/local/bin/code` that can be used to open Code.
 
 You can then create handy aliases, such as:
 
@@ -93,7 +93,7 @@ Name | Description
 [Remote Explorer](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-explorer) | View remote machines for SSH and Tunnels
 [Remote Repositories](https://marketplace.visualstudio.com/items?itemName=ms-vscode.remote-repositories) | Remotely browse and edit git repositories
 [TOML Language Support](https://marketplace.visualstudio.com/items?itemName=be5invis.toml) | TOML language support
-[Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces) | https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces
+[Trailing Spaces](https://marketplace.visualstudio.com/items?itemName=shardulm94.trailing-spaces) | Highlight trailing spaces and delete them in a flash
 [vim](https://marketplace.visualstudio.com/items?itemName=vscodevim.vim) | Vim emulation for Visual Studio Code
 [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) | YAML Language Support by Red Hat, with built-in Kubernetes syntax support
 

@@ -10,7 +10,10 @@
 
 ## Vendor
 
+n.b. Superseded by [Go modules](https://go.dev/ref/mod#vendoring) (`go mod vendor`); `govendor` is archived.
+
 [FAQ](https://github.com/kardianos/govendor/blob/master/doc/faq.md)
 ```
 # Install globally
 $ go get -u github.com/kardianos/govendor
+```

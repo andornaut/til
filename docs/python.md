@@ -50,12 +50,12 @@ Name | Description
 [Black Formatter for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) | Support the [black formatter](https://github.com/psf/black) (use [ruff](https://github.com/astral-sh/ruff) instead)
 [Flake8 for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8) | Support for the [flake8 linter](https://github.com/pycqa/flake8/) (use [ruff](https://github.com/astral-sh/ruff) instead)
 [Pipenv](https://pipenv.pypa.io/en/latest/) | Dev workflows for humans (use [Poetry](https://python-poetry.org/) instead)
-[Pipx](https://pipx.pypa.io/)
+[Pipx](https://pipx.pypa.io/) | Install and run Python applications in isolated environments
 [Poe](https://github.com/nat-n/poethepoet) | A task runner that works well with poetry
 [Poetry](https://python-poetry.org/) | Python packaging and dependency management made easy
 [pre-commit](https://github.com/pre-commit/pre-commit) | A framework for managing multi-language pre-commit hooks
 [Python for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.python) | Support intelliSense, linting, debugging, code navigation, code formatting, etc
-[ruff](https://github.com/astral-sh/ruff)
+[ruff](https://github.com/astral-sh/ruff) | An extremely fast Python linter and formatter
 
 ## How-tos
 
@@ -81,14 +81,12 @@ poetry config pypi-token.pypi ${token}
 
 ### Develop a non-redistributable (no setup.py) local package using Pipenv
 
-
 Add an `.env` file to the project root:
 ```
 PYTHONPATH=.
 ```
-Pipenv and 
 
-Add a `pytest.ini` file to the project root:
+Pipenv and VS Code read `.env`, but pytest does not, so also add a `pytest.ini` file to the project root:
 ```
 [pytest]
 pythonpath = .
@@ -123,5 +121,5 @@ This only occurs when starting VS Code from a terminal that already has an activ
 1. CTRL+Shift+P
 1. Select "Python: Select Interpreter"
 1. Select the correct interpreter
-1. Open "Text Explorer"
+1. Open "Test Explorer"
 

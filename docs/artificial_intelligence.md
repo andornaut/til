@@ -8,7 +8,7 @@
 * [Gemini](https://gemini.google.com/)
   * [Google AI studio](https://aistudio.google.com/prompts/new_chat)
 * [Le Chat](https://chat.mistral.ai/chat)
-* [Perpexity](https://www.perplexity.ai/)
+* [Perplexity](https://www.perplexity.ai/)
 
 ## Platforms
 
@@ -35,10 +35,10 @@
 * [OpenCode](https://opencode.ai/)
 * [Open WebUI](https://openwebui.com/)
 * [Speaches](https://speaches.ai/) - An OpenAI API-compatible server supporting streaming transcription, translation, and speech generation
-* [Whisper](https://openai.com/index/whisper/)
-    * [awesome-whisper](https://github.com/sindresorhus/awesome-whisper) - A list of whisper software
-    * [superwhisper](https://superwhisper.com/) - Voice dictation on macOS
 * [TensorFlow](https://www.tensorflow.org/)
+* [Whisper](https://openai.com/index/whisper/)
+  * [awesome-whisper](https://github.com/sindresorhus/awesome-whisper) - A list of whisper software
+  * [superwhisper](https://superwhisper.com/) - Voice dictation on macOS
 
 ### Software development tools
 

@@ -8,7 +8,7 @@ Show indexes and constraints:
 
 ```SHOW CREATE TABLE $table_name;```
 
-Show contraints only:
+Show constraints only:
 
 ```
 USE INFORMATION_SCHEMA;
@@ -19,6 +19,6 @@ SELECT TABLE_NAME,
        REFERENCED_COLUMN_NAME
 FROM KEY_COLUMN_USAGE
 WHERE TABLE_SCHEMA = "$database_name"
-      AND TABLE_NAME = "$table_name";
+      AND TABLE_NAME = "$table_name"
       AND REFERENCED_COLUMN_NAME IS NOT NULL;
 ```

@@ -38,7 +38,6 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 * [Colibri FPV](https://www.youtube.com/@colibrifpv)
 * [FlowState: The FPV Drone Documentary](https://www.youtube.com/watch?v=UoMWFrqOmQo)
 * [How to Bind, Activate & Update Your DJI O4 Air Unit](https://www.youtube.com/watch?v=H6zOYMqRI6E)
-* [TX15 Setup, ELRS Bind & Betaflight Arming Guide](https://www.youtube.com/watch?v=4QUMUIjeuLo)
 * [Joshua Bardwell](https://www.youtube.com/@JoshuaBardwell)
   * [Betaflight 4.3 Complete Walkthrough](https://www.youtube.com/playlist?list=PLwoDb7WF6c8nT4jjsE4VENEmwu9x8zDiE)
   * [EdgeTX 101 Complete Beginner Guide](https://www.youtube.com/playlist?list=PLwoDb7WF6c8lhlzE6_iA2X50bk3pIYcbb)
@@ -83,7 +82,7 @@ SW4 | 8 | Camera control 1
 SW5 | 9 | Camera control 2
 SW6 | 10 | Camera control 3
 
-#### Flight Modes
+### Flight Modes
 
 Switch | Mode | How it flies | Stick behavior
 --- | --- | --- | ---
@@ -114,7 +113,7 @@ SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
 
 1. Navigate to the "Motors" tab in Betaflight
 1. n.b. Take off the props to prevent the drone from moving
-1. Plug in a battery and use the "Master" slider to spin the motors up until all four motors are spinning stable and consistently - this defines the minimum value for "Dynamic Idle Value", but to find the idle value consult [this guide on tuning Dynamic Idle Value](https://oscarliang.com/how-to-enable-and-configure-betaflight-dynamic-idle/
+1. Plug in a battery and use the "Master" slider to spin the motors up until all four motors are spinning stable and consistently - this defines the minimum value for "Dynamic Idle Value", but to find the idle value consult [this guide on tuning Dynamic Idle Value](https://oscarliang.com/how-to-enable-and-configure-betaflight-dynamic-idle/)
    * On a Pavo Pico II, this _minimum_ RPM is about 2000
 1. Divide the RPM number by 100
 1. Navigate to the "PID Tuning" tab and set the value above (e.g. "80") as the "Dynamic Idle Value"
@@ -139,7 +138,7 @@ n.b. Flashing a firmware will reset all Betaflight configuration, so save a back
    * On the Pavo Pico II, the boot button is on the side of the Flight Controller PCB that doesn't have any LEDs / on the same side as the USB port adapter; it's a tiny button on the far side of the PCB away from the USB port adapter.
    * When in DFU mode, the port dropdown in the top-right of Betaflight (shown when the USB cable is plugged in, but Betaflight is disconnected) should display "DFU - STM32 BOOTLOADER" instead of e.g. `/dev/ttyACM0`.
 1. Click "Update Firmware" on the top-right of Betaflight
-1. Navigate to the to the "Firmware Flasher" section
+1. Navigate to the "Firmware Flasher" section
 1. Select a board, e.g. BETAFPVF405
    * While in normal mode, you can also click "Auto-detect" to populate this dropdown
 1. Select the version to flash, e.g. "4.5.3 [23-Nov-2025]"
@@ -181,7 +180,7 @@ In this state, you can flash new firmware, but you cannot configure the drone.
 
 #### Bind RadioMaster TX15 Radio Controller to ExpressLRS receiver
 
-n.b. If the green light on the flight controller is flashing, then that means the RC isn't connected to the receiver. If it's flashing then the RC is connected to the receiver.
+n.b. If the green light on the flight controller is flashing, then that means the RC isn't connected to the receiver. If it's solid, then the RC is connected to the receiver.
 
 1. Connect a USB cable from your computer to the flight controller. The green light on the Express LRS receiver should be flashing.
 2. Unplug and plug it in 3 times in quick succession. The green light on the Express LRS receiver should be solid.
@@ -192,12 +191,9 @@ n.b. If the green light on the flight controller is flashing, then that means th
 #### Configure S1 and S2 encoders on RadioMaster TX15 Radio Controller
 
 1. Press "SYS" on the RC
-1. Press "PAGE>" to navigate to th Global functions section
+1. Press "PAGE>" to navigate to the Global functions section
 1. Set GF1 to Backlight on S1
 1. Set GF2 to Volume on S2
-
-
-Take that RPM number, divide by 100, and enter that as your Dynamic Idle Value.
 
 #### Configure ExpressLRS transmission settings on a RadioMaster TX15 Radio Controller
 
@@ -227,10 +223,10 @@ If you need more than 12 channels, then set Switch Mode: 16ch Rate/2, which enab
 1. Enter your Binding Phrase (Mandatory for easy pairing with your Pavo Pico II) and your Regulatory Domain (e.g., ISM_2400).
 1. Click Build & Flash
 
-### Bind DJI Googles 3 to Pavo Pico II
+### Bind DJI Goggles 3 to Pavo Pico II
 
 1. Connect a LiPo battery to the Pavo Pico II
-1. Turn on the DJI Googles 3 (do the same to turn off the goggles):
+1. Turn on the DJI Goggles 3 (do the same to turn off the goggles):
    1. Short Press: Press the power button once quickly and let go. The green LED lights will light up to show you your current battery level.
    1. Long Press: Immediately press the power button a second time, but this time hold it down for about 2 to 3 seconds.
       * Listen for the Chime: You will hear an ascending startup chime, and the screens inside the goggles will light up. You can let go of the button as soon as you hear the chime.
@@ -239,4 +235,4 @@ If you need more than 12 channels, then set Switch Mode: 16ch Rate/2, which enab
 1. Put the Goggles into Bind Mode by holding the power button down for about 4 to 5 seconds 
    * The goggles start to beep continuously, which means they are searching for the drone.
 1. Put the Drone into Bind Mode by pressing the tiny physical button next to the status LED. Hold the button until the status LED on the Air Unit starts flashing.
-   * The goggles will stop beeping when the connection is successful5
+   * The goggles will stop beeping when the connection is successful

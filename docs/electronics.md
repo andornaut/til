@@ -20,10 +20,10 @@
 * [Hakko 20G suction desoldering tool](https://www.amazon.ca/Simple-solder-suction-device-Hakko/dp/B001D7IGX2)
 * [IRWIN VISE-GRIP Wire Stripper](https://www.amazon.ca/dp/B000OQ21CA/)
 * [Miniware ES15 Motion Control Electric Screwdriver](https://www.miniware.com.cn/product/es15-motion-control-electric-screwdriver/)
-  * Flashing the firmware fails in Linux, but work in macOS
-  * The firmware flashing intructions in the manual omit one step: While holding down the "SET" button, connect a USB-C cable, then press the "Run" button, then mount the "\*\_DFU" filesystem and copy over the \*.hex file to the
+  * Flashing the firmware fails in Linux, but works in macOS
+  * The firmware flashing instructions in the manual omit one step: While holding down the "SET" button, connect a USB-C cable, then press the "Run" button, then mount the "\*\_DFU" filesystem and copy over the \*.hex file to it
 * [Miniware TS101 Soldering Iron](https://www.miniware.com.cn/product/ts101-smart-soldering-iron/)
-  * Flashing the firmware fails in Linux, but work in macOS
+  * Flashing the firmware fails in Linux, but works in macOS
   * [Soldering Tips SET compatible with TS100 & TS101](https://cnckitchen.store/products/ts100-101-adapter-tips-set-m2-x-m3-m4-m5-m6-1-4-m8-100-lead-and-cadmium-free)
 * [NEWACALOX 30W Soldering Fan Smoke Absorber](https://www.aliexpress.com/item/1005004795640997.html?spm=a2g0o.order_list.order_list_main.137.61d718020oVHoX) (Select color: N-SE120)
 * [Omnifixo - Helping hands](https://omnifixo.com/)

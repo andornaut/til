@@ -22,9 +22,9 @@ $ gsettings set org.gnome.desktop.screensaver lock-delay 4000
 
 ```
 $ sudo cp ibm-darker-wider.png /usr/share/backgrounds/
-$ gsettings get org.gnome.desktop.background picture-uri \
+$ gsettings set org.gnome.desktop.background picture-uri \
   'file:///usr/share/backgrounds/ibm-darker-wider.png'
-$ gsettings get org.gnome.desktop.screensaver picture-uri \
+$ gsettings set org.gnome.desktop.screensaver picture-uri \
   'file:///usr/share/backgrounds/ibm-darker-wider.png'
 
 $ grep -B1 ibm-darker-wider /usr/share/glib-2.0/schemas/10_ubuntu-settings.gschema.override

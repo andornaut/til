@@ -1,13 +1,13 @@
 # Pixel Art
 
-* [Lowspec](https://lospec.com/) - Tools and tutorials
+* [Lospec](https://lospec.com/) - Tools and tutorials
 * [Pixel Dailies (Twitter)](https://twitter.com/Pixel_Dailies) - Inspiration
 * [/r/PixelArt](https://www.reddit.com/r/PixelArt/)
 
 ## Aseprite (software)
 
 * [Official site](https://www.aseprite.org/)
-* [Apollo Pallete by AdamCYounis](https://lospec.com/palette-list/apollo)
+* [Apollo Palette by AdamCYounis](https://lospec.com/palette-list/apollo)
 
 ### Keyboard shortcuts
 
@@ -17,7 +17,7 @@ b|Pencil (brush)
 e|Eraser
 g|Paint bucket (fill)
 m|Rectangular marquee (selection tool)
-w|Magic want (selection tool)
+w|Magic wand (selection tool)
 v|Move elements
 alt (hold)|Eye dropper
 space (hold)|Move canvas

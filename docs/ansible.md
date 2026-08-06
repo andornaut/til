@@ -6,7 +6,7 @@
 
 ## Debugging
 
-* [Setup module docs](http://docs.ansible.com/ansible/setup_module.html)
+* [Setup module docs](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup_module.html)
 
 ```
 # Display local facts
