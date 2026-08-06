@@ -1,10 +1,11 @@
 # Ubuntu
 
 * [./Gnome](./gnome.md)
+* [./Networking](./networking.md) - Netplan, NetworkManager, DNS, wifi
 * [./Systemd](./systemd.md)
 * [./Xorg](./xorg.md)
 
-## Applications and packages
+## Applications
 
 Application | Description
 --- | ---
@@ -70,6 +71,24 @@ vmstat | Report virtual memory statistics
 ```bash
 # Monitor a process' utilization
 pid=$(ps -e|grep filectrl|cut -f1 -d' ');pidstat -h -r -u -v -p $pid 10
+```
+
+## Packages
+
+### Repositories
+
+n.b. Since 24.04 the Ubuntu repositories live in `/etc/apt/sources.list.d/ubuntu.sources` in [deb822](https://manpages.ubuntu.com/manpages/noble/man5/sources.list.5.html) format, and `/etc/apt/sources.list` is empty. Both formats still work, but a `sed` aimed at the old file silently does nothing on a current release.
+
+```bash
+# Where the repositories are actually configured
+cat /etc/apt/sources.list.d/ubuntu.sources
+
+# Add and remove a PPA
+sudo add-apt-repository ppa:${owner}/${name}
+sudo add-apt-repository --remove ppa:${owner}/${name}
+
+# Which repository does a package come from, and what versions are available?
+apt policy ${package}
 ```
 
 ### Search for installed applications
@@ -175,6 +194,15 @@ flatpak enter org.mozilla.firefox bash
 # Debug and possibly fix Firefox downloads not saving to the ~/Downloads folder outside of the sandbox
 flatpak permission-show org.mozilla.firefox
 flatpak permission-reset org.mozilla.firefox
+```
+
+### Use debconf
+
+```bash
+sudo debconf-show ${packageName}
+
+# or
+sudo debconf-get-selections|grep -i ${packageName}
 ```
 
 ## How-tos
@@ -325,78 +353,6 @@ hdparm --user-master u --security-erase PasSWorD /dev/sdX
 hdparm -I /dev/sdX (result: Security:not enabled)
 ```
 
-### Use debconf
-
-```bash
-sudo debconf-show ${packageName}
-
-# or
-sudo debconf-get-selections|grep -i ${packageName}
-```
-### Use Netplan
-
-```bash
-# Print configurations from /etc/netplan/*.yaml
-sudo netplan get
-
-# Apply (enable) all Netplan configurations
-sudo netplan apply
-
-sudo ip link set down enp9s0
-ip address show enp9s0
-sudo ip link set up enp9s0
-```
-
-### Install and configure NetworkManager
-
-* [Permanently configuring a device as unmanaged in NetworkManager](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/configuring-networkmanager-to-ignore-certain-devices_configuring-and-managing-networking#permanently-configuring-a-device-as-unmanaged-in-networkmanager_configuring-networkmanager-to-ignore-certain-devices)
-
-Install Network Manager:
-
-```bash
-sudo apt install network-manager-gnome
-
-# Autostart nm-applet
-$ cp /usr/share/applications/nm-applet.desktop ~/.config/autostart/
-
-# Set Netplan configurations to be rendered by NetworkManager
-$ sudo cat /etc/netplan/dhcp.yaml
-network:
-  version: 2
-  renderer: NetworkManager
-  ethernets:
-    enp9s0:
-      dhcp4: true
-
-$ sudo systemctl restart NetworkManager
-```
-
-Network Manager configuration lives in `/etc/NetworkManager/conf.d` and `/usr/lib/NetworkManager/conf.d` and can be viewed by executing `sudo NetworkManager --print-config`.
-
-The configuration in `/usr/lib/NetworkManager/conf.d/10-globally-managed-devices.conf` sets all devices except wifi and cellular to "unmanaged", but this doesn't appear to be applied:
-```ini
-[keyfile]
-unmanaged-devices=*,except:type:wifi,except:type:gsm,except:type:cdma
-```
-
-Instead, create an override in `/etc/NetworkManager/conf.d/99-unmanaged-devices.conf` with content:
-```ini
-[keyfile]
-unmanaged-devices=interface-name:veth*;type:bridge;type:loopback
-```
-
-Checked managed/unmanaged status with:
-
-```bash
-systemctl reload NetworkManager
-nmcli device status
-```
-
-Note that [rfkill](https://manpages.ubuntu.com/manpages/xenial/man8/rfkill.8.html) may be "soft blocking" your wireless device, which you can unblock using:
-```bash
-rfkill unblock wlan
-```
-
 ### Allow adm users to shutdown and reboot the system
 
 Add the following to `/etc/sudoers.d/power`:
@@ -405,9 +361,13 @@ Add the following to `/etc/sudoers.d/power`:
 %adm ALL=NOPASSWD: /sbin/halt, /sbin/poweroff, /sbin/reboot
 ```
 
+## Kernel and drivers
+
 ### Upgrade to the latest kernel
 
 * [How to update kernel to the latest mainline](https://askubuntu.com/questions/119080/how-to-update-kernel-to-the-latest-mainline-version-without-any-distro-upgrade/142001#142000)
+
+n.b. HWE is the supported path and needs no third-party packages; reach for a mainline build only when you need a fix that hasn't landed in HWE yet, and compile only when you need a config change no prebuilt kernel offers.
 
 #### Install a HWE kernel
 
@@ -551,11 +511,18 @@ reboot
 
 * [StackOverflow](https://askubuntu.com/questions/549777/getting-404-not-found-errors-when-doing-sudo-apt-get-update)
 
-This error occurs when running `apt update` on an unsupported version of Ubuntu.
+This error occurs when running `apt update` on an unsupported version of Ubuntu, whose repositories have been moved to old-releases.ubuntu.com.
 
 ```bash
+# 24.04 and later, where the repositories live in deb822 format
+sudo sed -i -e 's/\([a-z]*\.\?\)\?archive\.ubuntu\.com\|security\.ubuntu\.com/old-releases.ubuntu.com/g' \
+  /etc/apt/sources.list.d/ubuntu.sources
+
+# Earlier releases
 sudo sed -i -e 's/\([a-z]*.\?\)\?archive.ubuntu.com\|security.ubuntu.com/old-releases.ubuntu.com/g' /etc/apt/sources.list
 ```
+
+n.b. On 24.04 and later `/etc/apt/sources.list` is empty, so the second command runs without error and changes nothing - see [Repositories](#repositories).
 
 ### Redshift.conf is not read when it is a symlink
 

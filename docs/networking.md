@@ -1,5 +1,73 @@
 # Networking
 
+* [./Ubuntu](./ubuntu.md)
+
+## Netplan
+
+Ubuntu configures interfaces with [Netplan](https://netplan.readthedocs.io/en/stable/), which renders to either NetworkManager or systemd-networkd rather than configuring the interface itself.
+
+```bash
+# Print configurations from /etc/netplan/*.yaml
+sudo netplan get
+
+# Apply (enable) all Netplan configurations
+sudo netplan apply
+
+sudo ip link set down enp9s0
+ip address show enp9s0
+sudo ip link set up enp9s0
+```
+
+## Install and configure NetworkManager
+
+* [Permanently configuring a device as unmanaged in NetworkManager](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/8/html/configuring_and_managing_networking/configuring-networkmanager-to-ignore-certain-devices_configuring-and-managing-networking#permanently-configuring-a-device-as-unmanaged-in-networkmanager_configuring-networkmanager-to-ignore-certain-devices)
+
+Install Network Manager:
+
+```bash
+sudo apt install network-manager-gnome
+
+# Autostart nm-applet
+$ cp /usr/share/applications/nm-applet.desktop ~/.config/autostart/
+
+# Set Netplan configurations to be rendered by NetworkManager
+$ sudo cat /etc/netplan/dhcp.yaml
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    enp9s0:
+      dhcp4: true
+
+$ sudo systemctl restart NetworkManager
+```
+
+Network Manager configuration lives in `/etc/NetworkManager/conf.d` and `/usr/lib/NetworkManager/conf.d` and can be viewed by executing `sudo NetworkManager --print-config`.
+
+The configuration in `/usr/lib/NetworkManager/conf.d/10-globally-managed-devices.conf` sets all devices except wifi and cellular to "unmanaged", but this doesn't appear to be applied:
+```ini
+[keyfile]
+unmanaged-devices=*,except:type:wifi,except:type:gsm,except:type:cdma
+```
+
+Instead, create an override in `/etc/NetworkManager/conf.d/99-unmanaged-devices.conf` with content:
+```ini
+[keyfile]
+unmanaged-devices=interface-name:veth*;type:bridge;type:loopback
+```
+
+Checked managed/unmanaged status with:
+
+```bash
+systemctl reload NetworkManager
+nmcli device status
+```
+
+Note that [rfkill](https://manpages.ubuntu.com/manpages/xenial/man8/rfkill.8.html) may be "soft blocking" your wireless device, which you can unblock using:
+```bash
+rfkill unblock wlan
+```
+
 ## Disable dnsmasq / systemd-resolved
 
 [StackOverflow](https://askubuntu.com/a/907249)
