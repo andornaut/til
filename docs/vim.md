@@ -25,9 +25,14 @@ Command | Description
 
 Scrolling window without moving the cursor
 
-Keys | Descriptions
+Keys | Description
 --- | ---
 zz | move current line to the middle of the screen
 zt | move current line to the top of the screen
 zb | move current line to the bottom of the screen
+
+Other
+
+Keys | Description
+--- | ---
 `<C-V><Tab>` | Explicitly insert a tab character (while in insert mode)

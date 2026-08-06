@@ -28,6 +28,7 @@
 * [The Rust Programming Language (2019)](https://doc.rust-lang.org/book/)
   * [RefCell\<T> and the Interior Mutability Pattern](https://doc.rust-lang.org/book/ch15-05-interior-mutability.html)
   * [Shared-State Concurrency](https://doc.rust-lang.org/book/ch16-03-shared-state.html)
+
 Read a local copy of "The Rust Programming Language" book in a web browser with: `rustup doc --book`
 
 ## Articles, blogs, and courses
@@ -198,7 +199,7 @@ ratatui = {git = "https://github.com/ratatui-org/ratatui.git", rev = "b6b2da5"}
 ## Visual Studio Code
 
 * [CodeLLDB extension](https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb) - Debugger
-* [Rust-analyzer extension](https://marketplace.visualstudio.com/items?itemName=matklad.rust-analyzer) - Recommended language support extensions. Conflicts with [Rust extension](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust).
+* [Rust-analyzer extension](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) - Recommended language support extensions. Conflicts with the deprecated [Rust extension](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust).
 * [Rust in Visual Studio Code](https://code.visualstudio.com/docs/languages/rust)
 
 ### Debugging extensions
@@ -242,9 +243,9 @@ Name | Description
 --- | ---
 [anyhow](https://github.com/dtolnay/anyhow)|Concrete `Error` type built on `std::error::Error`
 [cargo-nextest](https://nexte.st/)|A next-generation test runner
-[clap](https://github.com/clap-rs/clap)|Parse command line arguments
 [chrono](https://github.com/chronotope/chrono)|Timezone-aware date and time handling
 [chrono-tz](https://github.com/chronotope/chrono-tz)|Companion of [chrono](https://github.com/chronotope/chrono) that adds timezone data
+[clap](https://github.com/clap-rs/clap)|Parse command line arguments
 [color-to-tui](https://github.com/uttarayan21/color-to-tui)|Parse hex colors to `tui::style::Color`
 [copypasta](https://github.com/alacritty/copypasta)|Cross-platform Rust system clipboard library 
 [criterion](https://github.com/bheisler/criterion.rs)|Statistics-driven benchmarking library
@@ -254,7 +255,7 @@ Name | Description
 [divan](https://github.com/nvzqz/divan)|Fast and simple benchmarking
 [egui](https://github.com/emilk/egui)|An easy-to-use immediate mode GUI in Rust that runs on both web and native
 [env_logger](https://github.com/rust-cli/env_logger/)|A logging implementation for `log` which is configured via an environment variable
-[enum-iterator](https://crates.io/crates/enum-iterator)|`#[derive(IntoEnumIterato)` for enums
+[enum-iterator](https://crates.io/crates/enum-iterator)|`#[derive(IntoEnumIterator)]` for enums
 [gtk-rs](https://gtk-rs.org/)|GTK4, Cairo, glib, etc bindings
 [indicatif](https://docs.rs/indicatif/latest/indicatif/index.html)|Progress bar library
 [itertools](https://docs.rs/itertools/latest/itertools/)|Extra iterator adaptors, functions and macros

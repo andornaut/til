@@ -82,7 +82,7 @@ systemctl disable ${service}
 rm /etc/systemd/system/${service}
 rm /etc/systemd/system/${service} # and symlinks that might be related
 rm /usr/lib/systemd/system/${service}
-rm /usr/lib/systemd/system/${service}#  and symlinks that might be related
+rm /usr/lib/systemd/system/${service} # and symlinks that might be related
 systemctl daemon-reload
 systemctl reset-failed
 ```

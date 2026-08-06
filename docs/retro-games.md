@@ -17,7 +17,7 @@
 * [Pico-8](https://www.lexaloffle.com/pico-8.php)
 * [PortMaster](https://portmaster.games/)
 * [RetroAchievements](https://retroachievements.org/)
-* [Retro Game Crops](https://retrogamecorps.com/)
+* [Retro Game Corps](https://retrogamecorps.com/)
   * [Android Emulation Starter Guide](https://retrogamecorps.com/2022/03/13/android-emulation-starter-guide/#RetroArch)
   * [Android Handheld Starter Guide (Video)](https://www.youtube.com/watch?app=desktop&v=I4mqgcDYZFo)
   * [RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/#Options)
@@ -64,7 +64,7 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 
 **Notes**
 
-* MinUI maps Roms to Bios' to Emus by the system abbreviation, which is included in parenthesis in sub-folders of the Roms/ folder. eg. `Roms/Sega Game Gear (GG)/` maps `Bios/GG` maps to `Emus/rg35xxplus/GG.pak`
+* MinUI maps Roms to Bios' to Emus by the system abbreviation, which is included in parenthesis in sub-folders of the Roms/ folder. eg. `Roms/Sega Game Gear (GG)/` maps to `Bios/GG` and to `Emus/rg35xxplus/GG.pak`
 * MinUI cannot unzip 7z files, so prefer uncompressed Roms or zip files
 
 #### Mustard OS / muOS
@@ -161,7 +161,7 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
   * [Android Emulation Starter Guide](https://retrogamecorps.com/2022/03/13/android-emulation-starter-guide/#RetroArch)
   * [Android Handheld Starter Guide (Video)](https://www.youtube.com/watch?app=desktop&v=I4mqgcDYZFo)
   * [RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/#Options)
-2. Copy [these custom-systems XMLs](https://github.com/GlazedBelmont/es-de-android-custom-systems) to `/mnt/sdcard/ES-DE/custom-systems/`
+2. Copy [these custom-systems XMLs](https://github.com/GlazedBelmont/es-de-android-custom-systems) to `/mnt/sdcard/ES-DE/custom_systems/`
 3. Create these folders on the removable sdcard (e.g.: `/storage/78DC-BF74/`):
 ```text
 AZAHAR
@@ -294,7 +294,7 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 ## EmulationStation (ES-DE)
 
 * [ES Applauncher](https://github.com/schattenphoenix/es_applauncher)
-* [ES-DE)](https://es-de.org/)
+* [ES-DE](https://es-de.org/)
 * [es-de-android-custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems)
 * [ES-DE Android Apps](https://github.com/BinaryQuantumSoul/esde_android_apps)
   * [Android FAQ](https://gitlab.com/es-de/emulationstation-de/-/blob/master/FAQ-ANDROID.md?ref_type=heads#every-time-i-reboot-my-device-es-de-is-starting-the-onboarding-process-why-is-this-happening)

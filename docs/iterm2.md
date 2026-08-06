@@ -6,8 +6,8 @@
 
 1. Preferences -> General -> Selection
 1. Enable (check) the following:
-  * Copy to pasteboard on selection
-  * Applications in terminal may access clipboard
+   * Copy to pasteboard on selection
+   * Applications in terminal may access clipboard
 
 ## Unlimited scrollback buffer
 

@@ -26,7 +26,6 @@ brew install \
   --cask font-source-code-pro \
   font-droid-sans-mono-nerd-font \
   font-inconsolata \
-  font-source-code-pro \
   font-ubuntu
 
 # Change shell to Bash
@@ -73,7 +72,8 @@ defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 
 [Show all files in the Finder](https://macpaw.com/how-to/access-opt-folder-on-mac)
 ```
-defaults write com.apple.Finder AppleShowAllFiles YES
+defaults write com.apple.finder AppleShowAllFiles YES
+killall Finder
 ```
 
 ## Keyboard Shortcuts
@@ -97,7 +97,7 @@ Meta keys:
 | Control Command q | Lock screen |
 | / | [Go to a directory](https://support.apple.com/en-ca/guide/mac-help/mchlp1236/mac) when focussed on a Finder window |
 
-Rebind these shorcuts in System Settings > Keyboard > Shortcuts > Mission Control:
+Rebind these shortcuts in System Settings > Keyboard > Shortcuts > Mission Control:
 
 | Key combination | Description |
 | --- | --- |
@@ -123,7 +123,7 @@ Keyboard Shortcut | `⇧⌘V`
 1. Navigate to: Accessibility > Display > Display (tab)
 1. Enable: Reduce transparency
 
-### Dock show/hid
+### Dock show/hide
 
 * [uBar](https://brawersoftware.com/products/ubar) - Dock alternative
 * [How to hide the dock](https://apple.stackexchange.com/a/298826)
@@ -152,7 +152,7 @@ defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 1. Search for "Stage Manager"
 1. Set "Click wallpaper to reveal desktop" to "Only in Stage Manager"
 
-### Disable CMD+h to hiding windows
+### Disable CMD+h from hiding windows
 
 * [StackOverflow](https://superuser.com/a/1354665)
 * [@andornaut/dotfiles](https://github.com/andornaut/dotfiles/blob/master/%24HOME/.config/karabiner/assets/complex_modifications/disable_command_h.json)
@@ -196,7 +196,7 @@ defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 
 ### Fix USB audio devices (Elgato Wave:3) failing after KVM switch
 
-Some USB audio devices, such as the Elgato Wave:3), fail to re-initialize properly when switching back to macOS via a KVM.
+Some USB audio devices, such as the Elgato Wave:3, fail to re-initialize properly when switching back to macOS via a KVM.
 The device appears in input lists, but transmits no audio until physically replugged.
 
 This can be worked around by restarting [Elgato Wave Link](https://www.elgato.com/ca/en/s/wave-link-app) upon device connection using [Hammerspoon](https://www.hammerspoon.org/).
@@ -207,7 +207,7 @@ This can be worked around by restarting [Elgato Wave Link](https://www.elgato.co
 brew install --cask hammerspoon
 ```
 
-3. Configure the watcher script:
+2. Configure the watcher script:
 
 Add the following to your `~/.hammerspoon/init.lua`. Note: Update `WAVE3_VENDOR_ID` and `WAVE3_PRODUCT_ID` for your specific device. You can find these by running `system_profiler SPUSBDataType`.
 
@@ -370,7 +370,7 @@ on_usb_connect = "DisplayPort1"
 $ launchctl load ~/Library/LaunchAgents/dev.haim.display-switch.daemon.plist
 
 # Unload with:
-# $ launchctl load ~/Library/LaunchAgents/dev.haim.display-switch.daemon.plist
+# $ launchctl unload ~/Library/LaunchAgents/dev.haim.display-switch.daemon.plist
 ```
 
 * [Linux support](https://github.com/haimgel/display-switch/pull/22)
@@ -460,7 +460,7 @@ sudo launchctl kickstart -kp system/com.apple.audio.coreaudiod
 * [MacRumors](https://forums.macrumors.com/threads/variable-refresh-rate-freesync-gsync-flicker.2320463/)
 * [Reddit](https://www.reddit.com/r/MacOS/comments/qg9qki/updated_to_monterey_monitor_is_flickering_help/)
 
-If your monitor support Variable Refresh Rate (VRR), such as AMD FreeSync or nVidia Gsync,
+If your monitor supports Variable Refresh Rate (VRR), such as AMD FreeSync or nVidia Gsync,
 then VRR will be enabled in System Preferences > Displays, which may cause flickering.
 Even if disabled manually, rebooting or disconnecting/reconnecting the monitor will re-enable
 the setting.

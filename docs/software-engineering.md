@@ -49,7 +49,7 @@
 * [Calculus](https://ocw.mit.edu/courses/res-18-001-calculus-online-textbook-spring-2005/pages/textbook/)
 * [Concepts, Techniques, and Models of Computer Programming](https://www.info.ucl.ac.be/~pvr/book.html)
 * [Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
-* [Structure and Interpretation of Computer](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html)
+* [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html)
 * [The Algorithm Design Manual](https://www.algorist.com/)
 * [The Art of Computer Programming](https://www-cs-faculty.stanford.edu/~knuth/taocp.html)
 

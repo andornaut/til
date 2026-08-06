@@ -22,7 +22,7 @@ Name | Description
 * [Intents](https://gist.github.com/mcfrojd/9e6875e1db5c089b1e3ddeb7dba0f304)
 
 1. From the Android TV device: Navigate to Settings > About
-1. Scroll down to the bottom and click on "Build" and until you see the message "You are now a developer!"
+1. Scroll down to the bottom and click on "Build" until you see the message "You are now a developer!"
 1. Navigate to Settings > Developer options
 1. Enable "USB debugging" and "Wireless debugging"
 
@@ -46,7 +46,7 @@ List of devices attached
 1. When prompted, enter the pairing code
 
 ```bash
-# The port number will change everytime "Wireless Debugging" is disabled-then-enabled.
+# The port number will change every time "Wireless Debugging" is disabled-then-enabled.
 adb connect tv-basement:PORT
 ```
 
@@ -103,9 +103,9 @@ am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n or
 
 * [adb-auto-enable](https://github.com/mouldybread/adb-auto-enable)
 
-##### Alternative: Manual ADB commands
+###### Alternative: Manual ADB commands
 
-If Launch Manager doesn't work (such as on a Hisense U88QG), then set Projectivy as the default launcher via the following adb commands:
+If Launcher Manager doesn't work (such as on a Hisense U88QG), then set Projectivy as the default launcher via the following adb commands:
 
 ```bash
 adb connect IP_ADDRESS:PORT
@@ -119,7 +119,7 @@ pm disable-user --user 0 com.google.android.tungsten.setupwraith
 
 ###### Alternative: Temporarily bind ADB to port 5555
 
-You can temorarily bind the TV's ADB port to 5555, but thi swon't survive a reboot:
+You can temporarily bind the TV's ADB port to 5555, but this won't survive a reboot:
 
 ```bash
 adb connect
@@ -130,7 +130,7 @@ adb tcpip 5555
 
 n.b. **Do not enable Projectivy in "Accessibility settings"**
 
-Do not install enable "Projectivy Launcher" in Android's accessibility settings as directed by Projectivy, because
+Do not enable "Projectivy Launcher" in Android's accessibility settings as directed by Projectivy, because
 doing so will trigger the following bug as noted in the first post on the [official Projectivy Launcher thread](https://xdaforums.com/t/app-android-tv-projectivy-launcher.4436549/#post-86794031) (see, also, this [post on Reddit](https://www.reddit.com/r/AndroidTV/comments/1bictvi/projectivity_launcher_and_soundbar_volume_issue/)):
 
 > long press on volume buttons doesn't work on FengOs : there's a bug on FengOs -> as soon as an accessibility service is enabled (Projectivy Launcher, but also Button Mapper for example), the long press volume buttons doesn't work anymore.
@@ -143,7 +143,7 @@ Name | Description
 --- | ---
 [iSponsorBlock](https://github.com/Galactic-Dev/iSponsorBlock)| A jailbreak tweak that implements the SponsorBlock API to skip sponsorships in YouTube videos
 [NewPipe](https://github.com/TeamNewPipe/NewPipe/) | A libre lightweight streaming front-end for Android
-[ReVanced](https://revanced.app) [/r/revancedapp/](https://www.reddit.com/r/revancedapp/) [microG (revanced fork)](https://github.com/revanced/gmscore) | YouTube app for Android with no adds, SponsorBlock integration, and video quality settings persistence
+[ReVanced](https://revanced.app) [/r/revancedapp/](https://www.reddit.com/r/revancedapp/) [microG (revanced fork)](https://github.com/revanced/gmscore) | YouTube app for Android with no ads, SponsorBlock integration, and video quality settings persistence
 [SmartTube GitHub](https://github.com/yuliskov/SmartTube) | An advanced player for set-top boxes and tvs running Android OS 
 
 #### SmartTube
@@ -154,7 +154,7 @@ Name | Description
 
 ### TV Apps
 
-To launch apps via Home Assitant, configure a dashboard button:
+To launch apps via Home Assistant, configure a dashboard button:
 
 ```
 # For Android 12, using media_player.play_media

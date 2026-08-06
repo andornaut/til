@@ -98,14 +98,13 @@ git reset origin/$(git branch --show-current) --hard
 
 ### Change origin URL
 ```
-git remote set-url origin git://$URL
+git remote set-url origin ${URL}
 ```
 
 ### Project-specific configuration
 
 ```
 git config user.name "andornaut" \
-    && git config user.user "andornaut" \
     && git config user.email "andornaut@users.noreply.github.com"
 ```
 
@@ -175,7 +174,7 @@ git remote set-head origin --auto
 
 * [GitHub markdown tricks](https://notes.aliciasykes.com/36402/github-markdown-tricks)
 
-### Collapsable section markdown
+### Collapsible section markdown
 
 * [Gist](https://gist.github.com/joyrexus/16041f2426450e73f5df9391f7f7ae5f)
 
@@ -196,7 +195,8 @@ This section is hidden until the above is clicked.
 # What
 archived:false
 is:closed
-is:pr,issue
+is:pr
+is:issue
 
 # Who
 org:wmgtech

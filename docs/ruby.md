@@ -70,7 +70,7 @@ Name | Description
 * [test-unit](https://test-unit.github.io/)
 * [tutorial](https://dev.to/exampro/testunit-writing-test-code-in-ruby-part-1-of-3-44m2)
 
-## Gems and bundler - package managment and dependencies
+## Gems and bundler - package management and dependencies
 
 ```
 # Update one package

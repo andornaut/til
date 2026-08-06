@@ -14,7 +14,7 @@ cookiebanners.service.mode: 1
 cookiebanners.service.mode.privateBrowsing: 1
 
 # Don't paste on middle-click
-middlemouse.paste false
+middlemouse.paste: false
 
 # Increase scrollbar thumb size (Linux)
 widget.non-native-theme.scrollbar.size.override: 20
