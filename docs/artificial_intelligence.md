@@ -99,7 +99,6 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 * [Claude Code](https://code.claude.com/docs/en/overview)
 * [Cline](https://github.com/cline/cline) - VS Code agent with per-action approval; broad model support
 * [./Cursor](./cursor.md)
-* [Devin Desktop](https://devin.ai/desktop) by Cognition - The former Windsurf Editor, rebranded 2026-06-02; windsurf.com now redirects to devin.ai
 * [GitHub Copilot for VS Code](https://code.visualstudio.com/docs/copilot/overview)
 * [goose](https://github.com/block/goose) - Open source agent from Block; CLI and desktop, any model, MCP extensions
 * [Kilo Code](https://github.com/Kilo-Org/kilocode) - Agent that runs in VS Code, JetBrains, and the CLI; 500+ models at provider pricing
