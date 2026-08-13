@@ -1,21 +1,36 @@
 name: Update README TOC
 
+# main only. The TOC is generated and committed, so running it on a branch
+# would write a commit onto whatever branch happened to be pushed.
 on:
   push:
-    branches:
-      - '**'
+    branches: [main]
+    paths:
+      - docs/**
+  workflow_dispatch:
+
+# Write access is granted only to the job that commits
+permissions:
+  contents: read
+
+# Keyed on the branch rather than the ref, so two pushes in quick succession do
+# not race to commit the same file.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
+  cancel-in-progress: true
 
 jobs:
   mdtoc:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v7.0.1
 
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@v1.321.0
         with:
           ruby-version: .ruby-version
 
@@ -26,7 +41,7 @@ jobs:
         run: mdtoc --append --create --output README.md docs/
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v7
+        uses: stefanzweifel/git-auto-commit-action@v7.2.0
         with:
           commit_message: "docs: update README TOC"
-          file_pattern: 'README.md'
+          file_pattern: "README.md"
