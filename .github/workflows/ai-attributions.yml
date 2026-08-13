@@ -11,8 +11,11 @@ on:
 permissions:
   contents: read
 
+# Keyed on the branch rather than the ref, so the push event and the pull
+# request event for one branch share a group instead of running the same scan
+# twice.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: ${{ github.workflow }}-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: true
 
 jobs:
@@ -22,7 +25,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7.0.1
         with:
           fetch-depth: 0
 
