@@ -1,5 +1,7 @@
 # Today I Learned
 
+[![CI](https://github.com/andornaut/til/actions/workflows/ai-attributions.yml/badge.svg)](https://github.com/andornaut/til/actions/workflows/ai-attributions.yml)
+
 ## Usage
 
 ```bash
