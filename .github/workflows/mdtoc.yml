@@ -14,10 +14,12 @@ permissions:
   contents: read
 
 # One run at a time per branch. Spelled the same as every other workflow's
-# group, though the pull request and fork terms are inert here: this one runs
-# on main only.
+# group. Keyed by the event so a manual dispatch and a push to main do not
+# cancel each other: this workflow commits, so a cancelled run drops the commit
+# rather than only a check. The pull request and fork terms are inert here:
+# this one runs on main only.
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.head.repo.full_name || github.repository }}-${{ github.head_ref || github.ref_name }}
+  group: ${{ github.workflow }}-${{ github.event_name }}-${{ github.event.pull_request.head.repo.full_name || github.repository }}-${{ github.head_ref || github.ref_name }}
   cancel-in-progress: true
 
 jobs:
