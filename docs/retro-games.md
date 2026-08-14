@@ -395,9 +395,9 @@ parser and rejects it:
 The RetroAchievements line is the trap: it parses the m3u itself, so a log skimmed for "m3u" reads
 like success while the core loaded nothing.
 
-Adding `m3u` to the PSP row of `games_retroarch_systems` **would not fail the run** — the generator's
+Adding `m3u` to the PSP row of `games_retroarch_systems` **would not fail the run**: the generator's
 `validate_system` unions the core's `.info` extensions, and RetroArch does not filter content given as
-an explicit path (the same reason Virtual Jaguar plays `.rom`) — it would emit a playlist entry that
+an explicit path (the same reason Virtual Jaguar plays `.rom`). It would emit a playlist entry that
 launches to an error. So the only layout that works is **one root disc image per disc**, swapped by
 loading the other playlist entry.
 
@@ -411,7 +411,7 @@ This library therefore does not carry multi-disc PSP titles: manually loading a 
 mid-playthrough is a worse experience than the game is worth, so a 2-UMD title is skipped and the gap
 filled from another system where possible. Note the libretro thumbnail repo *does* publish per-disc
 art plus a base (m3u-labelled) entry for such titles, e.g.
-`Legend of Heroes - Trails in the Sky - Second Chapter (Europe) (PSN) (Disc 1|2).png` — that base
+`Legend of Heroes - Trails in the Sky - Second Chapter (Europe) (PSN) (Disc 1|2).png`, and that base
 entry is for frontends whose PSP core can swap, and is not evidence that this one can.
 
 ### Cache directory
