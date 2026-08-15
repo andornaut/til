@@ -30,11 +30,6 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
 
-jobs:
-  lint:
-    name: Lint
-    runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v7.0.1
