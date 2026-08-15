@@ -1,0 +1,27 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    mdtoc (0.4.0)
+      sorbet-runtime
+    rake (13.4.2)
+    sorbet-runtime (0.6.13416)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  mdtoc
+  rake
+
+CHECKSUMS
+  bundler (4.0.13) sha256=19f08be7f27022cf0b89f27da0b044ae075e8270a9ef44ad248a932614e1ca3b
+  mdtoc (0.4.0) sha256=255bd8a9275dd2a1a6f82b8f43fe7f13080421b94d8e4301864751af4589eb2a
+  rake (13.4.2) sha256=cb825b2bd5f1f8e91ca37bddb4b9aaf345551b4731da62949be002fa89283701
+  sorbet-runtime (0.6.13416) sha256=7e1a0d66b9acc77ba14d60f412a04a32f345cfb645aefa95e86c74d8444bc9ca
+
+RUBY VERSION
+  ruby 3.2.2
+
+BUNDLED WITH
+  4.0.13

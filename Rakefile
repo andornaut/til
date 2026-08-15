@@ -11,7 +11,7 @@ task :mdtoc do
       echo 'Error: conflicts exist' >&2
       exit 1
     fi
-    mdtoc --append --create --output README.md docs/
+    bundle exec mdtoc --append --create --output README.md docs/
     git add README.md docs/*.md
     git commit -qm 'Update TOC' || true
     git pull

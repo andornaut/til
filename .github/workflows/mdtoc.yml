@@ -32,16 +32,17 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7.0.1
 
+      # bundler-cache installs from Gemfile.lock, so the gems that generate a
+      # committed file are the versions the lockfile names rather than whatever
+      # rubygems served that morning.
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1.321.0
         with:
           ruby-version: .ruby-version
-
-      - name: Install dependencies
-        run: gem install mdtoc rake
+          bundler-cache: true
 
       - name: Run mdtoc
-        run: mdtoc --append --create --output README.md docs/
+        run: bundle exec mdtoc --append --create --output README.md docs/
 
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7.2.0
