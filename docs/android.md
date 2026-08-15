@@ -180,7 +180,7 @@ To launch apps via Home Assistant, configure a dashboard button:
     data:
       activity: "https://www.youtube.com"
     target:
-      entity_id: remote.basement_tv_remote
+      entity_id: remote.basement_tv
 
 # Sometimes the URL won't work, but the package name will.
 # The package name is the part of the intent before the forward slash.
@@ -194,7 +194,7 @@ To launch apps via Home Assistant, configure a dashboard button:
     data:
       activity: "com.google.android.youtube.tvmusic"
     target:
-      entity_id: remote.basement_tv_remote
+      entity_id: remote.basement_tv
 ```
 
 App | Intent (Android 12) | Activity (Android 14)
