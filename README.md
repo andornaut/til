@@ -1,6 +1,6 @@
 # Today I Learned
 
-[![CI](https://github.com/andornaut/til/actions/workflows/test.yml/badge.svg)](https://github.com/andornaut/til/actions/workflows/test.yml)
+[![CI](https://github.com/andornaut/til/actions/workflows/ai-attributions.yml/badge.svg)](https://github.com/andornaut/til/actions/workflows/ai-attributions.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Usage
