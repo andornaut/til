@@ -1,5 +1,10 @@
 docs/.*
 
+# Bundler's local configuration and the gems it installs, for a checkout that
+# points it at a path inside the tree rather than at the shared gem home.
+/.bundle/
+/vendor/bundle
+
 # AI agent instructions, local only. Named here as well as in the global
 # ignore, which a session working from a fresh clone does not have.
 AGENTS.md
