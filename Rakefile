@@ -18,8 +18,6 @@ task :mdtoc do
     git push
   CMD
   sh command, verbose: false do |ok, status|
-    unless ok
-      fail "Failed with status: #{status.exitstatus}"
-    end
+    raise "Failed with status: #{status.exitstatus}" unless ok
   end
 end

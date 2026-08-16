@@ -1,14 +1,15 @@
 # Today I Learned
 
-[![CI](https://github.com/andornaut/til/actions/workflows/ai-attributions.yml/badge.svg)](https://github.com/andornaut/til/actions/workflows/ai-attributions.yml)
+[![CI](https://github.com/andornaut/til/actions/workflows/test.yml/badge.svg)](https://github.com/andornaut/til/actions/workflows/test.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Usage
 
 ```bash
-gem install mdtoc rake
+# The Rakefile runs mdtoc through bundler, so the whole bundle has to be present
+bundle install
 # Update Markdown table of contents and push changes to the git repository
-rake
+bundle exec rake
 ```
 
 ## Table of contents

@@ -8,3 +8,5 @@ ruby file: '.ruby-version'
 
 gem 'mdtoc'
 gem 'rake'
+gem 'rubocop', require: false
+gem 'rubocop-rake', require: false

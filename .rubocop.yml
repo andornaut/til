@@ -1,0 +1,19 @@
+# frozen_string_literal: true
+
+# rubocop-rake, because the only Ruby here is a Rakefile and its cops are the
+# ones that apply to task definitions.
+plugins:
+  - rubocop-rake
+
+AllCops:
+  # A cop added in a later release starts pending rather than enabled, so
+  # without this a rubocop upgrade quietly widens nothing.
+  NewCops: enable
+  # The version .ruby-version names, rather than the one that happens to be
+  # installed, so a cop cannot suggest syntax this repository cannot run.
+  TargetRubyVersion: 3.2
+  # Every suggestion it makes is already a decision taken here.
+  SuggestExtensions: false
+
+# No exemptions: the default cops pass as written. An entry below would be a
+# rule this repository has chosen not to meet, and there is nothing to exempt.
