@@ -2,7 +2,7 @@
 
 ## Hardware info
 
-```
+```bash
 # Everything
 sudo lshw -short
 
@@ -20,7 +20,7 @@ lspci
 
 * [Linux Vendor Firmware Service (fwupd)](https://fwupd.org/lvfs/docs/users) | [ArchWiki](https://wiki.archlinux.org/title/fwupd)
 
-```
+```bash
 fwupdmgr get-devices
 fwupdmgr refresh
 fwupdmgr get-updates
@@ -40,7 +40,8 @@ Run [mprime](https://www.mersenne.org/download/) and monitor system temperatures
 * [udev rules example](https://wiki.archlinux.org/title/Udev#udev_rule_example)
 
 Update settings
-```
+
+```bash
 v4l2-ctl --list-devices
 
 # The udev rule below creates a symlink from /dev/dell-ultrasharp-webcam to /dev/video0
@@ -50,7 +51,8 @@ v4l2-ctl -d /dev/dell-ultrasharp-webcam --set-ctrl zoom_absolute=200
 ```
 
 Create a udev rule to apply settings whenever the webcam is connected
-```
+
+```bash
 # Find the udev attributes
 udevadm info --attribute-walk --path=$(udevadm info --query=path --name=/dev/video0)
 
@@ -77,23 +79,23 @@ udevadm trigger
 
 * [Arch wiki](https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture#Set_the_default_sound_card)
 
-```
+```bash
 sudo sed -i 's/\(options snd-usb-audio index.*\)/#\1/g' \
-	/etc/modprobe.d/alsa-base.conf
+ /etc/modprobe.d/alsa-base.conf
 ```
 
 ## Pulseaudio: set default headphone output
 
-- [StackOverflow](http://unix.stackexchange.com/questions/175930/change-default-port-for-pulseaudio-line-out-not-headphones)
-- [pulseaudio-ctl](https://github.com/graysky2/pulseaudio-ctl)
+* [StackOverflow](http://unix.stackexchange.com/questions/175930/change-default-port-for-pulseaudio-line-out-not-headphones)
+* [pulseaudio-ctl](https://github.com/graysky2/pulseaudio-ctl)
 
-```
+```bash
 pactl set-sink-port 0 analog-output-headphones
 ```
 
 ## Pulseaudio / ALSA: save pavucontrol configuration
 
-```
+```bash
 sudo alsactl store
 ```
 
@@ -102,7 +104,7 @@ sudo alsactl store
 * [StackOverflow](https://askubuntu.com/questions/22108/how-to-control-fan-speed)
 * [fancontrol_gui](https://github.com/Maldela/fancontrol-gui)
 
-```
+```bash
 sudo apt-get install lm-sensors fancontrol
 sudo pwmconfig
 sudo vim /etc/fancontrol
@@ -112,7 +114,7 @@ sudo systemctl enable fancontrol
 
 ## Configure an HP printer
 
-```
+```bash
 sudo apt install cups hplip
 sudo hp-setup
 firefox http://localhost:631

@@ -107,6 +107,7 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 * [Zed](https://zed.dev/)
 
 ## Articles and blogs
+
 * [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) - Start with the simplest thing that works; most "agent" problems are a workflow
 * [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices)
 * [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
@@ -116,8 +117,9 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 ## Books
 
 * [Generative Deep Learning, 2nd Edition](https://www.oreilly.com/library/view/generative-deep-learning/9781098134174/)
- 
+
 ## Courses
+
 * [Agents Towards Production](https://github.com/NirDiamant/agents-towards-production)
 * [generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) - 21 Lessons, Get Started Building with Generative AI
 * [Generative AI & Large Language Models Courses](https://learn.activeloop.ai/)

@@ -7,8 +7,8 @@
 
 ## Applications
 
-Application | Description
---- | ---
+Application|Description
+---|---
 [aseprite](https://www.aseprite.org/)|Pixel art tool
 [blueman](https://wiki.archlinux.org/title/Blueman)|Bluetooth manager
 [evince](https://en.wikipedia.org/wiki/Evince)|Document viewer
@@ -23,18 +23,18 @@ Application | Description
 [obs](https://obsproject.com/)|Tool to record video and perform live streaming
 [pcmanfm](https://sourceforge.net/projects/pcmanfm/)|File manager
 [piper](https://github.com/libratbag/piper)|Configure mouse DPI
-[resources](https://github.com/nokyan/resources)|Monitor your system resources and processes 
+[resources](https://github.com/nokyan/resources)|Monitor your system resources and processes
 [retroarch](https://www.retroarch.com/)|ROM game and emulator launcher
-[seahorse](https://wiki.gnome.org/Apps/Seahorse) | Tool to manage the Gnome keyring
+[seahorse](https://wiki.gnome.org/Apps/Seahorse)|Tool to manage the Gnome keyring
 [solaar](https://pwr-solaar.github.io/Solaar/)|Manage Logitech unifying receivers and devices
-[trash-cli](https://github.com/andreafrancia/trash-cli)|Command line interface to the freedesktop.org trashcan. 
+[trash-cli](https://github.com/andreafrancia/trash-cli)|Command line interface to the freedesktop.org trashcan.
 [uhubctl](https://github.com/mvp/uhubctl)|USB hub per-port power control
 [usb-creator-gtk](https://launchpad.net/ubuntu/+source/usb-creator)|Tool to write ISO files to USB storage devices
 
 ### Desktop environment
 
-Application | Description
---- | ---
+Application|Description
+---|---
 [Betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)|Lockscreen for X11
 [BSPWM](https://github.com/baskerville/bspwm)|Tiling window manager for X11 ([ansible-role-bspwm](https://github.com/andornaut/ansible-role-bspwm/))
 [clipboard](https://github.com/Slackadays/Clipboard)|TUI clipboard manager
@@ -118,7 +118,7 @@ apt-file search ${pattern}
 
 Default application associations can be configured in:
 
-Path |Usage
+Path | Usage
 --- | ---
 `~/.config/mimeapps.list` | user overrides
 `/etc/xdg/mimeapps.list` | system-wide overrides
@@ -126,7 +126,7 @@ Path |Usage
 
 Desktop applications and their `.desktop` files are located in:
 
-Path |Usage
+Path | Usage
 --- | ---
 `~/.local/share/applications/` | user applications
 `/usr/share/applications/` | system-wide applications
@@ -285,7 +285,7 @@ Force reboot an unresponsive system.
 
 n.b. Ubuntu ships `kernel.sysrq = 176`, which is sync (16) + remount read-only (32) + reboot (128) - so only the S, U, and B steps do anything. The R, E, and I steps need keyboard control (4) and process signalling (64), so they are silently ignored until you set `kernel.sysrq = 1` in `/etc/sysctl.d/10-magic-sysrq.conf`.
 
-```
+```text
 ALT + SHIFT + PRINT SCR + R E I S U B
 
 unRaw      (take control of keyboard back from X),
@@ -300,14 +300,14 @@ reBoot.
 
 n.b. `$HOSTNAME` below is a placeholder to substitute by hand - fstab is not read by a shell and does not expand variables.
 
-```
+```text
 # /etc/fstab
 //$HOSTNAME/stuff /media/nas cifs defaults,guest,ro 0 0
 ```
 
 Mount a subdirectory of a share as a non-root user
 
-```
+```text
 # /etc/fstab
 # vers=1.0 is necessary for Samba to support Unix extensions:
 # https://askubuntu.com/a/995142
@@ -363,7 +363,7 @@ hdparm -I /dev/sdX          # expect: Security: not enabled
 
 Add the following to `/etc/sudoers.d/power`:
 
-```
+```text
 %adm ALL=NOPASSWD: /sbin/halt, /sbin/poweroff, /sbin/reboot
 ```
 
@@ -456,7 +456,6 @@ sudo modprobe r8125
 
 ### Install AMD GPU DKMS kernel module (driver)
 
-
 * [AMD GPU drivers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/amdgpu-install.html#ubuntu)
   * [Kernel version compatibility](https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html#operating-systems-and-kernel-versions)
 * [AMD Quick start installation guide on Ubuntu](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/quick-start.html)
@@ -536,11 +535,11 @@ n.b. On 24.04 and later `/etc/apt/sources.list` is empty, so the second command 
 
 1. Permit access to the symlink source by editing `/etc/apparmor.d/local/usr.bin.redshift`:
 
-```
+```text
 owner @{HOME}/PATH_TO_VAULT/redshift.conf r,
 ```
 
-2. Restart [AppArmor](https://apparmor.net/):
+1. Restart [AppArmor](https://apparmor.net/):
 
 ```bash
 sudo systemctl reload apparmor
@@ -563,7 +562,7 @@ rm -rf .config/dconf/
 RSA SHA-1 is deprecated starting in Ubuntu 22.04. Re-enable it by adding the following
 to `/etc/ssh/ssh_config`:
 
-```
+```text
 Host *
    # ...
    PubkeyAcceptedKeyTypes +ssh-rsa
@@ -572,7 +571,8 @@ Host *
 ### Disable brltty which can interfere with serial->USB adapters
 
 dmesg output:
-```
+
+```text
 ch341 2-3:1.0: ch341-uart converter detected
 usb 2-3: ch341-uart converter now attached to ttyUSB0
 input: BRLTTY 6.4 Linux Screen Driver Keyboard as /devices/virtual/input/input21
@@ -581,6 +581,7 @@ ch341-uart ttyUSB0: ch341-uart converter now disconnected from ttyUSB0
 ```
 
 Disable brltty:
+
 ```bash
 sudo systemctl stop brltty-udev brltty
 sudo systemctl disable brltty-udev brltty

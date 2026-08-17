@@ -134,6 +134,7 @@ mod tests {
 ```
 
 Run tests using Cargo
+
 ```bash
 # Display one character per test instead of one line
 # Test only this package's library unit tests
@@ -239,15 +240,15 @@ You can execute cargo tasks from within VS Code:
 
 ## Crates - Frameworks and libraries
 
-Name | Description
---- | ---
+Name|Description
+---|---
 [anyhow](https://github.com/dtolnay/anyhow)|Concrete `Error` type built on `std::error::Error`
 [cargo-nextest](https://nexte.st/)|A next-generation test runner
 [chrono](https://github.com/chronotope/chrono)|Timezone-aware date and time handling
 [chrono-tz](https://github.com/chronotope/chrono-tz)|Companion of [chrono](https://github.com/chronotope/chrono) that adds timezone data
 [clap](https://github.com/clap-rs/clap)|Parse command line arguments
 [color-to-tui](https://github.com/uttarayan21/color-to-tui)|Parse hex colors to `tui::style::Color`
-[copypasta](https://github.com/alacritty/copypasta)|Cross-platform Rust system clipboard library 
+[copypasta](https://github.com/alacritty/copypasta)|Cross-platform Rust system clipboard library
 [criterion](https://github.com/bheisler/criterion.rs)|Statistics-driven benchmarking library
 [crossterm](https://github.com/crossterm-rs/crossterm)|Cross-platform terminal library ([Documentation](https://docs.rs/crossterm/latest/crossterm/))
 [cursive](https://github.com/gyscos/Cursive)|Text User Interface (TUI) library. ([Comparison to tui](https://github.com/gyscos/cursive/wiki/Cursive-vs-tui%E2%80%90rs)).

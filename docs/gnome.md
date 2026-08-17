@@ -8,19 +8,19 @@
 
 * [StackOverflow](http://superuser.com/questions/727120/make-gnome-screen-lock-after-1-hour-not-15-minutes)
 
-```
-$ gnome-screensaver-command
-$ gsettings get org.gnome.desktop.session idle-delay
-$ gsettings get org.gnome.desktop.screensaver lock-delay
-$ gsettings set org.gnome.desktop.session idle-delay 3600
-$ gsettings set org.gnome.desktop.screensaver lock-delay 4000
+```bash
+gnome-screensaver-command
+gsettings get org.gnome.desktop.session idle-delay
+gsettings get org.gnome.desktop.screensaver lock-delay
+gsettings set org.gnome.desktop.session idle-delay 3600
+gsettings set org.gnome.desktop.screensaver lock-delay 4000
 ```
 
 ### Screensaver lockscreen background
 
 * [AskUbuntu](https://askubuntu.com/a/1149151)
 
-```
+```bash
 $ sudo cp ibm-darker-wider.png /usr/share/backgrounds/
 $ gsettings set org.gnome.desktop.background picture-uri \
   'file:///usr/share/backgrounds/ibm-darker-wider.png'
@@ -47,28 +47,33 @@ $ gnome-screensaver &
 
 Applications: `gnome-tweaks`, `gtk-theme-switch2` (GTK2), or `lxappearance`
 
-```
+```bash
 sudo apt-get install -qy --no-install-recommends \
     adwaita-icon-theme-full gnome-themes-standard gtk-theme-switch gnome-tweaks
 ```
 
 Configure GTK2 using RC files:
-```
+
+```ini
 #~/.gtkrc-2.0
 gtk-icon-theme-name = "Adwaita"
 gtk-theme-name = "Adwaita"
 gtk-font-name = "DejaVu Sans 11"
 ```
+
 Configure GTK3 using RC files:
-```
+
+```json
 # $XDG_CONFIG_HOME/gtk-3.0/settings.ini
 [settings]
 gtk-icon-theme-name = Adwaita
 gtk-theme-name = Adwaita
 gtk-font-name = DejaVu Sans 11
 ```
+
 Configure GTK3 using gsettings:
-```
+
+```bash
 gsettings set org.gnome.desktop.interface icon-theme Adwaita
 gsettings set org.gnome.desktop.interface gtk-theme Adwaita
 gsettings set org.gnome.desktop.interface font-name 'DejaVu Sans Book 11'
@@ -76,15 +81,15 @@ gsettings set org.gnome.desktop.interface font-name 'DejaVu Sans Book 11'
 
 ## OSD
 
-- [notifyosdconfig](https://github.com/amandeepg/notifyosdconfig)
-- [notify-osd ppa](https://launchpad.net/~leolik/+archive/ubuntu/leolik)
-- [Howto](http://www.webupd8.org/2016/05/customize-notifyosd-notification.html)
+* [notifyosdconfig](https://github.com/amandeepg/notifyosdconfig)
+* [notify-osd ppa](https://launchpad.net/~leolik/+archive/ubuntu/leolik)
+* [Howto](http://www.webupd8.org/2016/05/customize-notifyosd-notification.html)
 
 ## Printing
 
 * [CUPS - localhost:631](http://localhost:631)
 
-```
+```bash
 # Gnome printer settings GUI
 system-config-printer
 ```

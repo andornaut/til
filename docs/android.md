@@ -93,7 +93,7 @@ am start -a android.intent.action.VIEW -d rtsp://example.com:8554/birdseye -n or
 1. Install the [Projectivy app](https://play.google.com/store/apps/details?id=com.spocky.projengmenu&hl=en_CA) from Google Play Store
 1. Enable [ADB Debugging](#adb-debugging) (Required by the "Launcher Manager" app)
 1. Install the [Downloader app](https://play.google.com/store/apps/details?id=com.esaba.downloader&hl=en) from Google Play Store
-1. Open the Downloader app and paste the URL: https://troypoint.com/troypoint-toolbox/
+1. Open the Downloader app and paste the URL: <https://troypoint.com/troypoint-toolbox/>
 1. Scroll to the bottom and install "Launcher Manager"
 1. Open Launcher Manager app and select the "Projectivy Launcher"
 
@@ -141,22 +141,22 @@ The workaround is to disable "Projectivy Launcher" in Android's accessibility se
 
 Name | Description
 --- | ---
-[iSponsorBlock](https://github.com/Galactic-Dev/iSponsorBlock)| A jailbreak tweak that implements the SponsorBlock API to skip sponsorships in YouTube videos
+[iSponsorBlock](https://github.com/Galactic-Dev/iSponsorBlock) | A jailbreak tweak that implements the SponsorBlock API to skip sponsorships in YouTube videos
 [NewPipe](https://github.com/TeamNewPipe/NewPipe/) | A libre lightweight streaming front-end for Android
 [ReVanced](https://revanced.app) [/r/revancedapp/](https://www.reddit.com/r/revancedapp/) [microG (revanced fork)](https://github.com/revanced/gmscore) | YouTube app for Android with no ads, SponsorBlock integration, and video quality settings persistence
-[SmartTube GitHub](https://github.com/yuliskov/SmartTube) | An advanced player for set-top boxes and tvs running Android OS 
+[SmartTube GitHub](https://github.com/yuliskov/SmartTube) | An advanced player for set-top boxes and tvs running Android OS
 
 #### SmartTube
 
 1. Install the [Downloader app by AFTVnews](https://www.aftvnews.com/downloader/)
-1. Open the Downloader app and paste the URL: https://kutt.it/stn_beta
+1. Open the Downloader app and paste the URL: <https://kutt.it/stn_beta>
 1. Follow the prompts to install [SmartTube](https://github.com/yuliskov/SmartTube)
 
 ### TV Apps
 
 To launch apps via Home Assistant, configure a dashboard button:
 
-```
+```yaml
 # For Android 12, using media_player.play_media
 - type: button
   icon: mdi:youtube
@@ -199,13 +199,13 @@ To launch apps via Home Assistant, configure a dashboard button:
 
 App | Intent (Android 12) | Activity (Android 14)
 --- | --- | ---
-AppleTV | com.apple.atve.sony.appletv/com.apple.atve.sony.appletv.MainActivity | https://tv.apple.com
-CBC Gem | ca.cbc.android.cbctv/tv.tou.android.home.views.activities.MainActivityTv | https://gem.cbc.ca
-CraveTV | ca.bellmedia.cravetv/axis.androidtv.sdk.app.MainActivity | https://www.crave.ca
-Disney+ | com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity | https://www.disneyplus.com
+AppleTV | com.apple.atve.sony.appletv/com.apple.atve.sony.appletv.MainActivity | <https://tv.apple.com>
+CBC Gem | ca.cbc.android.cbctv/tv.tou.android.home.views.activities.MainActivityTv | <https://gem.cbc.ca>
+CraveTV | ca.bellmedia.cravetv/axis.androidtv.sdk.app.MainActivity | <https://www.crave.ca>
+Disney+ | com.disney.disneyplus/com.bamtechmedia.dominguez.main.MainActivity | <https://www.disneyplus.com>
 NetFlix | com.netflix.ninja/.MainActivity | netflix://
-Prime Video | com.amazon.amazonvideo.livingroom/com.amazon.ignition.IgnitionActivity | https://app.primevideo.com
-SmartTube | com.liskovsoft.smarttubetv.beta/com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity | https://www.youtube.com
+Prime Video | com.amazon.amazonvideo.livingroom/com.amazon.ignition.IgnitionActivity | <https://app.primevideo.com>
+SmartTube | com.liskovsoft.smarttubetv.beta/com.liskovsoft.smartyoutubetv2.tv.ui.main.SplashActivity | <https://www.youtube.com>
 VLC | org.videolan.vlc/.StartActivity | vlc://
-YouTube | com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity | https://www.youtube.com
-YouTube Music | com.google.android.youtube.tvmusic/com.google.android.apps.youtube.tvmusic.activity.MainActivity | https://www.youtube.com/music
+YouTube | com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity | <https://www.youtube.com>
+YouTube Music | com.google.android.youtube.tvmusic/com.google.android.apps.youtube.tvmusic.activity.MainActivity | <https://www.youtube.com/music>

@@ -6,7 +6,7 @@
 
 * [NVM](https://github.com/nvm-sh/nvm)
 
-```
+```bash
 nvm install --lts
 nvm alias default 'lts/*'
 nvm use default
@@ -14,7 +14,7 @@ nvm use default
 
 ## Installing and auditing
 
-```
+```bash
 # Install exactly what package-lock.json specifies, erroring if it disagrees with
 # package.json. Unlike `npm install`, it never writes the lockfile, which is what you want in CI.
 npm ci
@@ -32,7 +32,7 @@ npm ls ${package}
 * [npm config - prefix](https://docs.npmjs.com/misc/config#prefix)
 * [npm link](https://docs.npmjs.com/cli/link)
 
-```
+```bash
 # Install global packages into a ${USER}-owned directory
 npm config set prefix '~/.local/lib/npm'
 
@@ -52,7 +52,7 @@ npm link foo
 * [npm publish](https://docs.npmjs.com/cli/publish)
 * [npm version](https://docs.npmjs.com/cli/version)
 
-```
+```bash
 # Do not run commit-hooks which may try to format package.json (husky -> prettier)
 npm config set commit-hooks false
 

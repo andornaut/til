@@ -4,7 +4,7 @@
 
 * [Cheat sheet](https://kubernetes.io/docs/reference/kubectl/quick-reference/)
 
-```
+```bash
 # Contexts (clusters)
 kubectl config get-contexts
 kubectl config use-context ${context}
@@ -34,7 +34,7 @@ kubectl get events --sort-by=.metadata.creationTimestamp
 * [Minikube docs](https://minikube.sigs.k8s.io/docs/)
 * [Ansible tasks](https://github.com/andornaut/ansible-workstation/blob/master/roles/dev/tasks/kubernetes.yml)
 
-```
+```bash
 minikube start
 
 # Access the Kubernetes Dashboard

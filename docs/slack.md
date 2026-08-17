@@ -5,6 +5,6 @@
 
 ## Useful commands
 
-```
+```text
 /reminder list
 ```

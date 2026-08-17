@@ -16,7 +16,7 @@ Command | Description
 
 [Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
 
-```
+```vim
 # Trim trailing whitespace
 :%s/\s\+$
 ```

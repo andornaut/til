@@ -49,11 +49,10 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 * [TX15 Setup, ELRS Bind & Betaflight Arming Guide](https://www.youtube.com/watch?v=4QUMUIjeuLo)
 * [Ultimate LiPo battery charging guide! 2023. How to charge lipo battery](https://www.youtube.com/watch?v=4N4tlSfITqA)
 
-
 ## Websites
 
 * [OscarLiang](https://oscarliang.com/)
-  * [FPV drone tuning](https://oscarliang.com/fpv-drone-tuning/) 
+  * [FPV drone tuning](https://oscarliang.com/fpv-drone-tuning/)
 
 ### Stores
 
@@ -72,7 +71,7 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 Switch | AUX | Description
 --- | --- | ---
 SA | 1 | Arm
-SB | 2 | Flight modes: ↑ Angle, -	Horizon, ↓	Acro (Manual)
+SB | 2 | Flight modes: ↑ Angle, - Horizon, ↓ Acro (Manual)
 SE | 3 | Flip over after crash (Turtle mode)
 SF | 4 | Prearm
 SW1 | 5 | Beeper
@@ -96,8 +95,8 @@ Switch | Description
 --- | ---
 S1 | Backlight (encoder)
 S2 | Volume (encoder)
-SC | Throttle: ↑ 50%, -	75%, ↓	100%
-SD | Roll, Pitch, Yaw: ↑ 50%, -	75%, ↓	100%
+SC | Throttle: ↑ 50%, - 75%, ↓ 100%
+SD | Roll, Pitch, Yaw: ↑ 50%, - 75%, ↓ 100%
 
 ## How-tos
 
@@ -202,7 +201,7 @@ n.b. If the green light on the flight controller is flashing, then that means th
 1. Press "ExpressLRS"
 1. Set Packet rate: 333 Full 2.4G, and Switch Mode: 12ch Mixed.
 
-**Notes**
+##### Notes
 
 * Channels 1-4: Are sent at full resolution (the sticks: Pitch, Roll, Yaw, Throttle). Channel 5 (AUX 1): Is the Arm switch. Channels 6-12: Are sent in a "mixed" format, which allows for the use of 3-position switches.
 * "Full" mode sends high-resolution data for all channels.
@@ -215,7 +214,7 @@ If you need more than 12 channels, then set Switch Mode: 16ch Rate/2, which enab
 1. Select the "ExpressLRS" Lua script
 1. Select "Enable WiFi"
    * The radio screen will display "WiFi Running" and show the SSID (ExpressLRS TX) and Password (expresslrs).
-1.  Open the ExpressLRS Configurator.
+1. Open the ExpressLRS Configurator.
 1. Select the latest 3.x.x Release
    * Device Category: RadioMaster 2.4 GHz
    * Device: RadioMaster TX15 Internal 2.4GHz TX (or the matching internal target).
@@ -232,7 +231,7 @@ If you need more than 12 channels, then set Switch Mode: 16ch Rate/2, which enab
       * Listen for the Chime: You will hear an ascending startup chime, and the screens inside the goggles will light up. You can let go of the button as soon as you hear the chime.
 1. Press the 5D joystick down to open the menu, then Menu -> Status -> Switch
 1. Select the DJI O4 Air Unit
-1. Put the Goggles into Bind Mode by holding the power button down for about 4 to 5 seconds 
+1. Put the Goggles into Bind Mode by holding the power button down for about 4 to 5 seconds
    * The goggles start to beep continuously, which means they are searching for the drone.
 1. Put the Drone into Bind Mode by pressing the tiny physical button next to the status LED. Hold the button until the status LED on the Air Unit starts flashing.
    * The goggles will stop beeping when the connection is successful

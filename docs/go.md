@@ -10,7 +10,7 @@
 
 ## Common commands
 
-```
+```bash
 $ go mod init github.com/andornaut/${project}
 $ go mod tidy
 
@@ -32,7 +32,8 @@ $ go vet ./...
 n.b. Superseded by [Go modules](https://go.dev/ref/mod#vendoring) (`go mod vendor`); `govendor` is archived.
 
 [FAQ](https://github.com/kardianos/govendor/blob/master/doc/faq.md)
-```
+
+```bash
 # Install globally
 $ go get -u github.com/kardianos/govendor
 ```

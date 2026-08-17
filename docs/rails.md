@@ -4,7 +4,7 @@
 
 ## Common commands
 
-```
+```bash
 rails db:migrate
 rails routes
 
@@ -18,7 +18,7 @@ rails runner script.rb
 
 ## Testing
 
-```
+```bash
 # Run a test script
 $ rails test --verbose test/test_pr.rb
 

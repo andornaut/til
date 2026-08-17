@@ -48,9 +48,9 @@
 
 #### Device discovery across subnets using pfSense
 
- * [Network ports](https://wiki.bambulab.com/en/general/printer-network-ports)
- * [GitHub issue: Add the ability to connect Bambu Lab printers in LAN Only Mode](https://github.com/SoftFever/OrcaSlicer/issues/8099#issuecomment-2601027353)
- * [Alternative: Send fake SSDP response to OrcaSlicer](https://gist.github.com/Alex-Schaefer/72a9e2491a42da2ef99fb87601955cc3#file-bambu-ssdp-discovery-py)
+* [Network ports](https://wiki.bambulab.com/en/general/printer-network-ports)
+* [GitHub issue: Add the ability to connect Bambu Lab printers in LAN Only Mode](https://github.com/SoftFever/OrcaSlicer/issues/8099#issuecomment-2601027353)
+* [Alternative: Send fake SSDP response to OrcaSlicer](https://gist.github.com/Alex-Schaefer/72a9e2491a42da2ef99fb87601955cc3#file-bambu-ssdp-discovery-py)
 
 1. From the P1P's physical control panel, [enable "LAN-only mode"](https://wiki.bambulab.com/en/knowledge-sharing/enable-lan-mode)
 2. From pfSense, install the [UDP Broadcast Relay package](https://docs.netgate.com/pfsense/en/latest/packages/udpbroadcastrelay.html)
@@ -68,14 +68,16 @@
 ## Software
 
 * [Autodesk Tinkercad](https://www.tinkercad.com/)
-* [Bambu Studio (Windows and macOS)](https://bambulab.com/en/download/studio) 
+* [Bambu Studio (Windows and macOS)](https://bambulab.com/en/download/studio)
   * [Linux](https://github.com/bambulab/BambuStudio) (build from source, then run the generated AppImage)
   * [OrcaSlicer](https://github.com/SoftFever/OrcaSlicer) - an improved fork of Bambu Studio
-    ```
+
+    ```bash
     # Install video playback dependencies:
     sudo apt install gstreamer1.0-libav gstreamer1.0-plugins-bad
     ```
-* [BumpMesh ](https://bumpmesh.com/)
+
+* [BumpMesh](https://bumpmesh.com/)
 * [FreeCAD](https://www.freecad.org/)
 * [OnShape](https://cad.onshape.com/)
 * [OpenSCAD](https://openscad.org/)

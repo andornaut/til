@@ -10,7 +10,7 @@
 * [Manual](https://www.freedesktop.org/software/systemd/man/systemd.html)
 * [Digital ocean how-to](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units)
 
-```
+```bash
 # Reload unit files
 systemctl daemon-reload
 
@@ -68,7 +68,7 @@ tree /etc/systemd/user
 
 ## journalctl commands
 
-```
+```bash
 # Tail logs for a service
 journalctl -f -u $service
 
@@ -95,7 +95,7 @@ journalctl --vacuum-time=1w
 
 * [Stackoverflow](https://superuser.com/a/936976)
 
-```
+```bash
 service=example.service
 systemctl stop ${service}
 systemctl disable ${service}
@@ -111,7 +111,7 @@ systemctl reset-failed
 
 Add unit files to `~/.config/systemd/user/`. eg
 
-```
+```json
 [Unit]
 Description=Music Player Daemon
 
@@ -127,7 +127,8 @@ The default target is "default.target"
 User units cannot depend on system units.
 
 User commands are similar to the system-wide systemctl, except that they do not require sudo, eg.:
-```
+
+```bash
 systemctl --user daemon-reload
 ```
 
@@ -135,24 +136,25 @@ systemctl --user daemon-reload
 
 [man loginctl](https://www.freedesktop.org/software/systemd/man/loginctl.html#enable-linger%20USER...)
 
-> The user@.service is started automatically when the user first logs in, and stays around as long as at least one login session is open. After the user logs out of the last session, user@.service and all services underneath it are terminated. This behavior is the default, when "lingering" is not enabled for that user. Enabling lingering means that user@.service is started automatically during boot, even if the user is not logged in, and that the service is not terminated when the user logs out.
-
+> The <user@.service> is started automatically when the user first logs in, and stays around as long as at least one login session is open. After the user logs out of the last session, <user@.service> and all services underneath it are terminated. This behavior is the default, when "lingering" is not enabled for that user. Enabling lingering means that <user@.service> is started automatically during boot, even if the user is not logged in, and that the service is not terminated when the user logs out.
+>
 > Enabling lingering allows the user to run processes without being logged in, for example to allow screen to persist after the user logs out, even if the session scope is terminated. In the default configuration, users can enable lingering for themselves:
 
-```
+```bash
 loginctl enable-linger ${USER}
 ```
 
 ### Create a service to restart an always-on USB port
 
-```
+```bash
 systemctl edit --full --force usb-hub-workaround.service
 systemctl enable usb-hub-workaround.service
 systemctl start usb-hub-workaround.service
 ```
 
 Unit file: `/etc/systemd/system/usb-hub-workaround.service`
-```
+
+```json
 [Unit]
 # https://askubuntu.com/a/1005903
 Description=Workaround: Restart an always-on USB port

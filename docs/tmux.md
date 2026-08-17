@@ -74,7 +74,7 @@ Shortcut|Description
 
 ## Usage
 
-```
+```bash
 tmux ls
 tmux attach
 tmux attach -t ${sessionName}

@@ -2,7 +2,7 @@
 
 ## Keys
 
-```
+```bash
 ssh-keygen -t ed25519 -C 'andornaut@example.com'
 
 # Copy the public key to a remote host's ~/.ssh/authorized_keys
@@ -16,7 +16,7 @@ ssh-keygen -lf ~/.ssh/id_ed25519.pub
 
 - [Howto](https://developer.github.com/guides/using-ssh-agent-forwarding/)
 
-```
+```bash
 # Start an agent, then add a key to it
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
@@ -32,7 +32,7 @@ n.b. Only forward to hosts that you trust: anyone who can read the forwarded soc
 
 ## Share connections
 
-```
+```bash
 mkdir -p ~/.ssh/controls
 chmod 700 ~/.ssh/controls
 echo '

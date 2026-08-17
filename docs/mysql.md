@@ -2,11 +2,11 @@
 
 ## Connect and explore
 
-```
+```bash
 mysql -h ${host} -u ${user} -p ${database}
 ```
 
-```
+```sql
 SHOW DATABASES;
 USE ${database};
 SHOW TABLES;
@@ -30,7 +30,7 @@ Show indexes and constraints:
 
 Show constraints only:
 
-```
+```sql
 USE INFORMATION_SCHEMA;
 SELECT TABLE_NAME,
        COLUMN_NAME,

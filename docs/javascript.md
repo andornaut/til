@@ -80,4 +80,3 @@ nvm use
 * [React TypeScript Cheatsheet](https://react-typescript-cheatsheet.netlify.app/docs/basic/setup)
 * [React Typescript handbook](https://www.typescriptlang.org/docs/handbook/react.html)
 * [tsconfig cheatsheet](https://www.totaltypescript.com/tsconfig-cheat-sheet)
-

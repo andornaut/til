@@ -5,7 +5,7 @@
 * [Install NVM on macOS](./javascript.md#install-nvm-on-macos)
 * [Install Ruby on macOS](./ruby.md#install-ruby-on-macos)
 
-```
+```bash
 # n.b. svn is needed to install the font-source-code-pro cask
 brew install \
     bash \
@@ -47,31 +47,36 @@ Install these applications:
 * [Visual Studio Code](https://code.visualstudio.com/)
 * [Yabai](https://github.com/koekeishiya/yabai) - Tiling window manager
 
-```
+```bash
 brew install --appdir ~/Applications/ --no-quarantine alacritty flameshot karabiner-elements rectangle
 ```
 
 Add CLI launcher scripts:
 
 `~/.local/bin/alacritty`
-```
+
+```bash
 #!/usr/bin/env bash
 open --new ~/Applications/Alacritty.app --args $@
 ```
+
 `~/.local/bin/code`
-```
+
+```bash
 #!/usr/bin/env bash
 open --new -a 'Visual Studio Code' --args $@
 ```
 
 [Enable font smoothing](https://pezcoder.medium.com/how-i-migrated-from-iterm-to-alacritty-c50a04705f95#fa82):
-```
+
+```bash
 defaults write -g CGFontRenderingFontSmoothingDisabled -bool NO
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 ```
 
 [Show all files in the Finder](https://macpaw.com/how-to/access-opt-folder-on-mac)
-```
+
+```bash
 defaults write com.apple.finder AppleShowAllFiles YES
 killall Finder
 ```
@@ -82,12 +87,12 @@ killall Finder
 
 Meta keys:
 
-- Command ⌘
-- Shift ⇧
-- Option (Alt) ⌥
-- Control (Ctrl) ⌃
-- Caps Lock ⇪
-- Fn
+* Command ⌘
+* Shift ⇧
+* Option (Alt) ⌥
+* Control (Ctrl) ⌃
+* Caps Lock ⇪
+* Fn
 
 | Key combination | Description |
 | --- | --- |
@@ -128,7 +133,7 @@ Keyboard Shortcut | `⇧⌘V`
 * [uBar](https://brawersoftware.com/products/ubar) - Dock alternative
 * [How to hide the dock](https://apple.stackexchange.com/a/298826)
 
-```
+```bash
 # Hide Dock
 defaults write com.apple.dock autohide -bool true && killall Dock
 defaults write com.apple.dock autohide-delay -float 1000 && killall Dock
@@ -183,7 +188,8 @@ defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 ### Show dotfiles / hidden files in Finder
 
 1. Open Terminal
-1. Run 
+1. Run
+
    ```bash
    defaults write com.apple.finder AppleShowAllFiles YES
    killall Finder
@@ -207,7 +213,7 @@ This can be worked around by restarting [Elgato Wave Link](https://www.elgato.co
 brew install --cask hammerspoon
 ```
 
-2. Configure the watcher script:
+1. Configure the watcher script:
 
 Add the following to your `~/.hammerspoon/init.lua`. Note: Update `WAVE3_VENDOR_ID` and `WAVE3_PRODUCT_ID` for your specific device. You can find these by running `system_profiler SPUSBDataType`.
 
@@ -355,7 +361,7 @@ hs.audiodevice.watcher.start()
 
 Use [display_switch](https://github.com/haimgel/display-switch) to workaround flaky KVM switching.
 
-```
+```bash
 $ cat ~/Library/Preferences/display-switch.ini
 # Logs are in:
 # $ tail -F ~/Library/Logs/display-switch/display-switch.log
@@ -375,7 +381,7 @@ $ launchctl load ~/Library/LaunchAgents/dev.haim.display-switch.daemon.plist
 
 * [Linux support](https://github.com/haimgel/display-switch/pull/22)
 
-```
+```bash
 sudo apt install libudev-dev i2c-tools
 sudo usermod ${USER} -aG i2c
 
@@ -393,7 +399,7 @@ sudo usermod ${USER} -aG i2c
 
 n.b. `ulimit` takes a single limit, so `ulimit -n 65536 104857` sets both the soft and hard limit to 65536 and discards the second number without an error. Set them separately.
 
-```
+```bash
 $ echo 'ulimit -S -n 65536' >> ~/.bashrc
 $ echo 'ulimit -H -n 104857' >> ~/.bashrc
 
@@ -407,7 +413,7 @@ END
 
 * [gon - CLI library for macOS Notarization](https://github.com/mitchellh/gon)
 
-```
+```bash
 xattr -d com.apple.quarantine /Applications/...app
 ```
 
@@ -415,7 +421,7 @@ xattr -d com.apple.quarantine /Applications/...app
 
 * [Bundler SSL Guide](https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#troubleshooting-certificate-errors)
 
-```
+```bash
 curl -Lks 'https://git.io/rg-ssl' | ruby
 brew info openssl
 sudo cp /usr/local/etc/openssl\@1.1/cert.pem  /opt/local/etc/openssl/cert.pem
@@ -423,7 +429,7 @@ sudo cp /usr/local/etc/openssl\@1.1/cert.pem  /opt/local/etc/openssl/cert.pem
 
 ### Reinstall xcode
 
-```
+```bash
 # Get Xcode version
 xcode-select  --version
 
@@ -454,7 +460,7 @@ After installing [RODE Connect](https://rode.com/en/software/rodeconnect#module_
 
 * [StackOverflow](https://superuser.com/a/1656587)
 
-```
+```bash
 sudo launchctl kickstart -kp system/com.apple.audio.coreaudiod
 ```
 
@@ -469,4 +475,3 @@ Even if disabled manually, rebooting or disconnecting/reconnecting the monitor w
 the setting.
 
 Workaround: Disable VRR in your monitor's OSD.
-

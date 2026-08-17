@@ -22,10 +22,9 @@
 
 Lumber sold by linear foot is usually more expensive than lumber sold by board foot.
 
-**Nominal vs actual size**
+#### Nominal vs actual size
 
 * 2-by-4 is actually 1½" thick by 3½" wide
 * 2-by-8 is actually 1½" thick by 7¼" wide
 
 The length measurement is always the same.
-

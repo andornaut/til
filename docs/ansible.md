@@ -6,7 +6,7 @@
 
 ## Run a playbook
 
-```
+```bash
 ansible-playbook site.yml
 
 # Prompt for the become (sudo) password
@@ -27,7 +27,7 @@ ansible-playbook -vv site.yml
 
 ## Ad-hoc commands
 
-```
+```bash
 # Check that hosts are reachable
 ansible all -m ping
 
@@ -38,7 +38,7 @@ ansible ${host} -m command -a 'uptime'
 
 * [Setup module docs](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup_module.html)
 
-```
+```bash
 # Display local facts
 ansible -m debug -a "var=hostvars[inventory_hostname]" $host
 
@@ -48,7 +48,7 @@ ansible all -m setup
 
 ## Ansible Galaxy
 
-```
+```bash
 # Create role
 ansible-galaxy init role_name
 ```

@@ -30,7 +30,7 @@
 
 * [Enable auto-switching](https://github.com/postmodern/chruby#auto-switching)
 
-```
+```bash
 brew install chruby
 brew install ruby-install
 ruby-install ruby
@@ -42,8 +42,8 @@ echo ruby-3.0.3 > .ruby-version
 
 ## Gems - Frameworks and libraries
 
-Name | Description
---- | ---
+Name|Description
+---|---
 [chruby](https://github.com/postmodern/chruby)|Changes the current Ruby
 [rubocop](https://github.com/rubocop/rubocop)|Static code analyzer and formatter
 [ruby-install](https://github.com/postmodern/ruby-install)|Installs Ruby, JRuby, Rubinius, TruffleRuby or MRuby
@@ -72,7 +72,7 @@ Name | Description
 
 ## Gems and bundler - package management and dependencies
 
-```
+```bash
 # Update one package
 bundle lock --update=packwerk
 
@@ -82,7 +82,7 @@ bundle clean --force
 
 ## Debugging
 
-```
+```console
 $ pry
 > Foo.instance_method(:method_symbol).source.display
 ```

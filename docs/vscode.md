@@ -43,7 +43,7 @@ This will install a script in `/usr/local/bin/code` that can be used to open Cod
 
 You can then create handy aliases, such as:
 
-```
+```bash
 $ grep code ~/.bash_aliases
 alias scratch="code --new-window ${HOME}/scratch.md"
 alias til="code --new-window ${HOME}/src/github.com/andornaut/til"
@@ -53,7 +53,7 @@ alias til="code --new-window ${HOME}/src/github.com/andornaut/til"
 
 * [Howto](https://github.com/VSCodeVim/Vim#mac)
 
-```
+```bash
 # Enable key repeating
 defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 

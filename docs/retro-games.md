@@ -3,7 +3,7 @@
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/main/roles/games)
 * Artwork
   * [System images (larger)](https://github.com/ruckage/es-theme-snes-mini/blob/master/art/icons_usa/)
-  * [System images (smaller)](https://github.com/Vidnez/retro-systems-icons-for-GarlicOS/tree/master/system) 
+  * [System images (smaller)](https://github.com/Vidnez/retro-systems-icons-for-GarlicOS/tree/master/system)
   * [Thumbnails](http://thumbnails.libretro.com/)
 * [Backup & Restore Android Retro Handhelds! (Video)](https://www.youtube.com/watch?app=desktop&v=EZhlyGXCSF0)
 * [BIOS (GitHub)](https://github.com/Abdess/retroarch_system)
@@ -50,10 +50,10 @@
 * [MinUI](https://github.com/shauninman/MinUI)
   * [MinUI Paks](https://github.com/shauninman/MinUI/blob/main/PAKS.md)
 
-1. Download the "base" and "extras" zip files from [the latest MinUI release](https://github.com/shauninman/MinUI/releases). eg. 
+1. Download the "base" and "extras" zip files from [the latest MinUI release](https://github.com/shauninman/MinUI/releases). eg.
 MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 1. Unzip the base zip file, and then:
-   1. Copy rg35xx/dmenu.bin to the root of one of the unlabelled partitions (I'm not sure which one, but there are only a couple and the file is small anyway) of the stock Anbernic sdcard in the TF1 port 
+   1. Copy rg35xx/dmenu.bin to the root of one of the unlabelled partitions (I'm not sure which one, but there are only a couple and the file is small anyway) of the stock Anbernic sdcard in the TF1 port
    1. Copy Bios/ MinUI.zip and Roms/ to the root of the sdcard in the TF2 port
 1. Unzip the extras zip file, and then:
    1. Delete all sub-folders of Emus/ and Tools/ *except* rg35xxplus/
@@ -62,7 +62,7 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
    1. Copy Bios/ Emus/ and Tools/ folders to the root of the sdcard in the TF2 port
 1. Copy additional BIOS and Roms files to the system-specific sub-folders of the Bios/ and Roms/ folders on the sdcard in the TF2 port
 
-**Notes**
+##### Notes
 
 * MinUI maps Roms to Bios' to Emus by the system abbreviation, which is included in parenthesis in sub-folders of the Roms/ folder. eg. `Roms/Sega Game Gear (GG)/` maps to `Bios/GG` and to `Emus/rg35xxplus/GG.pak`
 * MinUI cannot unzip 7z files, so prefer uncompressed Roms or zip files
@@ -74,12 +74,12 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
   * [Pico-8](https://muos.dev/emulators/pico8)
   * [PortMaster](https://muos.dev/help/portmaster)
 * [muOS Artwork](https://github.com/antiKk/muOS-Artwork)
-* [muOS Discord](https://discord.gg/muos) 
+* [muOS Discord](https://discord.gg/muos)
 * [muOS GitHub](https://github.com/MustardOS/)
   * [antiKk's Overlays](https://github.com/antiKk/muOS-Overlays)
   * [mugwomp93's Overlays](https://github.com/mugwomp93/muOS_Customization)
   * [Themes](https://github.com/MustardOS/theme)
- 
+
 Category | Path
 --- | ---
 Retroarch config | `/MUOS/info/config/retroarch.cfg`
@@ -125,7 +125,7 @@ Menu L1 | Exit [DraStic](https://muos.dev/emulators/drastic)
 * [OnionOS](https://github.com/OnionUI/Onion)
   * [OnionOS emulators](https://onionui.github.io/docs/emulators)
   * [OnionOS ports collection](https://onionui.github.io/docs/ports)
- 
+
 ##### Boxart
 
 Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCARD/Roms/GBA/Imgs`
@@ -158,11 +158,14 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 #### Setup
 
 1. Follow these guides:
-  * [Android Emulation Starter Guide](https://retrogamecorps.com/2022/03/13/android-emulation-starter-guide/#RetroArch)
-  * [Android Handheld Starter Guide (Video)](https://www.youtube.com/watch?app=desktop&v=I4mqgcDYZFo)
-  * [RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/#Options)
-2. Copy [these custom-systems XMLs](https://github.com/GlazedBelmont/es-de-android-custom-systems) to `/mnt/sdcard/ES-DE/custom_systems/`
-3. Create these folders on the removable sdcard (e.g.: `/storage/78DC-BF74/`):
+
+* [Android Emulation Starter Guide](https://retrogamecorps.com/2022/03/13/android-emulation-starter-guide/#RetroArch)
+* [Android Handheld Starter Guide (Video)](https://www.youtube.com/watch?app=desktop&v=I4mqgcDYZFo)
+* [RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/#Options)
+
+1. Copy [these custom-systems XMLs](https://github.com/GlazedBelmont/es-de-android-custom-systems) to `/mnt/sdcard/ES-DE/custom_systems/`
+2. Create these folders on the removable sdcard (e.g.: `/storage/78DC-BF74/`):
+
 ```text
 AZAHAR
 BIOS
@@ -175,9 +178,10 @@ RETROARCH
 └──states 
 ROMS
 ```
-4. In ES-DE, configure the new location for "downloaded_media" in Menu>Other settings>Game media directory
-5. In Retroarch, configure the new locations for saves and states in Settings>Directory
-6. Point Azahar, Dolphin, and NetherSX2 apps to the new locations for their configurations
+
+1. In ES-DE, configure the new location for "downloaded_media" in Menu>Other settings>Game media directory
+2. In Retroarch, configure the new locations for saves and states in Settings>Directory
+3. Point Azahar, Dolphin, and NetherSX2 apps to the new locations for their configurations
 
 #### RetroArch on stock Android
 
@@ -281,7 +285,7 @@ This will produce an error about not being able to change permissions on the "Sy
 
 #### Disable Kiosk Mode
 
-```
+```bash
 configFile=~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 ```
@@ -298,7 +302,7 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 * [es-de-android-custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems)
 * [ES-DE Android Apps](https://github.com/BinaryQuantumSoul/esde_android_apps)
   * [Android FAQ](https://gitlab.com/es-de/emulationstation-de/-/blob/master/FAQ-ANDROID.md?ref_type=heads#every-time-i-reboot-my-device-es-de-is-starting-the-onboarding-process-why-is-this-happening)
-* [ES-DE on Android Guide: My Favorite Launcher! (Video)](https://www.youtube.com/watch?v=X-bVwlMwobE) 
+* [ES-DE on Android Guide: My Favorite Launcher! (Video)](https://www.youtube.com/watch?v=X-bVwlMwobE)
 
 ## RetroArch
 
@@ -386,7 +390,7 @@ subdirectory; the library's `games/AGENTS.md` has the exact naming.
 the core the `.m3u` *path* rather than expanding the playlist itself. The core's loader has no m3u
 parser and rejects it:
 
-```
+```json
 [INFO]  [Content] Content loading skipped. Implementation will load it on its own.
 [INFO]  [RCHEEVOS] Extracted ... (Disc 1).iso from playlist     <- RetroAchievements' own m3u parser
 [ERROR] [LOADER] CPU_Init didn't recognize file.                <- the core refusing the m3u
@@ -446,7 +450,7 @@ Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/libr
 Nintendo - Nintendo DS (NDS) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/)
 Nintendo - Nintendo Entertainment System (FC, NES) | [Mesen](https://docs.libretro.com/library/mesen/) | [Mesen](https://docs.libretro.com/library/mesen/)
 Nintendo - Super Nintendo Entertainment System (SFC, SNES) | [Snes9x](https://docs.libretro.com/library/snes9x/) | [Snes9x](https://docs.libretro.com/library/snes9x/)
-Pico-8 | [Retro8](https://github.com/Jakz/retro8) | 
+Pico-8 | [Retro8](https://github.com/Jakz/retro8) ||
 Sega - 32X | [PicoDrive](https://docs.libretro.com/library/picodrive/) | [PicoDrive](https://docs.libretro.com/library/picodrive/)
 Sega - Dreamcast (DC) | [Flycast](https://docs.libretro.com/library/flycast/) | [Flycast](https://docs.libretro.com/library/flycast/)
 Sega - Game Gear (GG) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
@@ -526,7 +530,7 @@ built-in image viewer claims every `.png` **ahead of the core the playlist asks 
 launches as a static picture of that label instead of the game. Symptoms: the core loads at the PNG's
 dimensions (160x205) rather than PICO-8's 128x128, and saves land under `saves/image display/`. Fix:
 
-```
+```ini
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 builtin_imageviewer_enable = "false"
 ```
@@ -679,7 +683,7 @@ in the same udev rule so a real mouse holds index 0.
 
 ### Savestates
 
-```
+```ini
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 savestate_auto_index = "true"
 savestate_max_keep = "100"
@@ -721,7 +725,7 @@ flatpak run --command=grep org.libretro.RetroArch -E '^input_(r_y_minus_axis|r_y
   "/app/share/libretro/autoconfig/udev/Microsoft_X-Box_Series_XS_pad.cfg"
 ```
 
-```
+```ini
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 # Xbox Series X. Check the autoconfig profile above for any other pad.
 input_rewind_axis = "-4"             # right stick up
@@ -743,7 +747,7 @@ This, not the CPU, is what decides how far back you can go. The ring buffer hold
 savestates, so a core with a big state fills it quickly. RetroArch's default is 20MB, sized for a handheld; on a
 desktop there is no reason not to buy the window:
 
-```
+```ini
 rewind_buffer_size = "268435456"   # 256MB
 rewind_granularity = "1"
 ```
@@ -753,7 +757,8 @@ rewind_granularity = "1"
 "Rewind" functionality is not supported by all cores, and may cause problems with some cores that nominally support it.
 
 Whether a core can rewind at all is decided by the `savestate_features` field of its `.info` file: RetroArch refuses rewind for a `basic` core, permits it for `serialized`, and permits rewind plus runahead for `deterministic`. Read it rather than the per-core "Rewind" row on docs.libretro.com, which is stale for several cores (Dolphin and Opera both claim support they do not have):
-```
+
+```bash
 grep savestate_features ~/.local/share/flatpak/app/org.libretro.RetroArch/current/active/files/share/libretro/info/<core>_libretro.info
 ```
 
@@ -800,7 +805,7 @@ live at `config/<library_name>/<library_name>.cfg`.
 Flycast, PPSSPP, and Beetle Saturn take neither override: single-stick and rewind-capable (Flycast's only
 override is the `vulkan` driver, in [Video drivers](#video-drivers)).
 
-```
+```ini
 # axes: Beetle PSX HW, dolphin-emu, LRPS2 (alpha)
 input_hold_fast_forward_axis = "nul"
 input_rewind_axis = "nul"
@@ -820,7 +825,7 @@ runs the core ahead of the display and shows the result the moment the input is 
 cheaper half of a pair: run-ahead re-runs *every* frame, preemptive frames only when the controller state
 changes, for the same win. They are mutually exclusive.
 
-```
+```ini
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 preemptive_frames_enable = "false"   # off globally; enabled per core
 run_ahead_enabled = "false"
@@ -848,7 +853,7 @@ Core | Why not
 
 ### Latency: swapchain images
 
-```
+```ini
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 video_max_swapchain_images = "2"
 ```
@@ -859,7 +864,7 @@ back to `"3"` if frame pacing hiccups.
 
 ### Fullscreen and VRR
 
-```
+```ini
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 video_fullscreen = "true"
 video_windowed_fullscreen = "true"
@@ -875,7 +880,7 @@ under X11, where it conflicts with `TearFree`). It is mutually exclusive with th
 methods, so it cannot combine with a swap interval above 1 or black frame insertion; a conflict shows as
 audio drift with nothing visibly wrong. On a fixed-refresh panel leave VRR off and use BFI instead.
 
-```
+```ini
 video_vsync = "true"                # VRR sync needs this on
 video_swap_interval = "1"           # and this at 1
 video_black_frame_insertion = "0"   # and BFI off; BFI is the fixed-refresh alternative
@@ -969,7 +974,7 @@ Sega - Dreamcast | Flycast | vulkan | d3d11
 Sony - PlayStation (PSX) | Beetle PSX | -- | d3d12
 Sony - PlayStation (PSX) | Beetle PSX HW | vulkan | --
 
-```
+```ini
 # Set the default video driver to "glcore":
 # ~/.var/app/org.libretro.RetroArch/config/retroarch/retroarch.cfg
 video_driver = "glcore"
@@ -987,7 +992,8 @@ applied before video init, so the core comes up on Vulkan instead of moving to i
 ## Games
 
 ### Arcade
-```
+
+```text
 19XX - The War Against Destiny
 After Burner II
 Alien vs. Predator
@@ -1039,8 +1045,10 @@ Warriors of Fate
 X-Men
 X-Men vs. Street Fighter
 ```
+
 ### Atari - 2600 - September 11, 1977
-```
+
+```text
 Adventure
 Chopper Command
 Demon Attack
@@ -1062,7 +1070,8 @@ Yars' Revenge
 ```
 
 ### Atari - 7800 - May 1986
-```
+
+```text
 Alien Brigade
 Asteroids
 Ballblazer
@@ -1082,8 +1091,10 @@ Pole Position II
 Winter Games
 Xevious
 ```
+
 ### Atari - Jaguar - November 23, 1993
-```
+
+```text
 Alien vs Predator
 Attack of the Mutant Penguins
 Cannon Fodder
@@ -1103,8 +1114,10 @@ Tempest 2000
 Wolfenstein 3D
 Worms
 ```
+
 ### Atari - Lynx - September 1, 1989
-```
+
+```text
 Battle Wheels
 Blue Lightning
 Chip's Challenge
@@ -1128,8 +1141,10 @@ Xybots
 Zaku
 Zarlor Mercenary
 ```
+
 ### NEC - PC Engine CD - TurboGrafx-CD - December 4, 1988
-```
+
+```text
 Akumajou Dracula X - Chi no Rondo (Castlevania - Rondo of Blood)
 Bonk III - Bonk's Big Adventure
 Cosmic Fantasy 2
@@ -1144,8 +1159,10 @@ Wonder Boy III - Monster Lair
 Ys Book I & II
 Ys IV - The Dawn of Ys
 ```
+
 ### NEC - PC Engine - TurboGrafx 16 (PCE, TG-16) - October 30, 1987
-```
+
+```text
 Air Zonk
 Alien Crush
 Blazing Lazers
@@ -1169,8 +1186,10 @@ Parasol Stars - The Story of Bubble Bobble III
 Soldier Blade
 Splatterhouse
 ```
+
 ### Nintendo - Game Boy (GB) - April 21, 1989
-```
+
+```text
 Balloon Kid
 BurgerTime Deluxe
 Castlevania II - Belmont's Revenge
@@ -1194,8 +1213,10 @@ Tetris - Rosy Retrospection
 Tiny Toon Adventures - Babs' Big Break
 Wario Land - Super Mario Land 3
 ```
+
 ### Nintendo - Game Boy Advance (GBA) - March 21, 2001
-```
+
+```text
 Advance Wars
 Advance Wars 2 - Black Hole Rising
 Alien Hominid
@@ -1254,8 +1275,10 @@ Ultimate Card Games
 Wario Land 4
 WarioWare, Inc. - Mega Microgame$!
 ```
+
 ### Nintendo - Game Boy Color (GBC) - October 21, 1998
-```
+
+```text
 Bionic Commando - Elite Forces
 Dragon Warrior I & II
 Dragon Warrior III
@@ -1280,8 +1303,10 @@ Wario Land 3
 Wario Land II
 Wendy - Every Witch Way
 ```
+
 ### Nintendo - GameCube (GCN) - September 14, 2001
-```
+
+```text
 Animal Crossing
 Baten Kaitos - Eternal Wings and the Lost Ocean
 Beyond Good & Evil
@@ -1319,8 +1344,10 @@ TimeSplitters 2
 Tony Hawk's Pro Skater 3
 Viewtiful Joe
 ```
+
 ### Nintendo - Nintendo 64 (N64) - June 23, 1996
-```
+
+```text
 1080 Snowboarding
 Banjo-Kazooie
 Banjo-Tooie
@@ -1375,8 +1402,10 @@ WinBack - Covert Operations
 WWF No Mercy
 Yoshi's Story
 ```
+
 ### Nintendo - Nintendo DS (NDS) - November 21, 2004
-```
+
+```text
 Advance Wars - Dual Strike
 Another Code - Two Memories
 Apollo Justice - Ace Attorney
@@ -1431,8 +1460,10 @@ Trauma Center - Under the Knife
 WarioWare - Touched!
 World Ends with You, The
 ```
+
 ### Nintendo - Nintendo Entertainment System (FC, NES) - October 18, 1985
-```
+
+```text
 Adventure Island 3
 Adventures of Lolo
 Adventures of Lolo 2
@@ -1511,8 +1542,10 @@ Wizardry - Proving Grounds of the Mad Overlord
 Zelda II - The Adventure of Link
 Zoda's Revenge - StarTropics II
 ```
+
 ### Nintendo - Super Nintendo Entertainment System (SFC, SNES) - November 21, 1990
-```
+
+```text
 ActRaiser
 Adventures of Batman & Robin, The
 Aerobiz Supersonic
@@ -1601,8 +1634,10 @@ X-Men - Mutant Apocalypse
 Ys V - Ushinawareta Suna no Miyako Kefin
 Zombies Ate My Neighbors
 ```
+
 ### Pico-8 - April 2015
-```
+
+```text
 Alpine Alpaca
 Ascent
 Beckon the Hellspawn
@@ -1638,8 +1673,10 @@ Swordfish
 Wizards Rule
 Yggdrasil
 ```
+
 ### Sega - 32X - November 21, 1994
-```
+
+```text
 After Burner Complete
 Blackthorne
 Knuckles' Chaotix
@@ -1656,8 +1693,10 @@ Virtua Racing Deluxe
 WWF WrestleMania - The Arcade Game
 Zaxxon's Motherbase 2000
 ```
+
 ### Sega - Dreamcast (DC) - November 27, 1998
-```
+
+```text
 Bangai-O
 Border Down
 Capcom vs. SNK
@@ -1706,8 +1745,10 @@ Under Defeat
 Virtua Fighter 3tb
 Virtua Tennis
 ```
+
 ### Sega - Game Gear (GG) - October 6, 1990
-```
+
+```text
 Ax Battler - A Legend of Golden Axe
 Castle of Illusion Starring Mickey Mouse
 Coca-Cola Kid
@@ -1736,8 +1777,10 @@ Tails Adventure
 World Series Baseball '95
 X-Men
 ```
+
 ### Sega - Master System - Mark III (MS) - October 20, 1985
-```
+
+```text
 Alex Kidd in Miracle World
 Alex Kidd in Shinobi World
 Asterix
@@ -1766,8 +1809,10 @@ Ultima IV - Quest of the Avatar
 Wonder Boy in Monster Land
 Wonder Boy in Monster World
 ```
+
 ### Sega - Mega-CD - Sega CD - December 12, 1991
-```
+
+```text
 AH3 - Thunderstrike
 Amazing Spider-Man vs. The Kingpin, The
 Android Assault - The Revenge of Bari-Arm
@@ -1799,8 +1844,10 @@ Space Ace
 Terminator, The
 Vay
 ```
+
 ### Sega - Mega Drive - Genesis (MD) - October 29, 1988
-```
+
+```text
 Aladdin
 Alien Soldier
 Altered Beast
@@ -1883,10 +1930,10 @@ World of Illusion Starring Mickey Mouse and Donald Duck
 X-Men
 X-Men 2 - Clone Wars
 ```
+
 ### Sega - Saturn (SS) - November 22, 1994
 
-
-```
+```text
 Astal
 Baku Baku Animal - World Zookeeper Contest
 Batsugun
@@ -1925,9 +1972,12 @@ Virtual On - Cyber Troopers
 World Series Baseball 98
 X-Men - Children of the Atom
 ```
+
 ### SNK - Neo Geo - April 26, 1990
+
 * Arcade MVS romsets (`.zip`); run on the fbneo core, which opens the zip itself. The `neogeo.zip` BIOS rides in the BIOS set.
-```
+
+```text
 Bang Bead
 Blazing Star
 Captain Tomaday
@@ -1963,8 +2013,10 @@ Zupapa!
 ```
 
 ### SNK - Neo Geo CD - September 9, 1994
+
 * Redump `Japanese Romaji ~ English` dual titles; run on the NeoCD core (`.chd`). The 1999+ Neo Geo library never came to CD and needs the arcade fbneo core instead.
-```
+
+```text
 2020 Super Baseball
 Bakumatsu Roman - Gekka no Kenshi ~ The Last Blade
 Baseball Stars 2
@@ -2001,7 +2053,8 @@ Viewpoint
 ```
 
 ### SNK - Neo Geo Pocket Color (NGPC) - March 19, 1999
-```
+
+```text
 Big Bang Pro Wrestling
 Biomotor Unitron
 Dark Arms - Beast Buster 1999
@@ -2020,8 +2073,10 @@ SNK vs. Capcom - Card Fighters' Clash - SNK Version
 SNK vs. Capcom - The Match of the Millennium
 Sonic The Hedgehog - Pocket Adventure
 ```
+
 ### Sony - PlayStation (PSX) - December 3, 1994
-```
+
+```text
 Ace Combat 3 - Electrosphere
 Alundra
 Ape Escape
@@ -2090,8 +2145,10 @@ Wild Arms
 Wipeout XL
 Xenogears
 ```
+
 ### Sony - PlayStation 2 (PS2) - March 4, 2000
-```
+
+```text
 Ace Combat 04 - Shattered Skies
 Ace Combat 5 - The Unsung War
 Ace Combat Zero - The Belkan War
@@ -2196,8 +2253,10 @@ XIII
 Yakuza
 Zone of the Enders - The 2nd Runner
 ```
+
 ### Sony - PlayStation Portable (PSP) - December 11, 2004
-```
+
+```text
 Asterix & Obelix XXL 2
 Castlevania - The Dracula X Chronicles
 Crimson Gem Saga
@@ -2248,8 +2307,10 @@ WipEout Pulse
 Ys - The Oath in Felghana
 Ys Seven
 ```
+
 ### The 3DO Company - 3DO - October 4, 1993
-```
+
+```text
 Alone in the Dark
 BrainDead 13
 Crash 'n Burn
@@ -2328,6 +2389,6 @@ Wing Commander III - Heart of the Tiger
 
 * [StackExchange](https://gaming.stackexchange.com/a/402182)
 
-```
+```bash
 flatpak run com.valvesoftware.Steam "steam://open/console"
 ```

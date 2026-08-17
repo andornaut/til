@@ -22,7 +22,8 @@
 
 1. Install python3 using [ansible-ctrl/roles/dev](https://github.com/andornaut/ansible-ctrl/blob/master/roles/dev/tasks/python.yml)
 1. Link `python` to `python3`
-   ```
+
+   ```bash
    sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 0
    ```
 
@@ -31,7 +32,7 @@
 Name | Description
 --- | ---
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) | Parser, scraper
-[DevPi](https://github.com/devpi/devpi)| Python PyPi staging server and packaging, testing, release tool
+[DevPi](https://github.com/devpi/devpi) | Python PyPi staging server and packaging, testing, release tool
 [Django](https://www.djangoproject.com/) | High-level web framework
 [FastAPI](https://github.com/tiangolo/fastapi) | A modern, fast, web framework for building APIs. Based on Python type hints.
 [Flask](https://github.com/pallets/flask) | Micro framework for building web applications
@@ -40,7 +41,7 @@ Name | Description
 [pytest](https://docs.pytest.org/en/) | A framework that makes it easy to write small, readable tests
 [records](https://github.com/kennethreitz/records) | A library for making raw SQL queries to most relational databases
 [requests](https://github.com/psf/requests) | A simple, yet elegant, HTTP library
-[SQLAlchemy](https://www.sqlalchemy.org/) | SQL toolkit and Object Relational Mapper 
+[SQLAlchemy](https://www.sqlalchemy.org/) | SQL toolkit and Object Relational Mapper
 [Typer](https://github.com/tiangolo/typer) | Build great CLIs. Easy to code. Based on Python type hints. Built on top of [Click](https://github.com/pallets/click/).
 
 ## Tools
@@ -71,7 +72,7 @@ Name | Description
 * Linux `~/.config/pypoetry`
 * macOS `~/Library/Application\ Support/pypoetry/config.toml`
 
-```
+```bash
 # Configure Poetry to install venvs in the project directory, so that VSCode can enable them automatically
 poetry config virtualenvs.in-project true
 
@@ -82,22 +83,26 @@ poetry config pypi-token.pypi ${token}
 ### Develop a non-redistributable (no setup.py) local package using Pipenv
 
 Add an `.env` file to the project root:
-```
+
+```ini
 PYTHONPATH=.
 ```
 
 Pipenv and VS Code read `.env`, but pytest does not, so also add a `pytest.ini` file to the project root:
-```
+
+```json
 [pytest]
 pythonpath = .
 ```
 
 Add the following line to `.vscode/launch.json` configurations:
-```
+
+```json
 "envFile": "${workspaceFolder}/.env",
 ```
 
 Example:
+
 ```json
 {
     "version": "0.2.0",
@@ -122,4 +127,3 @@ This only occurs when starting VS Code from a terminal that already has an activ
 1. Select "Python: Select Interpreter"
 1. Select the correct interpreter
 1. Open "Test Explorer"
-

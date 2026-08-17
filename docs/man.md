@@ -1,7 +1,8 @@
 # Man
 
 ## Section numbers
-```
+
+```bash
 $ man man |grep 'section numbers' -A 10
        The table below shows the section numbers of the manual followed by the types of pages they contain.
 
@@ -28,15 +29,18 @@ DESCRIPTION
 ```
 
 ## Searching for documentation
-```
+
+```bash
 $ man man|grep -- -k
        man -k [apropos options] regexp ...
        man -k printf
        -k, --apropos
               the $PAGER environment variable.  It is not used in conjunction with -f or -k
 ```
+
 Substring or exact matching:
-```
+
+```bash
 $ man -k apt|wc -l
 63
 $ man -k ^apt$

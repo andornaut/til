@@ -2,7 +2,7 @@
 
 ## Formatting
 
-```
+```bash
 $ echo '{"foo": "lorem", "bar": "ipsum"}' | python -m json.tool
 
 # or
@@ -15,7 +15,7 @@ $ echo '{"foo": "lorem", "bar": "ipsum"}' | jq
 
 * [Manual](https://jqlang.org/manual/)
 
-```
+```bash
 $ echo '{"foo": "lorem", "bar": {"baz": "ipsum"}}' | jq '.bar.baz'
 "ipsum"
 

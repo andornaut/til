@@ -45,12 +45,14 @@ $ sudo systemctl restart NetworkManager
 Network Manager configuration lives in `/etc/NetworkManager/conf.d` and `/usr/lib/NetworkManager/conf.d` and can be viewed by executing `sudo NetworkManager --print-config`.
 
 The configuration in `/usr/lib/NetworkManager/conf.d/10-globally-managed-devices.conf` sets all devices except wifi and cellular to "unmanaged", but this doesn't appear to be applied:
+
 ```ini
 [keyfile]
 unmanaged-devices=*,except:type:wifi,except:type:gsm,except:type:cdma
 ```
 
 Instead, create an override in `/etc/NetworkManager/conf.d/99-unmanaged-devices.conf` with content:
+
 ```ini
 [keyfile]
 unmanaged-devices=interface-name:veth*;type:bridge;type:loopback
@@ -64,6 +66,7 @@ nmcli device status
 ```
 
 Note that [rfkill](https://manpages.ubuntu.com/manpages/noble/man8/rfkill.8.html) may be "soft blocking" your wireless device, which you can unblock using:
+
 ```bash
 rfkill unblock wlan
 ```
@@ -72,7 +75,7 @@ rfkill unblock wlan
 
 [StackOverflow](https://askubuntu.com/a/907249)
 
-```
+```bash
 $ grep dns -B 2 /etc/NetworkManager/NetworkManager.conf
 [main]
 plugins=ifupdown,keyfile
@@ -88,13 +91,13 @@ $ sudo systemctl restart NetworkManager
 
 `/etc/resolv.conf` often lists a local caching nameserver
 
-```
+```bash
 ( nmcli dev list || nmcli dev show ) 2>/dev/null | grep DNS
 ```
 
 ## Query DNS
 
-```
+```bash
 # Ask the system resolver
 dig +short example.com
 
@@ -114,7 +117,7 @@ n.b. `dig` talks to the nameserver directly, so it ignores `/etc/hosts` and nssw
 
 * [Find out what processes are making network connections](https://shallowsky.com/blog/linux/monitor-net-connections.html)
 
-```
+```bash
 # Alternatives
 netstat -A inet -p
 ss -tp
@@ -123,25 +126,28 @@ ss -tpla
 
 ## HTTPS SSH tunnel (port forward through jump box)
 
-```
+```bash
 ssh -vL 8443:webserver.example.com:443 -Nf jumpbox.example.com
 ```
+
 * [Explain shell](https://explainshell.com/explain?cmd=ssh++-vL+8443%3Awebserver.example.com%3A443+-Nf+jumpbox.example.com)
 
 ## nmcli
 
-```
+```bash
 # Show network info
 nmcli dev show em1
 ```
 
 ## Test performance
-```
+
+```bash
 iperf -c $HOST -u -b 1G
 ```
 
 ## Wifi
-```
+
+```bash
 # Disable power management
 sudo iwconfig wlan0 power off
 
@@ -153,7 +159,7 @@ sudo iwconfig wlan0 txpower 2dBm
 
 * [Howto](https://opensource.com/article/20/5/tio-linux)
 
-```
+```bash
 sudo dmesg |grep -E 'tty(S|U)'
 
 sudo apt install tio
