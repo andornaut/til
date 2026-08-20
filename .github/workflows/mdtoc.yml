@@ -50,5 +50,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7.2.0
         with:
-          commit_message: "docs: update README TOC"
+          commit_message: "Update the README TOC"
           file_pattern: "README.md"
