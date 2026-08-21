@@ -11,7 +11,7 @@ AllCops:
   NewCops: enable
   # The version .ruby-version names, rather than the one that happens to be
   # installed, so a cop cannot suggest syntax this repository cannot run.
-  TargetRubyVersion: 3.2
+  TargetRubyVersion: 3.4
   # Every suggestion it makes is already a decision taken here.
   SuggestExtensions: false
 
