@@ -549,7 +549,7 @@ sudo systemctl reload apparmor
 
 * [StackOverflow](https://askubuntu.com/a/1356965)
 
-This can be caused by accessing the "Sound" section/tab of Gnome Control Center on an installation provisioned by [ansible-workstation](https://github.com/andornaut/ansible-workstation).
+This can be caused by accessing the "Sound" section/tab of Gnome Control Center on an installation provisioned by [ansible-ctrl](https://github.com/andornaut/ansible-ctrl).
 
 ```bash
 rm -rf .config/dconf/

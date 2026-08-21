@@ -20,7 +20,7 @@
 
 ## Getting started
 
-1. Install python3 using [ansible-ctrl/roles/dev](https://github.com/andornaut/ansible-ctrl/blob/master/roles/dev/tasks/python.yml)
+1. Install python3 using [ansible-ctrl/roles/dev](https://github.com/andornaut/ansible-ctrl/blob/main/roles/dev/tasks/python.yml)
 1. Link `python` to `python3`
 
    ```bash

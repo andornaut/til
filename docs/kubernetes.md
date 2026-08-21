@@ -32,7 +32,7 @@ kubectl get events --sort-by=.metadata.creationTimestamp
 ## Minikube
 
 * [Minikube docs](https://minikube.sigs.k8s.io/docs/)
-* [Ansible tasks](https://github.com/andornaut/ansible-workstation/blob/master/roles/dev/tasks/kubernetes.yml)
+* [Ansible tasks](https://github.com/andornaut/ansible-ctrl/blob/main/roles/docker/tasks/kubernetes.yml)
 
 ```bash
 minikube start

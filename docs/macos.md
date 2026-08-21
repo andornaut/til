@@ -160,14 +160,14 @@ defaults write com.apple.dock no-bouncing -bool FALSE && killall Dock
 ### Disable CMD+h from hiding windows
 
 * [StackOverflow](https://superuser.com/a/1354665)
-* [@andornaut/dotfiles](https://github.com/andornaut/dotfiles/blob/master/%24HOME/.config/karabiner/assets/complex_modifications/disable_command_h.json)
+* [@andornaut/dotfiles](https://github.com/andornaut/dotfiles/blob/main/root/%24HOME/.config/karabiner/assets/complex_modifications/disable_command_h.json)
 
 1. Install [Karabiner-elements](https://karabiner-elements.pqrs.org/)
 1. Import and enable the [Prevent unintended command-h hide window (rev 2)](https://ke-complex-modifications.pqrs.org/#disable_cmd_h_hide_window) "complex modification rule"
 
 ### Open Alacritty with CMD+Enter
 
-* [@andornaut/dotfiles](https://github.com/andornaut/dotfiles/blob/master/%24HOME/.config/karabiner/assets/complex_modifications/open_alacritty.json)
+* [@andornaut/dotfiles](https://github.com/andornaut/dotfiles/blob/main/root/%24HOME/.config/karabiner/assets/complex_modifications/open_alacritty.json)
 
 ```json
 {

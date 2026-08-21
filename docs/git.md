@@ -182,7 +182,7 @@ git revert -m 1 ${MERGE_COMMIT_SHA}
 ### Get default branch name
 
 * [Stackoverflow](https://stackoverflow.com/questions/28666357/git-how-to-get-default-branch)
-* [Dotfiles Git config](https://github.com/andornaut/dotfiles/blob/master/%24HOME/.config/git/config)
+* [Dotfiles Git config](https://github.com/andornaut/dotfiles/blob/main/root/%24HOME/.config/git/config)
 
 ```json
 [alias]
