@@ -39,7 +39,7 @@
   * [BIQU Panda Hotend](https://biqu.equipment/products/biqu-panda-hotend)
   * [Boron Nitride Paste](https://www.sliceengineering.com/products/boron-nitride-paste)
   * [CHT Brass High Flow Nozzle For Bambu Lab X1 P1P](https://www.aliexpress.com/item/1005005246470567.html)
-  * [High Temperature Plate (PEI)](https://ca.store.bambulab.com/products/bambu-high-temperature-plate)
+  * High Temperature Plate (PEI)
   * [Hotend Kit For Bambu Lab X1 Carbon X1-Carbon Combo P1P](https://www.aliexpress.com/item/1005005291012768.html)
   * [Lightyear G10 Build Plate](https://lightyeardirect.com/products/magnetic-garolite-g-10-composite-build-plate-for-bambulab-x1c-and-p1p)
   * [Maintenance](https://wiki.bambulab.com/en/p1/maintenance)

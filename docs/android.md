@@ -7,7 +7,7 @@
 Name | Description
 --- | ---
 [CDisplayEx](https://www.cdisplayex.com/) | Comic reader (.cbr files)
-[GlassesOn](https://play.google.com/store/apps/details?id=com.sixoversix.copyglass&hl=en_CA) | Pupillary distance calculator
+GlassesOn | Pupillary distance calculator
 [OpenVPN for Android](https://play.google.com/store/apps/details?id=de.blinkt.openvpn) | Unofficial OpenVPN client
 [prim-ftpd](https://github.com/wolpi/prim-ftpd) | FTP server
 [ReadEra](https://readera.org/) | Ebook reader

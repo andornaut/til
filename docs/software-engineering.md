@@ -56,7 +56,7 @@
 ### Operating systems and networking
 
 * [Linux Kernel Development](https://www.oreilly.com/library/view/linux-kernel-development/9780768696974/)
-* [Modern Operating Systems](https://csc-knu.github.io/sys-prog/books/Andrew%20S.%20Tanenbaum%20-%20Modern%20Operating%20Systems.pdf)
+* Modern Operating Systems
 * [pfSense - The Definitive Guide](https://www.goodreads.com/book/show/18940153-pfsense)
 * [Running Linux](https://www.oreilly.com/library/view/running-linux-5th/0596007604/)
 * [TCP/IP Illustrated, Volume 1 - The Protocols](https://www.oreilly.com/library/view/tcpip-illustrated-volume/9780132808200/)

@@ -49,8 +49,8 @@ Model documentation, which is the only authoritative source for context windows,
 
 ## Software
 
-* [ansible-role-homeassistantfrigate #llm](https://github.com/andornaut/ansible-ctrl/tree/master/roles/homeassistant-frigate#llm)
-* [ansible-role-homeassistantfrigate #voice-assistant](https://github.com/andornaut/ansible-ctrl/tree/master/roles/homeassistant-frigate#voice-assistant)
+* [ansible-ctrl/roles/homeautomation: llama.cpp models and context](https://github.com/andornaut/ansible-ctrl/tree/main/roles/homeautomation#llamacpp-models-and-context)
+* [ansible-ctrl/roles/homeautomation: Home Assistant conversation agent](https://github.com/andornaut/ansible-ctrl/tree/main/roles/homeautomation#home-assistant-conversation-agent)
 * [Claude Code](https://github.com/anthropics/claude-code)
   * [claude-code-router](https://github.com/musistudio/claude-code-router) - Local control plane that routes an agent across models and providers
   * [free-claude-code](https://github.com/Alishahryar1/free-claude-code) - Proxy that converts Claude Code's API requests to NVIDIA NIM or OpenRouter format

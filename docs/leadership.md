@@ -10,7 +10,7 @@
 * [Coders at Work - Reflections on the Craft of Programming](https://www.goodreads.com/en/book/show/6713575-coders-at-work)
 * [Crucial Conversations - Tools for Talking When Stakes Are High](https://www.goodreads.com/en/book/show/15014.Crucial_Conversations)
 * [Evidence-based Software Engineering](https://open.umn.edu/opentextbooks/textbooks/1121)
-* [Fierce Conversations](https://fierceinc.com/fierce-conversations/)
+* [Fierce Conversations](https://www.goodreads.com/book/show/134911155-fierce-conversations)
 * [Getting to Yes - Negotiating Agreement Without Giving In](https://www.goodreads.com/book/show/313605.Getting_to_Yes)
 * [High Output Management](https://books.google.ca/books/about/High_Output_Management.html?id=HersAAAAMAAJ)
 * [Influence - The Psychology of Persuasion](https://www.goodreads.com/book/show/28815.Influence)

@@ -110,7 +110,7 @@ Rebind these shortcuts in System Settings > Keyboard > Shortcuts > Mission Contr
 | ⌘ ← | Mission Control: Move left a space |
 | ⌘ → | Mission Control: Move right a space |
 
-Add a "[Paste and Match Style](https://scottswezey.com/always-paste-without-formatting-macos/)" shortcut in System Settings > Keyboards > Shortcuts > App Shortcuts
+Add a "Paste and Match Style" shortcut in System Settings > Keyboards > Shortcuts > App Shortcuts
 
 Field|Value
 ---|---

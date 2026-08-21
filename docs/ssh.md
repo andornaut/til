@@ -14,7 +14,7 @@ ssh-keygen -lf ~/.ssh/id_ed25519.pub
 
 ## Agent forwarding
 
-- [Howto](https://developer.github.com/guides/using-ssh-agent-forwarding/)
+- [Howto](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/using-ssh-agent-forwarding)
 
 ```bash
 # Start an agent, then add a key to it

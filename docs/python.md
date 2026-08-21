@@ -12,7 +12,7 @@
 * [Fluent Python (2nd edition)](https://www.oreilly.com/library/view/fluent-python-2nd/9781492056348/)
 * [Learn Python 3 the Hard Way](https://www.goodreads.com/book/show/35561829-learn-python-3-the-hard-way)
 * [Programming Python](https://www.oreilly.com/library/view/programming-python-4th/9781449398712/)
-* [Two Scoops of Django 3.x](https://www.feldroy.com/books/two-scoops-of-django-3-x)
+* Two Scoops of Django 3.x
 
 ## Newsletters
 
@@ -62,7 +62,7 @@ Name | Description
 
 ### Getting started with Poetry
 
-1. Install [pipx](https://pipx.pypa.io/stable/installation/)
+1. Install [pipx](https://pipx.pypa.io/stable/how-to/install-pipx.html)
 1. Install poetry ```pipx install poetry```
 1. Run ```poetry init```
 1. Update `pyproject.toml`

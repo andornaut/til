@@ -7,7 +7,7 @@
   * [Thumbnails](http://thumbnails.libretro.com/)
 * [Backup & Restore Android Retro Handhelds! (Video)](https://www.youtube.com/watch?app=desktop&v=EZhlyGXCSF0)
 * [BIOS (GitHub)](https://github.com/Abdess/retroarch_system)
-* [BIOS (Megathread)](https://r-roms.github.io/megathread/misc/#bios-files)
+* [BIOS (Megathread)](https://r-roms.github.io/Miscellaneous/bios-sets)
 * [Homebrew games list](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
 * [MyAbandonware](https://www.myabandonware.com/)
@@ -21,7 +21,7 @@
   * [Android Emulation Starter Guide](https://retrogamecorps.com/2022/03/13/android-emulation-starter-guide/#RetroArch)
   * [Android Handheld Starter Guide (Video)](https://www.youtube.com/watch?app=desktop&v=I4mqgcDYZFo)
   * [RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/#Options)
-* [Retro Game Talk](https://retrogametalk.com/repository/)
+* Retro Game Talk
 * [Retro-Sanctuary](https://retro-sanctuary.com/)
 * [ROMhacking.net](https://www.romhacking.net)
   * [ROM hack patcher (online)](https://www.romhacking.net/patch/)
@@ -70,9 +70,9 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 #### Mustard OS / muOS
 
 * [muOS](https://muos.xonglebongle.com/)
-  * [Help (Documentation)](https://muos.dev/help)
-  * [Pico-8](https://muos.dev/emulators/pico8)
-  * [PortMaster](https://muos.dev/help/portmaster)
+  * [Help (Documentation)](https://muos.dev/docs/support)
+  * Pico-8
+  * [PortMaster](https://muos.dev/installation/portmaster)
 * [muOS Artwork](https://github.com/antiKk/muOS-Artwork)
 * [muOS Discord](https://discord.gg/muos)
 * [muOS GitHub](https://github.com/MustardOS/)
@@ -100,7 +100,7 @@ Menu L2 | Save state
 Menu R1 | Fast forward
 Menu R2 | Load last state
 Menu Vol Up/Down | Increase/Decrease brightness
-Menu L1 | Exit [DraStic](https://muos.dev/emulators/drastic)
+Menu L1 | Exit DraStic
 
 ### Analogue Pocket
 
@@ -440,8 +440,8 @@ Atari - 2600 | [Stella](https://docs.libretro.com/library/stella/) | [Stella](ht
 Atari - 7800 | [ProSystem](https://docs.libretro.com/library/prosystem/) | [ProSystem](https://docs.libretro.com/library/prosystem/)
 Atari - Jaguar | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/) | [Virtual Jaguar](https://docs.libretro.com/library/virtual_jaguar/)
 Atari - Lynx | [Beetle Lynx](https://docs.libretro.com/library/beetle_lynx/) | [Beetle Lynx](https://docs.libretro.com/library/beetle_lynx/)
-NEC - PC Engine - TurboGrafx 16 (PCE) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/)
-NEC - PC Engine CD - TurboGrafx-CD (PCECD) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/) | [Beetle PCE](https://docs.libretro.com/library/beetle_pce/)
+NEC - PC Engine - TurboGrafx 16 (PCE) | Beetle PCE | Beetle PCE
+NEC - PC Engine CD - TurboGrafx-CD (PCECD) | Beetle PCE | Beetle PCE
 Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
 Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/)
 Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
@@ -459,7 +459,7 @@ Sega - Mega-CD - Sega CD | [Genesis Plus GX](https://docs.libretro.com/library/g
 Sega - Mega Drive - Genesis (MD) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/) | [Genesis Plus GX](https://docs.libretro.com/library/genesis_plus_gx/)
 Sega - Saturn (SS) | [Beetle Saturn](https://docs.libretro.com/library/beetle_saturn/) | [YabaSanshiro](https://docs.libretro.com/library/yabasanshiro/)
 SNK - Neo Geo | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/) | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/)
-SNK - Neo Geo CD | [NeoCD](https://docs.libretro.com/library/neocd/) | [NeoCD](https://docs.libretro.com/library/neocd/)
+SNK - Neo Geo CD | NeoCD | NeoCD
 SNK - Neo Geo Pocket Color (NGPC) | [Beetle NeoPop](https://docs.libretro.com/library/beetle_neopop/) | [Beetle NeoPop](https://docs.libretro.com/library/beetle_neopop/)
 Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/)
 Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | [NetherSX2-Turnip](https://github.com/nckstwrt/NetherSX2-Turnip) (Standalone)

@@ -2,7 +2,7 @@
 
 ## Wood (lumber)
 
-* [Flat (plain) vs Quarter sawn](https://static1.squarespace.com/static/5cffdfdd7a7d7700013ba738/t/5d49a844d997fc00010dbab6/1565108292329/diagram-log-straight-quarter-plain-sawn-grain.jpg)
+* Flat (plain) vs Quarter sawn
 
 ### Lumber yards
 
