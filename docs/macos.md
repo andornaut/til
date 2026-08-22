@@ -422,7 +422,7 @@ xattr -d com.apple.quarantine /Applications/...app
 * [Bundler SSL Guide](https://bundler.io/guides/rubygems_tls_ssl_troubleshooting_guide.html#troubleshooting-certificate-errors)
 
 ```bash
-curl -Lks 'https://git.io/rg-ssl' | ruby
+curl -Lks 'https://raw.githubusercontent.com/rubygems/ruby-ssl-check/master/check.rb' | ruby
 brew info openssl
 sudo cp /usr/local/etc/openssl\@1.1/cert.pem  /opt/local/etc/openssl/cert.pem
 ```

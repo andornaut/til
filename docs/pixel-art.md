@@ -1,7 +1,7 @@
 # Pixel Art
 
 * [Lospec](https://lospec.com/) - Tools and tutorials
-* [Pixel Dailies (Twitter)](https://twitter.com/Pixel_Dailies) - Inspiration
+* [Pixel Dailies (X)](https://x.com/Pixel_Dailies) - Inspiration
 * [/r/PixelArt](https://www.reddit.com/r/PixelArt/)
 
 ## Aseprite (software)

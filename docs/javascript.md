@@ -68,7 +68,7 @@ nvm use
 
 * [Apollo FetchPolicy options](https://www.apollographql.com/docs/react/data/queries/#setting-a-fetch-policy)
 * [Google Core Web Vitals](https://web.dev/articles/vitals)
-* [React profiler](https://reactjs.org/docs/profiler.html)
+* [React profiler](https://legacy.reactjs.org/docs/profiler.html)
 
 ## Storybook
 
