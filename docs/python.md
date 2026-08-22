@@ -62,7 +62,7 @@ Name | Description
 
 ### Getting started with Poetry
 
-1. Install [pipx](https://pipx.pypa.io/stable/stable/how-to/install-pipx.html)
+1. Install [pipx](https://pipx.pypa.io/stable/how-to/install-pipx.html)
 1. Install poetry ```pipx install poetry```
 1. Run ```poetry init```
 1. Update `pyproject.toml`

@@ -46,7 +46,7 @@
 
 ### Computer science
 
-* [Calculus](https://ocw.mit.edu/courses/res-18-001-calculus-online-textbook-spring-2005/resources/textbook/index.html)
+* [Calculus](https://ocw.mit.edu/courses/res-18-001-calculus-fall-2023/)
 * [Concepts, Techniques, and Models of Computer Programming](https://webperso.info.ucl.ac.be/~pvr/book.html)
 * [Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 * [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html)
