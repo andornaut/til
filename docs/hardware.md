@@ -86,7 +86,7 @@ sudo sed -i 's/\(options snd-usb-audio index.*\)/#\1/g' \
 
 ## Pulseaudio: set default headphone output
 
-* [StackOverflow](http://unix.stackexchange.com/questions/175930/change-default-port-for-pulseaudio-line-out-not-headphones)
+* [StackOverflow](https://unix.stackexchange.com/questions/175930/change-default-port-for-pulseaudio-line-out-not-headphones)
 * [pulseaudio-ctl](https://github.com/graysky2/pulseaudio-ctl)
 
 ```bash

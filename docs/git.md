@@ -2,8 +2,8 @@
 
 * [On undoing, fixing, or removing commits in git](https://sethrobertson.github.io/GitFixUm/fixup.html)
 
-* [Useful commands](http://orga.cat/posts/most-useful-git-commands)
-* [Clean-up outdated branches](http://railsware.com/blog/2014/08/11/git-housekeeping-tutorial-clean-up-outdated-branches-in-local-and-remote-repositories/)
+* [Useful commands](https://orga.cat/posts/most-useful-git-commands)
+* [Clean-up outdated branches](https://railsware.com/blog/2014/08/11/git-housekeeping-tutorial-clean-up-outdated-branches-in-local-and-remote-repositories/)
 
 ---
 

@@ -30,7 +30,7 @@ n.b. ``-e`` is not applied to a command whose status is already being tested, so
 
 ## Here Documents
 
-[Examples](http://stackoverflow.com/a/21549836)
+[Examples](https://stackoverflow.com/a/21549836)
 
 The format of here-documents is:
 
@@ -46,7 +46,7 @@ If the redirection operator is <<-, then all leading tab characters are stripped
 
 ## Run on exit (trap)
 
-[Wiki](http://mywiki.wooledge.org/SignalTrap)
+[Wiki](https://mywiki.wooledge.org/SignalTrap)
 
 ```bash
 cleanup() {

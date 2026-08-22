@@ -36,7 +36,7 @@ LIMIT 20;
 
 ## Diff schemas
 
-Use [apgdiff](http://apgdiff.com).
+Use [apgdiff](https://apgdiff.com).
 
 ## Query user password hash
 

@@ -64,7 +64,7 @@ Name|Description
 
 ## Testing
 
-* [Assertions](http://docs.seattlerb.org/minitest/Minitest/Assertions.html)
+* [Assertions](https://docs.seattlerb.org/minitest/Minitest/Assertions.html)
 * [minitest](https://github.com/seattlerb/minitest)
 * [rspec](https://rspec.info/)
 * [test-unit](https://test-unit.github.io/)

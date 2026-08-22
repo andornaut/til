@@ -4,7 +4,7 @@
 * Artwork
   * [System images (larger)](https://github.com/ruckage/es-theme-snes-mini/blob/master/art/icons_usa/)
   * [System images (smaller)](https://github.com/Vidnez/retro-systems-icons-for-GarlicOS/tree/master/system)
-  * [Thumbnails](http://thumbnails.libretro.com/)
+  * [Thumbnails](https://thumbnails.libretro.com/)
 * [Backup & Restore Android Retro Handhelds! (Video)](https://www.youtube.com/watch?app=desktop&v=EZhlyGXCSF0)
 * [BIOS (GitHub)](https://github.com/Abdess/retroarch_system)
 * [BIOS (Megathread)](https://r-roms.github.io/Miscellaneous/bios-sets)
@@ -947,7 +947,7 @@ reach for. `halation` and `phosphor_amplitude` at 0 drop the expensive passes an
 On Flatpak installs, thumbnails are located in `~/.var/app/org.libretro.RetroArch/config/retroarch/thumbnails/`
 
 n.b. Thumbnail filenames cannot contain ampersand "&" characters. If the ROM name contains an ampersand, then replace it with an underscore "_" in the filenames of its thumbnails. For example, if a ROM is named "Sonic & Knuckles + Sonic The Hedgehog 3 (USA).md", its thumbnails must be named
-[Sonic _ Knuckles + Sonic The Hedgehog 3 (USA).png](http://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Sonic%20_%20Knuckles%20%2B%20Sonic%20The%20Hedgehog%203%20%28USA%29.png).
+[Sonic _ Knuckles + Sonic The Hedgehog 3 (USA).png](https://thumbnails.libretro.com/Sega%20-%20Mega%20Drive%20-%20Genesis/Named_Boxarts/Sonic%20_%20Knuckles%20%2B%20Sonic%20The%20Hedgehog%203%20%28USA%29.png).
 
 ### Video drivers
 
@@ -2348,40 +2348,40 @@ Wing Commander III - Heart of the Tiger
 
 ### Port for Linux-based handhelds
 
-[PortMaster](http://portmaster.games/games.html) for Anbernic and Powkiddy devices
+[PortMaster](https://portmaster.games/games.html) for Anbernic and Powkiddy devices
 
-* [2048](http://portmaster.games/detail.html?name=2048)
-* [Aleph-One Marathon 1](http://portmaster.games/detail.html?name=alephone-marathon)
+* [2048](https://portmaster.games/detail.html?name=2048)
+* [Aleph-One Marathon 1](https://portmaster.games/detail.html?name=alephone-marathon)
 * [Cave Story (Evo)](https://portmaster.games/detail.html?name=cave.story-evo)
-* [Celeste Classic](http://portmaster.games/detail.html?name=cceleste)
-* [Chasm](http://portmaster.games/detail.html?name=chasm)*
+* [Celeste Classic](https://portmaster.games/detail.html?name=cceleste)
+* [Chasm](https://portmaster.games/detail.html?name=chasm)*
 * [Descent III](https://portmaster.games/detail.html?name=descent3)*
-* [Downwell](http://portmaster.games/detail.html?name=downwell)*
-* [Duke Nukem 3D](http://portmaster.games/detail.html?name=duke.nukem.3d)*
-* [Echo Chamber](http://portmaster.games/detail.html?name=echo_chamber) - Doesn't work on muOS: Runs, but controls (other than "select") don't work
-* [Fallout 1](http://portmaster.games/detail.html?name=fallout1)*
-* [Fallout 2](http://portmaster.games/detail.html?name=fallout2)*
-* [Gravity Circuit](http://portmaster.games/detail.html?name=gravitycircuit)*
-* [Half-Life](http://portmaster.games/detail.html?name=half-life)*
-* [Maldita Castilla](http://portmaster.games/detail.html?name=maldita.castilla)
-* [Minetest](http://portmaster.games/detail.html?name=minetest) (aka Luanti) - Requires more than 1GB of RAM for single player
-* [OpenRCT2](http://portmaster.games/detail.html?name=openrct2)*
+* [Downwell](https://portmaster.games/detail.html?name=downwell)*
+* [Duke Nukem 3D](https://portmaster.games/detail.html?name=duke.nukem.3d)*
+* [Echo Chamber](https://portmaster.games/detail.html?name=echo_chamber) - Doesn't work on muOS: Runs, but controls (other than "select") don't work
+* [Fallout 1](https://portmaster.games/detail.html?name=fallout1)*
+* [Fallout 2](https://portmaster.games/detail.html?name=fallout2)*
+* [Gravity Circuit](https://portmaster.games/detail.html?name=gravitycircuit)*
+* [Half-Life](https://portmaster.games/detail.html?name=half-life)*
+* [Maldita Castilla](https://portmaster.games/detail.html?name=maldita.castilla)
+* [Minetest](https://portmaster.games/detail.html?name=minetest) (aka Luanti) - Requires more than 1GB of RAM for single player
+* [OpenRCT2](https://portmaster.games/detail.html?name=openrct2)*
 * [Pokemon Reborn](https://portmaster.games/detail.html?name=reborn)*
 * [Quake 1](https://portmaster.games/detail.html?name=quake)*
 * [Quake 2](https://portmaster.games/detail.html?name=quake.2)*
 * [Quake 3](https://portmaster.games/detail.html?name=quake3)*
-* [RAWGL](http://portmaster.games/detail.html?name=rawgl)
-* [Shovel Knight Treasure Trove](http://portmaster.games/detail.html?name=shovel.knight)*
+* [RAWGL](https://portmaster.games/detail.html?name=rawgl)
+* [Shovel Knight Treasure Trove](https://portmaster.games/detail.html?name=shovel.knight)*
 * [Sonic Mania](https://portmaster.games/detail.html?name=sonic.mania)*
-* [Sonic Robo Blast 2 (SRB2)](http://portmaster.games/detail.html?name=srb2)
-* [Space Cadet Pinball](http://portmaster.games/detail.html?name=space.cadet.pinball)*
-* [Spelunky](http://portmaster.games/detail.html?name=spelunky)
-* [Stardew Valley](http://portmaster.games/detail.html?name=stardewvalley)*
+* [Sonic Robo Blast 2 (SRB2)](https://portmaster.games/detail.html?name=srb2)
+* [Space Cadet Pinball](https://portmaster.games/detail.html?name=space.cadet.pinball)*
+* [Spelunky](https://portmaster.games/detail.html?name=spelunky)
+* [Stardew Valley](https://portmaster.games/detail.html?name=stardewvalley)*
 * [Star Wars Jedi Knight II - Jedi Outcast](https://portmaster.games/detail.html?name=jedioutcast)
-* [TMNT: Shredder's Revenge](http://portmaster.games/detail.html?name=tmntsr)*
-* [Timespinner](http://portmaster.games/detail.html?name=timespinner)*
-* [Ur-Quan Masters (UQM)](http://portmaster.games/detail.html?name=uqm)
-* [VCMI - Heroes of Might and Magic III](http://portmaster.games/detail.html?name=vcmi)*
+* [TMNT: Shredder's Revenge](https://portmaster.games/detail.html?name=tmntsr)*
+* [Timespinner](https://portmaster.games/detail.html?name=timespinner)*
+* [Ur-Quan Masters (UQM)](https://portmaster.games/detail.html?name=uqm)
+* [VCMI - Heroes of Might and Magic III](https://portmaster.games/detail.html?name=vcmi)*
 
 (`*` indicates that the port requires additional files to be installed)
 

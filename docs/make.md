@@ -2,7 +2,7 @@
 
 ## Pass all args to target
 
-[StackOverflow](http://stackoverflow.com/a/6273809)
+[StackOverflow](https://stackoverflow.com/a/6273809)
 
 ```makefile
 action:

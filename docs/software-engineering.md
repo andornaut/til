@@ -12,7 +12,7 @@
 
 ### Architecture and design
 
-* [500 Lines or Less](http://aosabook.org)
+* [500 Lines or Less](https://aosabook.org)
 * [A Philosophy of Software Design](https://www.goodreads.com/en/book/show/39996759-a-philosophy-of-software-design)
 * [Beautiful Code](https://www.oreilly.com/library/view/beautiful-code/9780596510046/)
 * [Beautiful Data](https://www.oreilly.com/library/view/beautiful-data/9780596801656/)
@@ -27,10 +27,10 @@
 * [Designing Event-Driven Systems](https://www.confluent.io/designing-event-driven-systems/)
 * [Implementing Domain-Driven Design](https://www.oreilly.com/library/view/implementing-domain-driven-design/9780133039900/)
 * [Refactoring](https://martinfowler.com/books/refactoring.html)
-* [The Architecture of Open Source Applications](http://aosabook.org/)
+* [The Architecture of Open Source Applications](https://aosabook.org/)
 * [The Design of Everyday Things](https://www.goodreads.com/book/show/840.The_Design_of_Everyday_Things)
 * [The Elements of Computing Systems - Building a Modern Computer from First Principles](https://mitpress.mit.edu/books/elements-computing-systems) ([Nand to Tetris](https://www.nand2tetris.org/))
-* [The Performance of Open Source Applications](http://aosabook.org)
+* [The Performance of Open Source Applications](https://aosabook.org)
 * [Visualizing Data](https://www.oreilly.com/library/view/visualizing-data/9780596514556/)
 * [Working Effectively with Legacy Code](https://www.oreilly.com/library/view/working-effectively-with/0131177052/)
 

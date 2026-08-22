@@ -2,7 +2,7 @@
 
 ## Download recursively
 
-- [StackOverflow](http://apple.stackexchange.com/questions/100570/getting-files-all-at-once-from-a-web-page-using-curl)
+- [StackOverflow](https://apple.stackexchange.com/questions/100570/getting-files-all-at-once-from-a-web-page-using-curl)
 
 ```bash
 wget -r -np -k -nd -A mkv,avi http://example.com

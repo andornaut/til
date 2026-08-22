@@ -316,7 +316,7 @@ Mount a subdirectory of a share as a non-root user
 
 ### Preserve $PATH when using sudo
 
-* [StackOverflow](http://unix.stackexchange.com/a/83194)
+* [StackOverflow](https://unix.stackexchange.com/a/83194)
 
 ```bash
 sudo env "PATH=$PATH" command
