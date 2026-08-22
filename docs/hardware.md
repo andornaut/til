@@ -18,7 +18,7 @@ lspci
 
 ## Firmware
 
-* [Linux Vendor Firmware Service (fwupd)](https://fwupd.org/lvfs/docs/users) | [ArchWiki](https://wiki.archlinux.org/title/fwupd)
+* [Linux Vendor Firmware Service (fwupd)](https://fwupd.org/lvfs/docs/users) | [ArchWiki](https://wiki.archlinux.org/title/Fwupd)
 
 ```bash
 fwupdmgr get-devices
@@ -77,7 +77,7 @@ udevadm trigger
 
 ## Make USB audio device the default
 
-* [Arch wiki](https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture#Set_the_default_sound_card)
+* [Arch wiki](https://wiki.archlinux.org/title/Advanced_Linux_Sound_Architecture#Set_the_default_sound_card)
 
 ```bash
 sudo sed -i 's/\(options snd-usb-audio index.*\)/#\1/g' \

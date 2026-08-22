@@ -6,11 +6,11 @@
 * [Crates.io](https://crates.io) - Public package repository
 * [Discord](https://discord.gg/rust-lang) - Official discord server
 * [Docs.rs](https://docs.rs/) - Documentation host for crates
-* [Documentation](https://doc.rust-lang.org/) - Official documentation
-  * [Editions](https://doc.rust-lang.org/edition-guide/editions/index.html)
-  * [Language reference](https://doc.rust-lang.org/reference/index.html)
-  * [Standard Library](https://doc.rust-lang.org/std/index.html)
-  * [Test](https://doc.rust-lang.org/test/index.html)
+* [Documentation](https://doc.rust-lang.org/stable/) - Official documentation
+  * [Editions](https://doc.rust-lang.org/stable/edition-guide/editions/index.html)
+  * [Language reference](https://doc.rust-lang.org/stable/reference/index.html)
+  * [Standard Library](https://doc.rust-lang.org/stable/std/index.html)
+  * [Test](https://doc.rust-lang.org/stable/test/index.html)
 * [Forum](https://users.rust-lang.org/) - Official forum
 * [Official site](https://www.rust-lang.org/)
 * [Playground](https://play.rust-lang.org/) - Run code on the web
@@ -25,9 +25,9 @@
 * [Programming Rust, 2nd Edition (2021)](https://www.oreilly.com/library/view/programming-rust-2nd/9781492052586/)
 * [Rust for Rustaceans (2021)](https://nostarch.com/rust-rustaceans)
 * [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/index.html)
-* [The Rust Programming Language (2019)](https://doc.rust-lang.org/book/)
-  * [RefCell\<T> and the Interior Mutability Pattern](https://doc.rust-lang.org/book/ch15-05-interior-mutability.html)
-  * [Shared-State Concurrency](https://doc.rust-lang.org/book/ch16-03-shared-state.html)
+* [The Rust Programming Language (2019)](https://doc.rust-lang.org/stable/book/)
+  * [RefCell\<T> and the Interior Mutability Pattern](https://doc.rust-lang.org/stable/book/ch15-05-interior-mutability.html)
+  * [Shared-State Concurrency](https://doc.rust-lang.org/stable/book/ch16-03-shared-state.html)
 
 Read a local copy of "The Rust Programming Language" book in a web browser with: `rustup doc --book`
 
@@ -44,7 +44,7 @@ Read a local copy of "The Rust Programming Language" book in a web browser with:
 * [Playing with tui-rs](https://monkeypatch.io/blog/2021/2021-05-31-rust-tui/) - Covers async + TUI
 * [Rust and TUI: Building a command-line interface in Rust](https://blog.logrocket.com/rust-and-tui-building-a-command-line-interface-in-rust/)
 * [Rust Date & Time](https://dev.to/ssivakumar/rust-date-time-e2k)
-* [Rust's Rules Are Made to Be Broken](https://blog.warp.dev/rules-are-made-to-be-broken/)
+* [Rust's Rules Are Made to Be Broken](https://warp.dev/blog/rules-are-made-to-be-broken/)
 * [Xilem: an architecture for UI in Rust](https://raphlinus.github.io/rust/gui/2022/05/07/ui-architecture.html)
 
 ## Getting started
@@ -106,8 +106,8 @@ cargo run
 
 ## Testing
 
-* [Controlling How Tests Are Run](https://doc.rust-lang.org/book/ch11-02-running-tests.html)
-* [Rust by example](https://doc.rust-lang.org/rust-by-example/testing/unit_testing.html)
+* [Controlling How Tests Are Run](https://doc.rust-lang.org/stable/book/ch11-02-running-tests.html)
+* [Rust by example](https://doc.rust-lang.org/stable/rust-by-example/testing/unit_testing.html)
 * [test_case (crate)](https://crates.io/crates/test_case) - Generate parametrized test cases
   
 ```rust
@@ -168,7 +168,7 @@ Features and crate-level configuration:
 ## Cargo
 
 * [cargo-make](https://github.com/sagiegurari/cargo-make) - Task runner and build tool
-* [Specifying features](https://doc.rust-lang.org/cargo/reference/specifying-dependencies.html)
+* [Specifying features](https://doc.rust-lang.org/stable/cargo/reference/specifying-dependencies.html)
 
 ```bash
 # List features enabled for each dependency
@@ -186,15 +186,15 @@ cargo fix --allow-dirty
 
 ### Cargo.toml overriding direct and transitive dependencies
 
-* [Overriding dependencies](https://doc.rust-lang.org/cargo/reference/overriding-dependencies.html)
+* [Overriding dependencies](https://doc.rust-lang.org/stable/cargo/reference/overriding-dependencies.html)
 
 ```toml
 [patch.crates-io]
 # Patch direct and transitive (from color-to-tui) dependencies on ratatui in order to use:
 # * feat(table): enforce line alignment in table render
 # v0.22.1-alpha.2
-# https://github.com/ratatui-org/ratatui/commit/d2429bc3e44a34197511192dbd215dd32fdf2d9c
-ratatui = {git = "https://github.com/ratatui-org/ratatui.git", rev = "b6b2da5"}
+# https://github.com/ratatui/ratatui/commit/d2429bc3e44a34197511192dbd215dd32fdf2d9c
+ratatui = {git = "https://github.com/ratatui/ratatui.git", rev = "b6b2da5"}
 ```
 
 ## Visual Studio Code
@@ -229,7 +229,7 @@ should create a run/debug configuration in `.vscode/launch.json`:
 
 ### Tasks
 
-* [Tasks](https://code.visualstudio.com/docs/editor/tasks#vscode)
+* [Tasks](https://code.visualstudio.com/docs/debugtest/tasks#vscode)
 
 You can execute cargo tasks from within VS Code:
 
@@ -265,7 +265,7 @@ Name|Description
 [notify](https://github.com/notify-rs/notify)|Cross-platform filesystem notification library
 [OnceCell](https://crates.io/crates/once_cell)|Single assignment cells and lazy values
 [rand](https://github.com/rust-random/rand)|Generate random numbers
-[ratatui](https://github.com/ratatui-org/ratatui)|Text User Interface (TUI) library. Successor to [tui](https://github.com/fdehau/tui-rs) ([ratatui-book](https://ratatui.rs/))
+[ratatui](https://github.com/ratatui/ratatui)|Text User Interface (TUI) library. Successor to [tui](https://github.com/fdehau/tui-rs) ([ratatui-book](https://ratatui.rs/))
 [Serde JSON](https://github.com/serde-rs/json)|Serialize and deserialize JSON
 [strum](https://github.com/Peternator7/strum)|Various `#[derive(...)]` for enums
 [tempfile](https://github.com/Stebalien/tempfile)|Create temporary files or directories
@@ -281,7 +281,7 @@ Name|Description
 Name | Description
 --- | ---
 [Alacritty](https://github.com/alacritty/alacritty) | A cross-platform, OpenGL terminal emulator
-[bevy](https://bevyengine.org/) | Game engine
+[bevy](https://bevy.org/) | Game engine
 
 ## Troubleshooting
 

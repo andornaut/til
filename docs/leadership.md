@@ -26,7 +26,7 @@
 * [Style - Toward Clarity and Grace](https://www.goodreads.com/en/book/show/246853)
 * [Team of Teams - New Rules of Engagement for a Complex World](https://www.goodreads.com/book/show/22529127-team-of-teams)
 * [The Culture Code - The Secrets of Highly Successful Group](https://danielcoyle.com/the-culture-code/)
-* [The Fearless Organization - Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth](https://fearlessorganization.com/the-fearless-organization)
+* [The Fearless Organization - Creating Psychological Safety in the Workplace for Learning, Innovation, and Growth](https://fearlessorganizationscan.com/the-fearless-organization)
 * [The First 90 Days - Critical Success Strategies for New Leaders at All Levels](https://www.goodreads.com/book/show/15824358-the-first-90-days)
 * [The Five Dysfunctions of a Team - A Leadership Fable](https://www.goodreads.com/book/show/21343.The_Five_Dysfunctions_of_a_Team)
 * [The Manager's Handbook](https://themanagershandbook.com/)
@@ -38,7 +38,7 @@
 * [The Startup CTO's Handbook](https://github.com/ZachGoldberg/Startup-CTO-Handbook)
 * [Thinking in Bets - Making Smarter Decisions When You Don't Have All the Facts](https://www.goodreads.com/en/book/show/35957157-thinking-in-bets)
 * [Thinking in Systems - A Primer](https://www.goodreads.com/book/show/3828902-thinking-in-systems)
-* [Turn the Ship Around! - A True Story of Turning Followers into Leaders](https://davidmarquet.com/turn-the-ship-around-book/)
+* [Turn the Ship Around! - A True Story of Turning Followers into Leaders](https://davidmarquet.com/books/turn-the-ship-around-book/)
 * [Value Stream Mapping - How to Visualize Work and Align Leadership for Organizational Transformation](https://www.oreilly.com/library/view/value-stream-mapping/9780071828918/)
 
 ## Articles and guides

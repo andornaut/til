@@ -11,7 +11,7 @@ Adapters | [XT30M XT60F adapter](https://www.aliexpress.com/item/100500401209622
 Batteries | [Lava 2S 550mAH 75C](https://betafpv.com/products/lava-2s-3s-4s-550mah-75c-battery-2pcs?variant=40377078153350) <br> [Sub250 4S 720mAh 100C](https://sub250.com/en-ca/collections/batteries-chargers/products/4s-720mah-100c-battery)
 Battery accessories | [Bat-Safe LiPo Battery Charging Safe Box](https://www.bat-safe.com/product-page/bat-safe) <br> [VIFLY ShortSaver 2 Smart Smoke Stopper](https://www.aliexpress.com/item/1005006955105388.html)
 Cases | [DJI Goggles 3 case](https://www.aliexpress.com/item/1005006857667055.html?spm=a2g0o.order_list.order_list_main.5.721e1802an9A9C) <br> [TX15 Radio Case](https://radiomasterrc.com/products/tx15-radio-case)
-Chargers | [SkyRC B6neo+ Smart Charger](https://www.skyrc.com/b6neo+) <br> [HOTA D6 PRO](https://rotorvillage.ca/hota-d6-pro-charger-325w-15a/) <br> [ToolKitRC Q6AC AC/DC](https://rotorvillage.ca/toolkitrc-q6ac-1000w-50a-quad-channel-ac-dc-charger/)
+Chargers | [SkyRC B6neo+ Smart Charger](https://www.skyrc.com/b6neo-series) <br> [HOTA D6 PRO](https://rotorvillage.ca/hota-d6-pro-charger-325w-15a/) <br> [ToolKitRC Q6AC AC/DC](https://rotorvillage.ca/toolkitrc-q6ac-1000w-50a-quad-channel-ac-dc-charger/)
 Drones | [Pavo Pico II Brushless Whoop Quadcopter](https://betafpv.com/products/pavo-pico-ii-brushless-whoop-quadcopter) <br> [GEPRC Cinelog30 V3](https://geprc.com/product/geprc-cinelog30-v3-o4-pro-quadcopter/) <br> [DeepSpace SEEKER3](https://www.deepspacefpv.com/DeepSpace-SEEKER3-3inch-freestyle-FPV-Drone-DJI-O4-PRO-Analog-PNP-with-GPS-4S-sub250g-p6408559.html)
 Radios (Remote Controls) | [Radio Master TX15 Radio Controller](https://radiomasterrc.com/products/tx15-radio-controller-elrs-m2)
 Tools | [iFlight Prop Tool](https://www.aliexpress.com/item/1005001864404840.html)
@@ -20,8 +20,8 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 ## Software
 
 * [Betaflight](https://www.betaflight.com/)
-* [DJI Assistant 2 (Consumer Drones Series)](https://www.dji.com/ca/downloads/softwares/dji-assistant-2-consumer-drones-series)
-* [DJI Fly (Android or iOS)](https://www.dji.com/ca/downloads/djiapp/dji-fly)
+* [DJI Assistant 2 (Consumer Drones Series)](https://www.dji.com/caca/downloads/softwares/dji-assistant-2-consumer-drones-series)
+* [DJI Fly (Android or iOS)](https://www.dji.com/caca/downloads/djiapp/dji-fly)
 * [EdgeTX](https://edgetx.org/)
   * [Online flash tool](https://buddy.edgetx.org/#/flash)
 * [ExpressLRS](https://www.expresslrs.org)
@@ -58,7 +58,7 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 
 * [AvionRC](https://avionrc.com/)
 * [BetaFPV](https://betafpv.com/)
-* [DJI](https://www.dji.com/)
+* [DJI](https://www.dji.com/ca)
 * [Flywoo](https://flywoo.net/)
 * [GEPRC](https://geprc.com/)
 * [GetFPV](https://www.getfpv.com/)

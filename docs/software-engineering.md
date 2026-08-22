@@ -24,7 +24,7 @@
 * [Code Complete](https://www.oreilly.com/library/view/code-complete-2nd/0735619670/)
 * [Designing Data-Intensive Applications - The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.oreilly.com/library/view/designing-data-intensive-applications/9781491903063/)
 * [Design Patterns - Elements of Reusable Object-Oriented Software](https://www.oreilly.com/library/view/design-patterns-elements/0201633612/)
-* [Designing Event-Driven Systems](https://www.confluent.io/designing-event-driven-systems/)
+* [Designing Event-Driven Systems](https://www.confluent.io/resources/ebook/designing-event-driven-systems/)
 * [Implementing Domain-Driven Design](https://www.oreilly.com/library/view/implementing-domain-driven-design/9780133039900/)
 * [Refactoring](https://martinfowler.com/books/refactoring.html)
 * [The Architecture of Open Source Applications](https://aosabook.org/)
@@ -46,8 +46,8 @@
 
 ### Computer science
 
-* [Calculus](https://ocw.mit.edu/courses/res-18-001-calculus-online-textbook-spring-2005/pages/textbook/)
-* [Concepts, Techniques, and Models of Computer Programming](https://www.info.ucl.ac.be/~pvr/book.html)
+* [Calculus](https://ocw.mit.edu/courses/res-18-001-calculus-online-textbook-spring-2005/resources/textbook/index.html)
+* [Concepts, Techniques, and Models of Computer Programming](https://webperso.info.ucl.ac.be/~pvr/book.html)
 * [Introduction to Algorithms](https://mitpress.mit.edu/books/introduction-algorithms-third-edition)
 * [Structure and Interpretation of Computer Programs](https://mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html)
 * [The Algorithm Design Manual](https://www.algorist.com/)
@@ -59,8 +59,8 @@
 * Modern Operating Systems
 * [pfSense - The Definitive Guide](https://www.goodreads.com/book/show/18940153-pfsense)
 * [Running Linux](https://www.oreilly.com/library/view/running-linux-5th/0596007604/)
-* [TCP/IP Illustrated, Volume 1 - The Protocols](https://www.oreilly.com/library/view/tcpip-illustrated-volume/9780132808200/)
-* [TCP/IP Illustrated, Volume 2 - The Implementation](https://www.oreilly.com/library/view/tcpip-illustrated/020163354X/)
+* [TCP/IP Illustrated, Volume 1 - The Protocols](https://www.oreilly.com/library/view/tcp-ip-illustrated-volume/9780132808200/)
+* [TCP/IP Illustrated, Volume 2 - The Implementation](https://www.oreilly.com/library/view/tcp-ip-illustrated/020163354X/)
 * [The Book of PF](https://www.goodreads.com/en/book/show/21929389-the-book-of-pf)
 * [Think OS - A Brief Introduction to Operating Systems](https://greenteapress.com/thinkos/)
   

@@ -7,7 +7,7 @@
 ## Books
 
 * [Eloquent JavaScript](https://eloquentjavascript.net)
-* [JavaScript Allongé, the "Six" Edition](https://leanpub.com/javascriptallongesix/read)
+* [JavaScript Allongé, the "Six" Edition](https://leanpub.com/read/javascriptallongesix)
 * [JavaScript The Good Parts](https://www.oreilly.com/library/view/javascript-the-good/9780596517748/)
 * [JavaScript - The Definitive Guide](https://www.oreilly.com/library/view/javascript-the-definitive/9781491952016/)
 * [JavaScript - The New Toys](https://www.wiley.com/en-us/JavaScript:+The+New+Toys-p-9781119367963)
@@ -67,7 +67,7 @@ nvm use
 ### Performance
 
 * [Apollo FetchPolicy options](https://www.apollographql.com/docs/react/data/queries/#setting-a-fetch-policy)
-* [Google Core Web Vitals](https://web.dev/vitals/)
+* [Google Core Web Vitals](https://web.dev/articles/vitals)
 * [React profiler](https://reactjs.org/docs/profiler.html)
 
 ## Storybook

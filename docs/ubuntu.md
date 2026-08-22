@@ -39,11 +39,11 @@ Application|Description
 [BSPWM](https://github.com/baskerville/bspwm)|Tiling window manager for X11 ([ansible-role-bspwm](https://github.com/andornaut/ansible-role-bspwm/))
 [clipboard](https://github.com/Slackadays/Clipboard)|TUI clipboard manager
 [ElKowars wacky widgets (EWW)](https://github.com/elkowar/eww/)|Bar for X11 and Wayland
-[Hyprland](https://hyprland.org/)|A dynamic tiling Wayland compositor
+[Hyprland](https://hypr.land/)|A dynamic tiling Wayland compositor
 [Ly](https://github.com/fairyglade/ly)|Display manager
 [River WM](https://github.com/riverwm/river)|Dynamic tiling Wayland compositor
 [Rofi](https://github.com/davatorium/rofi)|Window switcher, application launcher and dmenu replacement
-[Stalonetray](https://github.com/kolbusa/stalonetray)|System tray for X11
+[Stalonetray](https://github.com/d3adb5/stalonetray)|System tray for X11
 [Sway WM](https://swaywm.org/)|i3-compatible Wayland compositor
 [Waybar](https://github.com/Alexays/Waybar)|Bar for Wayland
 
@@ -324,7 +324,7 @@ sudo env "PATH=$PATH" command
 
 ### Increase inotify watches
 
-* [Inotify instructions](https://confluence.jetbrains.com/display/IDEADEV/Inotify+Watches+Limit)
+* [Inotify instructions](https://youtrack.jetbrains.com/articles/IDEA-A-2/Inotify-Watches-Limit)
 
 ```bash
 $ echo '
@@ -336,7 +336,7 @@ $ sudo sysctl -p
 
 ### Temporarily change the date/time using timedatectl
 
-* [Wiki](https://wiki.archlinux.org/index.php/time)
+* [Wiki](https://wiki.archlinux.org/title/time)
 
 ```bash
 timedatectl set-ntp false
@@ -347,7 +347,7 @@ timedatectl set-ntp true
 
 ### Wipe storage device using hdparm
 
-* [Howto](https://wiki.archlinux.org/index.php/SSD_memory_cell_clearing)
+* [Howto](https://wiki.archlinux.org/title/SSD_memory_cell_clearing)
 
 n.b. The BIOS freezes drives at boot, and a frozen drive rejects both commands below. Check for `frozen` in the `hdparm -I` output; a suspend/resume cycle clears it.
 
@@ -456,7 +456,7 @@ sudo modprobe r8125
 
 ### Install AMD GPU DKMS kernel module (driver)
 
-* [AMD GPU drivers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/amdgpu-install.html#ubuntu)
+* [AMD GPU drivers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/install-methods/amdgpu-installer-index.html#ubuntu)
   * [Kernel version compatibility](https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html#operating-systems-and-kernel-versions)
 * [AMD Quick start installation guide on Ubuntu](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/quick-start.html)
 * [AMD Running ROCm Docker containers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/how-to/docker.html)
@@ -531,7 +531,7 @@ n.b. On 24.04 and later `/etc/apt/sources.list` is empty, so the second command 
 
 ### Redshift.conf is not read when it is a symlink
 
-[GitHub issue](https://github.com/jonls/redshift/issues/858)
+[GitHub issue](https://github.com/sharpbracket/redshift/issues/858)
 
 1. Permit access to the symlink source by editing `/etc/apparmor.d/local/usr.bin.redshift`:
 

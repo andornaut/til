@@ -37,15 +37,15 @@ Install these applications:
 
 * [Alacritty](https://github.com/alacritty/alacritty)
 * [Cursor](https://www.cursor.com/)
-* [Flameshot](https://flameshot.org) (Paid alternative to [Monosnap](https://monosnap.com/))
+* [Flameshot](https://flameshot.org) (Paid alternative to [Monosnap](https://monosnap.ai/))
 * [Kap](https://github.com/wulkano/Kap) - Screen recorder
 * [Karabiner Elements](https://karabiner-elements.pqrs.org/)
 * [Rectangle](https://rectangleapp.com/) (Paid version: [Hookshot](https://hookshot.app/))
 * [SketchyBar](https://github.com/FelixKratz/SketchyBar) - Status bar
-* [skhd](https://github.com/koekeishiya/skhd)
+* [skhd](https://github.com/asmvik/skhd)
 * [superwhisper](https://superwhisper.com/)
 * [Visual Studio Code](https://code.visualstudio.com/)
-* [Yabai](https://github.com/koekeishiya/yabai) - Tiling window manager
+* [Yabai](https://github.com/asmvik/yabai) - Tiling window manager
 
 ```bash
 brew install --appdir ~/Applications/ --no-quarantine alacritty flameshot karabiner-elements rectangle
@@ -83,7 +83,7 @@ killall Finder
 
 ## Keyboard Shortcuts
 
-[All shortcuts](https://support.apple.com/en-ca/HT201236)
+[All shortcuts](https://support.apple.com/en-ca/102650)
 
 Meta keys:
 
@@ -130,7 +130,7 @@ Keyboard Shortcut | `⇧⌘V`
 
 ### Dock show/hide
 
-* [uBar](https://brawersoftware.com/products/ubar) - Dock alternative
+* [uBar](https://ubarapp.com/) - Dock alternative
 * [How to hide the dock](https://apple.stackexchange.com/a/298826)
 
 ```bash
@@ -440,7 +440,7 @@ sudo xcode-select --install
 
 ### Remove RODE Connect virtual audio devices
 
-After installing [RODE Connect](https://rode.com/en/software/rodeconnect#module_19) - in order to upgrade RODE NT-USB Mini drivers - 3 new virtual audio devices are installed. To remove them:
+After installing [RODE Connect](https://rode.com/en-au/software/rodeconnect#module_19) - in order to upgrade RODE NT-USB Mini drivers - 3 new virtual audio devices are installed. To remove them:
 
 1. Navigate to: `Macintosh HD > Library > Audio > Plug-ins > HAL`
 2. Delete the "RODE ..." folder

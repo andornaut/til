@@ -2,11 +2,11 @@
 
 * [Ansible role](https://github.com/andornaut/ansible-ctrl/tree/main/roles/games)
 * Artwork
-  * [System images (larger)](https://github.com/ruckage/es-theme-snes-mini/blob/master/art/icons_usa/)
+  * [System images (larger)](https://github.com/ruckage/es-theme-snes-mini/tree/master/art/icons_usa)
   * [System images (smaller)](https://github.com/Vidnez/retro-systems-icons-for-GarlicOS/tree/master/system)
   * [Thumbnails](https://thumbnails.libretro.com/)
 * [Backup & Restore Android Retro Handhelds! (Video)](https://www.youtube.com/watch?app=desktop&v=EZhlyGXCSF0)
-* [BIOS (GitHub)](https://github.com/Abdess/retroarch_system)
+* [BIOS (GitHub)](https://github.com/Abdess/retrobios)
 * [BIOS (Megathread)](https://r-roms.github.io/Miscellaneous/bios-sets)
 * [Homebrew games list](https://github.com/Jetup13/Retroid-Pocket-2-Plus-Wiki/wiki/Homebrew)
 * [How to create CHD files](https://retropie.org.uk/docs/CHD-files/)
@@ -42,7 +42,7 @@
 * Custom firmware (CFW):
   * [GarlicOS on GitHub](https://github.com/GarlicOS/buildroot)
     * [GarlicOS 2.0 (Public Alpha) announcement](https://www.patreon.com/posts/92690050)
-    * [patreon.com/blackseraph](https://www.patreon.com/blackseraph) - Lead developer of GarlicOS
+    * [patreon.com/blackseraph](https://www.patreon.com/cw/blackseraph) - Lead developer of GarlicOS
   * [Knulli](https://knulli.org/)
 
 #### MinUI
@@ -69,7 +69,7 @@ MinUI-20240106b-4-base.zip and MinUI-20240106b-4-extras.zip
 
 #### Mustard OS / muOS
 
-* [muOS](https://muos.xonglebongle.com/)
+* [muOS](https://muos.dev/)
   * [Help (Documentation)](https://muos.dev/docs/support)
   * Pico-8
   * [PortMaster](https://muos.dev/installation/portmaster)
@@ -108,7 +108,7 @@ Menu L1 | Exit DraStic
   * [Manual](https://assets.analogue.co/pdf/f48dbccc2a7c529e3ef677db3b4ab9d8/Analogue+Pocket+User+Manual+v1.2.pdf)
 * [openFPGA Cores Inventory](https://openfpga-cores-inventory.github.io/analogue-pocket/)
 * [Pocket Sync](https://github.com/neil-morrison44/pocket-sync) - GUI tool to update openFPGA cores, and manage save states, save files, and screenshots
-* [Analogue Pocket Updater Utility](https://github.com/mattpannella/pocket-updater-utility) - CLI tool to update openFPGA cores and firmware
+* [Analogue Pocket Updater Utility](https://github.com/mattpannella/pupdate) - CLI tool to update openFPGA cores and firmware
 
 ### Miyoo Mini+
 
@@ -142,7 +142,7 @@ Add boxart or screenshots to `/mnt/SDCARD/Roms/<Emulator>/Imgs/` eg. `/mnt/SDCAR
 ##### RetroArch Core BIOS files
 
 1. Find the names of recommended BIOS' for each of your emulators from the [Onion Wiki](https://onionui.github.io/docs/emulators/consoles)
-1. Download the [BIOS files](https://github.com/Abdess/retroarch_system)
+1. Download the [BIOS files](https://github.com/Abdess/retrobios)
 1. Add bios files to [`/mnt/SDCARD/BIOS`](https://onionui.github.io/docs/emulators#bios-files) on the Miyoo Mini+
 1. Navigate to Apps > RetroArch > Load Core
 1. Select a Core to test
@@ -309,7 +309,7 @@ sed -i 's/\(kiosk_mode_enable\s*=\).*/\1 "false"/g' ${configFile}
 * [Keyboard bindings for Menus/UI](https://docs.libretro.com/guides/input-and-controls/#menu-controls)
 * [Libretro](https://www.libretro.com/)
   * [Docs](https://docs.libretro.com/)
-* [RetroArch on Flathub](https://flathub.org/apps/details/org.libretro.RetroArch)
+* [RetroArch on Flathub](https://flathub.org/apps/org.libretro.RetroArch)
 * [RGC: RetroArch Starter Guide](https://retrogamecorps.com/2022/02/28/retroarch-starter-guide/)
 * [RGC: Shaders and Overlays on Retro Handhelds](https://retrogamecorps.com/2024/09/01/guide-shaders-and-overlays-on-retro-handhelds/)
   * [RGC Overlay Pack](https://github.com/retrogamecorps/RGC-Overlay-Pack/releases)

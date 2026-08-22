@@ -1,12 +1,12 @@
 # Visual Studio Code
 
 * [Visual Studio Code - Your code editor. Redefined with AI](https://code.visualstudio.com/)
-* [Tips and tricks](https://code.visualstudio.com/docs/getstarted/tips-and-tricks)
+* [Tips and tricks](https://code.visualstudio.com/docs/editing/tips-and-tricks)
 * [./Cursor](./cursor.md)
 
 ## Keyboard shortcuts
 
-* [Keybinding docs](https://code.visualstudio.com/docs/getstarted/keybindings)
+* [Keybinding docs](https://code.visualstudio.com/docs/configure/keybindings)
 * Keyboard shortcuts for [linux](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-linux.pdf) or [macOS](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf)
 
 Linux|macOS|Description

@@ -14,7 +14,7 @@ Command | Description
 
 ## Tips
 
-[Vim Tips Wiki](http://vim.wikia.com/wiki/Vim_Tips_Wiki)
+[Vim Tips Wiki](https://vim.fandom.com/wiki/Vim_Tips_Wiki)
 
 ```vim
 # Trim trailing whitespace

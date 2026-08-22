@@ -172,7 +172,7 @@ n.b. `git gc --prune=now` (above) discards them, so don't run it while you're st
 
 ### Undo commits
 
-* [How-to](https://docs.gitlab.com/ee/topics/git/numerous_undo_possibilities_in_git/)
+* [How-to](https://docs.gitlab.com/topics/git/numerous_undo_possibilities_in_git/)
 
 ```bash
 # Revert a merge commit
@@ -214,9 +214,9 @@ This section is hidden until the above is clicked.
 
 ### Search
 
-* [GitHub searching-issues-and-pull-requests](https://docs.github.com/en/github/searching-for-information-on-github/searching-issues-and-pull-requests)
-* [GitHub using-search-to-filter-issues-and-pull-requests](https://docs.github.com/en/github/managing-your-work-on-github/using-search-to-filter-issues-and-pull-requests)
-* [GitHub Filtering and searching issues and pull requests](https://docs.github.com/en/issues/tracking-your-work-with-issues/filtering-and-searching-issues-and-pull-requests)
+* [GitHub searching-issues-and-pull-requests](https://docs.github.com/en/search-github/searching-on-github/searching-issues-and-pull-requests)
+* [GitHub using-search-to-filter-issues-and-pull-requests](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/filtering-and-searching-issues-and-pull-requests)
+* [GitHub Filtering and searching issues and pull requests](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/filtering-and-searching-issues-and-pull-requests)
 
 ```text
 # What
@@ -246,5 +246,5 @@ merged:2024-01-01..2024-12-31
 
 ### Tips
 
-* [Configure schedule reminders for PR reviews and other things](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-your-membership-in-organizations/managing-your-scheduled-reminders)
+* [Configure schedule reminders for PR reviews and other things](https://docs.github.com/en/subscriptions-and-notifications/how-tos/managing-your-scheduled-reminders)
 * Add a `.patch` extension to a GitHub commit, diff, or PR URL to download a raw git patch, eg. <https://github.com/andornaut/til/commit/5bbb06b4ce76443f9217546ee57738ae2ab4cd9a.patch>

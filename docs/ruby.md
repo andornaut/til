@@ -17,7 +17,7 @@
 ## Articles and blogs
 
 * [New language features since version 2.0 (2013)](https://rubyreferences.github.io/rubychanges/evolution.html)
-* [The Practical Effects of the GVL on Scaling in Ruby](https://www.speedshop.co/2020/05/11/the-ruby-gvl-and-scaling.html)
+* [The Practical Effects of the GVL on Scaling in Ruby](https://www.speedshop.co/blog/the-ruby-gvl-and-scaling/)
 * [To Thread or Not to Thread: An In-Depth Look at Ruby’s Execution Models](https://shopify.engineering/ruby-execution-models)
 
 ## Newsletters
@@ -65,7 +65,7 @@ Name|Description
 ## Testing
 
 * [Assertions](https://docs.seattlerb.org/minitest/Minitest/Assertions.html)
-* [minitest](https://github.com/seattlerb/minitest)
+* [minitest](https://github.com/minitest/minitest)
 * [rspec](https://rspec.info/)
 * [test-unit](https://test-unit.github.io/)
 * [tutorial](https://dev.to/exampro/testunit-writing-test-code-in-ruby-part-1-of-3-44m2)

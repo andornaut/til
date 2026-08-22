@@ -34,7 +34,7 @@ xrandr --output DP1-1 --auto --rotate left --left-of DP1-3 --primary
 
 ## xset
 
-* [ArchWiki](https://wiki.archlinux.org/index.php/Display_Power_Management_Signaling)
+* [ArchWiki](https://wiki.archlinux.org/title/Display_Power_Management_Signaling)
 
 Disable display power management
 

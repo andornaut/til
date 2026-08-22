@@ -7,7 +7,7 @@
 
 ## systemctl commands
 
-* [Manual](https://www.freedesktop.org/software/systemd/man/systemd.html)
+* [Manual](https://www.freedesktop.org/software/systemd/man/latest/systemd.html)
 * [Digital ocean how-to](https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units)
 
 ```bash

@@ -21,7 +21,7 @@ n.b. Which model is best changes every few weeks, so prefer a tracker over any r
 * [Artificial Analysis](https://artificialanalysis.ai/) - Independent benchmarks of quality, speed, and price, per model and per provider
 * [Epoch AI](https://epoch.ai/) - Trends in training compute, cost, and capability
 * [Hugging Face models](https://huggingface.co/models) - Where open-weight models are published
-* [LMArena](https://lmarena.ai/) - Ranked by blind human preference
+* [LMArena](https://arena.ai/) - Ranked by blind human preference
 
 Task-specific benchmarks:
 
@@ -33,7 +33,7 @@ Model documentation, which is the only authoritative source for context windows,
 
 * [Anthropic](https://platform.claude.com/docs/en/about-claude/models/overview)
 * [Google](https://ai.google.dev/gemini-api/docs/models)
-* [OpenAI](https://platform.openai.com/docs/models)
+* [OpenAI](https://developers.openai.com/api/docs/models)
 
 ## Platforms
 
@@ -42,10 +42,10 @@ Model documentation, which is the only authoritative source for context windows,
 * [Fireworks AI](https://fireworks.ai/)
 * [Groq](https://groq.com/)
 * [Hugging Face](https://huggingface.co/)
-* [Moonshot AI](https://platform.moonshot.ai/) - The Kimi models; OpenAI-compatible
+* [Moonshot AI](https://platform.kimi.ai/) - The Kimi models; OpenAI-compatible
 * [OpenRouter](https://openrouter.ai/)
 * [Together AI](https://www.together.ai/)
-* [Z.ai](https://z.ai/) - The GLM models; OpenAI-compatible
+* [Z.ai](https://chat.z.ai/) - The GLM models; OpenAI-compatible
 
 ## Software
 
@@ -56,7 +56,7 @@ Model documentation, which is the only authoritative source for context windows,
   * [free-claude-code](https://github.com/Alishahryar1/free-claude-code) - Proxy that converts Claude Code's API requests to NVIDIA NIM or OpenRouter format
 * [Keras](https://keras.io/)
 * [LibreChat](https://www.librechat.ai/)
-* [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
+* [Model Context Protocol (MCP)](https://modelcontextprotocol.io/docs/2026-07-28/getting-started/intro)
   * [Inspector](https://github.com/modelcontextprotocol/inspector) - Debug a server without wiring it into a client first
   * [Registry](https://registry.modelcontextprotocol.io/)
   * [Servers](https://github.com/modelcontextprotocol/servers)
@@ -85,7 +85,7 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 * [Claude Agent SDK](https://code.claude.com/docs/en/agent-sdk)
 * [LangGraph](https://github.com/langchain-ai/langgraph)
 * [OpenAI Agents SDK](https://github.com/openai/openai-agents-python)
-* [Pydantic AI](https://ai.pydantic.dev/)
+* [Pydantic AI](https://pydantic.dev/docs/ai/overview/)
 
 ### Evaluation and observability
 
@@ -99,8 +99,8 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 * [Claude Code](https://code.claude.com/docs/en/overview)
 * [Cline](https://github.com/cline/cline) - VS Code agent with per-action approval; broad model support
 * [./Cursor](./cursor.md)
-* [GitHub Copilot for VS Code](https://code.visualstudio.com/docs/copilot/overview)
-* [goose](https://github.com/block/goose) - Open source agent from Block; CLI and desktop, any model, MCP extensions
+* [GitHub Copilot for VS Code](https://code.visualstudio.com/docs/agents/overview)
+* [goose](https://github.com/aaif-goose/goose) - Open source agent from Block; CLI and desktop, any model, MCP extensions
 * [Kilo Code](https://github.com/Kilo-Org/kilocode) - Agent that runs in VS Code, JetBrains, and the CLI; 500+ models at provider pricing
 * [OpenAI Codex](https://developers.openai.com/codex) - [Codex CLI](https://github.com/openai/codex)
 * [OpenCode](https://opencode.ai/) - Terminal agent from the SST team; any of 75+ providers
@@ -109,7 +109,7 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 ## Articles and blogs
 
 * [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) - Start with the simplest thing that works; most "agent" problems are a workflow
-* [Claude Code: Best practices for agentic coding](https://www.anthropic.com/engineering/claude-code-best-practices)
+* [Claude Code: Best practices for agentic coding](https://code.claude.com/docs/en/best-practices)
 * [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
 * [Simon Willison’s Weblog](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
 * [Stephen Wolfram - What Is ChatGPT Doing … and Why Does It Work?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)

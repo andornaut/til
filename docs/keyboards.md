@@ -23,7 +23,7 @@
 * [Creating A PCB In Everything: KiCad, Part 1](https://hackaday.com/2016/11/17/creating-a-pcb-in-everything-kicad-part-1/)
 * [Design Your Own Keyboard! (Video about Ergogen)](https://www.youtube.com/watch?v=M_VuXVErD6E)
 * [Ergogen - A declarative language for generating ergonomic keyboards (Video)](https://www.youtube.com/watch?v=5tERUZ_BSPM)
-* [Keebfolio: Awesome mechanical keyboards](https://github.com/BenRoe/awesome-mechanical-keyboard/)
+* [Keebfolio: Awesome mechanical keyboards](https://github.com/Keycapsss/awesome-mechanical-keyboard)
 * [Keyboard Guides](https://github.com/sadekbaroudi/keyboard-guides) - Cases and QMK
 * Keyboard.university
 * [Le Oeuf](https://github.com/eggsworks/le-oeuf)
@@ -89,7 +89,7 @@
 ### Firmware
 
 * [QMK firmware](https://github.com/qmk/qmk_firmware)
-* [RMK firmware](https://github.com/HaoboGu/rmk)
+* [RMK firmware](https://github.com/rmk-rs/rmk)
 * [ZMK firmware](https://zmk.dev/)
 
 ## Stores

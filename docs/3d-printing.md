@@ -49,7 +49,7 @@
 #### Device discovery across subnets using pfSense
 
 * [Network ports](https://wiki.bambulab.com/en/general/printer-network-ports)
-* [GitHub issue: Add the ability to connect Bambu Lab printers in LAN Only Mode](https://github.com/SoftFever/OrcaSlicer/issues/8099#issuecomment-2601027353)
+* [GitHub issue: Add the ability to connect Bambu Lab printers in LAN Only Mode](https://github.com/OrcaSlicer/OrcaSlicer/issues/8099#issuecomment-2601027353)
 * [Alternative: Send fake SSDP response to OrcaSlicer](https://gist.github.com/Alex-Schaefer/72a9e2491a42da2ef99fb87601955cc3#file-bambu-ssdp-discovery-py)
 
 1. From the P1P's physical control panel, [enable "LAN-only mode"](https://wiki.bambulab.com/en/knowledge-sharing/enable-lan-mode)
@@ -70,7 +70,7 @@
 * [Autodesk Tinkercad](https://www.tinkercad.com/)
 * [Bambu Studio (Windows and macOS)](https://bambulab.com/en/download/studio)
   * [Linux](https://github.com/bambulab/BambuStudio) (build from source, then run the generated AppImage)
-  * [OrcaSlicer](https://github.com/SoftFever/OrcaSlicer) - an improved fork of Bambu Studio
+  * [OrcaSlicer](https://github.com/OrcaSlicer/OrcaSlicer) - an improved fork of Bambu Studio
 
     ```bash
     # Install video playback dependencies:
@@ -89,4 +89,4 @@
 
 * [Filaments.ca](https://filaments.ca/)
 * [Overture](https://www.overture3d.ca/)
-* [Polymaker](https://ca.polymaker.com/)
+* [Polymaker](https://shop.polymaker.com/)

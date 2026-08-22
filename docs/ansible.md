@@ -36,7 +36,7 @@ ansible ${host} -m command -a 'uptime'
 
 ## Debugging
 
-* [Setup module docs](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/setup_module.html)
+* [Setup module docs](https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/setup_module.html)
 
 ```bash
 # Display local facts

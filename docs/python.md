@@ -2,7 +2,7 @@
 
 * [./Software Engineering](./software-engineering.md)
 * [andornaut@github /python-cli-app](https://github.com/andornaut/python-cli-app)
-* [Documentation](https://docs.python.org/)
+* [Documentation](https://docs.python.org/3/)
 * [PyPI](https://pypi.org/) - The Python Package Index
 * [Python on macOS via Homebrew](https://docs.brew.sh/Homebrew-and-Python)
 
@@ -34,15 +34,15 @@ Name | Description
 [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/) | Parser, scraper
 [DevPi](https://github.com/devpi/devpi) | Python PyPi staging server and packaging, testing, release tool
 [Django](https://www.djangoproject.com/) | High-level web framework
-[FastAPI](https://github.com/tiangolo/fastapi) | A modern, fast, web framework for building APIs. Based on Python type hints.
+[FastAPI](https://github.com/fastapi/fastapi) | A modern, fast, web framework for building APIs. Based on Python type hints.
 [Flask](https://github.com/pallets/flask) | Micro framework for building web applications
 [NumPy](https://numpy.org/) | Scientific computing library
 [Pillow](https://github.com/python-pillow/Pillow) | Open and manipulate many image file formats
-[pytest](https://docs.pytest.org/en/) | A framework that makes it easy to write small, readable tests
+[pytest](https://docs.pytest.org/en/stable/) | A framework that makes it easy to write small, readable tests
 [records](https://github.com/kennethreitz/records) | A library for making raw SQL queries to most relational databases
 [requests](https://github.com/psf/requests) | A simple, yet elegant, HTTP library
 [SQLAlchemy](https://www.sqlalchemy.org/) | SQL toolkit and Object Relational Mapper
-[Typer](https://github.com/tiangolo/typer) | Build great CLIs. Easy to code. Based on Python type hints. Built on top of [Click](https://github.com/pallets/click/).
+[Typer](https://github.com/fastapi/typer) | Build great CLIs. Easy to code. Based on Python type hints. Built on top of [Click](https://github.com/pallets/click/).
 
 ## Tools
 
@@ -51,7 +51,7 @@ Name | Description
 [Black Formatter for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter) | Support the [black formatter](https://github.com/psf/black) (use [ruff](https://github.com/astral-sh/ruff) instead)
 [Flake8 for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8) | Support for the [flake8 linter](https://github.com/pycqa/flake8/) (use [ruff](https://github.com/astral-sh/ruff) instead)
 [Pipenv](https://pipenv.pypa.io/en/latest/) | Dev workflows for humans (use [Poetry](https://python-poetry.org/) instead)
-[Pipx](https://pipx.pypa.io/) | Install and run Python applications in isolated environments
+[Pipx](https://pipx.pypa.io/stable/) | Install and run Python applications in isolated environments
 [Poe](https://github.com/nat-n/poethepoet) | A task runner that works well with poetry
 [Poetry](https://python-poetry.org/) | Python packaging and dependency management made easy
 [pre-commit](https://github.com/pre-commit/pre-commit) | A framework for managing multi-language pre-commit hooks
@@ -62,7 +62,7 @@ Name | Description
 
 ### Getting started with Poetry
 
-1. Install [pipx](https://pipx.pypa.io/stable/how-to/install-pipx.html)
+1. Install [pipx](https://pipx.pypa.io/stable/stable/how-to/install-pipx.html)
 1. Install poetry ```pipx install poetry```
 1. Run ```poetry init```
 1. Update `pyproject.toml`
