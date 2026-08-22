@@ -5,7 +5,7 @@
 * [Arch wiki](https://wiki.archlinux.org/index.php/tmux)
 * [Display formats](https://github.com/tmux/tmux/wiki/Formats)
 * [Example tmux.conf](https://github.com/andornaut/dotfiles/blob/main/root/%24HOME/.tmux.conf)
-* Copy/paste in [Linux](http://www.rushiagr.com/blog/2016/06/16/everything-you-need-to-know-about-tmux-copy-pasting-ubuntu/#comment-4242059466) and
+* Copy/paste in Linux and
 [macOS (iTerm2)](https://stackoverflow.com/a/19843650)
 
 ## Books

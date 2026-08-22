@@ -430,7 +430,7 @@ which may occur if RetroArch crashes before it is able to clean up.
 
 ### Cores
 
-* [Emulation General Wiki](https://emulation.gametechwiki.com/index.php/Main_Page)
+* Emulation General Wiki
 * [Retro Game Corps - Recommended RetroArch classic cores](https://retrogamecorps.com/2022/03/13/android-emulation-starter-guide/#RetroArch)
 
 Platform | Desktop core (x64) | Retroid Pocket Flip 2 (Android)

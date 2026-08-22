@@ -57,7 +57,7 @@
 ## Tools
 
 * [KBDFans Lube Tools](https://shockport.ca/collections/tools/products/kbdfans-lube-tools-collection)
-* [MX Keyswitch Opener](https://kiiboss.studio/products/mx-keyswitch-opener)
+* MX Keyswitch Opener
 
 ## Software
 

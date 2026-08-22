@@ -2,7 +2,7 @@
 
 ## Increase swap
 
-Netgate SG-3100 can run out of memory when updating [Suricata](https://suricata-ids.org/) or [pfBlocker-NG](https://docs.netgate.com/pfsense/en/latest/packages/pfblocker.html) rules. This can cause pfSense to hang until the kernel kills the offending process.
+Netgate SG-3100 can run out of memory when updating [Suricata](https://suricata.io/) or [pfBlocker-NG](https://docs.netgate.com/pfsense/en/latest/packages/pfblocker.html) rules. This can cause pfSense to hang until the kernel kills the offending process.
 
 * [Netgate forum](https://forum.netgate.com/topic/133913/can-i-put-more-memory-in-my-sg-3100?_=1609784043701&lang=en-US)
 
