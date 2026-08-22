@@ -447,8 +447,6 @@ After installing [RODE Connect](https://rode.com/en/software/rodeconnect#module_
 
 ### Prevent Google Meet from changing the input device volume level
 
-* [Source](https://codeandframes.com/audio/how-to-stop-google-meet-to-change-microphone-volume.html)
-
 1. Run `open -a 'Audio MIDI Setup'`
 1. Click the "+" icon in the bottom-right
 1. Click "Create Aggregate Device"
