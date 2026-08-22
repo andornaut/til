@@ -19,6 +19,7 @@
 
 * [A modern handwiring guide](https://geekhack.org/index.php?topic=87689.0)
 * [Building my first keyboard](https://sachee.medium.com/building-my-first-keyboard-and-you-can-too-512c0f8a4c5f)
+* [Cheat sheet: Custom keyboard mounting styles](https://thomasbaart.nl/2019/04/07/cheat-sheet-custom-keyboard-mounting-styles/)
 * [Creating A PCB In Everything: KiCad, Part 1](https://hackaday.com/2016/11/17/creating-a-pcb-in-everything-kicad-part-1/)
 * [Design Your Own Keyboard! (Video about Ergogen)](https://www.youtube.com/watch?v=M_VuXVErD6E)
 * [Ergogen - A declarative language for generating ergonomic keyboards (Video)](https://www.youtube.com/watch?v=5tERUZ_BSPM)
