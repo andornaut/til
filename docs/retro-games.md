@@ -381,7 +381,7 @@ Sony - PlayStation Portable | PPSSPP | **cannot swap**: one root `.chd` per disc
 Cartridge systems | (various) | single file, no multi-disc
 
 The `.m3u` lists each disc with a path relative to itself, pointing into the hidden `.Game/`
-subdirectory; the library's `games/AGENTS.md` has the exact naming.
+subdirectory.
 
 #### PSP is the one system with no working multi-disc layout
 
