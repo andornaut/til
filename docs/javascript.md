@@ -66,7 +66,7 @@ nvm use
 
 ### Performance
 
-* [Apollo FetchPolicy options](https://www.apollographql.com/docs/react/data/queries/#setting-a-fetch-policy)
+* [Apollo FetchPolicy options](https://www.apollographql.com/docs/react/data/queries)
 * [Google Core Web Vitals](https://web.dev/articles/vitals)
 * [React profiler](https://legacy.reactjs.org/docs/profiler.html)
 

@@ -102,7 +102,7 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 * [GitHub Copilot for VS Code](https://code.visualstudio.com/docs/agents/overview)
 * [goose](https://github.com/aaif-goose/goose) - Open source agent from Block; CLI and desktop, any model, MCP extensions
 * [Kilo Code](https://github.com/Kilo-Org/kilocode) - Agent that runs in VS Code, JetBrains, and the CLI; 500+ models at provider pricing
-* [OpenAI Codex](https://developers.openai.com/codex) - [Codex CLI](https://github.com/openai/codex)
+* [OpenAI Codex](https://learn.chatgpt.com/docs) - [Codex CLI](https://github.com/openai/codex)
 * [OpenCode](https://opencode.ai/) - Terminal agent from the SST team; any of 75+ providers
 * [Zed](https://zed.dev/)
 

@@ -29,7 +29,7 @@ npm ls ${package}
 
 ## Linking
 
-* [npm config - prefix](https://docs.npmjs.com/misc/config#prefix)
+* [npm config - prefix](https://docs.npmjs.com/misc/config/)
 * [npm link](https://docs.npmjs.com/cli/link/)
 
 ```bash
@@ -48,7 +48,7 @@ npm link foo
 
 ## Publishing
 
-* [npm config - commit-hooks](https://docs.npmjs.com/misc/config#commit-hooks)
+* [npm config - commit-hooks](https://docs.npmjs.com/misc/config/)
 * [npm publish](https://docs.npmjs.com/cli/publish/)
 * [npm version](https://docs.npmjs.com/cli/version/)
 

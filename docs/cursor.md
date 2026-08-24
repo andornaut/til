@@ -5,9 +5,9 @@
 
 ## Keyboard shortcuts
 
-* [Documentation](https://docs.cursor.com/kbd)
+* [Documentation](https://cursor.com/docs)
 
 Linux|macOS|Description
 ---|---|---
-Ctrl+k|⌘k|Open [Prompt Bar](https://docs.cursor.com/cmdk/overview)
-Ctrl+i|⌘i|Open [Unified AI interface](https://docs.cursor.com/chat/overview)
+Ctrl+k|⌘k|Open [Prompt Bar](https://cursor.com/docs)
+Ctrl+i|⌘i|Open [Unified AI interface](https://cursor.com/docs)

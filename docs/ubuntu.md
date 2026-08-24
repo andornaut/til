@@ -257,7 +257,7 @@ Use `dconf watch /` to monitor changes.
 
 Using dconf:
 
-[@au [] specifies the type of the empty array](https://developer.gnome.org/glib/stable/gvariant-text.html#gvariant-text-type-annotations) (which would not parse otherwise)
+[@au [] specifies the type of the empty array](https://docs.gtk.org/glib/gvariant-text-format.html) (which would not parse otherwise)
 
 ```bash
 # Remove language switcher keyboard shortcut
@@ -456,7 +456,7 @@ sudo modprobe r8125
 
 ### Install AMD GPU DKMS kernel module (driver)
 
-* [AMD GPU drivers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/install-methods/amdgpu-installer-index.html#ubuntu)
+* [AMD GPU drivers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/install-overview.html)
   * [Kernel version compatibility](https://rocm.docs.amd.com/en/latest/compatibility/compatibility-matrix.html#operating-systems-and-kernel-versions)
 * [AMD Quick start installation guide on Ubuntu](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/install/quick-start.html)
 * [AMD Running ROCm Docker containers](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/how-to/docker.html)

@@ -440,7 +440,7 @@ sudo xcode-select --install
 
 ### Remove RODE Connect virtual audio devices
 
-After installing [RODE Connect](https://rode.com/en-au/software/rodeconnect#module_19) - in order to upgrade RODE NT-USB Mini drivers - 3 new virtual audio devices are installed. To remove them:
+After installing [RODE Connect](https://rode.com/software/rode-connect) - in order to upgrade RODE NT-USB Mini drivers - 3 new virtual audio devices are installed. To remove them:
 
 1. Navigate to: `Macintosh HD > Library > Audio > Plug-ins > HAL`
 2. Delete the "RODE ..." folder
