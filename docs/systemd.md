@@ -134,7 +134,7 @@ systemctl --user daemon-reload
 
 ### Lingering
 
-[man loginctl](https://www.freedesktop.org/software/systemd/man/loginctl.html#enable-linger%20USER...)
+[man loginctl](https://www.freedesktop.org/software/systemd/man/latest/loginctl.html#enable-linger%20USER...)
 
 > The <user@.service> is started automatically when the user first logs in, and stays around as long as at least one login session is open. After the user logs out of the last session, <user@.service> and all services underneath it are terminated. This behavior is the default, when "lingering" is not enabled for that user. Enabling lingering means that <user@.service> is started automatically during boot, even if the user is not logged in, and that the service is not terminated when the user logs out.
 >

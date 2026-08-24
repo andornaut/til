@@ -47,7 +47,7 @@
 
 ## Courses
 
-* [Decision by design](https://fscourses.com/p/decision-by-design-sign-up-now) - Learn the skills and systems you need to master decision-making, unlock your full potential, and intentionally design the life you want (12 weeks)
+* [Decision by design](https://fscourses.com/p/decision-by-design) - Learn the skills and systems you need to master decision-making, unlock your full potential, and intentionally design the life you want (12 weeks)
 * [Technical Writing Courses](https://developers.google.com/tech-writing) - A collection of courses and learning resources offered by Google
 
 ## Newsletters
