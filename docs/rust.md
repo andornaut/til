@@ -12,9 +12,9 @@
   * [Standard Library](https://doc.rust-lang.org/stable/std/index.html)
   * [Test](https://doc.rust-lang.org/stable/test/index.html)
 * [Forum](https://users.rust-lang.org/) - Official forum
-* [Official site](https://www.rust-lang.org/)
+* [Official site](https://rust-lang.org/)
 * [Playground](https://play.rust-lang.org/) - Run code on the web
-* [Reddit /r/rust](https://www.reddit.com/r/rust)
+* [Reddit /r/rust](https://www.reddit.com/r/rust/)
 * [RFCs](https://github.com/rust-lang/rfcs)
 * [`##rust` @ irc.libera.chat](https://web.libera.chat/?chan=##rust) - IRC channel
 * [rustup](https://rustup.rs/) - Toolchain installer and manager
@@ -41,16 +41,16 @@ Read a local copy of "The Rust Programming Language" book in a web browser with:
 * [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/)
 * [Learning about Rust's next, peek, and windows](https://sts10.github.io/2020/10/06/peeking-the-pivot.html)
 * [min-sized-rust](https://github.com/johnthagen/min-sized-rust) - Minimize the size of a Rust binary
-* [Playing with tui-rs](https://monkeypatch.io/blog/2021/2021-05-31-rust-tui/) - Covers async + TUI
+* [Playing with tui-rs](https://www.monkeypatch.io/blog/2021/2021-05-31-rust-tui/) - Covers async + TUI
 * [Rust and TUI: Building a command-line interface in Rust](https://blog.logrocket.com/rust-and-tui-building-a-command-line-interface-in-rust/)
 * [Rust Date & Time](https://dev.to/ssivakumar/rust-date-time-e2k)
-* [Rust's Rules Are Made to Be Broken](https://warp.dev/blog/rules-are-made-to-be-broken/)
+* [Rust's Rules Are Made to Be Broken](https://www.warp.dev/blog/rules-are-made-to-be-broken)
 * [Xilem: an architecture for UI in Rust](https://raphlinus.github.io/rust/gui/2022/05/07/ui-architecture.html)
 
 ## Getting started
 
 * [Documentation > Channels](https://rust-lang.github.io/rustup/concepts/channels.html)
-* [Install Rust](https://www.rust-lang.org/tools/install)
+* [Install Rust](https://rust-lang.org/tools/install/)
 
 Install system packages
 

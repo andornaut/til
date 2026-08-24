@@ -336,7 +336,7 @@ $ sudo sysctl -p
 
 ### Temporarily change the date/time using timedatectl
 
-* [Wiki](https://wiki.archlinux.org/title/time)
+* [Wiki](https://wiki.archlinux.org/title/Time)
 
 ```bash
 timedatectl set-ntp false

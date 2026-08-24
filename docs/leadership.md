@@ -16,7 +16,7 @@
 * [Influence - The Psychology of Persuasion](https://www.goodreads.com/book/show/28815.Influence)
 * [Managing Humans - Biting and Humorous Tales of a Software Engineering Manager](https://www.goodreads.com/book/show/1317946.Managing_Humans)
 * [Mindset - The New Psychology of Success](https://www.goodreads.com/book/show/40745.Mindset)
-* [Nonviolent Communication - A Language of Life](https://www.nonviolentcommunication.com/product/nvc/)
+* [Nonviolent Communication - A Language of Life](https://nonviolentcommunication.com/product/nvc/)
 * [On Writing Well - The Classic Guide to Writing Nonfiction](https://www.goodreads.com/book/show/53343.On_Writing_Well)
 * [Peopleware - Productive Projects and Teams](https://www.goodreads.com/en/book/show/67825.Peopleware)
 * [Release It! - Design and Deploy Production-Ready Software](https://pragprog.com/titles/mnee2/release-it-second-edition/)
@@ -43,7 +43,7 @@
 
 ## Articles and guides
 
-* [Staff Developer Archetypes](https://staffeng.com/guides/staff-archetypes)
+* [Staff Developer Archetypes](https://staffeng.com/guides/staff-archetypes/)
 
 ## Courses
 

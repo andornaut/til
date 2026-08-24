@@ -36,7 +36,7 @@ chsh -s /opt/homebrew/bin/bash
 Install these applications:
 
 * [Alacritty](https://github.com/alacritty/alacritty)
-* [Cursor](https://www.cursor.com/)
+* [Cursor](https://cursor.com/)
 * [Flameshot](https://flameshot.org) (Paid alternative to [Monosnap](https://monosnap.ai/))
 * [Kap](https://github.com/wulkano/Kap) - Screen recorder
 * [Karabiner Elements](https://karabiner-elements.pqrs.org/)

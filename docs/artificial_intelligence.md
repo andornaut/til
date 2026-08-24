@@ -127,7 +127,7 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 
 ## Videos
 
-* [3Blue1Brown - Neural Networks](https://www.3blue1brown.com/topics/neural-networks)
+* [3Blue1Brown - Neural Networks](https://www.3blue1brown.com/?topic=neural-networks)
 * [AlphaGo - The Movie](https://youtu.be/WXuK6gekU1Y?si=EuLOmjwqvATUdL2T)
 * [Andrej Karpathy - Deep Dive into LLMs like ChatGPT](https://www.youtube.com/watch?v=7xTGNNLPyMI)
 * [vcubingx - Language Modeling (playlist)](https://www.youtube.com/watch?v=1il-s4mgNdI&list=PLyPKqVSnetmELS_I3FRfXZRKAxV5HB9fc)

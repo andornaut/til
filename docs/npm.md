@@ -30,7 +30,7 @@ npm ls ${package}
 ## Linking
 
 * [npm config - prefix](https://docs.npmjs.com/misc/config#prefix)
-* [npm link](https://docs.npmjs.com/cli/link)
+* [npm link](https://docs.npmjs.com/cli/link/)
 
 ```bash
 # Install global packages into a ${USER}-owned directory
@@ -49,8 +49,8 @@ npm link foo
 ## Publishing
 
 * [npm config - commit-hooks](https://docs.npmjs.com/misc/config#commit-hooks)
-* [npm publish](https://docs.npmjs.com/cli/publish)
-* [npm version](https://docs.npmjs.com/cli/version)
+* [npm publish](https://docs.npmjs.com/cli/publish/)
+* [npm version](https://docs.npmjs.com/cli/version/)
 
 ```bash
 # Do not run commit-hooks which may try to format package.json (husky -> prettier)

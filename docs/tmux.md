@@ -2,7 +2,7 @@
 
 * [Manual](https://man.openbsd.org/tmux)
 * [Official Wiki](https://github.com/tmux/tmux/wiki/)
-* [Arch wiki](https://wiki.archlinux.org/title/tmux)
+* [Arch wiki](https://wiki.archlinux.org/title/Tmux)
 * [Display formats](https://github.com/tmux/tmux/wiki/Formats)
 * [Example tmux.conf](https://github.com/andornaut/dotfiles/blob/main/root/%24HOME/.tmux.conf)
 * Copy/paste in Linux and

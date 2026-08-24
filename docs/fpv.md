@@ -19,7 +19,7 @@ VTX | [DJI O4 Air Unit](https://store.dji.com/ca/product/dji-o4-air-unit?vid=180
 
 ## Software
 
-* [Betaflight](https://www.betaflight.com/)
+* [Betaflight](https://betaflight.com/)
 * [DJI Assistant 2 (Consumer Drones Series)](https://www.dji.com/ca/downloads/softwares/dji-assistant-2-consumer-drones-series)
 * [DJI Fly (Android or iOS)](https://www.dji.com/ca/downloads/djiapp/dji-fly)
 * [EdgeTX](https://edgetx.org/)
