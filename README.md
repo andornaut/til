@@ -42,6 +42,8 @@ bundle exec rake
     * [YouTube app alternatives](docs/android.md#youtube-app-alternatives)
       * [SmartTube](docs/android.md#smarttube)
     * [TV Apps](docs/android.md#tv-apps)
+    * [Digital audio output over optical / S/PDIF](docs/android.md#digital-audio-output-over-optical-spdif)
+      * [Multichannel PCM is dropped, not downmixed](docs/android.md#multichannel-pcm-is-dropped-not-downmixed)
 * [Ansible](docs/ansible.md#ansible)
   * [Run a playbook](docs/ansible.md#run-a-playbook)
   * [Ad-hoc commands](docs/ansible.md#ad-hoc-commands)

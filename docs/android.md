@@ -209,3 +209,69 @@ SmartTube | com.liskovsoft.smarttubetv.beta/com.liskovsoft.smartyoutubetv2.tv.ui
 VLC | org.videolan.vlc/.StartActivity | vlc://
 YouTube | com.google.android.youtube.tv/com.google.android.apps.youtube.tv.activity.ShellActivity | <https://www.youtube.com>
 YouTube Music | com.google.android.youtube.tvmusic/com.google.android.apps.youtube.tvmusic.activity.MainActivity | <https://www.youtube.com/music>
+
+### Digital audio output over optical / S/PDIF
+
+Symptom: some files play with no audio while others are fine, on a TV whose only
+audio output is optical into a DAC, DSP or older receiver.
+
+S/PDIF carries either 2-channel LPCM or an IEC 61937 compressed bitstream, and
+the only compressed formats defined for consumer optical are AC-3 and DTS. There
+is no packing for multichannel AAC, FLAC or Opus. Anime and older BluRay rips are
+often AAC 5.1, which is why they are the ones that go silent.
+
+Identify the audio codec and channel count first:
+
+```bash
+ffprobe -v error -select_streams a \
+    -show_entries stream=index,codec_name,profile,channels,channel_layout:stream_tags=language,title \
+    -of default=noprint_wrappers=1 FILE.mkv
+```
+
+Three settings have to agree. Only the last one causes silence on its own, but
+the first two matter if the receiving device has no AC-3 or DTS decoder:
+
+Setting | Value | Reason
+--- | --- | ---
+TV digital audio out (`settings get global sound_spdif_type` on MediaTek panels: `1` = PCM, `2` = bitstream) | PCM | most DACs and DSPs decode nothing but PCM
+VLC > Settings > Extra settings > Audio > Digital audio output (passthrough) | off | there is no bitstream form for multichannel AAC
+VLC > Settings > Extra settings > Advanced > Developer > Custom libVLC options | `--stereo-mode=1` | see below
+
+`--stereo-mode` takes VLC's `AOUT_VAR_CHAN` values, where `1` is stereo. Restart
+VLC afterwards; libVLC options are read only at initialisation.
+
+#### Multichannel PCM is dropped, not downmixed
+
+Turning passthrough off is not enough, because passthrough governs encoded output
+and not the PCM channel count. When a player asks for 6-channel PCM, Android's
+policy manager hands it a DIRECT output thread instead of the S/PDIF mixer, and
+that thread has no sink:
+
+```
+- Output thread ..., type 1 (DIRECT):
+-   Channel count: 6   Channel mask: 0x3f
+-   Output devices:  (Empty device types)
+```
+
+Playback reports as normal throughout, so nothing in the player's UI hints at it.
+
+Read the format of the track a player actually opened:
+
+```bash
+# channelMask=0x3 is stereo and audible; 0x3f is 5.1 and silently dropped
+adb shell "dumpsys audio | grep -E 'AudioPlaybackConfiguration.*state:started'"
+
+# Confirm which thread is bound to the optical output, and its channel count
+adb shell "dumpsys media.audio_flinger | grep -E 'Output thread|Channel count:|Channel mask:|Output devices:'"
+```
+
+Decoding is rarely the problem: check `channel-count` in the platform's codec
+list before blaming the codec.
+
+```bash
+adb shell "dumpsys media.player | grep -iE 'aac|ac3|flac'"
+adb shell "grep -A4 'audio/mp4a-latm' /vendor/etc/media_codecs_c2.xml"
+```
+
+adb runs as uid `shell` on a stock TV, so an app's `shared_prefs` cannot be
+written and player-side options have to be set through the on-screen UI.
