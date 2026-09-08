@@ -247,7 +247,7 @@ and not the PCM channel count. When a player asks for 6-channel PCM, Android's
 policy manager hands it a DIRECT output thread instead of the S/PDIF mixer, and
 that thread has no sink:
 
-```
+```text
 - Output thread ..., type 1 (DIRECT):
 -   Channel count: 6   Channel mask: 0x3f
 -   Output devices:  (Empty device types)
