@@ -108,6 +108,7 @@ n.b. Ollama and LM Studio are for one person on one machine; vLLM and SGLang are
 
 ## Articles and blogs
 
+* [Ahead of AI](https://magazine.sebastianraschka.com/) - Sebastian Raschka's newsletter on machine learning and LLM research
 * [Building effective agents](https://www.anthropic.com/engineering/building-effective-agents) - Start with the simplest thing that works; most "agent" problems are a workflow
 * [Claude Code: Best practices for agentic coding](https://code.claude.com/docs/en/best-practices)
 * [Effective context engineering for AI agents](https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents)
