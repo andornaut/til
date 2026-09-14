@@ -1605,6 +1605,7 @@ SimCity 2000 - The Ultimate City Simulator
 Soul Blazer
 Space Megaforce
 Sparkster
+Star Fox
 Star Fox 2
 Star Fox EX
 Star Trek - The Next Generation - Future's Past
