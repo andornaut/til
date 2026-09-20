@@ -181,7 +181,7 @@ ROMS
 
 1. In ES-DE, configure the new location for "downloaded_media" in Menu>Other settings>Game media directory
 2. In Retroarch, configure the new locations for saves and states in Settings>Directory
-3. Point Azahar, Dolphin, and NetherSX2 apps to the new locations for their configurations
+3. Point Azahar, Dolphin, ARMSX2, and NetherSX2 apps to the new locations for their configurations
 
 #### RetroArch on stock Android
 
@@ -211,7 +211,7 @@ The [games role](https://github.com/andornaut/ansible-ctrl/tree/main/roles/games
 mirrors the same managed RetroArch config (settings, per-core overrides/options, generated playlists,
 cores, BIOS, shaders, thumbnails) onto the Flip 2 over `adb`, applying the Android divergences from the
 [Cores](#cores) table (ARM cores, GLideN64 HLE for N64, YabaSanshiro for Saturn, standalone Dolphin
-and NetherSX2 for GameCube and PS2) and the vulkan driver that
+and ARMSX2 for GameCube and PS2) and the vulkan driver that
 [CRT Geom Deluxe](#crt-geom-deluxe-on-the-flip-2) requires. Run it by hand from a host that mounts the
 ROM library:
 
@@ -242,24 +242,34 @@ Wait for shaders before starting | on (avoids first-run stutter)
 Color correction | on
 ISO path | sdcard `ROMS/gc`, recursive
 
-##### PS2: NetherSX2-Turnip
+##### PS2: ARMSX2
 
-Package `xyz.aethersx2.tturnip`, the `NetherSX2-…-Turnip` build (4248 "patch") from the
-[Obtainium Emulation Pack](https://github.com/RJNY/Obtainium-Emulation-Pack), for its bundled Turnip
-Adreno driver. The "Classic" (3668) build is the same package with the older AetherSX2 UI (some titles
-favour one, e.g. Sly Cooper on 3668); they share the package id, so swapping keeps the data.
+[ARMSX2](https://github.com/ARMSX2/ARMSX2) is PCSX2 with an ARM64 recompiler, GPL-3 and under active
+development, where AetherSX2 and its NetherSX2 forks are a closed 2022 tree that nobody maintains. Install
+the sideloaded GitHub build (`com.armsx2`) from the
+[Obtainium Emulation Pack](https://github.com/RJNY/Obtainium-Emulation-Pack); the Play build is a separate
+package (`come.nanodata.armsx2`), scoped-storage only, with no in-app updater. Stable releases carry one APK
+per SDK level: the Flip 2 is Android 13, so `-a13-armv8.2-sdk33`.
 
-Settings live in app-private storage, so set them by hand (`adb` cannot reach them on a non-rooted
-device): renderer Vulkan, and the Turnip driver. The built-in gamepad auto-maps undocked; remap only if
-the D-pad, sticks, or analog triggers misbehave. Put the PS2 BIOS (the 4MB `SCPH-*` / `ps2-0200*` dumps,
-not the 512KB PS1 `scph*` ones) in the app's `bios/` folder,
-`/storage/emulated/0/Android/data/xyz.aethersx2.tturnip/files/bios/`.
+The first-run wizard asks for a data location (memory cards, save states, config, covers) and a BIOS folder:
+point the latter at the sdcard `BIOS/pcsx2/bios/` set the sync already pushes, and ARMSX2 validates each dump
+and copies it into its own data location, so that folder is only an import source. Use the 4MB `SCPH-*` /
+`ps2-0200*` dumps, not the 512KB PS1 `scph*` ones. Set the renderer to Vulkan. A custom Adreno driver can be
+loaded in-app, which is the one thing NetherSX2 needed a separate Turnip build for.
 
-ES-DE launches it via the `AetherSX2-Turnip (Standalone)` label, whose find rule
-(`ES-DE/custom_systems/es_find_rules.xml`) ships pointing at a different fork (`xyz.aethersx2.custom`):
-repoint it to `xyz.aethersx2.tturnip/xyz.aethersx2.android.EmulationActivity` and set the PS2
-`<alternativeEmulator>` to that label. `sync.py` manages neither file, so re-copying the
-[custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems) reverts both.
+ES-DE launches it via the `ARMSX2 (Standalone)` label, a `VIEW` intent with the ROM as a content URI, which
+ES-DE's own find rules resolve (`com.armsx2/.MainActivity` for the sideloaded build). The label has to exist in
+the installed [custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems)
+`es_systems.xml`, whose `ps2` block replaces ES-DE's bundled one: an older copy predates ARMSX2 and the pin
+then resolves to nothing. `sync.py` sets the `<alternativeEmulator>` but manages neither the custom_systems nor
+the app's own settings.
+
+NetherSX2-Turnip (`xyz.aethersx2.tturnip`, the 4248 "patch" build; "Classic" 3668 is the same package with the
+older AetherSX2 UI, so swapping keeps the data) stays installed as the fallback, its BIOS in
+`/storage/emulated/0/Android/data/xyz.aethersx2.tturnip/files/bios/`. Nothing crosses between the two, saves
+and memory cards included. Its label is `NetherSX2-Turnip (Standalone)` (`AetherSX2-Turnip (Standalone)` in
+older custom_systems copies), and in those older copies its find rule points at the `xyz.aethersx2.custom`
+fork and has to be repointed to `xyz.aethersx2.tturnip/xyz.aethersx2.android.EmulationActivity`.
 
 ### Xbox Series
 
@@ -462,7 +472,7 @@ SNK - Neo Geo | [FinalBurn Neo](https://docs.libretro.com/library/fbneo/) | [Fin
 SNK - Neo Geo CD | NeoCD | NeoCD
 SNK - Neo Geo Pocket Color (NGPC) | [Beetle NeoPop](https://docs.libretro.com/library/beetle_neopop/) | [Beetle NeoPop](https://docs.libretro.com/library/beetle_neopop/)
 Sony - PlayStation (PSX) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/) ([Beetle PSX](https://docs.libretro.com/library/beetle_psx/) on Xbox Series) | [Beetle PSX HW](https://docs.libretro.com/library/beetle_psx_hw/)
-Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | [NetherSX2-Turnip](https://github.com/nckstwrt/NetherSX2-Turnip) (Standalone)
+Sony - PlayStation 2 (PS2) | [PCSX2](https://docs.libretro.com/library/pcsx2/) | [ARMSX2](https://github.com/ARMSX2/ARMSX2) (Standalone), with [NetherSX2-Turnip](https://github.com/nckstwrt/NetherSX2-Turnip) kept as the fallback
 Sony - PlayStation Portable (PSP) | [PPSSPP](https://docs.libretro.com/library/ppsspp/) | [PPSSPP](https://docs.libretro.com/library/ppsspp/)
 The 3DO Company - 3DO | [Opera](https://docs.libretro.com/library/opera/) | [Opera](https://docs.libretro.com/library/opera/)
 
@@ -477,7 +487,7 @@ Platform | Diverges because
 --- | ---
 Saturn | Beetle Saturn has **no dynamic recompiler**: it interprets both SH-2s. A Snapdragon 855+ cannot hold full speed on it. Not a close call.
 N64 | ParaLLEl-RDP is a Vulkan compute renderer needing `VK_KHR_8bit_storage`, which **no Adreno driver exposes**. Reported at ~1fps even on a Snapdragon 8 Elite. A hard blocker, not a performance question: the Flip 2 stays on GLideN64 HLE.
-PS2 | LRPS2 is x86_64-only; its recompiler has no ARM target and no Android build exists. Use NetherSX2-Turnip standalone.
+PS2 | LRPS2 is x86_64-only; its recompiler has no ARM target and no Android build exists. ARMSX2 ships an ARM64 recompiler, but its libretro core is built for Linux arm64 only, so PS2 stays a standalone app here.
 
 #### One game runs on a core other than its system's
 

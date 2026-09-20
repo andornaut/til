@@ -316,7 +316,7 @@ bundle exec rake
       * [Sync the desktop config to the Flip 2](docs/retro-games.md#sync-the-desktop-config-to-the-flip-2)
       * [Standalone emulator settings (stock Android)](docs/retro-games.md#standalone-emulator-settings-stock-android)
         * [GameCube: Dolphin](docs/retro-games.md#gamecube-dolphin)
-        * [PS2: NetherSX2-Turnip](docs/retro-games.md#ps2-nethersx2-turnip)
+        * [PS2: ARMSX2](docs/retro-games.md#ps2-armsx2)
     * [Xbox Series](docs/retro-games.md#xbox-series)
       * [USB disk drive permissions](docs/retro-games.md#usb-disk-drive-permissions)
       * [Disable Kiosk Mode](docs/retro-games.md#disable-kiosk-mode)
