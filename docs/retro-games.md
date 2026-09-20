@@ -257,12 +257,17 @@ and copies it into its own data location, so that folder is only an import sourc
 `ps2-0200*` dumps, not the 512KB PS1 `scph*` ones. Set the renderer to Vulkan. A custom Adreno driver can be
 loaded in-app, which is the one thing NetherSX2 needed a separate Turnip build for.
 
-ES-DE launches it via the `ARMSX2 (Standalone)` label, a `VIEW` intent with the ROM as a content URI, which
-ES-DE's own find rules resolve (`com.armsx2/.MainActivity` for the sideloaded build). The label has to exist in
-the installed [custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems)
-`es_systems.xml`, whose `ps2` block replaces ES-DE's bundled one: an older copy predates ARMSX2 and the pin
-then resolves to nothing. `sync.py` sets the `<alternativeEmulator>` but manages neither the custom_systems nor
-the app's own settings.
+ES-DE launches it via the `ARMSX2 (Standalone)` label, a `VIEW` intent with the ROM as a content URI.
+Both halves of that have to be in the installed
+[custom-systems](https://github.com/GlazedBelmont/es-de-android-custom-systems), whose `ps2` block replaces
+ES-DE's bundled one: the label in `es_systems.xml`, and an `ARMSX2` entry in `es_find_rules.xml` naming
+`com.armsx2/.MainActivity`. ES-DE 3.4.1's bundled rule lists only the Play package (`come.nanodata.armsx2`,
+activity `kr.co.iefriends.pcsx2.MainActivity`), so the sideloaded build is not found without that entry.
+
+The custom find rules are parsed before the bundled ones and a repeated emulator name is then skipped, so a
+custom entry overrides the bundled one outright: whatever the bundled rule listed has to be repeated in it or
+it is lost. `sync.py` sets the `<alternativeEmulator>` but manages neither the custom_systems nor the app's own
+settings.
 
 NetherSX2-Turnip (`xyz.aethersx2.tturnip`, the 4248 "patch" build; "Classic" 3668 is the same package with the
 older AetherSX2 UI, so swapping keeps the data) stays installed as the fallback, its BIOS in
