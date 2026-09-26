@@ -39,7 +39,7 @@ jobs:
       # committed file are the versions the lockfile names rather than whatever
       # rubygems served that morning.
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1.321.0
+        uses: ruby/setup-ruby@v1.324.0
         with:
           ruby-version: .ruby-version
           bundler-cache: true
