@@ -1364,13 +1364,20 @@ Viewtiful Joe
 ### Nintendo - Nintendo 3DS (3DS) - February 26, 2011
 
 ```text
+Ace Combat - Assault Horizon Legacy+
+Azure Striker Gunvolt - Striker Pack
 Bravely Default
+Bravely Second - End Layer
+Donkey Kong Country Returns 3D
 Etrian Odyssey IV - Legends of the Titan
+Etrian Odyssey V - Beyond the Myth
+Fantasy Life
 Fire Emblem - Awakening
 Fire Emblem Fates - Conquest
 Kid Icarus - Uprising
 Kirby - Planet Robobot
 Legend of Zelda, The - A Link Between Worlds
+Luigi's Mansion - Dark Moon
 Mario Kart 7
 Persona Q - Shadow of the Labyrinth
 Phoenix Wright - Ace Attorney - Dual Destinies
@@ -1379,14 +1386,20 @@ Pokemon Ultra Sun
 Pokemon X
 Professor Layton and the Azran Legacy
 Professor Layton and the Miracle Mask
+Professor Layton vs. Phoenix Wright - Ace Attorney
 Rhythm Heaven Megamix
+Shin Megami Tensei - Devil Summoner - Soul Hackers
 Shin Megami Tensei - Devil Survivor 2 - Record Breaker
 Shin Megami Tensei - Strange Journey Redux
 Shin Megami Tensei IV
 Shin Megami Tensei IV - Apocalypse
 Shovel Knight
 SteamWorld Heist
+Steamworld Dig
 Super Mario 3D Land
+Tales of the Abyss
+Theatrhythm Final Fantasy - Curtain Call
+Xenoblade Chronicles 3D
 Zero Escape - Virtue's Last Reward
 Zero Escape - Zero Time Dilemma
 ```
