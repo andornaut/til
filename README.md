@@ -363,6 +363,7 @@ bundle exec rake
     * [Nintendo - Game Boy Advance (GBA) - March 21, 2001](docs/retro-games.md#nintendo-game-boy-advance-gba-march-21-2001)
     * [Nintendo - Game Boy Color (GBC) - October 21, 1998](docs/retro-games.md#nintendo-game-boy-color-gbc-october-21-1998)
     * [Nintendo - GameCube (GCN) - September 14, 2001](docs/retro-games.md#nintendo-gamecube-gcn-september-14-2001)
+    * [Nintendo - Nintendo 3DS (3DS) - February 26, 2011](docs/retro-games.md#nintendo-nintendo-3ds-3ds-february-26-2011)
     * [Nintendo - Nintendo 64 (N64) - June 23, 1996](docs/retro-games.md#nintendo-nintendo-64-n64-june-23-1996)
     * [Nintendo - Nintendo DS (NDS) - November 21, 2004](docs/retro-games.md#nintendo-nintendo-ds-nds-november-21-2004)
     * [Nintendo - Nintendo Entertainment System (FC, NES) - October 18, 1985](docs/retro-games.md#nintendo-nintendo-entertainment-system-fc-nes-october-18-1985)
