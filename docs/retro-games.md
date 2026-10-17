@@ -1361,6 +1361,36 @@ Tony Hawk's Pro Skater 3
 Viewtiful Joe
 ```
 
+### Nintendo - Nintendo 3DS (3DS) - February 26, 2011
+
+```text
+Bravely Default
+Etrian Odyssey IV - Legends of the Titan
+Fire Emblem - Awakening
+Fire Emblem Fates - Conquest
+Kid Icarus - Uprising
+Kirby - Planet Robobot
+Legend of Zelda, The - A Link Between Worlds
+Mario Kart 7
+Persona Q - Shadow of the Labyrinth
+Phoenix Wright - Ace Attorney - Dual Destinies
+Phoenix Wright - Ace Attorney - Spirit of Justice
+Pokemon Ultra Sun
+Pokemon X
+Professor Layton and the Azran Legacy
+Professor Layton and the Miracle Mask
+Rhythm Heaven Megamix
+Shin Megami Tensei - Devil Survivor 2 - Record Breaker
+Shin Megami Tensei - Strange Journey Redux
+Shin Megami Tensei IV
+Shin Megami Tensei IV - Apocalypse
+Shovel Knight
+SteamWorld Heist
+Super Mario 3D Land
+Zero Escape - Virtue's Last Reward
+Zero Escape - Zero Time Dilemma
+```
+
 ### Nintendo - Nintendo 64 (N64) - June 23, 1996
 
 ```text
@@ -1465,6 +1495,7 @@ Pokemon - Platinum Version
 Pokemon Mystery Dungeon - Explorers of Sky
 Professor Layton and the Curious Village
 Professor Layton and the Diabolical Box
+Professor Layton and the Last Specter
 Professor Layton and the Unwound Future
 Radiant Historia
 Retro Game Challenge
