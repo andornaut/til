@@ -461,6 +461,7 @@ Nintendo - Game Boy (GB) | [Gambatte](https://docs.libretro.com/library/gambatte
 Nintendo - Game Boy Advance (GBA) | [mGBA](https://docs.libretro.com/library/mgba/) | [mGBA](https://docs.libretro.com/library/mgba/)
 Nintendo - Game Boy Color (GBC) | [Gambatte](https://docs.libretro.com/library/gambatte/) | [Gambatte](https://docs.libretro.com/library/gambatte/)
 Nintendo - GameCube (GCN) | [Dolphin](https://docs.libretro.com/library/dolphin/) | [Dolphin](https://dolphin-emu.org/) (Standalone: the libretro core crashes on load on Android)
+Nintendo - Nintendo 3DS (3DS) | [Azahar](https://github.com/azahar-emu/azahar) | [Azahar](https://github.com/azahar-emu/azahar)
 Nintendo - Nintendo 64 (N64) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) + [ParaLLEl-RDP/RSP](https://github.com/Themaister/parallel-rdp) (Vulkan) | [Mupen64Plus-Next](https://docs.libretro.com/library/mupen64plus/) + GLideN64 (HLE)
 Nintendo - Nintendo DS (NDS) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/) | [melonDS DS](https://docs.libretro.com/library/melonds_ds/)
 Nintendo - Nintendo Entertainment System (FC, NES) | [Mesen](https://docs.libretro.com/library/mesen/) | [Mesen](https://docs.libretro.com/library/mesen/)
