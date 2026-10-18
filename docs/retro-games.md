@@ -1399,6 +1399,7 @@ Steamworld Dig
 Super Mario 3D Land
 Tales of the Abyss
 Theatrhythm Final Fantasy - Curtain Call
+Tomodachi Life
 Xenoblade Chronicles 3D
 Zero Escape - Virtue's Last Reward
 Zero Escape - Zero Time Dilemma
