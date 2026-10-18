@@ -1378,6 +1378,7 @@ Kid Icarus - Uprising
 Kirby - Planet Robobot
 Legend of Zelda, The - A Link Between Worlds
 Luigi's Mansion - Dark Moon
+Mario & Luigi - Dream Team
 Mario Kart 7
 Persona Q - Shadow of the Labyrinth
 Phoenix Wright - Ace Attorney - Dual Destinies
