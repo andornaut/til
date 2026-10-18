@@ -1509,7 +1509,6 @@ Pokemon - Platinum Version
 Pokemon Mystery Dungeon - Explorers of Sky
 Professor Layton and the Curious Village
 Professor Layton and the Diabolical Box
-Professor Layton and the Last Specter
 Professor Layton and the Unwound Future
 Radiant Historia
 Retro Game Challenge
