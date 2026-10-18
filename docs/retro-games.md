@@ -1380,6 +1380,8 @@ Legend of Zelda, The - A Link Between Worlds
 Luigi's Mansion - Dark Moon
 Mario Kart 7
 Persona Q - Shadow of the Labyrinth
+Phoenix Wright - Ace Attorney - Dual Destinies
+Phoenix Wright - Ace Attorney - Spirit of Justice
 Pokemon Ultra Sun
 Pokemon X
 Professor Layton and the Azran Legacy
@@ -1391,6 +1393,8 @@ Shin Megami Tensei - Strange Journey Redux
 Shin Megami Tensei IV
 Shin Megami Tensei IV - Apocalypse
 Shovel Knight
+SteamWorld Heist
+Steamworld Dig
 Super Mario 3D Land
 Tales of the Abyss
 Theatrhythm Final Fantasy - Curtain Call
