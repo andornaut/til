@@ -1387,6 +1387,7 @@ Pokemon X
 Professor Layton and the Azran Legacy
 Professor Layton and the Miracle Mask
 Professor Layton vs. Phoenix Wright - Ace Attorney
+Rhythm Paradise Megamix
 Shin Megami Tensei - Devil Summoner - Soul Hackers
 Shin Megami Tensei - Devil Survivor 2 - Record Breaker
 Shin Megami Tensei - Strange Journey Redux
