@@ -521,7 +521,6 @@ and scratch storage.
 
 ```bash
 make check
-make check-info
 ```
 
 The full gate runs the declared lint checks. No test suite or build is declared.

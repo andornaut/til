@@ -21,10 +21,3 @@ task :mdtoc do
     raise "Failed with status: #{status.exitstatus}" unless ok
   end
 end
-
-%w[check test lint build].each do |name|
-  desc "Run #{name} in a container"
-  task name do
-    sh 'make', name
-  end
-end
