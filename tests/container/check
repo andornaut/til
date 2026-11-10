@@ -1,0 +1,30 @@
+#!/bin/sh
+set -eu
+
+category=${1:-check}
+[ "$#" -eq 0 ] || shift
+case "$category" in
+    check)
+        for task in ${CHECK_TASKS:?CHECK_TASKS is required}; do
+            "$0" "$task"
+        done
+        ;;
+    lint)
+        bundle exec rubocop
+        markdownlint-cli2
+        ;;
+    exec)
+        cp -R --no-preserve=ownership /opt/bundle /scratch/bundle
+        export GEM_HOME=/scratch/gems GEM_PATH=/scratch/gems:/usr/local/bundle
+        export BUNDLE_PATH=/scratch/bundle PATH=/scratch/gems/bin:$PATH
+        mkdir -p "$GEM_HOME"
+        if [ "$#" -gt 0 ]; then
+            exec "$@"
+        fi
+        exec sh -ec "${COMMAND:?COMMAND is required}"
+        ;;
+    *)
+        printf 'No %s check declared\n' "$category" >&2
+        exit 2
+        ;;
+esac

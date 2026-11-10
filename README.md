@@ -512,3 +512,16 @@ bundle exec rake
 <!-- mdtoc-end -->
 
 Table of contents generated using [mdtoc](https://github.com/andornaut/mdtoc).
+
+## Development
+
+Make and Docker run the project-owned checks in `tests/container/`. Verification
+mounts only a read-only source snapshot and scratch storage.
+
+```bash
+make check
+make check-info
+```
+
+The full gate runs the declared lint checks. No test suite or build is declared.
+Verification does not run the table-of-contents task or change Git history.
