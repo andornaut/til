@@ -23,7 +23,15 @@
   * Flashing the firmware fails in Linux, but works in macOS
   * The firmware flashing instructions in the manual omit one step: While holding down the "SET" button, connect a USB-C cable, then press the "Run" button, then mount the "\*\_DFU" filesystem and copy over the \*.hex file to it
 * [Miniware TS101 Soldering Iron](https://www.miniware.com.cn/product/ts101-smart-soldering-iron/)
-  * Flashing the firmware fails in Linux, but works in macOS
+  * Firmware: [official releases](https://forum.minidso.com/forum.php?mod=viewthread&tid=4936), [V2.20 download](https://forum.minidso.com/forumdownload/TS101APPV220.zip) (2026-02-26)
+  * Flashing works in Linux:
+    1. Extract the firmware archive. Use `TS101AppV220.hex` for English; the separate `Language_*.hex` files are for other languages.
+    2. Let the iron cool and disconnect all power, including the barrel connector.
+    3. Hold button A, nearest the tip, while connecting the iron to the computer with a USB-C data cable. Release A when the display shows `DFU`.
+    4. Mount the `TS101_DFU` drive, using a file manager or `udisksctl mount -b /dev/disk/by-label/TS101_DFU`.
+    5. Copy the firmware to the drive's root directory with the short destination filename `TS101APP.hex`.
+    6. Flush writes with `sync`, then unmount and remount the drive to refresh its contents. Wait for `TS101APP.RDY`; stop if the extension is `.ERR`. If the drive briefly disappears, wait for it to reconnect before mounting again.
+    7. Unmount the drive, unplug USB, then reconnect normally without holding A. Confirm the display shows `V2.20`.
   * [Soldering Tips SET compatible with TS100 & TS101](https://cnckitchen.store/products/ts100-101-adapter-tips-set-m2-x-m3-m4-m5-m6-1-4-m8-100-lead-and-cadmium-free)
 * [NEWACALOX 30W Soldering Fan Smoke Absorber](https://www.aliexpress.com/item/1005004795640997.html?spm=a2g0o.order_list.order_list_main.137.61d718020oVHoX) (Select color: N-SE120)
 * [Omnifixo - Helping hands](https://omnifixo.com/)
