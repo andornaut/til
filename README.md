@@ -515,8 +515,9 @@ Table of contents generated using [mdtoc](https://github.com/andornaut/mdtoc).
 
 ## Development
 
-Make and Docker run the project-owned checks in `tests/container/`. Verification
-mounts only a read-only source snapshot and scratch storage.
+Checks require Make and Docker 29.9.3, matching CI. The project-owned containers
+live in `tests/container/`. Verification mounts only a read-only source snapshot
+and scratch storage.
 
 ```bash
 make check

@@ -37,30 +37,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v7.0.1
         with:
-          # Nothing in this job uses the token, so it is not left
-          # in .git/config for a later step to read.
           persist-credentials: false
 
-      # bundler-cache installs from Gemfile.lock, so the rubocop that judges
-      # this repository is the version the lockfile names rather than whatever
-      # rubygems served that morning.
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1.336.0
+      - name: Set up Docker
+        uses: docker/setup-docker-action@v5.7.0
         with:
-          ruby-version: .ruby-version
-          bundler-cache: true
+          version: v29.9.3
 
-      - name: Run RuboCop
-        run: bundle exec rubocop
-
-      # The action bundles markdownlint-cli2, so its own tag is the tool pin and
-      # Dependabot proposes the bump through the github-actions ecosystem. It
-      # fetches nothing at run time, so a slow host cannot turn this red.
-      - name: Run markdownlint
-        uses: DavidAnson/markdownlint-cli2-action@v25.0.0
-        with:
-          # Empty on purpose. The action defaults this to `*.{md,markdown}`,
-          # which is the repository root only, and anything passed here outranks
-          # the `globs` in .markdownlint-cli2.yaml. Empty leaves the config file
-          # deciding, so this gate and a local `markdownlint-cli2` read one list.
-          globs: ""
+      - name: Run lint
+        run: make lint

@@ -10,13 +10,14 @@ case "$category" in
         done
         ;;
     lint)
+        shellcheck -x -P SCRIPTDIR tests/container/run tests/container/check
         bundle exec rubocop
         markdownlint-cli2
         ;;
     exec)
         cp -R --no-preserve=ownership /opt/bundle /scratch/bundle
         export GEM_HOME=/scratch/gems GEM_PATH=/scratch/gems:/usr/local/bundle
-        export BUNDLE_PATH=/scratch/bundle PATH=/scratch/gems/bin:$PATH
+        export BUNDLE_PATH=/scratch/bundle PATH="/scratch/gems/bin:${PATH}"
         mkdir -p "$GEM_HOME"
         if [ "$#" -gt 0 ]; then
             exec "$@"
