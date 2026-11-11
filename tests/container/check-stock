@@ -8,13 +8,10 @@ action=${1:-check}
 case "${action}" in check|lint) ;; *) printf 'No %s check declared\n' "${action}" >&2; exit 2 ;; esac
 stock_begin "${checkout}"
 STOCK_OUTPUT_DIR=
-stock_image native_image "${RUBY_IMAGE}"
-STOCK_NETWORK=bridge stock_run "${native_image}" -- sh tests/container/ruby "${action}"
+STOCK_NETWORK=bridge stock_run "${RUBY_IMAGE}" -- sh tests/container/ruby "${action}"
 if [[ ${action} == check || ${action} == lint ]]; then
-    stock_image markdown_image "${MARKDOWN_IMAGE}"
-    stock_image shellcheck_image "${SHELLCHECK_IMAGE}"
-    STOCK_NETWORK=bridge stock_run "${markdown_image}" -- sh tests/container/markdown
-    stock_readonly "${shellcheck_image}" /bin/shellcheck -x -P SCRIPTDIR \
+    STOCK_NETWORK=bridge stock_run "${MARKDOWN_IMAGE}" -- sh tests/container/markdown
+    stock_readonly "${SHELLCHECK_IMAGE}" /bin/shellcheck -x -P SCRIPTDIR \
         tests/container/stock tests/container/check-stock \
         tests/container/ruby tests/container/markdown
 fi
