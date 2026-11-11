@@ -67,14 +67,12 @@ jobs:
             exit 125
           fi
           stock_image native_image "ruby:$(cat .ruby-version)"
-          stock_prepare "${native_image}" native -- sh -ec 'export GEM_HOME=/scratch/gems GEM_PATH=/scratch/gems:/usr/local/bundle
+          STOCK_NETWORK=bridge stock_run "${native_image}" -- sh -ec 'export GEM_HOME=/scratch/gems GEM_PATH=/scratch/gems:/usr/local/bundle
           export PATH="/scratch/gems/bin:$PATH" BUNDLE_PATH=/scratch/bundle BUNDLE_APP_CONFIG=/scratch/bundle-config
           mkdir -p /scratch/gems /scratch/bundle /scratch/bundle-config
           gem install bundler --version 4.0.13 --no-document >&2
           BUNDLE_FROZEN=true bundle _4.0.13_ install >&2
-          tar --create --file - --directory / scratch/gems scratch/bundle scratch/bundle-config
-          '
-          stock_run "${native_image}" native -- sh -ec 'export GEM_HOME=/scratch/gems GEM_PATH=/scratch/gems:/usr/local/bundle
+          export GEM_HOME=/scratch/gems GEM_PATH=/scratch/gems:/usr/local/bundle
           export PATH="/scratch/gems/bin:$PATH" BUNDLE_PATH=/scratch/bundle BUNDLE_APP_CONFIG=/scratch/bundle-config
           for script in tests/container/stock tests/container/check-stock; do bash -n "$script"; done
           for script in tests/container/ruby tests/container/markdown; do sh -n "$script"; done
@@ -110,12 +108,11 @@ jobs:
             exit 125
           fi
           stock_image markdown_image node:24.22.2
-          stock_prepare "${markdown_image}" markdown -- sh -ec 'mkdir -p /scratch/markdown
+          STOCK_NETWORK=bridge stock_run "${markdown_image}" -- sh -ec 'mkdir -p /scratch/markdown
           cp tests/container/package.json tests/container/package-lock.json /scratch/markdown/
           npm ci --prefix /scratch/markdown --ignore-scripts --no-audit --no-fund --maxsockets=1 >&2
-          tar --create --file - --directory / scratch/markdown
+          exec /scratch/markdown/node_modules/.bin/markdownlint-cli2
           '
-          stock_run "${markdown_image}" markdown -- /scratch/markdown/node_modules/.bin/markdownlint-cli2
           stock_finish
 
       - name: Lint shell scripts

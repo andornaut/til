@@ -10,19 +10,18 @@ case "${action}" in check|lint) ;; *) printf 'No %s check declared\n' "${action}
 if (( $# > 1 )); then printf '%s\n' 'Stock checks do not accept extra arguments.' >&2; exit 2; fi
 : "${RUBY_IMAGE:?The Makefile declares RUBY_IMAGE}"
 stock_begin "${checkout}"
+STOCK_OUTPUT_DIR=
 native_image=
 markdown_image=
 shellcheck_image=
 stock_image native_image "${RUBY_IMAGE}"
-stock_prepare "${native_image}" native -- sh tests/container/ruby prepare
-stock_run "${native_image}" native -- sh tests/container/ruby "${action}"
+STOCK_NETWORK=bridge stock_run "${native_image}" -- sh tests/container/ruby "${action}"
 if [[ ${action} == check || ${action} == lint ]]; then
     : "${MARKDOWN_IMAGE:?The Makefile declares MARKDOWN_IMAGE}"
     : "${SHELLCHECK_IMAGE:?The Makefile declares SHELLCHECK_IMAGE}"
     stock_image markdown_image "${MARKDOWN_IMAGE}"
     stock_image shellcheck_image "${SHELLCHECK_IMAGE}"
-    stock_prepare "${markdown_image}" markdown -- sh tests/container/markdown prepare
-    stock_run "${markdown_image}" markdown -- sh tests/container/markdown lint
+    STOCK_NETWORK=bridge stock_run "${markdown_image}" -- sh tests/container/markdown
     stock_readonly "${shellcheck_image}" /bin/shellcheck -x -P SCRIPTDIR \
         tests/container/stock \
         tests/container/check-stock tests/container/ruby tests/container/markdown
