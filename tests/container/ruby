@@ -1,0 +1,21 @@
+#!/bin/sh
+set -eu
+export GEM_HOME=/scratch/gems GEM_PATH=/scratch/gems:/usr/local/bundle
+export PATH="/scratch/gems/bin:$PATH" BUNDLE_PATH=/scratch/bundle BUNDLE_APP_CONFIG=/scratch/bundle-config
+case "$1" in
+    prepare)
+        mkdir -p /scratch/gems /scratch/bundle /scratch/bundle-config
+        gem install bundler --version 4.0.13 --no-document >&2
+        BUNDLE_FROZEN=true bundle _4.0.13_ install >&2
+        exec tar --create --file - --directory / scratch/gems scratch/bundle scratch/bundle-config
+        ;;
+    check)
+        exec sh "$0" lint
+        ;;
+    lint)
+        for script in tests/container/run tests/container/stock tests/container/check-stock; do bash -n "$script"; done
+        for script in tests/container/check tests/container/ruby tests/container/markdown; do sh -n "$script"; done
+        bundle exec rubocop
+        ;;
+    *) exit 2 ;;
+esac
