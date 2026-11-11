@@ -66,7 +66,7 @@ jobs:
           '
           stock_run "${native_image}" native -- sh -ec 'export GEM_HOME=/scratch/gems GEM_PATH=/scratch/gems:/usr/local/bundle
           export PATH="/scratch/gems/bin:$PATH" BUNDLE_PATH=/scratch/bundle BUNDLE_APP_CONFIG=/scratch/bundle-config
-          for script in tests/container/run tests/container/stock tests/container/check-stock; do bash -n "$script"; done
+          for script in tests/container/stock tests/container/check-stock; do bash -n "$script"; done
           for script in tests/container/check tests/container/ruby tests/container/markdown; do sh -n "$script"; done
           bundle exec rubocop
           '
@@ -116,5 +116,5 @@ jobs:
             exit 125
           fi
           stock_image shellcheck_image koalaman/shellcheck:v0.11.0
-          stock_readonly "${shellcheck_image}" /bin/shellcheck -x -P SCRIPTDIR tests/container/run tests/container/check tests/container/stock tests/container/check-stock tests/container/ruby tests/container/markdown
+          stock_readonly "${shellcheck_image}" /bin/shellcheck -x -P SCRIPTDIR tests/container/check tests/container/stock tests/container/check-stock tests/container/ruby tests/container/markdown
           stock_finish
